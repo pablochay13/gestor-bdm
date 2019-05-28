@@ -36,16 +36,6 @@
             this.tabDatos = new System.Windows.Forms.TabControl();
             this.tabPageDatos = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.exploreTres = new System.Windows.Forms.Button();
-            this.exploreDos = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.linkTres = new System.Windows.Forms.TextBox();
-            this.nombreTres = new System.Windows.Forms.TextBox();
-            this.linkDos = new System.Windows.Forms.TextBox();
-            this.nombreDos = new System.Windows.Forms.TextBox();
             this.visualizar = new System.Windows.Forms.Button();
             this.linkIUno = new System.Windows.Forms.TextBox();
             this.nombreUno = new System.Windows.Forms.TextBox();
@@ -69,10 +59,6 @@
             this.comboComisiones = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.importeNoches = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.cantNoches = new System.Windows.Forms.TextBox();
             this.checkAmbos = new System.Windows.Forms.CheckBox();
             this.checkNoches = new System.Windows.Forms.CheckBox();
             this.checkBCompensacion = new System.Windows.Forms.CheckBox();
@@ -98,16 +84,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboRazonOp = new System.Windows.Forms.ComboBox();
-            this.labelRazon = new System.Windows.Forms.Label();
-            this.comboCuentaOp = new System.Windows.Forms.ComboBox();
-            this.labelCuentaOp = new System.Windows.Forms.Label();
-            this.textID = new System.Windows.Forms.TextBox();
-            this.labelID = new System.Windows.Forms.Label();
-            this.comboCuenta = new System.Windows.Forms.ComboBox();
-            this.labelCuenta = new System.Windows.Forms.Label();
-            this.comboOp = new System.Windows.Forms.ComboBox();
-            this.labelOp = new System.Windows.Forms.Label();
             this.nombreBeneficio2 = new System.Windows.Forms.TextBox();
             this.nombreBeneficio = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
@@ -399,7 +375,6 @@
             this.porcentaje_facturado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.porcentaje_cobrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.exportExcel = new System.Windows.Forms.Button();
             this.all = new System.Windows.Forms.Button();
             this.tbComercial = new System.Windows.Forms.TextBox();
             this.cbComercial = new System.Windows.Forms.CheckBox();
@@ -430,7 +405,6 @@
             this.dateIngreso = new System.Windows.Forms.DateTimePicker();
             this.label38 = new System.Windows.Forms.Label();
             this.clean = new System.Windows.Forms.Button();
-            this.label46 = new System.Windows.Forms.Label();
             this.tabDatos.SuspendLayout();
             this.tabPageDatos.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -453,17 +427,17 @@
             // 
             // tMedia
             // 
-            this.tMedia.Location = new System.Drawing.Point(819, 9);
+            this.tMedia.Location = new System.Drawing.Point(823, 9);
             this.tMedia.Name = "tMedia";
             this.tMedia.Size = new System.Drawing.Size(197, 23);
             this.tMedia.TabIndex = 129;
-            this.tMedia.TextChanged += new System.EventHandler(this.TMedia_TextChanged);
+            this.tMedia.TextChanged += new System.EventHandler(this.tMedia_TextChanged);
             this.tMedia.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tMedia_MouseDoubleClick);
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(734, 12);
+            this.label30.Location = new System.Drawing.Point(738, 12);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(82, 17);
             this.label30.TabIndex = 128;
@@ -471,17 +445,15 @@
             // 
             // textStatusOI
             // 
-            this.textStatusOI.Location = new System.Drawing.Point(1093, 9);
+            this.textStatusOI.Location = new System.Drawing.Point(1097, 9);
             this.textStatusOI.Name = "textStatusOI";
             this.textStatusOI.Size = new System.Drawing.Size(96, 23);
             this.textStatusOI.TabIndex = 131;
-            this.textStatusOI.Text = "Activo";
-            this.textStatusOI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1025, 12);
+            this.label1.Location = new System.Drawing.Point(1029, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 130;
@@ -517,125 +489,23 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button2);
-            this.groupBox7.Controls.Add(this.button1);
-            this.groupBox7.Controls.Add(this.exploreTres);
-            this.groupBox7.Controls.Add(this.exploreDos);
-            this.groupBox7.Controls.Add(this.label47);
-            this.groupBox7.Controls.Add(this.label48);
-            this.groupBox7.Controls.Add(this.linkTres);
-            this.groupBox7.Controls.Add(this.nombreTres);
-            this.groupBox7.Controls.Add(this.linkDos);
-            this.groupBox7.Controls.Add(this.nombreDos);
             this.groupBox7.Controls.Add(this.visualizar);
             this.groupBox7.Controls.Add(this.linkIUno);
             this.groupBox7.Controls.Add(this.nombreUno);
             this.groupBox7.Controls.Add(this.explor);
             this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox7.Location = new System.Drawing.Point(540, 427);
+            this.groupBox7.Location = new System.Drawing.Point(679, 457);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(627, 114);
+            this.groupBox7.Size = new System.Drawing.Size(487, 80);
             this.groupBox7.TabIndex = 170;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Archivo Orden de Inserción*";
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(545, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 185;
-            this.button2.Text = "Visualizar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(332, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 184;
-            this.button1.Text = "Visualizar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // exploreTres
-            // 
-            this.exploreTres.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.exploreTres.Location = new System.Drawing.Point(464, 80);
-            this.exploreTres.Name = "exploreTres";
-            this.exploreTres.Size = new System.Drawing.Size(75, 23);
-            this.exploreTres.TabIndex = 183;
-            this.exploreTres.Text = "Explorar";
-            this.exploreTres.UseVisualStyleBackColor = true;
-            this.exploreTres.Click += new System.EventHandler(this.ExploreTres_Click);
-            // 
-            // exploreDos
-            // 
-            this.exploreDos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.exploreDos.Location = new System.Drawing.Point(251, 80);
-            this.exploreDos.Name = "exploreDos";
-            this.exploreDos.Size = new System.Drawing.Size(75, 23);
-            this.exploreDos.TabIndex = 181;
-            this.exploreDos.Text = "Explorar";
-            this.exploreDos.UseVisualStyleBackColor = true;
-            this.exploreDos.Click += new System.EventHandler(this.ExploreDos_Click);
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label47.Location = new System.Drawing.Point(435, 26);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(87, 17);
-            this.label47.TabIndex = 179;
-            this.label47.Text = "Archivo tres:";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label48.Location = new System.Drawing.Point(222, 26);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(88, 17);
-            this.label48.TabIndex = 178;
-            this.label48.Text = "Archivo dos:";
-            // 
-            // linkTres
-            // 
-            this.linkTres.Location = new System.Drawing.Point(438, 75);
-            this.linkTres.Name = "linkTres";
-            this.linkTres.Size = new System.Drawing.Size(17, 23);
-            this.linkTres.TabIndex = 176;
-            this.linkTres.Visible = false;
-            // 
-            // nombreTres
-            // 
-            this.nombreTres.Location = new System.Drawing.Point(438, 46);
-            this.nombreTres.Name = "nombreTres";
-            this.nombreTres.Size = new System.Drawing.Size(182, 23);
-            this.nombreTres.TabIndex = 177;
-            // 
-            // linkDos
-            // 
-            this.linkDos.Location = new System.Drawing.Point(225, 80);
-            this.linkDos.Name = "linkDos";
-            this.linkDos.Size = new System.Drawing.Size(20, 23);
-            this.linkDos.TabIndex = 174;
-            this.linkDos.Visible = false;
-            // 
-            // nombreDos
-            // 
-            this.nombreDos.Location = new System.Drawing.Point(225, 46);
-            this.nombreDos.Name = "nombreDos";
-            this.nombreDos.Size = new System.Drawing.Size(182, 23);
-            this.nombreDos.TabIndex = 175;
+            this.groupBox7.Text = "Archivo Orden de Inserción";
             // 
             // visualizar
             // 
             this.visualizar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.visualizar.Location = new System.Drawing.Point(120, 80);
+            this.visualizar.Location = new System.Drawing.Point(402, 37);
             this.visualizar.Name = "visualizar";
             this.visualizar.Size = new System.Drawing.Size(75, 23);
             this.visualizar.TabIndex = 173;
@@ -646,7 +516,7 @@
             // linkIUno
             // 
             this.linkIUno.ForeColor = System.Drawing.Color.Black;
-            this.linkIUno.Location = new System.Drawing.Point(13, 75);
+            this.linkIUno.Location = new System.Drawing.Point(297, 37);
             this.linkIUno.Name = "linkIUno";
             this.linkIUno.Size = new System.Drawing.Size(13, 23);
             this.linkIUno.TabIndex = 171;
@@ -655,15 +525,15 @@
             // nombreUno
             // 
             this.nombreUno.ForeColor = System.Drawing.Color.Black;
-            this.nombreUno.Location = new System.Drawing.Point(13, 46);
+            this.nombreUno.Location = new System.Drawing.Point(79, 37);
             this.nombreUno.Name = "nombreUno";
-            this.nombreUno.Size = new System.Drawing.Size(182, 23);
+            this.nombreUno.Size = new System.Drawing.Size(212, 23);
             this.nombreUno.TabIndex = 172;
             // 
             // explor
             // 
             this.explor.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.explor.Location = new System.Drawing.Point(39, 80);
+            this.explor.Location = new System.Drawing.Point(316, 37);
             this.explor.Name = "explor";
             this.explor.Size = new System.Drawing.Size(75, 23);
             this.explor.TabIndex = 170;
@@ -675,19 +545,19 @@
             // 
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label23.Location = new System.Drawing.Point(10, 26);
+            this.label23.Location = new System.Drawing.Point(16, 40);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(90, 17);
+            this.label23.Size = new System.Drawing.Size(57, 17);
             this.label23.TabIndex = 168;
-            this.label23.Text = "Archivo uno:";
+            this.label23.Text = "Archivo";
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.textObservaciones);
             this.groupBox6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox6.Location = new System.Drawing.Point(844, 344);
+            this.groupBox6.Location = new System.Drawing.Point(736, 344);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(322, 88);
+            this.groupBox6.Size = new System.Drawing.Size(430, 77);
             this.groupBox6.TabIndex = 170;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Observaciones";
@@ -695,10 +565,10 @@
             // textObservaciones
             // 
             this.textObservaciones.ForeColor = System.Drawing.Color.Black;
-            this.textObservaciones.Location = new System.Drawing.Point(6, 23);
+            this.textObservaciones.Location = new System.Drawing.Point(8, 23);
             this.textObservaciones.Multiline = true;
             this.textObservaciones.Name = "textObservaciones";
-            this.textObservaciones.Size = new System.Drawing.Size(308, 54);
+            this.textObservaciones.Size = new System.Drawing.Size(412, 43);
             this.textObservaciones.TabIndex = 0;
             // 
             // groupBox5
@@ -712,10 +582,10 @@
             this.groupBox5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox5.Location = new System.Drawing.Point(6, 424);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(528, 117);
+            this.groupBox5.Size = new System.Drawing.Size(667, 117);
             this.groupBox5.TabIndex = 137;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Ejecutivos*";
+            this.groupBox5.Text = "Ejecutivos";
             // 
             // comboEjecutivoDAF
             // 
@@ -723,14 +593,14 @@
             this.comboEjecutivoDAF.FormattingEnabled = true;
             this.comboEjecutivoDAF.Location = new System.Drawing.Point(140, 55);
             this.comboEjecutivoDAF.Name = "comboEjecutivoDAF";
-            this.comboEjecutivoDAF.Size = new System.Drawing.Size(374, 25);
+            this.comboEjecutivoDAF.Size = new System.Drawing.Size(517, 25);
             this.comboEjecutivoDAF.TabIndex = 160;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label22.Location = new System.Drawing.Point(38, 58);
+            this.label22.Location = new System.Drawing.Point(9, 58);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(96, 17);
             this.label22.TabIndex = 159;
@@ -742,14 +612,14 @@
             this.comboAccount.FormattingEnabled = true;
             this.comboAccount.Location = new System.Drawing.Point(140, 86);
             this.comboAccount.Name = "comboAccount";
-            this.comboAccount.Size = new System.Drawing.Size(374, 25);
+            this.comboAccount.Size = new System.Drawing.Size(517, 25);
             this.comboAccount.TabIndex = 158;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label21.Location = new System.Drawing.Point(9, 89);
+            this.label21.Location = new System.Drawing.Point(6, 89);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(125, 17);
             this.label21.TabIndex = 157;
@@ -761,14 +631,14 @@
             this.comboSupply.FormattingEnabled = true;
             this.comboSupply.Location = new System.Drawing.Point(140, 24);
             this.comboSupply.Name = "comboSupply";
-            this.comboSupply.Size = new System.Drawing.Size(374, 25);
+            this.comboSupply.Size = new System.Drawing.Size(517, 25);
             this.comboSupply.TabIndex = 156;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label20.Location = new System.Drawing.Point(23, 27);
+            this.label20.Location = new System.Drawing.Point(9, 27);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(111, 17);
             this.label20.TabIndex = 155;
@@ -784,18 +654,18 @@
             this.groupBox4.Controls.Add(this.comboComisiones);
             this.groupBox4.Controls.Add(this.label19);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox4.Location = new System.Drawing.Point(429, 344);
+            this.groupBox4.Location = new System.Drawing.Point(398, 344);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(409, 77);
+            this.groupBox4.Size = new System.Drawing.Size(332, 77);
             this.groupBox4.TabIndex = 136;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Comisiones*";
+            this.groupBox4.Text = "Comisiones";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label42.Location = new System.Drawing.Point(223, 22);
+            this.label42.Location = new System.Drawing.Point(187, 22);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(18, 17);
             this.label42.TabIndex = 174;
@@ -809,7 +679,7 @@
             "1%",
             "2%",
             "3%"});
-            this.comboQPorcentaje.Location = new System.Drawing.Point(221, 42);
+            this.comboQPorcentaje.Location = new System.Drawing.Point(185, 42);
             this.comboQPorcentaje.Name = "comboQPorcentaje";
             this.comboQPorcentaje.Size = new System.Drawing.Size(65, 25);
             this.comboQPorcentaje.TabIndex = 173;
@@ -818,7 +688,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label41.Location = new System.Drawing.Point(289, 22);
+            this.label41.Location = new System.Drawing.Point(253, 22);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(19, 17);
             this.label41.TabIndex = 172;
@@ -829,8 +699,12 @@
             this.comboQ.ForeColor = System.Drawing.Color.Black;
             this.comboQ.FormattingEnabled = true;
             this.comboQ.Items.AddRange(new object[] {
-            "Q´s"});
-            this.comboQ.Location = new System.Drawing.Point(292, 42);
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5"});
+            this.comboQ.Location = new System.Drawing.Point(256, 42);
             this.comboQ.Name = "comboQ";
             this.comboQ.Size = new System.Drawing.Size(65, 25);
             this.comboQ.TabIndex = 171;
@@ -839,7 +713,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label40.Location = new System.Drawing.Point(45, 23);
+            this.label40.Location = new System.Drawing.Point(9, 23);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(67, 17);
             this.label40.TabIndex = 170;
@@ -849,7 +723,7 @@
             // 
             this.comboComisiones.ForeColor = System.Drawing.Color.Black;
             this.comboComisiones.FormattingEnabled = true;
-            this.comboComisiones.Location = new System.Drawing.Point(48, 42);
+            this.comboComisiones.Location = new System.Drawing.Point(12, 42);
             this.comboComisiones.Name = "comboComisiones";
             this.comboComisiones.Size = new System.Drawing.Size(167, 25);
             this.comboComisiones.TabIndex = 169;
@@ -866,10 +740,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label45);
-            this.groupBox3.Controls.Add(this.importeNoches);
-            this.groupBox3.Controls.Add(this.label44);
-            this.groupBox3.Controls.Add(this.cantNoches);
             this.groupBox3.Controls.Add(this.checkAmbos);
             this.groupBox3.Controls.Add(this.checkNoches);
             this.groupBox3.Controls.Add(this.checkBCompensacion);
@@ -877,54 +747,16 @@
             this.groupBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox3.Location = new System.Drawing.Point(6, 344);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(417, 77);
+            this.groupBox3.Size = new System.Drawing.Size(386, 77);
             this.groupBox3.TabIndex = 135;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Formas de Pago*";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label45.Location = new System.Drawing.Point(268, 50);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(59, 17);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "Importe";
-            this.label45.Visible = false;
-            // 
-            // importeNoches
-            // 
-            this.importeNoches.Location = new System.Drawing.Point(333, 47);
-            this.importeNoches.Name = "importeNoches";
-            this.importeNoches.Size = new System.Drawing.Size(78, 23);
-            this.importeNoches.TabIndex = 6;
-            this.importeNoches.WordWrap = false;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label44.Location = new System.Drawing.Point(178, 50);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(45, 17);
-            this.label44.TabIndex = 5;
-            this.label44.Text = "Cant.";
-            this.label44.Visible = false;
-            // 
-            // cantNoches
-            // 
-            this.cantNoches.Location = new System.Drawing.Point(228, 47);
-            this.cantNoches.Name = "cantNoches";
-            this.cantNoches.Size = new System.Drawing.Size(34, 23);
-            this.cantNoches.TabIndex = 4;
-            this.cantNoches.Visible = false;
+            this.groupBox3.Text = "Formas de Pago";
             // 
             // checkAmbos
             // 
             this.checkAmbos.AutoSize = true;
             this.checkAmbos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkAmbos.Location = new System.Drawing.Point(19, 49);
+            this.checkAmbos.Location = new System.Drawing.Point(189, 44);
             this.checkAmbos.Name = "checkAmbos";
             this.checkAmbos.Size = new System.Drawing.Size(72, 21);
             this.checkAmbos.TabIndex = 3;
@@ -935,19 +767,18 @@
             // 
             this.checkNoches.AutoSize = true;
             this.checkNoches.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkNoches.Location = new System.Drawing.Point(97, 49);
+            this.checkNoches.Location = new System.Drawing.Point(19, 44);
             this.checkNoches.Name = "checkNoches";
             this.checkNoches.Size = new System.Drawing.Size(75, 21);
             this.checkNoches.TabIndex = 2;
             this.checkNoches.Text = "Noches";
             this.checkNoches.UseVisualStyleBackColor = true;
-            this.checkNoches.CheckedChanged += new System.EventHandler(this.checkNoches_CheckedChanged);
             // 
             // checkBCompensacion
             // 
             this.checkBCompensacion.AutoSize = true;
             this.checkBCompensacion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkBCompensacion.Location = new System.Drawing.Point(216, 22);
+            this.checkBCompensacion.Location = new System.Drawing.Point(189, 22);
             this.checkBCompensacion.Name = "checkBCompensacion";
             this.checkBCompensacion.Size = new System.Drawing.Size(195, 21);
             this.checkBCompensacion.TabIndex = 1;
@@ -998,7 +829,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label36.Location = new System.Drawing.Point(320, 47);
+            this.label36.Location = new System.Drawing.Point(380, 21);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(33, 17);
             this.label36.TabIndex = 188;
@@ -1008,13 +839,12 @@
             // 
             this.comboNacional.FormattingEnabled = true;
             this.comboNacional.Items.AddRange(new object[] {
-            "No",
-            "Si"});
-            this.comboNacional.Location = new System.Drawing.Point(734, 87);
+            "Nacional",
+            "Extranjera"});
+            this.comboNacional.Location = new System.Drawing.Point(989, 87);
             this.comboNacional.Name = "comboNacional";
-            this.comboNacional.Size = new System.Drawing.Size(74, 25);
+            this.comboNacional.Size = new System.Drawing.Size(161, 25);
             this.comboNacional.TabIndex = 171;
-            this.comboNacional.SelectedIndexChanged += new System.EventHandler(this.comboNacional_SelectedIndexChanged);
             // 
             // label33
             // 
@@ -1041,7 +871,7 @@
             "5",
             "5.5",
             "6"});
-            this.comboPorcentajeMKF.Location = new System.Drawing.Point(450, 45);
+            this.comboPorcentajeMKF.Location = new System.Drawing.Point(464, 39);
             this.comboPorcentajeMKF.Name = "comboPorcentajeMKF";
             this.comboPorcentajeMKF.Size = new System.Drawing.Size(152, 25);
             this.comboPorcentajeMKF.TabIndex = 187;
@@ -1049,7 +879,7 @@
             // tMontoIVA
             // 
             this.tMontoIVA.ForeColor = System.Drawing.Color.Black;
-            this.tMontoIVA.Location = new System.Drawing.Point(189, 87);
+            this.tMontoIVA.Location = new System.Drawing.Point(225, 87);
             this.tMontoIVA.Name = "tMontoIVA";
             this.tMontoIVA.Size = new System.Drawing.Size(94, 23);
             this.tMontoIVA.TabIndex = 182;
@@ -1059,22 +889,21 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(833, 90);
+            this.label14.Location = new System.Drawing.Point(340, 90);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(137, 17);
+            this.label14.Size = new System.Drawing.Size(131, 17);
             this.label14.TabIndex = 181;
-            this.label14.Text = "Monto Pauta + IVA*";
-            this.label14.Visible = false;
+            this.label14.Text = "Monto Pauta + IVA";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label37.Location = new System.Drawing.Point(585, 90);
+            this.label37.Location = new System.Drawing.Point(902, 90);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(145, 17);
+            this.label37.Size = new System.Drawing.Size(81, 17);
             this.label37.TabIndex = 170;
-            this.label37.Text = "Desglosar impuestos*";
+            this.label37.Text = "Seleccione:";
             // 
             // comboDivisa
             // 
@@ -1086,7 +915,7 @@
             "USD",
             "R$",
             "CAD"});
-            this.comboDivisa.Location = new System.Drawing.Point(359, 87);
+            this.comboDivisa.Location = new System.Drawing.Point(663, 87);
             this.comboDivisa.Name = "comboDivisa";
             this.comboDivisa.Size = new System.Drawing.Size(197, 25);
             this.comboDivisa.TabIndex = 180;
@@ -1095,36 +924,36 @@
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(307, 90);
+            this.label15.Location = new System.Drawing.Point(611, 90);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 17);
+            this.label15.Size = new System.Drawing.Size(46, 17);
             this.label15.TabIndex = 179;
-            this.label15.Text = "Divisa*";
+            this.label15.Text = "Divisa";
             // 
             // tMonto
             // 
             this.tMonto.ForeColor = System.Drawing.Color.Black;
-            this.tMonto.Location = new System.Drawing.Point(970, 87);
+            this.tMonto.Location = new System.Drawing.Point(477, 87);
             this.tMonto.Name = "tMonto";
             this.tMonto.Size = new System.Drawing.Size(94, 23);
             this.tMonto.TabIndex = 178;
-            this.tMonto.WordWrap = false;
+            this.tMonto.TextChanged += new System.EventHandler(this.tMonto_TextChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label16.Location = new System.Drawing.Point(90, 90);
+            this.label16.Location = new System.Drawing.Point(126, 90);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 17);
+            this.label16.Size = new System.Drawing.Size(93, 17);
             this.label16.TabIndex = 177;
-            this.label16.Text = "Monto Pauta*";
+            this.label16.Text = "Monto Pauta";
             // 
             // checkEmitidos
             // 
             this.checkEmitidos.AutoSize = true;
             this.checkEmitidos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkEmitidos.Location = new System.Drawing.Point(877, 47);
+            this.checkEmitidos.Location = new System.Drawing.Point(897, 41);
             this.checkEmitidos.Name = "checkEmitidos";
             this.checkEmitidos.Size = new System.Drawing.Size(126, 21);
             this.checkEmitidos.TabIndex = 176;
@@ -1135,7 +964,7 @@
             // 
             this.checkProduccion.AutoSize = true;
             this.checkProduccion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkProduccion.Location = new System.Drawing.Point(761, 46);
+            this.checkProduccion.Location = new System.Drawing.Point(790, 41);
             this.checkProduccion.Name = "checkProduccion";
             this.checkProduccion.Size = new System.Drawing.Size(101, 21);
             this.checkProduccion.TabIndex = 175;
@@ -1146,16 +975,16 @@
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(624, 49);
+            this.label13.Location = new System.Drawing.Point(662, 40);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 17);
+            this.label13.Size = new System.Drawing.Size(126, 17);
             this.label13.TabIndex = 174;
-            this.label13.Text = "Forma de calculo*";
+            this.label13.Text = "Forma de calculo:";
             // 
             // dateHastaMKF
             // 
             this.dateHastaMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateHastaMKF.Location = new System.Drawing.Point(160, 43);
+            this.dateHastaMKF.Location = new System.Drawing.Point(206, 43);
             this.dateHastaMKF.Name = "dateHastaMKF";
             this.dateHastaMKF.Size = new System.Drawing.Size(133, 23);
             this.dateHastaMKF.TabIndex = 173;
@@ -1164,11 +993,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(157, 23);
+            this.label12.Location = new System.Drawing.Point(203, 23);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 17);
+            this.label12.Size = new System.Drawing.Size(105, 17);
             this.label12.TabIndex = 172;
-            this.label12.Text = "Vigencia hasta*";
+            this.label12.Text = "Vigencia hasta";
             // 
             // dateDesdeMKF
             // 
@@ -1185,32 +1014,22 @@
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label11.Location = new System.Drawing.Point(6, 23);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 17);
+            this.label11.Size = new System.Drawing.Size(108, 17);
             this.label11.TabIndex = 170;
-            this.label11.Text = "Vigencia desde*";
+            this.label11.Text = "Vigencia desde";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(366, 50);
+            this.label10.Location = new System.Drawing.Point(380, 44);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 17);
+            this.label10.Size = new System.Drawing.Size(78, 17);
             this.label10.TabIndex = 168;
-            this.label10.Text = "Porcentaje*";
+            this.label10.Text = "Porcentaje";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboRazonOp);
-            this.groupBox1.Controls.Add(this.labelRazon);
-            this.groupBox1.Controls.Add(this.comboCuentaOp);
-            this.groupBox1.Controls.Add(this.labelCuentaOp);
-            this.groupBox1.Controls.Add(this.textID);
-            this.groupBox1.Controls.Add(this.labelID);
-            this.groupBox1.Controls.Add(this.comboCuenta);
-            this.groupBox1.Controls.Add(this.labelCuenta);
-            this.groupBox1.Controls.Add(this.comboOp);
-            this.groupBox1.Controls.Add(this.labelOp);
             this.groupBox1.Controls.Add(this.nombreBeneficio2);
             this.groupBox1.Controls.Add(this.nombreBeneficio);
             this.groupBox1.Controls.Add(this.label43);
@@ -1254,126 +1073,10 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DAF y Legal";
             // 
-            // comboRazonOp
-            // 
-            this.comboRazonOp.FormattingEnabled = true;
-            this.comboRazonOp.Items.AddRange(new object[] {
-            "Jamiray Internacional SA",
-            "South Net Chile Ltda",
-            "South Net Turismo SA",
-            "South Net Turismo Colombia SAS"});
-            this.comboRazonOp.Location = new System.Drawing.Point(797, 170);
-            this.comboRazonOp.Name = "comboRazonOp";
-            this.comboRazonOp.Size = new System.Drawing.Size(355, 25);
-            this.comboRazonOp.TabIndex = 192;
-            this.comboRazonOp.Visible = false;
-            // 
-            // labelRazon
-            // 
-            this.labelRazon.AutoSize = true;
-            this.labelRazon.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelRazon.Location = new System.Drawing.Point(794, 147);
-            this.labelRazon.Name = "labelRazon";
-            this.labelRazon.Size = new System.Drawing.Size(169, 17);
-            this.labelRazon.TabIndex = 191;
-            this.labelRazon.Text = "Razón social que factura";
-            this.labelRazon.Visible = false;
-            // 
-            // comboCuentaOp
-            // 
-            this.comboCuentaOp.FormattingEnabled = true;
-            this.comboCuentaOp.Items.AddRange(new object[] {
-            "Ingresos por publicidad particulares B2C",
-            "Ingresos The Tour",
-            "Publicidad guía Horest (B2C)"});
-            this.comboCuentaOp.Location = new System.Drawing.Point(535, 170);
-            this.comboCuentaOp.Name = "comboCuentaOp";
-            this.comboCuentaOp.Size = new System.Drawing.Size(222, 25);
-            this.comboCuentaOp.TabIndex = 190;
-            this.comboCuentaOp.Visible = false;
-            // 
-            // labelCuentaOp
-            // 
-            this.labelCuentaOp.AutoSize = true;
-            this.labelCuentaOp.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelCuentaOp.Location = new System.Drawing.Point(401, 175);
-            this.labelCuentaOp.Name = "labelCuentaOp";
-            this.labelCuentaOp.Size = new System.Drawing.Size(57, 17);
-            this.labelCuentaOp.TabIndex = 189;
-            this.labelCuentaOp.Text = "Cuenta";
-            this.labelCuentaOp.Visible = false;
-            // 
-            // textID
-            // 
-            this.textID.Location = new System.Drawing.Point(535, 140);
-            this.textID.Name = "textID";
-            this.textID.Size = new System.Drawing.Size(222, 23);
-            this.textID.TabIndex = 188;
-            this.textID.Visible = false;
-            // 
-            // labelID
-            // 
-            this.labelID.AutoSize = true;
-            this.labelID.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelID.Location = new System.Drawing.Point(401, 144);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(128, 17);
-            this.labelID.TabIndex = 187;
-            this.labelID.Text = "ID Maestro original";
-            this.labelID.Visible = false;
-            // 
-            // comboCuenta
-            // 
-            this.comboCuenta.FormattingEnabled = true;
-            this.comboCuenta.Items.AddRange(new object[] {
-            "4-2-92-02-000",
-            "4-2-92-04-000",
-            "4-2-92-01-000"});
-            this.comboCuenta.Location = new System.Drawing.Point(160, 172);
-            this.comboCuenta.Name = "comboCuenta";
-            this.comboCuenta.Size = new System.Drawing.Size(224, 25);
-            this.comboCuenta.TabIndex = 186;
-            this.comboCuenta.Visible = false;
-            this.comboCuenta.SelectedIndexChanged += new System.EventHandler(this.ComboCuenta_SelectedIndexChanged);
-            // 
-            // labelCuenta
-            // 
-            this.labelCuenta.AutoSize = true;
-            this.labelCuenta.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelCuenta.Location = new System.Drawing.Point(9, 175);
-            this.labelCuenta.Name = "labelCuenta";
-            this.labelCuenta.Size = new System.Drawing.Size(131, 17);
-            this.labelCuenta.TabIndex = 185;
-            this.labelCuenta.Text = "Número de cuenta";
-            this.labelCuenta.Visible = false;
-            // 
-            // comboOp
-            // 
-            this.comboOp.FormattingEnabled = true;
-            this.comboOp.Items.AddRange(new object[] {
-            "Prepago",
-            "Crédito"});
-            this.comboOp.Location = new System.Drawing.Point(160, 140);
-            this.comboOp.Name = "comboOp";
-            this.comboOp.Size = new System.Drawing.Size(224, 25);
-            this.comboOp.TabIndex = 184;
-            this.comboOp.Visible = false;
-            // 
-            // labelOp
-            // 
-            this.labelOp.AutoSize = true;
-            this.labelOp.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelOp.Location = new System.Drawing.Point(9, 144);
-            this.labelOp.Name = "labelOp";
-            this.labelOp.Size = new System.Drawing.Size(126, 17);
-            this.labelOp.TabIndex = 183;
-            this.labelOp.Text = "Tipo de operación";
-            this.labelOp.Visible = false;
-            // 
             // nombreBeneficio2
             // 
             this.nombreBeneficio2.ForeColor = System.Drawing.Color.Black;
-            this.nombreBeneficio2.Location = new System.Drawing.Point(160, 172);
+            this.nombreBeneficio2.Location = new System.Drawing.Point(392, 172);
             this.nombreBeneficio2.Name = "nombreBeneficio2";
             this.nombreBeneficio2.Size = new System.Drawing.Size(122, 23);
             this.nombreBeneficio2.TabIndex = 182;
@@ -1382,7 +1085,7 @@
             // nombreBeneficio
             // 
             this.nombreBeneficio.ForeColor = System.Drawing.Color.Black;
-            this.nombreBeneficio.Location = new System.Drawing.Point(160, 142);
+            this.nombreBeneficio.Location = new System.Drawing.Point(392, 141);
             this.nombreBeneficio.Name = "nombreBeneficio";
             this.nombreBeneficio.Size = new System.Drawing.Size(122, 23);
             this.nombreBeneficio.TabIndex = 181;
@@ -1393,9 +1096,9 @@
             this.label43.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label43.Location = new System.Drawing.Point(553, 178);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(74, 17);
+            this.label43.Size = new System.Drawing.Size(68, 17);
             this.label43.TabIndex = 180;
-            this.label43.Text = "Cuenta 2*";
+            this.label43.Text = "Cuenta 2";
             this.label43.Visible = false;
             // 
             // label18
@@ -1404,20 +1107,20 @@
             this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label18.Location = new System.Drawing.Point(6, 175);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(153, 17);
+            this.label18.Size = new System.Drawing.Size(147, 17);
             this.label18.TabIndex = 179;
-            this.label18.Text = "Centro de Beneficio 2*";
+            this.label18.Text = "Centro de Beneficio 2";
             this.label18.Visible = false;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label17.Location = new System.Drawing.Point(919, 178);
+            this.label17.Location = new System.Drawing.Point(929, 178);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(67, 17);
+            this.label17.Size = new System.Drawing.Size(61, 17);
             this.label17.TabIndex = 178;
-            this.label17.Text = "Monto 2*";
+            this.label17.Text = "Monto 2";
             this.label17.Visible = false;
             // 
             // cant2
@@ -1428,7 +1131,6 @@
             this.cant2.Size = new System.Drawing.Size(160, 23);
             this.cant2.TabIndex = 177;
             this.cant2.Visible = false;
-            this.cant2.TextChanged += new System.EventHandler(this.cant2_TextChanged);
             // 
             // cant1
             // 
@@ -1443,11 +1145,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label9.Location = new System.Drawing.Point(919, 147);
+            this.label9.Location = new System.Drawing.Point(929, 147);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 17);
+            this.label9.Size = new System.Drawing.Size(61, 17);
             this.label9.TabIndex = 175;
-            this.label9.Text = "Monto 1*";
+            this.label9.Text = "Monto 1";
             this.label9.Visible = false;
             // 
             // textMonto2
@@ -1457,7 +1159,6 @@
             this.textMonto2.Name = "textMonto2";
             this.textMonto2.Size = new System.Drawing.Size(264, 23);
             this.textMonto2.TabIndex = 174;
-            this.textMonto2.Text = "6000299000 - Refacturación Costes Publicidad";
             this.textMonto2.Visible = false;
             // 
             // comboBeneficio2
@@ -1469,6 +1170,7 @@
             this.comboBeneficio2.Size = new System.Drawing.Size(224, 25);
             this.comboBeneficio2.TabIndex = 172;
             this.comboBeneficio2.Visible = false;
+            this.comboBeneficio2.SelectedIndexChanged += new System.EventHandler(this.comboBeneficio2_SelectedIndexChanged);
             // 
             // comboBeneficio
             // 
@@ -1478,7 +1180,6 @@
             this.comboBeneficio.Name = "comboBeneficio";
             this.comboBeneficio.Size = new System.Drawing.Size(224, 25);
             this.comboBeneficio.TabIndex = 169;
-            this.comboBeneficio.Visible = false;
             this.comboBeneficio.SelectedIndexChanged += new System.EventHandler(this.comboBeneficio_SelectedIndexChanged);
             // 
             // comboContrato
@@ -1502,11 +1203,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(553, 147);
+            this.label7.Location = new System.Drawing.Point(564, 147);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 17);
+            this.label7.Size = new System.Drawing.Size(57, 17);
             this.label7.TabIndex = 162;
-            this.label7.Text = "Cuenta 1*";
+            this.label7.Text = "Cuenta";
             // 
             // label8
             // 
@@ -1514,9 +1215,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label8.Location = new System.Drawing.Point(6, 144);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 17);
+            this.label8.Size = new System.Drawing.Size(136, 17);
             this.label8.TabIndex = 164;
-            this.label8.Text = "Centro de Beneficio 1*";
+            this.label8.Text = "Centro de Beneficio";
             // 
             // label6
             // 
@@ -1524,9 +1225,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label6.Location = new System.Drawing.Point(868, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 160;
-            this.label6.Text = "Contrato*";
+            this.label6.Text = "Contrato";
             // 
             // textComercial
             // 
@@ -1539,7 +1240,7 @@
             // tHann
             // 
             this.tHann.ForeColor = System.Drawing.Color.Black;
-            this.tHann.Location = new System.Drawing.Point(970, 102);
+            this.tHann.Location = new System.Drawing.Point(974, 99);
             this.tHann.Name = "tHann";
             this.tHann.Size = new System.Drawing.Size(160, 23);
             this.tHann.TabIndex = 134;
@@ -1556,11 +1257,11 @@
             // 
             this.label32.AutoSize = true;
             this.label32.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label32.Location = new System.Drawing.Point(868, 105);
+            this.label32.Location = new System.Drawing.Point(874, 105);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(100, 17);
+            this.label32.Size = new System.Drawing.Size(94, 17);
             this.label32.TabIndex = 133;
-            this.label32.Text = "Clave Hanna*";
+            this.label32.Text = "Clave Hanna";
             // 
             // labelHotel
             // 
@@ -1576,9 +1277,9 @@
             this.label29.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label29.Location = new System.Drawing.Point(550, 105);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(96, 17);
+            this.label29.Size = new System.Drawing.Size(90, 17);
             this.label29.TabIndex = 135;
-            this.label29.Text = "Siglas Hanna*";
+            this.label29.Text = "Siglas Hanna";
             // 
             // comboHoteles
             // 
@@ -1596,9 +1297,9 @@
             this.label34.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label34.Location = new System.Drawing.Point(6, 105);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(82, 17);
+            this.label34.Size = new System.Drawing.Size(76, 17);
             this.label34.TabIndex = 157;
-            this.label34.Text = "Sigla Hotel*";
+            this.label34.Text = "Sigla Hotel";
             // 
             // label5
             // 
@@ -1606,9 +1307,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.Location = new System.Drawing.Point(520, 68);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 17);
+            this.label5.Size = new System.Drawing.Size(137, 17);
             this.label5.TabIndex = 155;
-            this.label5.Text = "Nombre Comercial *";
+            this.label5.Text = "Nombre Comercial ";
             // 
             // comboRazon
             // 
@@ -1638,9 +1339,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(6, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.Size = new System.Drawing.Size(90, 17);
             this.label4.TabIndex = 133;
-            this.label4.Text = "Razón Social*";
+            this.label4.Text = "Razón Social";
             // 
             // label35
             // 
@@ -1648,9 +1349,9 @@
             this.label35.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label35.Location = new System.Drawing.Point(676, 32);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(81, 17);
+            this.label35.Size = new System.Drawing.Size(75, 17);
             this.label35.TabIndex = 152;
-            this.label35.Text = "Categoría*";
+            this.label35.Text = "Categoría";
             // 
             // labelPauta
             // 
@@ -1676,9 +1377,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(329, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 17);
+            this.label3.Size = new System.Drawing.Size(99, 17);
             this.label3.TabIndex = 149;
-            this.label3.Text = "Tipo de pauta*";
+            this.label3.Text = "Tipo de pauta";
             // 
             // textPais
             // 
@@ -1704,9 +1405,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(6, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
+            this.label2.Size = new System.Drawing.Size(33, 17);
             this.label2.TabIndex = 133;
-            this.label2.Text = "País*";
+            this.label2.Text = "País";
             // 
             // tabPageCant
             // 
@@ -1741,6 +1442,7 @@
             this.sumas.TabIndex = 207;
             this.sumas.Text = "Sumas";
             this.sumas.UseVisualStyleBackColor = true;
+            this.sumas.Visible = false;
             this.sumas.Click += new System.EventHandler(this.button1_Click);
             // 
             // calculo
@@ -1984,7 +1686,7 @@
             // 
             // esquemaFeb
             // 
-            this.esquemaFeb.Location = new System.Drawing.Point(12, 75);
+            this.esquemaFeb.Location = new System.Drawing.Point(12, 74);
             this.esquemaFeb.Name = "esquemaFeb";
             this.esquemaFeb.Size = new System.Drawing.Size(139, 23);
             this.esquemaFeb.TabIndex = 141;
@@ -2419,6 +2121,7 @@
             this.montoEne.Name = "montoEne";
             this.montoEne.Size = new System.Drawing.Size(139, 23);
             this.montoEne.TabIndex = 140;
+            this.montoEne.TextChanged += new System.EventHandler(this.montoEne_TextChanged);
             // 
             // montoOct
             // 
@@ -3593,7 +3296,6 @@
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.exportExcel);
             this.groupBox13.Controls.Add(this.all);
             this.groupBox13.Controls.Add(this.tbComercial);
             this.groupBox13.Controls.Add(this.cbComercial);
@@ -3619,18 +3321,6 @@
             this.groupBox13.TabIndex = 72;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Criterios de busqueda";
-            // 
-            // exportExcel
-            // 
-            this.exportExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exportExcel.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.exportExcel.Location = new System.Drawing.Point(99, 494);
-            this.exportExcel.Name = "exportExcel";
-            this.exportExcel.Size = new System.Drawing.Size(68, 26);
-            this.exportExcel.TabIndex = 158;
-            this.exportExcel.Text = "a Excel";
-            this.exportExcel.UseVisualStyleBackColor = true;
-            this.exportExcel.Click += new System.EventHandler(this.exportExcel_Click);
             // 
             // all
             // 
@@ -3894,7 +3584,7 @@
             // dateIngreso
             // 
             this.dateIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateIngreso.Location = new System.Drawing.Point(622, 7);
+            this.dateIngreso.Location = new System.Drawing.Point(627, 7);
             this.dateIngreso.Name = "dateIngreso";
             this.dateIngreso.Size = new System.Drawing.Size(108, 23);
             this.dateIngreso.TabIndex = 190;
@@ -3903,7 +3593,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label38.Location = new System.Drawing.Point(523, 10);
+            this.label38.Location = new System.Drawing.Point(527, 10);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(97, 17);
             this.label38.TabIndex = 189;
@@ -3920,22 +3610,12 @@
             this.clean.UseVisualStyleBackColor = true;
             this.clean.Click += new System.EventHandler(this.clean_Click);
             // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(525, 600);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(155, 17);
-            this.label46.TabIndex = 192;
-            this.label46.Text = "* Campos obligatorios";
-            // 
             // orden_inserccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1205, 624);
-            this.Controls.Add(this.label46);
             this.Controls.Add(this.clean);
             this.Controls.Add(this.dateIngreso);
             this.Controls.Add(this.textAnticipo);
@@ -3958,7 +3638,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "orden_inserccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = "Ingreso de Ordenes de Inserción";
             this.tabDatos.ResumeLayout(false);
             this.tabPageDatos.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
@@ -4194,6 +3874,7 @@
         private System.Windows.Forms.TextBox totalMeses;
         private System.Windows.Forms.TextBox total;
         private System.Windows.Forms.TextBox id;
+        private System.Windows.Forms.ComboBox comboBeneficio;
         private System.Windows.Forms.Button calculo;
         private System.Windows.Forms.ComboBox comboNacional;
         private System.Windows.Forms.Label label37;
@@ -4356,6 +4037,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_pautado;
         private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_facturado;
         private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_cobrado;
+        private System.Windows.Forms.ComboBox comboBeneficio2;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.ComboBox comboQPorcentaje;
@@ -4373,33 +4055,5 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox nombreBeneficio2;
         private System.Windows.Forms.TextBox nombreBeneficio;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox importeNoches;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox cantNoches;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Button exportExcel;
-        private System.Windows.Forms.ComboBox comboCuentaOp;
-        private System.Windows.Forms.Label labelCuentaOp;
-        private System.Windows.Forms.TextBox textID;
-        private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.ComboBox comboCuenta;
-        private System.Windows.Forms.Label labelCuenta;
-        private System.Windows.Forms.ComboBox comboOp;
-        private System.Windows.Forms.Label labelOp;
-        private System.Windows.Forms.ComboBox comboRazonOp;
-        private System.Windows.Forms.Label labelRazon;
-        private System.Windows.Forms.ComboBox comboBeneficio2;
-        private System.Windows.Forms.ComboBox comboBeneficio;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox linkTres;
-        private System.Windows.Forms.TextBox nombreTres;
-        private System.Windows.Forms.TextBox linkDos;
-        private System.Windows.Forms.TextBox nombreDos;
-        private System.Windows.Forms.Button exploreDos;
-        private System.Windows.Forms.Button exploreTres;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
     }
 }

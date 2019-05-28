@@ -49,13 +49,15 @@
             this.add = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textId = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboClientes = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.clean = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.clean);
             this.groupBox1.Controls.Add(this.comboRegion);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboSiglasHoteles);
@@ -109,9 +111,9 @@
             // 
             // textRegion
             // 
-            this.textRegion.Location = new System.Drawing.Point(119, 49);
+            this.textRegion.Location = new System.Drawing.Point(118, 50);
             this.textRegion.Name = "textRegion";
-            this.textRegion.Size = new System.Drawing.Size(223, 27);
+            this.textRegion.Size = new System.Drawing.Size(96, 27);
             this.textRegion.TabIndex = 96;
             // 
             // textHoteles
@@ -249,15 +251,15 @@
             this.textId.Name = "textId";
             this.textId.Size = new System.Drawing.Size(13, 27);
             this.textId.TabIndex = 94;
-            this.textId.Visible = false;
             // 
-            // comboBox1
+            // comboClientes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(668, 28);
-            this.comboBox1.TabIndex = 102;
+            this.comboClientes.FormattingEnabled = true;
+            this.comboClientes.Location = new System.Drawing.Point(25, 31);
+            this.comboClientes.Name = "comboClientes";
+            this.comboClientes.Size = new System.Drawing.Size(668, 28);
+            this.comboClientes.TabIndex = 102;
+            this.comboClientes.SelectedIndexChanged += new System.EventHandler(this.comboClientes_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -269,13 +271,25 @@
             this.label9.TabIndex = 101;
             this.label9.Text = "Selecciona Cliente: ";
             // 
+            // clean
+            // 
+            this.clean.BackColor = System.Drawing.Color.Transparent;
+            this.clean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clean.Location = new System.Drawing.Point(13, 257);
+            this.clean.Name = "clean";
+            this.clean.Size = new System.Drawing.Size(75, 31);
+            this.clean.TabIndex = 101;
+            this.clean.Text = "Limpiar";
+            this.clean.UseVisualStyleBackColor = false;
+            this.clean.Click += new System.EventHandler(this.Clean_Click);
+            // 
             // clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(717, 383);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboClientes);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -313,7 +327,8 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textId;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboClientes;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button clean;
     }
 }

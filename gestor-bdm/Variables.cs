@@ -8,8 +8,24 @@ namespace gestor_bdm
 {
     class Variables
     {
+        //private static double tc_planeacion;
+
+        //public static string Ruta_pdf
+        //{
+        //    get { return Variables.ruta_pdf; }
+        //    set { Variables.ruta_pdf = value; }
+        //}
+
         private static string sentencia = "server=172.20.3.45; database=bd-media; Uid=root; pwd=Medi@@dm1n!!;";
         //private static string sentencia = "server=localhost; database=bd-media; Uid=root; pwd=;Allow Zero Datetime=False;Convert Zero Datetime=True";
+
+        private static string ruta_pdf = "";
+
+        public static string Ruta_pdf
+        {
+            get { return Variables.ruta_pdf; }
+            set { Variables.ruta_pdf = value; }
+        }
 
         private static string privilegios = "admin", tipousuario = "";
 
@@ -180,7 +196,6 @@ namespace gestor_bdm
                 sentencia = value;
             }
         }
-
 
         //meses
 

@@ -44,11 +44,11 @@
             this.supplyManagersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ejecutivosDAFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.siglasHotelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contenidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMedia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,8 +114,8 @@
             // 
             this.saldosEdiaToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.money_bag;
             this.saldosEdiaToolStripMenuItem.Name = "saldosEdiaToolStripMenuItem";
-            this.saldosEdiaToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
-            this.saldosEdiaToolStripMenuItem.Text = "Saldos Media";
+            this.saldosEdiaToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
+            this.saldosEdiaToolStripMenuItem.Text = "Ordenes de Inserción";
             this.saldosEdiaToolStripMenuItem.Click += new System.EventHandler(this.saldosEdiaToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
@@ -188,6 +188,14 @@
             this.siglasHotelesToolStripMenuItem.Text = "Siglas hoteles";
             this.siglasHotelesToolStripMenuItem.Click += new System.EventHandler(this.siglasHotelesToolStripMenuItem_Click);
             // 
+            // cerrarConexiónToolStripMenuItem
+            // 
+            this.cerrarConexiónToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.delet;
+            this.cerrarConexiónToolStripMenuItem.Name = "cerrarConexiónToolStripMenuItem";
+            this.cerrarConexiónToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.cerrarConexiónToolStripMenuItem.Text = "Cerrar conexión";
+            this.cerrarConexiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarConexiónToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -216,14 +224,6 @@
             this.acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
-            // 
-            // cerrarConexiónToolStripMenuItem
-            // 
-            this.cerrarConexiónToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.delet;
-            this.cerrarConexiónToolStripMenuItem.Name = "cerrarConexiónToolStripMenuItem";
-            this.cerrarConexiónToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.cerrarConexiónToolStripMenuItem.Text = "Cerrar conexión";
-            this.cerrarConexiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarConexiónToolStripMenuItem_Click);
             // 
             // main
             // 

@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\BMXCWB050143\Desktop\WebSite\</PublishUrl>
+    <PublishUrl>D:\WebSite\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,15 +22,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>http://172.20.3.45/Application Files/</UpdateUrl>
+    <UpdateUrl>http:\\172.20.3.45/updateApp/</UpdateUrl>
     <TargetCulture>es-MX</TargetCulture>
     <ProductName>Gestor BestMedia</ProductName>
     <PublisherName>Best Travel Media</PublisherName>
     <SuiteName>Best Travel Media</SuiteName>
-    <MinimumRequiredVersion>1.0.0.23</MinimumRequiredVersion>
+    <MinimumRequiredVersion>1.0.0.38</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>32</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationRevision>56</ApplicationRevision>
+    <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -247,6 +247,12 @@
     </Compile>
     <Compile Include="general.cs" />
     <Compile Include="Variables.cs" />
+    <Compile Include="viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewer.Designer.cs">
+      <DependentUpon>viewer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="accounts.resx">
       <DependentUpon>accounts.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewer.resx">
+      <DependentUpon>viewer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="gestor-bdm_TemporaryKey.pfx" />
     <None Include="packages.config" />

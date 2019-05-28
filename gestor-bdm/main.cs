@@ -52,6 +52,11 @@ namespace gestor_bdm
                 //MessageBox.Show(Convert.ToString(year_d));
                 //MessageBox.Show(Convert.ToString(year));
 
+                if (month == month_d)
+                {
+                    
+                }
+
                 if (year == year_d && month == month_d && day == day_d)
                 {
                     MessageBox.Show("TC del día registrado", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -81,7 +86,7 @@ namespace gestor_bdm
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clientes ventana = new clientes();
+            clientes_tabla ventana = new clientes_tabla();
             ventana.MdiParent = this;
             ventana.Show();
         }

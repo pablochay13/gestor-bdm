@@ -34,16 +34,13 @@ namespace gestor_bdm
                 {
                     int n = listaClientes.Rows.Add();
                     listaClientes.Rows[n].Cells[0].Value = item["id_clientes"].ToString();
-                    listaClientes.Rows[n].Cells[1].Value = item["cliente"].ToString();
-                    listaClientes.Rows[n].Cells[2].Value = item["marca"].ToString();
-                    listaClientes.Rows[n].Cells[3].Value = item["inversion_usd"].ToString();
-                    listaClientes.Rows[n].Cells[4].Value = item["inversion_mxn"].ToString();
-                    listaClientes.Rows[n].Cells[5].Value = item["mf_paquete"].ToString();
-                    listaClientes.Rows[n].Cells[6].Value = item["reinversion"].ToString();
-                    listaClientes.Rows[n].Cells[7].Value = item["contacto"].ToString();
-                    listaClientes.Rows[n].Cells[8].Value = item["email"].ToString();
-                    listaClientes.Rows[n].Cells[9].Value = item["telefono"].ToString();
-                    listaClientes.Rows[n].Cells[10].Value = item["tipo"].ToString();
+                    listaClientes.Rows[n].Cells[1].Value = item["region"].ToString();
+                    listaClientes.Rows[n].Cells[2].Value = item["razon_social"].ToString();
+                    listaClientes.Rows[n].Cells[3].Value = item["nombre_comercial"].ToString();
+                    listaClientes.Rows[n].Cells[4].Value = item["id_hanna"].ToString();
+                    listaClientes.Rows[n].Cells[5].Value = item["siglas_hanna"].ToString();
+                    listaClientes.Rows[n].Cells[6].Value = item["sigla_hoteles"].ToString();
+                    listaClientes.Rows[n].Cells[7].Value = item["abrev_hotel"].ToString();
                 }
 
                 con.Close();
@@ -115,7 +112,7 @@ namespace gestor_bdm
                 string busqueda = textFind.Text;
 
                 con.Open();
-                MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM clientes WHERE cliente LIKE '%" + busqueda + "%'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM clientes WHERE razon_social LIKE '%" + busqueda + "%'", con);
                 DataTable dt = new DataTable();
                 listaClientes.Rows.Clear();
                 listaClientes.Refresh();
@@ -124,16 +121,13 @@ namespace gestor_bdm
                 {
                     int n = listaClientes.Rows.Add();
                     listaClientes.Rows[n].Cells[0].Value = item["id_clientes"].ToString();
-                    listaClientes.Rows[n].Cells[1].Value = item["cliente"].ToString();
-                    listaClientes.Rows[n].Cells[2].Value = item["marca"].ToString();
-                    listaClientes.Rows[n].Cells[3].Value = item["inversion_usd"].ToString();
-                    listaClientes.Rows[n].Cells[4].Value = item["inversion_mxn"].ToString();
-                    listaClientes.Rows[n].Cells[5].Value = item["mf_paquete"].ToString();
-                    listaClientes.Rows[n].Cells[6].Value = item["reinversion"].ToString();
-                    listaClientes.Rows[n].Cells[7].Value = item["contacto"].ToString();
-                    listaClientes.Rows[n].Cells[8].Value = item["email"].ToString();
-                    listaClientes.Rows[n].Cells[9].Value = item["telefono"].ToString();
-                    listaClientes.Rows[n].Cells[10].Value = item["tipo"].ToString();
+                    listaClientes.Rows[n].Cells[1].Value = item["region"].ToString();
+                    listaClientes.Rows[n].Cells[2].Value = item["razon_social"].ToString();
+                    listaClientes.Rows[n].Cells[3].Value = item["nombre_comercial"].ToString();
+                    listaClientes.Rows[n].Cells[4].Value = item["id_hanna"].ToString();
+                    listaClientes.Rows[n].Cells[5].Value = item["siglas_hanna"].ToString();
+                    listaClientes.Rows[n].Cells[6].Value = item["sigla_hoteles"].ToString();
+                    listaClientes.Rows[n].Cells[7].Value = item["abrev_hoteles"].ToString();
                 }
 
                 con.Close();
@@ -163,25 +157,118 @@ namespace gestor_bdm
 
         private void listaClientes_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //try
-            //{
-            //    int n = listaClientes.SelectedRows[0].Index;
-            //    textId.Text = listaClientes.Rows[n].Cells[0].Value.ToString();
-            //    textCliente.Text = listaClientes.Rows[n].Cells[1].Value.ToString();
-            //    textMarca.Text = listaClientes.Rows[n].Cells[2].Value.ToString();
-            //    textUSD.Text = listaClientes.Rows[n].Cells[3].Value.ToString();
-            //    textMXN.Text = listaClientes.Rows[n].Cells[4].Value.ToString();
-            //    textPaquete.Text = listaClientes.Rows[n].Cells[5].Value.ToString();
-            //    textReinver.Text = listaClientes.Rows[n].Cells[6].Value.ToString();
-            //    textContacto.Text = listaClientes.Rows[n].Cells[7].Value.ToString();
-            //    textEmail.Text = listaClientes.Rows[n].Cells[8].Value.ToString();
-            //    textTelefono.Text = listaClientes.Rows[n].Cells[9].Value.ToString();
-            //    textTipo.Text = listaClientes.Rows[n].Cells[10].Value.ToString();
-            //}
-            //catch (Exception m)
-            //{
-            //    MessageBox.Show(m.Message);
-            //}
+            
+        }
+
+        private void ListaClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            if (textRegion.Text == "" && textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
+            {
+                MessageBox.Show("Campos vacios!", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO clientes (`region`, `razon_social`, `nombre_comercial`, `id_hanna`, `siglas_hanna`, `sigla_hotel`, `abrev_hotel`) VALUES ('" + textRegion.Text + "','" + textRazon.Text + "','" + textComercial.Text + "','" + textIDHanna.Text + "','" + textSiglaHanna.Text + "','" + comboSiglasHoteles.Text + "','" + textHoteles.Text + "' )", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    con.Close();
+
+                    limpiar();
+                }
+                catch (Exception m)
+                {
+                    MessageBox.Show(m.Message);
+                }
+            }
+        }
+
+        private void Edit_Click(object sender, EventArgs e)
+        {
+            if (textRegion.Text == "" && textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
+
+            {
+                MessageBox.Show("Campos vacios!", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `clientes` SET `region`='" + textRegion.Text + "',`razon_social`='" + textRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`id_hanna`='" + textIDHanna.Text + "',`siglas_hanna`='" + textSiglaHanna.Text + "',`sigla_hoteles`='" + comboSiglasHoteles.Text + "',`abrev_hotel`='" + textHoteles.Text + "' WHERE id_clientes = '" + textId.Text + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    con.Close();
+
+                    limpiar();
+                }
+                catch (Exception m)
+                {
+                    MessageBox.Show(m.Message);
+                }
+            }
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM `clientes` WHERE id_clientes ='" + textId.Text + "'", con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Registro eliminado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                limpiar();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        private void Clean_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        public void limpiar()
+        {
+            textId.Text = "";
+            textHoteles.Text = "";
+            textRazon.Text = "";
+            textComercial.Text = "";
+            textIDHanna.Text = "";
+            textSiglaHanna.Text = "";
+            textHoteles.Text = "";
+            comboSiglasHoteles.Text = "";
+        }
+
+        private void ListaClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int n = listaClientes.SelectedRows[0].Index;
+                textId.Text = listaClientes.Rows[n].Cells[0].Value.ToString();
+                textRegion.Text = listaClientes.Rows[n].Cells[1].Value.ToString();
+                textRazon.Text = listaClientes.Rows[n].Cells[2].Value.ToString();
+                textComercial.Text = listaClientes.Rows[n].Cells[3].Value.ToString();
+                textIDHanna.Text = listaClientes.Rows[n].Cells[4].Value.ToString();
+                textSiglaHanna.Text = listaClientes.Rows[n].Cells[5].Value.ToString();
+                comboSiglasHoteles.Text = listaClientes.Rows[n].Cells[6].Value.ToString();
+                textHoteles.Text = listaClientes.Rows[n].Cells[7].Value.ToString();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
         }
     }
 }

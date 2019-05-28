@@ -19,6 +19,7 @@ namespace gestor_bdm
         {
             InitializeComponent();
             account();
+            pais();
         }
 
         public void account()
@@ -45,6 +46,30 @@ namespace gestor_bdm
             }
         }
 
+        public void pais()
+        {
+            try
+            {
+                string selectQuery = "select id, region from paises";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboPais.ValueMember = "id";
+                comboPais.DisplayMember = "region";
+                comboPais.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void comboSupply_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -54,14 +79,14 @@ namespace gestor_bdm
                 //MessageBox.Show(Convert.ToString(idCombo));
                 con.Close();
                 con.Open();
-                string sql = "SELECT * FROM `supply_manager` WHERE id = '" + idCombo + "'";
+                string sql = "SELECT * FROM `supply_manager` WHERE nombre = '" + comboSupply.Text + "'";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     int Ids = Convert.ToInt32(reader["id"]);
                     string nombreAccount = Convert.ToString(reader["nombre"]);
-                    string t_area = Convert.ToString(reader["area"]);
+                    string t_area = Convert.ToString(reader["region"]);
                     string t_correo = Convert.ToString(reader["correo"]);
 
                     id.Text = Convert.ToString(Ids);
@@ -92,7 +117,7 @@ namespace gestor_bdm
                     {
                         con.Open();
 
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `area` , `correo`) VALUES ('" + name.Text + "','" + area.Text + "','" + mail.Text + "' )", con);
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `region` , `correo`) VALUES ('" + name.Text + "','" + comboPais.Text + "','" + mail.Text + "' )", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         con.Close();
@@ -124,7 +149,7 @@ namespace gestor_bdm
                 try
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `supply_manager` SET `nombre`='" + name.Text + "',`area`='" + area.Text + "',`correo`='" + mail.Text + "' WHERE id = '" + id.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `supply_manager` SET `nombre`='" + name.Text + "',`region`='" + comboPais.Text + "',`correo`='" + mail.Text + "' WHERE id = '" + id.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -168,6 +193,11 @@ namespace gestor_bdm
         private void close_MouseClick(object sender, MouseEventArgs e)
         {
             this.Close();
+        }
+
+        private void Supply_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
