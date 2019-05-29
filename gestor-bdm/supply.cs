@@ -20,6 +20,10 @@ namespace gestor_bdm
             InitializeComponent();
             account();
             pais();
+            comboPais.SelectedIndex = 0;
+            comboStatus.SelectedIndex = 0;
+            comboSupply.SelectedIndex = 0;
+            comboCluster.SelectedIndex = 0;
         }
 
         public void account()
@@ -87,7 +91,18 @@ namespace gestor_bdm
                     int Ids = Convert.ToInt32(reader["id"]);
                     string nombreAccount = Convert.ToString(reader["nombre"]);
                     string t_area = Convert.ToString(reader["region"]);
+                    string t_cluster = Convert.ToString(reader["cluster"]);
                     string t_correo = Convert.ToString(reader["correo"]);
+                    string t_status = Convert.ToString(reader["status"]);
+
+                    if (t_status == "Activo")
+                    {
+                        comboStatus.SelectedIndex = 0;
+                    }
+                    else if (t_status == "Inactivo")
+                    {
+                        comboStatus.SelectedIndex = 1;
+                    }
 
                     id.Text = Convert.ToString(Ids);
                     name.Text = nombreAccount;
@@ -115,9 +130,20 @@ namespace gestor_bdm
                 {
                     try
                     {
+                        string valor = "";
+
+                        if (comboStatus.SelectedIndex == 0)
+                        {
+                            valor = "Activo";
+                        }
+                        else
+                        {
+                            valor = "Inactivo";
+                        }
+
                         con.Open();
 
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `region` , `correo`) VALUES ('" + name.Text + "','" + comboPais.Text + "','" + mail.Text + "' )", con);
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `region` , `cluster` , `cluster` , `correo` , `status`) VALUES ('" + name.Text + "','" + comboPais.Text + "','" + comboCluster.Text + "','" + mail.Text + "','" + valor + "' )", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         con.Close();
@@ -148,8 +174,19 @@ namespace gestor_bdm
             {
                 try
                 {
+                    string valor = "";
+
+                    if (comboStatus.SelectedIndex == 0)
+                    {
+                        valor = "Activo";
+                    }
+                    else
+                    {
+                        valor = "Inactivo";
+                    }
+
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `supply_manager` SET `nombre`='" + name.Text + "',`region`='" + comboPais.Text + "',`correo`='" + mail.Text + "' WHERE id = '" + id.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `supply_manager` SET `nombre`='" + name.Text + "',`region`='" + comboPais.Text + "',`cluster`='" + comboCluster.Text + "',`correo`='" + mail.Text + "',`status`='" + valor + "' WHERE id = '" + id.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();

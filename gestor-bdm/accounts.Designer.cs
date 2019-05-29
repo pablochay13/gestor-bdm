@@ -43,6 +43,8 @@
             this.add = new System.Windows.Forms.Button();
             this.edit = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
@@ -146,7 +148,7 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(102, 275);
+            this.id.Location = new System.Drawing.Point(102, 338);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(100, 27);
             this.id.TabIndex = 18;
@@ -154,7 +156,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(34, 312);
+            this.add.Location = new System.Drawing.Point(34, 375);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 31);
             this.add.TabIndex = 19;
@@ -164,7 +166,7 @@
             // 
             // edit
             // 
-            this.edit.Location = new System.Drawing.Point(115, 312);
+            this.edit.Location = new System.Drawing.Point(115, 375);
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(75, 31);
             this.edit.TabIndex = 20;
@@ -174,7 +176,7 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(196, 312);
+            this.delete.Location = new System.Drawing.Point(196, 375);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 31);
             this.delete.TabIndex = 21;
@@ -182,12 +184,34 @@
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 276);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Status:";
+            // 
+            // comboStatus
+            // 
+            this.comboStatus.FormattingEnabled = true;
+            this.comboStatus.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.comboStatus.Location = new System.Drawing.Point(12, 304);
+            this.comboStatus.Name = "comboStatus";
+            this.comboStatus.Size = new System.Drawing.Size(280, 28);
+            this.comboStatus.TabIndex = 23;
+            // 
             // accounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(304, 369);
+            this.ClientSize = new System.Drawing.Size(304, 429);
+            this.Controls.Add(this.comboStatus);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.add);
@@ -206,7 +230,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "accounts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "accounts";
+            this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
@@ -232,5 +256,7 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button edit;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboStatus;
     }
 }

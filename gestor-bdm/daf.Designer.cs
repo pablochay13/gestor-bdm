@@ -43,13 +43,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(195, 312);
+            this.delete.Location = new System.Drawing.Point(196, 374);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 31);
             this.delete.TabIndex = 34;
@@ -59,7 +61,7 @@
             // 
             // edit
             // 
-            this.edit.Location = new System.Drawing.Point(114, 312);
+            this.edit.Location = new System.Drawing.Point(115, 374);
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(75, 31);
             this.edit.TabIndex = 33;
@@ -69,7 +71,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(33, 312);
+            this.add.Location = new System.Drawing.Point(34, 374);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 31);
             this.add.TabIndex = 32;
@@ -79,7 +81,7 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(101, 275);
+            this.id.Location = new System.Drawing.Point(102, 337);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(100, 27);
             this.id.TabIndex = 31;
@@ -182,12 +184,35 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ejecutivos DAF";
             // 
+            // comboStatus
+            // 
+            this.comboStatus.FormattingEnabled = true;
+            this.comboStatus.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.comboStatus.Location = new System.Drawing.Point(12, 302);
+            this.comboStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboStatus.Name = "comboStatus";
+            this.comboStatus.Size = new System.Drawing.Size(279, 28);
+            this.comboStatus.TabIndex = 43;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 276);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Status:";
+            // 
             // daf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(304, 369);
+            this.ClientSize = new System.Drawing.Size(304, 428);
+            this.Controls.Add(this.comboStatus);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.add);
@@ -232,5 +257,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox close;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboStatus;
+        private System.Windows.Forms.Label label6;
     }
 }

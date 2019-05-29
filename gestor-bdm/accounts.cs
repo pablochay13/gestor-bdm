@@ -17,6 +17,7 @@ namespace gestor_bdm
         public accounts()
         {
             InitializeComponent();
+            comboStatus.SelectedIndex = 0;
             account();
         }
 
@@ -29,7 +30,7 @@ namespace gestor_bdm
                 //MessageBox.Show(Convert.ToString(idCombo));
                 con.Close();
                 con.Open();
-                string sql = "SELECT * FROM `account_manager` WHERE id = '" + idCombo + "'";
+                string sql = "SELECT * FROM `account_manager` WHERE nombre = '" + comboAccounts.Text + "'";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
@@ -38,6 +39,16 @@ namespace gestor_bdm
                     string nombreAccount = Convert.ToString(reader["nombre"]);
                     string t_area = Convert.ToString(reader["area"]);
                     string t_correo = Convert.ToString(reader["correo"]);
+                    string t_status = Convert.ToString(reader["status"]);
+
+                    if(t_status == "Activo")
+                    {
+                        comboStatus.SelectedIndex = 0;
+                    }
+                    else if (t_status == "Inactivo")
+                    {
+                        comboStatus.SelectedIndex = 1;
+                    }
 
                     id.Text = Convert.ToString(Ids);
                     name.Text = nombreAccount;
@@ -91,7 +102,18 @@ namespace gestor_bdm
                     {
                         con.Open();
 
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO account_manager (`nombre` , `area` , `correo`) VALUES ('" + name.Text + "','" + area.Text + "','" + mail.Text + "' )", con);
+                        string valor = "";
+
+                        if (comboStatus.SelectedIndex== 0)
+                        {
+                            valor = "Activo";
+                        }
+                        else
+                        {
+                            valor = "Inactivo";
+                        }
+
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO account_manager (`nombre` , `area` , `correo` , `status`) VALUES ('" + name.Text + "','" + area.Text + "','" + mail.Text + "','" + valor + "' )", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         con.Close();
@@ -122,8 +144,19 @@ namespace gestor_bdm
             {
                 try
                 {
+                    string valor = "";
+
+                    if (comboStatus.SelectedIndex == 0)
+                    {
+                        valor = "Activo";
+                    }
+                    else
+                    {
+                        valor = "Inactivo";
+                    }
+
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `account_manager` SET `nombre`='" + name.Text + "',`area`='" + area.Text + "',`correo`='" + mail.Text + "' WHERE id = '" + id.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `account_manager` SET `nombre`='" + name.Text + "',`area`='" + area.Text + "',`correo`='" + mail.Text + "',`status`='" + valor + "' WHERE id = '" + id.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();

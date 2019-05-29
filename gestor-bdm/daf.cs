@@ -18,6 +18,7 @@ namespace gestor_bdm
         public daf()
         {
             InitializeComponent();
+            comboStatus.SelectedIndex = 0;
             account();
         }
 
@@ -59,8 +60,19 @@ namespace gestor_bdm
             {
                 try
                 {
+                    string valor = "";
+
+                    if (comboStatus.SelectedIndex == 0)
+                    {
+                        valor = "Activo";
+                    }
+                    else
+                    {
+                        valor = "Inactivo";
+                    }
+
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `ejecutivo_daf` SET `nombre`='" + name.Text + "',`area`='" + area.Text + "',`correo`='" + mail.Text + "' WHERE id = '" + id.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `ejecutivo_daf` SET `nombre`='" + name.Text + "',`area`='" + area.Text + "',`correo`='" + mail.Text + "',`status`='" + valor + "' WHERE id = '" + id.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -85,9 +97,20 @@ namespace gestor_bdm
                 {
                     try
                     {
+                        string valor = "";
+
+                        if (comboStatus.SelectedIndex == 0)
+                        {
+                            valor = "Activo";
+                        }
+                        else
+                        {
+                            valor = "Inactivo";
+                        }
+
                         con.Open();
 
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO ejecutivo_daf (`nombre` , `area` , `correo`) VALUES ('" + name.Text + "','" + area.Text + "','" + mail.Text + "' )", con);
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO ejecutivo_daf (`nombre` , `area` , `correo` , `status`) VALUES ('" + name.Text + "','" + area.Text + "','" + mail.Text + "','" + valor + "' )", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         con.Close();
@@ -141,7 +164,7 @@ namespace gestor_bdm
                 //MessageBox.Show(Convert.ToString(idCombo));
                 con.Close();
                 con.Open();
-                string sql = "SELECT * FROM `ejecutivo_daf` WHERE id = '" + idCombo + "'";
+                string sql = "SELECT * FROM `ejecutivo_daf` WHERE nombre = '" + comboDAF.Text + "'";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
@@ -150,6 +173,16 @@ namespace gestor_bdm
                     string nombreAccount = Convert.ToString(reader["nombre"]);
                     string t_area = Convert.ToString(reader["area"]);
                     string t_correo = Convert.ToString(reader["correo"]);
+                    string t_status = Convert.ToString(reader["status"]);
+
+                    if (t_status == "Activo")
+                    {
+                        comboStatus.SelectedIndex = 0;
+                    }
+                    else if (t_status == "Inactivo")
+                    {
+                        comboStatus.SelectedIndex = 1;
+                    }
 
                     id.Text = Convert.ToString(Ids);
                     name.Text = nombreAccount;
