@@ -20,6 +20,8 @@ namespace gestor_bdm
             InitializeComponent();
             listaClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             llenar();
+            hotelOrden();
+            comboStatus.SelectedIndex = 0;
         }
 
         public void llenar()
@@ -176,7 +178,7 @@ namespace gestor_bdm
                 try
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO clientes (`region`, `razon_social`, `nombre_comercial`, `id_hanna`, `siglas_hanna`, `sigla_hotel`, `abrev_hotel`) VALUES ('" + textRegion.Text + "','" + textRazon.Text + "','" + textComercial.Text + "','" + textIDHanna.Text + "','" + textSiglaHanna.Text + "','" + comboSiglasHoteles.Text + "','" + textHoteles.Text + "' )", con);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO clientes (`region`, `razon_social`, `nombre_comercial`, `id_hanna`, `siglas_hanna`, `sigla_hotel`, `abrev_hotel` , `status`) VALUES ('" + textRegion.Text + "','" + textRazon.Text + "','" + textComercial.Text + "','" + textIDHanna.Text + "','" + textSiglaHanna.Text + "','" + comboHoteles.Text + "','" + textHoteles.Text + "','" + comboStatus.Text + "' )", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -202,7 +204,7 @@ namespace gestor_bdm
                 try
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `clientes` SET `region`='" + textRegion.Text + "',`razon_social`='" + textRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`id_hanna`='" + textIDHanna.Text + "',`siglas_hanna`='" + textSiglaHanna.Text + "',`sigla_hoteles`='" + comboSiglasHoteles.Text + "',`abrev_hotel`='" + textHoteles.Text + "' WHERE id_clientes = '" + textId.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `clientes` SET `region`='" + textRegion.Text + "',`razon_social`='" + textRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`id_hanna`='" + textIDHanna.Text + "',`siglas_hanna`='" + textSiglaHanna.Text + "',`sigla_hoteles`='" + comboHoteles.Text + "',`abrev_hotel`='" + textHoteles.Text + "',`status`='" + comboStatus.Text + "' WHERE id_clientes = '" + textId.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -248,7 +250,6 @@ namespace gestor_bdm
             textIDHanna.Text = "";
             textSiglaHanna.Text = "";
             textHoteles.Text = "";
-            comboSiglasHoteles.Text = "";
         }
 
         private void ListaClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -262,8 +263,59 @@ namespace gestor_bdm
                 textComercial.Text = listaClientes.Rows[n].Cells[3].Value.ToString();
                 textIDHanna.Text = listaClientes.Rows[n].Cells[4].Value.ToString();
                 textSiglaHanna.Text = listaClientes.Rows[n].Cells[5].Value.ToString();
-                comboSiglasHoteles.Text = listaClientes.Rows[n].Cells[6].Value.ToString();
+                comboHoteles.Text = listaClientes.Rows[n].Cells[6].Value.ToString();
                 textHoteles.Text = listaClientes.Rows[n].Cells[7].Value.ToString();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        public void hotelOrden()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, hotel from abrev_hoteles";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboHoteles.ValueMember = "id";
+                comboHoteles.DisplayMember = "hotel";
+                comboHoteles.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ComboHoteles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboHoteles.SelectedIndex);
+                int idCombo = valor + 1;
+                con.Close();
+                con.Open();
+                string sql = "SELECT `abreviatura_hotel` FROM `abrev_hoteles` WHERE id = '" + idCombo + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string nombreHotel = Convert.ToString(reader["abreviatura_hotel"]);
+                    labelHotel.Text = nombreHotel;
+                }
+
+                con.Close();
             }
             catch (Exception m)
             {

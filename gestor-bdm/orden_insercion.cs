@@ -1867,6 +1867,11 @@ namespace gestor_bdm
 
         }
 
+        private void LabelHotel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void ExploreDos_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);

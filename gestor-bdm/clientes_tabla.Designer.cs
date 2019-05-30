@@ -35,27 +35,6 @@
             this.textFind = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.listaClientes = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboRegion = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboSiglasHoteles = new System.Windows.Forms.TextBox();
-            this.textRegion = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textIDHanna = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textRazon = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textHoteles = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textSiglaHanna = new System.Windows.Forms.TextBox();
-            this.textComercial = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.delete = new System.Windows.Forms.Button();
-            this.edit = new System.Windows.Forms.Button();
-            this.add = new System.Windows.Forms.Button();
-            this.clean = new System.Windows.Forms.Button();
-            this.textId = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.region = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +43,30 @@
             this.siglas_hanna = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sigla_hoteles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.abrev_hotel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textId = new System.Windows.Forms.TextBox();
+            this.clean = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.edit = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
+            this.textHoteles = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textSiglaHanna = new System.Windows.Forms.TextBox();
+            this.textComercial = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboRegion = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textRazon = new System.Windows.Forms.TextBox();
+            this.textRegion = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textIDHanna = new System.Windows.Forms.TextBox();
+            this.labelHotel = new System.Windows.Forms.TextBox();
+            this.comboHoteles = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.listaClientes)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -142,216 +145,6 @@
             this.listaClientes.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaClientes_CellContentDoubleClick);
             this.listaClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListaClientes_CellDoubleClick);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textId);
-            this.groupBox1.Controls.Add(this.clean);
-            this.groupBox1.Controls.Add(this.delete);
-            this.groupBox1.Controls.Add(this.edit);
-            this.groupBox1.Controls.Add(this.add);
-            this.groupBox1.Controls.Add(this.textHoteles);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textSiglaHanna);
-            this.groupBox1.Controls.Add(this.textComercial);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.comboRegion);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.comboSiglasHoteles);
-            this.groupBox1.Controls.Add(this.textRazon);
-            this.groupBox1.Controls.Add(this.textRegion);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textIDHanna);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(354, 479);
-            this.groupBox1.TabIndex = 64;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos";
-            // 
-            // comboRegion
-            // 
-            this.comboRegion.FormattingEnabled = true;
-            this.comboRegion.Location = new System.Drawing.Point(112, 56);
-            this.comboRegion.Name = "comboRegion";
-            this.comboRegion.Size = new System.Drawing.Size(99, 28);
-            this.comboRegion.TabIndex = 109;
-            this.comboRegion.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
-            this.label1.TabIndex = 108;
-            this.label1.Text = "Región Siglas";
-            // 
-            // comboSiglasHoteles
-            // 
-            this.comboSiglasHoteles.Location = new System.Drawing.Point(10, 320);
-            this.comboSiglasHoteles.Name = "comboSiglasHoteles";
-            this.comboSiglasHoteles.Size = new System.Drawing.Size(329, 26);
-            this.comboSiglasHoteles.TabIndex = 107;
-            // 
-            // textRegion
-            // 
-            this.textRegion.Location = new System.Drawing.Point(10, 56);
-            this.textRegion.Name = "textRegion";
-            this.textRegion.Size = new System.Drawing.Size(96, 26);
-            this.textRegion.TabIndex = 106;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 296);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 20);
-            this.label6.TabIndex = 105;
-            this.label6.Text = "Sigla Hoteles";
-            // 
-            // textIDHanna
-            // 
-            this.textIDHanna.Location = new System.Drawing.Point(10, 215);
-            this.textIDHanna.Name = "textIDHanna";
-            this.textIDHanna.Size = new System.Drawing.Size(329, 26);
-            this.textIDHanna.TabIndex = 104;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 20);
-            this.label4.TabIndex = 103;
-            this.label4.Text = "ID Hanna - ID Maestro";
-            // 
-            // textRazon
-            // 
-            this.textRazon.Location = new System.Drawing.Point(10, 108);
-            this.textRazon.Name = "textRazon";
-            this.textRazon.Size = new System.Drawing.Size(329, 26);
-            this.textRazon.TabIndex = 102;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 101;
-            this.label2.Text = "Razón Social";
-            // 
-            // textHoteles
-            // 
-            this.textHoteles.Location = new System.Drawing.Point(10, 373);
-            this.textHoteles.Name = "textHoteles";
-            this.textHoteles.Size = new System.Drawing.Size(329, 26);
-            this.textHoteles.TabIndex = 115;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 349);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 20);
-            this.label7.TabIndex = 114;
-            this.label7.Text = "Abreviatura Hoteles";
-            // 
-            // textSiglaHanna
-            // 
-            this.textSiglaHanna.Location = new System.Drawing.Point(10, 267);
-            this.textSiglaHanna.Name = "textSiglaHanna";
-            this.textSiglaHanna.Size = new System.Drawing.Size(329, 26);
-            this.textSiglaHanna.TabIndex = 113;
-            // 
-            // textComercial
-            // 
-            this.textComercial.Location = new System.Drawing.Point(10, 160);
-            this.textComercial.Name = "textComercial";
-            this.textComercial.Size = new System.Drawing.Size(329, 26);
-            this.textComercial.TabIndex = 111;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 20);
-            this.label3.TabIndex = 110;
-            this.label3.Text = "Nombre Comercial";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
-            this.label5.TabIndex = 112;
-            this.label5.Text = "Siglas Hanna";
-            // 
-            // delete
-            // 
-            this.delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.delete.Location = new System.Drawing.Point(267, 442);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(72, 31);
-            this.delete.TabIndex = 117;
-            this.delete.Text = "Eliminar";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.Delete_Click);
-            // 
-            // edit
-            // 
-            this.edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.edit.Location = new System.Drawing.Point(201, 442);
-            this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(60, 31);
-            this.edit.TabIndex = 116;
-            this.edit.Text = "Editar";
-            this.edit.UseVisualStyleBackColor = true;
-            this.edit.Click += new System.EventHandler(this.Edit_Click);
-            // 
-            // add
-            // 
-            this.add.BackColor = System.Drawing.Color.Transparent;
-            this.add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.add.Location = new System.Drawing.Point(120, 442);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 31);
-            this.add.TabIndex = 118;
-            this.add.Text = "Agregar";
-            this.add.UseVisualStyleBackColor = false;
-            this.add.Click += new System.EventHandler(this.Add_Click);
-            // 
-            // clean
-            // 
-            this.clean.BackColor = System.Drawing.Color.Transparent;
-            this.clean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clean.Location = new System.Drawing.Point(39, 442);
-            this.clean.Name = "clean";
-            this.clean.Size = new System.Drawing.Size(75, 31);
-            this.clean.TabIndex = 119;
-            this.clean.Text = "Limpiar";
-            this.clean.UseVisualStyleBackColor = false;
-            this.clean.Click += new System.EventHandler(this.Clean_Click);
-            // 
-            // textId
-            // 
-            this.textId.Location = new System.Drawing.Point(292, 54);
-            this.textId.Name = "textId";
-            this.textId.Size = new System.Drawing.Size(47, 26);
-            this.textId.TabIndex = 120;
-            // 
             // id
             // 
             this.id.HeaderText = "ID";
@@ -400,6 +193,251 @@
             this.abrev_hotel.Name = "abrev_hotel";
             this.abrev_hotel.ReadOnly = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.labelHotel);
+            this.groupBox1.Controls.Add(this.comboHoteles);
+            this.groupBox1.Controls.Add(this.comboStatus);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.textId);
+            this.groupBox1.Controls.Add(this.clean);
+            this.groupBox1.Controls.Add(this.delete);
+            this.groupBox1.Controls.Add(this.edit);
+            this.groupBox1.Controls.Add(this.add);
+            this.groupBox1.Controls.Add(this.textHoteles);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.textSiglaHanna);
+            this.groupBox1.Controls.Add(this.textComercial);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textRazon);
+            this.groupBox1.Controls.Add(this.textRegion);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.textIDHanna);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(354, 479);
+            this.groupBox1.TabIndex = 64;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos";
+            // 
+            // comboStatus
+            // 
+            this.comboStatus.FormattingEnabled = true;
+            this.comboStatus.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.comboStatus.Location = new System.Drawing.Point(240, 57);
+            this.comboStatus.Name = "comboStatus";
+            this.comboStatus.Size = new System.Drawing.Size(99, 28);
+            this.comboStatus.TabIndex = 122;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(236, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 20);
+            this.label8.TabIndex = 121;
+            this.label8.Text = "Status:";
+            // 
+            // textId
+            // 
+            this.textId.Location = new System.Drawing.Point(301, 25);
+            this.textId.Name = "textId";
+            this.textId.Size = new System.Drawing.Size(47, 26);
+            this.textId.TabIndex = 120;
+            this.textId.Visible = false;
+            // 
+            // clean
+            // 
+            this.clean.BackColor = System.Drawing.Color.Transparent;
+            this.clean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clean.Location = new System.Drawing.Point(39, 442);
+            this.clean.Name = "clean";
+            this.clean.Size = new System.Drawing.Size(75, 31);
+            this.clean.TabIndex = 119;
+            this.clean.Text = "Limpiar";
+            this.clean.UseVisualStyleBackColor = false;
+            this.clean.Click += new System.EventHandler(this.Clean_Click);
+            // 
+            // delete
+            // 
+            this.delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.delete.Location = new System.Drawing.Point(267, 442);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(72, 31);
+            this.delete.TabIndex = 117;
+            this.delete.Text = "Eliminar";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // edit
+            // 
+            this.edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.edit.Location = new System.Drawing.Point(201, 442);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(60, 31);
+            this.edit.TabIndex = 116;
+            this.edit.Text = "Editar";
+            this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.Edit_Click);
+            // 
+            // add
+            // 
+            this.add.BackColor = System.Drawing.Color.Transparent;
+            this.add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.add.Location = new System.Drawing.Point(120, 442);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 31);
+            this.add.TabIndex = 118;
+            this.add.Text = "Agregar";
+            this.add.UseVisualStyleBackColor = false;
+            this.add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // textHoteles
+            // 
+            this.textHoteles.Location = new System.Drawing.Point(10, 373);
+            this.textHoteles.Name = "textHoteles";
+            this.textHoteles.Size = new System.Drawing.Size(329, 26);
+            this.textHoteles.TabIndex = 115;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 349);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 20);
+            this.label7.TabIndex = 114;
+            this.label7.Text = "Abreviatura Hoteles:";
+            // 
+            // textSiglaHanna
+            // 
+            this.textSiglaHanna.Location = new System.Drawing.Point(10, 267);
+            this.textSiglaHanna.Name = "textSiglaHanna";
+            this.textSiglaHanna.Size = new System.Drawing.Size(329, 26);
+            this.textSiglaHanna.TabIndex = 113;
+            // 
+            // textComercial
+            // 
+            this.textComercial.Location = new System.Drawing.Point(10, 160);
+            this.textComercial.Name = "textComercial";
+            this.textComercial.Size = new System.Drawing.Size(329, 26);
+            this.textComercial.TabIndex = 111;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 137);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 20);
+            this.label3.TabIndex = 110;
+            this.label3.Text = "Nombre Comercial:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 244);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 20);
+            this.label5.TabIndex = 112;
+            this.label5.Text = "Siglas Hanna:";
+            // 
+            // comboRegion
+            // 
+            this.comboRegion.FormattingEnabled = true;
+            this.comboRegion.Location = new System.Drawing.Point(996, 13);
+            this.comboRegion.Name = "comboRegion";
+            this.comboRegion.Size = new System.Drawing.Size(34, 28);
+            this.comboRegion.TabIndex = 109;
+            this.comboRegion.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "Región Siglas";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 101;
+            this.label2.Text = "Razón Social:";
+            // 
+            // textRazon
+            // 
+            this.textRazon.Location = new System.Drawing.Point(10, 108);
+            this.textRazon.Name = "textRazon";
+            this.textRazon.Size = new System.Drawing.Size(329, 26);
+            this.textRazon.TabIndex = 102;
+            // 
+            // textRegion
+            // 
+            this.textRegion.Location = new System.Drawing.Point(10, 56);
+            this.textRegion.Name = "textRegion";
+            this.textRegion.Size = new System.Drawing.Size(96, 26);
+            this.textRegion.TabIndex = 106;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(175, 20);
+            this.label4.TabIndex = 103;
+            this.label4.Text = "ID Hanna - ID Maestro:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 296);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 20);
+            this.label6.TabIndex = 105;
+            this.label6.Text = "Sigla Hoteles:";
+            // 
+            // textIDHanna
+            // 
+            this.textIDHanna.Location = new System.Drawing.Point(10, 215);
+            this.textIDHanna.Name = "textIDHanna";
+            this.textIDHanna.Size = new System.Drawing.Size(329, 26);
+            this.textIDHanna.TabIndex = 104;
+            // 
+            // labelHotel
+            // 
+            this.labelHotel.ForeColor = System.Drawing.Color.Black;
+            this.labelHotel.Location = new System.Drawing.Point(271, 321);
+            this.labelHotel.Name = "labelHotel";
+            this.labelHotel.Size = new System.Drawing.Size(68, 26);
+            this.labelHotel.TabIndex = 161;
+            // 
+            // comboHoteles
+            // 
+            this.comboHoteles.ForeColor = System.Drawing.Color.Black;
+            this.comboHoteles.FormattingEnabled = true;
+            this.comboHoteles.Location = new System.Drawing.Point(10, 319);
+            this.comboHoteles.Name = "comboHoteles";
+            this.comboHoteles.Size = new System.Drawing.Size(251, 28);
+            this.comboHoteles.TabIndex = 160;
+            this.comboHoteles.SelectedIndexChanged += new System.EventHandler(this.ComboHoteles_SelectedIndexChanged);
+            // 
             // clientes_tabla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -413,6 +451,7 @@
             this.Controls.Add(this.textFind);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.listaClientes);
+            this.Controls.Add(this.comboRegion);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -439,7 +478,6 @@
         private System.Windows.Forms.ComboBox comboRegion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox comboSiglasHoteles;
         private System.Windows.Forms.TextBox textRazon;
         private System.Windows.Forms.TextBox textRegion;
         private System.Windows.Forms.Label label4;
@@ -464,5 +502,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn siglas_hanna;
         private System.Windows.Forms.DataGridViewTextBoxColumn sigla_hoteles;
         private System.Windows.Forms.DataGridViewTextBoxColumn abrev_hotel;
+        private System.Windows.Forms.ComboBox comboStatus;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox labelHotel;
+        private System.Windows.Forms.ComboBox comboHoteles;
     }
 }

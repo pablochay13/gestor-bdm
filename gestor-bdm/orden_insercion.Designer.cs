@@ -1569,6 +1569,7 @@
             this.labelHotel.Name = "labelHotel";
             this.labelHotel.Size = new System.Drawing.Size(68, 23);
             this.labelHotel.TabIndex = 159;
+            this.labelHotel.TextChanged += new System.EventHandler(this.LabelHotel_TextChanged);
             // 
             // label29
             // 
