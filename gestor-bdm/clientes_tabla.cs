@@ -21,7 +21,34 @@ namespace gestor_bdm
             listaClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             llenar();
             hotelOrden();
+            paises();
             comboStatus.SelectedIndex = 0;
+        }
+
+        public void paises()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, region from paises";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboPais.ValueMember = "id";
+                comboPais.DisplayMember = "region";
+                comboPais.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void llenar()
@@ -169,7 +196,7 @@ namespace gestor_bdm
 
         private void Add_Click(object sender, EventArgs e)
         {
-            if (textRegion.Text == "" && textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
+            if (textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
             {
                 MessageBox.Show("Campos vacios!", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -178,7 +205,7 @@ namespace gestor_bdm
                 try
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO clientes (`region`, `razon_social`, `nombre_comercial`, `id_hanna`, `siglas_hanna`, `sigla_hotel`, `abrev_hotel` , `status`) VALUES ('" + textRegion.Text + "','" + textRazon.Text + "','" + textComercial.Text + "','" + textIDHanna.Text + "','" + textSiglaHanna.Text + "','" + comboHoteles.Text + "','" + textHoteles.Text + "','" + comboStatus.Text + "' )", con);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO clientes (`region`, `razon_social`, `nombre_comercial`, `id_hanna`, `siglas_hanna`, `sigla_hotel`, `abrev_hotel` , `status`) VALUES ('" + comboPais.Text + "','" + textRazon.Text + "','" + textComercial.Text + "','" + textIDHanna.Text + "','" + textSiglaHanna.Text + "','" + comboHoteles.Text + "','" + textHoteles.Text + "','" + comboStatus.Text + "' )", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -194,7 +221,7 @@ namespace gestor_bdm
 
         private void Edit_Click(object sender, EventArgs e)
         {
-            if (textRegion.Text == "" && textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
+            if (textRazon.Text == "" && textComercial.Text == "" && textIDHanna.Text == "" && textSiglaHanna.Text == "" && textHoteles.Text == "")
 
             {
                 MessageBox.Show("Campos vacios!", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -204,7 +231,7 @@ namespace gestor_bdm
                 try
                 {
                     con.Open();
-                    MySqlCommand cmd = new MySqlCommand("UPDATE `clientes` SET `region`='" + textRegion.Text + "',`razon_social`='" + textRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`id_hanna`='" + textIDHanna.Text + "',`siglas_hanna`='" + textSiglaHanna.Text + "',`sigla_hoteles`='" + comboHoteles.Text + "',`abrev_hotel`='" + textHoteles.Text + "',`status`='" + comboStatus.Text + "' WHERE id_clientes = '" + textId.Text + "'", con);
+                    MySqlCommand cmd = new MySqlCommand("UPDATE `clientes` SET `region`='" + comboPais.Text + "',`razon_social`='" + textRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`id_hanna`='" + textIDHanna.Text + "',`siglas_hanna`='" + textSiglaHanna.Text + "',`sigla_hoteles`='" + comboHoteles.Text + "',`abrev_hotel`='" + textHoteles.Text + "',`status`='" + comboStatus.Text + "' WHERE id_clientes = '" + textId.Text + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     con.Close();
@@ -258,7 +285,7 @@ namespace gestor_bdm
             {
                 int n = listaClientes.SelectedRows[0].Index;
                 textId.Text = listaClientes.Rows[n].Cells[0].Value.ToString();
-                textRegion.Text = listaClientes.Rows[n].Cells[1].Value.ToString();
+                comboPais.Text = listaClientes.Rows[n].Cells[1].Value.ToString();
                 textRazon.Text = listaClientes.Rows[n].Cells[2].Value.ToString();
                 textComercial.Text = listaClientes.Rows[n].Cells[3].Value.ToString();
                 textIDHanna.Text = listaClientes.Rows[n].Cells[4].Value.ToString();
@@ -315,6 +342,33 @@ namespace gestor_bdm
                     labelHotel.Text = nombreHotel;
                 }
 
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        private void ComboPais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboPais.SelectedIndex);
+                int idCombo = valor + 1;
+                string t_pais = "";
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT `abrev` FROM `paises` WHERE region = '" + comboPais.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    t_pais = Convert.ToString(reader["abrev"]);
+                }
+
+                textPais.Text = t_pais;
                 con.Close();
             }
             catch (Exception m)

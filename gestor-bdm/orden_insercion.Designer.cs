@@ -998,7 +998,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label36.Location = new System.Drawing.Point(320, 47);
+            this.label36.Location = new System.Drawing.Point(10, 42);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(33, 17);
             this.label36.TabIndex = 188;
@@ -1010,7 +1010,7 @@
             this.comboNacional.Items.AddRange(new object[] {
             "No",
             "Si"});
-            this.comboNacional.Location = new System.Drawing.Point(734, 87);
+            this.comboNacional.Location = new System.Drawing.Point(762, 81);
             this.comboNacional.Name = "comboNacional";
             this.comboNacional.Size = new System.Drawing.Size(74, 25);
             this.comboNacional.TabIndex = 171;
@@ -1020,7 +1020,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label33.Location = new System.Drawing.Point(9, 90);
+            this.label33.Location = new System.Drawing.Point(10, 84);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(73, 17);
             this.label33.TabIndex = 169;
@@ -1041,7 +1041,7 @@
             "5",
             "5.5",
             "6"});
-            this.comboPorcentajeMKF.Location = new System.Drawing.Point(450, 45);
+            this.comboPorcentajeMKF.Location = new System.Drawing.Point(142, 40);
             this.comboPorcentajeMKF.Name = "comboPorcentajeMKF";
             this.comboPorcentajeMKF.Size = new System.Drawing.Size(152, 25);
             this.comboPorcentajeMKF.TabIndex = 187;
@@ -1049,7 +1049,7 @@
             // tMontoIVA
             // 
             this.tMontoIVA.ForeColor = System.Drawing.Color.Black;
-            this.tMontoIVA.Location = new System.Drawing.Point(189, 87);
+            this.tMontoIVA.Location = new System.Drawing.Point(259, 81);
             this.tMontoIVA.Name = "tMontoIVA";
             this.tMontoIVA.Size = new System.Drawing.Size(94, 23);
             this.tMontoIVA.TabIndex = 182;
@@ -1059,18 +1059,18 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(833, 90);
+            this.label14.Location = new System.Drawing.Point(874, 84);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(137, 17);
+            this.label14.Size = new System.Drawing.Size(99, 17);
             this.label14.TabIndex = 181;
-            this.label14.Text = "Monto Pauta + IVA*";
+            this.label14.Text = "Monto Pauta*";
             this.label14.Visible = false;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label37.Location = new System.Drawing.Point(585, 90);
+            this.label37.Location = new System.Drawing.Point(613, 84);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(145, 17);
             this.label37.TabIndex = 170;
@@ -1086,7 +1086,7 @@
             "USD",
             "R$",
             "CAD"});
-            this.comboDivisa.Location = new System.Drawing.Point(359, 87);
+            this.comboDivisa.Location = new System.Drawing.Point(410, 81);
             this.comboDivisa.Name = "comboDivisa";
             this.comboDivisa.Size = new System.Drawing.Size(197, 25);
             this.comboDivisa.TabIndex = 180;
@@ -1095,7 +1095,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(307, 90);
+            this.label15.Location = new System.Drawing.Point(358, 84);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 17);
             this.label15.TabIndex = 179;
@@ -1104,7 +1104,7 @@
             // tMonto
             // 
             this.tMonto.ForeColor = System.Drawing.Color.Black;
-            this.tMonto.Location = new System.Drawing.Point(970, 87);
+            this.tMonto.Location = new System.Drawing.Point(979, 81);
             this.tMonto.Name = "tMonto";
             this.tMonto.Size = new System.Drawing.Size(94, 23);
             this.tMonto.TabIndex = 178;
@@ -1114,17 +1114,17 @@
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label16.Location = new System.Drawing.Point(90, 90);
+            this.label16.Location = new System.Drawing.Point(103, 84);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 17);
+            this.label16.Size = new System.Drawing.Size(137, 17);
             this.label16.TabIndex = 177;
-            this.label16.Text = "Monto Pauta*";
+            this.label16.Text = "Monto Pauta + IVA*";
             // 
             // checkEmitidos
             // 
             this.checkEmitidos.AutoSize = true;
             this.checkEmitidos.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkEmitidos.Location = new System.Drawing.Point(877, 47);
+            this.checkEmitidos.Location = new System.Drawing.Point(557, 42);
             this.checkEmitidos.Name = "checkEmitidos";
             this.checkEmitidos.Size = new System.Drawing.Size(126, 21);
             this.checkEmitidos.TabIndex = 176;
@@ -1135,7 +1135,7 @@
             // 
             this.checkProduccion.AutoSize = true;
             this.checkProduccion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.checkProduccion.Location = new System.Drawing.Point(761, 46);
+            this.checkProduccion.Location = new System.Drawing.Point(441, 41);
             this.checkProduccion.Name = "checkProduccion";
             this.checkProduccion.Size = new System.Drawing.Size(101, 21);
             this.checkProduccion.TabIndex = 175;
@@ -1146,7 +1146,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(624, 49);
+            this.label13.Location = new System.Drawing.Point(304, 44);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(128, 17);
             this.label13.TabIndex = 174;
@@ -1155,16 +1155,16 @@
             // dateHastaMKF
             // 
             this.dateHastaMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateHastaMKF.Location = new System.Drawing.Point(160, 43);
+            this.dateHastaMKF.Location = new System.Drawing.Point(1042, 39);
             this.dateHastaMKF.Name = "dateHastaMKF";
-            this.dateHastaMKF.Size = new System.Drawing.Size(133, 23);
+            this.dateHastaMKF.Size = new System.Drawing.Size(102, 23);
             this.dateHastaMKF.TabIndex = 173;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(157, 23);
+            this.label12.Location = new System.Drawing.Point(925, 42);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(111, 17);
             this.label12.TabIndex = 172;
@@ -1173,9 +1173,9 @@
             // dateDesdeMKF
             // 
             this.dateDesdeMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDesdeMKF.Location = new System.Drawing.Point(9, 43);
+            this.dateDesdeMKF.Location = new System.Drawing.Point(814, 40);
             this.dateDesdeMKF.Name = "dateDesdeMKF";
-            this.dateDesdeMKF.Size = new System.Drawing.Size(133, 23);
+            this.dateDesdeMKF.Size = new System.Drawing.Size(102, 23);
             this.dateDesdeMKF.TabIndex = 171;
             this.dateDesdeMKF.ValueChanged += new System.EventHandler(this.dateDesdeMKF_ValueChanged);
             // 
@@ -1183,7 +1183,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(6, 23);
+            this.label11.Location = new System.Drawing.Point(696, 44);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(114, 17);
             this.label11.TabIndex = 170;
@@ -1193,7 +1193,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(366, 50);
+            this.label10.Location = new System.Drawing.Point(58, 45);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 17);
             this.label10.TabIndex = 168;

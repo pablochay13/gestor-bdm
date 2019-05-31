@@ -44,6 +44,8 @@
             this.sigla_hoteles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.abrev_hotel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelHotel = new System.Windows.Forms.TextBox();
+            this.comboHoteles = new System.Windows.Forms.ComboBox();
             this.comboStatus = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textId = new System.Windows.Forms.TextBox();
@@ -57,16 +59,15 @@
             this.textComercial = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboRegion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textRazon = new System.Windows.Forms.TextBox();
-            this.textRegion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textIDHanna = new System.Windows.Forms.TextBox();
-            this.labelHotel = new System.Windows.Forms.TextBox();
-            this.comboHoteles = new System.Windows.Forms.ComboBox();
+            this.comboRegion = new System.Windows.Forms.ComboBox();
+            this.textPais = new System.Windows.Forms.TextBox();
+            this.comboPais = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.listaClientes)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -195,6 +196,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textPais);
+            this.groupBox1.Controls.Add(this.comboPais);
             this.groupBox1.Controls.Add(this.labelHotel);
             this.groupBox1.Controls.Add(this.comboHoteles);
             this.groupBox1.Controls.Add(this.comboStatus);
@@ -213,7 +216,6 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textRazon);
-            this.groupBox1.Controls.Add(this.textRegion);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textIDHanna);
@@ -223,6 +225,24 @@
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // labelHotel
+            // 
+            this.labelHotel.ForeColor = System.Drawing.Color.Black;
+            this.labelHotel.Location = new System.Drawing.Point(271, 321);
+            this.labelHotel.Name = "labelHotel";
+            this.labelHotel.Size = new System.Drawing.Size(68, 26);
+            this.labelHotel.TabIndex = 161;
+            // 
+            // comboHoteles
+            // 
+            this.comboHoteles.ForeColor = System.Drawing.Color.Black;
+            this.comboHoteles.FormattingEnabled = true;
+            this.comboHoteles.Location = new System.Drawing.Point(10, 319);
+            this.comboHoteles.Name = "comboHoteles";
+            this.comboHoteles.Size = new System.Drawing.Size(251, 28);
+            this.comboHoteles.TabIndex = 160;
+            this.comboHoteles.SelectedIndexChanged += new System.EventHandler(this.ComboHoteles_SelectedIndexChanged);
             // 
             // comboStatus
             // 
@@ -257,7 +277,7 @@
             // 
             this.clean.BackColor = System.Drawing.Color.Transparent;
             this.clean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clean.Location = new System.Drawing.Point(39, 442);
+            this.clean.Location = new System.Drawing.Point(22, 442);
             this.clean.Name = "clean";
             this.clean.Size = new System.Drawing.Size(75, 31);
             this.clean.TabIndex = 119;
@@ -291,9 +311,9 @@
             // 
             this.add.BackColor = System.Drawing.Color.Transparent;
             this.add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.add.Location = new System.Drawing.Point(120, 442);
+            this.add.Location = new System.Drawing.Point(103, 442);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 31);
+            this.add.Size = new System.Drawing.Size(92, 31);
             this.add.TabIndex = 118;
             this.add.Text = "Agregar";
             this.add.UseVisualStyleBackColor = false;
@@ -350,15 +370,6 @@
             this.label5.TabIndex = 112;
             this.label5.Text = "Siglas Hanna:";
             // 
-            // comboRegion
-            // 
-            this.comboRegion.FormattingEnabled = true;
-            this.comboRegion.Location = new System.Drawing.Point(996, 13);
-            this.comboRegion.Name = "comboRegion";
-            this.comboRegion.Size = new System.Drawing.Size(34, 28);
-            this.comboRegion.TabIndex = 109;
-            this.comboRegion.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -385,13 +396,6 @@
             this.textRazon.Name = "textRazon";
             this.textRazon.Size = new System.Drawing.Size(329, 26);
             this.textRazon.TabIndex = 102;
-            // 
-            // textRegion
-            // 
-            this.textRegion.Location = new System.Drawing.Point(10, 56);
-            this.textRegion.Name = "textRegion";
-            this.textRegion.Size = new System.Drawing.Size(96, 26);
-            this.textRegion.TabIndex = 106;
             // 
             // label4
             // 
@@ -420,23 +424,32 @@
             this.textIDHanna.Size = new System.Drawing.Size(329, 26);
             this.textIDHanna.TabIndex = 104;
             // 
-            // labelHotel
+            // comboRegion
             // 
-            this.labelHotel.ForeColor = System.Drawing.Color.Black;
-            this.labelHotel.Location = new System.Drawing.Point(271, 321);
-            this.labelHotel.Name = "labelHotel";
-            this.labelHotel.Size = new System.Drawing.Size(68, 26);
-            this.labelHotel.TabIndex = 161;
+            this.comboRegion.FormattingEnabled = true;
+            this.comboRegion.Location = new System.Drawing.Point(996, 13);
+            this.comboRegion.Name = "comboRegion";
+            this.comboRegion.Size = new System.Drawing.Size(34, 28);
+            this.comboRegion.TabIndex = 109;
+            this.comboRegion.Visible = false;
             // 
-            // comboHoteles
+            // textPais
             // 
-            this.comboHoteles.ForeColor = System.Drawing.Color.Black;
-            this.comboHoteles.FormattingEnabled = true;
-            this.comboHoteles.Location = new System.Drawing.Point(10, 319);
-            this.comboHoteles.Name = "comboHoteles";
-            this.comboHoteles.Size = new System.Drawing.Size(251, 28);
-            this.comboHoteles.TabIndex = 160;
-            this.comboHoteles.SelectedIndexChanged += new System.EventHandler(this.ComboHoteles_SelectedIndexChanged);
+            this.textPais.ForeColor = System.Drawing.Color.Black;
+            this.textPais.Location = new System.Drawing.Point(171, 55);
+            this.textPais.Name = "textPais";
+            this.textPais.Size = new System.Drawing.Size(63, 26);
+            this.textPais.TabIndex = 163;
+            // 
+            // comboPais
+            // 
+            this.comboPais.ForeColor = System.Drawing.Color.Black;
+            this.comboPais.FormattingEnabled = true;
+            this.comboPais.Location = new System.Drawing.Point(10, 55);
+            this.comboPais.Name = "comboPais";
+            this.comboPais.Size = new System.Drawing.Size(155, 28);
+            this.comboPais.TabIndex = 162;
+            this.comboPais.SelectedIndexChanged += new System.EventHandler(this.ComboPais_SelectedIndexChanged);
             // 
             // clientes_tabla
             // 
@@ -479,7 +492,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textRazon;
-        private System.Windows.Forms.TextBox textRegion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textIDHanna;
@@ -506,5 +518,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox labelHotel;
         private System.Windows.Forms.ComboBox comboHoteles;
+        private System.Windows.Forms.TextBox textPais;
+        private System.Windows.Forms.ComboBox comboPais;
     }
 }
