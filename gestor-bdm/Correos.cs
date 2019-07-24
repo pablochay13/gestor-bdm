@@ -25,7 +25,7 @@ namespace gestor_bdm
              * Direccion de Correo (Gmail o Hotmail)
              * y Contrasena correspondiente
              */
-            server.Credentials = new System.Net.NetworkCredential("pablochay89@gmail.com", "Chay1318");
+            server.Credentials = new System.Net.NetworkCredential("pablochay.bd@gmail.com", "Chay1318");
             server.EnableSsl = true;
         }
 
