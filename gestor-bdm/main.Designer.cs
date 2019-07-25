@@ -82,7 +82,7 @@
             // 
             this.landingsBaseDatosToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.database;
             this.landingsBaseDatosToolStripMenuItem.Name = "landingsBaseDatosToolStripMenuItem";
-            this.landingsBaseDatosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.landingsBaseDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.landingsBaseDatosToolStripMenuItem.Text = "Landings Media";
             this.landingsBaseDatosToolStripMenuItem.Click += new System.EventHandler(this.landingsBaseDatosToolStripMenuItem_Click);
             // 
@@ -90,7 +90,7 @@
             // 
             this.generadorCodigoToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.coding;
             this.generadorCodigoToolStripMenuItem.Name = "generadorCodigoToolStripMenuItem";
-            this.generadorCodigoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.generadorCodigoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.generadorCodigoToolStripMenuItem.Text = "Generador Codigo";
             this.generadorCodigoToolStripMenuItem.Click += new System.EventHandler(this.generadorCodigoToolStripMenuItem_Click);
             // 

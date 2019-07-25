@@ -29,7 +29,7 @@
     <SuiteName>Best Travel Media</SuiteName>
     <MinimumRequiredVersion>1.0.0.38</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>59</ApplicationRevision>
+    <ApplicationRevision>62</ApplicationRevision>
     <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -171,6 +171,12 @@
     <Compile Include="medios.Designer.cs">
       <DependentUpon>medios.cs</DependentUpon>
     </Compile>
+    <Compile Include="OI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OI.Designer.cs">
+      <DependentUpon>OI.cs</DependentUpon>
+    </Compile>
     <Compile Include="opciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="medios.resx">
       <DependentUpon>medios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OI.resx">
+      <DependentUpon>OI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="opciones.resx">
       <DependentUpon>opciones.cs</DependentUpon>

@@ -143,7 +143,7 @@ namespace gestor_bdm
 
         private void saldosEdiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            orden_inserccion ventana = new orden_inserccion();
+            OI ventana = new OI();
             ventana.MdiParent = this;
             ventana.Show();
             //saldos_media ventana = new saldos_media();
@@ -195,6 +195,13 @@ namespace gestor_bdm
         private void cerrarConexiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
             con.Close();
+        }
+
+        private void DToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            orden_inserccion ventana = new orden_inserccion();
+            ventana.MdiParent = this;
+            ventana.Show();
         }
     }
 }
