@@ -58,6 +58,9 @@
             this.comboSupply = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.campo3 = new System.Windows.Forms.Label();
+            this.campo2 = new System.Windows.Forms.Label();
+            this.campo1 = new System.Windows.Forms.Label();
             this.combo3 = new System.Windows.Forms.ComboBox();
             this.combo2 = new System.Windows.Forms.ComboBox();
             this.combo1 = new System.Windows.Forms.ComboBox();
@@ -433,9 +436,6 @@
             this.dateDesdeMonto = new System.Windows.Forms.DateTimePicker();
             this.tMedia = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.campo1 = new System.Windows.Forms.Label();
-            this.campo2 = new System.Windows.Forms.Label();
-            this.campo3 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabDatos.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -711,9 +711,9 @@
             this.label22.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label22.Location = new System.Drawing.Point(38, 58);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(82, 15);
+            this.label22.Size = new System.Drawing.Size(85, 15);
             this.label22.TabIndex = 159;
-            this.label22.Text = "Ejecutivo DAF";
+            this.label22.Text = "Ejecutivo DAF:";
             // 
             // comboAccount
             // 
@@ -728,11 +728,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label21.Location = new System.Drawing.Point(9, 89);
+            this.label21.Location = new System.Drawing.Point(17, 88);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(103, 15);
+            this.label21.Size = new System.Drawing.Size(106, 15);
             this.label21.TabIndex = 157;
-            this.label21.Text = "Account Manager";
+            this.label21.Text = "Account Manager:";
             // 
             // comboSupply
             // 
@@ -749,9 +749,9 @@
             this.label20.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label20.Location = new System.Drawing.Point(23, 27);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(97, 15);
+            this.label20.Size = new System.Drawing.Size(100, 15);
             this.label20.TabIndex = 155;
-            this.label20.Text = "Supply Manager";
+            this.label20.Text = "Supply Manager:";
             // 
             // groupBox4
             // 
@@ -775,6 +775,33 @@
             this.groupBox4.TabIndex = 138;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Comisiones*";
+            // 
+            // campo3
+            // 
+            this.campo3.AutoSize = true;
+            this.campo3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.campo3.Location = new System.Drawing.Point(551, 75);
+            this.campo3.Name = "campo3";
+            this.campo3.Size = new System.Drawing.Size(0, 15);
+            this.campo3.TabIndex = 180;
+            // 
+            // campo2
+            // 
+            this.campo2.AutoSize = true;
+            this.campo2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.campo2.Location = new System.Drawing.Point(356, 75);
+            this.campo2.Name = "campo2";
+            this.campo2.Size = new System.Drawing.Size(0, 15);
+            this.campo2.TabIndex = 179;
+            // 
+            // campo1
+            // 
+            this.campo1.AutoSize = true;
+            this.campo1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.campo1.Location = new System.Drawing.Point(161, 75);
+            this.campo1.Name = "campo1";
+            this.campo1.Size = new System.Drawing.Size(0, 15);
+            this.campo1.TabIndex = 178;
             // 
             // combo3
             // 
@@ -853,9 +880,9 @@
             this.label40.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label40.Location = new System.Drawing.Point(9, 23);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(60, 15);
+            this.label40.Size = new System.Drawing.Size(63, 15);
             this.label40.TabIndex = 170;
-            this.label40.Text = "Esquema";
+            this.label40.Text = "Esquema:";
             // 
             // comboComisiones
             // 
@@ -1073,9 +1100,9 @@
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label14.Location = new System.Drawing.Point(992, 72);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 15);
+            this.label14.Size = new System.Drawing.Size(85, 15);
             this.label14.TabIndex = 181;
-            this.label14.Text = "Monto Pauta*";
+            this.label14.Text = "Monto Pauta*:";
             this.label14.Visible = false;
             // 
             // label37
@@ -1084,9 +1111,9 @@
             this.label37.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label37.Location = new System.Drawing.Point(746, 72);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(128, 15);
+            this.label37.Size = new System.Drawing.Size(131, 15);
             this.label37.TabIndex = 170;
-            this.label37.Text = "Desglosar impuestos*";
+            this.label37.Text = "Desglosar impuestos*:";
             // 
             // comboDivisa
             // 
@@ -1109,9 +1136,9 @@
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label15.Location = new System.Drawing.Point(569, 72);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 15);
+            this.label15.Size = new System.Drawing.Size(48, 15);
             this.label15.TabIndex = 179;
-            this.label15.Text = "Divisa*";
+            this.label15.Text = "Divisa*:";
             // 
             // tMonto
             // 
@@ -1128,9 +1155,9 @@
             this.label16.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label16.Location = new System.Drawing.Point(340, 72);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 15);
+            this.label16.Size = new System.Drawing.Size(93, 15);
             this.label16.TabIndex = 177;
-            this.label16.Text = "Monto con IVA*";
+            this.label16.Text = "Monto con IVA*:";
             // 
             // checkEmitidos
             // 
@@ -1160,9 +1187,9 @@
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label13.Location = new System.Drawing.Point(562, 32);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 15);
+            this.label13.Size = new System.Drawing.Size(110, 15);
             this.label13.TabIndex = 174;
-            this.label13.Text = "Forma de calculo*";
+            this.label13.Text = "Forma de calculo*:";
             // 
             // dateHastaMKF
             // 
@@ -1178,9 +1205,9 @@
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label12.Location = new System.Drawing.Point(15, 68);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 15);
+            this.label12.Size = new System.Drawing.Size(95, 15);
             this.label12.TabIndex = 172;
-            this.label12.Text = "Vigencia hasta*";
+            this.label12.Text = "Vigencia hasta*:";
             // 
             // dateDesdeMKF
             // 
@@ -1197,19 +1224,19 @@
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label11.Location = new System.Drawing.Point(11, 32);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 15);
+            this.label11.Size = new System.Drawing.Size(99, 15);
             this.label11.TabIndex = 170;
-            this.label11.Text = "Vigencia desde*";
+            this.label11.Text = "Vigencia desde*:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(301, 30);
+            this.label10.Location = new System.Drawing.Point(314, 30);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 15);
+            this.label10.Size = new System.Drawing.Size(74, 15);
             this.label10.TabIndex = 168;
-            this.label10.Text = "Porcentaje*";
+            this.label10.Text = "Porcentaje*:";
             // 
             // groupBox1
             // 
@@ -1284,9 +1311,9 @@
             this.labelRazon.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelRazon.Location = new System.Drawing.Point(793, 209);
             this.labelRazon.Name = "labelRazon";
-            this.labelRazon.Size = new System.Drawing.Size(142, 15);
+            this.labelRazon.Size = new System.Drawing.Size(145, 15);
             this.labelRazon.TabIndex = 191;
-            this.labelRazon.Text = "Razón social que factura";
+            this.labelRazon.Text = "Razón social que factura:";
             this.labelRazon.Visible = false;
             // 
             // comboCuentaOp
@@ -1308,9 +1335,9 @@
             this.labelCuentaOp.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelCuentaOp.Location = new System.Drawing.Point(400, 240);
             this.labelCuentaOp.Name = "labelCuentaOp";
-            this.labelCuentaOp.Size = new System.Drawing.Size(46, 15);
+            this.labelCuentaOp.Size = new System.Drawing.Size(49, 15);
             this.labelCuentaOp.TabIndex = 189;
-            this.labelCuentaOp.Text = "Cuenta";
+            this.labelCuentaOp.Text = "Cuenta:";
             this.labelCuentaOp.Visible = false;
             // 
             // textID
@@ -1327,9 +1354,9 @@
             this.labelID.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelID.Location = new System.Drawing.Point(400, 209);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(111, 15);
+            this.labelID.Size = new System.Drawing.Size(114, 15);
             this.labelID.TabIndex = 187;
-            this.labelID.Text = "ID Maestro original";
+            this.labelID.Text = "ID Maestro original:";
             this.labelID.Visible = false;
             // 
             // comboCuenta
@@ -1352,9 +1379,9 @@
             this.labelCuenta.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelCuenta.Location = new System.Drawing.Point(8, 240);
             this.labelCuenta.Name = "labelCuenta";
-            this.labelCuenta.Size = new System.Drawing.Size(109, 15);
+            this.labelCuenta.Size = new System.Drawing.Size(112, 15);
             this.labelCuenta.TabIndex = 185;
-            this.labelCuenta.Text = "Número de cuenta";
+            this.labelCuenta.Text = "Número de cuenta:";
             this.labelCuenta.Visible = false;
             // 
             // comboOp
@@ -1375,9 +1402,9 @@
             this.labelOp.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelOp.Location = new System.Drawing.Point(8, 209);
             this.labelOp.Name = "labelOp";
-            this.labelOp.Size = new System.Drawing.Size(106, 15);
+            this.labelOp.Size = new System.Drawing.Size(109, 15);
             this.labelOp.TabIndex = 183;
-            this.labelOp.Text = "Tipo de operación";
+            this.labelOp.Text = "Tipo de operación:";
             this.labelOp.Visible = false;
             // 
             // nombreBeneficio2
@@ -1404,9 +1431,9 @@
             this.label43.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label43.Location = new System.Drawing.Point(300, 175);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(61, 15);
+            this.label43.Size = new System.Drawing.Size(64, 15);
             this.label43.TabIndex = 180;
-            this.label43.Text = "Cuenta 2*";
+            this.label43.Text = "Cuenta 2*:";
             this.label43.Visible = false;
             // 
             // label18
@@ -1415,9 +1442,9 @@
             this.label18.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label18.Location = new System.Drawing.Point(7, 175);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(129, 15);
+            this.label18.Size = new System.Drawing.Size(132, 15);
             this.label18.TabIndex = 179;
-            this.label18.Text = "Centro de Beneficio 2*";
+            this.label18.Text = "Centro de Beneficio 2*:";
             this.label18.Visible = false;
             // 
             // label17
@@ -1426,9 +1453,9 @@
             this.label17.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label17.Location = new System.Drawing.Point(666, 175);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 15);
+            this.label17.Size = new System.Drawing.Size(60, 15);
             this.label17.TabIndex = 178;
-            this.label17.Text = "Monto 2*";
+            this.label17.Text = "Monto 2*:";
             this.label17.Visible = false;
             // 
             // cant2
@@ -1456,9 +1483,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label9.Location = new System.Drawing.Point(666, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 15);
+            this.label9.Size = new System.Drawing.Size(60, 15);
             this.label9.TabIndex = 175;
-            this.label9.Text = "Monto 1*";
+            this.label9.Text = "Monto 1*:";
             this.label9.Visible = false;
             // 
             // textMonto2
@@ -1495,9 +1522,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.Location = new System.Drawing.Point(300, 144);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 15);
+            this.label7.Size = new System.Drawing.Size(64, 15);
             this.label7.TabIndex = 162;
-            this.label7.Text = "Cuenta 1*";
+            this.label7.Text = "Cuenta 1*:";
             // 
             // label8
             // 
@@ -1505,9 +1532,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label8.Location = new System.Drawing.Point(7, 144);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 15);
+            this.label8.Size = new System.Drawing.Size(132, 15);
             this.label8.TabIndex = 164;
-            this.label8.Text = "Centro de Beneficio 1*";
+            this.label8.Text = "Centro de Beneficio 1*:";
             // 
             // label6
             // 
@@ -1515,9 +1542,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label6.Location = new System.Drawing.Point(876, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.Size = new System.Drawing.Size(61, 15);
             this.label6.TabIndex = 160;
-            this.label6.Text = "Contrato*";
+            this.label6.Text = "Contrato*:";
             // 
             // textComercial
             // 
@@ -1547,11 +1574,11 @@
             // 
             this.label32.AutoSize = true;
             this.label32.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label32.Location = new System.Drawing.Point(869, 105);
+            this.label32.Location = new System.Drawing.Point(882, 105);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(82, 15);
+            this.label32.Size = new System.Drawing.Size(85, 15);
             this.label32.TabIndex = 133;
-            this.label32.Text = "Clave Hanna*";
+            this.label32.Text = "Clave Hanna*:";
             // 
             // labelHotel
             // 
@@ -1567,9 +1594,9 @@
             this.label29.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label29.Location = new System.Drawing.Point(551, 105);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(86, 15);
+            this.label29.Size = new System.Drawing.Size(89, 15);
             this.label29.TabIndex = 135;
-            this.label29.Text = "Siglas Hanna*";
+            this.label29.Text = "Siglas Hanna*:";
             // 
             // comboHoteles
             // 
@@ -1587,9 +1614,9 @@
             this.label34.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label34.Location = new System.Drawing.Point(7, 105);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(72, 15);
+            this.label34.Size = new System.Drawing.Size(75, 15);
             this.label34.TabIndex = 157;
-            this.label34.Text = "Sigla Hotel*";
+            this.label34.Text = "Sigla Hotel*:";
             // 
             // label5
             // 
@@ -1597,9 +1624,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.Location = new System.Drawing.Point(537, 68);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 15);
+            this.label5.Size = new System.Drawing.Size(122, 15);
             this.label5.TabIndex = 155;
-            this.label5.Text = "Nombre Comercial *";
+            this.label5.Text = "Nombre Comercial *:";
             // 
             // comboRazon
             // 
@@ -1629,9 +1656,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(6, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 15);
+            this.label4.Size = new System.Drawing.Size(88, 15);
             this.label4.TabIndex = 133;
-            this.label4.Text = "Razón Social*";
+            this.label4.Text = "Razón Social:*";
             // 
             // label35
             // 
@@ -1639,9 +1666,9 @@
             this.label35.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label35.Location = new System.Drawing.Point(659, 32);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(65, 15);
+            this.label35.Size = new System.Drawing.Size(68, 15);
             this.label35.TabIndex = 152;
-            this.label35.Text = "Categoría*";
+            this.label35.Text = "Categoría*:";
             // 
             // labelPauta
             // 
@@ -1667,9 +1694,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(326, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 15);
+            this.label3.Size = new System.Drawing.Size(90, 15);
             this.label3.TabIndex = 149;
-            this.label3.Text = "Tipo de pauta*";
+            this.label3.Text = "Tipo de pauta*:";
             // 
             // textPais
             // 
@@ -1695,9 +1722,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(6, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.Size = new System.Drawing.Size(39, 15);
             this.label2.TabIndex = 133;
-            this.label2.Text = "País*";
+            this.label2.Text = "País*:";
             // 
             // tabPage2
             // 
@@ -3957,7 +3984,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1059, 9);
+            this.label1.Location = new System.Drawing.Point(1068, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 15);
             this.label1.TabIndex = 200;
@@ -3983,38 +4010,11 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(768, 9);
+            this.label30.Location = new System.Drawing.Point(778, 9);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(72, 15);
             this.label30.TabIndex = 198;
             this.label30.Text = "Folio Media";
-            // 
-            // campo1
-            // 
-            this.campo1.AutoSize = true;
-            this.campo1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.campo1.Location = new System.Drawing.Point(161, 75);
-            this.campo1.Name = "campo1";
-            this.campo1.Size = new System.Drawing.Size(0, 15);
-            this.campo1.TabIndex = 178;
-            // 
-            // campo2
-            // 
-            this.campo2.AutoSize = true;
-            this.campo2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.campo2.Location = new System.Drawing.Point(356, 75);
-            this.campo2.Name = "campo2";
-            this.campo2.Size = new System.Drawing.Size(0, 15);
-            this.campo2.TabIndex = 179;
-            // 
-            // campo3
-            // 
-            this.campo3.AutoSize = true;
-            this.campo3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.campo3.Location = new System.Drawing.Point(551, 75);
-            this.campo3.Name = "campo3";
-            this.campo3.Size = new System.Drawing.Size(0, 15);
-            this.campo3.TabIndex = 180;
             // 
             // OI
             // 

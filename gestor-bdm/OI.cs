@@ -48,6 +48,7 @@ namespace gestor_bdm
             comboComisiones.SelectedIndex = 0;
             comboQ.SelectedIndex = 0;
             comboQPorcentaje.SelectedIndex = 0;
+            textStatusOI.SelectedIndex = 0;
             //año
             string anio_pauta = "";
 
@@ -1128,7 +1129,6 @@ namespace gestor_bdm
                         textMonto2.Visible = false;
                         cant1.Visible = false;
                         cant2.Visible = false;
-
                     }
                     else
                     {
