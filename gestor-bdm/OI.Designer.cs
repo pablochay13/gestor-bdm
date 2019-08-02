@@ -145,6 +145,171 @@
             this.comboPais = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.sumas = new System.Windows.Forms.Button();
+            this.calculo = new System.Windows.Forms.Button();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.esquemaDateDic = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateNov = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateOct = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateSep = new System.Windows.Forms.DateTimePicker();
+            this.esquemaSep = new System.Windows.Forms.TextBox();
+            this.esquemaDic = new System.Windows.Forms.TextBox();
+            this.esquemaNov = new System.Windows.Forms.TextBox();
+            this.esquemaOct = new System.Windows.Forms.TextBox();
+            this.esquemaDateAgo = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateJul = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateJun = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateMay = new System.Windows.Forms.DateTimePicker();
+            this.esquemaMay = new System.Windows.Forms.TextBox();
+            this.esquemaAgo = new System.Windows.Forms.TextBox();
+            this.esquemaJul = new System.Windows.Forms.TextBox();
+            this.esquemaJun = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.esquemaDateAbr = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateMar = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateFeb = new System.Windows.Forms.DateTimePicker();
+            this.esquemaDateEne = new System.Windows.Forms.DateTimePicker();
+            this.esquemaEne = new System.Windows.Forms.TextBox();
+            this.esquemaAbr = new System.Windows.Forms.TextBox();
+            this.esquemaMar = new System.Windows.Forms.TextBox();
+            this.esquemaFeb = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.porcentajeCobrado = new System.Windows.Forms.TextBox();
+            this.porcentajeFacturado = new System.Windows.Forms.TextBox();
+            this.porcentajeMonto = new System.Windows.Forms.TextBox();
+            this.cantCobrado = new System.Windows.Forms.TextBox();
+            this.cantFacturado = new System.Windows.Forms.TextBox();
+            this.cantMonto = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.dateDic = new System.Windows.Forms.DateTimePicker();
+            this.dateNov = new System.Windows.Forms.DateTimePicker();
+            this.dateOct = new System.Windows.Forms.DateTimePicker();
+            this.dateSep = new System.Windows.Forms.DateTimePicker();
+            this.dateAgo = new System.Windows.Forms.DateTimePicker();
+            this.dateJul = new System.Windows.Forms.DateTimePicker();
+            this.dateJun = new System.Windows.Forms.DateTimePicker();
+            this.dateMay = new System.Windows.Forms.DateTimePicker();
+            this.dateAbr = new System.Windows.Forms.DateTimePicker();
+            this.dateMar = new System.Windows.Forms.DateTimePicker();
+            this.dateFeb = new System.Windows.Forms.DateTimePicker();
+            this.dateEne = new System.Windows.Forms.DateTimePicker();
+            this.cobradoEne = new System.Windows.Forms.TextBox();
+            this.cobradoOct = new System.Windows.Forms.TextBox();
+            this.cobradoJul = new System.Windows.Forms.TextBox();
+            this.cobradoAbr = new System.Windows.Forms.TextBox();
+            this.cobradoMar = new System.Windows.Forms.TextBox();
+            this.cobradoNov = new System.Windows.Forms.TextBox();
+            this.cobradoAgo = new System.Windows.Forms.TextBox();
+            this.cobradoDic = new System.Windows.Forms.TextBox();
+            this.cobradoMay = new System.Windows.Forms.TextBox();
+            this.cobradoSep = new System.Windows.Forms.TextBox();
+            this.cobradoFeb = new System.Windows.Forms.TextBox();
+            this.cobradoJun = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.nameEne = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.nameOct = new System.Windows.Forms.TextBox();
+            this.nameJul = new System.Windows.Forms.TextBox();
+            this.nameAbr = new System.Windows.Forms.TextBox();
+            this.nameMar = new System.Windows.Forms.TextBox();
+            this.nameNov = new System.Windows.Forms.TextBox();
+            this.nameAgo = new System.Windows.Forms.TextBox();
+            this.nameDic = new System.Windows.Forms.TextBox();
+            this.nameMay = new System.Windows.Forms.TextBox();
+            this.nameSep = new System.Windows.Forms.TextBox();
+            this.nameFeb = new System.Windows.Forms.TextBox();
+            this.nameJun = new System.Windows.Forms.TextBox();
+            this.exploreDic = new System.Windows.Forms.Button();
+            this.findDic = new System.Windows.Forms.Button();
+            this.exploreNov = new System.Windows.Forms.Button();
+            this.findNov = new System.Windows.Forms.Button();
+            this.exploreOct = new System.Windows.Forms.Button();
+            this.findOct = new System.Windows.Forms.Button();
+            this.exploreSep = new System.Windows.Forms.Button();
+            this.findSep = new System.Windows.Forms.Button();
+            this.exploreAgo = new System.Windows.Forms.Button();
+            this.findAgo = new System.Windows.Forms.Button();
+            this.exploreJul = new System.Windows.Forms.Button();
+            this.findJul = new System.Windows.Forms.Button();
+            this.exploreJun = new System.Windows.Forms.Button();
+            this.findJun = new System.Windows.Forms.Button();
+            this.exploreMay = new System.Windows.Forms.Button();
+            this.findMay = new System.Windows.Forms.Button();
+            this.exploreAbr = new System.Windows.Forms.Button();
+            this.findAbr = new System.Windows.Forms.Button();
+            this.exploreMar = new System.Windows.Forms.Button();
+            this.findMar = new System.Windows.Forms.Button();
+            this.exploreFeb = new System.Windows.Forms.Button();
+            this.findFeb = new System.Windows.Forms.Button();
+            this.exploreEne = new System.Windows.Forms.Button();
+            this.findEne = new System.Windows.Forms.Button();
+            this.archivoEne = new System.Windows.Forms.TextBox();
+            this.archivoOct = new System.Windows.Forms.TextBox();
+            this.archivoJul = new System.Windows.Forms.TextBox();
+            this.archivoAbr = new System.Windows.Forms.TextBox();
+            this.archivoMar = new System.Windows.Forms.TextBox();
+            this.archivoNov = new System.Windows.Forms.TextBox();
+            this.archivoAgo = new System.Windows.Forms.TextBox();
+            this.archivoDic = new System.Windows.Forms.TextBox();
+            this.archivoMay = new System.Windows.Forms.TextBox();
+            this.archivoSep = new System.Windows.Forms.TextBox();
+            this.archivoFeb = new System.Windows.Forms.TextBox();
+            this.archivoJun = new System.Windows.Forms.TextBox();
+            this.facturadoEne = new System.Windows.Forms.TextBox();
+            this.facturadoOct = new System.Windows.Forms.TextBox();
+            this.facturadoJul = new System.Windows.Forms.TextBox();
+            this.facturadoAbr = new System.Windows.Forms.TextBox();
+            this.facturadoMar = new System.Windows.Forms.TextBox();
+            this.facturadoNov = new System.Windows.Forms.TextBox();
+            this.facturadoAgo = new System.Windows.Forms.TextBox();
+            this.facturadoDic = new System.Windows.Forms.TextBox();
+            this.facturadoMay = new System.Windows.Forms.TextBox();
+            this.facturadoSep = new System.Windows.Forms.TextBox();
+            this.facturadoFeb = new System.Windows.Forms.TextBox();
+            this.facturadoJun = new System.Windows.Forms.TextBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.montoEne = new System.Windows.Forms.TextBox();
+            this.montoOct = new System.Windows.Forms.TextBox();
+            this.montoJul = new System.Windows.Forms.TextBox();
+            this.montoAbr = new System.Windows.Forms.TextBox();
+            this.montoMar = new System.Windows.Forms.TextBox();
+            this.montoNov = new System.Windows.Forms.TextBox();
+            this.montoAgo = new System.Windows.Forms.TextBox();
+            this.montoDic = new System.Windows.Forms.TextBox();
+            this.montoMayo = new System.Windows.Forms.TextBox();
+            this.montoSep = new System.Windows.Forms.TextBox();
+            this.montoFeb = new System.Windows.Forms.TextBox();
+            this.montoJun = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.cDiciembre = new System.Windows.Forms.CheckBox();
+            this.cNoviembre = new System.Windows.Forms.CheckBox();
+            this.cOctubre = new System.Windows.Forms.CheckBox();
+            this.cSeptiembre = new System.Windows.Forms.CheckBox();
+            this.cAgosto = new System.Windows.Forms.CheckBox();
+            this.cJulio = new System.Windows.Forms.CheckBox();
+            this.cJunio = new System.Windows.Forms.CheckBox();
+            this.cMayo = new System.Windows.Forms.CheckBox();
+            this.cAbril = new System.Windows.Forms.CheckBox();
+            this.tEnero = new System.Windows.Forms.TextBox();
+            this.cMarzo = new System.Windows.Forms.CheckBox();
+            this.cFebrero = new System.Windows.Forms.CheckBox();
+            this.cEnero = new System.Windows.Forms.CheckBox();
+            this.tOctubre = new System.Windows.Forms.TextBox();
+            this.tJulio = new System.Windows.Forms.TextBox();
+            this.tAbril = new System.Windows.Forms.TextBox();
+            this.tMarzo = new System.Windows.Forms.TextBox();
+            this.tNoviembre = new System.Windows.Forms.TextBox();
+            this.tAgosto = new System.Windows.Forms.TextBox();
+            this.tDiciembre = new System.Windows.Forms.TextBox();
+            this.tMayo = new System.Windows.Forms.TextBox();
+            this.tSeptiembre = new System.Windows.Forms.TextBox();
+            this.tFebrero = new System.Windows.Forms.TextBox();
+            this.tJunio = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listaSaldos = new System.Windows.Forms.DataGridView();
             this.id_ordenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -321,171 +486,6 @@
             this.dateDesdeMonto = new System.Windows.Forms.DateTimePicker();
             this.tMedia = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.sumas = new System.Windows.Forms.Button();
-            this.calculo = new System.Windows.Forms.Button();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.esquemaDateDic = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateNov = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateOct = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateSep = new System.Windows.Forms.DateTimePicker();
-            this.esquemaSep = new System.Windows.Forms.TextBox();
-            this.esquemaDic = new System.Windows.Forms.TextBox();
-            this.esquemaNov = new System.Windows.Forms.TextBox();
-            this.esquemaOct = new System.Windows.Forms.TextBox();
-            this.esquemaDateAgo = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateJul = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateJun = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateMay = new System.Windows.Forms.DateTimePicker();
-            this.esquemaMay = new System.Windows.Forms.TextBox();
-            this.esquemaAgo = new System.Windows.Forms.TextBox();
-            this.esquemaJul = new System.Windows.Forms.TextBox();
-            this.esquemaJun = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.esquemaDateAbr = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateMar = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateFeb = new System.Windows.Forms.DateTimePicker();
-            this.esquemaDateEne = new System.Windows.Forms.DateTimePicker();
-            this.esquemaEne = new System.Windows.Forms.TextBox();
-            this.esquemaAbr = new System.Windows.Forms.TextBox();
-            this.esquemaMar = new System.Windows.Forms.TextBox();
-            this.esquemaFeb = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.porcentajeCobrado = new System.Windows.Forms.TextBox();
-            this.porcentajeFacturado = new System.Windows.Forms.TextBox();
-            this.porcentajeMonto = new System.Windows.Forms.TextBox();
-            this.cantCobrado = new System.Windows.Forms.TextBox();
-            this.cantFacturado = new System.Windows.Forms.TextBox();
-            this.cantMonto = new System.Windows.Forms.TextBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dateDic = new System.Windows.Forms.DateTimePicker();
-            this.dateNov = new System.Windows.Forms.DateTimePicker();
-            this.dateOct = new System.Windows.Forms.DateTimePicker();
-            this.dateSep = new System.Windows.Forms.DateTimePicker();
-            this.dateAgo = new System.Windows.Forms.DateTimePicker();
-            this.dateJul = new System.Windows.Forms.DateTimePicker();
-            this.dateJun = new System.Windows.Forms.DateTimePicker();
-            this.dateMay = new System.Windows.Forms.DateTimePicker();
-            this.dateAbr = new System.Windows.Forms.DateTimePicker();
-            this.dateMar = new System.Windows.Forms.DateTimePicker();
-            this.dateFeb = new System.Windows.Forms.DateTimePicker();
-            this.dateEne = new System.Windows.Forms.DateTimePicker();
-            this.cobradoEne = new System.Windows.Forms.TextBox();
-            this.cobradoOct = new System.Windows.Forms.TextBox();
-            this.cobradoJul = new System.Windows.Forms.TextBox();
-            this.cobradoAbr = new System.Windows.Forms.TextBox();
-            this.cobradoMar = new System.Windows.Forms.TextBox();
-            this.cobradoNov = new System.Windows.Forms.TextBox();
-            this.cobradoAgo = new System.Windows.Forms.TextBox();
-            this.cobradoDic = new System.Windows.Forms.TextBox();
-            this.cobradoMay = new System.Windows.Forms.TextBox();
-            this.cobradoSep = new System.Windows.Forms.TextBox();
-            this.cobradoFeb = new System.Windows.Forms.TextBox();
-            this.cobradoJun = new System.Windows.Forms.TextBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.nameEne = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.nameOct = new System.Windows.Forms.TextBox();
-            this.nameJul = new System.Windows.Forms.TextBox();
-            this.nameAbr = new System.Windows.Forms.TextBox();
-            this.nameMar = new System.Windows.Forms.TextBox();
-            this.nameNov = new System.Windows.Forms.TextBox();
-            this.nameAgo = new System.Windows.Forms.TextBox();
-            this.nameDic = new System.Windows.Forms.TextBox();
-            this.nameMay = new System.Windows.Forms.TextBox();
-            this.nameSep = new System.Windows.Forms.TextBox();
-            this.nameFeb = new System.Windows.Forms.TextBox();
-            this.nameJun = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.findNov = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.findOct = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.findSep = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.findAgo = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.findJul = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.findJun = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.findMay = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.findAbr = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.findMar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.findFeb = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.findEne = new System.Windows.Forms.Button();
-            this.archivoEne = new System.Windows.Forms.TextBox();
-            this.archivoOct = new System.Windows.Forms.TextBox();
-            this.archivoJul = new System.Windows.Forms.TextBox();
-            this.archivoAbr = new System.Windows.Forms.TextBox();
-            this.archivoMar = new System.Windows.Forms.TextBox();
-            this.archivoNov = new System.Windows.Forms.TextBox();
-            this.archivoAgo = new System.Windows.Forms.TextBox();
-            this.archivoDic = new System.Windows.Forms.TextBox();
-            this.archivoMay = new System.Windows.Forms.TextBox();
-            this.archivoSep = new System.Windows.Forms.TextBox();
-            this.archivoFeb = new System.Windows.Forms.TextBox();
-            this.archivoJun = new System.Windows.Forms.TextBox();
-            this.facturadoEne = new System.Windows.Forms.TextBox();
-            this.facturadoOct = new System.Windows.Forms.TextBox();
-            this.facturadoJul = new System.Windows.Forms.TextBox();
-            this.facturadoAbr = new System.Windows.Forms.TextBox();
-            this.facturadoMar = new System.Windows.Forms.TextBox();
-            this.facturadoNov = new System.Windows.Forms.TextBox();
-            this.facturadoAgo = new System.Windows.Forms.TextBox();
-            this.facturadoDic = new System.Windows.Forms.TextBox();
-            this.facturadoMay = new System.Windows.Forms.TextBox();
-            this.facturadoSep = new System.Windows.Forms.TextBox();
-            this.facturadoFeb = new System.Windows.Forms.TextBox();
-            this.facturadoJun = new System.Windows.Forms.TextBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.montoEne = new System.Windows.Forms.TextBox();
-            this.montoOct = new System.Windows.Forms.TextBox();
-            this.montoJul = new System.Windows.Forms.TextBox();
-            this.montoAbr = new System.Windows.Forms.TextBox();
-            this.montoMar = new System.Windows.Forms.TextBox();
-            this.montoNov = new System.Windows.Forms.TextBox();
-            this.montoAgo = new System.Windows.Forms.TextBox();
-            this.montoDic = new System.Windows.Forms.TextBox();
-            this.montoMayo = new System.Windows.Forms.TextBox();
-            this.montoSep = new System.Windows.Forms.TextBox();
-            this.montoFeb = new System.Windows.Forms.TextBox();
-            this.montoJun = new System.Windows.Forms.TextBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.cDiciembre = new System.Windows.Forms.CheckBox();
-            this.cNoviembre = new System.Windows.Forms.CheckBox();
-            this.cOctubre = new System.Windows.Forms.CheckBox();
-            this.cSeptiembre = new System.Windows.Forms.CheckBox();
-            this.cAgosto = new System.Windows.Forms.CheckBox();
-            this.cJulio = new System.Windows.Forms.CheckBox();
-            this.cJunio = new System.Windows.Forms.CheckBox();
-            this.cMayo = new System.Windows.Forms.CheckBox();
-            this.cAbril = new System.Windows.Forms.CheckBox();
-            this.tEnero = new System.Windows.Forms.TextBox();
-            this.cMarzo = new System.Windows.Forms.CheckBox();
-            this.cFebrero = new System.Windows.Forms.CheckBox();
-            this.cEnero = new System.Windows.Forms.CheckBox();
-            this.tOctubre = new System.Windows.Forms.TextBox();
-            this.tJulio = new System.Windows.Forms.TextBox();
-            this.tAbril = new System.Windows.Forms.TextBox();
-            this.tMarzo = new System.Windows.Forms.TextBox();
-            this.tNoviembre = new System.Windows.Forms.TextBox();
-            this.tAgosto = new System.Windows.Forms.TextBox();
-            this.tDiciembre = new System.Windows.Forms.TextBox();
-            this.tMayo = new System.Windows.Forms.TextBox();
-            this.tSeptiembre = new System.Windows.Forms.TextBox();
-            this.tFebrero = new System.Windows.Forms.TextBox();
-            this.tJunio = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabDatos.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -497,14 +497,14 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).BeginInit();
-            this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).BeginInit();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -1801,6 +1801,1547 @@
             this.tabPage2.Text = "Distribución de cobro";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // sumas
+            // 
+            this.sumas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sumas.Location = new System.Drawing.Point(1082, 516);
+            this.sumas.Name = "sumas";
+            this.sumas.Size = new System.Drawing.Size(75, 30);
+            this.sumas.TabIndex = 237;
+            this.sumas.Text = "Sumas";
+            this.sumas.UseVisualStyleBackColor = true;
+            // 
+            // calculo
+            // 
+            this.calculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculo.Location = new System.Drawing.Point(1163, 516);
+            this.calculo.Name = "calculo";
+            this.calculo.Size = new System.Drawing.Size(75, 30);
+            this.calculo.TabIndex = 236;
+            this.calculo.Text = "Calcular";
+            this.calculo.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.esquemaDateDic);
+            this.groupBox12.Controls.Add(this.esquemaDateNov);
+            this.groupBox12.Controls.Add(this.esquemaDateOct);
+            this.groupBox12.Controls.Add(this.esquemaDateSep);
+            this.groupBox12.Controls.Add(this.esquemaSep);
+            this.groupBox12.Controls.Add(this.esquemaDic);
+            this.groupBox12.Controls.Add(this.esquemaNov);
+            this.groupBox12.Controls.Add(this.esquemaOct);
+            this.groupBox12.Controls.Add(this.esquemaDateAgo);
+            this.groupBox12.Controls.Add(this.esquemaDateJul);
+            this.groupBox12.Controls.Add(this.esquemaDateJun);
+            this.groupBox12.Controls.Add(this.esquemaDateMay);
+            this.groupBox12.Controls.Add(this.esquemaMay);
+            this.groupBox12.Controls.Add(this.esquemaAgo);
+            this.groupBox12.Controls.Add(this.esquemaJul);
+            this.groupBox12.Controls.Add(this.esquemaJun);
+            this.groupBox12.Controls.Add(this.label28);
+            this.groupBox12.Controls.Add(this.label31);
+            this.groupBox12.Controls.Add(this.esquemaDateAbr);
+            this.groupBox12.Controls.Add(this.esquemaDateMar);
+            this.groupBox12.Controls.Add(this.esquemaDateFeb);
+            this.groupBox12.Controls.Add(this.esquemaDateEne);
+            this.groupBox12.Controls.Add(this.esquemaEne);
+            this.groupBox12.Controls.Add(this.esquemaAbr);
+            this.groupBox12.Controls.Add(this.esquemaMar);
+            this.groupBox12.Controls.Add(this.esquemaFeb);
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox12.Location = new System.Drawing.Point(962, 18);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(276, 403);
+            this.groupBox12.TabIndex = 229;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Comisión";
+            // 
+            // esquemaDateDic
+            // 
+            this.esquemaDateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateDic.Location = new System.Drawing.Point(157, 364);
+            this.esquemaDateDic.Name = "esquemaDateDic";
+            this.esquemaDateDic.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateDic.TabIndex = 214;
+            // 
+            // esquemaDateNov
+            // 
+            this.esquemaDateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateNov.Location = new System.Drawing.Point(157, 335);
+            this.esquemaDateNov.Name = "esquemaDateNov";
+            this.esquemaDateNov.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateNov.TabIndex = 213;
+            // 
+            // esquemaDateOct
+            // 
+            this.esquemaDateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateOct.Location = new System.Drawing.Point(157, 306);
+            this.esquemaDateOct.Name = "esquemaDateOct";
+            this.esquemaDateOct.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateOct.TabIndex = 212;
+            // 
+            // esquemaDateSep
+            // 
+            this.esquemaDateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateSep.Location = new System.Drawing.Point(157, 277);
+            this.esquemaDateSep.Name = "esquemaDateSep";
+            this.esquemaDateSep.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateSep.TabIndex = 211;
+            // 
+            // esquemaSep
+            // 
+            this.esquemaSep.Location = new System.Drawing.Point(12, 277);
+            this.esquemaSep.Name = "esquemaSep";
+            this.esquemaSep.Size = new System.Drawing.Size(139, 24);
+            this.esquemaSep.TabIndex = 207;
+            // 
+            // esquemaDic
+            // 
+            this.esquemaDic.Location = new System.Drawing.Point(12, 364);
+            this.esquemaDic.Name = "esquemaDic";
+            this.esquemaDic.Size = new System.Drawing.Size(139, 24);
+            this.esquemaDic.TabIndex = 209;
+            // 
+            // esquemaNov
+            // 
+            this.esquemaNov.Location = new System.Drawing.Point(12, 335);
+            this.esquemaNov.Name = "esquemaNov";
+            this.esquemaNov.Size = new System.Drawing.Size(139, 24);
+            this.esquemaNov.TabIndex = 210;
+            // 
+            // esquemaOct
+            // 
+            this.esquemaOct.Location = new System.Drawing.Point(12, 306);
+            this.esquemaOct.Name = "esquemaOct";
+            this.esquemaOct.Size = new System.Drawing.Size(139, 24);
+            this.esquemaOct.TabIndex = 208;
+            // 
+            // esquemaDateAgo
+            // 
+            this.esquemaDateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateAgo.Location = new System.Drawing.Point(157, 248);
+            this.esquemaDateAgo.Name = "esquemaDateAgo";
+            this.esquemaDateAgo.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateAgo.TabIndex = 206;
+            // 
+            // esquemaDateJul
+            // 
+            this.esquemaDateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateJul.Location = new System.Drawing.Point(157, 219);
+            this.esquemaDateJul.Name = "esquemaDateJul";
+            this.esquemaDateJul.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateJul.TabIndex = 205;
+            // 
+            // esquemaDateJun
+            // 
+            this.esquemaDateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateJun.Location = new System.Drawing.Point(157, 190);
+            this.esquemaDateJun.Name = "esquemaDateJun";
+            this.esquemaDateJun.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateJun.TabIndex = 204;
+            // 
+            // esquemaDateMay
+            // 
+            this.esquemaDateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateMay.Location = new System.Drawing.Point(157, 161);
+            this.esquemaDateMay.Name = "esquemaDateMay";
+            this.esquemaDateMay.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateMay.TabIndex = 203;
+            // 
+            // esquemaMay
+            // 
+            this.esquemaMay.Location = new System.Drawing.Point(12, 161);
+            this.esquemaMay.Name = "esquemaMay";
+            this.esquemaMay.Size = new System.Drawing.Size(139, 24);
+            this.esquemaMay.TabIndex = 199;
+            // 
+            // esquemaAgo
+            // 
+            this.esquemaAgo.Location = new System.Drawing.Point(12, 248);
+            this.esquemaAgo.Name = "esquemaAgo";
+            this.esquemaAgo.Size = new System.Drawing.Size(139, 24);
+            this.esquemaAgo.TabIndex = 201;
+            // 
+            // esquemaJul
+            // 
+            this.esquemaJul.Location = new System.Drawing.Point(12, 219);
+            this.esquemaJul.Name = "esquemaJul";
+            this.esquemaJul.Size = new System.Drawing.Size(139, 24);
+            this.esquemaJul.TabIndex = 202;
+            // 
+            // esquemaJun
+            // 
+            this.esquemaJun.Location = new System.Drawing.Point(12, 190);
+            this.esquemaJun.Name = "esquemaJun";
+            this.esquemaJun.Size = new System.Drawing.Size(139, 24);
+            this.esquemaJun.TabIndex = 200;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label28.Location = new System.Drawing.Point(154, 25);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(106, 18);
+            this.label28.TabIndex = 198;
+            this.label28.Text = "Fecha de pago";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label31.Location = new System.Drawing.Point(12, 25);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(71, 18);
+            this.label31.TabIndex = 197;
+            this.label31.Text = "Esquema";
+            // 
+            // esquemaDateAbr
+            // 
+            this.esquemaDateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateAbr.Location = new System.Drawing.Point(157, 132);
+            this.esquemaDateAbr.Name = "esquemaDateAbr";
+            this.esquemaDateAbr.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateAbr.TabIndex = 188;
+            // 
+            // esquemaDateMar
+            // 
+            this.esquemaDateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateMar.Location = new System.Drawing.Point(157, 103);
+            this.esquemaDateMar.Name = "esquemaDateMar";
+            this.esquemaDateMar.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateMar.TabIndex = 187;
+            // 
+            // esquemaDateFeb
+            // 
+            this.esquemaDateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateFeb.Location = new System.Drawing.Point(157, 74);
+            this.esquemaDateFeb.Name = "esquemaDateFeb";
+            this.esquemaDateFeb.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateFeb.TabIndex = 186;
+            // 
+            // esquemaDateEne
+            // 
+            this.esquemaDateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.esquemaDateEne.Location = new System.Drawing.Point(157, 45);
+            this.esquemaDateEne.Name = "esquemaDateEne";
+            this.esquemaDateEne.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateEne.TabIndex = 185;
+            // 
+            // esquemaEne
+            // 
+            this.esquemaEne.Location = new System.Drawing.Point(12, 45);
+            this.esquemaEne.Name = "esquemaEne";
+            this.esquemaEne.Size = new System.Drawing.Size(139, 24);
+            this.esquemaEne.TabIndex = 140;
+            // 
+            // esquemaAbr
+            // 
+            this.esquemaAbr.Location = new System.Drawing.Point(12, 132);
+            this.esquemaAbr.Name = "esquemaAbr";
+            this.esquemaAbr.Size = new System.Drawing.Size(139, 24);
+            this.esquemaAbr.TabIndex = 142;
+            // 
+            // esquemaMar
+            // 
+            this.esquemaMar.Location = new System.Drawing.Point(12, 103);
+            this.esquemaMar.Name = "esquemaMar";
+            this.esquemaMar.Size = new System.Drawing.Size(139, 24);
+            this.esquemaMar.TabIndex = 143;
+            // 
+            // esquemaFeb
+            // 
+            this.esquemaFeb.Location = new System.Drawing.Point(12, 75);
+            this.esquemaFeb.Name = "esquemaFeb";
+            this.esquemaFeb.Size = new System.Drawing.Size(139, 24);
+            this.esquemaFeb.TabIndex = 141;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(316, 465);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(116, 18);
+            this.label27.TabIndex = 235;
+            this.label27.Text = "% Cumplimiento";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(316, 433);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 18);
+            this.label26.TabIndex = 230;
+            this.label26.Text = "Monto Pautado";
+            // 
+            // porcentajeCobrado
+            // 
+            this.porcentajeCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.porcentajeCobrado.Location = new System.Drawing.Point(784, 459);
+            this.porcentajeCobrado.Name = "porcentajeCobrado";
+            this.porcentajeCobrado.Size = new System.Drawing.Size(139, 24);
+            this.porcentajeCobrado.TabIndex = 234;
+            // 
+            // porcentajeFacturado
+            // 
+            this.porcentajeFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.porcentajeFacturado.Location = new System.Drawing.Point(620, 459);
+            this.porcentajeFacturado.Name = "porcentajeFacturado";
+            this.porcentajeFacturado.Size = new System.Drawing.Size(139, 24);
+            this.porcentajeFacturado.TabIndex = 233;
+            // 
+            // porcentajeMonto
+            // 
+            this.porcentajeMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.porcentajeMonto.Location = new System.Drawing.Point(455, 459);
+            this.porcentajeMonto.Name = "porcentajeMonto";
+            this.porcentajeMonto.Size = new System.Drawing.Size(139, 24);
+            this.porcentajeMonto.TabIndex = 232;
+            // 
+            // cantCobrado
+            // 
+            this.cantCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantCobrado.Location = new System.Drawing.Point(784, 430);
+            this.cantCobrado.Name = "cantCobrado";
+            this.cantCobrado.Size = new System.Drawing.Size(139, 24);
+            this.cantCobrado.TabIndex = 231;
+            // 
+            // cantFacturado
+            // 
+            this.cantFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantFacturado.Location = new System.Drawing.Point(620, 430);
+            this.cantFacturado.Name = "cantFacturado";
+            this.cantFacturado.Size = new System.Drawing.Size(139, 24);
+            this.cantFacturado.TabIndex = 228;
+            // 
+            // cantMonto
+            // 
+            this.cantMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantMonto.Location = new System.Drawing.Point(455, 430);
+            this.cantMonto.Name = "cantMonto";
+            this.cantMonto.Size = new System.Drawing.Size(139, 24);
+            this.cantMonto.TabIndex = 224;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label25);
+            this.groupBox11.Controls.Add(this.label24);
+            this.groupBox11.Controls.Add(this.dateDic);
+            this.groupBox11.Controls.Add(this.dateNov);
+            this.groupBox11.Controls.Add(this.dateOct);
+            this.groupBox11.Controls.Add(this.dateSep);
+            this.groupBox11.Controls.Add(this.dateAgo);
+            this.groupBox11.Controls.Add(this.dateJul);
+            this.groupBox11.Controls.Add(this.dateJun);
+            this.groupBox11.Controls.Add(this.dateMay);
+            this.groupBox11.Controls.Add(this.dateAbr);
+            this.groupBox11.Controls.Add(this.dateMar);
+            this.groupBox11.Controls.Add(this.dateFeb);
+            this.groupBox11.Controls.Add(this.dateEne);
+            this.groupBox11.Controls.Add(this.cobradoEne);
+            this.groupBox11.Controls.Add(this.cobradoOct);
+            this.groupBox11.Controls.Add(this.cobradoJul);
+            this.groupBox11.Controls.Add(this.cobradoAbr);
+            this.groupBox11.Controls.Add(this.cobradoMar);
+            this.groupBox11.Controls.Add(this.cobradoNov);
+            this.groupBox11.Controls.Add(this.cobradoAgo);
+            this.groupBox11.Controls.Add(this.cobradoDic);
+            this.groupBox11.Controls.Add(this.cobradoMay);
+            this.groupBox11.Controls.Add(this.cobradoSep);
+            this.groupBox11.Controls.Add(this.cobradoFeb);
+            this.groupBox11.Controls.Add(this.cobradoJun);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox11.Location = new System.Drawing.Point(724, 18);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(232, 403);
+            this.groupBox11.TabIndex = 227;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Cobrado";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label25.Location = new System.Drawing.Point(112, 25);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(115, 18);
+            this.label25.TabIndex = 198;
+            this.label25.Text = "Fecha de Cobro";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label24.Location = new System.Drawing.Point(10, 25);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(51, 18);
+            this.label24.TabIndex = 197;
+            this.label24.Text = "Monto";
+            // 
+            // dateDic
+            // 
+            this.dateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDic.Location = new System.Drawing.Point(115, 364);
+            this.dateDic.Name = "dateDic";
+            this.dateDic.Size = new System.Drawing.Size(108, 24);
+            this.dateDic.TabIndex = 196;
+            // 
+            // dateNov
+            // 
+            this.dateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNov.Location = new System.Drawing.Point(115, 335);
+            this.dateNov.Name = "dateNov";
+            this.dateNov.Size = new System.Drawing.Size(108, 24);
+            this.dateNov.TabIndex = 195;
+            // 
+            // dateOct
+            // 
+            this.dateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateOct.Location = new System.Drawing.Point(115, 306);
+            this.dateOct.Name = "dateOct";
+            this.dateOct.Size = new System.Drawing.Size(108, 24);
+            this.dateOct.TabIndex = 194;
+            // 
+            // dateSep
+            // 
+            this.dateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateSep.Location = new System.Drawing.Point(115, 277);
+            this.dateSep.Name = "dateSep";
+            this.dateSep.Size = new System.Drawing.Size(108, 24);
+            this.dateSep.TabIndex = 193;
+            // 
+            // dateAgo
+            // 
+            this.dateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateAgo.Location = new System.Drawing.Point(115, 248);
+            this.dateAgo.Name = "dateAgo";
+            this.dateAgo.Size = new System.Drawing.Size(108, 24);
+            this.dateAgo.TabIndex = 192;
+            // 
+            // dateJul
+            // 
+            this.dateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateJul.Location = new System.Drawing.Point(115, 219);
+            this.dateJul.Name = "dateJul";
+            this.dateJul.Size = new System.Drawing.Size(108, 24);
+            this.dateJul.TabIndex = 191;
+            // 
+            // dateJun
+            // 
+            this.dateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateJun.Location = new System.Drawing.Point(115, 190);
+            this.dateJun.Name = "dateJun";
+            this.dateJun.Size = new System.Drawing.Size(108, 24);
+            this.dateJun.TabIndex = 190;
+            // 
+            // dateMay
+            // 
+            this.dateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateMay.Location = new System.Drawing.Point(115, 161);
+            this.dateMay.Name = "dateMay";
+            this.dateMay.Size = new System.Drawing.Size(108, 24);
+            this.dateMay.TabIndex = 189;
+            // 
+            // dateAbr
+            // 
+            this.dateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateAbr.Location = new System.Drawing.Point(115, 132);
+            this.dateAbr.Name = "dateAbr";
+            this.dateAbr.Size = new System.Drawing.Size(108, 24);
+            this.dateAbr.TabIndex = 188;
+            // 
+            // dateMar
+            // 
+            this.dateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateMar.Location = new System.Drawing.Point(115, 103);
+            this.dateMar.Name = "dateMar";
+            this.dateMar.Size = new System.Drawing.Size(108, 24);
+            this.dateMar.TabIndex = 187;
+            // 
+            // dateFeb
+            // 
+            this.dateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateFeb.Location = new System.Drawing.Point(115, 74);
+            this.dateFeb.Name = "dateFeb";
+            this.dateFeb.Size = new System.Drawing.Size(108, 24);
+            this.dateFeb.TabIndex = 186;
+            // 
+            // dateEne
+            // 
+            this.dateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateEne.Location = new System.Drawing.Point(115, 45);
+            this.dateEne.Name = "dateEne";
+            this.dateEne.Size = new System.Drawing.Size(108, 24);
+            this.dateEne.TabIndex = 185;
+            // 
+            // cobradoEne
+            // 
+            this.cobradoEne.Location = new System.Drawing.Point(10, 45);
+            this.cobradoEne.Name = "cobradoEne";
+            this.cobradoEne.Size = new System.Drawing.Size(96, 24);
+            this.cobradoEne.TabIndex = 140;
+            // 
+            // cobradoOct
+            // 
+            this.cobradoOct.Location = new System.Drawing.Point(10, 306);
+            this.cobradoOct.Name = "cobradoOct";
+            this.cobradoOct.Size = new System.Drawing.Size(96, 24);
+            this.cobradoOct.TabIndex = 148;
+            // 
+            // cobradoJul
+            // 
+            this.cobradoJul.Location = new System.Drawing.Point(10, 219);
+            this.cobradoJul.Name = "cobradoJul";
+            this.cobradoJul.Size = new System.Drawing.Size(96, 24);
+            this.cobradoJul.TabIndex = 147;
+            // 
+            // cobradoAbr
+            // 
+            this.cobradoAbr.Location = new System.Drawing.Point(10, 132);
+            this.cobradoAbr.Name = "cobradoAbr";
+            this.cobradoAbr.Size = new System.Drawing.Size(96, 24);
+            this.cobradoAbr.TabIndex = 142;
+            // 
+            // cobradoMar
+            // 
+            this.cobradoMar.Location = new System.Drawing.Point(10, 103);
+            this.cobradoMar.Name = "cobradoMar";
+            this.cobradoMar.Size = new System.Drawing.Size(96, 24);
+            this.cobradoMar.TabIndex = 143;
+            // 
+            // cobradoNov
+            // 
+            this.cobradoNov.Location = new System.Drawing.Point(10, 335);
+            this.cobradoNov.Name = "cobradoNov";
+            this.cobradoNov.Size = new System.Drawing.Size(96, 24);
+            this.cobradoNov.TabIndex = 150;
+            // 
+            // cobradoAgo
+            // 
+            this.cobradoAgo.Location = new System.Drawing.Point(10, 248);
+            this.cobradoAgo.Name = "cobradoAgo";
+            this.cobradoAgo.Size = new System.Drawing.Size(96, 24);
+            this.cobradoAgo.TabIndex = 145;
+            // 
+            // cobradoDic
+            // 
+            this.cobradoDic.Location = new System.Drawing.Point(10, 364);
+            this.cobradoDic.Name = "cobradoDic";
+            this.cobradoDic.Size = new System.Drawing.Size(96, 24);
+            this.cobradoDic.TabIndex = 151;
+            // 
+            // cobradoMay
+            // 
+            this.cobradoMay.Location = new System.Drawing.Point(10, 161);
+            this.cobradoMay.Name = "cobradoMay";
+            this.cobradoMay.Size = new System.Drawing.Size(96, 24);
+            this.cobradoMay.TabIndex = 146;
+            // 
+            // cobradoSep
+            // 
+            this.cobradoSep.Location = new System.Drawing.Point(10, 277);
+            this.cobradoSep.Name = "cobradoSep";
+            this.cobradoSep.Size = new System.Drawing.Size(96, 24);
+            this.cobradoSep.TabIndex = 149;
+            // 
+            // cobradoFeb
+            // 
+            this.cobradoFeb.Location = new System.Drawing.Point(10, 74);
+            this.cobradoFeb.Name = "cobradoFeb";
+            this.cobradoFeb.Size = new System.Drawing.Size(96, 24);
+            this.cobradoFeb.TabIndex = 141;
+            // 
+            // cobradoJun
+            // 
+            this.cobradoJun.Location = new System.Drawing.Point(10, 190);
+            this.cobradoJun.Name = "cobradoJun";
+            this.cobradoJun.Size = new System.Drawing.Size(96, 24);
+            this.cobradoJun.TabIndex = 144;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label49);
+            this.groupBox10.Controls.Add(this.nameEne);
+            this.groupBox10.Controls.Add(this.label50);
+            this.groupBox10.Controls.Add(this.nameOct);
+            this.groupBox10.Controls.Add(this.nameJul);
+            this.groupBox10.Controls.Add(this.nameAbr);
+            this.groupBox10.Controls.Add(this.nameMar);
+            this.groupBox10.Controls.Add(this.nameNov);
+            this.groupBox10.Controls.Add(this.nameAgo);
+            this.groupBox10.Controls.Add(this.nameDic);
+            this.groupBox10.Controls.Add(this.nameMay);
+            this.groupBox10.Controls.Add(this.nameSep);
+            this.groupBox10.Controls.Add(this.nameFeb);
+            this.groupBox10.Controls.Add(this.nameJun);
+            this.groupBox10.Controls.Add(this.exploreDic);
+            this.groupBox10.Controls.Add(this.findDic);
+            this.groupBox10.Controls.Add(this.exploreNov);
+            this.groupBox10.Controls.Add(this.findNov);
+            this.groupBox10.Controls.Add(this.exploreOct);
+            this.groupBox10.Controls.Add(this.findOct);
+            this.groupBox10.Controls.Add(this.exploreSep);
+            this.groupBox10.Controls.Add(this.findSep);
+            this.groupBox10.Controls.Add(this.exploreAgo);
+            this.groupBox10.Controls.Add(this.findAgo);
+            this.groupBox10.Controls.Add(this.exploreJul);
+            this.groupBox10.Controls.Add(this.findJul);
+            this.groupBox10.Controls.Add(this.exploreJun);
+            this.groupBox10.Controls.Add(this.findJun);
+            this.groupBox10.Controls.Add(this.exploreMay);
+            this.groupBox10.Controls.Add(this.findMay);
+            this.groupBox10.Controls.Add(this.exploreAbr);
+            this.groupBox10.Controls.Add(this.findAbr);
+            this.groupBox10.Controls.Add(this.exploreMar);
+            this.groupBox10.Controls.Add(this.findMar);
+            this.groupBox10.Controls.Add(this.exploreFeb);
+            this.groupBox10.Controls.Add(this.findFeb);
+            this.groupBox10.Controls.Add(this.exploreEne);
+            this.groupBox10.Controls.Add(this.findEne);
+            this.groupBox10.Controls.Add(this.archivoEne);
+            this.groupBox10.Controls.Add(this.archivoOct);
+            this.groupBox10.Controls.Add(this.archivoJul);
+            this.groupBox10.Controls.Add(this.archivoAbr);
+            this.groupBox10.Controls.Add(this.archivoMar);
+            this.groupBox10.Controls.Add(this.archivoNov);
+            this.groupBox10.Controls.Add(this.archivoAgo);
+            this.groupBox10.Controls.Add(this.archivoDic);
+            this.groupBox10.Controls.Add(this.archivoMay);
+            this.groupBox10.Controls.Add(this.archivoSep);
+            this.groupBox10.Controls.Add(this.archivoFeb);
+            this.groupBox10.Controls.Add(this.archivoJun);
+            this.groupBox10.Controls.Add(this.facturadoEne);
+            this.groupBox10.Controls.Add(this.facturadoOct);
+            this.groupBox10.Controls.Add(this.facturadoJul);
+            this.groupBox10.Controls.Add(this.facturadoAbr);
+            this.groupBox10.Controls.Add(this.facturadoMar);
+            this.groupBox10.Controls.Add(this.facturadoNov);
+            this.groupBox10.Controls.Add(this.facturadoAgo);
+            this.groupBox10.Controls.Add(this.facturadoDic);
+            this.groupBox10.Controls.Add(this.facturadoMay);
+            this.groupBox10.Controls.Add(this.facturadoSep);
+            this.groupBox10.Controls.Add(this.facturadoFeb);
+            this.groupBox10.Controls.Add(this.facturadoJun);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox10.Location = new System.Drawing.Point(350, 18);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(368, 403);
+            this.groupBox10.TabIndex = 226;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Facturado";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label49.Location = new System.Drawing.Point(146, 24);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(57, 18);
+            this.label49.TabIndex = 200;
+            this.label49.Text = "Archivo";
+            // 
+            // nameEne
+            // 
+            this.nameEne.Location = new System.Drawing.Point(129, 45);
+            this.nameEne.Name = "nameEne";
+            this.nameEne.Size = new System.Drawing.Size(14, 24);
+            this.nameEne.TabIndex = 188;
+            this.nameEne.Visible = false;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label50.Location = new System.Drawing.Point(8, 24);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(51, 18);
+            this.label50.TabIndex = 199;
+            this.label50.Text = "Monto";
+            // 
+            // nameOct
+            // 
+            this.nameOct.Location = new System.Drawing.Point(129, 306);
+            this.nameOct.Name = "nameOct";
+            this.nameOct.Size = new System.Drawing.Size(14, 24);
+            this.nameOct.TabIndex = 196;
+            this.nameOct.Visible = false;
+            // 
+            // nameJul
+            // 
+            this.nameJul.Location = new System.Drawing.Point(129, 219);
+            this.nameJul.Name = "nameJul";
+            this.nameJul.Size = new System.Drawing.Size(14, 24);
+            this.nameJul.TabIndex = 195;
+            this.nameJul.Visible = false;
+            // 
+            // nameAbr
+            // 
+            this.nameAbr.Location = new System.Drawing.Point(129, 132);
+            this.nameAbr.Name = "nameAbr";
+            this.nameAbr.Size = new System.Drawing.Size(14, 24);
+            this.nameAbr.TabIndex = 190;
+            this.nameAbr.Visible = false;
+            // 
+            // nameMar
+            // 
+            this.nameMar.Location = new System.Drawing.Point(129, 103);
+            this.nameMar.Name = "nameMar";
+            this.nameMar.Size = new System.Drawing.Size(14, 24);
+            this.nameMar.TabIndex = 191;
+            this.nameMar.Visible = false;
+            // 
+            // nameNov
+            // 
+            this.nameNov.Location = new System.Drawing.Point(129, 335);
+            this.nameNov.Name = "nameNov";
+            this.nameNov.Size = new System.Drawing.Size(14, 24);
+            this.nameNov.TabIndex = 198;
+            this.nameNov.Visible = false;
+            // 
+            // nameAgo
+            // 
+            this.nameAgo.Location = new System.Drawing.Point(129, 248);
+            this.nameAgo.Name = "nameAgo";
+            this.nameAgo.Size = new System.Drawing.Size(14, 24);
+            this.nameAgo.TabIndex = 193;
+            this.nameAgo.Visible = false;
+            // 
+            // nameDic
+            // 
+            this.nameDic.Location = new System.Drawing.Point(129, 364);
+            this.nameDic.Name = "nameDic";
+            this.nameDic.Size = new System.Drawing.Size(14, 24);
+            this.nameDic.TabIndex = 199;
+            this.nameDic.Visible = false;
+            // 
+            // nameMay
+            // 
+            this.nameMay.Location = new System.Drawing.Point(129, 161);
+            this.nameMay.Name = "nameMay";
+            this.nameMay.Size = new System.Drawing.Size(14, 24);
+            this.nameMay.TabIndex = 194;
+            this.nameMay.Visible = false;
+            // 
+            // nameSep
+            // 
+            this.nameSep.Location = new System.Drawing.Point(129, 277);
+            this.nameSep.Name = "nameSep";
+            this.nameSep.Size = new System.Drawing.Size(14, 24);
+            this.nameSep.TabIndex = 197;
+            this.nameSep.Visible = false;
+            // 
+            // nameFeb
+            // 
+            this.nameFeb.Location = new System.Drawing.Point(129, 74);
+            this.nameFeb.Name = "nameFeb";
+            this.nameFeb.Size = new System.Drawing.Size(14, 24);
+            this.nameFeb.TabIndex = 189;
+            this.nameFeb.Visible = false;
+            // 
+            // nameJun
+            // 
+            this.nameJun.Location = new System.Drawing.Point(129, 190);
+            this.nameJun.Name = "nameJun";
+            this.nameJun.Size = new System.Drawing.Size(14, 24);
+            this.nameJun.TabIndex = 192;
+            this.nameJun.Visible = false;
+            // 
+            // exploreDic
+            // 
+            this.exploreDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreDic.BackgroundImage")));
+            this.exploreDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreDic.Location = new System.Drawing.Point(337, 364);
+            this.exploreDic.Name = "exploreDic";
+            this.exploreDic.Size = new System.Drawing.Size(24, 24);
+            this.exploreDic.TabIndex = 187;
+            this.exploreDic.UseVisualStyleBackColor = true;
+            // 
+            // findDic
+            // 
+            this.findDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findDic.BackgroundImage")));
+            this.findDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findDic.Location = new System.Drawing.Point(301, 364);
+            this.findDic.Name = "findDic";
+            this.findDic.Size = new System.Drawing.Size(24, 24);
+            this.findDic.TabIndex = 186;
+            this.findDic.UseVisualStyleBackColor = true;
+            // 
+            // exploreNov
+            // 
+            this.exploreNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreNov.BackgroundImage")));
+            this.exploreNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreNov.Location = new System.Drawing.Point(337, 335);
+            this.exploreNov.Name = "exploreNov";
+            this.exploreNov.Size = new System.Drawing.Size(24, 24);
+            this.exploreNov.TabIndex = 185;
+            this.exploreNov.UseVisualStyleBackColor = true;
+            // 
+            // findNov
+            // 
+            this.findNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findNov.BackgroundImage")));
+            this.findNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findNov.Location = new System.Drawing.Point(301, 335);
+            this.findNov.Name = "findNov";
+            this.findNov.Size = new System.Drawing.Size(24, 24);
+            this.findNov.TabIndex = 184;
+            this.findNov.UseVisualStyleBackColor = true;
+            // 
+            // exploreOct
+            // 
+            this.exploreOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreOct.BackgroundImage")));
+            this.exploreOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreOct.Location = new System.Drawing.Point(337, 306);
+            this.exploreOct.Name = "exploreOct";
+            this.exploreOct.Size = new System.Drawing.Size(24, 24);
+            this.exploreOct.TabIndex = 183;
+            this.exploreOct.UseVisualStyleBackColor = true;
+            // 
+            // findOct
+            // 
+            this.findOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findOct.BackgroundImage")));
+            this.findOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findOct.Location = new System.Drawing.Point(301, 306);
+            this.findOct.Name = "findOct";
+            this.findOct.Size = new System.Drawing.Size(24, 24);
+            this.findOct.TabIndex = 182;
+            this.findOct.UseVisualStyleBackColor = true;
+            // 
+            // exploreSep
+            // 
+            this.exploreSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreSep.BackgroundImage")));
+            this.exploreSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreSep.Location = new System.Drawing.Point(337, 277);
+            this.exploreSep.Name = "exploreSep";
+            this.exploreSep.Size = new System.Drawing.Size(24, 24);
+            this.exploreSep.TabIndex = 181;
+            this.exploreSep.UseVisualStyleBackColor = true;
+            // 
+            // findSep
+            // 
+            this.findSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findSep.BackgroundImage")));
+            this.findSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findSep.Location = new System.Drawing.Point(301, 277);
+            this.findSep.Name = "findSep";
+            this.findSep.Size = new System.Drawing.Size(24, 24);
+            this.findSep.TabIndex = 180;
+            this.findSep.UseVisualStyleBackColor = true;
+            // 
+            // exploreAgo
+            // 
+            this.exploreAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAgo.BackgroundImage")));
+            this.exploreAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreAgo.Location = new System.Drawing.Point(337, 248);
+            this.exploreAgo.Name = "exploreAgo";
+            this.exploreAgo.Size = new System.Drawing.Size(24, 24);
+            this.exploreAgo.TabIndex = 179;
+            this.exploreAgo.UseVisualStyleBackColor = true;
+            // 
+            // findAgo
+            // 
+            this.findAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAgo.BackgroundImage")));
+            this.findAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findAgo.Location = new System.Drawing.Point(301, 248);
+            this.findAgo.Name = "findAgo";
+            this.findAgo.Size = new System.Drawing.Size(24, 24);
+            this.findAgo.TabIndex = 178;
+            this.findAgo.UseVisualStyleBackColor = true;
+            // 
+            // exploreJul
+            // 
+            this.exploreJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJul.BackgroundImage")));
+            this.exploreJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreJul.Location = new System.Drawing.Point(337, 219);
+            this.exploreJul.Name = "exploreJul";
+            this.exploreJul.Size = new System.Drawing.Size(24, 24);
+            this.exploreJul.TabIndex = 177;
+            this.exploreJul.UseVisualStyleBackColor = true;
+            // 
+            // findJul
+            // 
+            this.findJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJul.BackgroundImage")));
+            this.findJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findJul.Location = new System.Drawing.Point(301, 219);
+            this.findJul.Name = "findJul";
+            this.findJul.Size = new System.Drawing.Size(24, 24);
+            this.findJul.TabIndex = 176;
+            this.findJul.UseVisualStyleBackColor = true;
+            // 
+            // exploreJun
+            // 
+            this.exploreJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJun.BackgroundImage")));
+            this.exploreJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreJun.Location = new System.Drawing.Point(337, 190);
+            this.exploreJun.Name = "exploreJun";
+            this.exploreJun.Size = new System.Drawing.Size(24, 24);
+            this.exploreJun.TabIndex = 175;
+            this.exploreJun.UseVisualStyleBackColor = true;
+            // 
+            // findJun
+            // 
+            this.findJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJun.BackgroundImage")));
+            this.findJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findJun.Location = new System.Drawing.Point(301, 190);
+            this.findJun.Name = "findJun";
+            this.findJun.Size = new System.Drawing.Size(24, 24);
+            this.findJun.TabIndex = 174;
+            this.findJun.UseVisualStyleBackColor = true;
+            // 
+            // exploreMay
+            // 
+            this.exploreMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMay.BackgroundImage")));
+            this.exploreMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreMay.Location = new System.Drawing.Point(337, 161);
+            this.exploreMay.Name = "exploreMay";
+            this.exploreMay.Size = new System.Drawing.Size(24, 24);
+            this.exploreMay.TabIndex = 173;
+            this.exploreMay.UseVisualStyleBackColor = true;
+            // 
+            // findMay
+            // 
+            this.findMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMay.BackgroundImage")));
+            this.findMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findMay.Location = new System.Drawing.Point(301, 161);
+            this.findMay.Name = "findMay";
+            this.findMay.Size = new System.Drawing.Size(24, 24);
+            this.findMay.TabIndex = 172;
+            this.findMay.UseVisualStyleBackColor = true;
+            // 
+            // exploreAbr
+            // 
+            this.exploreAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAbr.BackgroundImage")));
+            this.exploreAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreAbr.Location = new System.Drawing.Point(337, 132);
+            this.exploreAbr.Name = "exploreAbr";
+            this.exploreAbr.Size = new System.Drawing.Size(24, 24);
+            this.exploreAbr.TabIndex = 171;
+            this.exploreAbr.UseVisualStyleBackColor = true;
+            // 
+            // findAbr
+            // 
+            this.findAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAbr.BackgroundImage")));
+            this.findAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findAbr.Location = new System.Drawing.Point(301, 132);
+            this.findAbr.Name = "findAbr";
+            this.findAbr.Size = new System.Drawing.Size(24, 24);
+            this.findAbr.TabIndex = 170;
+            this.findAbr.UseVisualStyleBackColor = true;
+            // 
+            // exploreMar
+            // 
+            this.exploreMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMar.BackgroundImage")));
+            this.exploreMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreMar.Location = new System.Drawing.Point(337, 103);
+            this.exploreMar.Name = "exploreMar";
+            this.exploreMar.Size = new System.Drawing.Size(24, 24);
+            this.exploreMar.TabIndex = 169;
+            this.exploreMar.UseVisualStyleBackColor = true;
+            // 
+            // findMar
+            // 
+            this.findMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMar.BackgroundImage")));
+            this.findMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findMar.Location = new System.Drawing.Point(301, 103);
+            this.findMar.Name = "findMar";
+            this.findMar.Size = new System.Drawing.Size(24, 24);
+            this.findMar.TabIndex = 168;
+            this.findMar.UseVisualStyleBackColor = true;
+            // 
+            // exploreFeb
+            // 
+            this.exploreFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreFeb.BackgroundImage")));
+            this.exploreFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreFeb.Location = new System.Drawing.Point(337, 74);
+            this.exploreFeb.Name = "exploreFeb";
+            this.exploreFeb.Size = new System.Drawing.Size(24, 24);
+            this.exploreFeb.TabIndex = 167;
+            this.exploreFeb.UseVisualStyleBackColor = true;
+            // 
+            // findFeb
+            // 
+            this.findFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findFeb.BackgroundImage")));
+            this.findFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findFeb.Location = new System.Drawing.Point(301, 74);
+            this.findFeb.Name = "findFeb";
+            this.findFeb.Size = new System.Drawing.Size(24, 24);
+            this.findFeb.TabIndex = 166;
+            this.findFeb.UseVisualStyleBackColor = true;
+            // 
+            // exploreEne
+            // 
+            this.exploreEne.BackgroundImage = global::gestor_bdm.Properties.Resources.visualization;
+            this.exploreEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exploreEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploreEne.Location = new System.Drawing.Point(337, 45);
+            this.exploreEne.Name = "exploreEne";
+            this.exploreEne.Size = new System.Drawing.Size(24, 24);
+            this.exploreEne.TabIndex = 165;
+            this.exploreEne.UseVisualStyleBackColor = true;
+            // 
+            // findEne
+            // 
+            this.findEne.BackgroundImage = global::gestor_bdm.Properties.Resources.folder;
+            this.findEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.findEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findEne.Location = new System.Drawing.Point(301, 45);
+            this.findEne.Name = "findEne";
+            this.findEne.Size = new System.Drawing.Size(24, 24);
+            this.findEne.TabIndex = 164;
+            this.findEne.UseVisualStyleBackColor = true;
+            // 
+            // archivoEne
+            // 
+            this.archivoEne.Location = new System.Drawing.Point(149, 45);
+            this.archivoEne.Name = "archivoEne";
+            this.archivoEne.Size = new System.Drawing.Size(146, 24);
+            this.archivoEne.TabIndex = 152;
+            // 
+            // archivoOct
+            // 
+            this.archivoOct.Location = new System.Drawing.Point(149, 306);
+            this.archivoOct.Name = "archivoOct";
+            this.archivoOct.Size = new System.Drawing.Size(146, 24);
+            this.archivoOct.TabIndex = 160;
+            // 
+            // archivoJul
+            // 
+            this.archivoJul.Location = new System.Drawing.Point(149, 219);
+            this.archivoJul.Name = "archivoJul";
+            this.archivoJul.Size = new System.Drawing.Size(146, 24);
+            this.archivoJul.TabIndex = 159;
+            // 
+            // archivoAbr
+            // 
+            this.archivoAbr.Location = new System.Drawing.Point(149, 132);
+            this.archivoAbr.Name = "archivoAbr";
+            this.archivoAbr.Size = new System.Drawing.Size(146, 24);
+            this.archivoAbr.TabIndex = 154;
+            // 
+            // archivoMar
+            // 
+            this.archivoMar.Location = new System.Drawing.Point(149, 103);
+            this.archivoMar.Name = "archivoMar";
+            this.archivoMar.Size = new System.Drawing.Size(146, 24);
+            this.archivoMar.TabIndex = 155;
+            // 
+            // archivoNov
+            // 
+            this.archivoNov.Location = new System.Drawing.Point(149, 335);
+            this.archivoNov.Name = "archivoNov";
+            this.archivoNov.Size = new System.Drawing.Size(146, 24);
+            this.archivoNov.TabIndex = 162;
+            // 
+            // archivoAgo
+            // 
+            this.archivoAgo.Location = new System.Drawing.Point(149, 248);
+            this.archivoAgo.Name = "archivoAgo";
+            this.archivoAgo.Size = new System.Drawing.Size(146, 24);
+            this.archivoAgo.TabIndex = 157;
+            // 
+            // archivoDic
+            // 
+            this.archivoDic.Location = new System.Drawing.Point(149, 364);
+            this.archivoDic.Name = "archivoDic";
+            this.archivoDic.Size = new System.Drawing.Size(146, 24);
+            this.archivoDic.TabIndex = 163;
+            // 
+            // archivoMay
+            // 
+            this.archivoMay.Location = new System.Drawing.Point(149, 161);
+            this.archivoMay.Name = "archivoMay";
+            this.archivoMay.Size = new System.Drawing.Size(146, 24);
+            this.archivoMay.TabIndex = 158;
+            // 
+            // archivoSep
+            // 
+            this.archivoSep.Location = new System.Drawing.Point(149, 277);
+            this.archivoSep.Name = "archivoSep";
+            this.archivoSep.Size = new System.Drawing.Size(146, 24);
+            this.archivoSep.TabIndex = 161;
+            // 
+            // archivoFeb
+            // 
+            this.archivoFeb.Location = new System.Drawing.Point(149, 74);
+            this.archivoFeb.Name = "archivoFeb";
+            this.archivoFeb.Size = new System.Drawing.Size(146, 24);
+            this.archivoFeb.TabIndex = 153;
+            // 
+            // archivoJun
+            // 
+            this.archivoJun.Location = new System.Drawing.Point(149, 190);
+            this.archivoJun.Name = "archivoJun";
+            this.archivoJun.Size = new System.Drawing.Size(146, 24);
+            this.archivoJun.TabIndex = 156;
+            // 
+            // facturadoEne
+            // 
+            this.facturadoEne.Location = new System.Drawing.Point(10, 45);
+            this.facturadoEne.Name = "facturadoEne";
+            this.facturadoEne.Size = new System.Drawing.Size(96, 24);
+            this.facturadoEne.TabIndex = 140;
+            // 
+            // facturadoOct
+            // 
+            this.facturadoOct.Location = new System.Drawing.Point(10, 306);
+            this.facturadoOct.Name = "facturadoOct";
+            this.facturadoOct.Size = new System.Drawing.Size(96, 24);
+            this.facturadoOct.TabIndex = 148;
+            // 
+            // facturadoJul
+            // 
+            this.facturadoJul.Location = new System.Drawing.Point(10, 219);
+            this.facturadoJul.Name = "facturadoJul";
+            this.facturadoJul.Size = new System.Drawing.Size(96, 24);
+            this.facturadoJul.TabIndex = 147;
+            // 
+            // facturadoAbr
+            // 
+            this.facturadoAbr.Location = new System.Drawing.Point(10, 132);
+            this.facturadoAbr.Name = "facturadoAbr";
+            this.facturadoAbr.Size = new System.Drawing.Size(96, 24);
+            this.facturadoAbr.TabIndex = 142;
+            // 
+            // facturadoMar
+            // 
+            this.facturadoMar.Location = new System.Drawing.Point(10, 103);
+            this.facturadoMar.Name = "facturadoMar";
+            this.facturadoMar.Size = new System.Drawing.Size(96, 24);
+            this.facturadoMar.TabIndex = 143;
+            // 
+            // facturadoNov
+            // 
+            this.facturadoNov.Location = new System.Drawing.Point(10, 335);
+            this.facturadoNov.Name = "facturadoNov";
+            this.facturadoNov.Size = new System.Drawing.Size(96, 24);
+            this.facturadoNov.TabIndex = 150;
+            // 
+            // facturadoAgo
+            // 
+            this.facturadoAgo.Location = new System.Drawing.Point(10, 248);
+            this.facturadoAgo.Name = "facturadoAgo";
+            this.facturadoAgo.Size = new System.Drawing.Size(96, 24);
+            this.facturadoAgo.TabIndex = 145;
+            // 
+            // facturadoDic
+            // 
+            this.facturadoDic.Location = new System.Drawing.Point(10, 364);
+            this.facturadoDic.Name = "facturadoDic";
+            this.facturadoDic.Size = new System.Drawing.Size(96, 24);
+            this.facturadoDic.TabIndex = 151;
+            // 
+            // facturadoMay
+            // 
+            this.facturadoMay.Location = new System.Drawing.Point(10, 161);
+            this.facturadoMay.Name = "facturadoMay";
+            this.facturadoMay.Size = new System.Drawing.Size(96, 24);
+            this.facturadoMay.TabIndex = 146;
+            // 
+            // facturadoSep
+            // 
+            this.facturadoSep.Location = new System.Drawing.Point(10, 277);
+            this.facturadoSep.Name = "facturadoSep";
+            this.facturadoSep.Size = new System.Drawing.Size(96, 24);
+            this.facturadoSep.TabIndex = 149;
+            // 
+            // facturadoFeb
+            // 
+            this.facturadoFeb.Location = new System.Drawing.Point(10, 74);
+            this.facturadoFeb.Name = "facturadoFeb";
+            this.facturadoFeb.Size = new System.Drawing.Size(96, 24);
+            this.facturadoFeb.TabIndex = 141;
+            // 
+            // facturadoJun
+            // 
+            this.facturadoJun.Location = new System.Drawing.Point(10, 190);
+            this.facturadoJun.Name = "facturadoJun";
+            this.facturadoJun.Size = new System.Drawing.Size(96, 24);
+            this.facturadoJun.TabIndex = 144;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.montoEne);
+            this.groupBox9.Controls.Add(this.montoOct);
+            this.groupBox9.Controls.Add(this.montoJul);
+            this.groupBox9.Controls.Add(this.montoAbr);
+            this.groupBox9.Controls.Add(this.montoMar);
+            this.groupBox9.Controls.Add(this.montoNov);
+            this.groupBox9.Controls.Add(this.montoAgo);
+            this.groupBox9.Controls.Add(this.montoDic);
+            this.groupBox9.Controls.Add(this.montoMayo);
+            this.groupBox9.Controls.Add(this.montoSep);
+            this.groupBox9.Controls.Add(this.montoFeb);
+            this.groupBox9.Controls.Add(this.montoJun);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox9.Location = new System.Drawing.Point(225, 18);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(119, 403);
+            this.groupBox9.TabIndex = 225;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Monto OI";
+            // 
+            // montoEne
+            // 
+            this.montoEne.Location = new System.Drawing.Point(11, 45);
+            this.montoEne.Name = "montoEne";
+            this.montoEne.Size = new System.Drawing.Size(96, 24);
+            this.montoEne.TabIndex = 140;
+            // 
+            // montoOct
+            // 
+            this.montoOct.Location = new System.Drawing.Point(11, 306);
+            this.montoOct.Name = "montoOct";
+            this.montoOct.Size = new System.Drawing.Size(96, 24);
+            this.montoOct.TabIndex = 148;
+            // 
+            // montoJul
+            // 
+            this.montoJul.Location = new System.Drawing.Point(11, 219);
+            this.montoJul.Name = "montoJul";
+            this.montoJul.Size = new System.Drawing.Size(96, 24);
+            this.montoJul.TabIndex = 147;
+            // 
+            // montoAbr
+            // 
+            this.montoAbr.Location = new System.Drawing.Point(11, 132);
+            this.montoAbr.Name = "montoAbr";
+            this.montoAbr.Size = new System.Drawing.Size(96, 24);
+            this.montoAbr.TabIndex = 142;
+            // 
+            // montoMar
+            // 
+            this.montoMar.Location = new System.Drawing.Point(11, 103);
+            this.montoMar.Name = "montoMar";
+            this.montoMar.Size = new System.Drawing.Size(96, 24);
+            this.montoMar.TabIndex = 143;
+            // 
+            // montoNov
+            // 
+            this.montoNov.Location = new System.Drawing.Point(11, 335);
+            this.montoNov.Name = "montoNov";
+            this.montoNov.Size = new System.Drawing.Size(96, 24);
+            this.montoNov.TabIndex = 150;
+            // 
+            // montoAgo
+            // 
+            this.montoAgo.Location = new System.Drawing.Point(11, 248);
+            this.montoAgo.Name = "montoAgo";
+            this.montoAgo.Size = new System.Drawing.Size(96, 24);
+            this.montoAgo.TabIndex = 145;
+            // 
+            // montoDic
+            // 
+            this.montoDic.Location = new System.Drawing.Point(11, 364);
+            this.montoDic.Name = "montoDic";
+            this.montoDic.Size = new System.Drawing.Size(96, 24);
+            this.montoDic.TabIndex = 151;
+            // 
+            // montoMayo
+            // 
+            this.montoMayo.Location = new System.Drawing.Point(11, 161);
+            this.montoMayo.Name = "montoMayo";
+            this.montoMayo.Size = new System.Drawing.Size(96, 24);
+            this.montoMayo.TabIndex = 146;
+            // 
+            // montoSep
+            // 
+            this.montoSep.Location = new System.Drawing.Point(11, 277);
+            this.montoSep.Name = "montoSep";
+            this.montoSep.Size = new System.Drawing.Size(96, 24);
+            this.montoSep.TabIndex = 149;
+            // 
+            // montoFeb
+            // 
+            this.montoFeb.Location = new System.Drawing.Point(11, 74);
+            this.montoFeb.Name = "montoFeb";
+            this.montoFeb.Size = new System.Drawing.Size(96, 24);
+            this.montoFeb.TabIndex = 141;
+            // 
+            // montoJun
+            // 
+            this.montoJun.Location = new System.Drawing.Point(11, 190);
+            this.montoJun.Name = "montoJun";
+            this.montoJun.Size = new System.Drawing.Size(96, 24);
+            this.montoJun.TabIndex = 144;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.cDiciembre);
+            this.groupBox8.Controls.Add(this.cNoviembre);
+            this.groupBox8.Controls.Add(this.cOctubre);
+            this.groupBox8.Controls.Add(this.cSeptiembre);
+            this.groupBox8.Controls.Add(this.cAgosto);
+            this.groupBox8.Controls.Add(this.cJulio);
+            this.groupBox8.Controls.Add(this.cJunio);
+            this.groupBox8.Controls.Add(this.cMayo);
+            this.groupBox8.Controls.Add(this.cAbril);
+            this.groupBox8.Controls.Add(this.tEnero);
+            this.groupBox8.Controls.Add(this.cMarzo);
+            this.groupBox8.Controls.Add(this.cFebrero);
+            this.groupBox8.Controls.Add(this.cEnero);
+            this.groupBox8.Controls.Add(this.tOctubre);
+            this.groupBox8.Controls.Add(this.tJulio);
+            this.groupBox8.Controls.Add(this.tAbril);
+            this.groupBox8.Controls.Add(this.tMarzo);
+            this.groupBox8.Controls.Add(this.tNoviembre);
+            this.groupBox8.Controls.Add(this.tAgosto);
+            this.groupBox8.Controls.Add(this.tDiciembre);
+            this.groupBox8.Controls.Add(this.tMayo);
+            this.groupBox8.Controls.Add(this.tSeptiembre);
+            this.groupBox8.Controls.Add(this.tFebrero);
+            this.groupBox8.Controls.Add(this.tJunio);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox8.Location = new System.Drawing.Point(7, 18);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(212, 403);
+            this.groupBox8.TabIndex = 223;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Mes / Año";
+            // 
+            // cDiciembre
+            // 
+            this.cDiciembre.AutoSize = true;
+            this.cDiciembre.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cDiciembre.Location = new System.Drawing.Point(15, 369);
+            this.cDiciembre.Name = "cDiciembre";
+            this.cDiciembre.Size = new System.Drawing.Size(94, 22);
+            this.cDiciembre.TabIndex = 163;
+            this.cDiciembre.Text = "Diciembre";
+            this.cDiciembre.UseVisualStyleBackColor = true;
+            // 
+            // cNoviembre
+            // 
+            this.cNoviembre.AutoSize = true;
+            this.cNoviembre.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cNoviembre.Location = new System.Drawing.Point(15, 339);
+            this.cNoviembre.Name = "cNoviembre";
+            this.cNoviembre.Size = new System.Drawing.Size(99, 22);
+            this.cNoviembre.TabIndex = 162;
+            this.cNoviembre.Text = "Noviembre";
+            this.cNoviembre.UseVisualStyleBackColor = true;
+            // 
+            // cOctubre
+            // 
+            this.cOctubre.AutoSize = true;
+            this.cOctubre.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cOctubre.Location = new System.Drawing.Point(15, 310);
+            this.cOctubre.Name = "cOctubre";
+            this.cOctubre.Size = new System.Drawing.Size(80, 22);
+            this.cOctubre.TabIndex = 161;
+            this.cOctubre.Text = "Octubre";
+            this.cOctubre.UseVisualStyleBackColor = true;
+            // 
+            // cSeptiembre
+            // 
+            this.cSeptiembre.AutoSize = true;
+            this.cSeptiembre.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cSeptiembre.Location = new System.Drawing.Point(15, 281);
+            this.cSeptiembre.Name = "cSeptiembre";
+            this.cSeptiembre.Size = new System.Drawing.Size(102, 22);
+            this.cSeptiembre.TabIndex = 160;
+            this.cSeptiembre.Text = "Septiembre";
+            this.cSeptiembre.UseVisualStyleBackColor = true;
+            // 
+            // cAgosto
+            // 
+            this.cAgosto.AutoSize = true;
+            this.cAgosto.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cAgosto.Location = new System.Drawing.Point(15, 252);
+            this.cAgosto.Name = "cAgosto";
+            this.cAgosto.Size = new System.Drawing.Size(74, 22);
+            this.cAgosto.TabIndex = 159;
+            this.cAgosto.Text = "Agosto";
+            this.cAgosto.UseVisualStyleBackColor = true;
+            // 
+            // cJulio
+            // 
+            this.cJulio.AutoSize = true;
+            this.cJulio.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cJulio.Location = new System.Drawing.Point(15, 223);
+            this.cJulio.Name = "cJulio";
+            this.cJulio.Size = new System.Drawing.Size(58, 22);
+            this.cJulio.TabIndex = 158;
+            this.cJulio.Text = "Julio";
+            this.cJulio.UseVisualStyleBackColor = true;
+            // 
+            // cJunio
+            // 
+            this.cJunio.AutoSize = true;
+            this.cJunio.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cJunio.Location = new System.Drawing.Point(15, 194);
+            this.cJunio.Name = "cJunio";
+            this.cJunio.Size = new System.Drawing.Size(63, 22);
+            this.cJunio.TabIndex = 157;
+            this.cJunio.Text = "Junio";
+            this.cJunio.UseVisualStyleBackColor = true;
+            // 
+            // cMayo
+            // 
+            this.cMayo.AutoSize = true;
+            this.cMayo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cMayo.Location = new System.Drawing.Point(15, 165);
+            this.cMayo.Name = "cMayo";
+            this.cMayo.Size = new System.Drawing.Size(64, 22);
+            this.cMayo.TabIndex = 156;
+            this.cMayo.Text = "Mayo";
+            this.cMayo.UseVisualStyleBackColor = true;
+            // 
+            // cAbril
+            // 
+            this.cAbril.AutoSize = true;
+            this.cAbril.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cAbril.Location = new System.Drawing.Point(15, 136);
+            this.cAbril.Name = "cAbril";
+            this.cAbril.Size = new System.Drawing.Size(55, 22);
+            this.cAbril.TabIndex = 155;
+            this.cAbril.Text = "Abril";
+            this.cAbril.UseVisualStyleBackColor = true;
+            // 
+            // tEnero
+            // 
+            this.tEnero.Location = new System.Drawing.Point(125, 47);
+            this.tEnero.Name = "tEnero";
+            this.tEnero.Size = new System.Drawing.Size(76, 24);
+            this.tEnero.TabIndex = 140;
+            // 
+            // cMarzo
+            // 
+            this.cMarzo.AutoSize = true;
+            this.cMarzo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cMarzo.Location = new System.Drawing.Point(15, 107);
+            this.cMarzo.Name = "cMarzo";
+            this.cMarzo.Size = new System.Drawing.Size(70, 22);
+            this.cMarzo.TabIndex = 154;
+            this.cMarzo.Text = "Marzo";
+            this.cMarzo.UseVisualStyleBackColor = true;
+            // 
+            // cFebrero
+            // 
+            this.cFebrero.AutoSize = true;
+            this.cFebrero.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cFebrero.Location = new System.Drawing.Point(15, 78);
+            this.cFebrero.Name = "cFebrero";
+            this.cFebrero.Size = new System.Drawing.Size(79, 22);
+            this.cFebrero.TabIndex = 153;
+            this.cFebrero.Text = "Febrero";
+            this.cFebrero.UseVisualStyleBackColor = true;
+            // 
+            // cEnero
+            // 
+            this.cEnero.AutoSize = true;
+            this.cEnero.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.cEnero.Location = new System.Drawing.Point(15, 51);
+            this.cEnero.Name = "cEnero";
+            this.cEnero.Size = new System.Drawing.Size(67, 22);
+            this.cEnero.TabIndex = 152;
+            this.cEnero.Text = "Enero";
+            this.cEnero.UseVisualStyleBackColor = true;
+            // 
+            // tOctubre
+            // 
+            this.tOctubre.Location = new System.Drawing.Point(125, 308);
+            this.tOctubre.Name = "tOctubre";
+            this.tOctubre.Size = new System.Drawing.Size(76, 24);
+            this.tOctubre.TabIndex = 148;
+            // 
+            // tJulio
+            // 
+            this.tJulio.Location = new System.Drawing.Point(125, 221);
+            this.tJulio.Name = "tJulio";
+            this.tJulio.Size = new System.Drawing.Size(76, 24);
+            this.tJulio.TabIndex = 147;
+            // 
+            // tAbril
+            // 
+            this.tAbril.Location = new System.Drawing.Point(125, 134);
+            this.tAbril.Name = "tAbril";
+            this.tAbril.Size = new System.Drawing.Size(76, 24);
+            this.tAbril.TabIndex = 142;
+            // 
+            // tMarzo
+            // 
+            this.tMarzo.Location = new System.Drawing.Point(125, 105);
+            this.tMarzo.Name = "tMarzo";
+            this.tMarzo.Size = new System.Drawing.Size(76, 24);
+            this.tMarzo.TabIndex = 143;
+            // 
+            // tNoviembre
+            // 
+            this.tNoviembre.Location = new System.Drawing.Point(125, 337);
+            this.tNoviembre.Name = "tNoviembre";
+            this.tNoviembre.Size = new System.Drawing.Size(76, 24);
+            this.tNoviembre.TabIndex = 150;
+            // 
+            // tAgosto
+            // 
+            this.tAgosto.Location = new System.Drawing.Point(125, 250);
+            this.tAgosto.Name = "tAgosto";
+            this.tAgosto.Size = new System.Drawing.Size(76, 24);
+            this.tAgosto.TabIndex = 145;
+            // 
+            // tDiciembre
+            // 
+            this.tDiciembre.Location = new System.Drawing.Point(125, 366);
+            this.tDiciembre.Name = "tDiciembre";
+            this.tDiciembre.Size = new System.Drawing.Size(76, 24);
+            this.tDiciembre.TabIndex = 151;
+            // 
+            // tMayo
+            // 
+            this.tMayo.Location = new System.Drawing.Point(125, 163);
+            this.tMayo.Name = "tMayo";
+            this.tMayo.Size = new System.Drawing.Size(76, 24);
+            this.tMayo.TabIndex = 146;
+            // 
+            // tSeptiembre
+            // 
+            this.tSeptiembre.Location = new System.Drawing.Point(125, 279);
+            this.tSeptiembre.Name = "tSeptiembre";
+            this.tSeptiembre.Size = new System.Drawing.Size(76, 24);
+            this.tSeptiembre.TabIndex = 149;
+            // 
+            // tFebrero
+            // 
+            this.tFebrero.Location = new System.Drawing.Point(125, 76);
+            this.tFebrero.Name = "tFebrero";
+            this.tFebrero.Size = new System.Drawing.Size(76, 24);
+            this.tFebrero.TabIndex = 141;
+            // 
+            // tJunio
+            // 
+            this.tJunio.Location = new System.Drawing.Point(125, 192);
+            this.tJunio.Name = "tJunio";
+            this.tJunio.Size = new System.Drawing.Size(76, 24);
+            this.tJunio.TabIndex = 144;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.listaSaldos);
@@ -3037,1547 +4578,6 @@
             this.label30.TabIndex = 198;
             this.label30.Text = "Folio Media";
             // 
-            // sumas
-            // 
-            this.sumas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sumas.Location = new System.Drawing.Point(1082, 516);
-            this.sumas.Name = "sumas";
-            this.sumas.Size = new System.Drawing.Size(75, 30);
-            this.sumas.TabIndex = 237;
-            this.sumas.Text = "Sumas";
-            this.sumas.UseVisualStyleBackColor = true;
-            // 
-            // calculo
-            // 
-            this.calculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculo.Location = new System.Drawing.Point(1163, 516);
-            this.calculo.Name = "calculo";
-            this.calculo.Size = new System.Drawing.Size(75, 30);
-            this.calculo.TabIndex = 236;
-            this.calculo.Text = "Calcular";
-            this.calculo.UseVisualStyleBackColor = true;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.esquemaDateDic);
-            this.groupBox12.Controls.Add(this.esquemaDateNov);
-            this.groupBox12.Controls.Add(this.esquemaDateOct);
-            this.groupBox12.Controls.Add(this.esquemaDateSep);
-            this.groupBox12.Controls.Add(this.esquemaSep);
-            this.groupBox12.Controls.Add(this.esquemaDic);
-            this.groupBox12.Controls.Add(this.esquemaNov);
-            this.groupBox12.Controls.Add(this.esquemaOct);
-            this.groupBox12.Controls.Add(this.esquemaDateAgo);
-            this.groupBox12.Controls.Add(this.esquemaDateJul);
-            this.groupBox12.Controls.Add(this.esquemaDateJun);
-            this.groupBox12.Controls.Add(this.esquemaDateMay);
-            this.groupBox12.Controls.Add(this.esquemaMay);
-            this.groupBox12.Controls.Add(this.esquemaAgo);
-            this.groupBox12.Controls.Add(this.esquemaJul);
-            this.groupBox12.Controls.Add(this.esquemaJun);
-            this.groupBox12.Controls.Add(this.label28);
-            this.groupBox12.Controls.Add(this.label31);
-            this.groupBox12.Controls.Add(this.esquemaDateAbr);
-            this.groupBox12.Controls.Add(this.esquemaDateMar);
-            this.groupBox12.Controls.Add(this.esquemaDateFeb);
-            this.groupBox12.Controls.Add(this.esquemaDateEne);
-            this.groupBox12.Controls.Add(this.esquemaEne);
-            this.groupBox12.Controls.Add(this.esquemaAbr);
-            this.groupBox12.Controls.Add(this.esquemaMar);
-            this.groupBox12.Controls.Add(this.esquemaFeb);
-            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox12.Location = new System.Drawing.Point(962, 18);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(276, 403);
-            this.groupBox12.TabIndex = 229;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Comisión";
-            // 
-            // esquemaDateDic
-            // 
-            this.esquemaDateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateDic.Location = new System.Drawing.Point(157, 364);
-            this.esquemaDateDic.Name = "esquemaDateDic";
-            this.esquemaDateDic.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateDic.TabIndex = 214;
-            // 
-            // esquemaDateNov
-            // 
-            this.esquemaDateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateNov.Location = new System.Drawing.Point(157, 335);
-            this.esquemaDateNov.Name = "esquemaDateNov";
-            this.esquemaDateNov.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateNov.TabIndex = 213;
-            // 
-            // esquemaDateOct
-            // 
-            this.esquemaDateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateOct.Location = new System.Drawing.Point(157, 306);
-            this.esquemaDateOct.Name = "esquemaDateOct";
-            this.esquemaDateOct.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateOct.TabIndex = 212;
-            // 
-            // esquemaDateSep
-            // 
-            this.esquemaDateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateSep.Location = new System.Drawing.Point(157, 277);
-            this.esquemaDateSep.Name = "esquemaDateSep";
-            this.esquemaDateSep.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateSep.TabIndex = 211;
-            // 
-            // esquemaSep
-            // 
-            this.esquemaSep.Location = new System.Drawing.Point(12, 277);
-            this.esquemaSep.Name = "esquemaSep";
-            this.esquemaSep.Size = new System.Drawing.Size(139, 24);
-            this.esquemaSep.TabIndex = 207;
-            // 
-            // esquemaDic
-            // 
-            this.esquemaDic.Location = new System.Drawing.Point(12, 364);
-            this.esquemaDic.Name = "esquemaDic";
-            this.esquemaDic.Size = new System.Drawing.Size(139, 24);
-            this.esquemaDic.TabIndex = 209;
-            // 
-            // esquemaNov
-            // 
-            this.esquemaNov.Location = new System.Drawing.Point(12, 335);
-            this.esquemaNov.Name = "esquemaNov";
-            this.esquemaNov.Size = new System.Drawing.Size(139, 24);
-            this.esquemaNov.TabIndex = 210;
-            // 
-            // esquemaOct
-            // 
-            this.esquemaOct.Location = new System.Drawing.Point(12, 306);
-            this.esquemaOct.Name = "esquemaOct";
-            this.esquemaOct.Size = new System.Drawing.Size(139, 24);
-            this.esquemaOct.TabIndex = 208;
-            // 
-            // esquemaDateAgo
-            // 
-            this.esquemaDateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateAgo.Location = new System.Drawing.Point(157, 248);
-            this.esquemaDateAgo.Name = "esquemaDateAgo";
-            this.esquemaDateAgo.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateAgo.TabIndex = 206;
-            // 
-            // esquemaDateJul
-            // 
-            this.esquemaDateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateJul.Location = new System.Drawing.Point(157, 219);
-            this.esquemaDateJul.Name = "esquemaDateJul";
-            this.esquemaDateJul.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateJul.TabIndex = 205;
-            // 
-            // esquemaDateJun
-            // 
-            this.esquemaDateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateJun.Location = new System.Drawing.Point(157, 190);
-            this.esquemaDateJun.Name = "esquemaDateJun";
-            this.esquemaDateJun.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateJun.TabIndex = 204;
-            // 
-            // esquemaDateMay
-            // 
-            this.esquemaDateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateMay.Location = new System.Drawing.Point(157, 161);
-            this.esquemaDateMay.Name = "esquemaDateMay";
-            this.esquemaDateMay.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateMay.TabIndex = 203;
-            // 
-            // esquemaMay
-            // 
-            this.esquemaMay.Location = new System.Drawing.Point(12, 161);
-            this.esquemaMay.Name = "esquemaMay";
-            this.esquemaMay.Size = new System.Drawing.Size(139, 24);
-            this.esquemaMay.TabIndex = 199;
-            // 
-            // esquemaAgo
-            // 
-            this.esquemaAgo.Location = new System.Drawing.Point(12, 248);
-            this.esquemaAgo.Name = "esquemaAgo";
-            this.esquemaAgo.Size = new System.Drawing.Size(139, 24);
-            this.esquemaAgo.TabIndex = 201;
-            // 
-            // esquemaJul
-            // 
-            this.esquemaJul.Location = new System.Drawing.Point(12, 219);
-            this.esquemaJul.Name = "esquemaJul";
-            this.esquemaJul.Size = new System.Drawing.Size(139, 24);
-            this.esquemaJul.TabIndex = 202;
-            // 
-            // esquemaJun
-            // 
-            this.esquemaJun.Location = new System.Drawing.Point(12, 190);
-            this.esquemaJun.Name = "esquemaJun";
-            this.esquemaJun.Size = new System.Drawing.Size(139, 24);
-            this.esquemaJun.TabIndex = 200;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label28.Location = new System.Drawing.Point(154, 25);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(106, 18);
-            this.label28.TabIndex = 198;
-            this.label28.Text = "Fecha de pago";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label31.Location = new System.Drawing.Point(12, 25);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(71, 18);
-            this.label31.TabIndex = 197;
-            this.label31.Text = "Esquema";
-            // 
-            // esquemaDateAbr
-            // 
-            this.esquemaDateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateAbr.Location = new System.Drawing.Point(157, 132);
-            this.esquemaDateAbr.Name = "esquemaDateAbr";
-            this.esquemaDateAbr.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateAbr.TabIndex = 188;
-            // 
-            // esquemaDateMar
-            // 
-            this.esquemaDateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateMar.Location = new System.Drawing.Point(157, 103);
-            this.esquemaDateMar.Name = "esquemaDateMar";
-            this.esquemaDateMar.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateMar.TabIndex = 187;
-            // 
-            // esquemaDateFeb
-            // 
-            this.esquemaDateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateFeb.Location = new System.Drawing.Point(157, 74);
-            this.esquemaDateFeb.Name = "esquemaDateFeb";
-            this.esquemaDateFeb.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateFeb.TabIndex = 186;
-            // 
-            // esquemaDateEne
-            // 
-            this.esquemaDateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.esquemaDateEne.Location = new System.Drawing.Point(157, 45);
-            this.esquemaDateEne.Name = "esquemaDateEne";
-            this.esquemaDateEne.Size = new System.Drawing.Size(108, 24);
-            this.esquemaDateEne.TabIndex = 185;
-            // 
-            // esquemaEne
-            // 
-            this.esquemaEne.Location = new System.Drawing.Point(12, 45);
-            this.esquemaEne.Name = "esquemaEne";
-            this.esquemaEne.Size = new System.Drawing.Size(139, 24);
-            this.esquemaEne.TabIndex = 140;
-            // 
-            // esquemaAbr
-            // 
-            this.esquemaAbr.Location = new System.Drawing.Point(12, 132);
-            this.esquemaAbr.Name = "esquemaAbr";
-            this.esquemaAbr.Size = new System.Drawing.Size(139, 24);
-            this.esquemaAbr.TabIndex = 142;
-            // 
-            // esquemaMar
-            // 
-            this.esquemaMar.Location = new System.Drawing.Point(12, 103);
-            this.esquemaMar.Name = "esquemaMar";
-            this.esquemaMar.Size = new System.Drawing.Size(139, 24);
-            this.esquemaMar.TabIndex = 143;
-            // 
-            // esquemaFeb
-            // 
-            this.esquemaFeb.Location = new System.Drawing.Point(12, 75);
-            this.esquemaFeb.Name = "esquemaFeb";
-            this.esquemaFeb.Size = new System.Drawing.Size(139, 24);
-            this.esquemaFeb.TabIndex = 141;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(316, 465);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(116, 18);
-            this.label27.TabIndex = 235;
-            this.label27.Text = "% Cumplimiento";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(316, 433);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(110, 18);
-            this.label26.TabIndex = 230;
-            this.label26.Text = "Monto Pautado";
-            // 
-            // porcentajeCobrado
-            // 
-            this.porcentajeCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeCobrado.Location = new System.Drawing.Point(784, 459);
-            this.porcentajeCobrado.Name = "porcentajeCobrado";
-            this.porcentajeCobrado.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeCobrado.TabIndex = 234;
-            // 
-            // porcentajeFacturado
-            // 
-            this.porcentajeFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeFacturado.Location = new System.Drawing.Point(620, 459);
-            this.porcentajeFacturado.Name = "porcentajeFacturado";
-            this.porcentajeFacturado.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeFacturado.TabIndex = 233;
-            // 
-            // porcentajeMonto
-            // 
-            this.porcentajeMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeMonto.Location = new System.Drawing.Point(455, 459);
-            this.porcentajeMonto.Name = "porcentajeMonto";
-            this.porcentajeMonto.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeMonto.TabIndex = 232;
-            // 
-            // cantCobrado
-            // 
-            this.cantCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantCobrado.Location = new System.Drawing.Point(784, 430);
-            this.cantCobrado.Name = "cantCobrado";
-            this.cantCobrado.Size = new System.Drawing.Size(139, 24);
-            this.cantCobrado.TabIndex = 231;
-            // 
-            // cantFacturado
-            // 
-            this.cantFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantFacturado.Location = new System.Drawing.Point(620, 430);
-            this.cantFacturado.Name = "cantFacturado";
-            this.cantFacturado.Size = new System.Drawing.Size(139, 24);
-            this.cantFacturado.TabIndex = 228;
-            // 
-            // cantMonto
-            // 
-            this.cantMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantMonto.Location = new System.Drawing.Point(455, 430);
-            this.cantMonto.Name = "cantMonto";
-            this.cantMonto.Size = new System.Drawing.Size(139, 24);
-            this.cantMonto.TabIndex = 224;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label25);
-            this.groupBox11.Controls.Add(this.label24);
-            this.groupBox11.Controls.Add(this.dateDic);
-            this.groupBox11.Controls.Add(this.dateNov);
-            this.groupBox11.Controls.Add(this.dateOct);
-            this.groupBox11.Controls.Add(this.dateSep);
-            this.groupBox11.Controls.Add(this.dateAgo);
-            this.groupBox11.Controls.Add(this.dateJul);
-            this.groupBox11.Controls.Add(this.dateJun);
-            this.groupBox11.Controls.Add(this.dateMay);
-            this.groupBox11.Controls.Add(this.dateAbr);
-            this.groupBox11.Controls.Add(this.dateMar);
-            this.groupBox11.Controls.Add(this.dateFeb);
-            this.groupBox11.Controls.Add(this.dateEne);
-            this.groupBox11.Controls.Add(this.cobradoEne);
-            this.groupBox11.Controls.Add(this.cobradoOct);
-            this.groupBox11.Controls.Add(this.cobradoJul);
-            this.groupBox11.Controls.Add(this.cobradoAbr);
-            this.groupBox11.Controls.Add(this.cobradoMar);
-            this.groupBox11.Controls.Add(this.cobradoNov);
-            this.groupBox11.Controls.Add(this.cobradoAgo);
-            this.groupBox11.Controls.Add(this.cobradoDic);
-            this.groupBox11.Controls.Add(this.cobradoMay);
-            this.groupBox11.Controls.Add(this.cobradoSep);
-            this.groupBox11.Controls.Add(this.cobradoFeb);
-            this.groupBox11.Controls.Add(this.cobradoJun);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox11.Location = new System.Drawing.Point(724, 18);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(232, 403);
-            this.groupBox11.TabIndex = 227;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Cobrado";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label25.Location = new System.Drawing.Point(112, 25);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(115, 18);
-            this.label25.TabIndex = 198;
-            this.label25.Text = "Fecha de Cobro";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label24.Location = new System.Drawing.Point(10, 25);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 18);
-            this.label24.TabIndex = 197;
-            this.label24.Text = "Monto";
-            // 
-            // dateDic
-            // 
-            this.dateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDic.Location = new System.Drawing.Point(115, 364);
-            this.dateDic.Name = "dateDic";
-            this.dateDic.Size = new System.Drawing.Size(108, 24);
-            this.dateDic.TabIndex = 196;
-            // 
-            // dateNov
-            // 
-            this.dateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNov.Location = new System.Drawing.Point(115, 335);
-            this.dateNov.Name = "dateNov";
-            this.dateNov.Size = new System.Drawing.Size(108, 24);
-            this.dateNov.TabIndex = 195;
-            // 
-            // dateOct
-            // 
-            this.dateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateOct.Location = new System.Drawing.Point(115, 306);
-            this.dateOct.Name = "dateOct";
-            this.dateOct.Size = new System.Drawing.Size(108, 24);
-            this.dateOct.TabIndex = 194;
-            // 
-            // dateSep
-            // 
-            this.dateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateSep.Location = new System.Drawing.Point(115, 277);
-            this.dateSep.Name = "dateSep";
-            this.dateSep.Size = new System.Drawing.Size(108, 24);
-            this.dateSep.TabIndex = 193;
-            // 
-            // dateAgo
-            // 
-            this.dateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateAgo.Location = new System.Drawing.Point(115, 248);
-            this.dateAgo.Name = "dateAgo";
-            this.dateAgo.Size = new System.Drawing.Size(108, 24);
-            this.dateAgo.TabIndex = 192;
-            // 
-            // dateJul
-            // 
-            this.dateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateJul.Location = new System.Drawing.Point(115, 219);
-            this.dateJul.Name = "dateJul";
-            this.dateJul.Size = new System.Drawing.Size(108, 24);
-            this.dateJul.TabIndex = 191;
-            // 
-            // dateJun
-            // 
-            this.dateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateJun.Location = new System.Drawing.Point(115, 190);
-            this.dateJun.Name = "dateJun";
-            this.dateJun.Size = new System.Drawing.Size(108, 24);
-            this.dateJun.TabIndex = 190;
-            // 
-            // dateMay
-            // 
-            this.dateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateMay.Location = new System.Drawing.Point(115, 161);
-            this.dateMay.Name = "dateMay";
-            this.dateMay.Size = new System.Drawing.Size(108, 24);
-            this.dateMay.TabIndex = 189;
-            // 
-            // dateAbr
-            // 
-            this.dateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateAbr.Location = new System.Drawing.Point(115, 132);
-            this.dateAbr.Name = "dateAbr";
-            this.dateAbr.Size = new System.Drawing.Size(108, 24);
-            this.dateAbr.TabIndex = 188;
-            // 
-            // dateMar
-            // 
-            this.dateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateMar.Location = new System.Drawing.Point(115, 103);
-            this.dateMar.Name = "dateMar";
-            this.dateMar.Size = new System.Drawing.Size(108, 24);
-            this.dateMar.TabIndex = 187;
-            // 
-            // dateFeb
-            // 
-            this.dateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFeb.Location = new System.Drawing.Point(115, 74);
-            this.dateFeb.Name = "dateFeb";
-            this.dateFeb.Size = new System.Drawing.Size(108, 24);
-            this.dateFeb.TabIndex = 186;
-            // 
-            // dateEne
-            // 
-            this.dateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateEne.Location = new System.Drawing.Point(115, 45);
-            this.dateEne.Name = "dateEne";
-            this.dateEne.Size = new System.Drawing.Size(108, 24);
-            this.dateEne.TabIndex = 185;
-            // 
-            // cobradoEne
-            // 
-            this.cobradoEne.Location = new System.Drawing.Point(10, 45);
-            this.cobradoEne.Name = "cobradoEne";
-            this.cobradoEne.Size = new System.Drawing.Size(96, 24);
-            this.cobradoEne.TabIndex = 140;
-            // 
-            // cobradoOct
-            // 
-            this.cobradoOct.Location = new System.Drawing.Point(10, 306);
-            this.cobradoOct.Name = "cobradoOct";
-            this.cobradoOct.Size = new System.Drawing.Size(96, 24);
-            this.cobradoOct.TabIndex = 148;
-            // 
-            // cobradoJul
-            // 
-            this.cobradoJul.Location = new System.Drawing.Point(10, 219);
-            this.cobradoJul.Name = "cobradoJul";
-            this.cobradoJul.Size = new System.Drawing.Size(96, 24);
-            this.cobradoJul.TabIndex = 147;
-            // 
-            // cobradoAbr
-            // 
-            this.cobradoAbr.Location = new System.Drawing.Point(10, 132);
-            this.cobradoAbr.Name = "cobradoAbr";
-            this.cobradoAbr.Size = new System.Drawing.Size(96, 24);
-            this.cobradoAbr.TabIndex = 142;
-            // 
-            // cobradoMar
-            // 
-            this.cobradoMar.Location = new System.Drawing.Point(10, 103);
-            this.cobradoMar.Name = "cobradoMar";
-            this.cobradoMar.Size = new System.Drawing.Size(96, 24);
-            this.cobradoMar.TabIndex = 143;
-            // 
-            // cobradoNov
-            // 
-            this.cobradoNov.Location = new System.Drawing.Point(10, 335);
-            this.cobradoNov.Name = "cobradoNov";
-            this.cobradoNov.Size = new System.Drawing.Size(96, 24);
-            this.cobradoNov.TabIndex = 150;
-            // 
-            // cobradoAgo
-            // 
-            this.cobradoAgo.Location = new System.Drawing.Point(10, 248);
-            this.cobradoAgo.Name = "cobradoAgo";
-            this.cobradoAgo.Size = new System.Drawing.Size(96, 24);
-            this.cobradoAgo.TabIndex = 145;
-            // 
-            // cobradoDic
-            // 
-            this.cobradoDic.Location = new System.Drawing.Point(10, 364);
-            this.cobradoDic.Name = "cobradoDic";
-            this.cobradoDic.Size = new System.Drawing.Size(96, 24);
-            this.cobradoDic.TabIndex = 151;
-            // 
-            // cobradoMay
-            // 
-            this.cobradoMay.Location = new System.Drawing.Point(10, 161);
-            this.cobradoMay.Name = "cobradoMay";
-            this.cobradoMay.Size = new System.Drawing.Size(96, 24);
-            this.cobradoMay.TabIndex = 146;
-            // 
-            // cobradoSep
-            // 
-            this.cobradoSep.Location = new System.Drawing.Point(10, 277);
-            this.cobradoSep.Name = "cobradoSep";
-            this.cobradoSep.Size = new System.Drawing.Size(96, 24);
-            this.cobradoSep.TabIndex = 149;
-            // 
-            // cobradoFeb
-            // 
-            this.cobradoFeb.Location = new System.Drawing.Point(10, 74);
-            this.cobradoFeb.Name = "cobradoFeb";
-            this.cobradoFeb.Size = new System.Drawing.Size(96, 24);
-            this.cobradoFeb.TabIndex = 141;
-            // 
-            // cobradoJun
-            // 
-            this.cobradoJun.Location = new System.Drawing.Point(10, 190);
-            this.cobradoJun.Name = "cobradoJun";
-            this.cobradoJun.Size = new System.Drawing.Size(96, 24);
-            this.cobradoJun.TabIndex = 144;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label49);
-            this.groupBox10.Controls.Add(this.nameEne);
-            this.groupBox10.Controls.Add(this.label50);
-            this.groupBox10.Controls.Add(this.nameOct);
-            this.groupBox10.Controls.Add(this.nameJul);
-            this.groupBox10.Controls.Add(this.nameAbr);
-            this.groupBox10.Controls.Add(this.nameMar);
-            this.groupBox10.Controls.Add(this.nameNov);
-            this.groupBox10.Controls.Add(this.nameAgo);
-            this.groupBox10.Controls.Add(this.nameDic);
-            this.groupBox10.Controls.Add(this.nameMay);
-            this.groupBox10.Controls.Add(this.nameSep);
-            this.groupBox10.Controls.Add(this.nameFeb);
-            this.groupBox10.Controls.Add(this.nameJun);
-            this.groupBox10.Controls.Add(this.button13);
-            this.groupBox10.Controls.Add(this.button14);
-            this.groupBox10.Controls.Add(this.button15);
-            this.groupBox10.Controls.Add(this.findNov);
-            this.groupBox10.Controls.Add(this.button17);
-            this.groupBox10.Controls.Add(this.findOct);
-            this.groupBox10.Controls.Add(this.button19);
-            this.groupBox10.Controls.Add(this.findSep);
-            this.groupBox10.Controls.Add(this.button21);
-            this.groupBox10.Controls.Add(this.findAgo);
-            this.groupBox10.Controls.Add(this.button23);
-            this.groupBox10.Controls.Add(this.findJul);
-            this.groupBox10.Controls.Add(this.button11);
-            this.groupBox10.Controls.Add(this.findJun);
-            this.groupBox10.Controls.Add(this.button9);
-            this.groupBox10.Controls.Add(this.findMay);
-            this.groupBox10.Controls.Add(this.button7);
-            this.groupBox10.Controls.Add(this.findAbr);
-            this.groupBox10.Controls.Add(this.button5);
-            this.groupBox10.Controls.Add(this.findMar);
-            this.groupBox10.Controls.Add(this.button3);
-            this.groupBox10.Controls.Add(this.findFeb);
-            this.groupBox10.Controls.Add(this.button2);
-            this.groupBox10.Controls.Add(this.findEne);
-            this.groupBox10.Controls.Add(this.archivoEne);
-            this.groupBox10.Controls.Add(this.archivoOct);
-            this.groupBox10.Controls.Add(this.archivoJul);
-            this.groupBox10.Controls.Add(this.archivoAbr);
-            this.groupBox10.Controls.Add(this.archivoMar);
-            this.groupBox10.Controls.Add(this.archivoNov);
-            this.groupBox10.Controls.Add(this.archivoAgo);
-            this.groupBox10.Controls.Add(this.archivoDic);
-            this.groupBox10.Controls.Add(this.archivoMay);
-            this.groupBox10.Controls.Add(this.archivoSep);
-            this.groupBox10.Controls.Add(this.archivoFeb);
-            this.groupBox10.Controls.Add(this.archivoJun);
-            this.groupBox10.Controls.Add(this.facturadoEne);
-            this.groupBox10.Controls.Add(this.facturadoOct);
-            this.groupBox10.Controls.Add(this.facturadoJul);
-            this.groupBox10.Controls.Add(this.facturadoAbr);
-            this.groupBox10.Controls.Add(this.facturadoMar);
-            this.groupBox10.Controls.Add(this.facturadoNov);
-            this.groupBox10.Controls.Add(this.facturadoAgo);
-            this.groupBox10.Controls.Add(this.facturadoDic);
-            this.groupBox10.Controls.Add(this.facturadoMay);
-            this.groupBox10.Controls.Add(this.facturadoSep);
-            this.groupBox10.Controls.Add(this.facturadoFeb);
-            this.groupBox10.Controls.Add(this.facturadoJun);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox10.Location = new System.Drawing.Point(350, 18);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(368, 403);
-            this.groupBox10.TabIndex = 226;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Facturado";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label49.Location = new System.Drawing.Point(146, 24);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(57, 18);
-            this.label49.TabIndex = 200;
-            this.label49.Text = "Archivo";
-            // 
-            // nameEne
-            // 
-            this.nameEne.Location = new System.Drawing.Point(129, 45);
-            this.nameEne.Name = "nameEne";
-            this.nameEne.Size = new System.Drawing.Size(14, 24);
-            this.nameEne.TabIndex = 188;
-            this.nameEne.Visible = false;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label50.Location = new System.Drawing.Point(8, 24);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(51, 18);
-            this.label50.TabIndex = 199;
-            this.label50.Text = "Monto";
-            // 
-            // nameOct
-            // 
-            this.nameOct.Location = new System.Drawing.Point(129, 306);
-            this.nameOct.Name = "nameOct";
-            this.nameOct.Size = new System.Drawing.Size(14, 24);
-            this.nameOct.TabIndex = 196;
-            this.nameOct.Visible = false;
-            // 
-            // nameJul
-            // 
-            this.nameJul.Location = new System.Drawing.Point(129, 219);
-            this.nameJul.Name = "nameJul";
-            this.nameJul.Size = new System.Drawing.Size(14, 24);
-            this.nameJul.TabIndex = 195;
-            this.nameJul.Visible = false;
-            // 
-            // nameAbr
-            // 
-            this.nameAbr.Location = new System.Drawing.Point(129, 132);
-            this.nameAbr.Name = "nameAbr";
-            this.nameAbr.Size = new System.Drawing.Size(14, 24);
-            this.nameAbr.TabIndex = 190;
-            this.nameAbr.Visible = false;
-            // 
-            // nameMar
-            // 
-            this.nameMar.Location = new System.Drawing.Point(129, 103);
-            this.nameMar.Name = "nameMar";
-            this.nameMar.Size = new System.Drawing.Size(14, 24);
-            this.nameMar.TabIndex = 191;
-            this.nameMar.Visible = false;
-            // 
-            // nameNov
-            // 
-            this.nameNov.Location = new System.Drawing.Point(129, 335);
-            this.nameNov.Name = "nameNov";
-            this.nameNov.Size = new System.Drawing.Size(14, 24);
-            this.nameNov.TabIndex = 198;
-            this.nameNov.Visible = false;
-            // 
-            // nameAgo
-            // 
-            this.nameAgo.Location = new System.Drawing.Point(129, 248);
-            this.nameAgo.Name = "nameAgo";
-            this.nameAgo.Size = new System.Drawing.Size(14, 24);
-            this.nameAgo.TabIndex = 193;
-            this.nameAgo.Visible = false;
-            // 
-            // nameDic
-            // 
-            this.nameDic.Location = new System.Drawing.Point(129, 364);
-            this.nameDic.Name = "nameDic";
-            this.nameDic.Size = new System.Drawing.Size(14, 24);
-            this.nameDic.TabIndex = 199;
-            this.nameDic.Visible = false;
-            // 
-            // nameMay
-            // 
-            this.nameMay.Location = new System.Drawing.Point(129, 161);
-            this.nameMay.Name = "nameMay";
-            this.nameMay.Size = new System.Drawing.Size(14, 24);
-            this.nameMay.TabIndex = 194;
-            this.nameMay.Visible = false;
-            // 
-            // nameSep
-            // 
-            this.nameSep.Location = new System.Drawing.Point(129, 277);
-            this.nameSep.Name = "nameSep";
-            this.nameSep.Size = new System.Drawing.Size(14, 24);
-            this.nameSep.TabIndex = 197;
-            this.nameSep.Visible = false;
-            // 
-            // nameFeb
-            // 
-            this.nameFeb.Location = new System.Drawing.Point(129, 74);
-            this.nameFeb.Name = "nameFeb";
-            this.nameFeb.Size = new System.Drawing.Size(14, 24);
-            this.nameFeb.TabIndex = 189;
-            this.nameFeb.Visible = false;
-            // 
-            // nameJun
-            // 
-            this.nameJun.Location = new System.Drawing.Point(129, 190);
-            this.nameJun.Name = "nameJun";
-            this.nameJun.Size = new System.Drawing.Size(14, 24);
-            this.nameJun.TabIndex = 192;
-            this.nameJun.Visible = false;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(337, 364);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(24, 24);
-            this.button13.TabIndex = 187;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(301, 364);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(24, 24);
-            this.button14.TabIndex = 186;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(337, 335);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(24, 24);
-            this.button15.TabIndex = 185;
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // findNov
-            // 
-            this.findNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findNov.BackgroundImage")));
-            this.findNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findNov.Location = new System.Drawing.Point(301, 335);
-            this.findNov.Name = "findNov";
-            this.findNov.Size = new System.Drawing.Size(24, 24);
-            this.findNov.TabIndex = 184;
-            this.findNov.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(337, 306);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(24, 24);
-            this.button17.TabIndex = 183;
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // findOct
-            // 
-            this.findOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findOct.BackgroundImage")));
-            this.findOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findOct.Location = new System.Drawing.Point(301, 306);
-            this.findOct.Name = "findOct";
-            this.findOct.Size = new System.Drawing.Size(24, 24);
-            this.findOct.TabIndex = 182;
-            this.findOct.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button19.BackgroundImage")));
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(337, 277);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(24, 24);
-            this.button19.TabIndex = 181;
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // findSep
-            // 
-            this.findSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findSep.BackgroundImage")));
-            this.findSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findSep.Location = new System.Drawing.Point(301, 277);
-            this.findSep.Name = "findSep";
-            this.findSep.Size = new System.Drawing.Size(24, 24);
-            this.findSep.TabIndex = 180;
-            this.findSep.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button21.BackgroundImage")));
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(337, 248);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(24, 24);
-            this.button21.TabIndex = 179;
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // findAgo
-            // 
-            this.findAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAgo.BackgroundImage")));
-            this.findAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findAgo.Location = new System.Drawing.Point(301, 248);
-            this.findAgo.Name = "findAgo";
-            this.findAgo.Size = new System.Drawing.Size(24, 24);
-            this.findAgo.TabIndex = 178;
-            this.findAgo.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button23.BackgroundImage")));
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(337, 219);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(24, 24);
-            this.button23.TabIndex = 177;
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // findJul
-            // 
-            this.findJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJul.BackgroundImage")));
-            this.findJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findJul.Location = new System.Drawing.Point(301, 219);
-            this.findJul.Name = "findJul";
-            this.findJul.Size = new System.Drawing.Size(24, 24);
-            this.findJul.TabIndex = 176;
-            this.findJul.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(337, 190);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(24, 24);
-            this.button11.TabIndex = 175;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // findJun
-            // 
-            this.findJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJun.BackgroundImage")));
-            this.findJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findJun.Location = new System.Drawing.Point(301, 190);
-            this.findJun.Name = "findJun";
-            this.findJun.Size = new System.Drawing.Size(24, 24);
-            this.findJun.TabIndex = 174;
-            this.findJun.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(337, 161);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(24, 24);
-            this.button9.TabIndex = 173;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // findMay
-            // 
-            this.findMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMay.BackgroundImage")));
-            this.findMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findMay.Location = new System.Drawing.Point(301, 161);
-            this.findMay.Name = "findMay";
-            this.findMay.Size = new System.Drawing.Size(24, 24);
-            this.findMay.TabIndex = 172;
-            this.findMay.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(337, 132);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(24, 24);
-            this.button7.TabIndex = 171;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // findAbr
-            // 
-            this.findAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAbr.BackgroundImage")));
-            this.findAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findAbr.Location = new System.Drawing.Point(301, 132);
-            this.findAbr.Name = "findAbr";
-            this.findAbr.Size = new System.Drawing.Size(24, 24);
-            this.findAbr.TabIndex = 170;
-            this.findAbr.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(337, 103);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(24, 24);
-            this.button5.TabIndex = 169;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // findMar
-            // 
-            this.findMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMar.BackgroundImage")));
-            this.findMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findMar.Location = new System.Drawing.Point(301, 103);
-            this.findMar.Name = "findMar";
-            this.findMar.Size = new System.Drawing.Size(24, 24);
-            this.findMar.TabIndex = 168;
-            this.findMar.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(337, 74);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(24, 24);
-            this.button3.TabIndex = 167;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // findFeb
-            // 
-            this.findFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findFeb.BackgroundImage")));
-            this.findFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findFeb.Location = new System.Drawing.Point(301, 74);
-            this.findFeb.Name = "findFeb";
-            this.findFeb.Size = new System.Drawing.Size(24, 24);
-            this.findFeb.TabIndex = 166;
-            this.findFeb.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::gestor_bdm.Properties.Resources.visualization;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(337, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 24);
-            this.button2.TabIndex = 165;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // findEne
-            // 
-            this.findEne.BackgroundImage = global::gestor_bdm.Properties.Resources.folder;
-            this.findEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findEne.Location = new System.Drawing.Point(301, 45);
-            this.findEne.Name = "findEne";
-            this.findEne.Size = new System.Drawing.Size(24, 24);
-            this.findEne.TabIndex = 164;
-            this.findEne.UseVisualStyleBackColor = true;
-            // 
-            // archivoEne
-            // 
-            this.archivoEne.Location = new System.Drawing.Point(149, 45);
-            this.archivoEne.Name = "archivoEne";
-            this.archivoEne.Size = new System.Drawing.Size(146, 24);
-            this.archivoEne.TabIndex = 152;
-            // 
-            // archivoOct
-            // 
-            this.archivoOct.Location = new System.Drawing.Point(149, 306);
-            this.archivoOct.Name = "archivoOct";
-            this.archivoOct.Size = new System.Drawing.Size(146, 24);
-            this.archivoOct.TabIndex = 160;
-            // 
-            // archivoJul
-            // 
-            this.archivoJul.Location = new System.Drawing.Point(149, 219);
-            this.archivoJul.Name = "archivoJul";
-            this.archivoJul.Size = new System.Drawing.Size(146, 24);
-            this.archivoJul.TabIndex = 159;
-            // 
-            // archivoAbr
-            // 
-            this.archivoAbr.Location = new System.Drawing.Point(149, 132);
-            this.archivoAbr.Name = "archivoAbr";
-            this.archivoAbr.Size = new System.Drawing.Size(146, 24);
-            this.archivoAbr.TabIndex = 154;
-            // 
-            // archivoMar
-            // 
-            this.archivoMar.Location = new System.Drawing.Point(149, 103);
-            this.archivoMar.Name = "archivoMar";
-            this.archivoMar.Size = new System.Drawing.Size(146, 24);
-            this.archivoMar.TabIndex = 155;
-            // 
-            // archivoNov
-            // 
-            this.archivoNov.Location = new System.Drawing.Point(149, 335);
-            this.archivoNov.Name = "archivoNov";
-            this.archivoNov.Size = new System.Drawing.Size(146, 24);
-            this.archivoNov.TabIndex = 162;
-            // 
-            // archivoAgo
-            // 
-            this.archivoAgo.Location = new System.Drawing.Point(149, 248);
-            this.archivoAgo.Name = "archivoAgo";
-            this.archivoAgo.Size = new System.Drawing.Size(146, 24);
-            this.archivoAgo.TabIndex = 157;
-            // 
-            // archivoDic
-            // 
-            this.archivoDic.Location = new System.Drawing.Point(149, 364);
-            this.archivoDic.Name = "archivoDic";
-            this.archivoDic.Size = new System.Drawing.Size(146, 24);
-            this.archivoDic.TabIndex = 163;
-            // 
-            // archivoMay
-            // 
-            this.archivoMay.Location = new System.Drawing.Point(149, 161);
-            this.archivoMay.Name = "archivoMay";
-            this.archivoMay.Size = new System.Drawing.Size(146, 24);
-            this.archivoMay.TabIndex = 158;
-            // 
-            // archivoSep
-            // 
-            this.archivoSep.Location = new System.Drawing.Point(149, 277);
-            this.archivoSep.Name = "archivoSep";
-            this.archivoSep.Size = new System.Drawing.Size(146, 24);
-            this.archivoSep.TabIndex = 161;
-            // 
-            // archivoFeb
-            // 
-            this.archivoFeb.Location = new System.Drawing.Point(149, 74);
-            this.archivoFeb.Name = "archivoFeb";
-            this.archivoFeb.Size = new System.Drawing.Size(146, 24);
-            this.archivoFeb.TabIndex = 153;
-            // 
-            // archivoJun
-            // 
-            this.archivoJun.Location = new System.Drawing.Point(149, 190);
-            this.archivoJun.Name = "archivoJun";
-            this.archivoJun.Size = new System.Drawing.Size(146, 24);
-            this.archivoJun.TabIndex = 156;
-            // 
-            // facturadoEne
-            // 
-            this.facturadoEne.Location = new System.Drawing.Point(10, 45);
-            this.facturadoEne.Name = "facturadoEne";
-            this.facturadoEne.Size = new System.Drawing.Size(96, 24);
-            this.facturadoEne.TabIndex = 140;
-            // 
-            // facturadoOct
-            // 
-            this.facturadoOct.Location = new System.Drawing.Point(10, 306);
-            this.facturadoOct.Name = "facturadoOct";
-            this.facturadoOct.Size = new System.Drawing.Size(96, 24);
-            this.facturadoOct.TabIndex = 148;
-            // 
-            // facturadoJul
-            // 
-            this.facturadoJul.Location = new System.Drawing.Point(10, 219);
-            this.facturadoJul.Name = "facturadoJul";
-            this.facturadoJul.Size = new System.Drawing.Size(96, 24);
-            this.facturadoJul.TabIndex = 147;
-            // 
-            // facturadoAbr
-            // 
-            this.facturadoAbr.Location = new System.Drawing.Point(10, 132);
-            this.facturadoAbr.Name = "facturadoAbr";
-            this.facturadoAbr.Size = new System.Drawing.Size(96, 24);
-            this.facturadoAbr.TabIndex = 142;
-            // 
-            // facturadoMar
-            // 
-            this.facturadoMar.Location = new System.Drawing.Point(10, 103);
-            this.facturadoMar.Name = "facturadoMar";
-            this.facturadoMar.Size = new System.Drawing.Size(96, 24);
-            this.facturadoMar.TabIndex = 143;
-            // 
-            // facturadoNov
-            // 
-            this.facturadoNov.Location = new System.Drawing.Point(10, 335);
-            this.facturadoNov.Name = "facturadoNov";
-            this.facturadoNov.Size = new System.Drawing.Size(96, 24);
-            this.facturadoNov.TabIndex = 150;
-            // 
-            // facturadoAgo
-            // 
-            this.facturadoAgo.Location = new System.Drawing.Point(10, 248);
-            this.facturadoAgo.Name = "facturadoAgo";
-            this.facturadoAgo.Size = new System.Drawing.Size(96, 24);
-            this.facturadoAgo.TabIndex = 145;
-            // 
-            // facturadoDic
-            // 
-            this.facturadoDic.Location = new System.Drawing.Point(10, 364);
-            this.facturadoDic.Name = "facturadoDic";
-            this.facturadoDic.Size = new System.Drawing.Size(96, 24);
-            this.facturadoDic.TabIndex = 151;
-            // 
-            // facturadoMay
-            // 
-            this.facturadoMay.Location = new System.Drawing.Point(10, 161);
-            this.facturadoMay.Name = "facturadoMay";
-            this.facturadoMay.Size = new System.Drawing.Size(96, 24);
-            this.facturadoMay.TabIndex = 146;
-            // 
-            // facturadoSep
-            // 
-            this.facturadoSep.Location = new System.Drawing.Point(10, 277);
-            this.facturadoSep.Name = "facturadoSep";
-            this.facturadoSep.Size = new System.Drawing.Size(96, 24);
-            this.facturadoSep.TabIndex = 149;
-            // 
-            // facturadoFeb
-            // 
-            this.facturadoFeb.Location = new System.Drawing.Point(10, 74);
-            this.facturadoFeb.Name = "facturadoFeb";
-            this.facturadoFeb.Size = new System.Drawing.Size(96, 24);
-            this.facturadoFeb.TabIndex = 141;
-            // 
-            // facturadoJun
-            // 
-            this.facturadoJun.Location = new System.Drawing.Point(10, 190);
-            this.facturadoJun.Name = "facturadoJun";
-            this.facturadoJun.Size = new System.Drawing.Size(96, 24);
-            this.facturadoJun.TabIndex = 144;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.montoEne);
-            this.groupBox9.Controls.Add(this.montoOct);
-            this.groupBox9.Controls.Add(this.montoJul);
-            this.groupBox9.Controls.Add(this.montoAbr);
-            this.groupBox9.Controls.Add(this.montoMar);
-            this.groupBox9.Controls.Add(this.montoNov);
-            this.groupBox9.Controls.Add(this.montoAgo);
-            this.groupBox9.Controls.Add(this.montoDic);
-            this.groupBox9.Controls.Add(this.montoMayo);
-            this.groupBox9.Controls.Add(this.montoSep);
-            this.groupBox9.Controls.Add(this.montoFeb);
-            this.groupBox9.Controls.Add(this.montoJun);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox9.Location = new System.Drawing.Point(225, 18);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(119, 403);
-            this.groupBox9.TabIndex = 225;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Monto OI";
-            // 
-            // montoEne
-            // 
-            this.montoEne.Location = new System.Drawing.Point(11, 45);
-            this.montoEne.Name = "montoEne";
-            this.montoEne.Size = new System.Drawing.Size(96, 24);
-            this.montoEne.TabIndex = 140;
-            // 
-            // montoOct
-            // 
-            this.montoOct.Location = new System.Drawing.Point(11, 306);
-            this.montoOct.Name = "montoOct";
-            this.montoOct.Size = new System.Drawing.Size(96, 24);
-            this.montoOct.TabIndex = 148;
-            // 
-            // montoJul
-            // 
-            this.montoJul.Location = new System.Drawing.Point(11, 219);
-            this.montoJul.Name = "montoJul";
-            this.montoJul.Size = new System.Drawing.Size(96, 24);
-            this.montoJul.TabIndex = 147;
-            // 
-            // montoAbr
-            // 
-            this.montoAbr.Location = new System.Drawing.Point(11, 132);
-            this.montoAbr.Name = "montoAbr";
-            this.montoAbr.Size = new System.Drawing.Size(96, 24);
-            this.montoAbr.TabIndex = 142;
-            // 
-            // montoMar
-            // 
-            this.montoMar.Location = new System.Drawing.Point(11, 103);
-            this.montoMar.Name = "montoMar";
-            this.montoMar.Size = new System.Drawing.Size(96, 24);
-            this.montoMar.TabIndex = 143;
-            // 
-            // montoNov
-            // 
-            this.montoNov.Location = new System.Drawing.Point(11, 335);
-            this.montoNov.Name = "montoNov";
-            this.montoNov.Size = new System.Drawing.Size(96, 24);
-            this.montoNov.TabIndex = 150;
-            // 
-            // montoAgo
-            // 
-            this.montoAgo.Location = new System.Drawing.Point(11, 248);
-            this.montoAgo.Name = "montoAgo";
-            this.montoAgo.Size = new System.Drawing.Size(96, 24);
-            this.montoAgo.TabIndex = 145;
-            // 
-            // montoDic
-            // 
-            this.montoDic.Location = new System.Drawing.Point(11, 364);
-            this.montoDic.Name = "montoDic";
-            this.montoDic.Size = new System.Drawing.Size(96, 24);
-            this.montoDic.TabIndex = 151;
-            // 
-            // montoMayo
-            // 
-            this.montoMayo.Location = new System.Drawing.Point(11, 161);
-            this.montoMayo.Name = "montoMayo";
-            this.montoMayo.Size = new System.Drawing.Size(96, 24);
-            this.montoMayo.TabIndex = 146;
-            // 
-            // montoSep
-            // 
-            this.montoSep.Location = new System.Drawing.Point(11, 277);
-            this.montoSep.Name = "montoSep";
-            this.montoSep.Size = new System.Drawing.Size(96, 24);
-            this.montoSep.TabIndex = 149;
-            // 
-            // montoFeb
-            // 
-            this.montoFeb.Location = new System.Drawing.Point(11, 74);
-            this.montoFeb.Name = "montoFeb";
-            this.montoFeb.Size = new System.Drawing.Size(96, 24);
-            this.montoFeb.TabIndex = 141;
-            // 
-            // montoJun
-            // 
-            this.montoJun.Location = new System.Drawing.Point(11, 190);
-            this.montoJun.Name = "montoJun";
-            this.montoJun.Size = new System.Drawing.Size(96, 24);
-            this.montoJun.TabIndex = 144;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.cDiciembre);
-            this.groupBox8.Controls.Add(this.cNoviembre);
-            this.groupBox8.Controls.Add(this.cOctubre);
-            this.groupBox8.Controls.Add(this.cSeptiembre);
-            this.groupBox8.Controls.Add(this.cAgosto);
-            this.groupBox8.Controls.Add(this.cJulio);
-            this.groupBox8.Controls.Add(this.cJunio);
-            this.groupBox8.Controls.Add(this.cMayo);
-            this.groupBox8.Controls.Add(this.cAbril);
-            this.groupBox8.Controls.Add(this.tEnero);
-            this.groupBox8.Controls.Add(this.cMarzo);
-            this.groupBox8.Controls.Add(this.cFebrero);
-            this.groupBox8.Controls.Add(this.cEnero);
-            this.groupBox8.Controls.Add(this.tOctubre);
-            this.groupBox8.Controls.Add(this.tJulio);
-            this.groupBox8.Controls.Add(this.tAbril);
-            this.groupBox8.Controls.Add(this.tMarzo);
-            this.groupBox8.Controls.Add(this.tNoviembre);
-            this.groupBox8.Controls.Add(this.tAgosto);
-            this.groupBox8.Controls.Add(this.tDiciembre);
-            this.groupBox8.Controls.Add(this.tMayo);
-            this.groupBox8.Controls.Add(this.tSeptiembre);
-            this.groupBox8.Controls.Add(this.tFebrero);
-            this.groupBox8.Controls.Add(this.tJunio);
-            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox8.Location = new System.Drawing.Point(7, 18);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(212, 403);
-            this.groupBox8.TabIndex = 223;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Mes / Año";
-            // 
-            // cDiciembre
-            // 
-            this.cDiciembre.AutoSize = true;
-            this.cDiciembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cDiciembre.Location = new System.Drawing.Point(15, 369);
-            this.cDiciembre.Name = "cDiciembre";
-            this.cDiciembre.Size = new System.Drawing.Size(94, 22);
-            this.cDiciembre.TabIndex = 163;
-            this.cDiciembre.Text = "Diciembre";
-            this.cDiciembre.UseVisualStyleBackColor = true;
-            // 
-            // cNoviembre
-            // 
-            this.cNoviembre.AutoSize = true;
-            this.cNoviembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cNoviembre.Location = new System.Drawing.Point(15, 339);
-            this.cNoviembre.Name = "cNoviembre";
-            this.cNoviembre.Size = new System.Drawing.Size(99, 22);
-            this.cNoviembre.TabIndex = 162;
-            this.cNoviembre.Text = "Noviembre";
-            this.cNoviembre.UseVisualStyleBackColor = true;
-            // 
-            // cOctubre
-            // 
-            this.cOctubre.AutoSize = true;
-            this.cOctubre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cOctubre.Location = new System.Drawing.Point(15, 310);
-            this.cOctubre.Name = "cOctubre";
-            this.cOctubre.Size = new System.Drawing.Size(80, 22);
-            this.cOctubre.TabIndex = 161;
-            this.cOctubre.Text = "Octubre";
-            this.cOctubre.UseVisualStyleBackColor = true;
-            // 
-            // cSeptiembre
-            // 
-            this.cSeptiembre.AutoSize = true;
-            this.cSeptiembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cSeptiembre.Location = new System.Drawing.Point(15, 281);
-            this.cSeptiembre.Name = "cSeptiembre";
-            this.cSeptiembre.Size = new System.Drawing.Size(102, 22);
-            this.cSeptiembre.TabIndex = 160;
-            this.cSeptiembre.Text = "Septiembre";
-            this.cSeptiembre.UseVisualStyleBackColor = true;
-            // 
-            // cAgosto
-            // 
-            this.cAgosto.AutoSize = true;
-            this.cAgosto.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cAgosto.Location = new System.Drawing.Point(15, 252);
-            this.cAgosto.Name = "cAgosto";
-            this.cAgosto.Size = new System.Drawing.Size(74, 22);
-            this.cAgosto.TabIndex = 159;
-            this.cAgosto.Text = "Agosto";
-            this.cAgosto.UseVisualStyleBackColor = true;
-            // 
-            // cJulio
-            // 
-            this.cJulio.AutoSize = true;
-            this.cJulio.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cJulio.Location = new System.Drawing.Point(15, 223);
-            this.cJulio.Name = "cJulio";
-            this.cJulio.Size = new System.Drawing.Size(58, 22);
-            this.cJulio.TabIndex = 158;
-            this.cJulio.Text = "Julio";
-            this.cJulio.UseVisualStyleBackColor = true;
-            // 
-            // cJunio
-            // 
-            this.cJunio.AutoSize = true;
-            this.cJunio.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cJunio.Location = new System.Drawing.Point(15, 194);
-            this.cJunio.Name = "cJunio";
-            this.cJunio.Size = new System.Drawing.Size(63, 22);
-            this.cJunio.TabIndex = 157;
-            this.cJunio.Text = "Junio";
-            this.cJunio.UseVisualStyleBackColor = true;
-            // 
-            // cMayo
-            // 
-            this.cMayo.AutoSize = true;
-            this.cMayo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cMayo.Location = new System.Drawing.Point(15, 165);
-            this.cMayo.Name = "cMayo";
-            this.cMayo.Size = new System.Drawing.Size(64, 22);
-            this.cMayo.TabIndex = 156;
-            this.cMayo.Text = "Mayo";
-            this.cMayo.UseVisualStyleBackColor = true;
-            // 
-            // cAbril
-            // 
-            this.cAbril.AutoSize = true;
-            this.cAbril.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cAbril.Location = new System.Drawing.Point(15, 136);
-            this.cAbril.Name = "cAbril";
-            this.cAbril.Size = new System.Drawing.Size(55, 22);
-            this.cAbril.TabIndex = 155;
-            this.cAbril.Text = "Abril";
-            this.cAbril.UseVisualStyleBackColor = true;
-            // 
-            // tEnero
-            // 
-            this.tEnero.Location = new System.Drawing.Point(125, 47);
-            this.tEnero.Name = "tEnero";
-            this.tEnero.Size = new System.Drawing.Size(76, 24);
-            this.tEnero.TabIndex = 140;
-            // 
-            // cMarzo
-            // 
-            this.cMarzo.AutoSize = true;
-            this.cMarzo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cMarzo.Location = new System.Drawing.Point(15, 107);
-            this.cMarzo.Name = "cMarzo";
-            this.cMarzo.Size = new System.Drawing.Size(70, 22);
-            this.cMarzo.TabIndex = 154;
-            this.cMarzo.Text = "Marzo";
-            this.cMarzo.UseVisualStyleBackColor = true;
-            // 
-            // cFebrero
-            // 
-            this.cFebrero.AutoSize = true;
-            this.cFebrero.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cFebrero.Location = new System.Drawing.Point(15, 78);
-            this.cFebrero.Name = "cFebrero";
-            this.cFebrero.Size = new System.Drawing.Size(79, 22);
-            this.cFebrero.TabIndex = 153;
-            this.cFebrero.Text = "Febrero";
-            this.cFebrero.UseVisualStyleBackColor = true;
-            // 
-            // cEnero
-            // 
-            this.cEnero.AutoSize = true;
-            this.cEnero.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cEnero.Location = new System.Drawing.Point(15, 51);
-            this.cEnero.Name = "cEnero";
-            this.cEnero.Size = new System.Drawing.Size(67, 22);
-            this.cEnero.TabIndex = 152;
-            this.cEnero.Text = "Enero";
-            this.cEnero.UseVisualStyleBackColor = true;
-            // 
-            // tOctubre
-            // 
-            this.tOctubre.Location = new System.Drawing.Point(125, 308);
-            this.tOctubre.Name = "tOctubre";
-            this.tOctubre.Size = new System.Drawing.Size(76, 24);
-            this.tOctubre.TabIndex = 148;
-            // 
-            // tJulio
-            // 
-            this.tJulio.Location = new System.Drawing.Point(125, 221);
-            this.tJulio.Name = "tJulio";
-            this.tJulio.Size = new System.Drawing.Size(76, 24);
-            this.tJulio.TabIndex = 147;
-            // 
-            // tAbril
-            // 
-            this.tAbril.Location = new System.Drawing.Point(125, 134);
-            this.tAbril.Name = "tAbril";
-            this.tAbril.Size = new System.Drawing.Size(76, 24);
-            this.tAbril.TabIndex = 142;
-            // 
-            // tMarzo
-            // 
-            this.tMarzo.Location = new System.Drawing.Point(125, 105);
-            this.tMarzo.Name = "tMarzo";
-            this.tMarzo.Size = new System.Drawing.Size(76, 24);
-            this.tMarzo.TabIndex = 143;
-            // 
-            // tNoviembre
-            // 
-            this.tNoviembre.Location = new System.Drawing.Point(125, 337);
-            this.tNoviembre.Name = "tNoviembre";
-            this.tNoviembre.Size = new System.Drawing.Size(76, 24);
-            this.tNoviembre.TabIndex = 150;
-            // 
-            // tAgosto
-            // 
-            this.tAgosto.Location = new System.Drawing.Point(125, 250);
-            this.tAgosto.Name = "tAgosto";
-            this.tAgosto.Size = new System.Drawing.Size(76, 24);
-            this.tAgosto.TabIndex = 145;
-            // 
-            // tDiciembre
-            // 
-            this.tDiciembre.Location = new System.Drawing.Point(125, 366);
-            this.tDiciembre.Name = "tDiciembre";
-            this.tDiciembre.Size = new System.Drawing.Size(76, 24);
-            this.tDiciembre.TabIndex = 151;
-            // 
-            // tMayo
-            // 
-            this.tMayo.Location = new System.Drawing.Point(125, 163);
-            this.tMayo.Name = "tMayo";
-            this.tMayo.Size = new System.Drawing.Size(76, 24);
-            this.tMayo.TabIndex = 146;
-            // 
-            // tSeptiembre
-            // 
-            this.tSeptiembre.Location = new System.Drawing.Point(125, 279);
-            this.tSeptiembre.Name = "tSeptiembre";
-            this.tSeptiembre.Size = new System.Drawing.Size(76, 24);
-            this.tSeptiembre.TabIndex = 149;
-            // 
-            // tFebrero
-            // 
-            this.tFebrero.Location = new System.Drawing.Point(125, 76);
-            this.tFebrero.Name = "tFebrero";
-            this.tFebrero.Size = new System.Drawing.Size(76, 24);
-            this.tFebrero.TabIndex = 141;
-            // 
-            // tJunio
-            // 
-            this.tJunio.Location = new System.Drawing.Point(125, 192);
-            this.tJunio.Name = "tJunio";
-            this.tJunio.Size = new System.Drawing.Size(76, 24);
-            this.tJunio.TabIndex = 144;
-            // 
             // OI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -4626,10 +4626,6 @@
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -4640,6 +4636,10 @@
             this.groupBox9.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).EndInit();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5018,29 +5018,28 @@
         private System.Windows.Forms.TextBox nameSep;
         private System.Windows.Forms.TextBox nameFeb;
         private System.Windows.Forms.TextBox nameJun;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button exploreDic;
+        private System.Windows.Forms.Button exploreNov;
         private System.Windows.Forms.Button findNov;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button exploreOct;
         private System.Windows.Forms.Button findOct;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button exploreSep;
         private System.Windows.Forms.Button findSep;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button exploreAgo;
         private System.Windows.Forms.Button findAgo;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button exploreJul;
         private System.Windows.Forms.Button findJul;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button exploreJun;
         private System.Windows.Forms.Button findJun;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button exploreMay;
         private System.Windows.Forms.Button findMay;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button exploreAbr;
         private System.Windows.Forms.Button findAbr;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button exploreMar;
         private System.Windows.Forms.Button findMar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button exploreFeb;
         private System.Windows.Forms.Button findFeb;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button exploreEne;
         private System.Windows.Forms.Button findEne;
         private System.Windows.Forms.TextBox archivoEne;
         private System.Windows.Forms.TextBox archivoOct;
@@ -5104,5 +5103,6 @@
         private System.Windows.Forms.TextBox tSeptiembre;
         private System.Windows.Forms.TextBox tFebrero;
         private System.Windows.Forms.TextBox tJunio;
+        private System.Windows.Forms.Button findDic;
     }
 }

@@ -22,6 +22,9 @@ namespace gestor_bdm
         string RutaImgHM2, NombreImgHM2, RutaImgHM3, NombreImgHM3 = "";
         int last_id, cantidad = 0;
 
+        string RutaEne, RutaFeb, RutaMar, RutaAbr, RutaMay, RutaJun, RutaJul, RutaAgo, RutaSep, RutaOct, RutaNov, RutaDic = "";
+        string NombreArcEne, NombreArcFeb, NombreArcMar, NombreArcAbr, NombreArcMay, NombreArcJun, NombreArcJul, NombreArcAgo, NombreArcSep, NombreArcOct, NombreArcNov, NombreArcDic = "";
+
         public OI()
         {
             InitializeComponent();
@@ -371,7 +374,7 @@ namespace gestor_bdm
         public void esquemaComision()
         {
             try
-            {
+            { 
                 con.Close();
 
                 string selectQuery = "select id, negociacion from esquema_comision where region = '" + clave_pais + "'";
@@ -470,6 +473,22 @@ namespace gestor_bdm
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Explore_2_Click(object sender, EventArgs e)
+        {
+            Variables.Ruta_pdf = nombreDos.Text;
+
+            viewer ventana = new viewer();
+            ventana.Show();
+        }
+
+        private void Explore_3_Click(object sender, EventArgs e)
+        {
+            Variables.Ruta_pdf = nombreTres.Text;
+
+            viewer ventana = new viewer();
+            ventana.Show();
         }
 
         public void llenar()
@@ -957,7 +976,7 @@ namespace gestor_bdm
             }
             catch (System.Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -985,7 +1004,343 @@ namespace gestor_bdm
             }
             catch (System.Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_ene()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcEne);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaEne);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_feb()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcFeb);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaFeb);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_mar()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcMar);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaMar);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_abr()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcAbr);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaAbr);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_may()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcMay);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaMay);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_jun()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcJun);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaJun);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_jul()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcJul);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaJul);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_ago()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcAgo);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaAgo);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_sep()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcSep);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaSep);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_oct()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcOct);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaOct);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_nov()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcNov);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaNov);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void upload_dic()
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create("ftp://172.20.3.45/" + NombreArcDic);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential("chay0s", "Chay0s1318");
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = true;
+                FileStream stream = File.OpenRead(RutaDic);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Flush();
+                MessageBox.Show("Archivo subido correctamente!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //linkHeaderM.Text = "files.000webhost.com/images/" + variables.NombreImgHM;
+                //nombreImgHM.Text = "";
+                reqStream.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -2118,7 +2473,7 @@ namespace gestor_bdm
                             con.Close();
                             con.Open();
 
-                            MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
+                            MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic` , `archivo_ene` , `archivo_feb`, `archivo_mar`, `archivo_abr` , `archivo_may` , `archivo_jun` , `archivo_jul`  , `archivo_ago` , `archivo_sep` , `archivo_oct` , `archivo_nov` , `archivo_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + archivoEne.Text + "','" + archivoFeb.Text + "','" + archivoMar.Text + "','" + archivoAbr.Text + "','" + archivoMay.Text + "','" + archivoJun.Text + "','" + archivoJul.Text + "','" + archivoAgo.Text + "','" + archivoSep.Text + "','" + archivoOct.Text + "','" + archivoNov.Text + "','" + archivoDic.Text + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
                             cmd.ExecuteNonQuery();
                             upload();
                             upload_dos();
@@ -2214,7 +2569,7 @@ namespace gestor_bdm
                 string date_monto_hasta = dateHastaMonto.Value.ToString("yyyy-MM-dd");
 
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("UPDATE `ordenes_insercion` SET `folio_media`='" + tMedia.Text + "',`status_OI`='" + textStatusOI.Text + "',`sigla_pais`='" + textPais.Text + "',`tipo_pauta`='" + labelPauta.Text + "',`categoria`='" + comboCategoria.Text + "',`contrato`='" + comboContrato.Text + "',`razon_social`='" + comboRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`sigla_hotel`='" + labelHotel.Text + "',`sigla_hanna`='" + tSiglas.Text + "',`clave_hanna`='" + tHann.Text + "',`centro_bneficio`='" + nombreBeneficio.Text + "',`monto_pauta`='" + textMonto.Text + "',`anticipo_pauta`='" + textAnticipo.Text + "',`porcentaje_mkf`='" + comboPorcentajeMKF.Text + "',`vig_desde_mkf`='" + date_mkf_desde + "',`vig_hasta_mkf`='" + date_mkf_hasta + "',`monto_fijo`='" + tMonto.Text + "',`monto_fijo_iva`='" + tMontoIVA.Text + "',`divisa`='" + comboDivisa.Text + "',`vig_monto_desde`='" + date_monto_desde + "',`vig_monto_hasta`='" + date_monto_hasta + "', `transf_bancaria`='" + transfer_bancaria + "',`compensacion`='" + compensacion + "', `noches`='" + noches + "', `cant_noches`='" + cantNoches.Text + "', `importe_noches`='" + importeNoches.Text + "', `ambas`='" + ambos + "', `esquema_comision`='" + comboComisiones.Text + "', `q`='" + comboQ.Text + "', `porcentaje_q`='" + comboQPorcentaje.Text + "', `campo1`='" + combo1.Text + "', `campo2`='" + combo2.Text + "', `campo3`='" + combo3.Text + "', `observaciones`='" + textObservaciones.Text + "', `supply_manager`='" + comboSupply.Text + "',`ejecutivo_daf`='" + comboEjecutivoDAF.Text + "',`account_manager`='" + comboAccount.Text + "',`archivo`='" + nombreUno.Text + "',`archivo_dos`='" + nombreDos.Text + "',`archivo_tres`='" + nombreTres.Text + "',`enero`='" + senero + "',`febrero`='" + sfebrero + "',`marzo`='" + smarzo + "',`abril`='" + sabril + "',`mayo`='" + smayo + "',`junio`='" + sjulio + "',`julio`='" + sjulio + "',`agosto`='" + sagosto + "',`septiembre`='" + sseptiembre + "',`octubre`='" + soctubre + "',`noviembre`='" + snoviembre + "',`diciembre`='" + sdiciembre + "',`anio_ene`='" + tEnero.Text + "',`anio_feb`='" + tFebrero.Text + "',`anio_mar`='" + tMarzo.Text + "',`anio_abr`='" + tAbril.Text + "',`anio_may`='" + tMayo.Text + "',`anio_jun`='" + tJunio.Text + "',`anio_jul`='" + tJulio.Text + "',`anio_ago`='" + tAgosto.Text + "',`anio_sep`='" + tSeptiembre.Text + "',`anio_oct`='" + tOctubre.Text + "',`anio_nov`='" + tNoviembre.Text + "',`anio_dic`='" + tDiciembre.Text + "',`monto_ene`='" + montoEne.Text + "',`monto_feb`='" + montoFeb.Text + "',`monto_mar`='" + montoMar.Text + "',`monto_abr`='" + montoAbr.Text + "',`monto_may`='" + montoMayo.Text + "',`monto_jun`='" + montoJun.Text + "',`monto_jul`='" + montoJul.Text + "',`monto_ago`='" + montoAgo.Text + "',`monto_sep`='" + montoSep.Text + "',`monto_oct`='" + montoOct.Text + "',`monto_nov`='" + montoNov.Text + "',`monto_dic`='" + montoDic.Text + "',`facturado_ene`='" + facturadoEne.Text + "',`facturado_feb`='" + facturadoFeb.Text + "',`facturado_mar`='" + facturadoMar.Text + "',`facturado_abr`='" + facturadoAbr.Text + "',`facturado_may`='" + facturadoMay.Text + "',`facturado_jun`='" + facturadoJun.Text + "',`facturado_jul`='" + facturadoJul.Text + "',`facturado_ago`='" + facturadoAgo.Text + "',`facturado_sep`='" + facturadoSep.Text + "',`facturado_oct`='" + facturadoOct.Text + "',`facturado_nov`='" + facturadoNov.Text + "',`facturado_dic`='" + facturadoDic.Text + "',`cobrado_ene`='" + cobradoEne.Text + "',`cobrado_feb`='" + cobradoFeb.Text + "',`cobrado_mar`='" + cobradoMar.Text + "',`cobrado_abr`='" + cobradoAbr.Text + "',`cobrado_may`='" + cobradoMay.Text + "',`cobrado_jun`='" + cobradoJun.Text + "',`cobrado_jul`='" + cobradoJul.Text + "',`cobrado_ago`='" + cobradoAgo.Text + "',`cobrado_sep`='" + cobradoSep.Text + "',`cobrado_oct`='" + cobradoOct.Text + "',`cobrado_nov`='" + cobradoNov.Text + "',`cobrado_dic`='" + cobradoDic.Text + "',`fecha_cobro_ene`='" + dateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_feb`='" + dateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_mar`='" + dateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_abr`='" + dateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_may`='" + dateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jun`='" + dateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jul`='" + dateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_ago`='" + dateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_sep`='" + dateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_oct`='" + dateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_nov`='" + dateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_dic`='" + dateDic.Value.ToString("yyyy-MM-dd") + "',`esquema_ene`='" + esquemaEne.Text + "',`esquema_feb`='" + esquemaFeb.Text + "',`esquema_mar`='" + esquemaMar.Text + "',`esquema_abr`='" + esquemaAbr.Text + "',`esquema_may`='" + esquemaMay.Text + "',`esquema_jun`='" + esquemaJun.Text + "',`esquema_jul`='" + esquemaJul.Text + "',`esquema_ago`='" + esquemaAgo.Text + "',`esquema_sep`='" + esquemaSep.Text + "',`esquema_oct`='" + esquemaOct.Text + "',`esquema_nov`='" + esquemaNov.Text + "',`esquema_dic`='" + esquemaDic.Text + "',`fecha_com_ene`='" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_com_feb`='" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_com_mar`='" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_com_abr`='" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_com_may`='" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jun`='" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jul`='" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_com_ago`='" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_com_sep`='" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_com_oct`='" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_com_nov`='" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_com_dic`='" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "',`monto_pautado`='" + cantMonto.Text + "',`monto_facturado`='" + cantFacturado.Text + "',`monto_cobrado`='" + cantCobrado.Text + "',`porcentaje_pautado`='" + porcentajeMonto.Text + "',`porcentaje_facturado`='" + porcentajeFacturado.Text + "',`porcentaje_cobrado`='" + porcentajeCobrado.Text + "',`tipo_op`='" + comboOp.Text + "',`id_maestro_op`='" + textID.Text + "',`numero_cuenta_op`='" + comboCuenta.Text + "',`cuenta_op`='" + comboCuentaOp.Text + "',`razon_op`='" + comboCuentaOp.Text + "' WHERE id_ordenes = '" + id.Text + "'", con);
+                MySqlCommand cmd = new MySqlCommand("UPDATE `ordenes_insercion` SET `folio_media`='" + tMedia.Text + "',`status_OI`='" + textStatusOI.Text + "',`sigla_pais`='" + textPais.Text + "',`tipo_pauta`='" + labelPauta.Text + "',`categoria`='" + comboCategoria.Text + "',`contrato`='" + comboContrato.Text + "',`razon_social`='" + comboRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`sigla_hotel`='" + labelHotel.Text + "',`sigla_hanna`='" + tSiglas.Text + "',`clave_hanna`='" + tHann.Text + "',`centro_bneficio`='" + nombreBeneficio.Text + "',`monto_pauta`='" + textMonto.Text + "',`anticipo_pauta`='" + textAnticipo.Text + "',`porcentaje_mkf`='" + comboPorcentajeMKF.Text + "',`vig_desde_mkf`='" + date_mkf_desde + "',`vig_hasta_mkf`='" + date_mkf_hasta + "',`monto_fijo`='" + tMonto.Text + "',`monto_fijo_iva`='" + tMontoIVA.Text + "',`divisa`='" + comboDivisa.Text + "',`vig_monto_desde`='" + date_monto_desde + "',`vig_monto_hasta`='" + date_monto_hasta + "', `transf_bancaria`='" + transfer_bancaria + "',`compensacion`='" + compensacion + "', `noches`='" + noches + "', `cant_noches`='" + cantNoches.Text + "', `importe_noches`='" + importeNoches.Text + "', `ambas`='" + ambos + "', `esquema_comision`='" + comboComisiones.Text + "', `q`='" + comboQ.Text + "', `porcentaje_q`='" + comboQPorcentaje.Text + "', `campo1`='" + combo1.Text + "', `campo2`='" + combo2.Text + "', `campo3`='" + combo3.Text + "', `observaciones`='" + textObservaciones.Text + "', `supply_manager`='" + comboSupply.Text + "',`ejecutivo_daf`='" + comboEjecutivoDAF.Text + "',`account_manager`='" + comboAccount.Text + "',`archivo`='" + nombreUno.Text + "',`archivo_dos`='" + nombreDos.Text + "',`archivo_tres`='" + nombreTres.Text + "',`enero`='" + senero + "',`febrero`='" + sfebrero + "',`marzo`='" + smarzo + "',`abril`='" + sabril + "',`mayo`='" + smayo + "',`junio`='" + sjulio + "',`julio`='" + sjulio + "',`agosto`='" + sagosto + "',`septiembre`='" + sseptiembre + "',`octubre`='" + soctubre + "',`noviembre`='" + snoviembre + "',`diciembre`='" + sdiciembre + "',`anio_ene`='" + tEnero.Text + "',`anio_feb`='" + tFebrero.Text + "',`anio_mar`='" + tMarzo.Text + "',`anio_abr`='" + tAbril.Text + "',`anio_may`='" + tMayo.Text + "',`anio_jun`='" + tJunio.Text + "',`anio_jul`='" + tJulio.Text + "',`anio_ago`='" + tAgosto.Text + "',`anio_sep`='" + tSeptiembre.Text + "',`anio_oct`='" + tOctubre.Text + "',`anio_nov`='" + tNoviembre.Text + "',`anio_dic`='" + tDiciembre.Text + "',`monto_ene`='" + montoEne.Text + "',`monto_feb`='" + montoFeb.Text + "',`monto_mar`='" + montoMar.Text + "',`monto_abr`='" + montoAbr.Text + "',`monto_may`='" + montoMayo.Text + "',`monto_jun`='" + montoJun.Text + "',`monto_jul`='" + montoJul.Text + "',`monto_ago`='" + montoAgo.Text + "',`monto_sep`='" + montoSep.Text + "',`monto_oct`='" + montoOct.Text + "',`monto_nov`='" + montoNov.Text + "',`monto_dic`='" + montoDic.Text + "',`facturado_ene`='" + facturadoEne.Text + "',`facturado_feb`='" + facturadoFeb.Text + "',`facturado_mar`='" + facturadoMar.Text + "',`facturado_abr`='" + facturadoAbr.Text + "',`facturado_may`='" + facturadoMay.Text + "',`facturado_jun`='" + facturadoJun.Text + "',`facturado_jul`='" + facturadoJul.Text + "',`facturado_ago`='" + facturadoAgo.Text + "',`facturado_sep`='" + facturadoSep.Text + "',`facturado_oct`='" + facturadoOct.Text + "',`facturado_nov`='" + facturadoNov.Text + "',`facturado_dic`='" + facturadoDic.Text + "',`archivo_ene`='" + archivoEne.Text + "',`archivo_feb`='" + archivoFeb.Text + "',`archivo_mar`='" + archivoMar.Text + "',`archivo_abr`='" + archivoAbr.Text + "',`archivo_may`='" + archivoMay.Text + "',`archivo_jun`='" + archivoJun.Text + "',`archivo_jul`='" + archivoJul.Text + "',`archivo_ago`='" + archivoAgo.Text + "',`archivo_sep`='" + archivoSep.Text + "',`archivo_oct`='" + archivoOct.Text + "',`archivo_nov`='" + archivoNov.Text + "',`archivo_dic`='" + archivoDic.Text + "',`cobrado_ene`='" + cobradoEne.Text + "',`cobrado_feb`='" + cobradoFeb.Text + "',`cobrado_mar`='" + cobradoMar.Text + "',`cobrado_abr`='" + cobradoAbr.Text + "',`cobrado_may`='" + cobradoMay.Text + "',`cobrado_jun`='" + cobradoJun.Text + "',`cobrado_jul`='" + cobradoJul.Text + "',`cobrado_ago`='" + cobradoAgo.Text + "',`cobrado_sep`='" + cobradoSep.Text + "',`cobrado_oct`='" + cobradoOct.Text + "',`cobrado_nov`='" + cobradoNov.Text + "',`cobrado_dic`='" + cobradoDic.Text + "',`fecha_cobro_ene`='" + dateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_feb`='" + dateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_mar`='" + dateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_abr`='" + dateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_may`='" + dateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jun`='" + dateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jul`='" + dateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_ago`='" + dateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_sep`='" + dateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_oct`='" + dateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_nov`='" + dateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_dic`='" + dateDic.Value.ToString("yyyy-MM-dd") + "',`esquema_ene`='" + esquemaEne.Text + "',`esquema_feb`='" + esquemaFeb.Text + "',`esquema_mar`='" + esquemaMar.Text + "',`esquema_abr`='" + esquemaAbr.Text + "',`esquema_may`='" + esquemaMay.Text + "',`esquema_jun`='" + esquemaJun.Text + "',`esquema_jul`='" + esquemaJul.Text + "',`esquema_ago`='" + esquemaAgo.Text + "',`esquema_sep`='" + esquemaSep.Text + "',`esquema_oct`='" + esquemaOct.Text + "',`esquema_nov`='" + esquemaNov.Text + "',`esquema_dic`='" + esquemaDic.Text + "',`fecha_com_ene`='" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_com_feb`='" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_com_mar`='" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_com_abr`='" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_com_may`='" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jun`='" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jul`='" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_com_ago`='" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_com_sep`='" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_com_oct`='" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_com_nov`='" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_com_dic`='" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "',`monto_pautado`='" + cantMonto.Text + "',`monto_facturado`='" + cantFacturado.Text + "',`monto_cobrado`='" + cantCobrado.Text + "',`porcentaje_pautado`='" + porcentajeMonto.Text + "',`porcentaje_facturado`='" + porcentajeFacturado.Text + "',`porcentaje_cobrado`='" + porcentajeCobrado.Text + "',`tipo_op`='" + comboOp.Text + "',`id_maestro_op`='" + textID.Text + "',`numero_cuenta_op`='" + comboCuenta.Text + "',`cuenta_op`='" + comboCuentaOp.Text + "',`razon_op`='" + comboCuentaOp.Text + "' WHERE id_ordenes = '" + id.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 con.Close();
@@ -2681,11 +3036,11 @@ namespace gestor_bdm
                     double redondeado = 0;
                     double total = 0;
 
-                    if (comboNacional.SelectedIndex == 0)
+                    if (comboNacional.SelectedIndex == 1)
                     {
                         montoPauta = Convert.ToDouble(tMontoIVA.Text);
                     }
-                    else if (comboNacional.SelectedIndex == 1)
+                    else if (comboNacional.SelectedIndex == 0)
                     {
                         montoPauta = Convert.ToDouble(tMonto.Text);
                     }
