@@ -78,8 +78,7 @@
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.17\lib\net452\MySql.Data.dll</HintPath>
@@ -372,14 +371,6 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="ico.ico" />
-    <None Include="Resources\money.png" />
-    <None Include="Resources\employee.png" />
-    <None Include="Resources\operator.png" />
-    <None Include="Resources\reunion.png" />
-    <None Include="Resources\hotel.png" />
-    <None Include="Resources\zip.png" />
-    <None Include="Resources\zip1.png" />
-    <None Include="Resources\visualization.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -393,6 +384,14 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\money.png" />
+    <None Include="Resources\employee.png" />
+    <None Include="Resources\operator.png" />
+    <None Include="Resources\reunion.png" />
+    <None Include="Resources\hotel.png" />
+    <None Include="Resources\zip.png" />
+    <None Include="Resources\zip1.png" />
+    <None Include="Resources\visualization.png" />
     <None Include="Resources\logo-3-2.png" />
     <None Include="Resources\logo-media-A-1.png" />
     <None Include="Resources\media-logo.png" />

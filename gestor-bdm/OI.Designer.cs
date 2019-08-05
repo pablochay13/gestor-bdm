@@ -225,29 +225,17 @@
             this.nameFeb = new System.Windows.Forms.TextBox();
             this.nameJun = new System.Windows.Forms.TextBox();
             this.exploreDic = new System.Windows.Forms.Button();
-            this.findDic = new System.Windows.Forms.Button();
             this.exploreNov = new System.Windows.Forms.Button();
-            this.findNov = new System.Windows.Forms.Button();
             this.exploreOct = new System.Windows.Forms.Button();
-            this.findOct = new System.Windows.Forms.Button();
             this.exploreSep = new System.Windows.Forms.Button();
-            this.findSep = new System.Windows.Forms.Button();
             this.exploreAgo = new System.Windows.Forms.Button();
-            this.findAgo = new System.Windows.Forms.Button();
             this.exploreJul = new System.Windows.Forms.Button();
-            this.findJul = new System.Windows.Forms.Button();
             this.exploreJun = new System.Windows.Forms.Button();
-            this.findJun = new System.Windows.Forms.Button();
             this.exploreMay = new System.Windows.Forms.Button();
-            this.findMay = new System.Windows.Forms.Button();
             this.exploreAbr = new System.Windows.Forms.Button();
-            this.findAbr = new System.Windows.Forms.Button();
             this.exploreMar = new System.Windows.Forms.Button();
-            this.findMar = new System.Windows.Forms.Button();
             this.exploreFeb = new System.Windows.Forms.Button();
-            this.findFeb = new System.Windows.Forms.Button();
             this.exploreEne = new System.Windows.Forms.Button();
-            this.findEne = new System.Windows.Forms.Button();
             this.archivoEne = new System.Windows.Forms.TextBox();
             this.archivoOct = new System.Windows.Forms.TextBox();
             this.archivoJul = new System.Windows.Forms.TextBox();
@@ -486,6 +474,18 @@
             this.dateDesdeMonto = new System.Windows.Forms.DateTimePicker();
             this.tMedia = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
+            this.lookDic = new System.Windows.Forms.Button();
+            this.lookNov = new System.Windows.Forms.Button();
+            this.lookOct = new System.Windows.Forms.Button();
+            this.lookSep = new System.Windows.Forms.Button();
+            this.lookAgo = new System.Windows.Forms.Button();
+            this.lookJul = new System.Windows.Forms.Button();
+            this.lookJun = new System.Windows.Forms.Button();
+            this.lookMay = new System.Windows.Forms.Button();
+            this.lookAbr = new System.Windows.Forms.Button();
+            this.lookMar = new System.Windows.Forms.Button();
+            this.lookFeb = new System.Windows.Forms.Button();
+            this.lookEne = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabDatos.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -2365,6 +2365,18 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.lookDic);
+            this.groupBox10.Controls.Add(this.lookNov);
+            this.groupBox10.Controls.Add(this.lookOct);
+            this.groupBox10.Controls.Add(this.lookSep);
+            this.groupBox10.Controls.Add(this.lookAgo);
+            this.groupBox10.Controls.Add(this.lookJul);
+            this.groupBox10.Controls.Add(this.lookJun);
+            this.groupBox10.Controls.Add(this.lookMay);
+            this.groupBox10.Controls.Add(this.lookAbr);
+            this.groupBox10.Controls.Add(this.lookMar);
+            this.groupBox10.Controls.Add(this.lookFeb);
+            this.groupBox10.Controls.Add(this.lookEne);
             this.groupBox10.Controls.Add(this.label49);
             this.groupBox10.Controls.Add(this.nameEne);
             this.groupBox10.Controls.Add(this.label50);
@@ -2380,29 +2392,17 @@
             this.groupBox10.Controls.Add(this.nameFeb);
             this.groupBox10.Controls.Add(this.nameJun);
             this.groupBox10.Controls.Add(this.exploreDic);
-            this.groupBox10.Controls.Add(this.findDic);
             this.groupBox10.Controls.Add(this.exploreNov);
-            this.groupBox10.Controls.Add(this.findNov);
             this.groupBox10.Controls.Add(this.exploreOct);
-            this.groupBox10.Controls.Add(this.findOct);
             this.groupBox10.Controls.Add(this.exploreSep);
-            this.groupBox10.Controls.Add(this.findSep);
             this.groupBox10.Controls.Add(this.exploreAgo);
-            this.groupBox10.Controls.Add(this.findAgo);
             this.groupBox10.Controls.Add(this.exploreJul);
-            this.groupBox10.Controls.Add(this.findJul);
             this.groupBox10.Controls.Add(this.exploreJun);
-            this.groupBox10.Controls.Add(this.findJun);
             this.groupBox10.Controls.Add(this.exploreMay);
-            this.groupBox10.Controls.Add(this.findMay);
             this.groupBox10.Controls.Add(this.exploreAbr);
-            this.groupBox10.Controls.Add(this.findAbr);
             this.groupBox10.Controls.Add(this.exploreMar);
-            this.groupBox10.Controls.Add(this.findMar);
             this.groupBox10.Controls.Add(this.exploreFeb);
-            this.groupBox10.Controls.Add(this.findFeb);
             this.groupBox10.Controls.Add(this.exploreEne);
-            this.groupBox10.Controls.Add(this.findEne);
             this.groupBox10.Controls.Add(this.archivoEne);
             this.groupBox10.Controls.Add(this.archivoOct);
             this.groupBox10.Controls.Add(this.archivoJul);
@@ -2557,264 +2557,144 @@
             this.exploreDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreDic.BackgroundImage")));
             this.exploreDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreDic.Location = new System.Drawing.Point(337, 364);
+            this.exploreDic.Location = new System.Drawing.Point(304, 364);
             this.exploreDic.Name = "exploreDic";
             this.exploreDic.Size = new System.Drawing.Size(24, 24);
             this.exploreDic.TabIndex = 187;
             this.exploreDic.UseVisualStyleBackColor = true;
-            // 
-            // findDic
-            // 
-            this.findDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findDic.BackgroundImage")));
-            this.findDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findDic.Location = new System.Drawing.Point(301, 364);
-            this.findDic.Name = "findDic";
-            this.findDic.Size = new System.Drawing.Size(24, 24);
-            this.findDic.TabIndex = 186;
-            this.findDic.UseVisualStyleBackColor = true;
+            this.exploreDic.Click += new System.EventHandler(this.ExploreDic_Click);
             // 
             // exploreNov
             // 
             this.exploreNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreNov.BackgroundImage")));
             this.exploreNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreNov.Location = new System.Drawing.Point(337, 335);
+            this.exploreNov.Location = new System.Drawing.Point(304, 335);
             this.exploreNov.Name = "exploreNov";
             this.exploreNov.Size = new System.Drawing.Size(24, 24);
             this.exploreNov.TabIndex = 185;
             this.exploreNov.UseVisualStyleBackColor = true;
-            // 
-            // findNov
-            // 
-            this.findNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findNov.BackgroundImage")));
-            this.findNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findNov.Location = new System.Drawing.Point(301, 335);
-            this.findNov.Name = "findNov";
-            this.findNov.Size = new System.Drawing.Size(24, 24);
-            this.findNov.TabIndex = 184;
-            this.findNov.UseVisualStyleBackColor = true;
+            this.exploreNov.Click += new System.EventHandler(this.ExploreNov_Click);
             // 
             // exploreOct
             // 
             this.exploreOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreOct.BackgroundImage")));
             this.exploreOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreOct.Location = new System.Drawing.Point(337, 306);
+            this.exploreOct.Location = new System.Drawing.Point(304, 306);
             this.exploreOct.Name = "exploreOct";
             this.exploreOct.Size = new System.Drawing.Size(24, 24);
             this.exploreOct.TabIndex = 183;
             this.exploreOct.UseVisualStyleBackColor = true;
-            // 
-            // findOct
-            // 
-            this.findOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findOct.BackgroundImage")));
-            this.findOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findOct.Location = new System.Drawing.Point(301, 306);
-            this.findOct.Name = "findOct";
-            this.findOct.Size = new System.Drawing.Size(24, 24);
-            this.findOct.TabIndex = 182;
-            this.findOct.UseVisualStyleBackColor = true;
+            this.exploreOct.Click += new System.EventHandler(this.ExploreOct_Click);
             // 
             // exploreSep
             // 
             this.exploreSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreSep.BackgroundImage")));
             this.exploreSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreSep.Location = new System.Drawing.Point(337, 277);
+            this.exploreSep.Location = new System.Drawing.Point(304, 277);
             this.exploreSep.Name = "exploreSep";
             this.exploreSep.Size = new System.Drawing.Size(24, 24);
             this.exploreSep.TabIndex = 181;
             this.exploreSep.UseVisualStyleBackColor = true;
-            // 
-            // findSep
-            // 
-            this.findSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findSep.BackgroundImage")));
-            this.findSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findSep.Location = new System.Drawing.Point(301, 277);
-            this.findSep.Name = "findSep";
-            this.findSep.Size = new System.Drawing.Size(24, 24);
-            this.findSep.TabIndex = 180;
-            this.findSep.UseVisualStyleBackColor = true;
+            this.exploreSep.Click += new System.EventHandler(this.ExploreSep_Click);
             // 
             // exploreAgo
             // 
             this.exploreAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAgo.BackgroundImage")));
             this.exploreAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreAgo.Location = new System.Drawing.Point(337, 248);
+            this.exploreAgo.Location = new System.Drawing.Point(304, 248);
             this.exploreAgo.Name = "exploreAgo";
             this.exploreAgo.Size = new System.Drawing.Size(24, 24);
             this.exploreAgo.TabIndex = 179;
             this.exploreAgo.UseVisualStyleBackColor = true;
-            // 
-            // findAgo
-            // 
-            this.findAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAgo.BackgroundImage")));
-            this.findAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findAgo.Location = new System.Drawing.Point(301, 248);
-            this.findAgo.Name = "findAgo";
-            this.findAgo.Size = new System.Drawing.Size(24, 24);
-            this.findAgo.TabIndex = 178;
-            this.findAgo.UseVisualStyleBackColor = true;
+            this.exploreAgo.Click += new System.EventHandler(this.ExploreAgo_Click);
             // 
             // exploreJul
             // 
             this.exploreJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJul.BackgroundImage")));
             this.exploreJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreJul.Location = new System.Drawing.Point(337, 219);
+            this.exploreJul.Location = new System.Drawing.Point(304, 219);
             this.exploreJul.Name = "exploreJul";
             this.exploreJul.Size = new System.Drawing.Size(24, 24);
             this.exploreJul.TabIndex = 177;
             this.exploreJul.UseVisualStyleBackColor = true;
-            // 
-            // findJul
-            // 
-            this.findJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJul.BackgroundImage")));
-            this.findJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findJul.Location = new System.Drawing.Point(301, 219);
-            this.findJul.Name = "findJul";
-            this.findJul.Size = new System.Drawing.Size(24, 24);
-            this.findJul.TabIndex = 176;
-            this.findJul.UseVisualStyleBackColor = true;
+            this.exploreJul.Click += new System.EventHandler(this.ExploreJul_Click);
             // 
             // exploreJun
             // 
             this.exploreJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJun.BackgroundImage")));
             this.exploreJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreJun.Location = new System.Drawing.Point(337, 190);
+            this.exploreJun.Location = new System.Drawing.Point(304, 190);
             this.exploreJun.Name = "exploreJun";
             this.exploreJun.Size = new System.Drawing.Size(24, 24);
             this.exploreJun.TabIndex = 175;
             this.exploreJun.UseVisualStyleBackColor = true;
-            // 
-            // findJun
-            // 
-            this.findJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findJun.BackgroundImage")));
-            this.findJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findJun.Location = new System.Drawing.Point(301, 190);
-            this.findJun.Name = "findJun";
-            this.findJun.Size = new System.Drawing.Size(24, 24);
-            this.findJun.TabIndex = 174;
-            this.findJun.UseVisualStyleBackColor = true;
+            this.exploreJun.Click += new System.EventHandler(this.ExploreJun_Click);
             // 
             // exploreMay
             // 
             this.exploreMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMay.BackgroundImage")));
             this.exploreMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreMay.Location = new System.Drawing.Point(337, 161);
+            this.exploreMay.Location = new System.Drawing.Point(304, 161);
             this.exploreMay.Name = "exploreMay";
             this.exploreMay.Size = new System.Drawing.Size(24, 24);
             this.exploreMay.TabIndex = 173;
             this.exploreMay.UseVisualStyleBackColor = true;
-            // 
-            // findMay
-            // 
-            this.findMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMay.BackgroundImage")));
-            this.findMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findMay.Location = new System.Drawing.Point(301, 161);
-            this.findMay.Name = "findMay";
-            this.findMay.Size = new System.Drawing.Size(24, 24);
-            this.findMay.TabIndex = 172;
-            this.findMay.UseVisualStyleBackColor = true;
+            this.exploreMay.Click += new System.EventHandler(this.ExploreMay_Click);
             // 
             // exploreAbr
             // 
             this.exploreAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAbr.BackgroundImage")));
             this.exploreAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreAbr.Location = new System.Drawing.Point(337, 132);
+            this.exploreAbr.Location = new System.Drawing.Point(304, 132);
             this.exploreAbr.Name = "exploreAbr";
             this.exploreAbr.Size = new System.Drawing.Size(24, 24);
             this.exploreAbr.TabIndex = 171;
             this.exploreAbr.UseVisualStyleBackColor = true;
-            // 
-            // findAbr
-            // 
-            this.findAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findAbr.BackgroundImage")));
-            this.findAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findAbr.Location = new System.Drawing.Point(301, 132);
-            this.findAbr.Name = "findAbr";
-            this.findAbr.Size = new System.Drawing.Size(24, 24);
-            this.findAbr.TabIndex = 170;
-            this.findAbr.UseVisualStyleBackColor = true;
+            this.exploreAbr.Click += new System.EventHandler(this.ExploreAbr_Click);
             // 
             // exploreMar
             // 
             this.exploreMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMar.BackgroundImage")));
             this.exploreMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreMar.Location = new System.Drawing.Point(337, 103);
+            this.exploreMar.Location = new System.Drawing.Point(304, 103);
             this.exploreMar.Name = "exploreMar";
             this.exploreMar.Size = new System.Drawing.Size(24, 24);
             this.exploreMar.TabIndex = 169;
             this.exploreMar.UseVisualStyleBackColor = true;
-            // 
-            // findMar
-            // 
-            this.findMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findMar.BackgroundImage")));
-            this.findMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findMar.Location = new System.Drawing.Point(301, 103);
-            this.findMar.Name = "findMar";
-            this.findMar.Size = new System.Drawing.Size(24, 24);
-            this.findMar.TabIndex = 168;
-            this.findMar.UseVisualStyleBackColor = true;
+            this.exploreMar.Click += new System.EventHandler(this.ExploreMar_Click);
             // 
             // exploreFeb
             // 
             this.exploreFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreFeb.BackgroundImage")));
             this.exploreFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreFeb.Location = new System.Drawing.Point(337, 74);
+            this.exploreFeb.Location = new System.Drawing.Point(304, 74);
             this.exploreFeb.Name = "exploreFeb";
             this.exploreFeb.Size = new System.Drawing.Size(24, 24);
             this.exploreFeb.TabIndex = 167;
             this.exploreFeb.UseVisualStyleBackColor = true;
-            // 
-            // findFeb
-            // 
-            this.findFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("findFeb.BackgroundImage")));
-            this.findFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findFeb.Location = new System.Drawing.Point(301, 74);
-            this.findFeb.Name = "findFeb";
-            this.findFeb.Size = new System.Drawing.Size(24, 24);
-            this.findFeb.TabIndex = 166;
-            this.findFeb.UseVisualStyleBackColor = true;
+            this.exploreFeb.Click += new System.EventHandler(this.ExploreFeb_Click_1);
             // 
             // exploreEne
             // 
-            this.exploreEne.BackgroundImage = global::gestor_bdm.Properties.Resources.visualization;
+            this.exploreEne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreEne.BackgroundImage")));
             this.exploreEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreEne.Location = new System.Drawing.Point(337, 45);
+            this.exploreEne.Location = new System.Drawing.Point(304, 45);
             this.exploreEne.Name = "exploreEne";
             this.exploreEne.Size = new System.Drawing.Size(24, 24);
             this.exploreEne.TabIndex = 165;
             this.exploreEne.UseVisualStyleBackColor = true;
-            // 
-            // findEne
-            // 
-            this.findEne.BackgroundImage = global::gestor_bdm.Properties.Resources.folder;
-            this.findEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.findEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findEne.Location = new System.Drawing.Point(301, 45);
-            this.findEne.Name = "findEne";
-            this.findEne.Size = new System.Drawing.Size(24, 24);
-            this.findEne.TabIndex = 164;
-            this.findEne.UseVisualStyleBackColor = true;
+            this.exploreEne.Click += new System.EventHandler(this.ExploreEne_Click);
             // 
             // archivoEne
             // 
@@ -4578,6 +4458,138 @@
             this.label30.TabIndex = 198;
             this.label30.Text = "Folio Media";
             // 
+            // lookDic
+            // 
+            this.lookDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookDic.BackgroundImage")));
+            this.lookDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookDic.Location = new System.Drawing.Point(334, 364);
+            this.lookDic.Name = "lookDic";
+            this.lookDic.Size = new System.Drawing.Size(24, 24);
+            this.lookDic.TabIndex = 212;
+            this.lookDic.UseVisualStyleBackColor = true;
+            // 
+            // lookNov
+            // 
+            this.lookNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookNov.BackgroundImage")));
+            this.lookNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookNov.Location = new System.Drawing.Point(334, 335);
+            this.lookNov.Name = "lookNov";
+            this.lookNov.Size = new System.Drawing.Size(24, 24);
+            this.lookNov.TabIndex = 211;
+            this.lookNov.UseVisualStyleBackColor = true;
+            // 
+            // lookOct
+            // 
+            this.lookOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookOct.BackgroundImage")));
+            this.lookOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookOct.Location = new System.Drawing.Point(334, 306);
+            this.lookOct.Name = "lookOct";
+            this.lookOct.Size = new System.Drawing.Size(24, 24);
+            this.lookOct.TabIndex = 210;
+            this.lookOct.UseVisualStyleBackColor = true;
+            // 
+            // lookSep
+            // 
+            this.lookSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookSep.BackgroundImage")));
+            this.lookSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookSep.Location = new System.Drawing.Point(334, 277);
+            this.lookSep.Name = "lookSep";
+            this.lookSep.Size = new System.Drawing.Size(24, 24);
+            this.lookSep.TabIndex = 209;
+            this.lookSep.UseVisualStyleBackColor = true;
+            // 
+            // lookAgo
+            // 
+            this.lookAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookAgo.BackgroundImage")));
+            this.lookAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookAgo.Location = new System.Drawing.Point(334, 248);
+            this.lookAgo.Name = "lookAgo";
+            this.lookAgo.Size = new System.Drawing.Size(24, 24);
+            this.lookAgo.TabIndex = 208;
+            this.lookAgo.UseVisualStyleBackColor = true;
+            // 
+            // lookJul
+            // 
+            this.lookJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookJul.BackgroundImage")));
+            this.lookJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookJul.Location = new System.Drawing.Point(334, 219);
+            this.lookJul.Name = "lookJul";
+            this.lookJul.Size = new System.Drawing.Size(24, 24);
+            this.lookJul.TabIndex = 207;
+            this.lookJul.UseVisualStyleBackColor = true;
+            // 
+            // lookJun
+            // 
+            this.lookJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookJun.BackgroundImage")));
+            this.lookJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookJun.Location = new System.Drawing.Point(334, 190);
+            this.lookJun.Name = "lookJun";
+            this.lookJun.Size = new System.Drawing.Size(24, 24);
+            this.lookJun.TabIndex = 206;
+            this.lookJun.UseVisualStyleBackColor = true;
+            // 
+            // lookMay
+            // 
+            this.lookMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookMay.BackgroundImage")));
+            this.lookMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookMay.Location = new System.Drawing.Point(334, 161);
+            this.lookMay.Name = "lookMay";
+            this.lookMay.Size = new System.Drawing.Size(24, 24);
+            this.lookMay.TabIndex = 205;
+            this.lookMay.UseVisualStyleBackColor = true;
+            // 
+            // lookAbr
+            // 
+            this.lookAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookAbr.BackgroundImage")));
+            this.lookAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookAbr.Location = new System.Drawing.Point(334, 132);
+            this.lookAbr.Name = "lookAbr";
+            this.lookAbr.Size = new System.Drawing.Size(24, 24);
+            this.lookAbr.TabIndex = 204;
+            this.lookAbr.UseVisualStyleBackColor = true;
+            // 
+            // lookMar
+            // 
+            this.lookMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookMar.BackgroundImage")));
+            this.lookMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookMar.Location = new System.Drawing.Point(334, 103);
+            this.lookMar.Name = "lookMar";
+            this.lookMar.Size = new System.Drawing.Size(24, 24);
+            this.lookMar.TabIndex = 203;
+            this.lookMar.UseVisualStyleBackColor = true;
+            // 
+            // lookFeb
+            // 
+            this.lookFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookFeb.BackgroundImage")));
+            this.lookFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookFeb.Location = new System.Drawing.Point(334, 74);
+            this.lookFeb.Name = "lookFeb";
+            this.lookFeb.Size = new System.Drawing.Size(24, 24);
+            this.lookFeb.TabIndex = 202;
+            this.lookFeb.UseVisualStyleBackColor = true;
+            // 
+            // lookEne
+            // 
+            this.lookEne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookEne.BackgroundImage")));
+            this.lookEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lookEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookEne.Location = new System.Drawing.Point(334, 45);
+            this.lookEne.Name = "lookEne";
+            this.lookEne.Size = new System.Drawing.Size(24, 24);
+            this.lookEne.TabIndex = 201;
+            this.lookEne.UseVisualStyleBackColor = true;
+            // 
             // OI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -5020,27 +5032,16 @@
         private System.Windows.Forms.TextBox nameJun;
         private System.Windows.Forms.Button exploreDic;
         private System.Windows.Forms.Button exploreNov;
-        private System.Windows.Forms.Button findNov;
         private System.Windows.Forms.Button exploreOct;
-        private System.Windows.Forms.Button findOct;
         private System.Windows.Forms.Button exploreSep;
-        private System.Windows.Forms.Button findSep;
         private System.Windows.Forms.Button exploreAgo;
-        private System.Windows.Forms.Button findAgo;
         private System.Windows.Forms.Button exploreJul;
-        private System.Windows.Forms.Button findJul;
         private System.Windows.Forms.Button exploreJun;
-        private System.Windows.Forms.Button findJun;
         private System.Windows.Forms.Button exploreMay;
-        private System.Windows.Forms.Button findMay;
         private System.Windows.Forms.Button exploreAbr;
-        private System.Windows.Forms.Button findAbr;
         private System.Windows.Forms.Button exploreMar;
-        private System.Windows.Forms.Button findMar;
         private System.Windows.Forms.Button exploreFeb;
-        private System.Windows.Forms.Button findFeb;
         private System.Windows.Forms.Button exploreEne;
-        private System.Windows.Forms.Button findEne;
         private System.Windows.Forms.TextBox archivoEne;
         private System.Windows.Forms.TextBox archivoOct;
         private System.Windows.Forms.TextBox archivoJul;
@@ -5103,6 +5104,17 @@
         private System.Windows.Forms.TextBox tSeptiembre;
         private System.Windows.Forms.TextBox tFebrero;
         private System.Windows.Forms.TextBox tJunio;
-        private System.Windows.Forms.Button findDic;
+        private System.Windows.Forms.Button lookDic;
+        private System.Windows.Forms.Button lookNov;
+        private System.Windows.Forms.Button lookOct;
+        private System.Windows.Forms.Button lookSep;
+        private System.Windows.Forms.Button lookAgo;
+        private System.Windows.Forms.Button lookJul;
+        private System.Windows.Forms.Button lookJun;
+        private System.Windows.Forms.Button lookMay;
+        private System.Windows.Forms.Button lookAbr;
+        private System.Windows.Forms.Button lookMar;
+        private System.Windows.Forms.Button lookFeb;
+        private System.Windows.Forms.Button lookEne;
     }
 }

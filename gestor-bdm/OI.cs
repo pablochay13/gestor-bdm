@@ -491,6 +491,246 @@ namespace gestor_bdm
             ventana.Show();
         }
 
+        private void ExploreEne_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameEne.Text = fdlg.FileName;
+                archivoEne.Text = Path.GetFileName(nameEne.Text);
+            }
+
+            RutaEne = fdlg.FileName;
+            NombreArcEne = tMedia.Text + "-" + nameEne.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreFeb_Click_1(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameFeb.Text = fdlg.FileName;
+                archivoFeb.Text = Path.GetFileName(nameFeb.Text);
+            }
+
+            RutaFeb = fdlg.FileName;
+            NombreArcFeb = tMedia.Text + "-" + nameFeb.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreMar_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameMar.Text = fdlg.FileName;
+                archivoMar.Text = Path.GetFileName(nameMar.Text);
+            }
+
+            RutaMar = fdlg.FileName;
+            NombreArcMar = tMedia.Text + "-" + nameMar.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreAbr_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameAbr.Text = fdlg.FileName;
+                archivoAbr.Text = Path.GetFileName(nameAbr.Text);
+            }
+
+            RutaAbr = fdlg.FileName;
+            NombreArcAbr = tMedia.Text + "-" + nameAbr.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreMay_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameMay.Text = fdlg.FileName;
+                archivoMay.Text = Path.GetFileName(nameMay.Text);
+            }
+
+            RutaMay = fdlg.FileName;
+            NombreArcMay = tMedia.Text + "-" + nameMay.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreJun_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameJun.Text = fdlg.FileName;
+                archivoJun.Text = Path.GetFileName(nameJun.Text);
+            }
+
+            RutaJun = fdlg.FileName;
+            NombreArcJun = tMedia.Text + "-" + nameJun.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreJul_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameJul.Text = fdlg.FileName;
+                archivoJul.Text = Path.GetFileName(nameJul.Text);
+            }
+
+            RutaJul = fdlg.FileName;
+            NombreArcJul = tMedia.Text + "-" + nameJul.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreAgo_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameAgo.Text = fdlg.FileName;
+                archivoAgo.Text = Path.GetFileName(nameAgo.Text);
+            }
+
+            RutaAgo = fdlg.FileName;
+            NombreArcAgo = tMedia.Text + "-" + nameAgo.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreSep_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameSep.Text = fdlg.FileName;
+                archivoSep.Text = Path.GetFileName(nameSep.Text);
+            }
+
+            RutaSep = fdlg.FileName;
+            NombreArcSep = tMedia.Text + "-" + nameSep.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreOct_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameOct.Text = fdlg.FileName;
+                archivoOct.Text = Path.GetFileName(nameOct.Text);
+            }
+
+            RutaOct = fdlg.FileName;
+            NombreArcOct = tMedia.Text + "-" + nameOct.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreNov_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameNov.Text = fdlg.FileName;
+                archivoNov.Text = Path.GetFileName(nameNov.Text);
+            }
+
+            RutaNov = fdlg.FileName;
+            NombreArcNov = tMedia.Text + "-" + nameNov.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
+        private void ExploreDic_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "BestDay Media";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                nameDic.Text = fdlg.FileName;
+                archivoDic.Text = Path.GetFileName(nameDic.Text);
+            }
+
+            RutaDic = fdlg.FileName;
+            NombreArcDic = tMedia.Text + "-" + nameDic.Text;
+            //MessageBox.Show(NombreImgHM);
+        }
+
         public void llenar()
         {
             try
