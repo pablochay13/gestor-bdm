@@ -115,5 +115,10 @@ namespace gestor_bdm
             //    }
             //}
         }
+
+        private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }
