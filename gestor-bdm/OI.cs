@@ -491,7 +491,7 @@ namespace gestor_bdm
             ventana.Show();
         }
 
-        private void ExploreEne_Click(object sender, EventArgs e)
+        private void ExploreEne_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -531,7 +531,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcFeb);
         }
 
-        private void ExploreMar_Click(object sender, EventArgs e)
+        private void ExploreMar_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -551,7 +551,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcMar);
         }
 
-        private void ExploreAbr_Click(object sender, EventArgs e)
+        private void ExploreAbr_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -571,7 +571,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcAbr);
         }
 
-        private void ExploreMay_Click(object sender, EventArgs e)
+        private void ExploreMay_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -591,7 +591,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcMay);
         }
 
-        private void ExploreJun_Click(object sender, EventArgs e)
+        private void ExploreJun_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -611,7 +611,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcJun);
         }
 
-        private void ExploreJul_Click(object sender, EventArgs e)
+        private void ExploreJul_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -631,7 +631,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcJul);
         }
 
-        private void ExploreAgo_Click(object sender, EventArgs e)
+        private void ExploreAgo_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -651,7 +651,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcJul);
         }
 
-        private void ExploreSep_Click(object sender, EventArgs e)
+        private void ExploreSep_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -671,7 +671,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcSep);
         }
 
-        private void ExploreOct_Click(object sender, EventArgs e)
+        private void ExploreOct_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -691,7 +691,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcOct);
         }
 
-        private void ExploreNov_Click(object sender, EventArgs e)
+        private void ExploreNov_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -711,7 +711,7 @@ namespace gestor_bdm
             //MessageBox.Show(NombreArcNov);
         }
 
-        private void ExploreDic_Click(object sender, EventArgs e)
+        private void ExploreDic_Click_1(object sender, EventArgs e)
         {
             //MessageBox.Show("Recuerda nombrar el archivo de la forma correcta", "Recuerda", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog fdlg = new OpenFileDialog();
@@ -737,6 +737,513 @@ namespace gestor_bdm
 
             viewer ventana = new viewer();
             ventana.Show();
+        }
+
+        private void Sumas_Click(object sender, EventArgs e)
+        {
+            double montoPauta = 0;
+
+            if (comboNacional.SelectedIndex == 0)
+            {
+                montoPauta = Convert.ToDouble(tMontoIVA.Text);
+            }
+            else
+            {
+                montoPauta = Convert.ToDouble(tMonto.Text);
+            }
+
+            //Facturado
+            double suma_facturado;
+            double cantCEne = 0; double cantCFeb = 0; double cantCMar = 0; double cantCAbr = 0; double cantCMay = 0; double cantCJun = 0;
+            double cantCJul = 0; double cantCAgo = 0; double cantCSep = 0; double cantCOct = 0; double cantCNov = 0; double cantCDic = 0;
+
+            if (facturadoEne.Text == "")
+            {
+                facturadoEne.Text = "0";
+            }
+            else
+            {
+                cantCEne = Convert.ToDouble(facturadoEne.Text);
+            }
+
+
+            if (facturadoFeb.Text == "")
+            {
+                facturadoFeb.Text = "0";
+            }
+            else
+            {
+                cantCFeb = Convert.ToDouble(facturadoFeb.Text);
+            }
+
+
+            if (facturadoMar.Text == "")
+            {
+                facturadoMar.Text = "0";
+            }
+            else
+            {
+                cantCMar = Convert.ToDouble(facturadoMar.Text);
+            }
+
+
+            if (facturadoAbr.Text == "")
+            {
+                facturadoAbr.Text = "0";
+            }
+            else
+            {
+                cantCAbr = Convert.ToDouble(facturadoAbr.Text);
+            }
+
+
+            if (facturadoMay.Text == "")
+            {
+                facturadoMay.Text = "0";
+            }
+            else
+            {
+                cantCMay = Convert.ToDouble(facturadoMay.Text);
+            }
+
+
+            if (facturadoJun.Text == "")
+            {
+                facturadoJun.Text = "0";
+            }
+            else
+            {
+                cantCJun = Convert.ToDouble(facturadoJun.Text);
+            }
+
+
+            if (facturadoJul.Text == "")
+            {
+                facturadoJul.Text = "0";
+            }
+            else
+            {
+                cantCJul = Convert.ToDouble(facturadoJul.Text);
+            }
+
+
+            if (facturadoAgo.Text == "")
+            {
+                facturadoAgo.Text = "0";
+            }
+            else
+            {
+                cantCAgo = Convert.ToDouble(facturadoAgo.Text);
+            }
+
+
+            if (facturadoSep.Text == "")
+            {
+                facturadoSep.Text = "0";
+            }
+            else
+            {
+                cantCSep = Convert.ToDouble(facturadoSep.Text);
+            }
+
+
+            if (facturadoOct.Text == "")
+            {
+                facturadoOct.Text = "0";
+            }
+            else
+            {
+                cantCOct = Convert.ToDouble(facturadoOct.Text);
+            }
+
+
+            if (facturadoNov.Text == "")
+            {
+                facturadoNov.Text = "0";
+            }
+            else
+            {
+                cantCNov = Convert.ToDouble(facturadoNov.Text);
+            }
+
+            if (facturadoDic.Text == "")
+            {
+                facturadoDic.Text = "0";
+            }
+            else
+            {
+                cantCDic = Convert.ToDouble(facturadoDic.Text);
+            }
+
+
+            suma_facturado = cantCEne + cantCFeb + cantCMar + cantCAbr + cantCMay + cantCJun + cantCJul + cantCAgo + cantCSep + cantCOct + cantCNov + cantCDic;
+
+            double porcentaje_facturado = (suma_facturado / montoPauta) * 100;
+
+            cantFacturado.Text = Convert.ToString("$" + suma_facturado);
+            porcentajeFacturado.Text = Convert.ToString(Math.Round(porcentaje_facturado, 2) + "%");
+
+
+            //Cobrado
+            double suma_cobrado;
+            double cantCobEne = 0; double cantCobFeb = 0; double cantCobMar = 0; double cantCobAbr = 0; double cantCobMay = 0; double cantCobJun = 0;
+            double cantCobJul = 0; double cantCobAgo = 0; double cantCobSep = 0; double cantCobOct = 0; double cantCobNov = 0; double cantCobDic = 0;
+
+            if (cobradoEne.Text == "")
+            {
+                cobradoEne.Text = "0";
+            }
+            else
+            {
+                cantCobEne = Convert.ToDouble(cobradoEne.Text);
+            }
+
+
+            if (cobradoFeb.Text == "")
+            {
+                cobradoFeb.Text = "0";
+            }
+            else
+            {
+                cantCobFeb = Convert.ToDouble(cobradoFeb.Text);
+            }
+
+
+            if (cobradoMar.Text == "")
+            {
+                cobradoMar.Text = "0";
+            }
+            else
+            {
+                cantCobMar = Convert.ToDouble(cobradoMar.Text);
+            }
+
+
+            if (cobradoAbr.Text == "")
+            {
+                cobradoAbr.Text = "0";
+            }
+            else
+            {
+                cantCobAbr = Convert.ToDouble(cobradoAbr.Text);
+            }
+
+
+            if (cobradoMay.Text == "")
+            {
+                cobradoMay.Text = "0";
+            }
+            else
+            {
+                cantCobMay = Convert.ToDouble(cobradoMay.Text);
+            }
+
+
+            if (cobradoJun.Text == "")
+            {
+                cobradoJun.Text = "0";
+            }
+            else
+            {
+                cantCobJun = Convert.ToDouble(cobradoJun.Text);
+            }
+
+
+            if (cobradoJul.Text == "")
+            {
+                cobradoJul.Text = "0";
+            }
+            else
+            {
+                cantCobJul = Convert.ToDouble(cobradoJul.Text);
+            }
+
+
+            if (cobradoAgo.Text == "")
+            {
+                cobradoAgo.Text = "0";
+            }
+            else
+            {
+                cantCobAgo = Convert.ToDouble(cobradoAgo.Text);
+            }
+
+
+            if (cobradoSep.Text == "")
+            {
+                cobradoSep.Text = "0";
+            }
+            else
+            {
+                cantCobSep = Convert.ToDouble(cobradoSep.Text);
+            }
+
+
+            if (cobradoOct.Text == "")
+            {
+                cobradoOct.Text = "0";
+            }
+            else
+            {
+                cantCobOct = Convert.ToDouble(cobradoOct.Text);
+            }
+
+
+            if (cobradoNov.Text == "")
+            {
+                cobradoNov.Text = "0";
+            }
+            else
+            {
+                cantCobNov = Convert.ToDouble(cobradoNov.Text);
+            }
+
+            if (cobradoDic.Text == "")
+            {
+                cobradoDic.Text = "0";
+            }
+            else
+            {
+                cantCobDic = Convert.ToDouble(cobradoDic.Text);
+            }
+
+
+            suma_cobrado = cantCobEne + cantCobFeb + cantCobMar + cantCobAbr + cantCobMay + cantCobJun + cantCobJul + cantCobAgo + cantCobSep + cantCobOct + cantCobNov + cantCobDic;
+
+            double porcentaje_cobrado = (suma_cobrado / montoPauta) * 100;
+
+            cantCobrado.Text = Convert.ToString("$" + suma_cobrado);
+            porcentajeCobrado.Text = Convert.ToString(Math.Round(porcentaje_cobrado, 2) + "%");
+        }
+
+        private void Calculo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int cantMeses = 0;
+
+                if (cEnero.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cFebrero.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cMarzo.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cAbril.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cMayo.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cJunio.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cJulio.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cAgosto.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cSeptiembre.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cOctubre.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cNoviembre.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cDiciembre.Checked == true)
+                {
+                    cantMeses = cantMeses + 1;
+                    totalMeses.Text = Convert.ToString(cantMeses);
+                }
+
+                if (cantMeses == 0)
+                {
+                    MessageBox.Show("Selecciona al menos un mes.", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+
+                else
+                {
+                    double montoPauta = 0;
+                    double totalPauta = 0;
+                    double redondeado = 0;
+                    double total = 0;
+
+                    if (comboNacional.SelectedIndex == 0)
+                    {
+                        montoPauta = Convert.ToDouble(tMontoIVA.Text);
+                    }
+                    else if (comboNacional.SelectedIndex == 1)
+                    {
+                        montoPauta = Convert.ToDouble(tMonto.Text);
+                    }
+
+                    totalPauta = montoPauta / cantMeses;
+                    redondeado = Math.Round(totalPauta, 2);
+                    total = redondeado;
+
+                    if (cEnero.Checked == true)
+                    {
+                        montoEne.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoEne.Text = "0";
+                    }
+
+                    if (cFebrero.Checked == true)
+                    {
+                        montoFeb.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoFeb.Text = "0";
+                    }
+
+                    if (cMarzo.Checked == true)
+                    {
+                        montoMar.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoMar.Text = "0";
+                    }
+
+                    if (cAbril.Checked == true)
+                    {
+                        montoAbr.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoAbr.Text = "0";
+                    }
+
+                    if (cMayo.Checked == true)
+                    {
+                        montoMayo.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoMayo.Text = "0";
+                    }
+
+                    if (cJunio.Checked == true)
+                    {
+                        montoJun.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoJun.Text = "0";
+                    }
+
+                    if (cJulio.Checked == true)
+                    {
+                        montoJul.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoJul.Text = "0";
+                    }
+
+                    if (cAgosto.Checked == true)
+                    {
+                        montoAgo.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoAgo.Text = "0";
+                    }
+
+                    if (cSeptiembre.Checked == true)
+                    {
+                        montoSep.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoSep.Text = "0";
+                    }
+
+                    if (cOctubre.Checked == true)
+                    {
+                        montoOct.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoOct.Text = "0";
+                    }
+
+                    if (cNoviembre.Checked == true)
+                    {
+                        montoNov.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoNov.Text = "0";
+                    }
+
+                    if (cDiciembre.Checked == true)
+                    {
+                        montoDic.Text = Convert.ToString(total);
+                    }
+                    else
+                    {
+                        montoDic.Text = "0";
+                    }
+
+                    //montos
+                    double suma_monto_oi = Convert.ToDouble(montoEne.Text) + Convert.ToDouble(montoFeb.Text) + Convert.ToDouble(montoMar.Text) + Convert.ToDouble(montoAbr.Text) + Convert.ToDouble(montoMayo.Text) + Convert.ToDouble(montoJun.Text) + Convert.ToDouble(montoJul.Text) + Convert.ToDouble(montoAgo.Text) + Convert.ToDouble(montoSep.Text) + Convert.ToDouble(montoOct.Text) + Convert.ToDouble(montoNov.Text) + Convert.ToDouble(montoDic.Text);
+
+                    double porcentaje_suma_monto_oi = (suma_monto_oi / montoPauta) * 100;
+
+                    //String.Format("{0:C}", suma_monto_oi);
+
+                    cantMonto.Text = Convert.ToString(String.Format("{0:C}", suma_monto_oi));
+
+                    porcentajeMonto.Text = Convert.ToString(Math.Round(porcentaje_suma_monto_oi, 2) + "%");
+                    //redondeado = Math.Round(totalPauta, 2);
+                }
+            }
+            catch (Exception m)
+            {
+                //MessageBox.Show("Error, verifique campos!" + " " + m, "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
         }
 
         private void ListaSaldos_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -1040,7 +1547,7 @@ namespace gestor_bdm
                     con.Close();
 
                     con.Open();
-                    string sql = "SELECT campo1, campo2, campo3, archivo_dos, archivo_tres, cant_noches, importe_noches, enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre, q, porcentaje_q, tipo_op, id_maestro_op, numero_cuenta_op, cuenta_op, razon_op ,archivo_ene , archivo_feb, archivo_mar, archivo_abr , archivo_may , archivo_jun , archivo_jul  , archivo_ago , archivo_sep , archivo_oct , `archivo_nov` , archivo_dic FROM ordenes_insercion WHERE id_ordenes ='" + id.Text + "'";
+                    string sql = "SELECT campo1, campo2, campo3, archivo_dos, archivo_tres, cant_noches, importe_noches, enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre, q, porcentaje_q, tipo_op, id_maestro_op, numero_cuenta_op, cuenta_op, razon_op, doc_ene, doc_feb, doc_mar, doc_abr, doc_may, doc_jun, doc_jul, doc_ago, doc_sep, doc_oct, doc_nov, doc_dic ,archivo_ene , archivo_feb, archivo_mar, archivo_abr , archivo_may , archivo_jun , archivo_jul  , archivo_ago , archivo_sep , archivo_oct , `archivo_nov` , archivo_dic FROM ordenes_insercion WHERE id_ordenes ='" + id.Text + "'";
                     MySqlCommand cmd = new MySqlCommand(sql, con);
                     MySqlDataReader reader = cmd.ExecuteReader();
                     if (reader.Read())
@@ -1053,6 +1560,20 @@ namespace gestor_bdm
                         nombreDos.Text = archivo_dos_q;
                         string archivo_tres_q = Convert.ToString(reader["archivo_tres"]);
                         nombreTres.Text = archivo_tres_q;
+
+                        //documentos facturas
+                        textDocEne.Text = Convert.ToString(reader["doc_ene"]);
+                        textDocFeb.Text = Convert.ToString(reader["doc_feb"]);
+                        textDocMar.Text = Convert.ToString(reader["doc_mar"]);
+                        textDocAbr.Text = Convert.ToString(reader["doc_abr"]);
+                        textDocMay.Text = Convert.ToString(reader["doc_may"]);
+                        textDocJun.Text = Convert.ToString(reader["doc_jun"]);
+                        textDocJul.Text = Convert.ToString(reader["doc_jul"]);
+                        textDocAgo.Text = Convert.ToString(reader["doc_ago"]);
+                        textDocSep.Text = Convert.ToString(reader["doc_sep"]);
+                        textDocOct.Text = Convert.ToString(reader["doc_oct"]);
+                        textDocNov.Text = Convert.ToString(reader["doc_nov"]);
+                        textDocDic.Text = Convert.ToString(reader["doc_dic"]);
 
                         //archivos facturas
                         NombreArcEne = Convert.ToString(reader["archivo_ene"]);
@@ -1290,514 +1811,6 @@ namespace gestor_bdm
             catch (Exception m)
             {
                 MessageBox.Show(m.Message);
-            }
-        }
-
-        private void Sumas_Click_1(object sender, EventArgs e)
-        {
-            double montoPauta = 0;
-
-            if (comboNacional.SelectedIndex == 0)
-            {
-                montoPauta = Convert.ToDouble(tMontoIVA.Text);
-            }
-            else
-            {
-                montoPauta = Convert.ToDouble(tMonto.Text);
-            }
-
-            //Facturado
-            double suma_facturado;
-            double cantCEne = 0; double cantCFeb = 0; double cantCMar = 0; double cantCAbr = 0; double cantCMay = 0; double cantCJun = 0;
-            double cantCJul = 0; double cantCAgo = 0; double cantCSep = 0; double cantCOct = 0; double cantCNov = 0; double cantCDic = 0;
-
-            if (facturadoEne.Text == "")
-            {
-                facturadoEne.Text = "0";
-            }
-            else
-            {
-                cantCEne = Convert.ToDouble(facturadoEne.Text);
-            }
-
-
-            if (facturadoFeb.Text == "")
-            {
-                facturadoFeb.Text = "0";
-            }
-            else
-            {
-                cantCFeb = Convert.ToDouble(facturadoFeb.Text);
-            }
-
-
-            if (facturadoMar.Text == "")
-            {
-                facturadoMar.Text = "0";
-            }
-            else
-            {
-                cantCMar = Convert.ToDouble(facturadoMar.Text);
-            }
-
-
-            if (facturadoAbr.Text == "")
-            {
-                facturadoAbr.Text = "0";
-            }
-            else
-            {
-                cantCAbr = Convert.ToDouble(facturadoAbr.Text);
-            }
-
-
-            if (facturadoMay.Text == "")
-            {
-                facturadoMay.Text = "0";
-            }
-            else
-            {
-                cantCMay = Convert.ToDouble(facturadoMay.Text);
-            }
-
-
-            if (facturadoJun.Text == "")
-            {
-                facturadoJun.Text = "0";
-            }
-            else
-            {
-                cantCJun = Convert.ToDouble(facturadoJun.Text);
-            }
-
-
-            if (facturadoJul.Text == "")
-            {
-                facturadoJul.Text = "0";
-            }
-            else
-            {
-                cantCJul = Convert.ToDouble(facturadoJul.Text);
-            }
-
-
-            if (facturadoAgo.Text == "")
-            {
-                facturadoAgo.Text = "0";
-            }
-            else
-            {
-                cantCAgo = Convert.ToDouble(facturadoAgo.Text);
-            }
-
-
-            if (facturadoSep.Text == "")
-            {
-                facturadoSep.Text = "0";
-            }
-            else
-            {
-                cantCSep = Convert.ToDouble(facturadoSep.Text);
-            }
-
-
-            if (facturadoOct.Text == "")
-            {
-                facturadoOct.Text = "0";
-            }
-            else
-            {
-                cantCOct = Convert.ToDouble(facturadoOct.Text);
-            }
-
-
-            if (facturadoNov.Text == "")
-            {
-                facturadoNov.Text = "0";
-            }
-            else
-            {
-                cantCNov = Convert.ToDouble(facturadoNov.Text);
-            }
-
-            if (facturadoDic.Text == "")
-            {
-                facturadoDic.Text = "0";
-            }
-            else
-            {
-                cantCDic = Convert.ToDouble(facturadoDic.Text);
-            }
-
-
-            suma_facturado = cantCEne + cantCFeb + cantCMar + cantCAbr + cantCMay + cantCJun + cantCJul + cantCAgo + cantCSep + cantCOct + cantCNov + cantCDic;
-
-            double porcentaje_facturado = (suma_facturado / montoPauta) * 100;
-
-            cantFacturado.Text = Convert.ToString("$" + suma_facturado);
-            porcentajeFacturado.Text = Convert.ToString(Math.Round(porcentaje_facturado, 2) + "%");
-
-
-            //Cobrado
-            double suma_cobrado;
-            double cantCobEne = 0; double cantCobFeb = 0; double cantCobMar = 0; double cantCobAbr = 0; double cantCobMay = 0; double cantCobJun = 0;
-            double cantCobJul = 0; double cantCobAgo = 0; double cantCobSep = 0; double cantCobOct = 0; double cantCobNov = 0; double cantCobDic = 0;
-
-            if (cobradoEne.Text == "")
-            {
-                cobradoEne.Text = "0";
-            }
-            else
-            {
-                cantCobEne = Convert.ToDouble(cobradoEne.Text);
-            }
-
-
-            if (cobradoFeb.Text == "")
-            {
-                cobradoFeb.Text = "0";
-            }
-            else
-            {
-                cantCobFeb = Convert.ToDouble(cobradoFeb.Text);
-            }
-
-
-            if (cobradoMar.Text == "")
-            {
-                cobradoMar.Text = "0";
-            }
-            else
-            {
-                cantCobMar = Convert.ToDouble(cobradoMar.Text);
-            }
-
-
-            if (cobradoAbr.Text == "")
-            {
-                cobradoAbr.Text = "0";
-            }
-            else
-            {
-                cantCobAbr = Convert.ToDouble(cobradoAbr.Text);
-            }
-
-
-            if (cobradoMay.Text == "")
-            {
-                cobradoMay.Text = "0";
-            }
-            else
-            {
-                cantCobMay = Convert.ToDouble(cobradoMay.Text);
-            }
-
-
-            if (cobradoJun.Text == "")
-            {
-                cobradoJun.Text = "0";
-            }
-            else
-            {
-                cantCobJun = Convert.ToDouble(cobradoJun.Text);
-            }
-
-
-            if (cobradoJul.Text == "")
-            {
-                cobradoJul.Text = "0";
-            }
-            else
-            {
-                cantCobJul = Convert.ToDouble(cobradoJul.Text);
-            }
-
-
-            if (cobradoAgo.Text == "")
-            {
-                cobradoAgo.Text = "0";
-            }
-            else
-            {
-                cantCobAgo = Convert.ToDouble(cobradoAgo.Text);
-            }
-
-
-            if (cobradoSep.Text == "")
-            {
-                cobradoSep.Text = "0";
-            }
-            else
-            {
-                cantCobSep = Convert.ToDouble(cobradoSep.Text);
-            }
-
-
-            if (cobradoOct.Text == "")
-            {
-                cobradoOct.Text = "0";
-            }
-            else
-            {
-                cantCobOct = Convert.ToDouble(cobradoOct.Text);
-            }
-
-
-            if (cobradoNov.Text == "")
-            {
-                cobradoNov.Text = "0";
-            }
-            else
-            {
-                cantCobNov = Convert.ToDouble(cobradoNov.Text);
-            }
-
-            if (cobradoDic.Text == "")
-            {
-                cobradoDic.Text = "0";
-            }
-            else
-            {
-                cantCobDic = Convert.ToDouble(cobradoDic.Text);
-            }
-
-
-            suma_cobrado = cantCobEne + cantCobFeb + cantCobMar + cantCobAbr + cantCobMay + cantCobJun + cantCobJul + cantCobAgo + cantCobSep + cantCobOct + cantCobNov + cantCobDic;
-
-            double porcentaje_cobrado = (suma_cobrado / montoPauta) * 100;
-
-            cantCobrado.Text = Convert.ToString("$" + suma_cobrado);
-            porcentajeCobrado.Text = Convert.ToString(Math.Round(porcentaje_cobrado, 2) + "%");
-
-        }
-
-        private void Calculo_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                int cantMeses = 0;
-
-                if (cEnero.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cFebrero.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cMarzo.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cAbril.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cMayo.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cJunio.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cJulio.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cAgosto.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cSeptiembre.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cOctubre.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cNoviembre.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cDiciembre.Checked == true)
-                {
-                    cantMeses = cantMeses + 1;
-                    totalMeses.Text = Convert.ToString(cantMeses);
-                }
-
-                if (cantMeses == 0)
-                {
-                    MessageBox.Show("Selecciona al menos un mes.", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                }
-
-                else
-                {
-                    double montoPauta = 0;
-                    double totalPauta = 0;
-                    double redondeado = 0;
-                    double total = 0;
-
-                    if (comboNacional.SelectedIndex == 0)
-                    {
-                        montoPauta = Convert.ToDouble(tMontoIVA.Text);
-                    }
-                    else if (comboNacional.SelectedIndex == 1)
-                    {
-                        montoPauta = Convert.ToDouble(tMonto.Text);
-                    }
-
-                    totalPauta = montoPauta / cantMeses;
-                    redondeado = Math.Round(totalPauta, 2);
-                    total = redondeado;
-
-                    if (cEnero.Checked == true)
-                    {
-                        montoEne.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoEne.Text = "0";
-                    }
-
-                    if (cFebrero.Checked == true)
-                    {
-                        montoFeb.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoFeb.Text = "0";
-                    }
-
-                    if (cMarzo.Checked == true)
-                    {
-                        montoMar.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoMar.Text = "0";
-                    }
-
-                    if (cAbril.Checked == true)
-                    {
-                        montoAbr.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoAbr.Text = "0";
-                    }
-
-                    if (cMayo.Checked == true)
-                    {
-                        montoMayo.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoMayo.Text = "0";
-                    }
-
-                    if (cJunio.Checked == true)
-                    {
-                        montoJun.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoJun.Text = "0";
-                    }
-
-                    if (cJulio.Checked == true)
-                    {
-                        montoJul.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoJul.Text = "0";
-                    }
-
-                    if (cAgosto.Checked == true)
-                    {
-                        montoAgo.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoAgo.Text = "0";
-                    }
-
-                    if (cSeptiembre.Checked == true)
-                    {
-                        montoSep.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoSep.Text = "0";
-                    }
-
-                    if (cOctubre.Checked == true)
-                    {
-                        montoOct.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoOct.Text = "0";
-                    }
-
-                    if (cNoviembre.Checked == true)
-                    {
-                        montoNov.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoNov.Text = "0";
-                    }
-
-                    if (cDiciembre.Checked == true)
-                    {
-                        montoDic.Text = Convert.ToString(total);
-                    }
-                    else
-                    {
-                        montoDic.Text = "0";
-                    }
-
-                    //montos
-                    double suma_monto_oi = Convert.ToDouble(montoEne.Text) + Convert.ToDouble(montoFeb.Text) + Convert.ToDouble(montoMar.Text) + Convert.ToDouble(montoAbr.Text) + Convert.ToDouble(montoMayo.Text) + Convert.ToDouble(montoJun.Text) + Convert.ToDouble(montoJul.Text) + Convert.ToDouble(montoAgo.Text) + Convert.ToDouble(montoSep.Text) + Convert.ToDouble(montoOct.Text) + Convert.ToDouble(montoNov.Text) + Convert.ToDouble(montoDic.Text);
-
-                    double porcentaje_suma_monto_oi = (suma_monto_oi / montoPauta) * 100;
-
-                    //String.Format("{0:C}", suma_monto_oi);
-
-                    cantMonto.Text = Convert.ToString(String.Format("{0:C}", suma_monto_oi));
-
-                    porcentajeMonto.Text = Convert.ToString(Math.Round(porcentaje_suma_monto_oi, 2) + "%");
-                    //redondeado = Math.Round(totalPauta, 2);
-                }
-            }
-            catch (Exception m)
-            {
-                //MessageBox.Show("Error, verifique campos!" + " " + m, "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
 
@@ -3237,7 +3250,7 @@ namespace gestor_bdm
                             con.Close();
                             con.Open();
 
-                            MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic` , `archivo_ene` , `archivo_feb`, `archivo_mar`, `archivo_abr` , `archivo_may` , `archivo_jun` , `archivo_jul`  , `archivo_ago` , `archivo_sep` , `archivo_oct` , `archivo_nov` , `archivo_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + NombreArcEne + "','" + NombreArcFeb + "','" + NombreArcMar + "','" + NombreArcAbr + "','" + NombreArcMay + "','" + NombreArcJun + "','" + NombreArcJul + "','" + NombreArcAgo + "','" + NombreArcSep + "','" + NombreArcOct + "','" + NombreArcNov + "','" + NombreArcDic + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
+                            MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic` , `doc_ene` , `doc_feb`, `doc_mar`, `doc_abr` , `doc_may` , `doc_jun` , `doc_jul`  , `doc_ago` , `doc_sep` , `doc_oct` , `doc_nov` , `doc_dic` , `archivo_ene` , `archivo_feb`, `archivo_mar`, `archivo_abr` , `archivo_may` , `archivo_jun` , `archivo_jul`  , `archivo_ago` , `archivo_sep` , `archivo_oct` , `archivo_nov` , `archivo_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + textDocEne.Text + "','" + textDocFeb.Text + "','" + textDocMar.Text + "','" + textDocAbr.Text + "','" + textDocMay.Text + "','" + textDocJun.Text + "','" + textDocJul.Text + "','" + textDocAgo.Text + "','" + textDocSep.Text + "','" + textDocOct.Text + "','" + textDocNov.Text + "','" + textDocDic.Text + "','" + NombreArcEne + "','" + NombreArcFeb + "','" + NombreArcMar + "','" + NombreArcAbr + "','" + NombreArcMay + "','" + NombreArcJun + "','" + NombreArcJul + "','" + NombreArcAgo + "','" + NombreArcSep + "','" + NombreArcOct + "','" + NombreArcNov + "','" + NombreArcDic + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
                             cmd.ExecuteNonQuery();
                             upload();
                             upload_dos();
@@ -3305,7 +3318,7 @@ namespace gestor_bdm
                                 con.Close();
                                 con.Open();
 
-                                MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic` , `archivo_ene` , `archivo_feb`, `archivo_mar`, `archivo_abr` , `archivo_may` , `archivo_jun` , `archivo_jul`  , `archivo_ago` , `archivo_sep` , `archivo_oct` , `archivo_nov` , `archivo_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + NombreArcEne + "','" + NombreArcFeb + "','" + NombreArcMar + "','" + NombreArcAbr + "','" + NombreArcMay + "','" + NombreArcJun + "','" + NombreArcJul + "','" + NombreArcAgo + "','" + NombreArcSep + "','" + NombreArcOct + "','" + NombreArcNov + "','" + NombreArcDic + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
+                                MySqlCommand cmd = new MySqlCommand("INSERT INTO ordenes_insercion (`fecha_ingreso` ,`folio_media` , `status_OI` , `sigla_pais` , `tipo_pauta` , `categoria`, `contrato`, `razon_social` , `nombre_comercial`, `sigla_hotel`, `sigla_hanna` , `clave_hanna` , `centro_bneficio` , `centro_beneficio_2` , `cuenta_2` , `monto_1` , `monto_2`, `monto_pauta`, `anticipo_pauta`, `porcentaje_mkf` , `vig_desde_mkf` , `vig_hasta_mkf`  , `forma_calculo` , `monto_fijo` , `monto_fijo_iva` , `divisa` , `vig_monto_desde` , `vig_monto_hasta`, `transf_bancaria` , `compensacion`, `noches` , `cant_noches`,  `importe_noches`,  `ambas`, `esquema_comision`, `q` , `porcentaje_q` , `campo1` , `campo2` , `campo3` , `observaciones`, `supply_manager` , `ejecutivo_daf`, `account_manager` , `archivo` , `archivo_dos` , `archivo_tres` , `enero` , `febrero`, `marzo`, `abril`, `mayo` , `junio`, `julio` , `agosto`, `septiembre` , `octubre`, `noviembre` , `diciembre`, `anio_ene` , `anio_feb`, `anio_mar`, `anio_abr` , `anio_may` , `anio_jun` , `anio_jul`  , `anio_ago` , `anio_sep` , `anio_oct` , `anio_nov` , `anio_dic` , `monto_ene` , `monto_feb`, `monto_mar`, `monto_abr` , `monto_may` , `monto_jun` , `monto_jul`  , `monto_ago` , `monto_sep` , `monto_oct` , `monto_nov` , `monto_dic` , `facturado_ene` , `facturado_feb`, `facturado_mar`, `facturado_abr` , `facturado_may` , `facturado_jun` , `facturado_jul`  , `facturado_ago` , `facturado_sep` , `facturado_oct` , `facturado_nov` , `facturado_dic` , `doc_ene` , `doc_feb`, `doc_mar`, `doc_abr` , `doc_may` , `doc_jun` , `doc_jul`  , `doc_ago` , `doc_sep` , `doc_oct` , `doc_nov` , `doc_dic` , `archivo_ene` , `archivo_feb`, `archivo_mar`, `archivo_abr` , `archivo_may` , `archivo_jun` , `archivo_jul`  , `archivo_ago` , `archivo_sep` , `archivo_oct` , `archivo_nov` , `archivo_dic`, `cobrado_ene` , `cobrado_feb`, `cobrado_mar`, `cobrado_abr` , `cobrado_may` , `cobrado_jun` , `cobrado_jul`  , `cobrado_ago` , `cobrado_sep` , `cobrado_oct` , `cobrado_nov` , `cobrado_dic` , `fecha_cobro_ene` , `fecha_cobro_feb`, `fecha_cobro_mar`, `fecha_cobro_abr` , `fecha_cobro_may` , `fecha_cobro_jun` , `fecha_cobro_jul`  , `fecha_cobro_ago` , `fecha_cobro_sep` , `fecha_cobro_oct` , `fecha_cobro_nov` , `fecha_cobro_dic`  , `esquema_ene` , `esquema_feb`, `esquema_mar`, `esquema_abr` , `esquema_may` , `esquema_jun` , `esquema_jul`  , `esquema_ago` , `esquema_sep` , `esquema_oct` , `esquema_nov` , `esquema_dic` , `fecha_com_ene` , `fecha_com_feb`, `fecha_com_mar`, `fecha_com_abr` , `fecha_com_may` , `fecha_com_jun` , `fecha_com_jul`  , `fecha_com_ago` , `fecha_com_sep` , `fecha_com_oct` , `fecha_com_nov` , `fecha_com_dic` , `monto_pautado` , `monto_facturado` , `monto_cobrado` , `porcentaje_pautado` , `porcentaje_facturado` , `porcentaje_cobrado` , `tipo_op` , `id_maestro_op` , `numero_cuenta_op`, `cuenta_op` , `razon_op`) VALUES ('" + dateIngreso.Value.ToString("yyyy-MM-dd") + "','" + tMedia.Text + "','" + textStatusOI.Text + "','" + textPais.Text + "','" + labelPauta.Text + "','" + comboCategoria.Text + "','" + comboContrato.Text + "','" + comboRazon.Text + "','" + textComercial.Text + "','" + labelHotel.Text + "','" + tSiglas.Text + "','" + tHann.Text + "','" + nombreBeneficio.Text + "','" + nombreBeneficio2.Text + "','" + textMonto2.Text + "','" + cant1.Text + "','" + cant2.Text + "','" + 0 + "','" + 0 + "','" + comboPorcentajeMKF.Text + "','" + date_mkf_desde + "','" + date_mkf_hasta + "','" + forma_calculo + "','" + tMonto.Text + "','" + tMontoIVA.Text + "','" + comboDivisa.Text + "','" + date_monto_desde + "','" + date_monto_hasta + "','" + transfer_bancaria + "','" + compensacion + "','" + noches + "','" + cantNoches.Text + "','" + importeNoches.Text + "','" + ambos + "','" + comboComisiones.Text + "','" + comboQ.Text + "','" + comboQPorcentaje.Text + "','" + combo1.Text + "','" + combo2.Text + "','" + combo3.Text + "','" + textObservaciones.Text + "','" + comboSupply.Text + "','" + comboEjecutivoDAF.Text + "','" + comboAccount.Text + "','" + nombreUno.Text + "','" + nombreDos.Text + "','" + nombreTres.Text + "','" + senero + "','" + sfebrero + "','" + smarzo + "','" + sabril + "','" + smayo + "','" + sjunio + "','" + sjulio + "','" + sagosto + "','" + sseptiembre + "','" + soctubre + "','" + snoviembre + "','" + sdiciembre + "','" + tEnero.Text + "','" + tFebrero.Text + "','" + tMarzo.Text + "','" + tAbril.Text + "','" + tMayo.Text + "','" + tJunio.Text + "','" + tJulio.Text + "','" + tAgosto.Text + "','" + tSeptiembre.Text + "','" + tOctubre.Text + "','" + tNoviembre.Text + "','" + tDiciembre.Text + "','" + montoEne.Text + "','" + montoFeb.Text + "','" + montoMar.Text + "','" + montoAbr.Text + "','" + montoMayo.Text + "','" + montoJun.Text + "','" + montoJul.Text + "','" + montoAgo.Text + "','" + montoSep.Text + "','" + montoOct.Text + "','" + montoNov.Text + "','" + montoDic.Text + "','" + facturadoEne.Text + "','" + facturadoFeb.Text + "','" + facturadoMar.Text + "','" + facturadoAbr.Text + "','" + facturadoMay.Text + "','" + facturadoJun.Text + "','" + facturadoJul.Text + "','" + facturadoAgo.Text + "','" + facturadoSep.Text + "','" + facturadoOct.Text + "','" + facturadoNov.Text + "','" + facturadoDic.Text + "','" + textDocEne.Text + "','" + textDocFeb.Text + "','" + textDocMar.Text + "','" + textDocAbr.Text + "','" + textDocMay.Text + "','" + textDocJun.Text + "','" + textDocJul.Text + "','" + textDocAgo.Text + "','" + textDocSep.Text + "','" + textDocOct.Text + "','" + textDocNov.Text + "','" + textDocDic.Text + "','" + NombreArcEne + "','" + NombreArcFeb + "','" + NombreArcMar + "','" + NombreArcAbr + "','" + NombreArcMay + "','" + NombreArcJun + "','" + NombreArcJul + "','" + NombreArcAgo + "','" + NombreArcSep + "','" + NombreArcOct + "','" + NombreArcNov + "','" + NombreArcDic + "','" + cobradoEne.Text + "','" + cobradoFeb.Text + "','" + cobradoMar.Text + "','" + cobradoAbr.Text + "','" + cobradoMay.Text + "','" + cobradoJun.Text + "','" + cobradoJul.Text + "','" + cobradoAgo.Text + "','" + cobradoSep.Text + "','" + cobradoOct.Text + "','" + cobradoNov.Text + "','" + cobradoDic.Text + "','" + dateEne.Value.ToString("yyyy-MM-dd") + "','" + dateFeb.Value.ToString("yyyy-MM-dd") + "','" + dateMar.Value.ToString("yyyy-MM-dd") + "','" + dateAbr.Value.ToString("yyyy-MM-dd") + "','" + dateMay.Value.ToString("yyyy-MM-dd") + "','" + dateJun.Value.ToString("yyyy-MM-dd") + "','" + dateJul.Value.ToString("yyyy-MM-dd") + "','" + dateAgo.Value.ToString("yyyy-MM-dd") + "','" + dateSep.Value.ToString("yyyy-MM-dd") + "','" + dateOct.Value.ToString("yyyy-MM-dd") + "','" + dateNov.Value.ToString("yyyy-MM-dd") + "','" + dateDic.Value.ToString("yyyy-MM-dd") + "','" + esquemaEne.Text + "','" + esquemaFeb.Text + "','" + esquemaMar.Text + "','" + esquemaAbr.Text + "','" + esquemaMay.Text + "','" + esquemaJun.Text + "','" + esquemaJul.Text + "','" + esquemaAgo.Text + "','" + esquemaSep.Text + "','" + esquemaOct.Text + "','" + esquemaNov.Text + "','" + esquemaDic.Text + "','" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "','" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "','" + cantMonto.Text + "','" + cantFacturado.Text + "','" + cantCobrado.Text + "','" + porcentajeMonto.Text + "','" + porcentajeFacturado.Text + "','" + porcentajeCobrado.Text + "','" + comboOp.Text + "','" + textID.Text + "','" + comboCuenta.Text + "','" + comboCuentaOp.Text + "','" + comboRazonOp.Text + "' )", con);
                                 cmd.ExecuteNonQuery();
                                 upload();
                                 upload_dos();
@@ -3357,7 +3370,7 @@ namespace gestor_bdm
                 string date_monto_hasta = dateHastaMonto.Value.ToString("yyyy-MM-dd");
 
                 con.Open();
-                MySqlCommand cmd = new MySqlCommand("UPDATE `ordenes_insercion` SET `folio_media`='" + tMedia.Text + "',`status_OI`='" + textStatusOI.Text + "',`sigla_pais`='" + textPais.Text + "',`tipo_pauta`='" + labelPauta.Text + "',`categoria`='" + comboCategoria.Text + "',`contrato`='" + comboContrato.Text + "',`razon_social`='" + comboRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`sigla_hotel`='" + labelHotel.Text + "',`sigla_hanna`='" + tSiglas.Text + "',`clave_hanna`='" + tHann.Text + "',`centro_bneficio`='" + nombreBeneficio.Text + "',`monto_pauta`='" + textMonto.Text + "',`anticipo_pauta`='" + textAnticipo.Text + "',`porcentaje_mkf`='" + comboPorcentajeMKF.Text + "',`vig_desde_mkf`='" + date_mkf_desde + "',`vig_hasta_mkf`='" + date_mkf_hasta + "',`monto_fijo`='" + tMonto.Text + "',`monto_fijo_iva`='" + tMontoIVA.Text + "',`divisa`='" + comboDivisa.Text + "',`vig_monto_desde`='" + date_monto_desde + "',`vig_monto_hasta`='" + date_monto_hasta + "', `transf_bancaria`='" + transfer_bancaria + "',`compensacion`='" + compensacion + "', `noches`='" + noches + "', `cant_noches`='" + cantNoches.Text + "', `importe_noches`='" + importeNoches.Text + "', `ambas`='" + ambos + "', `esquema_comision`='" + comboComisiones.Text + "', `q`='" + comboQ.Text + "', `porcentaje_q`='" + comboQPorcentaje.Text + "', `campo1`='" + combo1.Text + "', `campo2`='" + combo2.Text + "', `campo3`='" + combo3.Text + "', `observaciones`='" + textObservaciones.Text + "', `supply_manager`='" + comboSupply.Text + "',`ejecutivo_daf`='" + comboEjecutivoDAF.Text + "',`account_manager`='" + comboAccount.Text + "',`archivo`='" + nombreUno.Text + "',`archivo_dos`='" + nombreDos.Text + "',`archivo_tres`='" + nombreTres.Text + "',`enero`='" + senero + "',`febrero`='" + sfebrero + "',`marzo`='" + smarzo + "',`abril`='" + sabril + "',`mayo`='" + smayo + "',`junio`='" + sjulio + "',`julio`='" + sjulio + "',`agosto`='" + sagosto + "',`septiembre`='" + sseptiembre + "',`octubre`='" + soctubre + "',`noviembre`='" + snoviembre + "',`diciembre`='" + sdiciembre + "',`anio_ene`='" + tEnero.Text + "',`anio_feb`='" + tFebrero.Text + "',`anio_mar`='" + tMarzo.Text + "',`anio_abr`='" + tAbril.Text + "',`anio_may`='" + tMayo.Text + "',`anio_jun`='" + tJunio.Text + "',`anio_jul`='" + tJulio.Text + "',`anio_ago`='" + tAgosto.Text + "',`anio_sep`='" + tSeptiembre.Text + "',`anio_oct`='" + tOctubre.Text + "',`anio_nov`='" + tNoviembre.Text + "',`anio_dic`='" + tDiciembre.Text + "',`monto_ene`='" + montoEne.Text + "',`monto_feb`='" + montoFeb.Text + "',`monto_mar`='" + montoMar.Text + "',`monto_abr`='" + montoAbr.Text + "',`monto_may`='" + montoMayo.Text + "',`monto_jun`='" + montoJun.Text + "',`monto_jul`='" + montoJul.Text + "',`monto_ago`='" + montoAgo.Text + "',`monto_sep`='" + montoSep.Text + "',`monto_oct`='" + montoOct.Text + "',`monto_nov`='" + montoNov.Text + "',`monto_dic`='" + montoDic.Text + "',`facturado_ene`='" + facturadoEne.Text + "',`facturado_feb`='" + facturadoFeb.Text + "',`facturado_mar`='" + facturadoMar.Text + "',`facturado_abr`='" + facturadoAbr.Text + "',`facturado_may`='" + facturadoMay.Text + "',`facturado_jun`='" + facturadoJun.Text + "',`facturado_jul`='" + facturadoJul.Text + "',`facturado_ago`='" + facturadoAgo.Text + "',`facturado_sep`='" + facturadoSep.Text + "',`facturado_oct`='" + facturadoOct.Text + "',`facturado_nov`='" + facturadoNov.Text + "',`facturado_dic`='" + facturadoDic.Text + "',`archivo_ene`='" + NombreArcEne + "',`archivo_feb`='" + NombreArcFeb + "',`archivo_mar`='" + NombreArcMar + "',`archivo_abr`='" + NombreArcAbr + "',`archivo_may`='" + NombreArcMay + "',`archivo_jun`='" + NombreArcJun + "',`archivo_jul`='" + NombreArcJul + "',`archivo_ago`='" + NombreArcAgo + "',`archivo_sep`='" + NombreArcSep + "',`archivo_oct`='" + NombreArcOct + "',`archivo_nov`='" + NombreArcNov + "',`archivo_dic`='" + NombreArcDic + "',`cobrado_ene`='" + cobradoEne.Text + "',`cobrado_feb`='" + cobradoFeb.Text + "',`cobrado_mar`='" + cobradoMar.Text + "',`cobrado_abr`='" + cobradoAbr.Text + "',`cobrado_may`='" + cobradoMay.Text + "',`cobrado_jun`='" + cobradoJun.Text + "',`cobrado_jul`='" + cobradoJul.Text + "',`cobrado_ago`='" + cobradoAgo.Text + "',`cobrado_sep`='" + cobradoSep.Text + "',`cobrado_oct`='" + cobradoOct.Text + "',`cobrado_nov`='" + cobradoNov.Text + "',`cobrado_dic`='" + cobradoDic.Text + "',`fecha_cobro_ene`='" + dateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_feb`='" + dateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_mar`='" + dateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_abr`='" + dateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_may`='" + dateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jun`='" + dateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jul`='" + dateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_ago`='" + dateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_sep`='" + dateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_oct`='" + dateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_nov`='" + dateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_dic`='" + dateDic.Value.ToString("yyyy-MM-dd") + "',`esquema_ene`='" + esquemaEne.Text + "',`esquema_feb`='" + esquemaFeb.Text + "',`esquema_mar`='" + esquemaMar.Text + "',`esquema_abr`='" + esquemaAbr.Text + "',`esquema_may`='" + esquemaMay.Text + "',`esquema_jun`='" + esquemaJun.Text + "',`esquema_jul`='" + esquemaJul.Text + "',`esquema_ago`='" + esquemaAgo.Text + "',`esquema_sep`='" + esquemaSep.Text + "',`esquema_oct`='" + esquemaOct.Text + "',`esquema_nov`='" + esquemaNov.Text + "',`esquema_dic`='" + esquemaDic.Text + "',`fecha_com_ene`='" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_com_feb`='" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_com_mar`='" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_com_abr`='" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_com_may`='" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jun`='" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jul`='" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_com_ago`='" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_com_sep`='" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_com_oct`='" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_com_nov`='" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_com_dic`='" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "',`monto_pautado`='" + cantMonto.Text + "',`monto_facturado`='" + cantFacturado.Text + "',`monto_cobrado`='" + cantCobrado.Text + "',`porcentaje_pautado`='" + porcentajeMonto.Text + "',`porcentaje_facturado`='" + porcentajeFacturado.Text + "',`porcentaje_cobrado`='" + porcentajeCobrado.Text + "',`tipo_op`='" + comboOp.Text + "',`id_maestro_op`='" + textID.Text + "',`numero_cuenta_op`='" + comboCuenta.Text + "',`cuenta_op`='" + comboCuentaOp.Text + "',`razon_op`='" + comboCuentaOp.Text + "' WHERE id_ordenes = '" + id.Text + "'", con);
+                MySqlCommand cmd = new MySqlCommand("UPDATE `ordenes_insercion` SET `folio_media`='" + tMedia.Text + "',`status_OI`='" + textStatusOI.Text + "',`sigla_pais`='" + textPais.Text + "',`tipo_pauta`='" + labelPauta.Text + "',`categoria`='" + comboCategoria.Text + "',`contrato`='" + comboContrato.Text + "',`razon_social`='" + comboRazon.Text + "',`nombre_comercial`='" + textComercial.Text + "',`sigla_hotel`='" + labelHotel.Text + "',`sigla_hanna`='" + tSiglas.Text + "',`clave_hanna`='" + tHann.Text + "',`centro_bneficio`='" + nombreBeneficio.Text + "',`monto_pauta`='" + textMonto.Text + "',`anticipo_pauta`='" + textAnticipo.Text + "',`porcentaje_mkf`='" + comboPorcentajeMKF.Text + "',`vig_desde_mkf`='" + date_mkf_desde + "',`vig_hasta_mkf`='" + date_mkf_hasta + "',`monto_fijo`='" + tMonto.Text + "',`monto_fijo_iva`='" + tMontoIVA.Text + "',`divisa`='" + comboDivisa.Text + "',`vig_monto_desde`='" + date_monto_desde + "',`vig_monto_hasta`='" + date_monto_hasta + "', `transf_bancaria`='" + transfer_bancaria + "',`compensacion`='" + compensacion + "', `noches`='" + noches + "', `cant_noches`='" + cantNoches.Text + "', `importe_noches`='" + importeNoches.Text + "', `ambas`='" + ambos + "', `esquema_comision`='" + comboComisiones.Text + "', `q`='" + comboQ.Text + "', `porcentaje_q`='" + comboQPorcentaje.Text + "', `campo1`='" + combo1.Text + "', `campo2`='" + combo2.Text + "', `campo3`='" + combo3.Text + "', `observaciones`='" + textObservaciones.Text + "', `supply_manager`='" + comboSupply.Text + "',`ejecutivo_daf`='" + comboEjecutivoDAF.Text + "',`account_manager`='" + comboAccount.Text + "',`archivo`='" + nombreUno.Text + "',`archivo_dos`='" + nombreDos.Text + "',`archivo_tres`='" + nombreTres.Text + "',`enero`='" + senero + "',`febrero`='" + sfebrero + "',`marzo`='" + smarzo + "',`abril`='" + sabril + "',`mayo`='" + smayo + "',`junio`='" + sjulio + "',`julio`='" + sjulio + "',`agosto`='" + sagosto + "',`septiembre`='" + sseptiembre + "',`octubre`='" + soctubre + "',`noviembre`='" + snoviembre + "',`diciembre`='" + sdiciembre + "',`anio_ene`='" + tEnero.Text + "',`anio_feb`='" + tFebrero.Text + "',`anio_mar`='" + tMarzo.Text + "',`anio_abr`='" + tAbril.Text + "',`anio_may`='" + tMayo.Text + "',`anio_jun`='" + tJunio.Text + "',`anio_jul`='" + tJulio.Text + "',`anio_ago`='" + tAgosto.Text + "',`anio_sep`='" + tSeptiembre.Text + "',`anio_oct`='" + tOctubre.Text + "',`anio_nov`='" + tNoviembre.Text + "',`anio_dic`='" + tDiciembre.Text + "',`monto_ene`='" + montoEne.Text + "',`monto_feb`='" + montoFeb.Text + "',`monto_mar`='" + montoMar.Text + "',`monto_abr`='" + montoAbr.Text + "',`monto_may`='" + montoMayo.Text + "',`monto_jun`='" + montoJun.Text + "',`monto_jul`='" + montoJul.Text + "',`monto_ago`='" + montoAgo.Text + "',`monto_sep`='" + montoSep.Text + "',`monto_oct`='" + montoOct.Text + "',`monto_nov`='" + montoNov.Text + "',`monto_dic`='" + montoDic.Text + "',`facturado_ene`='" + facturadoEne.Text + "',`facturado_feb`='" + facturadoFeb.Text + "',`facturado_mar`='" + facturadoMar.Text + "',`facturado_abr`='" + facturadoAbr.Text + "',`facturado_may`='" + facturadoMay.Text + "',`facturado_jun`='" + facturadoJun.Text + "',`facturado_jul`='" + facturadoJul.Text + "',`facturado_ago`='" + facturadoAgo.Text + "',`facturado_sep`='" + facturadoSep.Text + "',`facturado_oct`='" + facturadoOct.Text + "',`facturado_nov`='" + facturadoNov.Text + "',`facturado_dic`='" + facturadoDic.Text + "',`doc_ene`='" + textDocEne.Text + "',`doc_feb`='" + textDocFeb.Text + "',`doc_mar`='" + textDocMar.Text + "',`doc_abr`='" + textDocAbr.Text + "',`doc_may`='" + textDocMay.Text + "',`doc_jun`='" + textDocJun.Text + "',`doc_jul`='" + textDocJul.Text + "',`doc_ago`='" + textDocAgo.Text + "',`doc_sep`='" + textDocSep.Text + "',`doc_oct`='" + textDocOct.Text + "',`doc_nov`='" + textDocNov.Text + "',`doc_dic`='" + textDocDic.Text + "',`archivo_ene`='" + NombreArcEne + "',`archivo_feb`='" + NombreArcFeb + "',`archivo_mar`='" + NombreArcMar + "',`archivo_abr`='" + NombreArcAbr + "',`archivo_may`='" + NombreArcMay + "',`archivo_jun`='" + NombreArcJun + "',`archivo_jul`='" + NombreArcJul + "',`archivo_ago`='" + NombreArcAgo + "',`archivo_sep`='" + NombreArcSep + "',`archivo_oct`='" + NombreArcOct + "',`archivo_nov`='" + NombreArcNov + "',`archivo_dic`='" + NombreArcDic + "',`cobrado_ene`='" + cobradoEne.Text + "',`cobrado_feb`='" + cobradoFeb.Text + "',`cobrado_mar`='" + cobradoMar.Text + "',`cobrado_abr`='" + cobradoAbr.Text + "',`cobrado_may`='" + cobradoMay.Text + "',`cobrado_jun`='" + cobradoJun.Text + "',`cobrado_jul`='" + cobradoJul.Text + "',`cobrado_ago`='" + cobradoAgo.Text + "',`cobrado_sep`='" + cobradoSep.Text + "',`cobrado_oct`='" + cobradoOct.Text + "',`cobrado_nov`='" + cobradoNov.Text + "',`cobrado_dic`='" + cobradoDic.Text + "',`fecha_cobro_ene`='" + dateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_feb`='" + dateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_mar`='" + dateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_abr`='" + dateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_may`='" + dateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jun`='" + dateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_jul`='" + dateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_ago`='" + dateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_sep`='" + dateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_oct`='" + dateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_nov`='" + dateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_cobro_dic`='" + dateDic.Value.ToString("yyyy-MM-dd") + "',`esquema_ene`='" + esquemaEne.Text + "',`esquema_feb`='" + esquemaFeb.Text + "',`esquema_mar`='" + esquemaMar.Text + "',`esquema_abr`='" + esquemaAbr.Text + "',`esquema_may`='" + esquemaMay.Text + "',`esquema_jun`='" + esquemaJun.Text + "',`esquema_jul`='" + esquemaJul.Text + "',`esquema_ago`='" + esquemaAgo.Text + "',`esquema_sep`='" + esquemaSep.Text + "',`esquema_oct`='" + esquemaOct.Text + "',`esquema_nov`='" + esquemaNov.Text + "',`esquema_dic`='" + esquemaDic.Text + "',`fecha_com_ene`='" + esquemaDateEne.Value.ToString("yyyy-MM-dd") + "',`fecha_com_feb`='" + esquemaDateFeb.Value.ToString("yyyy-MM-dd") + "',`fecha_com_mar`='" + esquemaDateMar.Value.ToString("yyyy-MM-dd") + "',`fecha_com_abr`='" + esquemaDateAbr.Value.ToString("yyyy-MM-dd") + "',`fecha_com_may`='" + esquemaDateMay.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jun`='" + esquemaDateJun.Value.ToString("yyyy-MM-dd") + "',`fecha_com_jul`='" + esquemaDateJul.Value.ToString("yyyy-MM-dd") + "',`fecha_com_ago`='" + esquemaDateAgo.Value.ToString("yyyy-MM-dd") + "',`fecha_com_sep`='" + esquemaDateSep.Value.ToString("yyyy-MM-dd") + "',`fecha_com_oct`='" + esquemaDateOct.Value.ToString("yyyy-MM-dd") + "',`fecha_com_nov`='" + esquemaDateNov.Value.ToString("yyyy-MM-dd") + "',`fecha_com_dic`='" + esquemaDateDic.Value.ToString("yyyy-MM-dd") + "',`monto_pautado`='" + cantMonto.Text + "',`monto_facturado`='" + cantFacturado.Text + "',`monto_cobrado`='" + cantCobrado.Text + "',`porcentaje_pautado`='" + porcentajeMonto.Text + "',`porcentaje_facturado`='" + porcentajeFacturado.Text + "',`porcentaje_cobrado`='" + porcentajeCobrado.Text + "',`tipo_op`='" + comboOp.Text + "',`id_maestro_op`='" + textID.Text + "',`numero_cuenta_op`='" + comboCuenta.Text + "',`cuenta_op`='" + comboCuentaOp.Text + "',`razon_op`='" + comboCuentaOp.Text + "' WHERE id_ordenes = '" + id.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Registro actualizado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 con.Close();
@@ -3417,7 +3430,7 @@ namespace gestor_bdm
 
             RutaImgHM = fdlg.FileName;
             NombreImgHM = tMedia.Text + "-" + nombreUno.Text;
-            MessageBox.Show(NombreImgHM);
+            //MessageBox.Show(NombreImgHM);
         }
 
         private void Visualizar_Click(object sender, EventArgs e)

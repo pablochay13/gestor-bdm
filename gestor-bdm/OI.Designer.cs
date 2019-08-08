@@ -145,6 +145,7 @@
             this.comboPais = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.sumas = new System.Windows.Forms.Button();
             this.calculo = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
@@ -210,6 +211,19 @@
             this.cobradoFeb = new System.Windows.Forms.TextBox();
             this.cobradoJun = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textDocEne = new System.Windows.Forms.TextBox();
+            this.textDocOct = new System.Windows.Forms.TextBox();
+            this.textDocJul = new System.Windows.Forms.TextBox();
+            this.textDocAbr = new System.Windows.Forms.TextBox();
+            this.textDocMar = new System.Windows.Forms.TextBox();
+            this.textDocNov = new System.Windows.Forms.TextBox();
+            this.textDocAgo = new System.Windows.Forms.TextBox();
+            this.textDocDic = new System.Windows.Forms.TextBox();
+            this.textDocMay = new System.Windows.Forms.TextBox();
+            this.textDocSep = new System.Windows.Forms.TextBox();
+            this.textDocFeb = new System.Windows.Forms.TextBox();
+            this.textDocJun = new System.Windows.Forms.TextBox();
             this.nameEne = new System.Windows.Forms.TextBox();
             this.nameOct = new System.Windows.Forms.TextBox();
             this.nameJul = new System.Windows.Forms.TextBox();
@@ -497,6 +511,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -1777,21 +1792,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.sumas);
-            this.tabPage2.Controls.Add(this.calculo);
-            this.tabPage2.Controls.Add(this.groupBox12);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.porcentajeCobrado);
-            this.tabPage2.Controls.Add(this.porcentajeFacturado);
-            this.tabPage2.Controls.Add(this.porcentajeMonto);
-            this.tabPage2.Controls.Add(this.cantCobrado);
-            this.tabPage2.Controls.Add(this.cantFacturado);
-            this.tabPage2.Controls.Add(this.cantMonto);
-            this.tabPage2.Controls.Add(this.groupBox11);
-            this.tabPage2.Controls.Add(this.groupBox10);
-            this.tabPage2.Controls.Add(this.groupBox9);
-            this.tabPage2.Controls.Add(this.groupBox8);
+            this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1800,27 +1801,50 @@
             this.tabPage2.Text = "Distribución de cobro";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.sumas);
+            this.panel2.Controls.Add(this.calculo);
+            this.panel2.Controls.Add(this.groupBox12);
+            this.panel2.Controls.Add(this.label27);
+            this.panel2.Controls.Add(this.label26);
+            this.panel2.Controls.Add(this.porcentajeCobrado);
+            this.panel2.Controls.Add(this.porcentajeFacturado);
+            this.panel2.Controls.Add(this.porcentajeMonto);
+            this.panel2.Controls.Add(this.cantCobrado);
+            this.panel2.Controls.Add(this.cantFacturado);
+            this.panel2.Controls.Add(this.cantMonto);
+            this.panel2.Controls.Add(this.groupBox11);
+            this.panel2.Controls.Add(this.groupBox10);
+            this.panel2.Controls.Add(this.groupBox9);
+            this.panel2.Controls.Add(this.groupBox8);
+            this.panel2.Location = new System.Drawing.Point(7, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1231, 552);
+            this.panel2.TabIndex = 0;
+            // 
             // sumas
             // 
             this.sumas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sumas.Location = new System.Drawing.Point(1071, 516);
+            this.sumas.Location = new System.Drawing.Point(1058, 492);
             this.sumas.Name = "sumas";
             this.sumas.Size = new System.Drawing.Size(75, 30);
-            this.sumas.TabIndex = 237;
+            this.sumas.TabIndex = 252;
             this.sumas.Text = "Sumas";
             this.sumas.UseVisualStyleBackColor = true;
-            this.sumas.Click += new System.EventHandler(this.Sumas_Click_1);
+            this.sumas.Click += new System.EventHandler(this.Sumas_Click);
             // 
             // calculo
             // 
             this.calculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculo.Location = new System.Drawing.Point(1152, 516);
+            this.calculo.Location = new System.Drawing.Point(1139, 492);
             this.calculo.Name = "calculo";
             this.calculo.Size = new System.Drawing.Size(75, 30);
-            this.calculo.TabIndex = 236;
+            this.calculo.TabIndex = 251;
             this.calculo.Text = "Calcular";
             this.calculo.UseVisualStyleBackColor = true;
-            this.calculo.Click += new System.EventHandler(this.Calculo_Click_1);
+            this.calculo.Click += new System.EventHandler(this.Calculo_Click);
             // 
             // groupBox12
             // 
@@ -1852,10 +1876,10 @@
             this.groupBox12.Controls.Add(this.esquemaFeb);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox12.Location = new System.Drawing.Point(936, 18);
+            this.groupBox12.Location = new System.Drawing.Point(1124, 12);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(263, 403);
-            this.groupBox12.TabIndex = 229;
+            this.groupBox12.TabIndex = 244;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Comisión";
             // 
@@ -2063,69 +2087,69 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(316, 465);
+            this.label27.Location = new System.Drawing.Point(13, 460);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(116, 18);
-            this.label27.TabIndex = 235;
+            this.label27.TabIndex = 250;
             this.label27.Text = "% Cumplimiento";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(316, 433);
+            this.label26.Location = new System.Drawing.Point(13, 428);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(110, 18);
-            this.label26.TabIndex = 230;
+            this.label26.TabIndex = 245;
             this.label26.Text = "Monto Pautado";
             // 
             // porcentajeCobrado
             // 
             this.porcentajeCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeCobrado.Location = new System.Drawing.Point(784, 459);
+            this.porcentajeCobrado.Location = new System.Drawing.Point(481, 454);
             this.porcentajeCobrado.Name = "porcentajeCobrado";
             this.porcentajeCobrado.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeCobrado.TabIndex = 234;
+            this.porcentajeCobrado.TabIndex = 249;
             // 
             // porcentajeFacturado
             // 
             this.porcentajeFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeFacturado.Location = new System.Drawing.Point(620, 459);
+            this.porcentajeFacturado.Location = new System.Drawing.Point(317, 454);
             this.porcentajeFacturado.Name = "porcentajeFacturado";
             this.porcentajeFacturado.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeFacturado.TabIndex = 233;
+            this.porcentajeFacturado.TabIndex = 248;
             // 
             // porcentajeMonto
             // 
             this.porcentajeMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.porcentajeMonto.Location = new System.Drawing.Point(455, 459);
+            this.porcentajeMonto.Location = new System.Drawing.Point(152, 454);
             this.porcentajeMonto.Name = "porcentajeMonto";
             this.porcentajeMonto.Size = new System.Drawing.Size(139, 24);
-            this.porcentajeMonto.TabIndex = 232;
+            this.porcentajeMonto.TabIndex = 247;
             // 
             // cantCobrado
             // 
             this.cantCobrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantCobrado.Location = new System.Drawing.Point(784, 430);
+            this.cantCobrado.Location = new System.Drawing.Point(481, 425);
             this.cantCobrado.Name = "cantCobrado";
             this.cantCobrado.Size = new System.Drawing.Size(139, 24);
-            this.cantCobrado.TabIndex = 231;
+            this.cantCobrado.TabIndex = 246;
             // 
             // cantFacturado
             // 
             this.cantFacturado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantFacturado.Location = new System.Drawing.Point(620, 430);
+            this.cantFacturado.Location = new System.Drawing.Point(317, 425);
             this.cantFacturado.Name = "cantFacturado";
             this.cantFacturado.Size = new System.Drawing.Size(139, 24);
-            this.cantFacturado.TabIndex = 228;
+            this.cantFacturado.TabIndex = 243;
             // 
             // cantMonto
             // 
             this.cantMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantMonto.Location = new System.Drawing.Point(455, 430);
+            this.cantMonto.Location = new System.Drawing.Point(152, 425);
             this.cantMonto.Name = "cantMonto";
             this.cantMonto.Size = new System.Drawing.Size(139, 24);
-            this.cantMonto.TabIndex = 224;
+            this.cantMonto.TabIndex = 239;
             // 
             // groupBox11
             // 
@@ -2157,10 +2181,10 @@
             this.groupBox11.Controls.Add(this.cobradoJun);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox11.Location = new System.Drawing.Point(712, 18);
+            this.groupBox11.Location = new System.Drawing.Point(900, 12);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(218, 403);
-            this.groupBox11.TabIndex = 227;
+            this.groupBox11.TabIndex = 242;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Cobrado";
             // 
@@ -2366,6 +2390,19 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.label51);
+            this.groupBox10.Controls.Add(this.textDocEne);
+            this.groupBox10.Controls.Add(this.textDocOct);
+            this.groupBox10.Controls.Add(this.textDocJul);
+            this.groupBox10.Controls.Add(this.textDocAbr);
+            this.groupBox10.Controls.Add(this.textDocMar);
+            this.groupBox10.Controls.Add(this.textDocNov);
+            this.groupBox10.Controls.Add(this.textDocAgo);
+            this.groupBox10.Controls.Add(this.textDocDic);
+            this.groupBox10.Controls.Add(this.textDocMay);
+            this.groupBox10.Controls.Add(this.textDocSep);
+            this.groupBox10.Controls.Add(this.textDocFeb);
+            this.groupBox10.Controls.Add(this.textDocJun);
             this.groupBox10.Controls.Add(this.nameEne);
             this.groupBox10.Controls.Add(this.nameOct);
             this.groupBox10.Controls.Add(this.nameJul);
@@ -2430,16 +2467,111 @@
             this.groupBox10.Controls.Add(this.facturadoJun);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox10.Location = new System.Drawing.Point(338, 18);
+            this.groupBox10.Location = new System.Drawing.Point(336, 12);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(368, 403);
-            this.groupBox10.TabIndex = 226;
+            this.groupBox10.Size = new System.Drawing.Size(558, 403);
+            this.groupBox10.TabIndex = 241;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Facturado";
             // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label51.Location = new System.Drawing.Point(109, 24);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(86, 18);
+            this.label51.TabIndex = 237;
+            this.label51.Text = "Documento";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textDocEne
+            // 
+            this.textDocEne.Location = new System.Drawing.Point(112, 45);
+            this.textDocEne.Name = "textDocEne";
+            this.textDocEne.Size = new System.Drawing.Size(182, 24);
+            this.textDocEne.TabIndex = 225;
+            // 
+            // textDocOct
+            // 
+            this.textDocOct.Location = new System.Drawing.Point(112, 306);
+            this.textDocOct.Name = "textDocOct";
+            this.textDocOct.Size = new System.Drawing.Size(182, 24);
+            this.textDocOct.TabIndex = 233;
+            // 
+            // textDocJul
+            // 
+            this.textDocJul.Location = new System.Drawing.Point(112, 219);
+            this.textDocJul.Name = "textDocJul";
+            this.textDocJul.Size = new System.Drawing.Size(182, 24);
+            this.textDocJul.TabIndex = 232;
+            // 
+            // textDocAbr
+            // 
+            this.textDocAbr.Location = new System.Drawing.Point(112, 132);
+            this.textDocAbr.Name = "textDocAbr";
+            this.textDocAbr.Size = new System.Drawing.Size(182, 24);
+            this.textDocAbr.TabIndex = 227;
+            // 
+            // textDocMar
+            // 
+            this.textDocMar.Location = new System.Drawing.Point(112, 103);
+            this.textDocMar.Name = "textDocMar";
+            this.textDocMar.Size = new System.Drawing.Size(182, 24);
+            this.textDocMar.TabIndex = 228;
+            // 
+            // textDocNov
+            // 
+            this.textDocNov.Location = new System.Drawing.Point(112, 335);
+            this.textDocNov.Name = "textDocNov";
+            this.textDocNov.Size = new System.Drawing.Size(182, 24);
+            this.textDocNov.TabIndex = 235;
+            // 
+            // textDocAgo
+            // 
+            this.textDocAgo.Location = new System.Drawing.Point(112, 248);
+            this.textDocAgo.Name = "textDocAgo";
+            this.textDocAgo.Size = new System.Drawing.Size(182, 24);
+            this.textDocAgo.TabIndex = 230;
+            // 
+            // textDocDic
+            // 
+            this.textDocDic.Location = new System.Drawing.Point(112, 364);
+            this.textDocDic.Name = "textDocDic";
+            this.textDocDic.Size = new System.Drawing.Size(182, 24);
+            this.textDocDic.TabIndex = 236;
+            // 
+            // textDocMay
+            // 
+            this.textDocMay.Location = new System.Drawing.Point(112, 161);
+            this.textDocMay.Name = "textDocMay";
+            this.textDocMay.Size = new System.Drawing.Size(182, 24);
+            this.textDocMay.TabIndex = 231;
+            // 
+            // textDocSep
+            // 
+            this.textDocSep.Location = new System.Drawing.Point(112, 277);
+            this.textDocSep.Name = "textDocSep";
+            this.textDocSep.Size = new System.Drawing.Size(182, 24);
+            this.textDocSep.TabIndex = 234;
+            // 
+            // textDocFeb
+            // 
+            this.textDocFeb.Location = new System.Drawing.Point(112, 74);
+            this.textDocFeb.Name = "textDocFeb";
+            this.textDocFeb.Size = new System.Drawing.Size(182, 24);
+            this.textDocFeb.TabIndex = 226;
+            // 
+            // textDocJun
+            // 
+            this.textDocJun.Location = new System.Drawing.Point(112, 190);
+            this.textDocJun.Name = "textDocJun";
+            this.textDocJun.Size = new System.Drawing.Size(182, 24);
+            this.textDocJun.TabIndex = 229;
+            // 
             // nameEne
             // 
-            this.nameEne.Location = new System.Drawing.Point(111, 45);
+            this.nameEne.Location = new System.Drawing.Point(300, 45);
             this.nameEne.Name = "nameEne";
             this.nameEne.Size = new System.Drawing.Size(14, 24);
             this.nameEne.TabIndex = 213;
@@ -2447,7 +2579,7 @@
             // 
             // nameOct
             // 
-            this.nameOct.Location = new System.Drawing.Point(111, 306);
+            this.nameOct.Location = new System.Drawing.Point(300, 306);
             this.nameOct.Name = "nameOct";
             this.nameOct.Size = new System.Drawing.Size(14, 24);
             this.nameOct.TabIndex = 221;
@@ -2455,7 +2587,7 @@
             // 
             // nameJul
             // 
-            this.nameJul.Location = new System.Drawing.Point(111, 219);
+            this.nameJul.Location = new System.Drawing.Point(300, 219);
             this.nameJul.Name = "nameJul";
             this.nameJul.Size = new System.Drawing.Size(14, 24);
             this.nameJul.TabIndex = 220;
@@ -2463,7 +2595,7 @@
             // 
             // nameAbr
             // 
-            this.nameAbr.Location = new System.Drawing.Point(111, 132);
+            this.nameAbr.Location = new System.Drawing.Point(300, 132);
             this.nameAbr.Name = "nameAbr";
             this.nameAbr.Size = new System.Drawing.Size(14, 24);
             this.nameAbr.TabIndex = 215;
@@ -2471,7 +2603,7 @@
             // 
             // nameMar
             // 
-            this.nameMar.Location = new System.Drawing.Point(111, 103);
+            this.nameMar.Location = new System.Drawing.Point(300, 103);
             this.nameMar.Name = "nameMar";
             this.nameMar.Size = new System.Drawing.Size(14, 24);
             this.nameMar.TabIndex = 216;
@@ -2479,7 +2611,7 @@
             // 
             // nameNov
             // 
-            this.nameNov.Location = new System.Drawing.Point(111, 335);
+            this.nameNov.Location = new System.Drawing.Point(300, 335);
             this.nameNov.Name = "nameNov";
             this.nameNov.Size = new System.Drawing.Size(14, 24);
             this.nameNov.TabIndex = 223;
@@ -2487,7 +2619,7 @@
             // 
             // nameAgo
             // 
-            this.nameAgo.Location = new System.Drawing.Point(111, 248);
+            this.nameAgo.Location = new System.Drawing.Point(300, 248);
             this.nameAgo.Name = "nameAgo";
             this.nameAgo.Size = new System.Drawing.Size(14, 24);
             this.nameAgo.TabIndex = 218;
@@ -2495,7 +2627,7 @@
             // 
             // nameDic
             // 
-            this.nameDic.Location = new System.Drawing.Point(111, 364);
+            this.nameDic.Location = new System.Drawing.Point(300, 364);
             this.nameDic.Name = "nameDic";
             this.nameDic.Size = new System.Drawing.Size(14, 24);
             this.nameDic.TabIndex = 224;
@@ -2503,7 +2635,7 @@
             // 
             // nameMay
             // 
-            this.nameMay.Location = new System.Drawing.Point(111, 161);
+            this.nameMay.Location = new System.Drawing.Point(300, 161);
             this.nameMay.Name = "nameMay";
             this.nameMay.Size = new System.Drawing.Size(14, 24);
             this.nameMay.TabIndex = 219;
@@ -2511,7 +2643,7 @@
             // 
             // nameSep
             // 
-            this.nameSep.Location = new System.Drawing.Point(111, 277);
+            this.nameSep.Location = new System.Drawing.Point(300, 277);
             this.nameSep.Name = "nameSep";
             this.nameSep.Size = new System.Drawing.Size(14, 24);
             this.nameSep.TabIndex = 222;
@@ -2519,7 +2651,7 @@
             // 
             // nameFeb
             // 
-            this.nameFeb.Location = new System.Drawing.Point(111, 74);
+            this.nameFeb.Location = new System.Drawing.Point(300, 74);
             this.nameFeb.Name = "nameFeb";
             this.nameFeb.Size = new System.Drawing.Size(14, 24);
             this.nameFeb.TabIndex = 214;
@@ -2527,7 +2659,7 @@
             // 
             // nameJun
             // 
-            this.nameJun.Location = new System.Drawing.Point(111, 190);
+            this.nameJun.Location = new System.Drawing.Point(300, 190);
             this.nameJun.Name = "nameJun";
             this.nameJun.Size = new System.Drawing.Size(14, 24);
             this.nameJun.TabIndex = 217;
@@ -2538,7 +2670,7 @@
             this.lookDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookDic.BackgroundImage")));
             this.lookDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookDic.Location = new System.Drawing.Point(334, 364);
+            this.lookDic.Location = new System.Drawing.Point(523, 364);
             this.lookDic.Name = "lookDic";
             this.lookDic.Size = new System.Drawing.Size(24, 24);
             this.lookDic.TabIndex = 212;
@@ -2549,7 +2681,7 @@
             this.lookNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookNov.BackgroundImage")));
             this.lookNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookNov.Location = new System.Drawing.Point(334, 335);
+            this.lookNov.Location = new System.Drawing.Point(523, 335);
             this.lookNov.Name = "lookNov";
             this.lookNov.Size = new System.Drawing.Size(24, 24);
             this.lookNov.TabIndex = 211;
@@ -2560,7 +2692,7 @@
             this.lookOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookOct.BackgroundImage")));
             this.lookOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookOct.Location = new System.Drawing.Point(334, 306);
+            this.lookOct.Location = new System.Drawing.Point(523, 306);
             this.lookOct.Name = "lookOct";
             this.lookOct.Size = new System.Drawing.Size(24, 24);
             this.lookOct.TabIndex = 210;
@@ -2571,7 +2703,7 @@
             this.lookSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookSep.BackgroundImage")));
             this.lookSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookSep.Location = new System.Drawing.Point(334, 277);
+            this.lookSep.Location = new System.Drawing.Point(523, 277);
             this.lookSep.Name = "lookSep";
             this.lookSep.Size = new System.Drawing.Size(24, 24);
             this.lookSep.TabIndex = 209;
@@ -2582,7 +2714,7 @@
             this.lookAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookAgo.BackgroundImage")));
             this.lookAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookAgo.Location = new System.Drawing.Point(334, 248);
+            this.lookAgo.Location = new System.Drawing.Point(523, 248);
             this.lookAgo.Name = "lookAgo";
             this.lookAgo.Size = new System.Drawing.Size(24, 24);
             this.lookAgo.TabIndex = 208;
@@ -2593,7 +2725,7 @@
             this.lookJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookJul.BackgroundImage")));
             this.lookJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookJul.Location = new System.Drawing.Point(334, 219);
+            this.lookJul.Location = new System.Drawing.Point(523, 219);
             this.lookJul.Name = "lookJul";
             this.lookJul.Size = new System.Drawing.Size(24, 24);
             this.lookJul.TabIndex = 207;
@@ -2604,7 +2736,7 @@
             this.lookJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookJun.BackgroundImage")));
             this.lookJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookJun.Location = new System.Drawing.Point(334, 190);
+            this.lookJun.Location = new System.Drawing.Point(523, 190);
             this.lookJun.Name = "lookJun";
             this.lookJun.Size = new System.Drawing.Size(24, 24);
             this.lookJun.TabIndex = 206;
@@ -2615,7 +2747,7 @@
             this.lookMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookMay.BackgroundImage")));
             this.lookMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookMay.Location = new System.Drawing.Point(334, 161);
+            this.lookMay.Location = new System.Drawing.Point(523, 161);
             this.lookMay.Name = "lookMay";
             this.lookMay.Size = new System.Drawing.Size(24, 24);
             this.lookMay.TabIndex = 205;
@@ -2626,7 +2758,7 @@
             this.lookAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookAbr.BackgroundImage")));
             this.lookAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookAbr.Location = new System.Drawing.Point(334, 132);
+            this.lookAbr.Location = new System.Drawing.Point(523, 132);
             this.lookAbr.Name = "lookAbr";
             this.lookAbr.Size = new System.Drawing.Size(24, 24);
             this.lookAbr.TabIndex = 204;
@@ -2637,7 +2769,7 @@
             this.lookMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookMar.BackgroundImage")));
             this.lookMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookMar.Location = new System.Drawing.Point(334, 103);
+            this.lookMar.Location = new System.Drawing.Point(523, 103);
             this.lookMar.Name = "lookMar";
             this.lookMar.Size = new System.Drawing.Size(24, 24);
             this.lookMar.TabIndex = 203;
@@ -2648,7 +2780,7 @@
             this.lookFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookFeb.BackgroundImage")));
             this.lookFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookFeb.Location = new System.Drawing.Point(334, 74);
+            this.lookFeb.Location = new System.Drawing.Point(523, 74);
             this.lookFeb.Name = "lookFeb";
             this.lookFeb.Size = new System.Drawing.Size(24, 24);
             this.lookFeb.TabIndex = 202;
@@ -2659,18 +2791,17 @@
             this.lookEne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lookEne.BackgroundImage")));
             this.lookEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lookEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lookEne.Location = new System.Drawing.Point(334, 45);
+            this.lookEne.Location = new System.Drawing.Point(523, 45);
             this.lookEne.Name = "lookEne";
             this.lookEne.Size = new System.Drawing.Size(24, 24);
             this.lookEne.TabIndex = 201;
             this.lookEne.UseVisualStyleBackColor = true;
-            this.lookEne.Click += new System.EventHandler(this.LookEne_Click);
             // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label49.Location = new System.Drawing.Point(146, 24);
+            this.label49.Location = new System.Drawing.Point(335, 24);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(57, 18);
             this.label49.TabIndex = 200;
@@ -2691,127 +2822,127 @@
             this.exploreDic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreDic.BackgroundImage")));
             this.exploreDic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreDic.Location = new System.Drawing.Point(304, 364);
+            this.exploreDic.Location = new System.Drawing.Point(493, 364);
             this.exploreDic.Name = "exploreDic";
             this.exploreDic.Size = new System.Drawing.Size(24, 24);
             this.exploreDic.TabIndex = 187;
             this.exploreDic.UseVisualStyleBackColor = true;
-            this.exploreDic.Click += new System.EventHandler(this.ExploreDic_Click);
+            this.exploreDic.Click += new System.EventHandler(this.ExploreDic_Click_1);
             // 
             // exploreNov
             // 
             this.exploreNov.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreNov.BackgroundImage")));
             this.exploreNov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreNov.Location = new System.Drawing.Point(304, 335);
+            this.exploreNov.Location = new System.Drawing.Point(493, 335);
             this.exploreNov.Name = "exploreNov";
             this.exploreNov.Size = new System.Drawing.Size(24, 24);
             this.exploreNov.TabIndex = 185;
             this.exploreNov.UseVisualStyleBackColor = true;
-            this.exploreNov.Click += new System.EventHandler(this.ExploreNov_Click);
+            this.exploreNov.Click += new System.EventHandler(this.ExploreNov_Click_1);
             // 
             // exploreOct
             // 
             this.exploreOct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreOct.BackgroundImage")));
             this.exploreOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreOct.Location = new System.Drawing.Point(304, 306);
+            this.exploreOct.Location = new System.Drawing.Point(493, 306);
             this.exploreOct.Name = "exploreOct";
             this.exploreOct.Size = new System.Drawing.Size(24, 24);
             this.exploreOct.TabIndex = 183;
             this.exploreOct.UseVisualStyleBackColor = true;
-            this.exploreOct.Click += new System.EventHandler(this.ExploreOct_Click);
+            this.exploreOct.Click += new System.EventHandler(this.ExploreOct_Click_1);
             // 
             // exploreSep
             // 
             this.exploreSep.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreSep.BackgroundImage")));
             this.exploreSep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreSep.Location = new System.Drawing.Point(304, 277);
+            this.exploreSep.Location = new System.Drawing.Point(493, 277);
             this.exploreSep.Name = "exploreSep";
             this.exploreSep.Size = new System.Drawing.Size(24, 24);
             this.exploreSep.TabIndex = 181;
             this.exploreSep.UseVisualStyleBackColor = true;
-            this.exploreSep.Click += new System.EventHandler(this.ExploreSep_Click);
+            this.exploreSep.Click += new System.EventHandler(this.ExploreSep_Click_1);
             // 
             // exploreAgo
             // 
             this.exploreAgo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAgo.BackgroundImage")));
             this.exploreAgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreAgo.Location = new System.Drawing.Point(304, 248);
+            this.exploreAgo.Location = new System.Drawing.Point(493, 248);
             this.exploreAgo.Name = "exploreAgo";
             this.exploreAgo.Size = new System.Drawing.Size(24, 24);
             this.exploreAgo.TabIndex = 179;
             this.exploreAgo.UseVisualStyleBackColor = true;
-            this.exploreAgo.Click += new System.EventHandler(this.ExploreAgo_Click);
+            this.exploreAgo.Click += new System.EventHandler(this.ExploreAgo_Click_1);
             // 
             // exploreJul
             // 
             this.exploreJul.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJul.BackgroundImage")));
             this.exploreJul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreJul.Location = new System.Drawing.Point(304, 219);
+            this.exploreJul.Location = new System.Drawing.Point(493, 219);
             this.exploreJul.Name = "exploreJul";
             this.exploreJul.Size = new System.Drawing.Size(24, 24);
             this.exploreJul.TabIndex = 177;
             this.exploreJul.UseVisualStyleBackColor = true;
-            this.exploreJul.Click += new System.EventHandler(this.ExploreJul_Click);
+            this.exploreJul.Click += new System.EventHandler(this.ExploreJul_Click_1);
             // 
             // exploreJun
             // 
             this.exploreJun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreJun.BackgroundImage")));
             this.exploreJun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreJun.Location = new System.Drawing.Point(304, 190);
+            this.exploreJun.Location = new System.Drawing.Point(493, 190);
             this.exploreJun.Name = "exploreJun";
             this.exploreJun.Size = new System.Drawing.Size(24, 24);
             this.exploreJun.TabIndex = 175;
             this.exploreJun.UseVisualStyleBackColor = true;
-            this.exploreJun.Click += new System.EventHandler(this.ExploreJun_Click);
+            this.exploreJun.Click += new System.EventHandler(this.ExploreJun_Click_1);
             // 
             // exploreMay
             // 
             this.exploreMay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMay.BackgroundImage")));
             this.exploreMay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreMay.Location = new System.Drawing.Point(304, 161);
+            this.exploreMay.Location = new System.Drawing.Point(493, 161);
             this.exploreMay.Name = "exploreMay";
             this.exploreMay.Size = new System.Drawing.Size(24, 24);
             this.exploreMay.TabIndex = 173;
             this.exploreMay.UseVisualStyleBackColor = true;
-            this.exploreMay.Click += new System.EventHandler(this.ExploreMay_Click);
+            this.exploreMay.Click += new System.EventHandler(this.ExploreMay_Click_1);
             // 
             // exploreAbr
             // 
             this.exploreAbr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreAbr.BackgroundImage")));
             this.exploreAbr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreAbr.Location = new System.Drawing.Point(304, 132);
+            this.exploreAbr.Location = new System.Drawing.Point(493, 132);
             this.exploreAbr.Name = "exploreAbr";
             this.exploreAbr.Size = new System.Drawing.Size(24, 24);
             this.exploreAbr.TabIndex = 171;
             this.exploreAbr.UseVisualStyleBackColor = true;
-            this.exploreAbr.Click += new System.EventHandler(this.ExploreAbr_Click);
+            this.exploreAbr.Click += new System.EventHandler(this.ExploreAbr_Click_1);
             // 
             // exploreMar
             // 
             this.exploreMar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreMar.BackgroundImage")));
             this.exploreMar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreMar.Location = new System.Drawing.Point(304, 103);
+            this.exploreMar.Location = new System.Drawing.Point(493, 103);
             this.exploreMar.Name = "exploreMar";
             this.exploreMar.Size = new System.Drawing.Size(24, 24);
             this.exploreMar.TabIndex = 169;
             this.exploreMar.UseVisualStyleBackColor = true;
-            this.exploreMar.Click += new System.EventHandler(this.ExploreMar_Click);
+            this.exploreMar.Click += new System.EventHandler(this.ExploreMar_Click_1);
             // 
             // exploreFeb
             // 
             this.exploreFeb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreFeb.BackgroundImage")));
             this.exploreFeb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreFeb.Location = new System.Drawing.Point(304, 74);
+            this.exploreFeb.Location = new System.Drawing.Point(493, 74);
             this.exploreFeb.Name = "exploreFeb";
             this.exploreFeb.Size = new System.Drawing.Size(24, 24);
             this.exploreFeb.TabIndex = 167;
@@ -2823,93 +2954,93 @@
             this.exploreEne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exploreEne.BackgroundImage")));
             this.exploreEne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exploreEne.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exploreEne.Location = new System.Drawing.Point(304, 45);
+            this.exploreEne.Location = new System.Drawing.Point(493, 45);
             this.exploreEne.Name = "exploreEne";
             this.exploreEne.Size = new System.Drawing.Size(24, 24);
             this.exploreEne.TabIndex = 165;
             this.exploreEne.UseVisualStyleBackColor = true;
-            this.exploreEne.Click += new System.EventHandler(this.ExploreEne_Click);
+            this.exploreEne.Click += new System.EventHandler(this.ExploreEne_Click_1);
             // 
             // archivoEne
             // 
-            this.archivoEne.Location = new System.Drawing.Point(129, 45);
+            this.archivoEne.Location = new System.Drawing.Point(318, 45);
             this.archivoEne.Name = "archivoEne";
             this.archivoEne.Size = new System.Drawing.Size(166, 24);
             this.archivoEne.TabIndex = 152;
             // 
             // archivoOct
             // 
-            this.archivoOct.Location = new System.Drawing.Point(129, 306);
+            this.archivoOct.Location = new System.Drawing.Point(318, 306);
             this.archivoOct.Name = "archivoOct";
             this.archivoOct.Size = new System.Drawing.Size(166, 24);
             this.archivoOct.TabIndex = 160;
             // 
             // archivoJul
             // 
-            this.archivoJul.Location = new System.Drawing.Point(129, 219);
+            this.archivoJul.Location = new System.Drawing.Point(318, 219);
             this.archivoJul.Name = "archivoJul";
             this.archivoJul.Size = new System.Drawing.Size(166, 24);
             this.archivoJul.TabIndex = 159;
             // 
             // archivoAbr
             // 
-            this.archivoAbr.Location = new System.Drawing.Point(129, 132);
+            this.archivoAbr.Location = new System.Drawing.Point(318, 132);
             this.archivoAbr.Name = "archivoAbr";
             this.archivoAbr.Size = new System.Drawing.Size(166, 24);
             this.archivoAbr.TabIndex = 154;
             // 
             // archivoMar
             // 
-            this.archivoMar.Location = new System.Drawing.Point(129, 103);
+            this.archivoMar.Location = new System.Drawing.Point(318, 103);
             this.archivoMar.Name = "archivoMar";
             this.archivoMar.Size = new System.Drawing.Size(166, 24);
             this.archivoMar.TabIndex = 155;
             // 
             // archivoNov
             // 
-            this.archivoNov.Location = new System.Drawing.Point(129, 335);
+            this.archivoNov.Location = new System.Drawing.Point(318, 335);
             this.archivoNov.Name = "archivoNov";
             this.archivoNov.Size = new System.Drawing.Size(166, 24);
             this.archivoNov.TabIndex = 162;
             // 
             // archivoAgo
             // 
-            this.archivoAgo.Location = new System.Drawing.Point(129, 248);
+            this.archivoAgo.Location = new System.Drawing.Point(318, 248);
             this.archivoAgo.Name = "archivoAgo";
             this.archivoAgo.Size = new System.Drawing.Size(166, 24);
             this.archivoAgo.TabIndex = 157;
             // 
             // archivoDic
             // 
-            this.archivoDic.Location = new System.Drawing.Point(129, 364);
+            this.archivoDic.Location = new System.Drawing.Point(318, 364);
             this.archivoDic.Name = "archivoDic";
             this.archivoDic.Size = new System.Drawing.Size(166, 24);
             this.archivoDic.TabIndex = 163;
             // 
             // archivoMay
             // 
-            this.archivoMay.Location = new System.Drawing.Point(129, 161);
+            this.archivoMay.Location = new System.Drawing.Point(318, 161);
             this.archivoMay.Name = "archivoMay";
             this.archivoMay.Size = new System.Drawing.Size(166, 24);
             this.archivoMay.TabIndex = 158;
             // 
             // archivoSep
             // 
-            this.archivoSep.Location = new System.Drawing.Point(129, 277);
+            this.archivoSep.Location = new System.Drawing.Point(318, 277);
             this.archivoSep.Name = "archivoSep";
             this.archivoSep.Size = new System.Drawing.Size(166, 24);
             this.archivoSep.TabIndex = 161;
             // 
             // archivoFeb
             // 
-            this.archivoFeb.Location = new System.Drawing.Point(129, 74);
+            this.archivoFeb.Location = new System.Drawing.Point(318, 74);
             this.archivoFeb.Name = "archivoFeb";
             this.archivoFeb.Size = new System.Drawing.Size(166, 24);
             this.archivoFeb.TabIndex = 153;
             // 
             // archivoJun
             // 
-            this.archivoJun.Location = new System.Drawing.Point(129, 190);
+            this.archivoJun.Location = new System.Drawing.Point(318, 190);
             this.archivoJun.Name = "archivoJun";
             this.archivoJun.Size = new System.Drawing.Size(166, 24);
             this.archivoJun.TabIndex = 156;
@@ -3014,10 +3145,10 @@
             this.groupBox9.Controls.Add(this.montoJun);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox9.Location = new System.Drawing.Point(213, 18);
+            this.groupBox9.Location = new System.Drawing.Point(211, 12);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(119, 403);
-            this.groupBox9.TabIndex = 225;
+            this.groupBox9.TabIndex = 240;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Monto OI";
             // 
@@ -3133,10 +3264,10 @@
             this.groupBox8.Controls.Add(this.tJunio);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox8.Location = new System.Drawing.Point(7, 18);
+            this.groupBox8.Location = new System.Drawing.Point(5, 12);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(200, 403);
-            this.groupBox8.TabIndex = 223;
+            this.groupBox8.TabIndex = 238;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Mes / Año";
             // 
@@ -4639,7 +4770,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -4953,6 +5085,7 @@
         private System.Windows.Forms.Label campo3;
         private System.Windows.Forms.Label campo2;
         private System.Windows.Forms.Label campo1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button sumas;
         private System.Windows.Forms.Button calculo;
         private System.Windows.Forms.GroupBox groupBox12;
@@ -5018,6 +5151,30 @@
         private System.Windows.Forms.TextBox cobradoFeb;
         private System.Windows.Forms.TextBox cobradoJun;
         private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox nameEne;
+        private System.Windows.Forms.TextBox nameOct;
+        private System.Windows.Forms.TextBox nameJul;
+        private System.Windows.Forms.TextBox nameAbr;
+        private System.Windows.Forms.TextBox nameMar;
+        private System.Windows.Forms.TextBox nameNov;
+        private System.Windows.Forms.TextBox nameAgo;
+        private System.Windows.Forms.TextBox nameDic;
+        private System.Windows.Forms.TextBox nameMay;
+        private System.Windows.Forms.TextBox nameSep;
+        private System.Windows.Forms.TextBox nameFeb;
+        private System.Windows.Forms.TextBox nameJun;
+        private System.Windows.Forms.Button lookDic;
+        private System.Windows.Forms.Button lookNov;
+        private System.Windows.Forms.Button lookOct;
+        private System.Windows.Forms.Button lookSep;
+        private System.Windows.Forms.Button lookAgo;
+        private System.Windows.Forms.Button lookJul;
+        private System.Windows.Forms.Button lookJun;
+        private System.Windows.Forms.Button lookMay;
+        private System.Windows.Forms.Button lookAbr;
+        private System.Windows.Forms.Button lookMar;
+        private System.Windows.Forms.Button lookFeb;
+        private System.Windows.Forms.Button lookEne;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Button exploreDic;
@@ -5094,29 +5251,18 @@
         private System.Windows.Forms.TextBox tSeptiembre;
         private System.Windows.Forms.TextBox tFebrero;
         private System.Windows.Forms.TextBox tJunio;
-        private System.Windows.Forms.Button lookDic;
-        private System.Windows.Forms.Button lookNov;
-        private System.Windows.Forms.Button lookOct;
-        private System.Windows.Forms.Button lookSep;
-        private System.Windows.Forms.Button lookAgo;
-        private System.Windows.Forms.Button lookJul;
-        private System.Windows.Forms.Button lookJun;
-        private System.Windows.Forms.Button lookMay;
-        private System.Windows.Forms.Button lookAbr;
-        private System.Windows.Forms.Button lookMar;
-        private System.Windows.Forms.Button lookFeb;
-        private System.Windows.Forms.Button lookEne;
-        private System.Windows.Forms.TextBox nameEne;
-        private System.Windows.Forms.TextBox nameOct;
-        private System.Windows.Forms.TextBox nameJul;
-        private System.Windows.Forms.TextBox nameAbr;
-        private System.Windows.Forms.TextBox nameMar;
-        private System.Windows.Forms.TextBox nameNov;
-        private System.Windows.Forms.TextBox nameAgo;
-        private System.Windows.Forms.TextBox nameDic;
-        private System.Windows.Forms.TextBox nameMay;
-        private System.Windows.Forms.TextBox nameSep;
-        private System.Windows.Forms.TextBox nameFeb;
-        private System.Windows.Forms.TextBox nameJun;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox textDocEne;
+        private System.Windows.Forms.TextBox textDocOct;
+        private System.Windows.Forms.TextBox textDocJul;
+        private System.Windows.Forms.TextBox textDocAbr;
+        private System.Windows.Forms.TextBox textDocMar;
+        private System.Windows.Forms.TextBox textDocNov;
+        private System.Windows.Forms.TextBox textDocAgo;
+        private System.Windows.Forms.TextBox textDocDic;
+        private System.Windows.Forms.TextBox textDocMay;
+        private System.Windows.Forms.TextBox textDocSep;
+        private System.Windows.Forms.TextBox textDocFeb;
+        private System.Windows.Forms.TextBox textDocJun;
     }
 }
