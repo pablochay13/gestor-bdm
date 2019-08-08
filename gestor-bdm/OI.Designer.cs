@@ -1852,9 +1852,9 @@
             this.groupBox12.Controls.Add(this.esquemaFeb);
             this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox12.Location = new System.Drawing.Point(962, 18);
+            this.groupBox12.Location = new System.Drawing.Point(936, 18);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(276, 403);
+            this.groupBox12.Size = new System.Drawing.Size(263, 403);
             this.groupBox12.TabIndex = 229;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Comisión";
@@ -1864,7 +1864,7 @@
             this.esquemaDateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateDic.Location = new System.Drawing.Point(157, 364);
             this.esquemaDateDic.Name = "esquemaDateDic";
-            this.esquemaDateDic.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateDic.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateDic.TabIndex = 214;
             // 
             // esquemaDateNov
@@ -1872,7 +1872,7 @@
             this.esquemaDateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateNov.Location = new System.Drawing.Point(157, 335);
             this.esquemaDateNov.Name = "esquemaDateNov";
-            this.esquemaDateNov.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateNov.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateNov.TabIndex = 213;
             // 
             // esquemaDateOct
@@ -1880,7 +1880,7 @@
             this.esquemaDateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateOct.Location = new System.Drawing.Point(157, 306);
             this.esquemaDateOct.Name = "esquemaDateOct";
-            this.esquemaDateOct.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateOct.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateOct.TabIndex = 212;
             // 
             // esquemaDateSep
@@ -1888,7 +1888,7 @@
             this.esquemaDateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateSep.Location = new System.Drawing.Point(157, 277);
             this.esquemaDateSep.Name = "esquemaDateSep";
-            this.esquemaDateSep.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateSep.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateSep.TabIndex = 211;
             // 
             // esquemaSep
@@ -1924,7 +1924,7 @@
             this.esquemaDateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateAgo.Location = new System.Drawing.Point(157, 248);
             this.esquemaDateAgo.Name = "esquemaDateAgo";
-            this.esquemaDateAgo.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateAgo.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateAgo.TabIndex = 206;
             // 
             // esquemaDateJul
@@ -1932,7 +1932,7 @@
             this.esquemaDateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateJul.Location = new System.Drawing.Point(157, 219);
             this.esquemaDateJul.Name = "esquemaDateJul";
-            this.esquemaDateJul.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateJul.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateJul.TabIndex = 205;
             // 
             // esquemaDateJun
@@ -1940,7 +1940,7 @@
             this.esquemaDateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateJun.Location = new System.Drawing.Point(157, 190);
             this.esquemaDateJun.Name = "esquemaDateJun";
-            this.esquemaDateJun.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateJun.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateJun.TabIndex = 204;
             // 
             // esquemaDateMay
@@ -1948,7 +1948,7 @@
             this.esquemaDateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateMay.Location = new System.Drawing.Point(157, 161);
             this.esquemaDateMay.Name = "esquemaDateMay";
-            this.esquemaDateMay.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateMay.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateMay.TabIndex = 203;
             // 
             // esquemaMay
@@ -1985,9 +1985,9 @@
             this.label28.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label28.Location = new System.Drawing.Point(154, 25);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(106, 18);
+            this.label28.Size = new System.Drawing.Size(49, 18);
             this.label28.TabIndex = 198;
-            this.label28.Text = "Fecha de pago";
+            this.label28.Text = "Fecha";
             // 
             // label31
             // 
@@ -2004,7 +2004,7 @@
             this.esquemaDateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateAbr.Location = new System.Drawing.Point(157, 132);
             this.esquemaDateAbr.Name = "esquemaDateAbr";
-            this.esquemaDateAbr.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateAbr.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateAbr.TabIndex = 188;
             // 
             // esquemaDateMar
@@ -2012,7 +2012,7 @@
             this.esquemaDateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateMar.Location = new System.Drawing.Point(157, 103);
             this.esquemaDateMar.Name = "esquemaDateMar";
-            this.esquemaDateMar.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateMar.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateMar.TabIndex = 187;
             // 
             // esquemaDateFeb
@@ -2020,7 +2020,7 @@
             this.esquemaDateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateFeb.Location = new System.Drawing.Point(157, 74);
             this.esquemaDateFeb.Name = "esquemaDateFeb";
-            this.esquemaDateFeb.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateFeb.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateFeb.TabIndex = 186;
             // 
             // esquemaDateEne
@@ -2028,7 +2028,7 @@
             this.esquemaDateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateEne.Location = new System.Drawing.Point(157, 45);
             this.esquemaDateEne.Name = "esquemaDateEne";
-            this.esquemaDateEne.Size = new System.Drawing.Size(108, 24);
+            this.esquemaDateEne.Size = new System.Drawing.Size(96, 24);
             this.esquemaDateEne.TabIndex = 185;
             // 
             // esquemaEne
@@ -2157,9 +2157,9 @@
             this.groupBox11.Controls.Add(this.cobradoJun);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox11.Location = new System.Drawing.Point(724, 18);
+            this.groupBox11.Location = new System.Drawing.Point(712, 18);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(232, 403);
+            this.groupBox11.Size = new System.Drawing.Size(218, 403);
             this.groupBox11.TabIndex = 227;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Cobrado";
@@ -2170,9 +2170,9 @@
             this.label25.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label25.Location = new System.Drawing.Point(112, 25);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(115, 18);
+            this.label25.Size = new System.Drawing.Size(49, 18);
             this.label25.TabIndex = 198;
-            this.label25.Text = "Fecha de Cobro";
+            this.label25.Text = "Fecha";
             // 
             // label24
             // 
@@ -2189,7 +2189,7 @@
             this.dateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDic.Location = new System.Drawing.Point(115, 364);
             this.dateDic.Name = "dateDic";
-            this.dateDic.Size = new System.Drawing.Size(108, 24);
+            this.dateDic.Size = new System.Drawing.Size(96, 24);
             this.dateDic.TabIndex = 196;
             // 
             // dateNov
@@ -2197,7 +2197,7 @@
             this.dateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNov.Location = new System.Drawing.Point(115, 335);
             this.dateNov.Name = "dateNov";
-            this.dateNov.Size = new System.Drawing.Size(108, 24);
+            this.dateNov.Size = new System.Drawing.Size(96, 24);
             this.dateNov.TabIndex = 195;
             // 
             // dateOct
@@ -2205,7 +2205,7 @@
             this.dateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateOct.Location = new System.Drawing.Point(115, 306);
             this.dateOct.Name = "dateOct";
-            this.dateOct.Size = new System.Drawing.Size(108, 24);
+            this.dateOct.Size = new System.Drawing.Size(96, 24);
             this.dateOct.TabIndex = 194;
             // 
             // dateSep
@@ -2213,7 +2213,7 @@
             this.dateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateSep.Location = new System.Drawing.Point(115, 277);
             this.dateSep.Name = "dateSep";
-            this.dateSep.Size = new System.Drawing.Size(108, 24);
+            this.dateSep.Size = new System.Drawing.Size(96, 24);
             this.dateSep.TabIndex = 193;
             // 
             // dateAgo
@@ -2221,7 +2221,7 @@
             this.dateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAgo.Location = new System.Drawing.Point(115, 248);
             this.dateAgo.Name = "dateAgo";
-            this.dateAgo.Size = new System.Drawing.Size(108, 24);
+            this.dateAgo.Size = new System.Drawing.Size(96, 24);
             this.dateAgo.TabIndex = 192;
             // 
             // dateJul
@@ -2229,7 +2229,7 @@
             this.dateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateJul.Location = new System.Drawing.Point(115, 219);
             this.dateJul.Name = "dateJul";
-            this.dateJul.Size = new System.Drawing.Size(108, 24);
+            this.dateJul.Size = new System.Drawing.Size(96, 24);
             this.dateJul.TabIndex = 191;
             // 
             // dateJun
@@ -2237,7 +2237,7 @@
             this.dateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateJun.Location = new System.Drawing.Point(115, 190);
             this.dateJun.Name = "dateJun";
-            this.dateJun.Size = new System.Drawing.Size(108, 24);
+            this.dateJun.Size = new System.Drawing.Size(96, 24);
             this.dateJun.TabIndex = 190;
             // 
             // dateMay
@@ -2245,7 +2245,7 @@
             this.dateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateMay.Location = new System.Drawing.Point(115, 161);
             this.dateMay.Name = "dateMay";
-            this.dateMay.Size = new System.Drawing.Size(108, 24);
+            this.dateMay.Size = new System.Drawing.Size(96, 24);
             this.dateMay.TabIndex = 189;
             // 
             // dateAbr
@@ -2253,7 +2253,7 @@
             this.dateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAbr.Location = new System.Drawing.Point(115, 132);
             this.dateAbr.Name = "dateAbr";
-            this.dateAbr.Size = new System.Drawing.Size(108, 24);
+            this.dateAbr.Size = new System.Drawing.Size(96, 24);
             this.dateAbr.TabIndex = 188;
             // 
             // dateMar
@@ -2261,7 +2261,7 @@
             this.dateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateMar.Location = new System.Drawing.Point(115, 103);
             this.dateMar.Name = "dateMar";
-            this.dateMar.Size = new System.Drawing.Size(108, 24);
+            this.dateMar.Size = new System.Drawing.Size(96, 24);
             this.dateMar.TabIndex = 187;
             // 
             // dateFeb
@@ -2269,7 +2269,7 @@
             this.dateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateFeb.Location = new System.Drawing.Point(115, 74);
             this.dateFeb.Name = "dateFeb";
-            this.dateFeb.Size = new System.Drawing.Size(108, 24);
+            this.dateFeb.Size = new System.Drawing.Size(96, 24);
             this.dateFeb.TabIndex = 186;
             // 
             // dateEne
@@ -2277,7 +2277,7 @@
             this.dateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateEne.Location = new System.Drawing.Point(115, 45);
             this.dateEne.Name = "dateEne";
-            this.dateEne.Size = new System.Drawing.Size(108, 24);
+            this.dateEne.Size = new System.Drawing.Size(96, 24);
             this.dateEne.TabIndex = 185;
             // 
             // cobradoEne
@@ -2430,7 +2430,7 @@
             this.groupBox10.Controls.Add(this.facturadoJun);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox10.Location = new System.Drawing.Point(350, 18);
+            this.groupBox10.Location = new System.Drawing.Point(338, 18);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(368, 403);
             this.groupBox10.TabIndex = 226;
@@ -3014,7 +3014,7 @@
             this.groupBox9.Controls.Add(this.montoJun);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox9.Location = new System.Drawing.Point(225, 18);
+            this.groupBox9.Location = new System.Drawing.Point(213, 18);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(119, 403);
             this.groupBox9.TabIndex = 225;
@@ -3135,7 +3135,7 @@
             this.groupBox8.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox8.Location = new System.Drawing.Point(7, 18);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(212, 403);
+            this.groupBox8.Size = new System.Drawing.Size(200, 403);
             this.groupBox8.TabIndex = 223;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Mes / Año";
@@ -3144,7 +3144,7 @@
             // 
             this.cDiciembre.AutoSize = true;
             this.cDiciembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cDiciembre.Location = new System.Drawing.Point(15, 369);
+            this.cDiciembre.Location = new System.Drawing.Point(11, 369);
             this.cDiciembre.Name = "cDiciembre";
             this.cDiciembre.Size = new System.Drawing.Size(94, 22);
             this.cDiciembre.TabIndex = 163;
@@ -3155,7 +3155,7 @@
             // 
             this.cNoviembre.AutoSize = true;
             this.cNoviembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cNoviembre.Location = new System.Drawing.Point(15, 339);
+            this.cNoviembre.Location = new System.Drawing.Point(11, 339);
             this.cNoviembre.Name = "cNoviembre";
             this.cNoviembre.Size = new System.Drawing.Size(99, 22);
             this.cNoviembre.TabIndex = 162;
@@ -3166,7 +3166,7 @@
             // 
             this.cOctubre.AutoSize = true;
             this.cOctubre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cOctubre.Location = new System.Drawing.Point(15, 310);
+            this.cOctubre.Location = new System.Drawing.Point(11, 310);
             this.cOctubre.Name = "cOctubre";
             this.cOctubre.Size = new System.Drawing.Size(80, 22);
             this.cOctubre.TabIndex = 161;
@@ -3177,7 +3177,7 @@
             // 
             this.cSeptiembre.AutoSize = true;
             this.cSeptiembre.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cSeptiembre.Location = new System.Drawing.Point(15, 281);
+            this.cSeptiembre.Location = new System.Drawing.Point(11, 281);
             this.cSeptiembre.Name = "cSeptiembre";
             this.cSeptiembre.Size = new System.Drawing.Size(102, 22);
             this.cSeptiembre.TabIndex = 160;
@@ -3188,7 +3188,7 @@
             // 
             this.cAgosto.AutoSize = true;
             this.cAgosto.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cAgosto.Location = new System.Drawing.Point(15, 252);
+            this.cAgosto.Location = new System.Drawing.Point(11, 252);
             this.cAgosto.Name = "cAgosto";
             this.cAgosto.Size = new System.Drawing.Size(74, 22);
             this.cAgosto.TabIndex = 159;
@@ -3199,7 +3199,7 @@
             // 
             this.cJulio.AutoSize = true;
             this.cJulio.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cJulio.Location = new System.Drawing.Point(15, 223);
+            this.cJulio.Location = new System.Drawing.Point(11, 223);
             this.cJulio.Name = "cJulio";
             this.cJulio.Size = new System.Drawing.Size(58, 22);
             this.cJulio.TabIndex = 158;
@@ -3210,7 +3210,7 @@
             // 
             this.cJunio.AutoSize = true;
             this.cJunio.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cJunio.Location = new System.Drawing.Point(15, 194);
+            this.cJunio.Location = new System.Drawing.Point(11, 194);
             this.cJunio.Name = "cJunio";
             this.cJunio.Size = new System.Drawing.Size(63, 22);
             this.cJunio.TabIndex = 157;
@@ -3221,7 +3221,7 @@
             // 
             this.cMayo.AutoSize = true;
             this.cMayo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cMayo.Location = new System.Drawing.Point(15, 165);
+            this.cMayo.Location = new System.Drawing.Point(11, 165);
             this.cMayo.Name = "cMayo";
             this.cMayo.Size = new System.Drawing.Size(64, 22);
             this.cMayo.TabIndex = 156;
@@ -3232,7 +3232,7 @@
             // 
             this.cAbril.AutoSize = true;
             this.cAbril.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cAbril.Location = new System.Drawing.Point(15, 136);
+            this.cAbril.Location = new System.Drawing.Point(11, 136);
             this.cAbril.Name = "cAbril";
             this.cAbril.Size = new System.Drawing.Size(55, 22);
             this.cAbril.TabIndex = 155;
@@ -3241,7 +3241,7 @@
             // 
             // tEnero
             // 
-            this.tEnero.Location = new System.Drawing.Point(125, 47);
+            this.tEnero.Location = new System.Drawing.Point(114, 49);
             this.tEnero.Name = "tEnero";
             this.tEnero.Size = new System.Drawing.Size(76, 24);
             this.tEnero.TabIndex = 140;
@@ -3250,7 +3250,7 @@
             // 
             this.cMarzo.AutoSize = true;
             this.cMarzo.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cMarzo.Location = new System.Drawing.Point(15, 107);
+            this.cMarzo.Location = new System.Drawing.Point(11, 107);
             this.cMarzo.Name = "cMarzo";
             this.cMarzo.Size = new System.Drawing.Size(70, 22);
             this.cMarzo.TabIndex = 154;
@@ -3261,7 +3261,7 @@
             // 
             this.cFebrero.AutoSize = true;
             this.cFebrero.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cFebrero.Location = new System.Drawing.Point(15, 78);
+            this.cFebrero.Location = new System.Drawing.Point(11, 78);
             this.cFebrero.Name = "cFebrero";
             this.cFebrero.Size = new System.Drawing.Size(79, 22);
             this.cFebrero.TabIndex = 153;
@@ -3272,7 +3272,7 @@
             // 
             this.cEnero.AutoSize = true;
             this.cEnero.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.cEnero.Location = new System.Drawing.Point(15, 51);
+            this.cEnero.Location = new System.Drawing.Point(11, 51);
             this.cEnero.Name = "cEnero";
             this.cEnero.Size = new System.Drawing.Size(67, 22);
             this.cEnero.TabIndex = 152;
@@ -3281,77 +3281,77 @@
             // 
             // tOctubre
             // 
-            this.tOctubre.Location = new System.Drawing.Point(125, 308);
+            this.tOctubre.Location = new System.Drawing.Point(114, 310);
             this.tOctubre.Name = "tOctubre";
             this.tOctubre.Size = new System.Drawing.Size(76, 24);
             this.tOctubre.TabIndex = 148;
             // 
             // tJulio
             // 
-            this.tJulio.Location = new System.Drawing.Point(125, 221);
+            this.tJulio.Location = new System.Drawing.Point(114, 223);
             this.tJulio.Name = "tJulio";
             this.tJulio.Size = new System.Drawing.Size(76, 24);
             this.tJulio.TabIndex = 147;
             // 
             // tAbril
             // 
-            this.tAbril.Location = new System.Drawing.Point(125, 134);
+            this.tAbril.Location = new System.Drawing.Point(114, 136);
             this.tAbril.Name = "tAbril";
             this.tAbril.Size = new System.Drawing.Size(76, 24);
             this.tAbril.TabIndex = 142;
             // 
             // tMarzo
             // 
-            this.tMarzo.Location = new System.Drawing.Point(125, 105);
+            this.tMarzo.Location = new System.Drawing.Point(114, 107);
             this.tMarzo.Name = "tMarzo";
             this.tMarzo.Size = new System.Drawing.Size(76, 24);
             this.tMarzo.TabIndex = 143;
             // 
             // tNoviembre
             // 
-            this.tNoviembre.Location = new System.Drawing.Point(125, 337);
+            this.tNoviembre.Location = new System.Drawing.Point(114, 339);
             this.tNoviembre.Name = "tNoviembre";
             this.tNoviembre.Size = new System.Drawing.Size(76, 24);
             this.tNoviembre.TabIndex = 150;
             // 
             // tAgosto
             // 
-            this.tAgosto.Location = new System.Drawing.Point(125, 250);
+            this.tAgosto.Location = new System.Drawing.Point(114, 252);
             this.tAgosto.Name = "tAgosto";
             this.tAgosto.Size = new System.Drawing.Size(76, 24);
             this.tAgosto.TabIndex = 145;
             // 
             // tDiciembre
             // 
-            this.tDiciembre.Location = new System.Drawing.Point(125, 366);
+            this.tDiciembre.Location = new System.Drawing.Point(114, 368);
             this.tDiciembre.Name = "tDiciembre";
             this.tDiciembre.Size = new System.Drawing.Size(76, 24);
             this.tDiciembre.TabIndex = 151;
             // 
             // tMayo
             // 
-            this.tMayo.Location = new System.Drawing.Point(125, 163);
+            this.tMayo.Location = new System.Drawing.Point(114, 165);
             this.tMayo.Name = "tMayo";
             this.tMayo.Size = new System.Drawing.Size(76, 24);
             this.tMayo.TabIndex = 146;
             // 
             // tSeptiembre
             // 
-            this.tSeptiembre.Location = new System.Drawing.Point(125, 279);
+            this.tSeptiembre.Location = new System.Drawing.Point(114, 281);
             this.tSeptiembre.Name = "tSeptiembre";
             this.tSeptiembre.Size = new System.Drawing.Size(76, 24);
             this.tSeptiembre.TabIndex = 149;
             // 
             // tFebrero
             // 
-            this.tFebrero.Location = new System.Drawing.Point(125, 76);
+            this.tFebrero.Location = new System.Drawing.Point(114, 78);
             this.tFebrero.Name = "tFebrero";
             this.tFebrero.Size = new System.Drawing.Size(76, 24);
             this.tFebrero.TabIndex = 141;
             // 
             // tJunio
             // 
-            this.tJunio.Location = new System.Drawing.Point(125, 192);
+            this.tJunio.Location = new System.Drawing.Point(114, 194);
             this.tJunio.Name = "tJunio";
             this.tJunio.Size = new System.Drawing.Size(76, 24);
             this.tJunio.TabIndex = 144;
