@@ -203,5 +203,12 @@ namespace gestor_bdm
             ventana.MdiParent = this;
             ventana.Show();
         }
+
+        private void DashComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dash_comercial ventana = new dash_comercial();
+            ventana.MdiParent = this;
+            ventana.Show();
+        }
     }
 }

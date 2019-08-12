@@ -143,6 +143,12 @@
     <Compile Include="daf.Designer.cs">
       <DependentUpon>daf.cs</DependentUpon>
     </Compile>
+    <Compile Include="dash_comercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dash_comercial.Designer.cs">
+      <DependentUpon>dash_comercial.cs</DependentUpon>
+    </Compile>
     <Compile Include="generador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="daf.resx">
       <DependentUpon>daf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dash_comercial.resx">
+      <DependentUpon>dash_comercial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generador.resx">
       <DependentUpon>generador.cs</DependentUpon>

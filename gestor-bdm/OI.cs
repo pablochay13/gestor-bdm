@@ -3223,7 +3223,7 @@ namespace gestor_bdm
 
         private void Add_Click(object sender, EventArgs e)
         {
-            if (labelPauta.Text == "MKF")
+             if (labelPauta.Text == "MKF")
             {
                 if (nombreUno.Text == "")
                 {

@@ -49,6 +49,7 @@
             this.contenidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMedia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             this.clientesToolStripMenuItem,
             this.serviciosToolStripMenuItem,
             this.saldosEdiaToolStripMenuItem,
+            this.dashComercialToolStripMenuItem,
             this.usuariosToolStripMenuItem,
             this.herramientasToolStripMenuItem,
             this.ayudaToolStripMenuItem});
@@ -82,7 +84,7 @@
             // 
             this.landingsBaseDatosToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.database;
             this.landingsBaseDatosToolStripMenuItem.Name = "landingsBaseDatosToolStripMenuItem";
-            this.landingsBaseDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.landingsBaseDatosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.landingsBaseDatosToolStripMenuItem.Text = "Landings Media";
             this.landingsBaseDatosToolStripMenuItem.Click += new System.EventHandler(this.landingsBaseDatosToolStripMenuItem_Click);
             // 
@@ -90,7 +92,7 @@
             // 
             this.generadorCodigoToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.coding;
             this.generadorCodigoToolStripMenuItem.Name = "generadorCodigoToolStripMenuItem";
-            this.generadorCodigoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.generadorCodigoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.generadorCodigoToolStripMenuItem.Text = "Generador Codigo";
             this.generadorCodigoToolStripMenuItem.Click += new System.EventHandler(this.generadorCodigoToolStripMenuItem_Click);
             // 
@@ -225,6 +227,13 @@
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
             // 
+            // dashComercialToolStripMenuItem
+            // 
+            this.dashComercialToolStripMenuItem.Name = "dashComercialToolStripMenuItem";
+            this.dashComercialToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.dashComercialToolStripMenuItem.Text = "Dash Comercial";
+            this.dashComercialToolStripMenuItem.Click += new System.EventHandler(this.DashComercialToolStripMenuItem_Click);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,5 +275,6 @@
         private System.Windows.Forms.ToolStripMenuItem ejecutivosDAFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem siglasHotelesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarConexiónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dashComercialToolStripMenuItem;
     }
 }
