@@ -3181,9 +3181,7 @@ namespace gestor_bdm
                 {
                     string nombreHotel = Convert.ToString(reader["abreviatura_hotel"]);
                     labelHotel.Text = nombreHotel;
-                }
-
-                con.Close();
+                }                con.Close();
             }
             catch (Exception m)
             {
