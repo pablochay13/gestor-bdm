@@ -59,18 +59,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tableDatos = new System.Windows.Forms.DataGridView();
-            this.comboStatus = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboTipoInversion = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboTipoCliente = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textPais = new System.Windows.Forms.TextBox();
-            this.comboPais = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboClientes = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipo_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +73,18 @@
             this.sell_rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.porcentaje_banco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboStatus = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboTipoInversion = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboTipoCliente = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textPais = new System.Windows.Forms.TextBox();
+            this.comboPais = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboClientes = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -165,6 +165,7 @@
             this.addTable.TabIndex = 237;
             this.addTable.Text = "Añadir";
             this.addTable.UseVisualStyleBackColor = true;
+            this.addTable.Click += new System.EventHandler(this.AddTable_Click);
             // 
             // comboTemporada
             // 
@@ -359,6 +360,7 @@
             this.add.TabIndex = 215;
             this.add.Text = "Agregar";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.Add_Click);
             // 
             // delete
             // 
@@ -419,6 +421,76 @@
             this.tableDatos.Name = "tableDatos";
             this.tableDatos.Size = new System.Drawing.Size(1219, 259);
             this.tableDatos.TabIndex = 210;
+            // 
+            // cliente
+            // 
+            this.cliente.HeaderText = "Cliente";
+            this.cliente.Name = "cliente";
+            // 
+            // pais
+            // 
+            this.pais.HeaderText = "Pais";
+            this.pais.Name = "pais";
+            // 
+            // tipo_cliente
+            // 
+            this.tipo_cliente.HeaderText = "Tipo de cliente";
+            this.tipo_cliente.Name = "tipo_cliente";
+            // 
+            // tipo_inversion
+            // 
+            this.tipo_inversion.HeaderText = "Tipo de inversión";
+            this.tipo_inversion.Name = "tipo_inversion";
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
+            // 
+            // mercado_domestico
+            // 
+            this.mercado_domestico.HeaderText = "Mercado domestico";
+            this.mercado_domestico.Name = "mercado_domestico";
+            // 
+            // share
+            // 
+            this.share.HeaderText = "Share";
+            this.share.Name = "share";
+            // 
+            // canal
+            // 
+            this.canal.HeaderText = "Canal";
+            this.canal.Name = "canal";
+            // 
+            // temporada_venta
+            // 
+            this.temporada_venta.HeaderText = "Temporada de venta";
+            this.temporada_venta.Name = "temporada_venta";
+            // 
+            // anticipacion_compra
+            // 
+            this.anticipacion_compra.HeaderText = "Anticipación de compra";
+            this.anticipacion_compra.Name = "anticipacion_compra";
+            // 
+            // estancia_promedio
+            // 
+            this.estancia_promedio.HeaderText = "Estancia promedio";
+            this.estancia_promedio.Name = "estancia_promedio";
+            // 
+            // sell_rate
+            // 
+            this.sell_rate.HeaderText = "Sell Rate";
+            this.sell_rate.Name = "sell_rate";
+            // 
+            // banco
+            // 
+            this.banco.HeaderText = "Banco";
+            this.banco.Name = "banco";
+            // 
+            // porcentaje_banco
+            // 
+            this.porcentaje_banco.HeaderText = "Porcentaje TC";
+            this.porcentaje_banco.Name = "porcentaje_banco";
             // 
             // comboStatus
             // 
@@ -533,76 +605,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // cliente
-            // 
-            this.cliente.HeaderText = "Cliente";
-            this.cliente.Name = "cliente";
-            // 
-            // pais
-            // 
-            this.pais.HeaderText = "Pais";
-            this.pais.Name = "pais";
-            // 
-            // tipo_cliente
-            // 
-            this.tipo_cliente.HeaderText = "Tipo de cliente";
-            this.tipo_cliente.Name = "tipo_cliente";
-            // 
-            // tipo_inversion
-            // 
-            this.tipo_inversion.HeaderText = "Tipo de inversión";
-            this.tipo_inversion.Name = "tipo_inversion";
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            // 
-            // mercado_domestico
-            // 
-            this.mercado_domestico.HeaderText = "Mercado domestico";
-            this.mercado_domestico.Name = "mercado_domestico";
-            // 
-            // share
-            // 
-            this.share.HeaderText = "Share";
-            this.share.Name = "share";
-            // 
-            // canal
-            // 
-            this.canal.HeaderText = "Canal";
-            this.canal.Name = "canal";
-            // 
-            // temporada_venta
-            // 
-            this.temporada_venta.HeaderText = "Temporada de venta";
-            this.temporada_venta.Name = "temporada_venta";
-            // 
-            // anticipacion_compra
-            // 
-            this.anticipacion_compra.HeaderText = "Anticipación de compra";
-            this.anticipacion_compra.Name = "anticipacion_compra";
-            // 
-            // estancia_promedio
-            // 
-            this.estancia_promedio.HeaderText = "Estancia promedio";
-            this.estancia_promedio.Name = "estancia_promedio";
-            // 
-            // sell_rate
-            // 
-            this.sell_rate.HeaderText = "Sell Rate";
-            this.sell_rate.Name = "sell_rate";
-            // 
-            // banco
-            // 
-            this.banco.HeaderText = "Banco";
-            this.banco.Name = "banco";
-            // 
-            // porcentaje_banco
-            // 
-            this.porcentaje_banco.HeaderText = "Porcentaje TC";
-            this.porcentaje_banco.Name = "porcentaje_banco";
             // 
             // dash_comercial
             // 
