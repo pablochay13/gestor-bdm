@@ -380,6 +380,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="ico.ico" />
+    <None Include="Resources\blogging.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

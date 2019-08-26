@@ -36,6 +36,7 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saldosEdiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,6 @@
             this.contenidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dashComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMedia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,6 +119,14 @@
             this.saldosEdiaToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
             this.saldosEdiaToolStripMenuItem.Text = "Ordenes de Inserción";
             this.saldosEdiaToolStripMenuItem.Click += new System.EventHandler(this.saldosEdiaToolStripMenuItem_Click);
+            // 
+            // dashComercialToolStripMenuItem
+            // 
+            this.dashComercialToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.blogging;
+            this.dashComercialToolStripMenuItem.Name = "dashComercialToolStripMenuItem";
+            this.dashComercialToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.dashComercialToolStripMenuItem.Text = "Dash Comercial";
+            this.dashComercialToolStripMenuItem.Click += new System.EventHandler(this.DashComercialToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -226,13 +234,6 @@
             this.acercadeToolStripMenuItem.Name = "acercadeToolStripMenuItem";
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
-            // 
-            // dashComercialToolStripMenuItem
-            // 
-            this.dashComercialToolStripMenuItem.Name = "dashComercialToolStripMenuItem";
-            this.dashComercialToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
-            this.dashComercialToolStripMenuItem.Text = "Dash Comercial";
-            this.dashComercialToolStripMenuItem.Click += new System.EventHandler(this.DashComercialToolStripMenuItem_Click);
             // 
             // main
             // 
