@@ -143,7 +143,7 @@ namespace gestor_bdm
 
                         con.Open();
 
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `region` , `cluster` , `cluster` , `correo` , `status`) VALUES ('" + name.Text + "','" + comboPais.Text + "','" + comboCluster.Text + "','" + mail.Text + "','" + valor + "' )", con);
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO supply_manager (`nombre` , `region` , `cluster` , `correo` , `status`) VALUES ('" + name.Text + "','" + comboPais.Text + "','" + comboCluster.Text + "','" + mail.Text + "','" + valor + "' )", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Registro agregado correctamente", "Sistema BestDay Media", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         con.Close();
