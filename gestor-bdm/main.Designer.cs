@@ -66,7 +66,7 @@
             this.ayudaToolStripMenuItem});
             this.menuMedia.Location = new System.Drawing.Point(0, 0);
             this.menuMedia.Name = "menuMedia";
-            this.menuMedia.Size = new System.Drawing.Size(1216, 24);
+            this.menuMedia.Size = new System.Drawing.Size(1275, 24);
             this.menuMedia.TabIndex = 3;
             this.menuMedia.Text = "menuStrip1";
             // 
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1216, 708);
+            this.ClientSize = new System.Drawing.Size(1275, 761);
             this.Controls.Add(this.menuMedia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;

@@ -44,8 +44,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.add_user = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
@@ -58,7 +58,7 @@
             this.tPrivilegios.ReadOnly = true;
             this.tPrivilegios.Size = new System.Drawing.Size(257, 27);
             this.tPrivilegios.TabIndex = 49;
-            this.tPrivilegios.Text = "admin";
+            this.tPrivilegios.Text = "user";
             this.tPrivilegios.Visible = false;
             // 
             // label6
@@ -183,16 +183,6 @@
             this.panel1.Size = new System.Drawing.Size(286, 30);
             this.panel1.TabIndex = 51;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(67, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "REGISTRO DE ADMIN";
-            // 
             // close
             // 
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -203,6 +193,16 @@
             this.close.TabIndex = 52;
             this.close.TabStop = false;
             this.close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.close_MouseClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(61, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "REGISTRO DE USUARIO";
             // 
             // registro
             // 
