@@ -137,6 +137,12 @@
       <DependentUpon>contratos.cs</DependentUpon>
     </Compile>
     <Compile Include="Correos.cs" />
+    <Compile Include="create_OI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create_OI.Designer.cs">
+      <DependentUpon>create_OI.cs</DependentUpon>
+    </Compile>
     <Compile Include="daf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,18 +215,6 @@
     <Compile Include="operadores.Designer.cs">
       <DependentUpon>operadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="ordenes_global.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ordenes_global.Designer.cs">
-      <DependentUpon>ordenes_global.cs</DependentUpon>
-    </Compile>
-    <Compile Include="orden_insercion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="orden_insercion.Designer.cs">
-      <DependentUpon>orden_insercion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -291,6 +285,9 @@
     <EmbeddedResource Include="contratos.resx">
       <DependentUpon>contratos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="create_OI.resx">
+      <DependentUpon>create_OI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="daf.resx">
       <DependentUpon>daf.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,12 +323,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="operadores.resx">
       <DependentUpon>operadores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ordenes_global.resx">
-      <DependentUpon>ordenes_global.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="orden_insercion.resx">
-      <DependentUpon>orden_insercion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

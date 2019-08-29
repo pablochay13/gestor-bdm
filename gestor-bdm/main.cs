@@ -143,9 +143,9 @@ namespace gestor_bdm
 
         private void saldosEdiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OI ventana = new OI();
-            ventana.MdiParent = this;
-            ventana.Show();
+            //OI ventana = new OI();
+            //ventana.MdiParent = this;
+            //ventana.Show();
             //saldos_media ventana = new saldos_media();
             //ventana.MdiParent = this;
             //ventana.Show();
@@ -197,16 +197,23 @@ namespace gestor_bdm
             con.Close();
         }
 
-        private void DToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DashComercialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            orden_inserccion ventana = new orden_inserccion();
+            dash_comercial ventana = new dash_comercial();
             ventana.MdiParent = this;
             ventana.Show();
         }
 
-        private void DashComercialToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dash_comercial ventana = new dash_comercial();
+            OI ventana = new OI();
+            ventana.MdiParent = this;
+            ventana.Show();
+        }
+
+        private void GeneradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            create_OI ventana = new create_OI();
             ventana.MdiParent = this;
             ventana.Show();
         }
