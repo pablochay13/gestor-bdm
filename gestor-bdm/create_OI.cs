@@ -17,7 +17,7 @@ namespace gestor_bdm
             InitializeComponent();
         }
 
-        private void TextBox19_TextChanged(object sender, EventArgs e)
+        private void Export_Click(object sender, EventArgs e)
         {
 
         }
