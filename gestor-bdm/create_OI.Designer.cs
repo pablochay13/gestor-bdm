@@ -89,15 +89,15 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMF = new System.Windows.Forms.CheckBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeMF_hasta = new System.Windows.Forms.DateTimePicker();
             this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeMF_desde = new System.Windows.Forms.DateTimePicker();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.porcentajeMF_box = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cash_in_checkBox = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.hotelCorreo = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -419,15 +419,15 @@
             this.groupBox4.Controls.Add(this.checkBox4);
             this.groupBox4.Controls.Add(this.checkBox3);
             this.groupBox4.Controls.Add(this.label38);
-            this.groupBox4.Controls.Add(this.checkBox2);
+            this.groupBox4.Controls.Add(this.checkBoxMF);
             this.groupBox4.Controls.Add(this.label37);
-            this.groupBox4.Controls.Add(this.dateTimePicker4);
+            this.groupBox4.Controls.Add(this.dateTimeMF_hasta);
             this.groupBox4.Controls.Add(this.label35);
-            this.groupBox4.Controls.Add(this.dateTimePicker5);
+            this.groupBox4.Controls.Add(this.dateTimeMF_desde);
             this.groupBox4.Controls.Add(this.label36);
-            this.groupBox4.Controls.Add(this.textBox25);
+            this.groupBox4.Controls.Add(this.porcentajeMF_box);
             this.groupBox4.Controls.Add(this.label34);
-            this.groupBox4.Controls.Add(this.checkBox1);
+            this.groupBox4.Controls.Add(this.cash_in_checkBox);
             this.groupBox4.Location = new System.Drawing.Point(11, 1034);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(876, 825);
@@ -737,14 +737,14 @@
             this.label38.TabIndex = 35;
             this.label38.Text = "Forma de calculo: ";
             // 
-            // checkBox2
+            // checkBoxMF
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(157, 90);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 34;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxMF.AutoSize = true;
+            this.checkBoxMF.Location = new System.Drawing.Point(157, 90);
+            this.checkBoxMF.Name = "checkBoxMF";
+            this.checkBoxMF.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxMF.TabIndex = 34;
+            this.checkBoxMF.UseVisualStyleBackColor = true;
             // 
             // label37
             // 
@@ -755,13 +755,13 @@
             this.label37.TabIndex = 33;
             this.label37.Text = "%";
             // 
-            // dateTimePicker4
+            // dateTimeMF_hasta
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(707, 81);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(137, 26);
-            this.dateTimePicker4.TabIndex = 32;
+            this.dateTimeMF_hasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeMF_hasta.Location = new System.Drawing.Point(707, 81);
+            this.dateTimeMF_hasta.Name = "dateTimeMF_hasta";
+            this.dateTimeMF_hasta.Size = new System.Drawing.Size(137, 26);
+            this.dateTimeMF_hasta.TabIndex = 32;
             // 
             // label35
             // 
@@ -772,13 +772,13 @@
             this.label35.TabIndex = 31;
             this.label35.Text = "hasta fecha:";
             // 
-            // dateTimePicker5
+            // dateTimeMF_desde
             // 
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(442, 81);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(137, 26);
-            this.dateTimePicker5.TabIndex = 30;
+            this.dateTimeMF_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeMF_desde.Location = new System.Drawing.Point(442, 81);
+            this.dateTimeMF_desde.Name = "dateTimeMF_desde";
+            this.dateTimeMF_desde.Size = new System.Drawing.Size(137, 26);
+            this.dateTimeMF_desde.TabIndex = 30;
             // 
             // label36
             // 
@@ -789,12 +789,12 @@
             this.label36.TabIndex = 29;
             this.label36.Text = "de fecha:";
             // 
-            // textBox25
+            // porcentajeMF_box
             // 
-            this.textBox25.Location = new System.Drawing.Point(203, 83);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(100, 26);
-            this.textBox25.TabIndex = 28;
+            this.porcentajeMF_box.Location = new System.Drawing.Point(203, 83);
+            this.porcentajeMF_box.Name = "porcentajeMF_box";
+            this.porcentajeMF_box.Size = new System.Drawing.Size(100, 26);
+            this.porcentajeMF_box.TabIndex = 28;
             // 
             // label34
             // 
@@ -806,15 +806,15 @@
             this.label34.TabIndex = 27;
             this.label34.Text = "Marketing found:";
             // 
-            // checkBox1
+            // cash_in_checkBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(10, 43);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Cash IN";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cash_in_checkBox.AutoSize = true;
+            this.cash_in_checkBox.Location = new System.Drawing.Point(10, 43);
+            this.cash_in_checkBox.Name = "cash_in_checkBox";
+            this.cash_in_checkBox.Size = new System.Drawing.Size(85, 24);
+            this.cash_in_checkBox.TabIndex = 0;
+            this.cash_in_checkBox.Text = "Cash IN";
+            this.cash_in_checkBox.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -1408,7 +1408,7 @@
             // Export
             // 
             this.Export.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Export.Location = new System.Drawing.Point(803, 1);
+            this.Export.Location = new System.Drawing.Point(803, 2);
             this.Export.Name = "Export";
             this.Export.Size = new System.Drawing.Size(117, 25);
             this.Export.TabIndex = 1;
@@ -1518,15 +1518,15 @@
         private System.Windows.Forms.TextBox mediaRazon;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBoxMF;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimeMF_hasta;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dateTimeMF_desde;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox porcentajeMF_box;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cash_in_checkBox;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label38;

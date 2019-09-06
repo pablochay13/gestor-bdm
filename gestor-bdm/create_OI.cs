@@ -134,6 +134,49 @@ namespace gestor_bdm
                 bottom_media_3.Colspan = 2;
                 table_3.AddCell(bottom_media_3);
 
+
+                //caratula
+                string checked_cash_in = "";
+
+                if(cash_in_checkBox.Checked == true)
+                {
+                    checked_cash_in = "X";
+                }
+
+                PdfPTable cash_in = new PdfPTable(1);
+                cash_in.WidthPercentage = 100;
+                PdfPCell cash_in_oi = new PdfPCell(new Phrase("ESQUEMA COMERCIAL Y FORMA DE PAGO: " + "             " + "Cash IN: " + checked_cash_in));
+                cash_in_oi.BackgroundColor = ExtendedColor.YELLOW; //cambiar color cabecera
+                cash_in_oi.HorizontalAlignment = 0; //0=Izquierda, 1=Centro, 2 = Derecha
+
+                cash_in.AddCell(cash_in_oi);
+
+
+                //Marketing Found
+                string desde_dia_mf, desde_mes_mf, desde_anio_mf, hasta_dia_mf, hasta_mes_mf, hasta_anio_mf, porcentaje_mf = "";
+
+                desde_anio_mf = dateTimeMF_desde.Value.Year.ToString();
+                desde_mes_mf = dateTimeMF_desde.Value.Month.ToString();
+                desde_dia_mf = dateTimeMF_desde.Value.Day.ToString();
+
+                hasta_anio_mf = dateTimeMF_hasta.Value.Year.ToString();
+                hasta_mes_mf = dateTimeMF_hasta.Value.Month.ToString();
+                hasta_dia_mf = dateTimeMF_hasta.Value.Day.ToString();
+
+                string checked_mf_oi = "";
+
+                if (checkBoxMF.Checked == true)
+                {
+                    checked_mf_oi = "X";
+                }
+
+                PdfPTable vigencia_pauta_mf = new PdfPTable(1);
+                vigencia_pauta_mf.WidthPercentage = 100;
+                PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase("1. MARKETING FUND: " + " " + checked_mf_oi + " " + "Del" + " " + porcentajeMF_box.Text + "%" + " " + "De Fecha: " + " " + desde_dia_mf + " " + "Mes: " + " " + desde_mes_mf + " " + "Año: " + " " + desde_anio_mf + " " + "Hasta Fecha: " + " " + hasta_dia_mf + " " + "Mes: " + " " + hasta_mes_mf + " " + "Año: " + " " + hasta_anio_mf));
+                vigencia_OI_mf.BackgroundColor = ExtendedColor.YELLOW; //cambiar color cabecera
+
+                vigencia_pauta_mf.AddCell(vigencia_OI_mf);
+
                 //Exporting to PDF
                 string folderPath = @"C:\Log\";
                 if (!Directory.Exists(folderPath))
@@ -142,8 +185,6 @@ namespace gestor_bdm
                 }
                 using (FileStream stream = new FileStream(folderPath + "example.pdf", FileMode.Create))
                 {
-                    iTextSharp.text.Font Lemon = FontFactory.GetFont("Lemon/Milk", 24);
-
                     Document pdfDoc = new Document(PageSize.LETTER, 10f, 10f, 10f, 0f);
                     PdfWriter.GetInstance(pdfDoc, stream);
 
@@ -159,6 +200,9 @@ namespace gestor_bdm
                     pdfDoc.Add(new Paragraph(" "));
                     pdfDoc.Add(table_2);
                     pdfDoc.Add(table_3);
+                    pdfDoc.Add(new Paragraph(" "));
+                    pdfDoc.Add(cash_in);
+                    pdfDoc.Add(vigencia_pauta_mf);
 
                     pdfDoc.Close();
 
