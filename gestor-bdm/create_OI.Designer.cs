@@ -84,10 +84,10 @@
             this.facturadoSep = new System.Windows.Forms.TextBox();
             this.facturadoFeb = new System.Windows.Forms.TextBox();
             this.facturadoJun = new System.Windows.Forms.TextBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkFaturacionMensual = new System.Windows.Forms.CheckBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkPagos = new System.Windows.Forms.CheckBox();
+            this.checkProduccion = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
             this.checkBoxMF = new System.Windows.Forms.CheckBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -414,10 +414,10 @@
             this.groupBox4.Controls.Add(this.facturadoSep);
             this.groupBox4.Controls.Add(this.facturadoFeb);
             this.groupBox4.Controls.Add(this.facturadoJun);
-            this.groupBox4.Controls.Add(this.checkBox5);
+            this.groupBox4.Controls.Add(this.checkFaturacionMensual);
             this.groupBox4.Controls.Add(this.label39);
-            this.groupBox4.Controls.Add(this.checkBox4);
-            this.groupBox4.Controls.Add(this.checkBox3);
+            this.groupBox4.Controls.Add(this.checkPagos);
+            this.groupBox4.Controls.Add(this.checkProduccion);
             this.groupBox4.Controls.Add(this.label38);
             this.groupBox4.Controls.Add(this.checkBoxMF);
             this.groupBox4.Controls.Add(this.label37);
@@ -688,14 +688,14 @@
             this.facturadoJun.Size = new System.Drawing.Size(197, 26);
             this.facturadoJun.TabIndex = 242;
             // 
-            // checkBox5
+            // checkFaturacionMensual
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(219, 185);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 39;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkFaturacionMensual.AutoSize = true;
+            this.checkFaturacionMensual.Location = new System.Drawing.Point(219, 185);
+            this.checkFaturacionMensual.Name = "checkFaturacionMensual";
+            this.checkFaturacionMensual.Size = new System.Drawing.Size(15, 14);
+            this.checkFaturacionMensual.TabIndex = 39;
+            this.checkFaturacionMensual.UseVisualStyleBackColor = true;
             // 
             // label39
             // 
@@ -707,25 +707,25 @@
             this.label39.TabIndex = 38;
             this.label39.Text = "Vía facturación mensual:";
             // 
-            // checkBox4
+            // checkPagos
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(313, 131);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(136, 24);
-            this.checkBox4.TabIndex = 37;
-            this.checkBox4.Text = "Pagos emitidos";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkPagos.AutoSize = true;
+            this.checkPagos.Location = new System.Drawing.Point(313, 131);
+            this.checkPagos.Name = "checkPagos";
+            this.checkPagos.Size = new System.Drawing.Size(136, 24);
+            this.checkPagos.TabIndex = 37;
+            this.checkPagos.Text = "Pagos emitidos";
+            this.checkPagos.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkProduccion
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(181, 131);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(107, 24);
-            this.checkBox3.TabIndex = 36;
-            this.checkBox3.Text = "Producción";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkProduccion.AutoSize = true;
+            this.checkProduccion.Location = new System.Drawing.Point(181, 131);
+            this.checkProduccion.Name = "checkProduccion";
+            this.checkProduccion.Size = new System.Drawing.Size(107, 24);
+            this.checkProduccion.TabIndex = 36;
+            this.checkProduccion.Text = "Producción";
+            this.checkProduccion.UseVisualStyleBackColor = true;
             // 
             // label38
             // 
@@ -1527,10 +1527,10 @@
         private System.Windows.Forms.TextBox porcentajeMF_box;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.CheckBox cash_in_checkBox;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkPagos;
+        private System.Windows.Forms.CheckBox checkProduccion;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkFaturacionMensual;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox textDocEne;

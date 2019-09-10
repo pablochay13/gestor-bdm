@@ -35,7 +35,7 @@ namespace gestor_bdm
                 caratula.AddCell(caratula_oi);
 
                 //fecha de firma
-                string anio_firma, mes_firma, dia_firma="";
+                string anio_firma, mes_firma, dia_firma = "";
 
                 anio_firma = fechaFirma_text.Value.Year.ToString();
                 mes_firma = fechaFirma_text.Value.Month.ToString();
@@ -88,7 +88,7 @@ namespace gestor_bdm
                 bottom_media_1.Colspan = 2;
                 table_1.AddCell(bottom_media_1);
 
-                
+
                 //clientes_2
                 PdfPTable table_2 = new PdfPTable(4);
                 table_2.WidthPercentage = 100;
@@ -138,7 +138,7 @@ namespace gestor_bdm
                 //caratula
                 string checked_cash_in = "";
 
-                if(cash_in_checkBox.Checked == true)
+                if (cash_in_checkBox.Checked == true)
                 {
                     checked_cash_in = "X";
                 }
@@ -177,6 +177,52 @@ namespace gestor_bdm
 
                 vigencia_pauta_mf.AddCell(vigencia_OI_mf);
 
+
+                //Forma de calculo
+                string pago_emitido_io = "";
+                string produccion_io_c = "";
+
+                if (checkProduccion.Checked == true)
+                {
+                    produccion_io_c = "X";
+                }
+
+                if (checkPagos.Checked == true)
+                {
+                    pago_emitido_io = "X";
+                }
+
+                PdfPTable forma_calculo = new PdfPTable(1);
+                forma_calculo.WidthPercentage = 100;
+                PdfPCell forma_calculo_io = new PdfPCell(new Phrase("ESQUEMA COMERCIAL Y FORMA DE PAGO: " + "             " + "Cash IN: " + produccion_io_c));
+                forma_calculo_io.BackgroundColor = ExtendedColor.YELLOW; //cambiar color cabecera
+
+                forma_calculo.AddCell(forma_calculo_io);
+
+
+                //Facturacion mensual
+                PdfPTable table = new PdfPTable(3);
+                table.WidthPercentage = 100;
+
+                PdfPCell cell = new PdfPCell(new Phrase("Row 1, Col 1"));
+                table.AddCell(cell);
+                cell = new PdfPCell(new Phrase("Row 1, Col 2"));
+                table.AddCell(cell);
+                cell = new PdfPCell(new Phrase("Row 1, Col 3"));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("Row 2 ,Col 1"));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("Row 2 and row 3, Col 2 and Col 3"));
+                cell.Rowspan = 2;
+                cell.Colspan = 2;
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("Row 3, Col 1"));
+                table.AddCell(cell);
+
+
                 //Exporting to PDF
                 string folderPath = @"C:\Log\";
                 if (!Directory.Exists(folderPath))
@@ -203,6 +249,8 @@ namespace gestor_bdm
                     pdfDoc.Add(new Paragraph(" "));
                     pdfDoc.Add(cash_in);
                     pdfDoc.Add(vigencia_pauta_mf);
+                    pdfDoc.Add(new Paragraph(" "));
+                    pdfDoc.Add(table);
 
                     pdfDoc.Close();
 
