@@ -211,6 +211,11 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase("Row 1, Col 3"));
                 table.AddCell(cell);
 
+                cell = new PdfPCell(new Phrase("Row 2 and row 3, Col 2 and Col 3"));
+                cell.Rowspan = 2;
+                cell.Colspan = 2;
+                table.AddCell(cell);
+
                 cell = new PdfPCell(new Phrase("Row 2 ,Col 1"));
                 table.AddCell(cell);
 
