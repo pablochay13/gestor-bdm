@@ -204,28 +204,149 @@ namespace gestor_bdm
                 PdfPTable table = new PdfPTable(3);
                 table.WidthPercentage = 100;
 
-                PdfPCell cell = new PdfPCell(new Phrase("Row 1, Col 1"));
-                table.AddCell(cell);
-                cell = new PdfPCell(new Phrase("Row 1, Col 2"));
-                table.AddCell(cell);
-                cell = new PdfPCell(new Phrase("Row 1, Col 3"));
+                PdfPCell cell = new PdfPCell(new Phrase("VÏA FACTURACIÖN MENSUAL"));
+                cell.Rowspan = 12;
+                cell.Colspan = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase("Row 2 and row 3, Col 2 and Col 3"));
-                cell.Rowspan = 2;
-                cell.Colspan = 2;
+                cell = new PdfPCell(new Phrase("     "));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase("Row 2 ,Col 1"));
+                cell = new PdfPCell(new Phrase("     "));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase("Row 2 and row 3, Col 2 and Col 3"));
-                cell.Rowspan = 2;
-                cell.Colspan = 2;
+                cell = new PdfPCell(new Phrase("     "));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase("Row 3, Col 1"));
+                cell = new PdfPCell(new Phrase("     "));
                 table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("Total con IVA: "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase("     "));
+                table.AddCell(cell);
+
+
+                //forma de pago
+                PdfPCell forma_pago_table = new PdfPCell(new Phrase("FORMA DE PAGO"));
+                table.AddCell(forma_pago_table);
+                forma_pago_table = new PdfPCell(new Phrase("Transferencia Bancaria: "));
+                table.AddCell(forma_pago_table);
+                forma_pago_table = new PdfPCell(new Phrase("Compensación y Facturas: "));
+                table.AddCell(forma_pago_table);
+
+
+                //condiciones comerciales
+                PdfPTable table_c_C = new PdfPTable(3);
+                table_c_C.WidthPercentage = 100;
+
+                PdfPCell cell_c_C = new PdfPCell(new Phrase("CONDICIONES COMERCIALES"));
+                table_c_C.AddCell(cell_c_C);
+
+                cell_c_C = new PdfPCell(new Phrase("          "));
+                cell_c_C.Rowspan = 2;
+                cell_c_C.Colspan = 2;
+                table_c_C.AddCell(cell_c_C);
+
+                cell_c_C = new PdfPCell(new Phrase(" "));
+                table_c_C.AddCell(cell_c_C);
+
+
+                //datos generales
+                PdfPTable datos_C_c = new PdfPTable(1);
+                datos_C_c.WidthPercentage = 100;
+                PdfPCell datos_IO_CC = new PdfPCell(new Phrase("- El CLIENTE conoce, se sujeta y obliga al cumplimiento de los Términos y Condiciones Best Travel Media establecidos en el Reverso de la presente Orden de Inserción y la Pauta de Medios. " + "\n" + "- El CLIENTE manifiesta bajo protesta de decir verdad que cuenta con la capacidad y facultades necesarias para obligar a su representada al cumplimiento de las obligaciones establecidas en los presentes Términos y  ondiciones Best Travel Media. " + "\n" + " - La Razón Social Contratante señalada en la carátula bajo protesta de decir verdad, manifiesta que actúa en nombre y representación de las propiedades señaladas en el Anexo A de la presente Orden de Inserción."));
+                datos_IO_CC.BackgroundColor = ExtendedColor.YELLOW; //cambiar color cabecera
+                datos_IO_CC.HorizontalAlignment = 1; //0=Izquierda, 1=Centro, 2 = Derecha
+
+                datos_C_c.AddCell(datos_IO_CC);
+
+
+                //parte final
+                PdfPTable table_4 = new PdfPTable(4);
+                table_4.WidthPercentage = 100;
+                PdfPCell cliente_4 = new PdfPCell(new Phrase("CONTACTO DE SEGUIMIENTO DE PAUTA DE MEDIOS"));
+                cliente_4.BackgroundColor = ExtendedColor.ORANGE; //cambiar color cabecera
+                cliente_4.Colspan = 2;
+
+                PdfPCell media_4 = new PdfPCell(new Phrase("CONTACTO DE SEGUIMIENTO DE PAUTA DE TOUR DE HOTELDO"));
+                media_4.BackgroundColor = ExtendedColor.ORANGE; //cambiar color cabecera
+                media_4.Colspan = 2;
+
+                table_4.AddCell(cliente_4);
+                table_4.AddCell(media_4);
+
+                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase("Nombre: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + "\n" + "Correo: " + seguimientoCorreo.Text));
+                bottom_cliente_4.Colspan = 2;
+                table_4.AddCell(bottom_cliente_4);
+
+                PdfPCell bottom_media_4 = new PdfPCell(new Phrase("Nombre: " + hotelNombre.Text + "\n" + "Teléfono: " + HotelTelefono.Text + "\n" + "Correo: " + HotelTelefono.Text + "\n" + "*Indicar ciudades requeridas"));
+                bottom_media_4.Colspan = 2;
+                table_4.AddCell(bottom_media_4);
 
 
                 //Exporting to PDF
@@ -256,6 +377,9 @@ namespace gestor_bdm
                     pdfDoc.Add(vigencia_pauta_mf);
                     pdfDoc.Add(new Paragraph(" "));
                     pdfDoc.Add(table);
+                    pdfDoc.Add(table_c_C);
+                    pdfDoc.Add(datos_C_c);
+                    pdfDoc.Add(table_4);
 
                     pdfDoc.Close();
 
