@@ -340,13 +340,71 @@ namespace gestor_bdm
                 table_4.AddCell(cliente_4);
                 table_4.AddCell(media_4);
 
-                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase("Nombre: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + "\n" + "Correo: " + seguimientoCorreo.Text));
-                bottom_cliente_4.Colspan = 2;
+                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase("FIRMA: "));
                 table_4.AddCell(bottom_cliente_4);
 
-                PdfPCell bottom_media_4 = new PdfPCell(new Phrase("Nombre: " + hotelNombre.Text + "\n" + "Teléfono: " + HotelTelefono.Text + "\n" + "Correo: " + HotelTelefono.Text + "\n" + "*Indicar ciudades requeridas"));
-                bottom_media_4.Colspan = 2;
+                PdfPCell bottom_media_4 = new PdfPCell(new Phrase(" "));
                 table_4.AddCell(bottom_media_4);
+
+                PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase("FIRMA: "));
+                table_4.AddCell(bottom_cliente_5);
+
+                PdfPCell bottom_media_5 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_5);
+
+
+
+
+                PdfPCell bottom_cliente_6 = new PdfPCell(new Phrase("NOMBRE: "));
+                table_4.AddCell(bottom_cliente_6);
+
+                PdfPCell bottom_media_6 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_6);
+
+                PdfPCell bottom_cliente_7 = new PdfPCell(new Phrase("NOMBRE: "));
+                table_4.AddCell(bottom_cliente_7);
+
+                PdfPCell bottom_media_7 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_7);
+
+
+
+
+                PdfPCell bottom_cliente_8 = new PdfPCell(new Phrase("CARGO: "));
+                table_4.AddCell(bottom_cliente_8);
+
+                PdfPCell bottom_media_8 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_8);
+
+                PdfPCell bottom_cliente_9 = new PdfPCell(new Phrase("CARGO: "));
+                table_4.AddCell(bottom_cliente_9);
+
+                PdfPCell bottom_media_9 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_9);
+
+
+
+
+                PdfPCell bottom_cliente_10 = new PdfPCell(new Phrase("LUGAR: "));
+                table_4.AddCell(bottom_cliente_10);
+
+                PdfPCell bottom_media_10 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_10);
+
+                PdfPCell bottom_cliente_11 = new PdfPCell(new Phrase("LUGAR: "));
+                table_4.AddCell(bottom_cliente_11);
+
+                PdfPCell bottom_media_11 = new PdfPCell(new Phrase(" "));
+                table_4.AddCell(bottom_media_11);
+
+
+                //segunda pagina
+                //agregando una imagen
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/log/0002.jpg");
+                imagen.BorderWidth = 0;
+                imagen.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
+                imagen.ScaleToFit(720f, 755.25f);
+
 
 
                 //Exporting to PDF
@@ -380,6 +438,7 @@ namespace gestor_bdm
                     pdfDoc.Add(table_c_C);
                     pdfDoc.Add(datos_C_c);
                     pdfDoc.Add(table_4);
+                    pdfDoc.Add(imagen);
 
                     pdfDoc.Close();
 
