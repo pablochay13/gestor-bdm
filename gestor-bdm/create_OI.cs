@@ -209,7 +209,7 @@ namespace gestor_bdm
                 table.WidthPercentage = 100;
 
                 PdfPCell cell = new PdfPCell(new Phrase(string.Format("VÏA FACTURACIÖN MENSUAL"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell.Rowspan = 12;
+                cell.Rowspan = 13;
                 cell.Colspan = 1;
                 cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell);
@@ -222,81 +222,88 @@ namespace gestor_bdm
                 cell_fm_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_2);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(string.Format(facturadoDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 PdfPCell cell_fm_3 = new PdfPCell(new Phrase(string.Format("Total con IVA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_3.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell_fm_3);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(textTotalIVA.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell.Colspan = 2;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                //cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                //table.AddCell(cell);
 
 
                 //forma de pago
@@ -304,10 +311,24 @@ namespace gestor_bdm
                 forma_pago_table.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(forma_pago_table);
 
-                forma_pago_table = new PdfPCell(new Phrase(string.Format("Transferencia Bancaria: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                string trans_banca_c = " ";
+
+                string compen_fact_c = " ";
+
+                if (c_c_facturas.Checked == true)
+                {
+                    compen_fact_c = "X";
+                }
+
+                if(c_t_bancaria.Checked == true)
+                {
+                    trans_banca_c = "X";
+                }
+
+                forma_pago_table = new PdfPCell(new Phrase(string.Format("Transferencia Bancaria: " + trans_banca_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(forma_pago_table);
 
-                forma_pago_table = new PdfPCell(new Phrase(string.Format("Compensación y Facturas: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                forma_pago_table = new PdfPCell(new Phrase(string.Format("Compensación y Facturas: " + compen_fact_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(forma_pago_table);
 
 
@@ -319,7 +340,7 @@ namespace gestor_bdm
                 cell_c_C.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_c_C.AddCell(cell_c_C);
 
-                cell_c_C = new PdfPCell(new Phrase("          "));
+                cell_c_C = new PdfPCell(new Phrase(textCondiciones.Text));
                 cell_c_C.Rowspan = 2;
                 cell_c_C.Colspan = 2;
                 table_c_C.AddCell(cell_c_C);
@@ -359,7 +380,7 @@ namespace gestor_bdm
                 bottom_cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_4);
 
-                PdfPCell bottom_media_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_4 = new PdfPCell(new Phrase(string.Format(textFirma_c.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_4.Colspan = 2;
                 table_4.AddCell(bottom_media_4);
 
@@ -368,7 +389,7 @@ namespace gestor_bdm
                 bottom_cliente_5.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_5);
 
-                PdfPCell bottom_media_5 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_5 = new PdfPCell(new Phrase(string.Format(textFirma_m.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_5.Colspan = 2;
                 table_4.AddCell(bottom_media_5);
 
@@ -377,7 +398,7 @@ namespace gestor_bdm
                 bottom_cliente_6.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_6);
 
-                PdfPCell bottom_media_6 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_6 = new PdfPCell(new Phrase(string.Format(textNombre_c.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_6.Colspan = 2;
                 table_4.AddCell(bottom_media_6);
 
@@ -386,7 +407,7 @@ namespace gestor_bdm
                 bottom_cliente_7.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_7);
 
-                PdfPCell bottom_media_7 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_7 = new PdfPCell(new Phrase(string.Format(textNombre_m.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_7.Colspan = 2;
                 table_4.AddCell(bottom_media_7);
 
@@ -395,7 +416,7 @@ namespace gestor_bdm
                 bottom_cliente_8.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_8);
 
-                PdfPCell bottom_media_8 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_8 = new PdfPCell(new Phrase(string.Format(textCargo_c.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_8.Colspan = 2;
                 table_4.AddCell(bottom_media_8);
 
@@ -404,7 +425,7 @@ namespace gestor_bdm
                 bottom_cliente_9.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_9);
 
-                PdfPCell bottom_media_9 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_9 = new PdfPCell(new Phrase(string.Format(textCargo_m.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_9.Colspan = 2;
                 table_4.AddCell(bottom_media_9);
 
@@ -413,7 +434,7 @@ namespace gestor_bdm
                 bottom_cliente_10.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_10);
 
-                PdfPCell bottom_media_10 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_10 = new PdfPCell(new Phrase(string.Format(textLugar_c.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_10.Colspan = 2;
                 table_4.AddCell(bottom_media_10);
 
@@ -422,7 +443,7 @@ namespace gestor_bdm
                 bottom_cliente_11.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_11);
 
-                PdfPCell bottom_media_11 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_11 = new PdfPCell(new Phrase(string.Format(textLugar_m.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_11.Colspan = 2;
                 table_4.AddCell(bottom_media_11);
 
@@ -1103,11 +1124,11 @@ namespace gestor_bdm
                 imagen_h.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h.ScaleToFit(120f, 155.25f);
 
-                //imagen header
+                //imagen footer
                 iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("C:/log/0003.png");
                 imagen_f.BorderWidth = 0;
                 imagen_f.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
-                imagen_f.ScaleToFit(300f, 355.25f);
+                imagen_f.ScaleToFit(280f, 335.25f);
 
 
                 //Exporting to PDF
