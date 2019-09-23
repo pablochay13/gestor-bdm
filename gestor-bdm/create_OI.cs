@@ -19,6 +19,19 @@ namespace gestor_bdm
         public create_OI()
         {
             InitializeComponent();
+
+            facturadoEne.SelectedIndex = 0;
+            facturadoFeb.SelectedIndex = 0;
+            facturadoMar.SelectedIndex = 0;
+            facturadoAbr.SelectedIndex = 0;
+            facturadoMay.SelectedIndex = 0;
+            facturadoJun.SelectedIndex = 0;
+            facturadoJul.SelectedIndex = 0;
+            facturadoAgo.SelectedIndex = 0;
+            facturadoSep.SelectedIndex = 0;
+            facturadoOct.SelectedIndex = 0;
+            facturadoNov.SelectedIndex = 0;
+            facturadoDic.SelectedIndex = 0;
         }
 
         private void Export_Click(object sender, EventArgs e)
@@ -42,6 +55,67 @@ namespace gestor_bdm
                 mes_firma = fechaFirma_text.Value.Month.ToString();
                 dia_firma = fechaFirma_text.Value.Day.ToString();
 
+
+                if(mes_firma == "1")
+                {
+                    mes_firma = "Enero";
+                }
+
+                else if (mes_firma == "2")
+                {
+                    mes_firma = "Febrero";
+                }
+
+                else if (mes_firma == "3")
+                {
+                    mes_firma = "Marzo";
+                }
+
+                else if (mes_firma == "4")
+                {
+                    mes_firma = "Abril";
+                }
+
+                else if (mes_firma == "5")
+                {
+                    mes_firma = "Mayo";
+                }
+
+                else if (mes_firma == "6")
+                {
+                    mes_firma = "Junio";
+                }
+
+                else if (mes_firma == "7")
+                {
+                    mes_firma = "Julio";
+                }
+
+                else if (mes_firma == "8")
+                {
+                    mes_firma = "Agosto";
+                }
+
+                else if (mes_firma == "9")
+                {
+                    mes_firma = "Septiembre";
+                }
+
+                else if (mes_firma == "10")
+                {
+                    mes_firma = "Octubre";
+                }
+
+                else if (mes_firma == "11")
+                {
+                    mes_firma = "Noviembre";
+                }
+
+                else if (mes_firma == "12")
+                {
+                    mes_firma = "Diciembre";
+                }
+
                 PdfPTable fecha_firma = new PdfPTable(1);
                 fecha_firma.WidthPercentage = 100;
                 PdfPCell fecha_OI = new PdfPCell(new Phrase(string.Format("FECHA DE FIRMA: " + "Día: " + dia_firma + " " + "Mes: " + " " + mes_firma + " " + "Año: " + " " + anio_firma), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
@@ -59,6 +133,130 @@ namespace gestor_bdm
                 hasta_anio = vigenciaHasta_text.Value.Year.ToString();
                 hasta_mes = vigenciaHasta_text.Value.Month.ToString();
                 hasta_dia = vigenciaHasta_text.Value.Day.ToString();
+
+                //desde
+
+                if (desde_mes == "1")
+                {
+                    desde_mes = "Enero";
+                }
+
+                else if (desde_mes == "2")
+                {
+                    desde_mes = "Febrero";
+                }
+
+                else if (desde_mes == "3")
+                {
+                    desde_mes = "Marzo";
+                }
+
+                else if (desde_mes == "4")
+                {
+                    desde_mes = "Abril";
+                }
+
+                else if (desde_mes == "5")
+                {
+                    desde_mes = "Mayo";
+                }
+
+                else if (desde_mes == "6")
+                {
+                    desde_mes = "Junio";
+                }
+
+                else if (desde_mes == "7")
+                {
+                    desde_mes = "Julio";
+                }
+
+                else if (desde_mes == "8")
+                {
+                    desde_mes = "Agosto";
+                }
+
+                else if (desde_mes == "9")
+                {
+                    desde_mes = "Septiembre";
+                }
+
+                else if (desde_mes == "10")
+                {
+                    desde_mes = "Octubre";
+                }
+
+                else if (desde_mes == "11")
+                {
+                    desde_mes = "Noviembre";
+                }
+
+                else if (desde_mes == "12")
+                {
+                    desde_mes = "Diciembre";
+                }
+
+                //Hasta
+
+                if (hasta_mes == "1")
+                {
+                    hasta_mes = "Enero";
+                }
+
+                else if (hasta_mes == "2")
+                {
+                    hasta_mes = "Febrero";
+                }
+
+                else if (hasta_mes == "3")
+                {
+                    hasta_mes = "Marzo";
+                }
+
+                else if (hasta_mes == "4")
+                {
+                    hasta_mes = "Abril";
+                }
+
+                else if (hasta_mes == "5")
+                {
+                    hasta_mes = "Mayo";
+                }
+
+                else if (hasta_mes == "6")
+                {
+                    hasta_mes = "Junio";
+                }
+
+                else if (hasta_mes == "7")
+                {
+                    hasta_mes = "Julio";
+                }
+
+                else if (hasta_mes == "8")
+                {
+                    hasta_mes = "Agosto";
+                }
+
+                else if (hasta_mes == "9")
+                {
+                    hasta_mes = "Septiembre";
+                }
+
+                else if (hasta_mes == "10")
+                {
+                    hasta_mes = "Octubre";
+                }
+
+                else if (hasta_mes == "11")
+                {
+                    hasta_mes = "Noviembre";
+                }
+
+                else if (hasta_mes == "12")
+                {
+                    hasta_mes = "Diciembre";
+                }
 
                 PdfPTable vigencia_pauta = new PdfPTable(1);
                 vigencia_pauta.WidthPercentage = 100;
@@ -160,6 +358,128 @@ namespace gestor_bdm
                 hasta_mes_mf = dateTimeMF_hasta.Value.Month.ToString();
                 hasta_dia_mf = dateTimeMF_hasta.Value.Day.ToString();
 
+                //desde
+                if (desde_mes_mf == "1")
+                {
+                    desde_mes_mf = "Enero";
+                }
+
+                else if (desde_mes_mf == "2")
+                {
+                    desde_mes_mf = "Febrero";
+                }
+
+                else if (desde_mes_mf == "3")
+                {
+                    desde_mes_mf = "Marzo";
+                }
+
+                else if (desde_mes_mf == "4")
+                {
+                    desde_mes_mf = "Abril";
+                }
+
+                else if (desde_mes_mf == "5")
+                {
+                    desde_mes_mf = "Mayo";
+                }
+
+                else if (desde_mes_mf == "6")
+                {
+                    desde_mes_mf = "Junio";
+                }
+
+                else if (desde_mes_mf == "7")
+                {
+                    desde_mes_mf = "Julio";
+                }
+
+                else if (desde_mes_mf == "8")
+                {
+                    desde_mes_mf = "Agosto";
+                }
+
+                else if (desde_mes_mf == "9")
+                {
+                    desde_mes_mf = "Septiembre";
+                }
+
+                else if (desde_mes_mf == "10")
+                {
+                    desde_mes_mf = "Octubre";
+                }
+
+                else if (desde_mes_mf == "11")
+                {
+                    desde_mes_mf = "Noviembre";
+                }
+
+                else if (desde_mes_mf == "12")
+                {
+                    desde_mes_mf = "Diciembre";
+                }
+
+                //hasta
+                if (hasta_mes_mf == "1")
+                {
+                    hasta_mes_mf = "Enero";
+                }
+
+                else if (hasta_mes_mf == "2")
+                {
+                    hasta_mes_mf = "Febrero";
+                }
+
+                else if (hasta_mes_mf == "3")
+                {
+                    hasta_mes_mf = "Marzo";
+                }
+
+                else if (hasta_mes_mf == "4")
+                {
+                    hasta_mes_mf = "Abril";
+                }
+
+                else if (hasta_mes_mf == "5")
+                {
+                    hasta_mes_mf = "Mayo";
+                }
+
+                else if (hasta_mes_mf == "6")
+                {
+                    hasta_mes_mf = "Junio";
+                }
+
+                else if (hasta_mes_mf == "7")
+                {
+                    hasta_mes_mf = "Julio";
+                }
+
+                else if (hasta_mes_mf == "8")
+                {
+                    hasta_mes_mf = "Agosto";
+                }
+
+                else if (hasta_mes_mf == "9")
+                {
+                    hasta_mes_mf = "Septiembre";
+                }
+
+                else if (hasta_mes_mf == "10")
+                {
+                    hasta_mes_mf = "Octubre";
+                }
+
+                else if (hasta_mes_mf == "11")
+                {
+                    hasta_mes_mf = "Noviembre";
+                }
+
+                else if (hasta_mes_mf == "12")
+                {
+                    hasta_mes_mf = "Diciembre";
+                }
+
                 string checked_mf_oi = "";
 
                 if (checkBoxMF.Checked == true)
@@ -222,73 +542,73 @@ namespace gestor_bdm
                 cell_fm_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_2);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoEne.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoFeb.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoMar.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoAbr.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoMay.Text) + desde_anio_mf, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJun.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoAgo.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoSep.Text + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoOct.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoNov.Text + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(facturadoDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoDic.Text + " " + desde_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
@@ -298,7 +618,28 @@ namespace gestor_bdm
                 cell_fm_3.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell_fm_3);
 
-                cell = new PdfPCell(new Phrase(string.Format(textTotalIVA.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+
+                int cant_ene, cant_feb, cant_mar, cant_abr, cant_may, cant_jun, cant_jul, cant_ago, cant_sep, cant_oct, cant_nov, cant_dic = 0;
+
+                cant_ene = Convert.ToInt32(textDocEne.Text);
+                cant_feb = Convert.ToInt32(textDocFeb.Text);
+                cant_mar = Convert.ToInt32(textDocMar.Text);
+                cant_abr = Convert.ToInt32(textDocAbr.Text);
+                cant_may = Convert.ToInt32(textDocMay.Text);
+                cant_jun = Convert.ToInt32(textDocJun.Text);
+                cant_jul = Convert.ToInt32(textDocJul.Text);
+                cant_ago = Convert.ToInt32(textDocAgo.Text);
+                cant_sep = Convert.ToInt32(textDocSep.Text);
+                cant_oct = Convert.ToInt32(textDocOct.Text);
+                cant_nov = Convert.ToInt32(textDocNov.Text);
+                cant_dic = Convert.ToInt32(textDocDic.Text);
+
+                int total = 0;
+
+                total = cant_ene + cant_feb + cant_mar + cant_abr + cant_may + cant_jun + cant_jul + cant_ago + cant_sep + cant_oct + cant_nov + cant_dic;
+
+
+                cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell.Colspan = 2;
                 table.AddCell(cell);
 
@@ -465,7 +806,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_hotel.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -482,7 +823,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_razon.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -493,7 +834,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_rfc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -504,7 +845,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -515,7 +856,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -526,7 +867,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -537,7 +878,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -554,7 +895,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -578,7 +919,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_hotel.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -595,7 +936,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_razon.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -606,7 +947,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_rfc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -617,7 +958,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -628,7 +969,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -639,7 +980,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -650,7 +991,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -667,7 +1008,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -690,7 +1031,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_hotel.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -707,7 +1048,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_Razon.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -718,7 +1059,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_rfc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -729,7 +1070,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -740,7 +1081,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -751,7 +1092,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -762,7 +1103,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -779,7 +1120,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -802,7 +1143,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_hotel.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -819,7 +1160,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_razon.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -830,7 +1171,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_rfc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -841,7 +1182,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -852,7 +1193,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -863,7 +1204,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -874,7 +1215,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -891,7 +1232,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -913,7 +1254,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_hotel.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -930,7 +1271,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_razon.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -941,7 +1282,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_rfc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -952,7 +1293,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -963,7 +1304,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -974,7 +1315,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -985,7 +1326,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -1002,7 +1343,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.COURIER, 9, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);

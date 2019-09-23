@@ -72,18 +72,6 @@
             this.textDocFeb = new System.Windows.Forms.TextBox();
             this.textDocJun = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.facturadoEne = new System.Windows.Forms.TextBox();
-            this.facturadoOct = new System.Windows.Forms.TextBox();
-            this.facturadoJul = new System.Windows.Forms.TextBox();
-            this.facturadoAbr = new System.Windows.Forms.TextBox();
-            this.facturadoMar = new System.Windows.Forms.TextBox();
-            this.facturadoNov = new System.Windows.Forms.TextBox();
-            this.facturadoAgo = new System.Windows.Forms.TextBox();
-            this.facturadoDic = new System.Windows.Forms.TextBox();
-            this.facturadoMay = new System.Windows.Forms.TextBox();
-            this.facturadoSep = new System.Windows.Forms.TextBox();
-            this.facturadoFeb = new System.Windows.Forms.TextBox();
-            this.facturadoJun = new System.Windows.Forms.TextBox();
             this.checkFaturacionMensual = new System.Windows.Forms.CheckBox();
             this.label39 = new System.Windows.Forms.Label();
             this.checkPagos = new System.Windows.Forms.CheckBox();
@@ -162,93 +150,105 @@
             this.OI_text = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Export = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label76 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.label78 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.label81 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label82 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.label83 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.cuatro_telefono = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.cuatro_email = new System.Windows.Forms.TextBox();
             this.label86 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.cuatro_contacto = new System.Windows.Forms.TextBox();
             this.label87 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.cuatro_codigo = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.cuatro_direccion = new System.Windows.Forms.TextBox();
             this.label89 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.cuatro_rfc = new System.Windows.Forms.TextBox();
             this.label90 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.cuatro_razon = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.cuatro_hotel = new System.Windows.Forms.TextBox();
             this.label92 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.cinco_telefono = new System.Windows.Forms.TextBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.cinco_email = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.cinco_contacto = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.cinco_codigo = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.cinco_direccion = new System.Windows.Forms.TextBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.cinco_rfc = new System.Windows.Forms.TextBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.cinco_razon = new System.Windows.Forms.TextBox();
+            this.label83 = new System.Windows.Forms.Label();
+            this.cinco_hotel = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tres_telefono = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.tres_email = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.tres_contacto = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.tres_codigo = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.tres_direccion = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tres_rfc = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.tres_Razon = new System.Windows.Forms.TextBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.tres_hotel = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.dos_telefono = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.dos_email = new System.Windows.Forms.TextBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.dos_contacto = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.dos_codigo = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.dos_direccion = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.dos_rfc = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.dos_razon = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.dos_hotel = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.uno_telefono = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.uno_email = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.uno_contacto = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.uno_codigo = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.uno_direccion = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.uno_rfc = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.uno_razon = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.uno_hotel = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Export = new System.Windows.Forms.Button();
+            this.facturadoEne = new System.Windows.Forms.ComboBox();
+            this.facturadoFeb = new System.Windows.Forms.ComboBox();
+            this.facturadoMar = new System.Windows.Forms.ComboBox();
+            this.facturadoAbr = new System.Windows.Forms.ComboBox();
+            this.facturadoMay = new System.Windows.Forms.ComboBox();
+            this.facturadoJun = new System.Windows.Forms.ComboBox();
+            this.facturadoJul = new System.Windows.Forms.ComboBox();
+            this.facturadoAgo = new System.Windows.Forms.ComboBox();
+            this.facturadoSep = new System.Windows.Forms.ComboBox();
+            this.facturadoOct = new System.Windows.Forms.ComboBox();
+            this.facturadoNov = new System.Windows.Forms.ComboBox();
+            this.facturadoDic = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -260,11 +260,11 @@
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -285,7 +285,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(919, 571);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Primera Página";
+            this.tabPage1.Text = "Orden de Inserción";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -482,6 +482,18 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.facturadoDic);
+            this.groupBox4.Controls.Add(this.facturadoNov);
+            this.groupBox4.Controls.Add(this.facturadoOct);
+            this.groupBox4.Controls.Add(this.facturadoSep);
+            this.groupBox4.Controls.Add(this.facturadoAgo);
+            this.groupBox4.Controls.Add(this.facturadoJul);
+            this.groupBox4.Controls.Add(this.facturadoJun);
+            this.groupBox4.Controls.Add(this.facturadoMay);
+            this.groupBox4.Controls.Add(this.facturadoAbr);
+            this.groupBox4.Controls.Add(this.facturadoMar);
+            this.groupBox4.Controls.Add(this.facturadoFeb);
+            this.groupBox4.Controls.Add(this.facturadoEne);
             this.groupBox4.Controls.Add(this.textCondiciones);
             this.groupBox4.Controls.Add(this.label42);
             this.groupBox4.Controls.Add(this.c_c_facturas);
@@ -503,18 +515,6 @@
             this.groupBox4.Controls.Add(this.textDocFeb);
             this.groupBox4.Controls.Add(this.textDocJun);
             this.groupBox4.Controls.Add(this.label50);
-            this.groupBox4.Controls.Add(this.facturadoEne);
-            this.groupBox4.Controls.Add(this.facturadoOct);
-            this.groupBox4.Controls.Add(this.facturadoJul);
-            this.groupBox4.Controls.Add(this.facturadoAbr);
-            this.groupBox4.Controls.Add(this.facturadoMar);
-            this.groupBox4.Controls.Add(this.facturadoNov);
-            this.groupBox4.Controls.Add(this.facturadoAgo);
-            this.groupBox4.Controls.Add(this.facturadoDic);
-            this.groupBox4.Controls.Add(this.facturadoMay);
-            this.groupBox4.Controls.Add(this.facturadoSep);
-            this.groupBox4.Controls.Add(this.facturadoFeb);
-            this.groupBox4.Controls.Add(this.facturadoJun);
             this.groupBox4.Controls.Add(this.checkFaturacionMensual);
             this.groupBox4.Controls.Add(this.label39);
             this.groupBox4.Controls.Add(this.checkPagos);
@@ -717,102 +717,6 @@
             this.label50.Size = new System.Drawing.Size(43, 20);
             this.label50.TabIndex = 250;
             this.label50.Text = "Mes:";
-            // 
-            // facturadoEne
-            // 
-            this.facturadoEne.Location = new System.Drawing.Point(11, 246);
-            this.facturadoEne.Name = "facturadoEne";
-            this.facturadoEne.Size = new System.Drawing.Size(197, 26);
-            this.facturadoEne.TabIndex = 238;
-            this.facturadoEne.Text = " ";
-            // 
-            // facturadoOct
-            // 
-            this.facturadoOct.Location = new System.Drawing.Point(11, 507);
-            this.facturadoOct.Name = "facturadoOct";
-            this.facturadoOct.Size = new System.Drawing.Size(197, 26);
-            this.facturadoOct.TabIndex = 246;
-            this.facturadoOct.Text = " ";
-            // 
-            // facturadoJul
-            // 
-            this.facturadoJul.Location = new System.Drawing.Point(11, 420);
-            this.facturadoJul.Name = "facturadoJul";
-            this.facturadoJul.Size = new System.Drawing.Size(197, 26);
-            this.facturadoJul.TabIndex = 245;
-            this.facturadoJul.Text = " ";
-            // 
-            // facturadoAbr
-            // 
-            this.facturadoAbr.Location = new System.Drawing.Point(11, 333);
-            this.facturadoAbr.Name = "facturadoAbr";
-            this.facturadoAbr.Size = new System.Drawing.Size(197, 26);
-            this.facturadoAbr.TabIndex = 240;
-            this.facturadoAbr.Text = " ";
-            // 
-            // facturadoMar
-            // 
-            this.facturadoMar.Location = new System.Drawing.Point(11, 304);
-            this.facturadoMar.Name = "facturadoMar";
-            this.facturadoMar.Size = new System.Drawing.Size(197, 26);
-            this.facturadoMar.TabIndex = 241;
-            this.facturadoMar.Text = " ";
-            // 
-            // facturadoNov
-            // 
-            this.facturadoNov.Location = new System.Drawing.Point(11, 536);
-            this.facturadoNov.Name = "facturadoNov";
-            this.facturadoNov.Size = new System.Drawing.Size(197, 26);
-            this.facturadoNov.TabIndex = 248;
-            this.facturadoNov.Text = " ";
-            // 
-            // facturadoAgo
-            // 
-            this.facturadoAgo.Location = new System.Drawing.Point(11, 449);
-            this.facturadoAgo.Name = "facturadoAgo";
-            this.facturadoAgo.Size = new System.Drawing.Size(197, 26);
-            this.facturadoAgo.TabIndex = 243;
-            this.facturadoAgo.Text = " ";
-            // 
-            // facturadoDic
-            // 
-            this.facturadoDic.Location = new System.Drawing.Point(11, 565);
-            this.facturadoDic.Name = "facturadoDic";
-            this.facturadoDic.Size = new System.Drawing.Size(197, 26);
-            this.facturadoDic.TabIndex = 249;
-            this.facturadoDic.Text = " ";
-            // 
-            // facturadoMay
-            // 
-            this.facturadoMay.Location = new System.Drawing.Point(11, 362);
-            this.facturadoMay.Name = "facturadoMay";
-            this.facturadoMay.Size = new System.Drawing.Size(197, 26);
-            this.facturadoMay.TabIndex = 244;
-            this.facturadoMay.Text = " ";
-            // 
-            // facturadoSep
-            // 
-            this.facturadoSep.Location = new System.Drawing.Point(11, 478);
-            this.facturadoSep.Name = "facturadoSep";
-            this.facturadoSep.Size = new System.Drawing.Size(197, 26);
-            this.facturadoSep.TabIndex = 247;
-            this.facturadoSep.Text = " ";
-            // 
-            // facturadoFeb
-            // 
-            this.facturadoFeb.Location = new System.Drawing.Point(11, 275);
-            this.facturadoFeb.Name = "facturadoFeb";
-            this.facturadoFeb.Size = new System.Drawing.Size(197, 26);
-            this.facturadoFeb.TabIndex = 239;
-            this.facturadoFeb.Text = " ";
-            // 
-            // facturadoJun
-            // 
-            this.facturadoJun.Location = new System.Drawing.Point(11, 391);
-            this.facturadoJun.Name = "facturadoJun";
-            this.facturadoJun.Size = new System.Drawing.Size(197, 26);
-            this.facturadoJun.TabIndex = 242;
-            this.facturadoJun.Text = " ";
             // 
             // checkFaturacionMensual
             // 
@@ -1104,7 +1008,7 @@
             this.mediaPostal.Name = "mediaPostal";
             this.mediaPostal.Size = new System.Drawing.Size(235, 26);
             this.mediaPostal.TabIndex = 12;
-            this.mediaPostal.Text = " ";
+            this.mediaPostal.Text = " 77500";
             // 
             // label28
             // 
@@ -1121,7 +1025,7 @@
             this.mediaPais.Name = "mediaPais";
             this.mediaPais.Size = new System.Drawing.Size(395, 26);
             this.mediaPais.TabIndex = 10;
-            this.mediaPais.Text = " ";
+            this.mediaPais.Text = " Cancún, Quintana Roo, México";
             // 
             // label29
             // 
@@ -1138,7 +1042,7 @@
             this.mediaCalle.Name = "mediaCalle";
             this.mediaCalle.Size = new System.Drawing.Size(774, 26);
             this.mediaCalle.TabIndex = 8;
-            this.mediaCalle.Text = " ";
+            this.mediaCalle.Text = " Calle: Av. Bonampak, SM 10, Mz 2, Lote 7 Torre \"B\"";
             // 
             // label30
             // 
@@ -1165,7 +1069,7 @@
             this.mediaID.Name = "mediaID";
             this.mediaID.Size = new System.Drawing.Size(774, 26);
             this.mediaID.TabIndex = 5;
-            this.mediaID.Text = " ";
+            this.mediaID.Text = " VBE840427HI7";
             // 
             // label32
             // 
@@ -1182,7 +1086,7 @@
             this.mediaRazon.Name = "mediaRazon";
             this.mediaRazon.Size = new System.Drawing.Size(659, 26);
             this.mediaRazon.TabIndex = 3;
-            this.mediaRazon.Text = " ";
+            this.mediaRazon.Text = " Viajes Beda, SA de CV";
             // 
             // label33
             // 
@@ -1552,19 +1456,8 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(919, 571);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Tercera Página";
+            this.tabPage2.Text = "Anexos";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // Export
-            // 
-            this.Export.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Export.Location = new System.Drawing.Point(803, 2);
-            this.Export.Name = "Export";
-            this.Export.Size = new System.Drawing.Size(117, 25);
-            this.Export.TabIndex = 1;
-            this.Export.Text = "Generar";
-            this.Export.UseVisualStyleBackColor = true;
-            this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
             // panel2
             // 
@@ -1579,715 +1472,39 @@
             this.panel2.Size = new System.Drawing.Size(913, 565);
             this.panel2.TabIndex = 0;
             // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.textBox5);
-            this.groupBox7.Controls.Add(this.label57);
-            this.groupBox7.Controls.Add(this.textBox6);
-            this.groupBox7.Controls.Add(this.label58);
-            this.groupBox7.Controls.Add(this.textBox7);
-            this.groupBox7.Controls.Add(this.label59);
-            this.groupBox7.Controls.Add(this.textBox8);
-            this.groupBox7.Controls.Add(this.label60);
-            this.groupBox7.Controls.Add(this.textBox1);
-            this.groupBox7.Controls.Add(this.label53);
-            this.groupBox7.Controls.Add(this.textBox2);
-            this.groupBox7.Controls.Add(this.label54);
-            this.groupBox7.Controls.Add(this.textBox3);
-            this.groupBox7.Controls.Add(this.label55);
-            this.groupBox7.Controls.Add(this.textBox4);
-            this.groupBox7.Controls.Add(this.label56);
-            this.groupBox7.Location = new System.Drawing.Point(3, 3);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(876, 313);
-            this.groupBox7.TabIndex = 30;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Primero";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(144, 139);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(716, 23);
-            this.textBox1.TabIndex = 273;
-            this.textBox1.Text = " ";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(14, 142);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(124, 20);
-            this.label53.TabIndex = 272;
-            this.label53.Text = "Dirección Fiscal:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(121, 105);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(739, 23);
-            this.textBox2.TabIndex = 271;
-            this.textBox2.Text = " ";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(14, 108);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(101, 20);
-            this.label54.TabIndex = 270;
-            this.label54.Text = "RFC - Tax ID";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(127, 71);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(733, 23);
-            this.textBox3.TabIndex = 269;
-            this.textBox3.Text = " ";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(14, 74);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(107, 20);
-            this.label55.TabIndex = 268;
-            this.label55.Text = "Razón Social:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(73, 37);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(787, 23);
-            this.textBox4.TabIndex = 267;
-            this.textBox4.Text = " ";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(14, 40);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(51, 20);
-            this.label56.TabIndex = 266;
-            this.label56.Text = "Hotel:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(296, 276);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(564, 23);
-            this.textBox5.TabIndex = 281;
-            this.textBox5.Text = " ";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(14, 279);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(276, 20);
-            this.label57.TabIndex = 280;
-            this.label57.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(278, 242);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(582, 23);
-            this.textBox6.TabIndex = 279;
-            this.textBox6.Text = " ";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(14, 245);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(258, 20);
-            this.label58.TabIndex = 278;
-            this.label58.Text = "E-Mail de Contacto de Facturación:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(208, 208);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(652, 23);
-            this.textBox7.TabIndex = 277;
-            this.textBox7.Text = " ";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(14, 211);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(188, 20);
-            this.label59.TabIndex = 276;
-            this.label59.Text = "Contacto de Facturación:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(131, 174);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(729, 23);
-            this.textBox8.TabIndex = 275;
-            this.textBox8.Text = " ";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(14, 177);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(111, 20);
-            this.label60.TabIndex = 274;
-            this.label60.Text = "Código Postal:";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.textBox9);
-            this.groupBox8.Controls.Add(this.label61);
-            this.groupBox8.Controls.Add(this.textBox10);
-            this.groupBox8.Controls.Add(this.label62);
-            this.groupBox8.Controls.Add(this.textBox11);
-            this.groupBox8.Controls.Add(this.label63);
-            this.groupBox8.Controls.Add(this.textBox12);
-            this.groupBox8.Controls.Add(this.label64);
-            this.groupBox8.Controls.Add(this.textBox13);
-            this.groupBox8.Controls.Add(this.label65);
-            this.groupBox8.Controls.Add(this.textBox14);
-            this.groupBox8.Controls.Add(this.label66);
-            this.groupBox8.Controls.Add(this.textBox15);
-            this.groupBox8.Controls.Add(this.label67);
-            this.groupBox8.Controls.Add(this.textBox16);
-            this.groupBox8.Controls.Add(this.label68);
-            this.groupBox8.Location = new System.Drawing.Point(3, 322);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(876, 313);
-            this.groupBox8.TabIndex = 282;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Primero";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(296, 276);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(564, 23);
-            this.textBox9.TabIndex = 281;
-            this.textBox9.Text = " ";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(14, 279);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(276, 20);
-            this.label61.TabIndex = 280;
-            this.label61.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(278, 242);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(582, 23);
-            this.textBox10.TabIndex = 279;
-            this.textBox10.Text = " ";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(14, 245);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(258, 20);
-            this.label62.TabIndex = 278;
-            this.label62.Text = "E-Mail de Contacto de Facturación:";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(208, 208);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(652, 23);
-            this.textBox11.TabIndex = 277;
-            this.textBox11.Text = " ";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(14, 211);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(188, 20);
-            this.label63.TabIndex = 276;
-            this.label63.Text = "Contacto de Facturación:";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(131, 174);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(729, 23);
-            this.textBox12.TabIndex = 275;
-            this.textBox12.Text = " ";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(14, 177);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(111, 20);
-            this.label64.TabIndex = 274;
-            this.label64.Text = "Código Postal:";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(144, 139);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(716, 23);
-            this.textBox13.TabIndex = 273;
-            this.textBox13.Text = " ";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(14, 142);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(124, 20);
-            this.label65.TabIndex = 272;
-            this.label65.Text = "Dirección Fiscal:";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(121, 105);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(739, 23);
-            this.textBox14.TabIndex = 271;
-            this.textBox14.Text = " ";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(14, 108);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(101, 20);
-            this.label66.TabIndex = 270;
-            this.label66.Text = "RFC - Tax ID";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(127, 71);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(733, 23);
-            this.textBox15.TabIndex = 269;
-            this.textBox15.Text = " ";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(14, 74);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(107, 20);
-            this.label67.TabIndex = 268;
-            this.label67.Text = "Razón Social:";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(73, 37);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(787, 23);
-            this.textBox16.TabIndex = 267;
-            this.textBox16.Text = " ";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(14, 40);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(51, 20);
-            this.label68.TabIndex = 266;
-            this.label68.Text = "Hotel:";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.textBox17);
-            this.groupBox9.Controls.Add(this.label69);
-            this.groupBox9.Controls.Add(this.textBox18);
-            this.groupBox9.Controls.Add(this.label70);
-            this.groupBox9.Controls.Add(this.textBox19);
-            this.groupBox9.Controls.Add(this.label71);
-            this.groupBox9.Controls.Add(this.textBox20);
-            this.groupBox9.Controls.Add(this.label72);
-            this.groupBox9.Controls.Add(this.textBox21);
-            this.groupBox9.Controls.Add(this.label73);
-            this.groupBox9.Controls.Add(this.textBox22);
-            this.groupBox9.Controls.Add(this.label74);
-            this.groupBox9.Controls.Add(this.textBox23);
-            this.groupBox9.Controls.Add(this.label75);
-            this.groupBox9.Controls.Add(this.textBox24);
-            this.groupBox9.Controls.Add(this.label76);
-            this.groupBox9.Location = new System.Drawing.Point(3, 641);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(876, 313);
-            this.groupBox9.TabIndex = 283;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Primero";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(296, 276);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(564, 23);
-            this.textBox17.TabIndex = 281;
-            this.textBox17.Text = " ";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(14, 279);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(276, 20);
-            this.label69.TabIndex = 280;
-            this.label69.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(278, 242);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(582, 23);
-            this.textBox18.TabIndex = 279;
-            this.textBox18.Text = " ";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(14, 245);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(258, 20);
-            this.label70.TabIndex = 278;
-            this.label70.Text = "E-Mail de Contacto de Facturación:";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(208, 208);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(652, 23);
-            this.textBox19.TabIndex = 277;
-            this.textBox19.Text = " ";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(14, 211);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(188, 20);
-            this.label71.TabIndex = 276;
-            this.label71.Text = "Contacto de Facturación:";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(131, 174);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(729, 23);
-            this.textBox20.TabIndex = 275;
-            this.textBox20.Text = " ";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(14, 177);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(111, 20);
-            this.label72.TabIndex = 274;
-            this.label72.Text = "Código Postal:";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(144, 139);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(716, 23);
-            this.textBox21.TabIndex = 273;
-            this.textBox21.Text = " ";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(14, 142);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(124, 20);
-            this.label73.TabIndex = 272;
-            this.label73.Text = "Dirección Fiscal:";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(121, 105);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(739, 23);
-            this.textBox22.TabIndex = 271;
-            this.textBox22.Text = " ";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(14, 108);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(101, 20);
-            this.label74.TabIndex = 270;
-            this.label74.Text = "RFC - Tax ID";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(127, 71);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(733, 23);
-            this.textBox23.TabIndex = 269;
-            this.textBox23.Text = " ";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(14, 74);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(107, 20);
-            this.label75.TabIndex = 268;
-            this.label75.Text = "Razón Social:";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(73, 37);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(787, 23);
-            this.textBox24.TabIndex = 267;
-            this.textBox24.Text = " ";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(14, 40);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(51, 20);
-            this.label76.TabIndex = 266;
-            this.label76.Text = "Hotel:";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.textBox25);
-            this.groupBox10.Controls.Add(this.label77);
-            this.groupBox10.Controls.Add(this.textBox26);
-            this.groupBox10.Controls.Add(this.label78);
-            this.groupBox10.Controls.Add(this.textBox27);
-            this.groupBox10.Controls.Add(this.label79);
-            this.groupBox10.Controls.Add(this.textBox28);
-            this.groupBox10.Controls.Add(this.label80);
-            this.groupBox10.Controls.Add(this.textBox29);
-            this.groupBox10.Controls.Add(this.label81);
-            this.groupBox10.Controls.Add(this.textBox30);
-            this.groupBox10.Controls.Add(this.label82);
-            this.groupBox10.Controls.Add(this.textBox31);
-            this.groupBox10.Controls.Add(this.label83);
-            this.groupBox10.Controls.Add(this.textBox32);
-            this.groupBox10.Controls.Add(this.label84);
-            this.groupBox10.Location = new System.Drawing.Point(3, 1279);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(876, 313);
-            this.groupBox10.TabIndex = 284;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Primero";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(296, 276);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(564, 23);
-            this.textBox25.TabIndex = 281;
-            this.textBox25.Text = " ";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(14, 279);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(276, 20);
-            this.label77.TabIndex = 280;
-            this.label77.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(278, 242);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(582, 23);
-            this.textBox26.TabIndex = 279;
-            this.textBox26.Text = " ";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(14, 245);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(258, 20);
-            this.label78.TabIndex = 278;
-            this.label78.Text = "E-Mail de Contacto de Facturación:";
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(208, 208);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(652, 23);
-            this.textBox27.TabIndex = 277;
-            this.textBox27.Text = " ";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(14, 211);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(188, 20);
-            this.label79.TabIndex = 276;
-            this.label79.Text = "Contacto de Facturación:";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(131, 174);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(729, 23);
-            this.textBox28.TabIndex = 275;
-            this.textBox28.Text = " ";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(14, 177);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(111, 20);
-            this.label80.TabIndex = 274;
-            this.label80.Text = "Código Postal:";
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(144, 139);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(716, 23);
-            this.textBox29.TabIndex = 273;
-            this.textBox29.Text = " ";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(14, 142);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(124, 20);
-            this.label81.TabIndex = 272;
-            this.label81.Text = "Dirección Fiscal:";
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(121, 105);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(739, 23);
-            this.textBox30.TabIndex = 271;
-            this.textBox30.Text = " ";
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(14, 108);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(101, 20);
-            this.label82.TabIndex = 270;
-            this.label82.Text = "RFC - Tax ID";
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(127, 71);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(733, 23);
-            this.textBox31.TabIndex = 269;
-            this.textBox31.Text = " ";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(14, 74);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(107, 20);
-            this.label83.TabIndex = 268;
-            this.label83.Text = "Razón Social:";
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(73, 37);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(787, 23);
-            this.textBox32.TabIndex = 267;
-            this.textBox32.Text = " ";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(14, 40);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(51, 20);
-            this.label84.TabIndex = 266;
-            this.label84.Text = "Hotel:";
-            // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.textBox33);
+            this.groupBox11.Controls.Add(this.cuatro_telefono);
             this.groupBox11.Controls.Add(this.label85);
-            this.groupBox11.Controls.Add(this.textBox34);
+            this.groupBox11.Controls.Add(this.cuatro_email);
             this.groupBox11.Controls.Add(this.label86);
-            this.groupBox11.Controls.Add(this.textBox35);
+            this.groupBox11.Controls.Add(this.cuatro_contacto);
             this.groupBox11.Controls.Add(this.label87);
-            this.groupBox11.Controls.Add(this.textBox36);
+            this.groupBox11.Controls.Add(this.cuatro_codigo);
             this.groupBox11.Controls.Add(this.label88);
-            this.groupBox11.Controls.Add(this.textBox37);
+            this.groupBox11.Controls.Add(this.cuatro_direccion);
             this.groupBox11.Controls.Add(this.label89);
-            this.groupBox11.Controls.Add(this.textBox38);
+            this.groupBox11.Controls.Add(this.cuatro_rfc);
             this.groupBox11.Controls.Add(this.label90);
-            this.groupBox11.Controls.Add(this.textBox39);
+            this.groupBox11.Controls.Add(this.cuatro_razon);
             this.groupBox11.Controls.Add(this.label91);
-            this.groupBox11.Controls.Add(this.textBox40);
+            this.groupBox11.Controls.Add(this.cuatro_hotel);
             this.groupBox11.Controls.Add(this.label92);
             this.groupBox11.Location = new System.Drawing.Point(3, 960);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(876, 313);
             this.groupBox11.TabIndex = 285;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Primero";
+            this.groupBox11.Text = "Cuarta";
             // 
-            // textBox33
+            // cuatro_telefono
             // 
-            this.textBox33.Location = new System.Drawing.Point(296, 276);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(564, 23);
-            this.textBox33.TabIndex = 281;
-            this.textBox33.Text = " ";
+            this.cuatro_telefono.Location = new System.Drawing.Point(296, 276);
+            this.cuatro_telefono.Multiline = true;
+            this.cuatro_telefono.Name = "cuatro_telefono";
+            this.cuatro_telefono.Size = new System.Drawing.Size(564, 23);
+            this.cuatro_telefono.TabIndex = 281;
+            this.cuatro_telefono.Text = " ";
             // 
             // label85
             // 
@@ -2298,14 +1515,14 @@
             this.label85.TabIndex = 280;
             this.label85.Text = "Teléfono de Contacto de Facturación:";
             // 
-            // textBox34
+            // cuatro_email
             // 
-            this.textBox34.Location = new System.Drawing.Point(278, 242);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(582, 23);
-            this.textBox34.TabIndex = 279;
-            this.textBox34.Text = " ";
+            this.cuatro_email.Location = new System.Drawing.Point(278, 242);
+            this.cuatro_email.Multiline = true;
+            this.cuatro_email.Name = "cuatro_email";
+            this.cuatro_email.Size = new System.Drawing.Size(582, 23);
+            this.cuatro_email.TabIndex = 279;
+            this.cuatro_email.Text = " ";
             // 
             // label86
             // 
@@ -2316,14 +1533,14 @@
             this.label86.TabIndex = 278;
             this.label86.Text = "E-Mail de Contacto de Facturación:";
             // 
-            // textBox35
+            // cuatro_contacto
             // 
-            this.textBox35.Location = new System.Drawing.Point(208, 208);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(652, 23);
-            this.textBox35.TabIndex = 277;
-            this.textBox35.Text = " ";
+            this.cuatro_contacto.Location = new System.Drawing.Point(208, 208);
+            this.cuatro_contacto.Multiline = true;
+            this.cuatro_contacto.Name = "cuatro_contacto";
+            this.cuatro_contacto.Size = new System.Drawing.Size(652, 23);
+            this.cuatro_contacto.TabIndex = 277;
+            this.cuatro_contacto.Text = " ";
             // 
             // label87
             // 
@@ -2334,14 +1551,14 @@
             this.label87.TabIndex = 276;
             this.label87.Text = "Contacto de Facturación:";
             // 
-            // textBox36
+            // cuatro_codigo
             // 
-            this.textBox36.Location = new System.Drawing.Point(131, 174);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(729, 23);
-            this.textBox36.TabIndex = 275;
-            this.textBox36.Text = " ";
+            this.cuatro_codigo.Location = new System.Drawing.Point(131, 174);
+            this.cuatro_codigo.Multiline = true;
+            this.cuatro_codigo.Name = "cuatro_codigo";
+            this.cuatro_codigo.Size = new System.Drawing.Size(729, 23);
+            this.cuatro_codigo.TabIndex = 275;
+            this.cuatro_codigo.Text = " ";
             // 
             // label88
             // 
@@ -2352,14 +1569,14 @@
             this.label88.TabIndex = 274;
             this.label88.Text = "Código Postal:";
             // 
-            // textBox37
+            // cuatro_direccion
             // 
-            this.textBox37.Location = new System.Drawing.Point(144, 139);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(716, 23);
-            this.textBox37.TabIndex = 273;
-            this.textBox37.Text = " ";
+            this.cuatro_direccion.Location = new System.Drawing.Point(144, 139);
+            this.cuatro_direccion.Multiline = true;
+            this.cuatro_direccion.Name = "cuatro_direccion";
+            this.cuatro_direccion.Size = new System.Drawing.Size(716, 23);
+            this.cuatro_direccion.TabIndex = 273;
+            this.cuatro_direccion.Text = " ";
             // 
             // label89
             // 
@@ -2370,14 +1587,14 @@
             this.label89.TabIndex = 272;
             this.label89.Text = "Dirección Fiscal:";
             // 
-            // textBox38
+            // cuatro_rfc
             // 
-            this.textBox38.Location = new System.Drawing.Point(121, 105);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(739, 23);
-            this.textBox38.TabIndex = 271;
-            this.textBox38.Text = " ";
+            this.cuatro_rfc.Location = new System.Drawing.Point(121, 105);
+            this.cuatro_rfc.Multiline = true;
+            this.cuatro_rfc.Name = "cuatro_rfc";
+            this.cuatro_rfc.Size = new System.Drawing.Size(739, 23);
+            this.cuatro_rfc.TabIndex = 271;
+            this.cuatro_rfc.Text = " ";
             // 
             // label90
             // 
@@ -2388,14 +1605,14 @@
             this.label90.TabIndex = 270;
             this.label90.Text = "RFC - Tax ID";
             // 
-            // textBox39
+            // cuatro_razon
             // 
-            this.textBox39.Location = new System.Drawing.Point(127, 71);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(733, 23);
-            this.textBox39.TabIndex = 269;
-            this.textBox39.Text = " ";
+            this.cuatro_razon.Location = new System.Drawing.Point(127, 71);
+            this.cuatro_razon.Multiline = true;
+            this.cuatro_razon.Name = "cuatro_razon";
+            this.cuatro_razon.Size = new System.Drawing.Size(733, 23);
+            this.cuatro_razon.TabIndex = 269;
+            this.cuatro_razon.Text = " ";
             // 
             // label91
             // 
@@ -2406,14 +1623,14 @@
             this.label91.TabIndex = 268;
             this.label91.Text = "Razón Social:";
             // 
-            // textBox40
+            // cuatro_hotel
             // 
-            this.textBox40.Location = new System.Drawing.Point(73, 37);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(787, 23);
-            this.textBox40.TabIndex = 267;
-            this.textBox40.Text = " ";
+            this.cuatro_hotel.Location = new System.Drawing.Point(73, 37);
+            this.cuatro_hotel.Multiline = true;
+            this.cuatro_hotel.Name = "cuatro_hotel";
+            this.cuatro_hotel.Size = new System.Drawing.Size(787, 23);
+            this.cuatro_hotel.TabIndex = 267;
+            this.cuatro_hotel.Text = " ";
             // 
             // label92
             // 
@@ -2423,6 +1640,945 @@
             this.label92.Size = new System.Drawing.Size(51, 20);
             this.label92.TabIndex = 266;
             this.label92.Text = "Hotel:";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.cinco_telefono);
+            this.groupBox10.Controls.Add(this.label77);
+            this.groupBox10.Controls.Add(this.cinco_email);
+            this.groupBox10.Controls.Add(this.label78);
+            this.groupBox10.Controls.Add(this.cinco_contacto);
+            this.groupBox10.Controls.Add(this.label79);
+            this.groupBox10.Controls.Add(this.cinco_codigo);
+            this.groupBox10.Controls.Add(this.label80);
+            this.groupBox10.Controls.Add(this.cinco_direccion);
+            this.groupBox10.Controls.Add(this.label81);
+            this.groupBox10.Controls.Add(this.cinco_rfc);
+            this.groupBox10.Controls.Add(this.label82);
+            this.groupBox10.Controls.Add(this.cinco_razon);
+            this.groupBox10.Controls.Add(this.label83);
+            this.groupBox10.Controls.Add(this.cinco_hotel);
+            this.groupBox10.Controls.Add(this.label84);
+            this.groupBox10.Location = new System.Drawing.Point(3, 1279);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(876, 313);
+            this.groupBox10.TabIndex = 284;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Quinta";
+            // 
+            // cinco_telefono
+            // 
+            this.cinco_telefono.Location = new System.Drawing.Point(296, 276);
+            this.cinco_telefono.Multiline = true;
+            this.cinco_telefono.Name = "cinco_telefono";
+            this.cinco_telefono.Size = new System.Drawing.Size(564, 23);
+            this.cinco_telefono.TabIndex = 281;
+            this.cinco_telefono.Text = " ";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(14, 279);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(276, 20);
+            this.label77.TabIndex = 280;
+            this.label77.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // cinco_email
+            // 
+            this.cinco_email.Location = new System.Drawing.Point(278, 242);
+            this.cinco_email.Multiline = true;
+            this.cinco_email.Name = "cinco_email";
+            this.cinco_email.Size = new System.Drawing.Size(582, 23);
+            this.cinco_email.TabIndex = 279;
+            this.cinco_email.Text = " ";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(14, 245);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(258, 20);
+            this.label78.TabIndex = 278;
+            this.label78.Text = "E-Mail de Contacto de Facturación:";
+            // 
+            // cinco_contacto
+            // 
+            this.cinco_contacto.Location = new System.Drawing.Point(208, 208);
+            this.cinco_contacto.Multiline = true;
+            this.cinco_contacto.Name = "cinco_contacto";
+            this.cinco_contacto.Size = new System.Drawing.Size(652, 23);
+            this.cinco_contacto.TabIndex = 277;
+            this.cinco_contacto.Text = " ";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(14, 211);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(188, 20);
+            this.label79.TabIndex = 276;
+            this.label79.Text = "Contacto de Facturación:";
+            // 
+            // cinco_codigo
+            // 
+            this.cinco_codigo.Location = new System.Drawing.Point(131, 174);
+            this.cinco_codigo.Multiline = true;
+            this.cinco_codigo.Name = "cinco_codigo";
+            this.cinco_codigo.Size = new System.Drawing.Size(729, 23);
+            this.cinco_codigo.TabIndex = 275;
+            this.cinco_codigo.Text = " ";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(14, 177);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(111, 20);
+            this.label80.TabIndex = 274;
+            this.label80.Text = "Código Postal:";
+            // 
+            // cinco_direccion
+            // 
+            this.cinco_direccion.Location = new System.Drawing.Point(144, 139);
+            this.cinco_direccion.Multiline = true;
+            this.cinco_direccion.Name = "cinco_direccion";
+            this.cinco_direccion.Size = new System.Drawing.Size(716, 23);
+            this.cinco_direccion.TabIndex = 273;
+            this.cinco_direccion.Text = " ";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(14, 142);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(124, 20);
+            this.label81.TabIndex = 272;
+            this.label81.Text = "Dirección Fiscal:";
+            // 
+            // cinco_rfc
+            // 
+            this.cinco_rfc.Location = new System.Drawing.Point(121, 105);
+            this.cinco_rfc.Multiline = true;
+            this.cinco_rfc.Name = "cinco_rfc";
+            this.cinco_rfc.Size = new System.Drawing.Size(739, 23);
+            this.cinco_rfc.TabIndex = 271;
+            this.cinco_rfc.Text = " ";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(14, 108);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(101, 20);
+            this.label82.TabIndex = 270;
+            this.label82.Text = "RFC - Tax ID";
+            // 
+            // cinco_razon
+            // 
+            this.cinco_razon.Location = new System.Drawing.Point(127, 71);
+            this.cinco_razon.Multiline = true;
+            this.cinco_razon.Name = "cinco_razon";
+            this.cinco_razon.Size = new System.Drawing.Size(733, 23);
+            this.cinco_razon.TabIndex = 269;
+            this.cinco_razon.Text = " ";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(14, 74);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(107, 20);
+            this.label83.TabIndex = 268;
+            this.label83.Text = "Razón Social:";
+            // 
+            // cinco_hotel
+            // 
+            this.cinco_hotel.Location = new System.Drawing.Point(73, 37);
+            this.cinco_hotel.Multiline = true;
+            this.cinco_hotel.Name = "cinco_hotel";
+            this.cinco_hotel.Size = new System.Drawing.Size(787, 23);
+            this.cinco_hotel.TabIndex = 267;
+            this.cinco_hotel.Text = " ";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(14, 40);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(51, 20);
+            this.label84.TabIndex = 266;
+            this.label84.Text = "Hotel:";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.tres_telefono);
+            this.groupBox9.Controls.Add(this.label69);
+            this.groupBox9.Controls.Add(this.tres_email);
+            this.groupBox9.Controls.Add(this.label70);
+            this.groupBox9.Controls.Add(this.tres_contacto);
+            this.groupBox9.Controls.Add(this.label71);
+            this.groupBox9.Controls.Add(this.tres_codigo);
+            this.groupBox9.Controls.Add(this.label72);
+            this.groupBox9.Controls.Add(this.tres_direccion);
+            this.groupBox9.Controls.Add(this.label73);
+            this.groupBox9.Controls.Add(this.tres_rfc);
+            this.groupBox9.Controls.Add(this.label74);
+            this.groupBox9.Controls.Add(this.tres_Razon);
+            this.groupBox9.Controls.Add(this.label75);
+            this.groupBox9.Controls.Add(this.tres_hotel);
+            this.groupBox9.Controls.Add(this.label76);
+            this.groupBox9.Location = new System.Drawing.Point(3, 641);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(876, 313);
+            this.groupBox9.TabIndex = 283;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Tercero";
+            // 
+            // tres_telefono
+            // 
+            this.tres_telefono.Location = new System.Drawing.Point(296, 276);
+            this.tres_telefono.Multiline = true;
+            this.tres_telefono.Name = "tres_telefono";
+            this.tres_telefono.Size = new System.Drawing.Size(564, 23);
+            this.tres_telefono.TabIndex = 281;
+            this.tres_telefono.Text = " ";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(14, 279);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(276, 20);
+            this.label69.TabIndex = 280;
+            this.label69.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // tres_email
+            // 
+            this.tres_email.Location = new System.Drawing.Point(278, 242);
+            this.tres_email.Multiline = true;
+            this.tres_email.Name = "tres_email";
+            this.tres_email.Size = new System.Drawing.Size(582, 23);
+            this.tres_email.TabIndex = 279;
+            this.tres_email.Text = " ";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(14, 245);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(258, 20);
+            this.label70.TabIndex = 278;
+            this.label70.Text = "E-Mail de Contacto de Facturación:";
+            // 
+            // tres_contacto
+            // 
+            this.tres_contacto.Location = new System.Drawing.Point(208, 208);
+            this.tres_contacto.Multiline = true;
+            this.tres_contacto.Name = "tres_contacto";
+            this.tres_contacto.Size = new System.Drawing.Size(652, 23);
+            this.tres_contacto.TabIndex = 277;
+            this.tres_contacto.Text = " ";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(14, 211);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(188, 20);
+            this.label71.TabIndex = 276;
+            this.label71.Text = "Contacto de Facturación:";
+            // 
+            // tres_codigo
+            // 
+            this.tres_codigo.Location = new System.Drawing.Point(131, 174);
+            this.tres_codigo.Multiline = true;
+            this.tres_codigo.Name = "tres_codigo";
+            this.tres_codigo.Size = new System.Drawing.Size(729, 23);
+            this.tres_codigo.TabIndex = 275;
+            this.tres_codigo.Text = " ";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(14, 177);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(111, 20);
+            this.label72.TabIndex = 274;
+            this.label72.Text = "Código Postal:";
+            // 
+            // tres_direccion
+            // 
+            this.tres_direccion.Location = new System.Drawing.Point(144, 139);
+            this.tres_direccion.Multiline = true;
+            this.tres_direccion.Name = "tres_direccion";
+            this.tres_direccion.Size = new System.Drawing.Size(716, 23);
+            this.tres_direccion.TabIndex = 273;
+            this.tres_direccion.Text = " ";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(14, 142);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(124, 20);
+            this.label73.TabIndex = 272;
+            this.label73.Text = "Dirección Fiscal:";
+            // 
+            // tres_rfc
+            // 
+            this.tres_rfc.Location = new System.Drawing.Point(121, 105);
+            this.tres_rfc.Multiline = true;
+            this.tres_rfc.Name = "tres_rfc";
+            this.tres_rfc.Size = new System.Drawing.Size(739, 23);
+            this.tres_rfc.TabIndex = 271;
+            this.tres_rfc.Text = " ";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(14, 108);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(101, 20);
+            this.label74.TabIndex = 270;
+            this.label74.Text = "RFC - Tax ID";
+            // 
+            // tres_Razon
+            // 
+            this.tres_Razon.Location = new System.Drawing.Point(127, 71);
+            this.tres_Razon.Multiline = true;
+            this.tres_Razon.Name = "tres_Razon";
+            this.tres_Razon.Size = new System.Drawing.Size(733, 23);
+            this.tres_Razon.TabIndex = 269;
+            this.tres_Razon.Text = " ";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(14, 74);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(107, 20);
+            this.label75.TabIndex = 268;
+            this.label75.Text = "Razón Social:";
+            // 
+            // tres_hotel
+            // 
+            this.tres_hotel.Location = new System.Drawing.Point(73, 37);
+            this.tres_hotel.Multiline = true;
+            this.tres_hotel.Name = "tres_hotel";
+            this.tres_hotel.Size = new System.Drawing.Size(787, 23);
+            this.tres_hotel.TabIndex = 267;
+            this.tres_hotel.Text = " ";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(14, 40);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(51, 20);
+            this.label76.TabIndex = 266;
+            this.label76.Text = "Hotel:";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.dos_telefono);
+            this.groupBox8.Controls.Add(this.label61);
+            this.groupBox8.Controls.Add(this.dos_email);
+            this.groupBox8.Controls.Add(this.label62);
+            this.groupBox8.Controls.Add(this.dos_contacto);
+            this.groupBox8.Controls.Add(this.label63);
+            this.groupBox8.Controls.Add(this.dos_codigo);
+            this.groupBox8.Controls.Add(this.label64);
+            this.groupBox8.Controls.Add(this.dos_direccion);
+            this.groupBox8.Controls.Add(this.label65);
+            this.groupBox8.Controls.Add(this.dos_rfc);
+            this.groupBox8.Controls.Add(this.label66);
+            this.groupBox8.Controls.Add(this.dos_razon);
+            this.groupBox8.Controls.Add(this.label67);
+            this.groupBox8.Controls.Add(this.dos_hotel);
+            this.groupBox8.Controls.Add(this.label68);
+            this.groupBox8.Location = new System.Drawing.Point(3, 322);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(876, 313);
+            this.groupBox8.TabIndex = 282;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Segundo";
+            // 
+            // dos_telefono
+            // 
+            this.dos_telefono.Location = new System.Drawing.Point(296, 276);
+            this.dos_telefono.Multiline = true;
+            this.dos_telefono.Name = "dos_telefono";
+            this.dos_telefono.Size = new System.Drawing.Size(564, 23);
+            this.dos_telefono.TabIndex = 281;
+            this.dos_telefono.Text = " ";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(14, 279);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(276, 20);
+            this.label61.TabIndex = 280;
+            this.label61.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // dos_email
+            // 
+            this.dos_email.Location = new System.Drawing.Point(278, 242);
+            this.dos_email.Multiline = true;
+            this.dos_email.Name = "dos_email";
+            this.dos_email.Size = new System.Drawing.Size(582, 23);
+            this.dos_email.TabIndex = 279;
+            this.dos_email.Text = " ";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(14, 245);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(258, 20);
+            this.label62.TabIndex = 278;
+            this.label62.Text = "E-Mail de Contacto de Facturación:";
+            // 
+            // dos_contacto
+            // 
+            this.dos_contacto.Location = new System.Drawing.Point(208, 208);
+            this.dos_contacto.Multiline = true;
+            this.dos_contacto.Name = "dos_contacto";
+            this.dos_contacto.Size = new System.Drawing.Size(652, 23);
+            this.dos_contacto.TabIndex = 277;
+            this.dos_contacto.Text = " ";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(14, 211);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(188, 20);
+            this.label63.TabIndex = 276;
+            this.label63.Text = "Contacto de Facturación:";
+            // 
+            // dos_codigo
+            // 
+            this.dos_codigo.Location = new System.Drawing.Point(131, 174);
+            this.dos_codigo.Multiline = true;
+            this.dos_codigo.Name = "dos_codigo";
+            this.dos_codigo.Size = new System.Drawing.Size(729, 23);
+            this.dos_codigo.TabIndex = 275;
+            this.dos_codigo.Text = " ";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(14, 177);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(111, 20);
+            this.label64.TabIndex = 274;
+            this.label64.Text = "Código Postal:";
+            // 
+            // dos_direccion
+            // 
+            this.dos_direccion.Location = new System.Drawing.Point(144, 139);
+            this.dos_direccion.Multiline = true;
+            this.dos_direccion.Name = "dos_direccion";
+            this.dos_direccion.Size = new System.Drawing.Size(716, 23);
+            this.dos_direccion.TabIndex = 273;
+            this.dos_direccion.Text = " ";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(14, 142);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(124, 20);
+            this.label65.TabIndex = 272;
+            this.label65.Text = "Dirección Fiscal:";
+            // 
+            // dos_rfc
+            // 
+            this.dos_rfc.Location = new System.Drawing.Point(121, 105);
+            this.dos_rfc.Multiline = true;
+            this.dos_rfc.Name = "dos_rfc";
+            this.dos_rfc.Size = new System.Drawing.Size(739, 23);
+            this.dos_rfc.TabIndex = 271;
+            this.dos_rfc.Text = " ";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(14, 108);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(101, 20);
+            this.label66.TabIndex = 270;
+            this.label66.Text = "RFC - Tax ID";
+            // 
+            // dos_razon
+            // 
+            this.dos_razon.Location = new System.Drawing.Point(127, 71);
+            this.dos_razon.Multiline = true;
+            this.dos_razon.Name = "dos_razon";
+            this.dos_razon.Size = new System.Drawing.Size(733, 23);
+            this.dos_razon.TabIndex = 269;
+            this.dos_razon.Text = " ";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(14, 74);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(107, 20);
+            this.label67.TabIndex = 268;
+            this.label67.Text = "Razón Social:";
+            // 
+            // dos_hotel
+            // 
+            this.dos_hotel.Location = new System.Drawing.Point(73, 37);
+            this.dos_hotel.Multiline = true;
+            this.dos_hotel.Name = "dos_hotel";
+            this.dos_hotel.Size = new System.Drawing.Size(787, 23);
+            this.dos_hotel.TabIndex = 267;
+            this.dos_hotel.Text = " ";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(14, 40);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(51, 20);
+            this.label68.TabIndex = 266;
+            this.label68.Text = "Hotel:";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.uno_telefono);
+            this.groupBox7.Controls.Add(this.label57);
+            this.groupBox7.Controls.Add(this.uno_email);
+            this.groupBox7.Controls.Add(this.label58);
+            this.groupBox7.Controls.Add(this.uno_contacto);
+            this.groupBox7.Controls.Add(this.label59);
+            this.groupBox7.Controls.Add(this.uno_codigo);
+            this.groupBox7.Controls.Add(this.label60);
+            this.groupBox7.Controls.Add(this.uno_direccion);
+            this.groupBox7.Controls.Add(this.label53);
+            this.groupBox7.Controls.Add(this.uno_rfc);
+            this.groupBox7.Controls.Add(this.label54);
+            this.groupBox7.Controls.Add(this.uno_razon);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.uno_hotel);
+            this.groupBox7.Controls.Add(this.label56);
+            this.groupBox7.Location = new System.Drawing.Point(3, 3);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(876, 313);
+            this.groupBox7.TabIndex = 30;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Primero";
+            // 
+            // uno_telefono
+            // 
+            this.uno_telefono.Location = new System.Drawing.Point(296, 276);
+            this.uno_telefono.Multiline = true;
+            this.uno_telefono.Name = "uno_telefono";
+            this.uno_telefono.Size = new System.Drawing.Size(564, 23);
+            this.uno_telefono.TabIndex = 281;
+            this.uno_telefono.Text = " ";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(14, 279);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(276, 20);
+            this.label57.TabIndex = 280;
+            this.label57.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // uno_email
+            // 
+            this.uno_email.Location = new System.Drawing.Point(278, 242);
+            this.uno_email.Multiline = true;
+            this.uno_email.Name = "uno_email";
+            this.uno_email.Size = new System.Drawing.Size(582, 23);
+            this.uno_email.TabIndex = 279;
+            this.uno_email.Text = " ";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(14, 245);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(258, 20);
+            this.label58.TabIndex = 278;
+            this.label58.Text = "E-Mail de Contacto de Facturación:";
+            // 
+            // uno_contacto
+            // 
+            this.uno_contacto.Location = new System.Drawing.Point(208, 208);
+            this.uno_contacto.Multiline = true;
+            this.uno_contacto.Name = "uno_contacto";
+            this.uno_contacto.Size = new System.Drawing.Size(652, 23);
+            this.uno_contacto.TabIndex = 277;
+            this.uno_contacto.Text = " ";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(14, 211);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(188, 20);
+            this.label59.TabIndex = 276;
+            this.label59.Text = "Contacto de Facturación:";
+            // 
+            // uno_codigo
+            // 
+            this.uno_codigo.Location = new System.Drawing.Point(131, 174);
+            this.uno_codigo.Multiline = true;
+            this.uno_codigo.Name = "uno_codigo";
+            this.uno_codigo.Size = new System.Drawing.Size(729, 23);
+            this.uno_codigo.TabIndex = 275;
+            this.uno_codigo.Text = " ";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(14, 177);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(111, 20);
+            this.label60.TabIndex = 274;
+            this.label60.Text = "Código Postal:";
+            // 
+            // uno_direccion
+            // 
+            this.uno_direccion.Location = new System.Drawing.Point(144, 139);
+            this.uno_direccion.Multiline = true;
+            this.uno_direccion.Name = "uno_direccion";
+            this.uno_direccion.Size = new System.Drawing.Size(716, 23);
+            this.uno_direccion.TabIndex = 273;
+            this.uno_direccion.Text = " ";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(14, 142);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(124, 20);
+            this.label53.TabIndex = 272;
+            this.label53.Text = "Dirección Fiscal:";
+            // 
+            // uno_rfc
+            // 
+            this.uno_rfc.Location = new System.Drawing.Point(121, 105);
+            this.uno_rfc.Multiline = true;
+            this.uno_rfc.Name = "uno_rfc";
+            this.uno_rfc.Size = new System.Drawing.Size(739, 23);
+            this.uno_rfc.TabIndex = 271;
+            this.uno_rfc.Text = " ";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(14, 108);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(101, 20);
+            this.label54.TabIndex = 270;
+            this.label54.Text = "RFC - Tax ID";
+            // 
+            // uno_razon
+            // 
+            this.uno_razon.Location = new System.Drawing.Point(127, 71);
+            this.uno_razon.Multiline = true;
+            this.uno_razon.Name = "uno_razon";
+            this.uno_razon.Size = new System.Drawing.Size(733, 23);
+            this.uno_razon.TabIndex = 269;
+            this.uno_razon.Text = " ";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(14, 74);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(107, 20);
+            this.label55.TabIndex = 268;
+            this.label55.Text = "Razón Social:";
+            // 
+            // uno_hotel
+            // 
+            this.uno_hotel.Location = new System.Drawing.Point(73, 37);
+            this.uno_hotel.Multiline = true;
+            this.uno_hotel.Name = "uno_hotel";
+            this.uno_hotel.Size = new System.Drawing.Size(787, 23);
+            this.uno_hotel.TabIndex = 267;
+            this.uno_hotel.Text = " ";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(14, 40);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(51, 20);
+            this.label56.TabIndex = 266;
+            this.label56.Text = "Hotel:";
+            // 
+            // Export
+            // 
+            this.Export.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Export.Location = new System.Drawing.Point(803, 2);
+            this.Export.Name = "Export";
+            this.Export.Size = new System.Drawing.Size(117, 25);
+            this.Export.TabIndex = 1;
+            this.Export.Text = "Generar";
+            this.Export.UseVisualStyleBackColor = true;
+            this.Export.Click += new System.EventHandler(this.Export_Click);
+            // 
+            // facturadoEne
+            // 
+            this.facturadoEne.FormattingEnabled = true;
+            this.facturadoEne.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoEne.Location = new System.Drawing.Point(11, 246);
+            this.facturadoEne.Name = "facturadoEne";
+            this.facturadoEne.Size = new System.Drawing.Size(197, 28);
+            this.facturadoEne.TabIndex = 271;
+            // 
+            // facturadoFeb
+            // 
+            this.facturadoFeb.FormattingEnabled = true;
+            this.facturadoFeb.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoFeb.Location = new System.Drawing.Point(11, 275);
+            this.facturadoFeb.Name = "facturadoFeb";
+            this.facturadoFeb.Size = new System.Drawing.Size(197, 28);
+            this.facturadoFeb.TabIndex = 272;
+            // 
+            // facturadoMar
+            // 
+            this.facturadoMar.FormattingEnabled = true;
+            this.facturadoMar.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoMar.Location = new System.Drawing.Point(11, 304);
+            this.facturadoMar.Name = "facturadoMar";
+            this.facturadoMar.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMar.TabIndex = 273;
+            // 
+            // facturadoAbr
+            // 
+            this.facturadoAbr.FormattingEnabled = true;
+            this.facturadoAbr.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoAbr.Location = new System.Drawing.Point(11, 333);
+            this.facturadoAbr.Name = "facturadoAbr";
+            this.facturadoAbr.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAbr.TabIndex = 274;
+            // 
+            // facturadoMay
+            // 
+            this.facturadoMay.FormattingEnabled = true;
+            this.facturadoMay.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoMay.Location = new System.Drawing.Point(11, 362);
+            this.facturadoMay.Name = "facturadoMay";
+            this.facturadoMay.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMay.TabIndex = 275;
+            // 
+            // facturadoJun
+            // 
+            this.facturadoJun.FormattingEnabled = true;
+            this.facturadoJun.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoJun.Location = new System.Drawing.Point(11, 391);
+            this.facturadoJun.Name = "facturadoJun";
+            this.facturadoJun.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJun.TabIndex = 276;
+            // 
+            // facturadoJul
+            // 
+            this.facturadoJul.FormattingEnabled = true;
+            this.facturadoJul.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoJul.Location = new System.Drawing.Point(11, 420);
+            this.facturadoJul.Name = "facturadoJul";
+            this.facturadoJul.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJul.TabIndex = 277;
+            // 
+            // facturadoAgo
+            // 
+            this.facturadoAgo.FormattingEnabled = true;
+            this.facturadoAgo.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoAgo.Location = new System.Drawing.Point(11, 449);
+            this.facturadoAgo.Name = "facturadoAgo";
+            this.facturadoAgo.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAgo.TabIndex = 278;
+            // 
+            // facturadoSep
+            // 
+            this.facturadoSep.FormattingEnabled = true;
+            this.facturadoSep.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoSep.Location = new System.Drawing.Point(11, 478);
+            this.facturadoSep.Name = "facturadoSep";
+            this.facturadoSep.Size = new System.Drawing.Size(197, 28);
+            this.facturadoSep.TabIndex = 279;
+            // 
+            // facturadoOct
+            // 
+            this.facturadoOct.FormattingEnabled = true;
+            this.facturadoOct.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoOct.Location = new System.Drawing.Point(11, 507);
+            this.facturadoOct.Name = "facturadoOct";
+            this.facturadoOct.Size = new System.Drawing.Size(197, 28);
+            this.facturadoOct.TabIndex = 280;
+            // 
+            // facturadoNov
+            // 
+            this.facturadoNov.FormattingEnabled = true;
+            this.facturadoNov.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoNov.Location = new System.Drawing.Point(11, 536);
+            this.facturadoNov.Name = "facturadoNov";
+            this.facturadoNov.Size = new System.Drawing.Size(197, 28);
+            this.facturadoNov.TabIndex = 281;
+            // 
+            // facturadoDic
+            // 
+            this.facturadoDic.FormattingEnabled = true;
+            this.facturadoDic.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoDic.Location = new System.Drawing.Point(11, 565);
+            this.facturadoDic.Name = "facturadoDic";
+            this.facturadoDic.Size = new System.Drawing.Size(197, 28);
+            this.facturadoDic.TabIndex = 282;
             // 
             // create_OI
             // 
@@ -2455,16 +2611,16 @@
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2566,18 +2722,6 @@
         private System.Windows.Forms.TextBox textDocFeb;
         private System.Windows.Forms.TextBox textDocJun;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox facturadoEne;
-        private System.Windows.Forms.TextBox facturadoOct;
-        private System.Windows.Forms.TextBox facturadoJul;
-        private System.Windows.Forms.TextBox facturadoAbr;
-        private System.Windows.Forms.TextBox facturadoMar;
-        private System.Windows.Forms.TextBox facturadoNov;
-        private System.Windows.Forms.TextBox facturadoAgo;
-        private System.Windows.Forms.TextBox facturadoDic;
-        private System.Windows.Forms.TextBox facturadoMay;
-        private System.Windows.Forms.TextBox facturadoSep;
-        private System.Windows.Forms.TextBox facturadoFeb;
-        private System.Windows.Forms.TextBox facturadoJun;
         private System.Windows.Forms.TextBox textTotalIVA;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.CheckBox c_c_facturas;
@@ -2607,89 +2751,101 @@
         private System.Windows.Forms.TextBox hotelCorreo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox cuatro_telefono;
         private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox cuatro_email;
         private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox cuatro_contacto;
         private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox cuatro_codigo;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox cuatro_direccion;
         private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox cuatro_rfc;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox cuatro_razon;
         private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox cuatro_hotel;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox cinco_telefono;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox cinco_email;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox cinco_contacto;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox cinco_codigo;
         private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox cinco_direccion;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox cinco_rfc;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox cinco_razon;
         private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox cinco_hotel;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tres_telefono;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tres_email;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox tres_contacto;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox tres_codigo;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox tres_direccion;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox tres_rfc;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox tres_Razon;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox tres_hotel;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox dos_telefono;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox dos_email;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox dos_contacto;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox dos_codigo;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox dos_direccion;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox dos_rfc;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox dos_razon;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox dos_hotel;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox uno_telefono;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox uno_email;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox uno_contacto;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox uno_codigo;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox uno_direccion;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox uno_rfc;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox uno_razon;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox uno_hotel;
         private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.ComboBox facturadoEne;
+        private System.Windows.Forms.ComboBox facturadoDic;
+        private System.Windows.Forms.ComboBox facturadoNov;
+        private System.Windows.Forms.ComboBox facturadoOct;
+        private System.Windows.Forms.ComboBox facturadoSep;
+        private System.Windows.Forms.ComboBox facturadoAgo;
+        private System.Windows.Forms.ComboBox facturadoJul;
+        private System.Windows.Forms.ComboBox facturadoJun;
+        private System.Windows.Forms.ComboBox facturadoMay;
+        private System.Windows.Forms.ComboBox facturadoAbr;
+        private System.Windows.Forms.ComboBox facturadoMar;
+        private System.Windows.Forms.ComboBox facturadoFeb;
     }
 }
