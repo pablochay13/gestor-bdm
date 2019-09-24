@@ -51,6 +51,44 @@
             this.textFirma_c = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBoxDic = new System.Windows.Forms.ComboBox();
+            this.comboNov = new System.Windows.Forms.ComboBox();
+            this.comboOct = new System.Windows.Forms.ComboBox();
+            this.comboSep = new System.Windows.Forms.ComboBox();
+            this.comboAgo = new System.Windows.Forms.ComboBox();
+            this.comboJul = new System.Windows.Forms.ComboBox();
+            this.comboJun = new System.Windows.Forms.ComboBox();
+            this.comboMay = new System.Windows.Forms.ComboBox();
+            this.comboAbr = new System.Windows.Forms.ComboBox();
+            this.comboMar = new System.Windows.Forms.ComboBox();
+            this.comboFeb = new System.Windows.Forms.ComboBox();
+            this.comboEne = new System.Windows.Forms.ComboBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.textBoxEne = new System.Windows.Forms.TextBox();
+            this.textBoxOct = new System.Windows.Forms.TextBox();
+            this.textBoxJul = new System.Windows.Forms.TextBox();
+            this.textBoxAbr = new System.Windows.Forms.TextBox();
+            this.textBoxMar = new System.Windows.Forms.TextBox();
+            this.textBoxNov = new System.Windows.Forms.TextBox();
+            this.textBoxAgo = new System.Windows.Forms.TextBox();
+            this.textBoxDic = new System.Windows.Forms.TextBox();
+            this.textBoxMay = new System.Windows.Forms.TextBox();
+            this.textBoxSep = new System.Windows.Forms.TextBox();
+            this.textBoxFeb = new System.Windows.Forms.TextBox();
+            this.textBoxJun = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.facturadoDic = new System.Windows.Forms.ComboBox();
+            this.facturadoNov = new System.Windows.Forms.ComboBox();
+            this.facturadoOct = new System.Windows.Forms.ComboBox();
+            this.facturadoSep = new System.Windows.Forms.ComboBox();
+            this.facturadoAgo = new System.Windows.Forms.ComboBox();
+            this.facturadoJul = new System.Windows.Forms.ComboBox();
+            this.facturadoJun = new System.Windows.Forms.ComboBox();
+            this.facturadoMay = new System.Windows.Forms.ComboBox();
+            this.facturadoAbr = new System.Windows.Forms.ComboBox();
+            this.facturadoMar = new System.Windows.Forms.ComboBox();
+            this.facturadoFeb = new System.Windows.Forms.ComboBox();
+            this.facturadoEne = new System.Windows.Forms.ComboBox();
             this.textCondiciones = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.c_c_facturas = new System.Windows.Forms.CheckBox();
@@ -237,18 +275,6 @@
             this.uno_hotel = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.Export = new System.Windows.Forms.Button();
-            this.facturadoEne = new System.Windows.Forms.ComboBox();
-            this.facturadoFeb = new System.Windows.Forms.ComboBox();
-            this.facturadoMar = new System.Windows.Forms.ComboBox();
-            this.facturadoAbr = new System.Windows.Forms.ComboBox();
-            this.facturadoMay = new System.Windows.Forms.ComboBox();
-            this.facturadoJun = new System.Windows.Forms.ComboBox();
-            this.facturadoJul = new System.Windows.Forms.ComboBox();
-            this.facturadoAgo = new System.Windows.Forms.ComboBox();
-            this.facturadoSep = new System.Windows.Forms.ComboBox();
-            this.facturadoOct = new System.Windows.Forms.ComboBox();
-            this.facturadoNov = new System.Windows.Forms.ComboBox();
-            this.facturadoDic = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -482,6 +508,32 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.comboBoxDic);
+            this.groupBox4.Controls.Add(this.comboNov);
+            this.groupBox4.Controls.Add(this.comboOct);
+            this.groupBox4.Controls.Add(this.comboSep);
+            this.groupBox4.Controls.Add(this.comboAgo);
+            this.groupBox4.Controls.Add(this.comboJul);
+            this.groupBox4.Controls.Add(this.comboJun);
+            this.groupBox4.Controls.Add(this.comboMay);
+            this.groupBox4.Controls.Add(this.comboAbr);
+            this.groupBox4.Controls.Add(this.comboMar);
+            this.groupBox4.Controls.Add(this.comboFeb);
+            this.groupBox4.Controls.Add(this.comboEne);
+            this.groupBox4.Controls.Add(this.label94);
+            this.groupBox4.Controls.Add(this.textBoxEne);
+            this.groupBox4.Controls.Add(this.textBoxOct);
+            this.groupBox4.Controls.Add(this.textBoxJul);
+            this.groupBox4.Controls.Add(this.textBoxAbr);
+            this.groupBox4.Controls.Add(this.textBoxMar);
+            this.groupBox4.Controls.Add(this.textBoxNov);
+            this.groupBox4.Controls.Add(this.textBoxAgo);
+            this.groupBox4.Controls.Add(this.textBoxDic);
+            this.groupBox4.Controls.Add(this.textBoxMay);
+            this.groupBox4.Controls.Add(this.textBoxSep);
+            this.groupBox4.Controls.Add(this.textBoxFeb);
+            this.groupBox4.Controls.Add(this.textBoxJun);
+            this.groupBox4.Controls.Add(this.label93);
             this.groupBox4.Controls.Add(this.facturadoDic);
             this.groupBox4.Controls.Add(this.facturadoNov);
             this.groupBox4.Controls.Add(this.facturadoOct);
@@ -535,6 +587,508 @@
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Esquema comercial y forma de pago";
+            // 
+            // comboBoxDic
+            // 
+            this.comboBoxDic.FormattingEnabled = true;
+            this.comboBoxDic.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboBoxDic.Location = new System.Drawing.Point(365, 565);
+            this.comboBoxDic.Name = "comboBoxDic";
+            this.comboBoxDic.Size = new System.Drawing.Size(128, 28);
+            this.comboBoxDic.TabIndex = 320;
+            // 
+            // comboNov
+            // 
+            this.comboNov.FormattingEnabled = true;
+            this.comboNov.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboNov.Location = new System.Drawing.Point(365, 536);
+            this.comboNov.Name = "comboNov";
+            this.comboNov.Size = new System.Drawing.Size(128, 28);
+            this.comboNov.TabIndex = 319;
+            // 
+            // comboOct
+            // 
+            this.comboOct.FormattingEnabled = true;
+            this.comboOct.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboOct.Location = new System.Drawing.Point(365, 507);
+            this.comboOct.Name = "comboOct";
+            this.comboOct.Size = new System.Drawing.Size(128, 28);
+            this.comboOct.TabIndex = 318;
+            // 
+            // comboSep
+            // 
+            this.comboSep.FormattingEnabled = true;
+            this.comboSep.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboSep.Location = new System.Drawing.Point(365, 478);
+            this.comboSep.Name = "comboSep";
+            this.comboSep.Size = new System.Drawing.Size(128, 28);
+            this.comboSep.TabIndex = 317;
+            // 
+            // comboAgo
+            // 
+            this.comboAgo.FormattingEnabled = true;
+            this.comboAgo.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboAgo.Location = new System.Drawing.Point(365, 449);
+            this.comboAgo.Name = "comboAgo";
+            this.comboAgo.Size = new System.Drawing.Size(128, 28);
+            this.comboAgo.TabIndex = 316;
+            // 
+            // comboJul
+            // 
+            this.comboJul.FormattingEnabled = true;
+            this.comboJul.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboJul.Location = new System.Drawing.Point(365, 420);
+            this.comboJul.Name = "comboJul";
+            this.comboJul.Size = new System.Drawing.Size(128, 28);
+            this.comboJul.TabIndex = 315;
+            // 
+            // comboJun
+            // 
+            this.comboJun.FormattingEnabled = true;
+            this.comboJun.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboJun.Location = new System.Drawing.Point(365, 391);
+            this.comboJun.Name = "comboJun";
+            this.comboJun.Size = new System.Drawing.Size(128, 28);
+            this.comboJun.TabIndex = 314;
+            // 
+            // comboMay
+            // 
+            this.comboMay.FormattingEnabled = true;
+            this.comboMay.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboMay.Location = new System.Drawing.Point(365, 362);
+            this.comboMay.Name = "comboMay";
+            this.comboMay.Size = new System.Drawing.Size(128, 28);
+            this.comboMay.TabIndex = 313;
+            // 
+            // comboAbr
+            // 
+            this.comboAbr.FormattingEnabled = true;
+            this.comboAbr.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboAbr.Location = new System.Drawing.Point(365, 333);
+            this.comboAbr.Name = "comboAbr";
+            this.comboAbr.Size = new System.Drawing.Size(128, 28);
+            this.comboAbr.TabIndex = 312;
+            // 
+            // comboMar
+            // 
+            this.comboMar.FormattingEnabled = true;
+            this.comboMar.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboMar.Location = new System.Drawing.Point(365, 304);
+            this.comboMar.Name = "comboMar";
+            this.comboMar.Size = new System.Drawing.Size(128, 28);
+            this.comboMar.TabIndex = 311;
+            // 
+            // comboFeb
+            // 
+            this.comboFeb.FormattingEnabled = true;
+            this.comboFeb.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboFeb.Location = new System.Drawing.Point(365, 275);
+            this.comboFeb.Name = "comboFeb";
+            this.comboFeb.Size = new System.Drawing.Size(128, 28);
+            this.comboFeb.TabIndex = 310;
+            // 
+            // comboEne
+            // 
+            this.comboEne.FormattingEnabled = true;
+            this.comboEne.Items.AddRange(new object[] {
+            "MN",
+            "USD"});
+            this.comboEne.Location = new System.Drawing.Point(365, 244);
+            this.comboEne.Name = "comboEne";
+            this.comboEne.Size = new System.Drawing.Size(128, 28);
+            this.comboEne.TabIndex = 309;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label94.Location = new System.Drawing.Point(504, 223);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(165, 20);
+            this.label94.TabIndex = 308;
+            this.label94.Text = "Información Adicional:";
+            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxEne
+            // 
+            this.textBoxEne.Location = new System.Drawing.Point(508, 246);
+            this.textBoxEne.Name = "textBoxEne";
+            this.textBoxEne.Size = new System.Drawing.Size(352, 26);
+            this.textBoxEne.TabIndex = 296;
+            this.textBoxEne.Text = " ";
+            // 
+            // textBoxOct
+            // 
+            this.textBoxOct.Location = new System.Drawing.Point(508, 507);
+            this.textBoxOct.Name = "textBoxOct";
+            this.textBoxOct.Size = new System.Drawing.Size(352, 26);
+            this.textBoxOct.TabIndex = 304;
+            this.textBoxOct.Text = " ";
+            // 
+            // textBoxJul
+            // 
+            this.textBoxJul.Location = new System.Drawing.Point(508, 420);
+            this.textBoxJul.Name = "textBoxJul";
+            this.textBoxJul.Size = new System.Drawing.Size(352, 26);
+            this.textBoxJul.TabIndex = 303;
+            this.textBoxJul.Text = " ";
+            // 
+            // textBoxAbr
+            // 
+            this.textBoxAbr.Location = new System.Drawing.Point(508, 333);
+            this.textBoxAbr.Name = "textBoxAbr";
+            this.textBoxAbr.Size = new System.Drawing.Size(352, 26);
+            this.textBoxAbr.TabIndex = 298;
+            this.textBoxAbr.Text = " ";
+            // 
+            // textBoxMar
+            // 
+            this.textBoxMar.Location = new System.Drawing.Point(508, 304);
+            this.textBoxMar.Name = "textBoxMar";
+            this.textBoxMar.Size = new System.Drawing.Size(352, 26);
+            this.textBoxMar.TabIndex = 299;
+            this.textBoxMar.Text = " ";
+            // 
+            // textBoxNov
+            // 
+            this.textBoxNov.Location = new System.Drawing.Point(508, 536);
+            this.textBoxNov.Name = "textBoxNov";
+            this.textBoxNov.Size = new System.Drawing.Size(352, 26);
+            this.textBoxNov.TabIndex = 306;
+            this.textBoxNov.Text = " ";
+            // 
+            // textBoxAgo
+            // 
+            this.textBoxAgo.Location = new System.Drawing.Point(508, 449);
+            this.textBoxAgo.Name = "textBoxAgo";
+            this.textBoxAgo.Size = new System.Drawing.Size(352, 26);
+            this.textBoxAgo.TabIndex = 301;
+            this.textBoxAgo.Text = " ";
+            // 
+            // textBoxDic
+            // 
+            this.textBoxDic.Location = new System.Drawing.Point(508, 565);
+            this.textBoxDic.Name = "textBoxDic";
+            this.textBoxDic.Size = new System.Drawing.Size(352, 26);
+            this.textBoxDic.TabIndex = 307;
+            this.textBoxDic.Text = " ";
+            // 
+            // textBoxMay
+            // 
+            this.textBoxMay.Location = new System.Drawing.Point(508, 362);
+            this.textBoxMay.Name = "textBoxMay";
+            this.textBoxMay.Size = new System.Drawing.Size(352, 26);
+            this.textBoxMay.TabIndex = 302;
+            this.textBoxMay.Text = " ";
+            // 
+            // textBoxSep
+            // 
+            this.textBoxSep.Location = new System.Drawing.Point(508, 478);
+            this.textBoxSep.Name = "textBoxSep";
+            this.textBoxSep.Size = new System.Drawing.Size(352, 26);
+            this.textBoxSep.TabIndex = 305;
+            this.textBoxSep.Text = " ";
+            // 
+            // textBoxFeb
+            // 
+            this.textBoxFeb.Location = new System.Drawing.Point(508, 275);
+            this.textBoxFeb.Name = "textBoxFeb";
+            this.textBoxFeb.Size = new System.Drawing.Size(352, 26);
+            this.textBoxFeb.TabIndex = 297;
+            this.textBoxFeb.Text = " ";
+            // 
+            // textBoxJun
+            // 
+            this.textBoxJun.Location = new System.Drawing.Point(508, 391);
+            this.textBoxJun.Name = "textBoxJun";
+            this.textBoxJun.Size = new System.Drawing.Size(352, 26);
+            this.textBoxJun.TabIndex = 300;
+            this.textBoxJun.Text = " ";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label93.Location = new System.Drawing.Point(361, 223);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(55, 20);
+            this.label93.TabIndex = 295;
+            this.label93.Text = "Divisa:";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // facturadoDic
+            // 
+            this.facturadoDic.FormattingEnabled = true;
+            this.facturadoDic.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoDic.Location = new System.Drawing.Point(11, 565);
+            this.facturadoDic.Name = "facturadoDic";
+            this.facturadoDic.Size = new System.Drawing.Size(197, 28);
+            this.facturadoDic.TabIndex = 282;
+            // 
+            // facturadoNov
+            // 
+            this.facturadoNov.FormattingEnabled = true;
+            this.facturadoNov.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoNov.Location = new System.Drawing.Point(11, 536);
+            this.facturadoNov.Name = "facturadoNov";
+            this.facturadoNov.Size = new System.Drawing.Size(197, 28);
+            this.facturadoNov.TabIndex = 281;
+            // 
+            // facturadoOct
+            // 
+            this.facturadoOct.FormattingEnabled = true;
+            this.facturadoOct.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoOct.Location = new System.Drawing.Point(11, 507);
+            this.facturadoOct.Name = "facturadoOct";
+            this.facturadoOct.Size = new System.Drawing.Size(197, 28);
+            this.facturadoOct.TabIndex = 280;
+            // 
+            // facturadoSep
+            // 
+            this.facturadoSep.FormattingEnabled = true;
+            this.facturadoSep.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoSep.Location = new System.Drawing.Point(11, 478);
+            this.facturadoSep.Name = "facturadoSep";
+            this.facturadoSep.Size = new System.Drawing.Size(197, 28);
+            this.facturadoSep.TabIndex = 279;
+            // 
+            // facturadoAgo
+            // 
+            this.facturadoAgo.FormattingEnabled = true;
+            this.facturadoAgo.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoAgo.Location = new System.Drawing.Point(11, 449);
+            this.facturadoAgo.Name = "facturadoAgo";
+            this.facturadoAgo.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAgo.TabIndex = 278;
+            // 
+            // facturadoJul
+            // 
+            this.facturadoJul.FormattingEnabled = true;
+            this.facturadoJul.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoJul.Location = new System.Drawing.Point(11, 420);
+            this.facturadoJul.Name = "facturadoJul";
+            this.facturadoJul.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJul.TabIndex = 277;
+            // 
+            // facturadoJun
+            // 
+            this.facturadoJun.FormattingEnabled = true;
+            this.facturadoJun.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoJun.Location = new System.Drawing.Point(11, 391);
+            this.facturadoJun.Name = "facturadoJun";
+            this.facturadoJun.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJun.TabIndex = 276;
+            // 
+            // facturadoMay
+            // 
+            this.facturadoMay.FormattingEnabled = true;
+            this.facturadoMay.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoMay.Location = new System.Drawing.Point(11, 362);
+            this.facturadoMay.Name = "facturadoMay";
+            this.facturadoMay.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMay.TabIndex = 275;
+            // 
+            // facturadoAbr
+            // 
+            this.facturadoAbr.FormattingEnabled = true;
+            this.facturadoAbr.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoAbr.Location = new System.Drawing.Point(11, 333);
+            this.facturadoAbr.Name = "facturadoAbr";
+            this.facturadoAbr.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAbr.TabIndex = 274;
+            // 
+            // facturadoMar
+            // 
+            this.facturadoMar.FormattingEnabled = true;
+            this.facturadoMar.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoMar.Location = new System.Drawing.Point(11, 304);
+            this.facturadoMar.Name = "facturadoMar";
+            this.facturadoMar.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMar.TabIndex = 273;
+            // 
+            // facturadoFeb
+            // 
+            this.facturadoFeb.FormattingEnabled = true;
+            this.facturadoFeb.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoFeb.Location = new System.Drawing.Point(11, 275);
+            this.facturadoFeb.Name = "facturadoFeb";
+            this.facturadoFeb.Size = new System.Drawing.Size(197, 28);
+            this.facturadoFeb.TabIndex = 272;
+            // 
+            // facturadoEne
+            // 
+            this.facturadoEne.FormattingEnabled = true;
+            this.facturadoEne.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.facturadoEne.Location = new System.Drawing.Point(11, 246);
+            this.facturadoEne.Name = "facturadoEne";
+            this.facturadoEne.Size = new System.Drawing.Size(197, 28);
+            this.facturadoEne.TabIndex = 271;
             // 
             // textCondiciones
             // 
@@ -607,106 +1161,94 @@
             this.label51.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label51.Location = new System.Drawing.Point(219, 223);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(68, 20);
+            this.label51.Size = new System.Drawing.Size(129, 20);
             this.label51.TabIndex = 263;
-            this.label51.Text = "Importe:";
+            this.label51.Text = "Importe con IVA:";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textDocEne
             // 
             this.textDocEne.Location = new System.Drawing.Point(223, 246);
             this.textDocEne.Name = "textDocEne";
-            this.textDocEne.Size = new System.Drawing.Size(637, 26);
+            this.textDocEne.Size = new System.Drawing.Size(128, 26);
             this.textDocEne.TabIndex = 251;
-            this.textDocEne.Text = " ";
             // 
             // textDocOct
             // 
             this.textDocOct.Location = new System.Drawing.Point(223, 507);
             this.textDocOct.Name = "textDocOct";
-            this.textDocOct.Size = new System.Drawing.Size(637, 26);
+            this.textDocOct.Size = new System.Drawing.Size(128, 26);
             this.textDocOct.TabIndex = 259;
-            this.textDocOct.Text = " ";
             // 
             // textDocJul
             // 
             this.textDocJul.Location = new System.Drawing.Point(223, 420);
             this.textDocJul.Name = "textDocJul";
-            this.textDocJul.Size = new System.Drawing.Size(637, 26);
+            this.textDocJul.Size = new System.Drawing.Size(128, 26);
             this.textDocJul.TabIndex = 258;
-            this.textDocJul.Text = " ";
             // 
             // textDocAbr
             // 
             this.textDocAbr.Location = new System.Drawing.Point(223, 333);
             this.textDocAbr.Name = "textDocAbr";
-            this.textDocAbr.Size = new System.Drawing.Size(637, 26);
+            this.textDocAbr.Size = new System.Drawing.Size(128, 26);
             this.textDocAbr.TabIndex = 253;
-            this.textDocAbr.Text = " ";
             // 
             // textDocMar
             // 
             this.textDocMar.Location = new System.Drawing.Point(223, 304);
             this.textDocMar.Name = "textDocMar";
-            this.textDocMar.Size = new System.Drawing.Size(637, 26);
+            this.textDocMar.Size = new System.Drawing.Size(128, 26);
             this.textDocMar.TabIndex = 254;
-            this.textDocMar.Text = " ";
             // 
             // textDocNov
             // 
             this.textDocNov.Location = new System.Drawing.Point(223, 536);
             this.textDocNov.Name = "textDocNov";
-            this.textDocNov.Size = new System.Drawing.Size(637, 26);
+            this.textDocNov.Size = new System.Drawing.Size(128, 26);
             this.textDocNov.TabIndex = 261;
-            this.textDocNov.Text = " ";
             // 
             // textDocAgo
             // 
             this.textDocAgo.Location = new System.Drawing.Point(223, 449);
             this.textDocAgo.Name = "textDocAgo";
-            this.textDocAgo.Size = new System.Drawing.Size(637, 26);
+            this.textDocAgo.Size = new System.Drawing.Size(128, 26);
             this.textDocAgo.TabIndex = 256;
-            this.textDocAgo.Text = " ";
             // 
             // textDocDic
             // 
             this.textDocDic.Location = new System.Drawing.Point(223, 565);
             this.textDocDic.Name = "textDocDic";
-            this.textDocDic.Size = new System.Drawing.Size(637, 26);
+            this.textDocDic.Size = new System.Drawing.Size(128, 26);
             this.textDocDic.TabIndex = 262;
-            this.textDocDic.Text = " ";
             // 
             // textDocMay
             // 
             this.textDocMay.Location = new System.Drawing.Point(223, 362);
             this.textDocMay.Name = "textDocMay";
-            this.textDocMay.Size = new System.Drawing.Size(637, 26);
+            this.textDocMay.Size = new System.Drawing.Size(128, 26);
             this.textDocMay.TabIndex = 257;
-            this.textDocMay.Text = " ";
             // 
             // textDocSep
             // 
             this.textDocSep.Location = new System.Drawing.Point(223, 478);
             this.textDocSep.Name = "textDocSep";
-            this.textDocSep.Size = new System.Drawing.Size(637, 26);
+            this.textDocSep.Size = new System.Drawing.Size(128, 26);
             this.textDocSep.TabIndex = 260;
-            this.textDocSep.Text = " ";
             // 
             // textDocFeb
             // 
             this.textDocFeb.Location = new System.Drawing.Point(223, 275);
             this.textDocFeb.Name = "textDocFeb";
-            this.textDocFeb.Size = new System.Drawing.Size(637, 26);
+            this.textDocFeb.Size = new System.Drawing.Size(128, 26);
             this.textDocFeb.TabIndex = 252;
-            this.textDocFeb.Text = " ";
             // 
             // textDocJun
             // 
             this.textDocJun.Location = new System.Drawing.Point(223, 391);
             this.textDocJun.Name = "textDocJun";
-            this.textDocJun.Size = new System.Drawing.Size(637, 26);
+            this.textDocJun.Size = new System.Drawing.Size(128, 26);
             this.textDocJun.TabIndex = 255;
-            this.textDocJun.Text = " ";
             // 
             // label50
             // 
@@ -2328,258 +2870,6 @@
             this.Export.UseVisualStyleBackColor = true;
             this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
-            // facturadoEne
-            // 
-            this.facturadoEne.FormattingEnabled = true;
-            this.facturadoEne.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoEne.Location = new System.Drawing.Point(11, 246);
-            this.facturadoEne.Name = "facturadoEne";
-            this.facturadoEne.Size = new System.Drawing.Size(197, 28);
-            this.facturadoEne.TabIndex = 271;
-            // 
-            // facturadoFeb
-            // 
-            this.facturadoFeb.FormattingEnabled = true;
-            this.facturadoFeb.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoFeb.Location = new System.Drawing.Point(11, 275);
-            this.facturadoFeb.Name = "facturadoFeb";
-            this.facturadoFeb.Size = new System.Drawing.Size(197, 28);
-            this.facturadoFeb.TabIndex = 272;
-            // 
-            // facturadoMar
-            // 
-            this.facturadoMar.FormattingEnabled = true;
-            this.facturadoMar.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoMar.Location = new System.Drawing.Point(11, 304);
-            this.facturadoMar.Name = "facturadoMar";
-            this.facturadoMar.Size = new System.Drawing.Size(197, 28);
-            this.facturadoMar.TabIndex = 273;
-            // 
-            // facturadoAbr
-            // 
-            this.facturadoAbr.FormattingEnabled = true;
-            this.facturadoAbr.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoAbr.Location = new System.Drawing.Point(11, 333);
-            this.facturadoAbr.Name = "facturadoAbr";
-            this.facturadoAbr.Size = new System.Drawing.Size(197, 28);
-            this.facturadoAbr.TabIndex = 274;
-            // 
-            // facturadoMay
-            // 
-            this.facturadoMay.FormattingEnabled = true;
-            this.facturadoMay.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoMay.Location = new System.Drawing.Point(11, 362);
-            this.facturadoMay.Name = "facturadoMay";
-            this.facturadoMay.Size = new System.Drawing.Size(197, 28);
-            this.facturadoMay.TabIndex = 275;
-            // 
-            // facturadoJun
-            // 
-            this.facturadoJun.FormattingEnabled = true;
-            this.facturadoJun.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoJun.Location = new System.Drawing.Point(11, 391);
-            this.facturadoJun.Name = "facturadoJun";
-            this.facturadoJun.Size = new System.Drawing.Size(197, 28);
-            this.facturadoJun.TabIndex = 276;
-            // 
-            // facturadoJul
-            // 
-            this.facturadoJul.FormattingEnabled = true;
-            this.facturadoJul.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoJul.Location = new System.Drawing.Point(11, 420);
-            this.facturadoJul.Name = "facturadoJul";
-            this.facturadoJul.Size = new System.Drawing.Size(197, 28);
-            this.facturadoJul.TabIndex = 277;
-            // 
-            // facturadoAgo
-            // 
-            this.facturadoAgo.FormattingEnabled = true;
-            this.facturadoAgo.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoAgo.Location = new System.Drawing.Point(11, 449);
-            this.facturadoAgo.Name = "facturadoAgo";
-            this.facturadoAgo.Size = new System.Drawing.Size(197, 28);
-            this.facturadoAgo.TabIndex = 278;
-            // 
-            // facturadoSep
-            // 
-            this.facturadoSep.FormattingEnabled = true;
-            this.facturadoSep.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoSep.Location = new System.Drawing.Point(11, 478);
-            this.facturadoSep.Name = "facturadoSep";
-            this.facturadoSep.Size = new System.Drawing.Size(197, 28);
-            this.facturadoSep.TabIndex = 279;
-            // 
-            // facturadoOct
-            // 
-            this.facturadoOct.FormattingEnabled = true;
-            this.facturadoOct.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoOct.Location = new System.Drawing.Point(11, 507);
-            this.facturadoOct.Name = "facturadoOct";
-            this.facturadoOct.Size = new System.Drawing.Size(197, 28);
-            this.facturadoOct.TabIndex = 280;
-            // 
-            // facturadoNov
-            // 
-            this.facturadoNov.FormattingEnabled = true;
-            this.facturadoNov.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoNov.Location = new System.Drawing.Point(11, 536);
-            this.facturadoNov.Name = "facturadoNov";
-            this.facturadoNov.Size = new System.Drawing.Size(197, 28);
-            this.facturadoNov.TabIndex = 281;
-            // 
-            // facturadoDic
-            // 
-            this.facturadoDic.FormattingEnabled = true;
-            this.facturadoDic.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"});
-            this.facturadoDic.Location = new System.Drawing.Point(11, 565);
-            this.facturadoDic.Name = "facturadoDic";
-            this.facturadoDic.Size = new System.Drawing.Size(197, 28);
-            this.facturadoDic.TabIndex = 282;
-            // 
             // create_OI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -2847,5 +3137,31 @@
         private System.Windows.Forms.ComboBox facturadoAbr;
         private System.Windows.Forms.ComboBox facturadoMar;
         private System.Windows.Forms.ComboBox facturadoFeb;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.TextBox textBoxEne;
+        private System.Windows.Forms.TextBox textBoxOct;
+        private System.Windows.Forms.TextBox textBoxJul;
+        private System.Windows.Forms.TextBox textBoxAbr;
+        private System.Windows.Forms.TextBox textBoxMar;
+        private System.Windows.Forms.TextBox textBoxNov;
+        private System.Windows.Forms.TextBox textBoxAgo;
+        private System.Windows.Forms.TextBox textBoxDic;
+        private System.Windows.Forms.TextBox textBoxMay;
+        private System.Windows.Forms.TextBox textBoxSep;
+        private System.Windows.Forms.TextBox textBoxFeb;
+        private System.Windows.Forms.TextBox textBoxJun;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.ComboBox comboBoxDic;
+        private System.Windows.Forms.ComboBox comboNov;
+        private System.Windows.Forms.ComboBox comboOct;
+        private System.Windows.Forms.ComboBox comboSep;
+        private System.Windows.Forms.ComboBox comboAgo;
+        private System.Windows.Forms.ComboBox comboJul;
+        private System.Windows.Forms.ComboBox comboJun;
+        private System.Windows.Forms.ComboBox comboMay;
+        private System.Windows.Forms.ComboBox comboAbr;
+        private System.Windows.Forms.ComboBox comboMar;
+        private System.Windows.Forms.ComboBox comboFeb;
+        private System.Windows.Forms.ComboBox comboEne;
     }
 }
