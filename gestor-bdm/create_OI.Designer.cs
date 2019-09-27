@@ -275,6 +275,19 @@
             this.uno_hotel = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.Export = new System.Windows.Forms.Button();
+            this.anioEne = new System.Windows.Forms.ComboBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.anioFeb = new System.Windows.Forms.ComboBox();
+            this.anioAbr = new System.Windows.Forms.ComboBox();
+            this.anioMar = new System.Windows.Forms.ComboBox();
+            this.anioAgo = new System.Windows.Forms.ComboBox();
+            this.anioJul = new System.Windows.Forms.ComboBox();
+            this.anioJun = new System.Windows.Forms.ComboBox();
+            this.anioMay = new System.Windows.Forms.ComboBox();
+            this.anioDic = new System.Windows.Forms.ComboBox();
+            this.anioNov = new System.Windows.Forms.ComboBox();
+            this.anioOct = new System.Windows.Forms.ComboBox();
+            this.anioSep = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -508,6 +521,19 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.anioDic);
+            this.groupBox4.Controls.Add(this.anioNov);
+            this.groupBox4.Controls.Add(this.anioOct);
+            this.groupBox4.Controls.Add(this.anioSep);
+            this.groupBox4.Controls.Add(this.anioAgo);
+            this.groupBox4.Controls.Add(this.anioJul);
+            this.groupBox4.Controls.Add(this.anioJun);
+            this.groupBox4.Controls.Add(this.anioMay);
+            this.groupBox4.Controls.Add(this.anioAbr);
+            this.groupBox4.Controls.Add(this.anioMar);
+            this.groupBox4.Controls.Add(this.anioFeb);
+            this.groupBox4.Controls.Add(this.label95);
+            this.groupBox4.Controls.Add(this.anioEne);
             this.groupBox4.Controls.Add(this.comboBoxDic);
             this.groupBox4.Controls.Add(this.comboNov);
             this.groupBox4.Controls.Add(this.comboOct);
@@ -593,7 +619,8 @@
             this.comboBoxDic.FormattingEnabled = true;
             this.comboBoxDic.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboBoxDic.Location = new System.Drawing.Point(365, 565);
             this.comboBoxDic.Name = "comboBoxDic";
             this.comboBoxDic.Size = new System.Drawing.Size(128, 28);
@@ -604,7 +631,8 @@
             this.comboNov.FormattingEnabled = true;
             this.comboNov.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboNov.Location = new System.Drawing.Point(365, 536);
             this.comboNov.Name = "comboNov";
             this.comboNov.Size = new System.Drawing.Size(128, 28);
@@ -615,7 +643,8 @@
             this.comboOct.FormattingEnabled = true;
             this.comboOct.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboOct.Location = new System.Drawing.Point(365, 507);
             this.comboOct.Name = "comboOct";
             this.comboOct.Size = new System.Drawing.Size(128, 28);
@@ -626,7 +655,8 @@
             this.comboSep.FormattingEnabled = true;
             this.comboSep.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboSep.Location = new System.Drawing.Point(365, 478);
             this.comboSep.Name = "comboSep";
             this.comboSep.Size = new System.Drawing.Size(128, 28);
@@ -637,7 +667,8 @@
             this.comboAgo.FormattingEnabled = true;
             this.comboAgo.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboAgo.Location = new System.Drawing.Point(365, 449);
             this.comboAgo.Name = "comboAgo";
             this.comboAgo.Size = new System.Drawing.Size(128, 28);
@@ -648,7 +679,8 @@
             this.comboJul.FormattingEnabled = true;
             this.comboJul.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboJul.Location = new System.Drawing.Point(365, 420);
             this.comboJul.Name = "comboJul";
             this.comboJul.Size = new System.Drawing.Size(128, 28);
@@ -659,7 +691,8 @@
             this.comboJun.FormattingEnabled = true;
             this.comboJun.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboJun.Location = new System.Drawing.Point(365, 391);
             this.comboJun.Name = "comboJun";
             this.comboJun.Size = new System.Drawing.Size(128, 28);
@@ -670,7 +703,8 @@
             this.comboMay.FormattingEnabled = true;
             this.comboMay.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboMay.Location = new System.Drawing.Point(365, 362);
             this.comboMay.Name = "comboMay";
             this.comboMay.Size = new System.Drawing.Size(128, 28);
@@ -681,7 +715,8 @@
             this.comboAbr.FormattingEnabled = true;
             this.comboAbr.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboAbr.Location = new System.Drawing.Point(365, 333);
             this.comboAbr.Name = "comboAbr";
             this.comboAbr.Size = new System.Drawing.Size(128, 28);
@@ -692,7 +727,8 @@
             this.comboMar.FormattingEnabled = true;
             this.comboMar.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboMar.Location = new System.Drawing.Point(365, 304);
             this.comboMar.Name = "comboMar";
             this.comboMar.Size = new System.Drawing.Size(128, 28);
@@ -703,7 +739,8 @@
             this.comboFeb.FormattingEnabled = true;
             this.comboFeb.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboFeb.Location = new System.Drawing.Point(365, 275);
             this.comboFeb.Name = "comboFeb";
             this.comboFeb.Size = new System.Drawing.Size(128, 28);
@@ -714,7 +751,8 @@
             this.comboEne.FormattingEnabled = true;
             this.comboEne.Items.AddRange(new object[] {
             "MN",
-            "USD"});
+            "USD",
+            " "});
             this.comboEne.Location = new System.Drawing.Point(365, 244);
             this.comboEne.Name = "comboEne";
             this.comboEne.Size = new System.Drawing.Size(128, 28);
@@ -853,10 +891,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoDic.Location = new System.Drawing.Point(11, 565);
             this.facturadoDic.Name = "facturadoDic";
-            this.facturadoDic.Size = new System.Drawing.Size(197, 28);
+            this.facturadoDic.Size = new System.Drawing.Size(111, 28);
             this.facturadoDic.TabIndex = 282;
             // 
             // facturadoNov
@@ -874,10 +913,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoNov.Location = new System.Drawing.Point(11, 536);
             this.facturadoNov.Name = "facturadoNov";
-            this.facturadoNov.Size = new System.Drawing.Size(197, 28);
+            this.facturadoNov.Size = new System.Drawing.Size(111, 28);
             this.facturadoNov.TabIndex = 281;
             // 
             // facturadoOct
@@ -895,10 +935,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoOct.Location = new System.Drawing.Point(11, 507);
             this.facturadoOct.Name = "facturadoOct";
-            this.facturadoOct.Size = new System.Drawing.Size(197, 28);
+            this.facturadoOct.Size = new System.Drawing.Size(111, 28);
             this.facturadoOct.TabIndex = 280;
             // 
             // facturadoSep
@@ -916,10 +957,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoSep.Location = new System.Drawing.Point(11, 478);
             this.facturadoSep.Name = "facturadoSep";
-            this.facturadoSep.Size = new System.Drawing.Size(197, 28);
+            this.facturadoSep.Size = new System.Drawing.Size(111, 28);
             this.facturadoSep.TabIndex = 279;
             // 
             // facturadoAgo
@@ -937,10 +979,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoAgo.Location = new System.Drawing.Point(11, 449);
             this.facturadoAgo.Name = "facturadoAgo";
-            this.facturadoAgo.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAgo.Size = new System.Drawing.Size(111, 28);
             this.facturadoAgo.TabIndex = 278;
             // 
             // facturadoJul
@@ -958,10 +1001,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoJul.Location = new System.Drawing.Point(11, 420);
             this.facturadoJul.Name = "facturadoJul";
-            this.facturadoJul.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJul.Size = new System.Drawing.Size(111, 28);
             this.facturadoJul.TabIndex = 277;
             // 
             // facturadoJun
@@ -979,10 +1023,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoJun.Location = new System.Drawing.Point(11, 391);
             this.facturadoJun.Name = "facturadoJun";
-            this.facturadoJun.Size = new System.Drawing.Size(197, 28);
+            this.facturadoJun.Size = new System.Drawing.Size(111, 28);
             this.facturadoJun.TabIndex = 276;
             // 
             // facturadoMay
@@ -1000,10 +1045,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoMay.Location = new System.Drawing.Point(11, 362);
             this.facturadoMay.Name = "facturadoMay";
-            this.facturadoMay.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMay.Size = new System.Drawing.Size(111, 28);
             this.facturadoMay.TabIndex = 275;
             // 
             // facturadoAbr
@@ -1021,10 +1067,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoAbr.Location = new System.Drawing.Point(11, 333);
             this.facturadoAbr.Name = "facturadoAbr";
-            this.facturadoAbr.Size = new System.Drawing.Size(197, 28);
+            this.facturadoAbr.Size = new System.Drawing.Size(111, 28);
             this.facturadoAbr.TabIndex = 274;
             // 
             // facturadoMar
@@ -1042,10 +1089,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoMar.Location = new System.Drawing.Point(11, 304);
             this.facturadoMar.Name = "facturadoMar";
-            this.facturadoMar.Size = new System.Drawing.Size(197, 28);
+            this.facturadoMar.Size = new System.Drawing.Size(111, 28);
             this.facturadoMar.TabIndex = 273;
             // 
             // facturadoFeb
@@ -1063,10 +1111,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoFeb.Location = new System.Drawing.Point(11, 275);
             this.facturadoFeb.Name = "facturadoFeb";
-            this.facturadoFeb.Size = new System.Drawing.Size(197, 28);
+            this.facturadoFeb.Size = new System.Drawing.Size(111, 28);
             this.facturadoFeb.TabIndex = 272;
             // 
             // facturadoEne
@@ -1084,10 +1133,11 @@
             "Septiembre",
             "Octubre",
             "Noviembre",
-            "Diciembre"});
+            "Diciembre",
+            " "});
             this.facturadoEne.Location = new System.Drawing.Point(11, 246);
             this.facturadoEne.Name = "facturadoEne";
-            this.facturadoEne.Size = new System.Drawing.Size(197, 28);
+            this.facturadoEne.Size = new System.Drawing.Size(111, 28);
             this.facturadoEne.TabIndex = 271;
             // 
             // textCondiciones
@@ -2870,6 +2920,256 @@
             this.Export.UseVisualStyleBackColor = true;
             this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
+            // anioEne
+            // 
+            this.anioEne.FormattingEnabled = true;
+            this.anioEne.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioEne.Location = new System.Drawing.Point(128, 246);
+            this.anioEne.Name = "anioEne";
+            this.anioEne.Size = new System.Drawing.Size(85, 28);
+            this.anioEne.TabIndex = 321;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label95.Location = new System.Drawing.Point(129, 223);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(42, 20);
+            this.label95.TabIndex = 322;
+            this.label95.Text = "Año:";
+            // 
+            // anioFeb
+            // 
+            this.anioFeb.FormattingEnabled = true;
+            this.anioFeb.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioFeb.Location = new System.Drawing.Point(128, 275);
+            this.anioFeb.Name = "anioFeb";
+            this.anioFeb.Size = new System.Drawing.Size(85, 28);
+            this.anioFeb.TabIndex = 323;
+            // 
+            // anioAbr
+            // 
+            this.anioAbr.FormattingEnabled = true;
+            this.anioAbr.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioAbr.Location = new System.Drawing.Point(128, 333);
+            this.anioAbr.Name = "anioAbr";
+            this.anioAbr.Size = new System.Drawing.Size(85, 28);
+            this.anioAbr.TabIndex = 325;
+            // 
+            // anioMar
+            // 
+            this.anioMar.FormattingEnabled = true;
+            this.anioMar.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioMar.Location = new System.Drawing.Point(128, 304);
+            this.anioMar.Name = "anioMar";
+            this.anioMar.Size = new System.Drawing.Size(85, 28);
+            this.anioMar.TabIndex = 324;
+            // 
+            // anioAgo
+            // 
+            this.anioAgo.FormattingEnabled = true;
+            this.anioAgo.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioAgo.Location = new System.Drawing.Point(128, 449);
+            this.anioAgo.Name = "anioAgo";
+            this.anioAgo.Size = new System.Drawing.Size(85, 28);
+            this.anioAgo.TabIndex = 329;
+            // 
+            // anioJul
+            // 
+            this.anioJul.FormattingEnabled = true;
+            this.anioJul.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioJul.Location = new System.Drawing.Point(128, 420);
+            this.anioJul.Name = "anioJul";
+            this.anioJul.Size = new System.Drawing.Size(85, 28);
+            this.anioJul.TabIndex = 328;
+            // 
+            // anioJun
+            // 
+            this.anioJun.FormattingEnabled = true;
+            this.anioJun.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioJun.Location = new System.Drawing.Point(128, 391);
+            this.anioJun.Name = "anioJun";
+            this.anioJun.Size = new System.Drawing.Size(85, 28);
+            this.anioJun.TabIndex = 327;
+            // 
+            // anioMay
+            // 
+            this.anioMay.FormattingEnabled = true;
+            this.anioMay.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioMay.Location = new System.Drawing.Point(128, 362);
+            this.anioMay.Name = "anioMay";
+            this.anioMay.Size = new System.Drawing.Size(85, 28);
+            this.anioMay.TabIndex = 326;
+            // 
+            // anioDic
+            // 
+            this.anioDic.FormattingEnabled = true;
+            this.anioDic.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioDic.Location = new System.Drawing.Point(128, 565);
+            this.anioDic.Name = "anioDic";
+            this.anioDic.Size = new System.Drawing.Size(85, 28);
+            this.anioDic.TabIndex = 333;
+            // 
+            // anioNov
+            // 
+            this.anioNov.FormattingEnabled = true;
+            this.anioNov.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioNov.Location = new System.Drawing.Point(128, 536);
+            this.anioNov.Name = "anioNov";
+            this.anioNov.Size = new System.Drawing.Size(85, 28);
+            this.anioNov.TabIndex = 332;
+            // 
+            // anioOct
+            // 
+            this.anioOct.FormattingEnabled = true;
+            this.anioOct.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioOct.Location = new System.Drawing.Point(128, 507);
+            this.anioOct.Name = "anioOct";
+            this.anioOct.Size = new System.Drawing.Size(85, 28);
+            this.anioOct.TabIndex = 331;
+            // 
+            // anioSep
+            // 
+            this.anioSep.FormattingEnabled = true;
+            this.anioSep.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioSep.Location = new System.Drawing.Point(128, 478);
+            this.anioSep.Name = "anioSep";
+            this.anioSep.Size = new System.Drawing.Size(85, 28);
+            this.anioSep.TabIndex = 330;
+            // 
             // create_OI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -3163,5 +3463,18 @@
         private System.Windows.Forms.ComboBox comboMar;
         private System.Windows.Forms.ComboBox comboFeb;
         private System.Windows.Forms.ComboBox comboEne;
+        private System.Windows.Forms.ComboBox anioDic;
+        private System.Windows.Forms.ComboBox anioNov;
+        private System.Windows.Forms.ComboBox anioOct;
+        private System.Windows.Forms.ComboBox anioSep;
+        private System.Windows.Forms.ComboBox anioAgo;
+        private System.Windows.Forms.ComboBox anioJul;
+        private System.Windows.Forms.ComboBox anioJun;
+        private System.Windows.Forms.ComboBox anioMay;
+        private System.Windows.Forms.ComboBox anioAbr;
+        private System.Windows.Forms.ComboBox anioMar;
+        private System.Windows.Forms.ComboBox anioFeb;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox anioEne;
     }
 }
