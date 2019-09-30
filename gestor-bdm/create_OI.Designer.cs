@@ -51,6 +51,19 @@
             this.textFirma_c = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.anioDic = new System.Windows.Forms.ComboBox();
+            this.anioNov = new System.Windows.Forms.ComboBox();
+            this.anioOct = new System.Windows.Forms.ComboBox();
+            this.anioSep = new System.Windows.Forms.ComboBox();
+            this.anioAgo = new System.Windows.Forms.ComboBox();
+            this.anioJul = new System.Windows.Forms.ComboBox();
+            this.anioJun = new System.Windows.Forms.ComboBox();
+            this.anioMay = new System.Windows.Forms.ComboBox();
+            this.anioAbr = new System.Windows.Forms.ComboBox();
+            this.anioMar = new System.Windows.Forms.ComboBox();
+            this.anioFeb = new System.Windows.Forms.ComboBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.anioEne = new System.Windows.Forms.ComboBox();
             this.comboBoxDic = new System.Windows.Forms.ComboBox();
             this.comboNov = new System.Windows.Forms.ComboBox();
             this.comboOct = new System.Windows.Forms.ComboBox();
@@ -275,19 +288,7 @@
             this.uno_hotel = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.Export = new System.Windows.Forms.Button();
-            this.anioEne = new System.Windows.Forms.ComboBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.anioFeb = new System.Windows.Forms.ComboBox();
-            this.anioAbr = new System.Windows.Forms.ComboBox();
-            this.anioMar = new System.Windows.Forms.ComboBox();
-            this.anioAgo = new System.Windows.Forms.ComboBox();
-            this.anioJul = new System.Windows.Forms.ComboBox();
-            this.anioJun = new System.Windows.Forms.ComboBox();
-            this.anioMay = new System.Windows.Forms.ComboBox();
-            this.anioDic = new System.Windows.Forms.ComboBox();
-            this.anioNov = new System.Windows.Forms.ComboBox();
-            this.anioOct = new System.Windows.Forms.ComboBox();
-            this.anioSep = new System.Windows.Forms.ComboBox();
+            this.Sumar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -521,6 +522,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.Sumar);
             this.groupBox4.Controls.Add(this.anioDic);
             this.groupBox4.Controls.Add(this.anioNov);
             this.groupBox4.Controls.Add(this.anioOct);
@@ -613,6 +615,256 @@
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Esquema comercial y forma de pago";
+            // 
+            // anioDic
+            // 
+            this.anioDic.FormattingEnabled = true;
+            this.anioDic.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioDic.Location = new System.Drawing.Point(128, 565);
+            this.anioDic.Name = "anioDic";
+            this.anioDic.Size = new System.Drawing.Size(85, 28);
+            this.anioDic.TabIndex = 333;
+            // 
+            // anioNov
+            // 
+            this.anioNov.FormattingEnabled = true;
+            this.anioNov.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioNov.Location = new System.Drawing.Point(128, 536);
+            this.anioNov.Name = "anioNov";
+            this.anioNov.Size = new System.Drawing.Size(85, 28);
+            this.anioNov.TabIndex = 332;
+            // 
+            // anioOct
+            // 
+            this.anioOct.FormattingEnabled = true;
+            this.anioOct.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioOct.Location = new System.Drawing.Point(128, 507);
+            this.anioOct.Name = "anioOct";
+            this.anioOct.Size = new System.Drawing.Size(85, 28);
+            this.anioOct.TabIndex = 331;
+            // 
+            // anioSep
+            // 
+            this.anioSep.FormattingEnabled = true;
+            this.anioSep.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioSep.Location = new System.Drawing.Point(128, 478);
+            this.anioSep.Name = "anioSep";
+            this.anioSep.Size = new System.Drawing.Size(85, 28);
+            this.anioSep.TabIndex = 330;
+            // 
+            // anioAgo
+            // 
+            this.anioAgo.FormattingEnabled = true;
+            this.anioAgo.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioAgo.Location = new System.Drawing.Point(128, 449);
+            this.anioAgo.Name = "anioAgo";
+            this.anioAgo.Size = new System.Drawing.Size(85, 28);
+            this.anioAgo.TabIndex = 329;
+            // 
+            // anioJul
+            // 
+            this.anioJul.FormattingEnabled = true;
+            this.anioJul.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioJul.Location = new System.Drawing.Point(128, 420);
+            this.anioJul.Name = "anioJul";
+            this.anioJul.Size = new System.Drawing.Size(85, 28);
+            this.anioJul.TabIndex = 328;
+            // 
+            // anioJun
+            // 
+            this.anioJun.FormattingEnabled = true;
+            this.anioJun.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioJun.Location = new System.Drawing.Point(128, 391);
+            this.anioJun.Name = "anioJun";
+            this.anioJun.Size = new System.Drawing.Size(85, 28);
+            this.anioJun.TabIndex = 327;
+            // 
+            // anioMay
+            // 
+            this.anioMay.FormattingEnabled = true;
+            this.anioMay.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioMay.Location = new System.Drawing.Point(128, 362);
+            this.anioMay.Name = "anioMay";
+            this.anioMay.Size = new System.Drawing.Size(85, 28);
+            this.anioMay.TabIndex = 326;
+            // 
+            // anioAbr
+            // 
+            this.anioAbr.FormattingEnabled = true;
+            this.anioAbr.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioAbr.Location = new System.Drawing.Point(128, 333);
+            this.anioAbr.Name = "anioAbr";
+            this.anioAbr.Size = new System.Drawing.Size(85, 28);
+            this.anioAbr.TabIndex = 325;
+            // 
+            // anioMar
+            // 
+            this.anioMar.FormattingEnabled = true;
+            this.anioMar.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioMar.Location = new System.Drawing.Point(128, 304);
+            this.anioMar.Name = "anioMar";
+            this.anioMar.Size = new System.Drawing.Size(85, 28);
+            this.anioMar.TabIndex = 324;
+            // 
+            // anioFeb
+            // 
+            this.anioFeb.FormattingEnabled = true;
+            this.anioFeb.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioFeb.Location = new System.Drawing.Point(128, 275);
+            this.anioFeb.Name = "anioFeb";
+            this.anioFeb.Size = new System.Drawing.Size(85, 28);
+            this.anioFeb.TabIndex = 323;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label95.Location = new System.Drawing.Point(129, 223);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(42, 20);
+            this.label95.TabIndex = 322;
+            this.label95.Text = "Año:";
+            // 
+            // anioEne
+            // 
+            this.anioEne.FormattingEnabled = true;
+            this.anioEne.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029"});
+            this.anioEne.Location = new System.Drawing.Point(128, 246);
+            this.anioEne.Name = "anioEne";
+            this.anioEne.Size = new System.Drawing.Size(85, 28);
+            this.anioEne.TabIndex = 321;
             // 
             // comboBoxDic
             // 
@@ -1193,7 +1445,7 @@
             // 
             this.textTotalIVA.Location = new System.Drawing.Point(129, 610);
             this.textTotalIVA.Name = "textTotalIVA";
-            this.textTotalIVA.Size = new System.Drawing.Size(731, 26);
+            this.textTotalIVA.Size = new System.Drawing.Size(624, 26);
             this.textTotalIVA.TabIndex = 265;
             // 
             // label40
@@ -2030,6 +2282,7 @@
             this.OI_text.Name = "OI_text";
             this.OI_text.Size = new System.Drawing.Size(202, 26);
             this.OI_text.TabIndex = 9;
+            this.OI_text.Text = "1";
             // 
             // label1
             // 
@@ -2920,255 +3173,15 @@
             this.Export.UseVisualStyleBackColor = true;
             this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
-            // anioEne
+            // Sumar
             // 
-            this.anioEne.FormattingEnabled = true;
-            this.anioEne.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioEne.Location = new System.Drawing.Point(128, 246);
-            this.anioEne.Name = "anioEne";
-            this.anioEne.Size = new System.Drawing.Size(85, 28);
-            this.anioEne.TabIndex = 321;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label95.Location = new System.Drawing.Point(129, 223);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(42, 20);
-            this.label95.TabIndex = 322;
-            this.label95.Text = "Año:";
-            // 
-            // anioFeb
-            // 
-            this.anioFeb.FormattingEnabled = true;
-            this.anioFeb.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioFeb.Location = new System.Drawing.Point(128, 275);
-            this.anioFeb.Name = "anioFeb";
-            this.anioFeb.Size = new System.Drawing.Size(85, 28);
-            this.anioFeb.TabIndex = 323;
-            // 
-            // anioAbr
-            // 
-            this.anioAbr.FormattingEnabled = true;
-            this.anioAbr.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioAbr.Location = new System.Drawing.Point(128, 333);
-            this.anioAbr.Name = "anioAbr";
-            this.anioAbr.Size = new System.Drawing.Size(85, 28);
-            this.anioAbr.TabIndex = 325;
-            // 
-            // anioMar
-            // 
-            this.anioMar.FormattingEnabled = true;
-            this.anioMar.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioMar.Location = new System.Drawing.Point(128, 304);
-            this.anioMar.Name = "anioMar";
-            this.anioMar.Size = new System.Drawing.Size(85, 28);
-            this.anioMar.TabIndex = 324;
-            // 
-            // anioAgo
-            // 
-            this.anioAgo.FormattingEnabled = true;
-            this.anioAgo.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioAgo.Location = new System.Drawing.Point(128, 449);
-            this.anioAgo.Name = "anioAgo";
-            this.anioAgo.Size = new System.Drawing.Size(85, 28);
-            this.anioAgo.TabIndex = 329;
-            // 
-            // anioJul
-            // 
-            this.anioJul.FormattingEnabled = true;
-            this.anioJul.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioJul.Location = new System.Drawing.Point(128, 420);
-            this.anioJul.Name = "anioJul";
-            this.anioJul.Size = new System.Drawing.Size(85, 28);
-            this.anioJul.TabIndex = 328;
-            // 
-            // anioJun
-            // 
-            this.anioJun.FormattingEnabled = true;
-            this.anioJun.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioJun.Location = new System.Drawing.Point(128, 391);
-            this.anioJun.Name = "anioJun";
-            this.anioJun.Size = new System.Drawing.Size(85, 28);
-            this.anioJun.TabIndex = 327;
-            // 
-            // anioMay
-            // 
-            this.anioMay.FormattingEnabled = true;
-            this.anioMay.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioMay.Location = new System.Drawing.Point(128, 362);
-            this.anioMay.Name = "anioMay";
-            this.anioMay.Size = new System.Drawing.Size(85, 28);
-            this.anioMay.TabIndex = 326;
-            // 
-            // anioDic
-            // 
-            this.anioDic.FormattingEnabled = true;
-            this.anioDic.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioDic.Location = new System.Drawing.Point(128, 565);
-            this.anioDic.Name = "anioDic";
-            this.anioDic.Size = new System.Drawing.Size(85, 28);
-            this.anioDic.TabIndex = 333;
-            // 
-            // anioNov
-            // 
-            this.anioNov.FormattingEnabled = true;
-            this.anioNov.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioNov.Location = new System.Drawing.Point(128, 536);
-            this.anioNov.Name = "anioNov";
-            this.anioNov.Size = new System.Drawing.Size(85, 28);
-            this.anioNov.TabIndex = 332;
-            // 
-            // anioOct
-            // 
-            this.anioOct.FormattingEnabled = true;
-            this.anioOct.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioOct.Location = new System.Drawing.Point(128, 507);
-            this.anioOct.Name = "anioOct";
-            this.anioOct.Size = new System.Drawing.Size(85, 28);
-            this.anioOct.TabIndex = 331;
-            // 
-            // anioSep
-            // 
-            this.anioSep.FormattingEnabled = true;
-            this.anioSep.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025",
-            "2026",
-            "2027",
-            "2028",
-            "2029"});
-            this.anioSep.Location = new System.Drawing.Point(128, 478);
-            this.anioSep.Name = "anioSep";
-            this.anioSep.Size = new System.Drawing.Size(85, 28);
-            this.anioSep.TabIndex = 330;
+            this.Sumar.Location = new System.Drawing.Point(759, 610);
+            this.Sumar.Name = "Sumar";
+            this.Sumar.Size = new System.Drawing.Size(101, 27);
+            this.Sumar.TabIndex = 334;
+            this.Sumar.Text = "Sumar";
+            this.Sumar.UseVisualStyleBackColor = true;
+            this.Sumar.Click += new System.EventHandler(this.Sumar_Click);
             // 
             // create_OI
             // 
@@ -3476,5 +3489,6 @@
         private System.Windows.Forms.ComboBox anioFeb;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.ComboBox anioEne;
+        private System.Windows.Forms.Button Sumar;
     }
 }
