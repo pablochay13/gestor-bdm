@@ -56,7 +56,7 @@ namespace gestor_bdm
                 //caratula
                 PdfPTable caratula = new PdfPTable(1);
                 caratula.WidthPercentage = 100;
-                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("CARÁTULA DE ORDEN DE INSERCIÓN NÚMERO: " + OI_text.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("FOLIO DE REFERENCIA: " + OI_text.Text + "     " + "ORDEN DE INSERCIÓN" + "     " + "FECHA: " + DateTime.Now), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 //pdfDoc.Add(new Paragraph(string.Format("Vendedor: " + Label1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 13, iTextSharp.text.Font.BOLD)));
                 caratula_oi.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 caratula_oi.HorizontalAlignment = 1; //0=Izquierda, 1=Centro, 2 = Derecha
@@ -296,10 +296,12 @@ namespace gestor_bdm
                 table_1.WidthPercentage = 100;
                 PdfPCell cliente = new PdfPCell(new Phrase(string.Format("EL CLIENTE"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cliente.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+                cliente.HorizontalAlignment = 1;
                 cliente.Colspan = 2;
 
-                PdfPCell media = new PdfPCell(new Phrase(string.Format("MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell media = new PdfPCell(new Phrase(string.Format("BEST TRAVEL MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 media.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+                media.HorizontalAlignment = 1;
                 media.Colspan = 2;
 
                 table_1.AddCell(cliente);
@@ -309,7 +311,7 @@ namespace gestor_bdm
                 bottom_cliente_1.Colspan = 2;
                 table_1.AddCell(bottom_cliente_1);
 
-                PdfPCell bottom_media_1 = new PdfPCell(new Phrase(string.Format("Razón social contratante: " + mediaRazon.Text + "\n" + "ID Fiscal: " + mediaID.Text + "\n" + "Direccion: " + "\n" + "Calle: " + mediaCalle.Text + "\n" + "Ciudad/País: " + mediaPais.Text + "\n" + "Código postal: " + mediaPostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_1 = new PdfPCell(new Phrase(string.Format("Razón Social Contratante: " + mediaRazon.Text + "\n" + "ID Fiscal: " + mediaID.Text + "\n" + "Direccion: " + "\n" + "Calle: " + mediaCalle.Text + "\n" + "Ciudad/País: " + mediaPais.Text + "\n" + "Código postal: " + mediaPostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_1.Colspan = 2;
                 table_1.AddCell(bottom_media_1);
 
@@ -317,10 +319,14 @@ namespace gestor_bdm
                 //clientes_2
                 PdfPTable table_2 = new PdfPTable(4);
                 table_2.WidthPercentage = 100;
-                PdfPCell cliente_2 = new PdfPCell(new Phrase(string.Format("CONTACTO COMERCIAL"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell cliente_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Pagar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cliente_2.BackgroundColor = new BaseColor(6, 61, 150); 
+                cliente_2.HorizontalAlignment = 1; 
                 cliente_2.Colspan = 2;
 
-                PdfPCell media_2 = new PdfPCell(new Phrase(string.Format("CONTACTO FACTURACIÓN"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Cobrar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                media_2.BackgroundColor = new BaseColor(6, 61, 150); 
+                media_2.HorizontalAlignment = 1; 
                 media_2.Colspan = 2;
 
                 table_2.AddCell(cliente_2);
@@ -335,42 +341,50 @@ namespace gestor_bdm
                 table_2.AddCell(bottom_media_2);
 
 
+
+
+
+
+
                 //clientes_2
                 PdfPTable table_3 = new PdfPTable(4);
                 table_3.WidthPercentage = 100;
-                PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("CONTACTO DE SEGUIMIENTO DE PAUTA DE MEDIOS"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + " " + "Correo: " + seguimientoCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + " " + "Correo: " + seguimientoCorreo.Text + "\n" + "\n" + "Contacto Tour HotelDO: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + " " + "Correo: " + seguimientoCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cliente_3.Colspan = 2;
 
-                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("CONTACTO DE SEGUIMIENTO DE PAUTA DE TOUR DE HOTELDO"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + hotelNombre.Text + "\n" + "Teléfono: " + HotelTelefono.Text + " " + "Correo: " + HotelTelefono.Text + "\n" + "\n" + "Contacto Pauta Medios: " + hotelNombre.Text + "\n" + "Teléfono: " + HotelTelefono.Text + " " + "Correo: " + HotelTelefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 media_3.Colspan = 2;
 
                 table_3.AddCell(cliente_3);
+
                 table_3.AddCell(media_3);
 
-                PdfPCell bottom_cliente_3 = new PdfPCell(new Phrase(string.Format("Nombre: " + seguimientoNombre.Text + "\n" + "Teléfono: " + seguimientoTelefono.Text + "\n" + "Correo: " + seguimientoCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                bottom_cliente_3.Colspan = 2;
-                table_3.AddCell(bottom_cliente_3);
 
-                PdfPCell bottom_media_3 = new PdfPCell(new Phrase(string.Format("Nombre: " + hotelNombre.Text + "\n" + "Teléfono: " + HotelTelefono.Text + "\n" + "Correo: " + HotelTelefono.Text + "\n" + "*Indicar ciudades requeridas"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                bottom_media_3.Colspan = 2;
-                table_3.AddCell(bottom_media_3);
 
 
                 //caratula
                 string checked_cash_in = "";
 
-                if (cash_in_checkBox.Checked == true)
-                {
-                    checked_cash_in = "X";
-                }
 
-                else if (cash_in_checkBox.Checked == false)
-                {
-                    checked_cash_in = " ";
-                }
+                PdfPTable cash_in_1 = new PdfPTable(4);
+                cash_in_1.WidthPercentage = 100;
+
+
+                PdfPCell facturado_por = new PdfPCell(new Phrase(string.Format("FACTURAR POR "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                facturado_por.BackgroundColor = new BaseColor(6, 61, 150);
+
+                cash_in_1.AddCell(facturado_por);
+
+                PdfPCell facturado_por_2 = new PdfPCell(new Phrase(string.Format("Corporativo " + " " + "Hotel " + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                facturado_por_2.Colspan = 3;
+                facturado_por_2.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
+
+                cash_in_1.AddCell(facturado_por_2);
+
 
                 PdfPTable cash_in = new PdfPTable(1);
                 cash_in.WidthPercentage = 100;
+
                 PdfPCell cash_in_oi = new PdfPCell(new Phrase(string.Format("ESQUEMA COMERCIAL Y FORMA DE PAGO: " + "             " + "Cash IN: " + checked_cash_in), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cash_in_oi.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 cash_in_oi.HorizontalAlignment = 0; //0=Izquierda, 1=Centro, 2 = Derecha
@@ -586,17 +600,7 @@ namespace gestor_bdm
 
 
                 //Facturacion mensual
-                string facturacion_mensual = "";
-
-                if (checkFaturacionMensual.Checked==true)
-                {
-                    facturacion_mensual = "X";
-                }
-
-                else
-                {
-                    facturacion_mensual = "";
-                }
+                string facturacion_mensual = " ";
 
                 PdfPTable table = new PdfPTable(6);
                 table.WidthPercentage = 100;
@@ -1015,7 +1019,7 @@ namespace gestor_bdm
                 cliente_4.Colspan = 3;
                 cliente_4.HorizontalAlignment = 1;
 
-                PdfPCell media_4 = new PdfPCell(new Phrase(string.Format("MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell media_4 = new PdfPCell(new Phrase(string.Format("BEST TRAVEL MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 media_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 media_4.Colspan = 3;
                 media_4.HorizontalAlignment = 1;
@@ -1082,7 +1086,7 @@ namespace gestor_bdm
                 bottom_cliente_10.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_10);
 
-                PdfPCell bottom_media_10 = new PdfPCell(new Phrase(string.Format(dateSingCliente.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_10 = new PdfPCell(new Phrase(string.Format(textFechaCliente.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD)));
                 bottom_media_10.Colspan = 2;
                 table_4.AddCell(bottom_media_10);
 
@@ -1091,7 +1095,7 @@ namespace gestor_bdm
                 bottom_cliente_11.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_11);
 
-                PdfPCell bottom_media_11 = new PdfPCell(new Phrase(string.Format(dateSingMedia.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_11 = new PdfPCell(new Phrase(string.Format(textFechaMedia.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD)));
                 bottom_media_11.Colspan = 2;
                 table_4.AddCell(bottom_media_11);
 
@@ -2429,18 +2433,19 @@ namespace gestor_bdm
                     //pdfDoc.Add(new Paragraph(" "));
 
                     pdfDoc.Add(table_1);
-                    pdfDoc.Add(new Paragraph(" "));
 
                     pdfDoc.Add(table_2);
 
                     pdfDoc.Add(table_3);
                     pdfDoc.Add(new Paragraph(" "));
 
+                    pdfDoc.Add(cash_in_1);
+
                     pdfDoc.Add(cash_in);
 
-                    pdfDoc.Add(forma_calculo);
-
                     pdfDoc.Add(vigencia_pauta_mf);
+
+                    pdfDoc.Add(forma_calculo);
 
                     pdfDoc.Add(table);
 
