@@ -29,7 +29,7 @@
     <SuiteName>Best Travel Media</SuiteName>
     <MinimumRequiredVersion>1.0.0.38</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>74</ApplicationRevision>
+    <ApplicationRevision>75</ApplicationRevision>
     <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -79,6 +79,15 @@
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
@@ -167,6 +176,12 @@
     </Compile>
     <Compile Include="generador.Designer.cs">
       <DependentUpon>generador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generador_OI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador_OI.Designer.cs">
+      <DependentUpon>generador_OI.cs</DependentUpon>
     </Compile>
     <Compile Include="hotel.cs">
       <SubType>Form</SubType>
@@ -303,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="generador.resx">
       <DependentUpon>generador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador_OI.resx">
+      <DependentUpon>generador_OI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hotel.resx">
       <DependentUpon>hotel.cs</DependentUpon>

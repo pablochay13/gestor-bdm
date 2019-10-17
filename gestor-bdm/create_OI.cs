@@ -629,8 +629,19 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoEne.Text + " " + anioEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+
+                if(textDocEne.Text == "0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
+
 
                 cell = new PdfPCell(new Phrase(string.Format(comboEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -644,8 +655,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoFeb.Text + " " + anioFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocFeb.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -659,8 +678,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoMar.Text + " " + anioMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocMar.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -674,8 +701,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoAbr.Text + " " + anioAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocAbr.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -689,8 +724,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoMay.Text) + " " + anioMay.Text, new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if (textDocMay.Text == "0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -704,8 +747,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoJun.Text + " " + anioJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if (textDocJun.Text == "0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -716,11 +767,19 @@ namespace gestor_bdm
 
 
                 //JUL
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if (textDocJul.Text == "0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -734,8 +793,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoAgo.Text + " " + anioAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocAgo.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -749,8 +816,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoSep.Text + " " + anioSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocSep.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -764,8 +839,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoOct.Text + " " + anioOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocOct.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -779,8 +862,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoNov.Text + " " + anioNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocNov.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
 
                 cell = new PdfPCell(new Phrase(string.Format(comboNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
@@ -795,8 +886,16 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoDic.Text + " " + anioDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                table.AddCell(cell);
+                if(textDocDic.Text=="0.00")
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    table.AddCell(cell);
+                }
+                else
+                {
+                    cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    table.AddCell(cell);
+                }
 
                 cell = new PdfPCell(new Phrase(string.Format(comboBoxDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
@@ -811,137 +910,23 @@ namespace gestor_bdm
                 cell_fm_3.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell_fm_3);
 
+                double total = 0;
 
-                int cant_ene, cant_feb, cant_mar, cant_abr, cant_may, cant_jun, cant_jul, cant_ago, cant_sep, cant_oct, cant_nov, cant_dic = 0;
+                total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
 
-                if (string.IsNullOrEmpty(textDocEne.Text))
+
+                if(textTotalIVA.Text=="0.00")
                 {
-                    cant_ene = 0;
+                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    cell.Colspan = 5;
+                    table.AddCell(cell);
                 }
                 else
                 {
-                    cant_ene = Convert.ToInt32(textDocEne.Text);
+                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell.Colspan = 5;
+                    table.AddCell(cell);
                 }
-
-
-                if (string.IsNullOrEmpty(textDocFeb.Text))
-                {
-                    cant_feb = 0;
-                }
-                else
-                {
-                    cant_feb = Convert.ToInt32(textDocFeb.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocMar.Text))
-                {
-                    cant_mar = 0;
-                }
-                else
-                {
-                    cant_mar = Convert.ToInt32(textDocMar.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocAbr.Text))
-                {
-                    cant_abr = 0;
-                }
-                else
-                {
-                    cant_abr = Convert.ToInt32(textDocAbr.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocMay.Text))
-                {
-                    cant_may = 0;
-                }
-                else
-                {
-                    cant_may = Convert.ToInt32(textDocMay.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocJun.Text))
-                {
-                    cant_jun = 0;
-                }
-                else
-                {
-                    cant_jun = Convert.ToInt32(textDocJun.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocJul.Text))
-                {
-                    cant_jul = 0;
-                }
-                else
-                {
-                    cant_jul = Convert.ToInt32(textDocJul.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocAgo.Text))
-                {
-                    cant_ago = 0;
-                }
-                else
-                {
-                    cant_ago = Convert.ToInt32(textDocAgo.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocSep.Text))
-                {
-                    cant_sep = 0;
-                }
-                else
-                {
-                    cant_sep = Convert.ToInt32(textDocSep.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocOct.Text))
-                {
-                    cant_oct = 0;
-                }
-                else
-                {
-                    cant_oct = Convert.ToInt32(textDocOct.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocNov.Text))
-                {
-                    cant_nov = 0;
-                }
-                else
-                {
-                    cant_nov = Convert.ToInt32(textDocNov.Text);
-                }
-
-
-                if (string.IsNullOrEmpty(textDocDic.Text))
-                {
-                    cant_dic = 0;
-                }
-                else
-                {
-                    cant_dic = Convert.ToInt32(textDocDic.Text);
-                }
-
-
-                int total = 0;
-
-                total = cant_ene + cant_feb + cant_mar + cant_abr + cant_may + cant_jun + cant_jul + cant_ago + cant_sep + cant_oct + cant_nov + cant_dic;
-
-
-                cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total + " " + comboEne.Text)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                cell.Colspan = 5;
-                table.AddCell(cell);
 
                 //cell = new PdfPCell(new Phrase(string.Format("     "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 //table.AddCell(cell);
@@ -2050,9 +2035,9 @@ namespace gestor_bdm
             }
         }
 
-        private void Sumar_Click(object sender, EventArgs e)
+        private void Sumar_Click_1(object sender, EventArgs e)
         {
-            int cant_ene, cant_feb, cant_mar, cant_abr, cant_may, cant_jun, cant_jul, cant_ago, cant_sep, cant_oct, cant_nov, cant_dic = 0;
+            double cant_ene, cant_feb, cant_mar, cant_abr, cant_may, cant_jun, cant_jul, cant_ago, cant_sep, cant_oct, cant_nov, cant_dic = 0;
 
             if (string.IsNullOrEmpty(textDocEne.Text))
             {
@@ -2060,7 +2045,8 @@ namespace gestor_bdm
             }
             else
             {
-                cant_ene = Convert.ToInt32(textDocEne.Text);
+                cant_ene = Convert.ToDouble(textDocEne.Text);
+                MessageBox.Show(Convert.ToString(cant_ene));
             }
 
 
@@ -2070,7 +2056,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_feb = Convert.ToInt32(textDocFeb.Text);
+                cant_feb = Convert.ToDouble(textDocFeb.Text);
             }
 
 
@@ -2080,7 +2066,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_mar = Convert.ToInt32(textDocMar.Text);
+                cant_mar = Convert.ToDouble(textDocMar.Text);
             }
 
 
@@ -2090,7 +2076,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_abr = Convert.ToInt32(textDocAbr.Text);
+                cant_abr = Convert.ToDouble(textDocAbr.Text);
             }
 
 
@@ -2100,7 +2086,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_may = Convert.ToInt32(textDocMay.Text);
+                cant_may = Convert.ToDouble(textDocMay.Text);
             }
 
 
@@ -2110,7 +2096,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_jun = Convert.ToInt32(textDocJun.Text);
+                cant_jun = Convert.ToDouble(textDocJun.Text);
             }
 
 
@@ -2120,7 +2106,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_jul = Convert.ToInt32(textDocJul.Text);
+                cant_jul = Convert.ToDouble(textDocJul.Text);
             }
 
 
@@ -2130,7 +2116,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_ago = Convert.ToInt32(textDocAgo.Text);
+                cant_ago = Convert.ToDouble(textDocAgo.Text);
             }
 
 
@@ -2140,7 +2126,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_sep = Convert.ToInt32(textDocSep.Text);
+                cant_sep = Convert.ToDouble(textDocSep.Text);
             }
 
 
@@ -2150,7 +2136,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_oct = Convert.ToInt32(textDocOct.Text);
+                cant_oct = Convert.ToDouble(textDocOct.Text);
             }
 
 
@@ -2160,7 +2146,7 @@ namespace gestor_bdm
             }
             else
             {
-                cant_nov = Convert.ToInt32(textDocNov.Text);
+                cant_nov = Convert.ToDouble(textDocNov.Text);
             }
 
 
@@ -2170,11 +2156,11 @@ namespace gestor_bdm
             }
             else
             {
-                cant_dic = Convert.ToInt32(textDocDic.Text);
+                cant_dic = Convert.ToDouble(textDocDic.Text);
             }
 
 
-            int total = 0;
+            double total = 0;
 
             total = cant_ene + cant_feb + cant_mar + cant_abr + cant_may + cant_jun + cant_jul + cant_ago + cant_sep + cant_oct + cant_nov + cant_dic;
 
@@ -2182,6 +2168,11 @@ namespace gestor_bdm
         }
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Sumar_Click(object sender, EventArgs e)
         {
 
         }
