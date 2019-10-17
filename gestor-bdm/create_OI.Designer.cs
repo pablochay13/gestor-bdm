@@ -81,6 +81,7 @@
             this.textNombre_c = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.fechaFirma_text = new System.Windows.Forms.DateTimePicker();
             this.vigenciaHasta_text = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.vigenciaDesde_text = new System.Windows.Forms.DateTimePicker();
@@ -90,6 +91,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.textDocDic = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.textDocNov = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.textDocOct = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
@@ -436,8 +438,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.fechaFirma_text = new System.Windows.Forms.DateTimePicker();
-            this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox16.SuspendLayout();
@@ -450,6 +450,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocDic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocNov)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocOct)).BeginInit();
@@ -478,7 +479,6 @@
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1067,6 +1067,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Caratula";
             // 
+            // fechaFirma_text
+            // 
+            this.fechaFirma_text.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechaFirma_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechaFirma_text.Location = new System.Drawing.Point(542, 35);
+            this.fechaFirma_text.Name = "fechaFirma_text";
+            this.fechaFirma_text.Size = new System.Drawing.Size(287, 26);
+            this.fechaFirma_text.TabIndex = 16;
+            // 
             // vigenciaHasta_text
             // 
             this.vigenciaHasta_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1231,9 +1240,20 @@
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Marketing Fijo";
             // 
+            // textTotalIVA
+            // 
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textTotalIVA.DoubleValue = 0D;
+            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTotalIVA.Location = new System.Drawing.Point(121, 423);
+            this.textTotalIVA.Name = "textTotalIVA";
+            this.textTotalIVA.Size = new System.Drawing.Size(626, 26);
+            this.textTotalIVA.TabIndex = 420;
+            this.textTotalIVA.Text = "0.00";
+            // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(213, 380);
@@ -1244,7 +1264,7 @@
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(213, 351);
@@ -1255,7 +1275,7 @@
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(213, 322);
@@ -1266,7 +1286,7 @@
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(213, 293);
@@ -1277,7 +1297,7 @@
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(213, 264);
@@ -1288,7 +1308,7 @@
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(213, 235);
@@ -1299,7 +1319,7 @@
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(213, 206);
@@ -1310,7 +1330,7 @@
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(213, 177);
@@ -1321,7 +1341,7 @@
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(213, 148);
@@ -1332,7 +1352,7 @@
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(213, 119);
@@ -1343,7 +1363,7 @@
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(213, 90);
@@ -1355,7 +1375,7 @@
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(626, 26);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(140, 26);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
@@ -5098,26 +5118,6 @@
             this.textBox1.Size = new System.Drawing.Size(564, 23);
             this.textBox1.TabIndex = 281;
             // 
-            // fechaFirma_text
-            // 
-            this.fechaFirma_text.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fechaFirma_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fechaFirma_text.Location = new System.Drawing.Point(542, 35);
-            this.fechaFirma_text.Name = "fechaFirma_text";
-            this.fechaFirma_text.Size = new System.Drawing.Size(287, 26);
-            this.fechaFirma_text.TabIndex = 16;
-            // 
-            // textTotalIVA
-            // 
-            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(626, 26);
-            this.textTotalIVA.DoubleValue = 0D;
-            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTotalIVA.Location = new System.Drawing.Point(121, 423);
-            this.textTotalIVA.Name = "textTotalIVA";
-            this.textTotalIVA.Size = new System.Drawing.Size(626, 26);
-            this.textTotalIVA.TabIndex = 420;
-            this.textTotalIVA.Text = "0.00";
-            // 
             // create_OI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -5154,6 +5154,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocDic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocNov)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocOct)).EndInit();
@@ -5195,7 +5196,6 @@
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).EndInit();
             this.ResumeLayout(false);
 
         }
