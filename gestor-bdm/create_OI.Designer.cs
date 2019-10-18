@@ -1242,7 +1242,7 @@
             // 
             // textTotalIVA
             // 
-            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textTotalIVA.DoubleValue = 0D;
             this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTotalIVA.Location = new System.Drawing.Point(121, 423);
@@ -1253,7 +1253,7 @@
             // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(213, 380);
@@ -1264,7 +1264,7 @@
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(213, 351);
@@ -1275,7 +1275,7 @@
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(213, 322);
@@ -1286,7 +1286,7 @@
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(213, 293);
@@ -1297,7 +1297,7 @@
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(213, 264);
@@ -1308,7 +1308,7 @@
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(213, 235);
@@ -1319,7 +1319,7 @@
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(213, 206);
@@ -1330,7 +1330,7 @@
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(213, 177);
@@ -1341,7 +1341,7 @@
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(213, 148);
@@ -1352,7 +1352,7 @@
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(213, 119);
@@ -1363,7 +1363,7 @@
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(213, 90);
@@ -1375,7 +1375,7 @@
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(140, 26);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
