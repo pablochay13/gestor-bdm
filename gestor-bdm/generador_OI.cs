@@ -7020,6 +7020,7 @@ namespace gestor_bdm
                     mes_firma = "Abril";
                 }
 
+
                 else if (mes_firma == "5")
                 {
                     mes_firma = "Mayo";
@@ -7935,20 +7936,32 @@ namespace gestor_bdm
 
                 table_4.AddCell(cliente_4);
                 table_4.AddCell(media_4);
+                
 
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase(string.Format("FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_4.Colspan = 1;
                 bottom_cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_4);
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                
+
 
                 PdfPCell bottom_media_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_4.Colspan = 2;
                 table_4.AddCell(bottom_media_4);
+                
 
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase(string.Format("FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_5.Colspan = 1;
                 bottom_cliente_5.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_5);
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                
+
 
                 PdfPCell bottom_media_5 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_5.Colspan = 2;

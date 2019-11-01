@@ -213,7 +213,7 @@ namespace gestor_bdm
 
         private void GeneradorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            create_OI ventana = new create_OI();
+            generador_OI ventana = new generador_OI();
             ventana.MdiParent = this;
             ventana.Show();
         }
