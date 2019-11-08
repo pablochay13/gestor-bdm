@@ -64,10 +64,14 @@ namespace gestor_bdm
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.textFechaMedia = new MetroFramework.Controls.MetroTextBox();
+            this.textCargo_m = new MetroFramework.Controls.MetroTextBox();
+            this.textNombre_m = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel55 = new MetroFramework.Controls.MetroLabel();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textFechaCliente = new MetroFramework.Controls.MetroTextBox();
             this.textCargo_c = new MetroFramework.Controls.MetroTextBox();
             this.textNombre_c = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
@@ -81,7 +85,6 @@ namespace gestor_bdm
             this.c_t_bancaria = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel48 = new MetroFramework.Controls.MetroLabel();
             this.Sumar = new MetroFramework.Controls.MetroButton();
-            this.textTotalIVA = new Syncfusion.WinForms.Input.SfNumericTextBox();
             this.metroLabel47 = new MetroFramework.Controls.MetroLabel();
             this.textBoxDic = new MetroFramework.Controls.MetroTextBox();
             this.textBoxNov = new MetroFramework.Controls.MetroTextBox();
@@ -249,125 +252,6 @@ namespace gestor_bdm
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.OI_text = new MetroFramework.Controls.MetroTextBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.textFechaCliente = new MetroFramework.Controls.MetroTextBox();
-            this.textNombre_m = new MetroFramework.Controls.MetroTextBox();
-            this.textCargo_m = new MetroFramework.Controls.MetroTextBox();
-            this.textFechaMedia = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel57 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel58 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel59 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel60 = new MetroFramework.Controls.MetroLabel();
-            this.uno_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.uno_razon = new MetroFramework.Controls.MetroTextBox();
-            this.uno_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.uno_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.uno_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel61 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel62 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel63 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel64 = new MetroFramework.Controls.MetroLabel();
-            this.uno_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.uno_email = new MetroFramework.Controls.MetroTextBox();
-            this.uno_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.Additional_1 = new MetroFramework.Controls.MetroTextBox();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.Additional_2 = new MetroFramework.Controls.MetroTextBox();
-            this.dos_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.dos_email = new MetroFramework.Controls.MetroTextBox();
-            this.dos_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel65 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel66 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel67 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel68 = new MetroFramework.Controls.MetroLabel();
-            this.dos_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.dos_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.dos_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.dos_razon = new MetroFramework.Controls.MetroTextBox();
-            this.dos_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel69 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel70 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel71 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel72 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel73 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.Additional_7 = new MetroFramework.Controls.MetroTextBox();
-            this.siete_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.siete_email = new MetroFramework.Controls.MetroTextBox();
-            this.siete_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel74 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel75 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel76 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel77 = new MetroFramework.Controls.MetroLabel();
-            this.siete_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.siete_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.siete_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.siete_razon = new MetroFramework.Controls.MetroTextBox();
-            this.siete_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel78 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel79 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel80 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel81 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel82 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.Additional_3 = new MetroFramework.Controls.MetroTextBox();
-            this.tres_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.tres_email = new MetroFramework.Controls.MetroTextBox();
-            this.tres_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel83 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel84 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel85 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel86 = new MetroFramework.Controls.MetroLabel();
-            this.tres_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.tres_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.tres_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.tres_Razon = new MetroFramework.Controls.MetroTextBox();
-            this.tres_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel87 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel88 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel89 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel90 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel91 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.Additional_4 = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_email = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel92 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel93 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel94 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel95 = new MetroFramework.Controls.MetroLabel();
-            this.cuatro_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_razon = new MetroFramework.Controls.MetroTextBox();
-            this.cuatro_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel96 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel97 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel98 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel99 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel100 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.Additional_5 = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_telefono = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_email = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_contacto = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel101 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel102 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel103 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel104 = new MetroFramework.Controls.MetroLabel();
-            this.cinco_codigo = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_direccion = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_rfc = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_razon = new MetroFramework.Controls.MetroTextBox();
-            this.cinco_hotel = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel105 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel106 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel107 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel108 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel109 = new MetroFramework.Controls.MetroLabel();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.Additional_6 = new MetroFramework.Controls.MetroTextBox();
             this.seis_telefono = new MetroFramework.Controls.MetroTextBox();
@@ -387,6 +271,122 @@ namespace gestor_bdm
             this.metroLabel116 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel117 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel118 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.Additional_5 = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_email = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel101 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel102 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel103 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel104 = new MetroFramework.Controls.MetroLabel();
+            this.cinco_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_razon = new MetroFramework.Controls.MetroTextBox();
+            this.cinco_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel105 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel106 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel107 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel108 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel109 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.Additional_4 = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_email = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel92 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel93 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel94 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel95 = new MetroFramework.Controls.MetroLabel();
+            this.cuatro_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_razon = new MetroFramework.Controls.MetroTextBox();
+            this.cuatro_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel96 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel97 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel98 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel99 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel100 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.Additional_3 = new MetroFramework.Controls.MetroTextBox();
+            this.tres_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.tres_email = new MetroFramework.Controls.MetroTextBox();
+            this.tres_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel83 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel84 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel85 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel86 = new MetroFramework.Controls.MetroLabel();
+            this.tres_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.tres_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.tres_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.tres_Razon = new MetroFramework.Controls.MetroTextBox();
+            this.tres_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel87 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel88 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel89 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel90 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel91 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.Additional_7 = new MetroFramework.Controls.MetroTextBox();
+            this.siete_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.siete_email = new MetroFramework.Controls.MetroTextBox();
+            this.siete_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel74 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel75 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel76 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel77 = new MetroFramework.Controls.MetroLabel();
+            this.siete_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.siete_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.siete_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.siete_razon = new MetroFramework.Controls.MetroTextBox();
+            this.siete_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel78 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel79 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel80 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel81 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel82 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.Additional_2 = new MetroFramework.Controls.MetroTextBox();
+            this.dos_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.dos_email = new MetroFramework.Controls.MetroTextBox();
+            this.dos_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel65 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel66 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel67 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel68 = new MetroFramework.Controls.MetroLabel();
+            this.dos_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.dos_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.dos_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.dos_razon = new MetroFramework.Controls.MetroTextBox();
+            this.dos_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel69 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel70 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel71 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel72 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel73 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.Additional_1 = new MetroFramework.Controls.MetroTextBox();
+            this.uno_telefono = new MetroFramework.Controls.MetroTextBox();
+            this.uno_email = new MetroFramework.Controls.MetroTextBox();
+            this.uno_contacto = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel64 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel63 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel62 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel61 = new MetroFramework.Controls.MetroLabel();
+            this.uno_codigo = new MetroFramework.Controls.MetroTextBox();
+            this.uno_direccion = new MetroFramework.Controls.MetroTextBox();
+            this.uno_rfc = new MetroFramework.Controls.MetroTextBox();
+            this.uno_razon = new MetroFramework.Controls.MetroTextBox();
+            this.uno_hotel = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel60 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel59 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel58 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel57 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -421,14 +421,15 @@ namespace gestor_bdm
             this.groupBox18.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox11.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox22.SuspendLayout();
-            this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
+            this.groupBox23.SuspendLayout();
+            this.groupBox22.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager1
@@ -459,7 +460,7 @@ namespace gestor_bdm
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(14, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(1220, 556);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroTabControl1.TabIndex = 1;
@@ -508,6 +509,103 @@ namespace gestor_bdm
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Best Travel Media";
             // 
+            // textFechaMedia
+            // 
+            // 
+            // 
+            // 
+            this.textFechaMedia.CustomButton.Image = null;
+            this.textFechaMedia.CustomButton.Location = new System.Drawing.Point(432, 1);
+            this.textFechaMedia.CustomButton.Name = "";
+            this.textFechaMedia.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textFechaMedia.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textFechaMedia.CustomButton.TabIndex = 1;
+            this.textFechaMedia.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textFechaMedia.CustomButton.UseSelectable = true;
+            this.textFechaMedia.CustomButton.Visible = false;
+            this.textFechaMedia.Lines = new string[] {
+        " "};
+            this.textFechaMedia.Location = new System.Drawing.Point(101, 103);
+            this.textFechaMedia.MaxLength = 32767;
+            this.textFechaMedia.Name = "textFechaMedia";
+            this.textFechaMedia.PasswordChar = '\0';
+            this.textFechaMedia.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textFechaMedia.SelectedText = "";
+            this.textFechaMedia.SelectionLength = 0;
+            this.textFechaMedia.SelectionStart = 0;
+            this.textFechaMedia.ShortcutsEnabled = true;
+            this.textFechaMedia.Size = new System.Drawing.Size(454, 23);
+            this.textFechaMedia.TabIndex = 282;
+            this.textFechaMedia.Text = " ";
+            this.textFechaMedia.UseSelectable = true;
+            this.textFechaMedia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textFechaMedia.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // textCargo_m
+            // 
+            // 
+            // 
+            // 
+            this.textCargo_m.CustomButton.Image = null;
+            this.textCargo_m.CustomButton.Location = new System.Drawing.Point(454, 1);
+            this.textCargo_m.CustomButton.Name = "";
+            this.textCargo_m.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textCargo_m.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textCargo_m.CustomButton.TabIndex = 1;
+            this.textCargo_m.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textCargo_m.CustomButton.UseSelectable = true;
+            this.textCargo_m.CustomButton.Visible = false;
+            this.textCargo_m.Lines = new string[] {
+        " "};
+            this.textCargo_m.Location = new System.Drawing.Point(79, 74);
+            this.textCargo_m.MaxLength = 32767;
+            this.textCargo_m.Name = "textCargo_m";
+            this.textCargo_m.PasswordChar = '\0';
+            this.textCargo_m.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textCargo_m.SelectedText = "";
+            this.textCargo_m.SelectionLength = 0;
+            this.textCargo_m.SelectionStart = 0;
+            this.textCargo_m.ShortcutsEnabled = true;
+            this.textCargo_m.Size = new System.Drawing.Size(476, 23);
+            this.textCargo_m.TabIndex = 281;
+            this.textCargo_m.Text = " ";
+            this.textCargo_m.UseSelectable = true;
+            this.textCargo_m.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textCargo_m.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // textNombre_m
+            // 
+            // 
+            // 
+            // 
+            this.textNombre_m.CustomButton.Image = null;
+            this.textNombre_m.CustomButton.Location = new System.Drawing.Point(454, 1);
+            this.textNombre_m.CustomButton.Name = "";
+            this.textNombre_m.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textNombre_m.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textNombre_m.CustomButton.TabIndex = 1;
+            this.textNombre_m.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textNombre_m.CustomButton.UseSelectable = true;
+            this.textNombre_m.CustomButton.Visible = false;
+            this.textNombre_m.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.textNombre_m.Lines = new string[] {
+        " "};
+            this.textNombre_m.Location = new System.Drawing.Point(79, 45);
+            this.textNombre_m.MaxLength = 32767;
+            this.textNombre_m.Name = "textNombre_m";
+            this.textNombre_m.PasswordChar = '\0';
+            this.textNombre_m.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textNombre_m.SelectedText = "";
+            this.textNombre_m.SelectionLength = 0;
+            this.textNombre_m.SelectionStart = 0;
+            this.textNombre_m.ShortcutsEnabled = true;
+            this.textNombre_m.Size = new System.Drawing.Size(476, 23);
+            this.textNombre_m.TabIndex = 280;
+            this.textNombre_m.Text = " ";
+            this.textNombre_m.UseSelectable = true;
+            this.textNombre_m.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textNombre_m.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // metroLabel53
             // 
             this.metroLabel53.AutoSize = true;
@@ -552,6 +650,38 @@ namespace gestor_bdm
             this.groupBox10.TabIndex = 282;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "El Cliente";
+            // 
+            // textFechaCliente
+            // 
+            // 
+            // 
+            // 
+            this.textFechaCliente.CustomButton.Image = null;
+            this.textFechaCliente.CustomButton.Location = new System.Drawing.Point(440, 1);
+            this.textFechaCliente.CustomButton.Name = "";
+            this.textFechaCliente.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textFechaCliente.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textFechaCliente.CustomButton.TabIndex = 1;
+            this.textFechaCliente.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textFechaCliente.CustomButton.UseSelectable = true;
+            this.textFechaCliente.CustomButton.Visible = false;
+            this.textFechaCliente.Lines = new string[] {
+        " "};
+            this.textFechaCliente.Location = new System.Drawing.Point(100, 99);
+            this.textFechaCliente.MaxLength = 32767;
+            this.textFechaCliente.Name = "textFechaCliente";
+            this.textFechaCliente.PasswordChar = '\0';
+            this.textFechaCliente.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textFechaCliente.SelectedText = "";
+            this.textFechaCliente.SelectionLength = 0;
+            this.textFechaCliente.SelectionStart = 0;
+            this.textFechaCliente.ShortcutsEnabled = true;
+            this.textFechaCliente.Size = new System.Drawing.Size(462, 23);
+            this.textFechaCliente.TabIndex = 279;
+            this.textFechaCliente.Text = " ";
+            this.textFechaCliente.UseSelectable = true;
+            this.textFechaCliente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textFechaCliente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // textCargo_c
             // 
@@ -704,11 +834,11 @@ namespace gestor_bdm
             // 
             // groupBox21
             // 
+            this.groupBox21.Controls.Add(this.textTotalIVA);
             this.groupBox21.Controls.Add(this.c_c_facturas);
             this.groupBox21.Controls.Add(this.c_t_bancaria);
             this.groupBox21.Controls.Add(this.metroLabel48);
             this.groupBox21.Controls.Add(this.Sumar);
-            this.groupBox21.Controls.Add(this.textTotalIVA);
             this.groupBox21.Controls.Add(this.metroLabel47);
             this.groupBox21.Controls.Add(this.textBoxDic);
             this.groupBox21.Controls.Add(this.textBoxNov);
@@ -821,17 +951,6 @@ namespace gestor_bdm
             this.Sumar.Text = "Sumar";
             this.Sumar.UseSelectable = true;
             this.Sumar.Click += new System.EventHandler(this.Sumar_Click);
-            // 
-            // textTotalIVA
-            // 
-            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTotalIVA.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textTotalIVA.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Currency;
-            this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
-            this.textTotalIVA.Name = "textTotalIVA";
-            this.textTotalIVA.Size = new System.Drawing.Size(153, 22);
-            this.textTotalIVA.TabIndex = 476;
-            this.textTotalIVA.Text = "$0.00";
             // 
             // metroLabel47
             // 
@@ -2005,7 +2124,7 @@ namespace gestor_bdm
             // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(303, 451);
@@ -2016,7 +2135,7 @@ namespace gestor_bdm
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(303, 416);
@@ -2027,7 +2146,7 @@ namespace gestor_bdm
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(303, 381);
@@ -2038,7 +2157,7 @@ namespace gestor_bdm
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(303, 346);
@@ -2049,7 +2168,7 @@ namespace gestor_bdm
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(303, 311);
@@ -2060,7 +2179,7 @@ namespace gestor_bdm
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(303, 276);
@@ -2071,7 +2190,7 @@ namespace gestor_bdm
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(303, 241);
@@ -2082,7 +2201,7 @@ namespace gestor_bdm
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(303, 206);
@@ -2093,7 +2212,7 @@ namespace gestor_bdm
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(303, 171);
@@ -2104,7 +2223,7 @@ namespace gestor_bdm
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(303, 136);
@@ -2115,7 +2234,7 @@ namespace gestor_bdm
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(303, 101);
@@ -2127,7 +2246,7 @@ namespace gestor_bdm
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
@@ -2170,9 +2289,9 @@ namespace gestor_bdm
             this.checkFacturas.AutoSize = true;
             this.checkFacturas.Location = new System.Drawing.Point(961, 75);
             this.checkFacturas.Name = "checkFacturas";
-            this.checkFacturas.Size = new System.Drawing.Size(159, 15);
+            this.checkFacturas.Size = new System.Drawing.Size(166, 15);
             this.checkFacturas.TabIndex = 369;
-            this.checkFacturas.Text = "Compensación y Facturas";
+            this.checkFacturas.Text = "Compensación en Facturas";
             this.checkFacturas.UseSelectable = true;
             // 
             // checkPagos
@@ -2262,7 +2381,7 @@ namespace gestor_bdm
             // porcentajeMF_box
             // 
             this.porcentajeMF_box.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(100, 22);
             this.porcentajeMF_box.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.porcentajeMF_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.porcentajeMF_box.DoubleValue = 0D;
@@ -3971,2533 +4090,12 @@ namespace gestor_bdm
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(1212, 514);
             this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Anexos";
+            this.metroTabPage2.Text = "Anexo A";
             this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabPage2.VerticalScrollbar = true;
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // textFechaCliente
-            // 
-            // 
-            // 
-            // 
-            this.textFechaCliente.CustomButton.Image = null;
-            this.textFechaCliente.CustomButton.Location = new System.Drawing.Point(440, 1);
-            this.textFechaCliente.CustomButton.Name = "";
-            this.textFechaCliente.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.textFechaCliente.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textFechaCliente.CustomButton.TabIndex = 1;
-            this.textFechaCliente.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textFechaCliente.CustomButton.UseSelectable = true;
-            this.textFechaCliente.CustomButton.Visible = false;
-            this.textFechaCliente.Lines = new string[] {
-        " "};
-            this.textFechaCliente.Location = new System.Drawing.Point(100, 99);
-            this.textFechaCliente.MaxLength = 32767;
-            this.textFechaCliente.Name = "textFechaCliente";
-            this.textFechaCliente.PasswordChar = '\0';
-            this.textFechaCliente.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textFechaCliente.SelectedText = "";
-            this.textFechaCliente.SelectionLength = 0;
-            this.textFechaCliente.SelectionStart = 0;
-            this.textFechaCliente.ShortcutsEnabled = true;
-            this.textFechaCliente.Size = new System.Drawing.Size(462, 23);
-            this.textFechaCliente.TabIndex = 279;
-            this.textFechaCliente.Text = " ";
-            this.textFechaCliente.UseSelectable = true;
-            this.textFechaCliente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textFechaCliente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textNombre_m
-            // 
-            // 
-            // 
-            // 
-            this.textNombre_m.CustomButton.Image = null;
-            this.textNombre_m.CustomButton.Location = new System.Drawing.Point(454, 1);
-            this.textNombre_m.CustomButton.Name = "";
-            this.textNombre_m.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.textNombre_m.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textNombre_m.CustomButton.TabIndex = 1;
-            this.textNombre_m.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textNombre_m.CustomButton.UseSelectable = true;
-            this.textNombre_m.CustomButton.Visible = false;
-            this.textNombre_m.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.textNombre_m.Lines = new string[] {
-        " "};
-            this.textNombre_m.Location = new System.Drawing.Point(79, 45);
-            this.textNombre_m.MaxLength = 32767;
-            this.textNombre_m.Name = "textNombre_m";
-            this.textNombre_m.PasswordChar = '\0';
-            this.textNombre_m.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textNombre_m.SelectedText = "";
-            this.textNombre_m.SelectionLength = 0;
-            this.textNombre_m.SelectionStart = 0;
-            this.textNombre_m.ShortcutsEnabled = true;
-            this.textNombre_m.Size = new System.Drawing.Size(476, 23);
-            this.textNombre_m.TabIndex = 280;
-            this.textNombre_m.Text = " ";
-            this.textNombre_m.UseSelectable = true;
-            this.textNombre_m.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textNombre_m.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textCargo_m
-            // 
-            // 
-            // 
-            // 
-            this.textCargo_m.CustomButton.Image = null;
-            this.textCargo_m.CustomButton.Location = new System.Drawing.Point(454, 1);
-            this.textCargo_m.CustomButton.Name = "";
-            this.textCargo_m.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.textCargo_m.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textCargo_m.CustomButton.TabIndex = 1;
-            this.textCargo_m.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textCargo_m.CustomButton.UseSelectable = true;
-            this.textCargo_m.CustomButton.Visible = false;
-            this.textCargo_m.Lines = new string[] {
-        " "};
-            this.textCargo_m.Location = new System.Drawing.Point(79, 74);
-            this.textCargo_m.MaxLength = 32767;
-            this.textCargo_m.Name = "textCargo_m";
-            this.textCargo_m.PasswordChar = '\0';
-            this.textCargo_m.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textCargo_m.SelectedText = "";
-            this.textCargo_m.SelectionLength = 0;
-            this.textCargo_m.SelectionStart = 0;
-            this.textCargo_m.ShortcutsEnabled = true;
-            this.textCargo_m.Size = new System.Drawing.Size(476, 23);
-            this.textCargo_m.TabIndex = 281;
-            this.textCargo_m.Text = " ";
-            this.textCargo_m.UseSelectable = true;
-            this.textCargo_m.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textCargo_m.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // textFechaMedia
-            // 
-            // 
-            // 
-            // 
-            this.textFechaMedia.CustomButton.Image = null;
-            this.textFechaMedia.CustomButton.Location = new System.Drawing.Point(432, 1);
-            this.textFechaMedia.CustomButton.Name = "";
-            this.textFechaMedia.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.textFechaMedia.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textFechaMedia.CustomButton.TabIndex = 1;
-            this.textFechaMedia.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textFechaMedia.CustomButton.UseSelectable = true;
-            this.textFechaMedia.CustomButton.Visible = false;
-            this.textFechaMedia.Lines = new string[] {
-        " "};
-            this.textFechaMedia.Location = new System.Drawing.Point(101, 103);
-            this.textFechaMedia.MaxLength = 32767;
-            this.textFechaMedia.Name = "textFechaMedia";
-            this.textFechaMedia.PasswordChar = '\0';
-            this.textFechaMedia.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textFechaMedia.SelectedText = "";
-            this.textFechaMedia.SelectionLength = 0;
-            this.textFechaMedia.SelectionStart = 0;
-            this.textFechaMedia.ShortcutsEnabled = true;
-            this.textFechaMedia.Size = new System.Drawing.Size(454, 23);
-            this.textFechaMedia.TabIndex = 282;
-            this.textFechaMedia.Text = " ";
-            this.textFechaMedia.UseSelectable = true;
-            this.textFechaMedia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textFechaMedia.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1036, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox11.Controls.Add(this.Additional_1);
-            this.groupBox11.Controls.Add(this.uno_telefono);
-            this.groupBox11.Controls.Add(this.uno_email);
-            this.groupBox11.Controls.Add(this.uno_contacto);
-            this.groupBox11.Controls.Add(this.metroLabel64);
-            this.groupBox11.Controls.Add(this.metroLabel63);
-            this.groupBox11.Controls.Add(this.metroLabel62);
-            this.groupBox11.Controls.Add(this.metroLabel61);
-            this.groupBox11.Controls.Add(this.uno_codigo);
-            this.groupBox11.Controls.Add(this.uno_direccion);
-            this.groupBox11.Controls.Add(this.uno_rfc);
-            this.groupBox11.Controls.Add(this.uno_razon);
-            this.groupBox11.Controls.Add(this.uno_hotel);
-            this.groupBox11.Controls.Add(this.metroLabel60);
-            this.groupBox11.Controls.Add(this.metroLabel59);
-            this.groupBox11.Controls.Add(this.metroLabel58);
-            this.groupBox11.Controls.Add(this.metroLabel57);
-            this.groupBox11.Controls.Add(this.metroLabel56);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox11.Location = new System.Drawing.Point(5, 17);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(1176, 218);
-            this.groupBox11.TabIndex = 31;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Primero";
-            // 
-            // metroLabel56
-            // 
-            this.metroLabel56.AutoSize = true;
-            this.metroLabel56.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel56.Name = "metroLabel56";
-            this.metroLabel56.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel56.TabIndex = 284;
-            this.metroLabel56.Text = "Hotel:";
-            // 
-            // metroLabel57
-            // 
-            this.metroLabel57.AutoSize = true;
-            this.metroLabel57.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel57.Name = "metroLabel57";
-            this.metroLabel57.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel57.TabIndex = 285;
-            this.metroLabel57.Text = "Razón Social:";
-            // 
-            // metroLabel58
-            // 
-            this.metroLabel58.AutoSize = true;
-            this.metroLabel58.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel58.Name = "metroLabel58";
-            this.metroLabel58.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel58.TabIndex = 286;
-            this.metroLabel58.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel59
-            // 
-            this.metroLabel59.AutoSize = true;
-            this.metroLabel59.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel59.Name = "metroLabel59";
-            this.metroLabel59.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel59.TabIndex = 287;
-            this.metroLabel59.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel60
-            // 
-            this.metroLabel60.AutoSize = true;
-            this.metroLabel60.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel60.Name = "metroLabel60";
-            this.metroLabel60.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel60.TabIndex = 288;
-            this.metroLabel60.Text = "Código Postal:";
-            // 
-            // uno_hotel
-            // 
-            // 
-            // 
-            // 
-            this.uno_hotel.CustomButton.Image = null;
-            this.uno_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
-            this.uno_hotel.CustomButton.Name = "";
-            this.uno_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_hotel.CustomButton.TabIndex = 1;
-            this.uno_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_hotel.CustomButton.UseSelectable = true;
-            this.uno_hotel.CustomButton.Visible = false;
-            this.uno_hotel.Lines = new string[] {
-        " "};
-            this.uno_hotel.Location = new System.Drawing.Point(55, 41);
-            this.uno_hotel.MaxLength = 32767;
-            this.uno_hotel.Name = "uno_hotel";
-            this.uno_hotel.PasswordChar = '\0';
-            this.uno_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_hotel.SelectedText = "";
-            this.uno_hotel.SelectionLength = 0;
-            this.uno_hotel.SelectionStart = 0;
-            this.uno_hotel.ShortcutsEnabled = true;
-            this.uno_hotel.Size = new System.Drawing.Size(481, 23);
-            this.uno_hotel.TabIndex = 289;
-            this.uno_hotel.Text = " ";
-            this.uno_hotel.UseSelectable = true;
-            this.uno_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_razon
-            // 
-            // 
-            // 
-            // 
-            this.uno_razon.CustomButton.Image = null;
-            this.uno_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.uno_razon.CustomButton.Name = "";
-            this.uno_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_razon.CustomButton.TabIndex = 1;
-            this.uno_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_razon.CustomButton.UseSelectable = true;
-            this.uno_razon.CustomButton.Visible = false;
-            this.uno_razon.Lines = new string[] {
-        " "};
-            this.uno_razon.Location = new System.Drawing.Point(98, 75);
-            this.uno_razon.MaxLength = 32767;
-            this.uno_razon.Name = "uno_razon";
-            this.uno_razon.PasswordChar = '\0';
-            this.uno_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_razon.SelectedText = "";
-            this.uno_razon.SelectionLength = 0;
-            this.uno_razon.SelectionStart = 0;
-            this.uno_razon.ShortcutsEnabled = true;
-            this.uno_razon.Size = new System.Drawing.Size(438, 23);
-            this.uno_razon.TabIndex = 290;
-            this.uno_razon.Text = " ";
-            this.uno_razon.UseSelectable = true;
-            this.uno_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_rfc
-            // 
-            // 
-            // 
-            // 
-            this.uno_rfc.CustomButton.Image = null;
-            this.uno_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.uno_rfc.CustomButton.Name = "";
-            this.uno_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_rfc.CustomButton.TabIndex = 1;
-            this.uno_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_rfc.CustomButton.UseSelectable = true;
-            this.uno_rfc.CustomButton.Visible = false;
-            this.uno_rfc.Lines = new string[] {
-        " "};
-            this.uno_rfc.Location = new System.Drawing.Point(98, 109);
-            this.uno_rfc.MaxLength = 32767;
-            this.uno_rfc.Name = "uno_rfc";
-            this.uno_rfc.PasswordChar = '\0';
-            this.uno_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_rfc.SelectedText = "";
-            this.uno_rfc.SelectionLength = 0;
-            this.uno_rfc.SelectionStart = 0;
-            this.uno_rfc.ShortcutsEnabled = true;
-            this.uno_rfc.Size = new System.Drawing.Size(438, 23);
-            this.uno_rfc.TabIndex = 291;
-            this.uno_rfc.Text = " ";
-            this.uno_rfc.UseSelectable = true;
-            this.uno_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_direccion
-            // 
-            // 
-            // 
-            // 
-            this.uno_direccion.CustomButton.Image = null;
-            this.uno_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
-            this.uno_direccion.CustomButton.Name = "";
-            this.uno_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_direccion.CustomButton.TabIndex = 1;
-            this.uno_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_direccion.CustomButton.UseSelectable = true;
-            this.uno_direccion.CustomButton.Visible = false;
-            this.uno_direccion.Lines = new string[] {
-        " "};
-            this.uno_direccion.Location = new System.Drawing.Point(113, 143);
-            this.uno_direccion.MaxLength = 32767;
-            this.uno_direccion.Name = "uno_direccion";
-            this.uno_direccion.PasswordChar = '\0';
-            this.uno_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_direccion.SelectedText = "";
-            this.uno_direccion.SelectionLength = 0;
-            this.uno_direccion.SelectionStart = 0;
-            this.uno_direccion.ShortcutsEnabled = true;
-            this.uno_direccion.Size = new System.Drawing.Size(423, 23);
-            this.uno_direccion.TabIndex = 292;
-            this.uno_direccion.Text = " ";
-            this.uno_direccion.UseSelectable = true;
-            this.uno_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_codigo
-            // 
-            // 
-            // 
-            // 
-            this.uno_codigo.CustomButton.Image = null;
-            this.uno_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
-            this.uno_codigo.CustomButton.Name = "";
-            this.uno_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_codigo.CustomButton.TabIndex = 1;
-            this.uno_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_codigo.CustomButton.UseSelectable = true;
-            this.uno_codigo.CustomButton.Visible = false;
-            this.uno_codigo.Lines = new string[] {
-        " "};
-            this.uno_codigo.Location = new System.Drawing.Point(106, 178);
-            this.uno_codigo.MaxLength = 32767;
-            this.uno_codigo.Name = "uno_codigo";
-            this.uno_codigo.PasswordChar = '\0';
-            this.uno_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_codigo.SelectedText = "";
-            this.uno_codigo.SelectionLength = 0;
-            this.uno_codigo.SelectionStart = 0;
-            this.uno_codigo.ShortcutsEnabled = true;
-            this.uno_codigo.Size = new System.Drawing.Size(430, 23);
-            this.uno_codigo.TabIndex = 293;
-            this.uno_codigo.Text = " ";
-            this.uno_codigo.UseSelectable = true;
-            this.uno_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel61
-            // 
-            this.metroLabel61.AutoSize = true;
-            this.metroLabel61.Location = new System.Drawing.Point(542, 41);
-            this.metroLabel61.Name = "metroLabel61";
-            this.metroLabel61.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel61.TabIndex = 294;
-            this.metroLabel61.Text = "Contacto de Facturación:";
-            // 
-            // metroLabel62
-            // 
-            this.metroLabel62.AutoSize = true;
-            this.metroLabel62.Location = new System.Drawing.Point(542, 75);
-            this.metroLabel62.Name = "metroLabel62";
-            this.metroLabel62.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel62.TabIndex = 295;
-            this.metroLabel62.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel63
-            // 
-            this.metroLabel63.AutoSize = true;
-            this.metroLabel63.Location = new System.Drawing.Point(542, 109);
-            this.metroLabel63.Name = "metroLabel63";
-            this.metroLabel63.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel63.TabIndex = 296;
-            this.metroLabel63.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel64
-            // 
-            this.metroLabel64.AutoSize = true;
-            this.metroLabel64.Location = new System.Drawing.Point(542, 143);
-            this.metroLabel64.Name = "metroLabel64";
-            this.metroLabel64.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel64.TabIndex = 297;
-            this.metroLabel64.Text = "Información Adicional:";
-            // 
-            // uno_contacto
-            // 
-            // 
-            // 
-            // 
-            this.uno_contacto.CustomButton.Image = null;
-            this.uno_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.uno_contacto.CustomButton.Name = "";
-            this.uno_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_contacto.CustomButton.TabIndex = 1;
-            this.uno_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_contacto.CustomButton.UseSelectable = true;
-            this.uno_contacto.CustomButton.Visible = false;
-            this.uno_contacto.Lines = new string[] {
-        " "};
-            this.uno_contacto.Location = new System.Drawing.Point(702, 41);
-            this.uno_contacto.MaxLength = 32767;
-            this.uno_contacto.Name = "uno_contacto";
-            this.uno_contacto.PasswordChar = '\0';
-            this.uno_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_contacto.SelectedText = "";
-            this.uno_contacto.SelectionLength = 0;
-            this.uno_contacto.SelectionStart = 0;
-            this.uno_contacto.ShortcutsEnabled = true;
-            this.uno_contacto.Size = new System.Drawing.Size(459, 23);
-            this.uno_contacto.TabIndex = 298;
-            this.uno_contacto.Text = " ";
-            this.uno_contacto.UseSelectable = true;
-            this.uno_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_email
-            // 
-            // 
-            // 
-            // 
-            this.uno_email.CustomButton.Image = null;
-            this.uno_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.uno_email.CustomButton.Name = "";
-            this.uno_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_email.CustomButton.TabIndex = 1;
-            this.uno_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_email.CustomButton.UseSelectable = true;
-            this.uno_email.CustomButton.Visible = false;
-            this.uno_email.Lines = new string[] {
-        " "};
-            this.uno_email.Location = new System.Drawing.Point(763, 75);
-            this.uno_email.MaxLength = 32767;
-            this.uno_email.Name = "uno_email";
-            this.uno_email.PasswordChar = '\0';
-            this.uno_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_email.SelectedText = "";
-            this.uno_email.SelectionLength = 0;
-            this.uno_email.SelectionStart = 0;
-            this.uno_email.ShortcutsEnabled = true;
-            this.uno_email.Size = new System.Drawing.Size(398, 23);
-            this.uno_email.TabIndex = 299;
-            this.uno_email.Text = " ";
-            this.uno_email.UseSelectable = true;
-            this.uno_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // uno_telefono
-            // 
-            // 
-            // 
-            // 
-            this.uno_telefono.CustomButton.Image = null;
-            this.uno_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.uno_telefono.CustomButton.Name = "";
-            this.uno_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.uno_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.uno_telefono.CustomButton.TabIndex = 1;
-            this.uno_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.uno_telefono.CustomButton.UseSelectable = true;
-            this.uno_telefono.CustomButton.Visible = false;
-            this.uno_telefono.Lines = new string[] {
-        " "};
-            this.uno_telefono.Location = new System.Drawing.Point(774, 109);
-            this.uno_telefono.MaxLength = 32767;
-            this.uno_telefono.Name = "uno_telefono";
-            this.uno_telefono.PasswordChar = '\0';
-            this.uno_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.uno_telefono.SelectedText = "";
-            this.uno_telefono.SelectionLength = 0;
-            this.uno_telefono.SelectionStart = 0;
-            this.uno_telefono.ShortcutsEnabled = true;
-            this.uno_telefono.Size = new System.Drawing.Size(387, 23);
-            this.uno_telefono.TabIndex = 300;
-            this.uno_telefono.Text = " ";
-            this.uno_telefono.UseSelectable = true;
-            this.uno_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.uno_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // Additional_1
-            // 
-            // 
-            // 
-            // 
-            this.Additional_1.CustomButton.Image = null;
-            this.Additional_1.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_1.CustomButton.Name = "";
-            this.Additional_1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_1.CustomButton.TabIndex = 1;
-            this.Additional_1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_1.CustomButton.UseSelectable = true;
-            this.Additional_1.CustomButton.Visible = false;
-            this.Additional_1.Lines = new string[0];
-            this.Additional_1.Location = new System.Drawing.Point(688, 143);
-            this.Additional_1.MaxLength = 32767;
-            this.Additional_1.Name = "Additional_1";
-            this.Additional_1.PasswordChar = '\0';
-            this.Additional_1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_1.SelectedText = "";
-            this.Additional_1.SelectionLength = 0;
-            this.Additional_1.SelectionStart = 0;
-            this.Additional_1.ShortcutsEnabled = true;
-            this.Additional_1.Size = new System.Drawing.Size(473, 23);
-            this.Additional_1.TabIndex = 301;
-            this.Additional_1.UseSelectable = true;
-            this.Additional_1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox16.Controls.Add(this.Additional_2);
-            this.groupBox16.Controls.Add(this.dos_telefono);
-            this.groupBox16.Controls.Add(this.dos_email);
-            this.groupBox16.Controls.Add(this.dos_contacto);
-            this.groupBox16.Controls.Add(this.metroLabel65);
-            this.groupBox16.Controls.Add(this.metroLabel66);
-            this.groupBox16.Controls.Add(this.metroLabel67);
-            this.groupBox16.Controls.Add(this.metroLabel68);
-            this.groupBox16.Controls.Add(this.dos_codigo);
-            this.groupBox16.Controls.Add(this.dos_direccion);
-            this.groupBox16.Controls.Add(this.dos_rfc);
-            this.groupBox16.Controls.Add(this.dos_razon);
-            this.groupBox16.Controls.Add(this.dos_hotel);
-            this.groupBox16.Controls.Add(this.metroLabel69);
-            this.groupBox16.Controls.Add(this.metroLabel70);
-            this.groupBox16.Controls.Add(this.metroLabel71);
-            this.groupBox16.Controls.Add(this.metroLabel72);
-            this.groupBox16.Controls.Add(this.metroLabel73);
-            this.groupBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox16.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox16.Location = new System.Drawing.Point(5, 241);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(1176, 218);
-            this.groupBox16.TabIndex = 302;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Segundo";
-            // 
-            // Additional_2
-            // 
-            // 
-            // 
-            // 
-            this.Additional_2.CustomButton.Image = null;
-            this.Additional_2.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_2.CustomButton.Name = "";
-            this.Additional_2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_2.CustomButton.TabIndex = 1;
-            this.Additional_2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_2.CustomButton.UseSelectable = true;
-            this.Additional_2.CustomButton.Visible = false;
-            this.Additional_2.Lines = new string[0];
-            this.Additional_2.Location = new System.Drawing.Point(688, 143);
-            this.Additional_2.MaxLength = 32767;
-            this.Additional_2.Name = "Additional_2";
-            this.Additional_2.PasswordChar = '\0';
-            this.Additional_2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_2.SelectedText = "";
-            this.Additional_2.SelectionLength = 0;
-            this.Additional_2.SelectionStart = 0;
-            this.Additional_2.ShortcutsEnabled = true;
-            this.Additional_2.Size = new System.Drawing.Size(473, 23);
-            this.Additional_2.TabIndex = 301;
-            this.Additional_2.UseSelectable = true;
-            this.Additional_2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_telefono
-            // 
-            // 
-            // 
-            // 
-            this.dos_telefono.CustomButton.Image = null;
-            this.dos_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.dos_telefono.CustomButton.Name = "";
-            this.dos_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_telefono.CustomButton.TabIndex = 1;
-            this.dos_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_telefono.CustomButton.UseSelectable = true;
-            this.dos_telefono.CustomButton.Visible = false;
-            this.dos_telefono.Lines = new string[] {
-        " "};
-            this.dos_telefono.Location = new System.Drawing.Point(774, 109);
-            this.dos_telefono.MaxLength = 32767;
-            this.dos_telefono.Name = "dos_telefono";
-            this.dos_telefono.PasswordChar = '\0';
-            this.dos_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_telefono.SelectedText = "";
-            this.dos_telefono.SelectionLength = 0;
-            this.dos_telefono.SelectionStart = 0;
-            this.dos_telefono.ShortcutsEnabled = true;
-            this.dos_telefono.Size = new System.Drawing.Size(387, 23);
-            this.dos_telefono.TabIndex = 300;
-            this.dos_telefono.Text = " ";
-            this.dos_telefono.UseSelectable = true;
-            this.dos_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_email
-            // 
-            // 
-            // 
-            // 
-            this.dos_email.CustomButton.Image = null;
-            this.dos_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.dos_email.CustomButton.Name = "";
-            this.dos_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_email.CustomButton.TabIndex = 1;
-            this.dos_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_email.CustomButton.UseSelectable = true;
-            this.dos_email.CustomButton.Visible = false;
-            this.dos_email.Lines = new string[] {
-        " "};
-            this.dos_email.Location = new System.Drawing.Point(763, 75);
-            this.dos_email.MaxLength = 32767;
-            this.dos_email.Name = "dos_email";
-            this.dos_email.PasswordChar = '\0';
-            this.dos_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_email.SelectedText = "";
-            this.dos_email.SelectionLength = 0;
-            this.dos_email.SelectionStart = 0;
-            this.dos_email.ShortcutsEnabled = true;
-            this.dos_email.Size = new System.Drawing.Size(398, 23);
-            this.dos_email.TabIndex = 299;
-            this.dos_email.Text = " ";
-            this.dos_email.UseSelectable = true;
-            this.dos_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_contacto
-            // 
-            // 
-            // 
-            // 
-            this.dos_contacto.CustomButton.Image = null;
-            this.dos_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.dos_contacto.CustomButton.Name = "";
-            this.dos_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_contacto.CustomButton.TabIndex = 1;
-            this.dos_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_contacto.CustomButton.UseSelectable = true;
-            this.dos_contacto.CustomButton.Visible = false;
-            this.dos_contacto.Lines = new string[] {
-        " "};
-            this.dos_contacto.Location = new System.Drawing.Point(702, 41);
-            this.dos_contacto.MaxLength = 32767;
-            this.dos_contacto.Name = "dos_contacto";
-            this.dos_contacto.PasswordChar = '\0';
-            this.dos_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_contacto.SelectedText = "";
-            this.dos_contacto.SelectionLength = 0;
-            this.dos_contacto.SelectionStart = 0;
-            this.dos_contacto.ShortcutsEnabled = true;
-            this.dos_contacto.Size = new System.Drawing.Size(459, 23);
-            this.dos_contacto.TabIndex = 298;
-            this.dos_contacto.Text = " ";
-            this.dos_contacto.UseSelectable = true;
-            this.dos_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel65
-            // 
-            this.metroLabel65.AutoSize = true;
-            this.metroLabel65.Location = new System.Drawing.Point(542, 143);
-            this.metroLabel65.Name = "metroLabel65";
-            this.metroLabel65.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel65.TabIndex = 297;
-            this.metroLabel65.Text = "Información Adicional:";
-            // 
-            // metroLabel66
-            // 
-            this.metroLabel66.AutoSize = true;
-            this.metroLabel66.Location = new System.Drawing.Point(542, 109);
-            this.metroLabel66.Name = "metroLabel66";
-            this.metroLabel66.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel66.TabIndex = 296;
-            this.metroLabel66.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel67
-            // 
-            this.metroLabel67.AutoSize = true;
-            this.metroLabel67.Location = new System.Drawing.Point(542, 75);
-            this.metroLabel67.Name = "metroLabel67";
-            this.metroLabel67.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel67.TabIndex = 295;
-            this.metroLabel67.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel68
-            // 
-            this.metroLabel68.AutoSize = true;
-            this.metroLabel68.Location = new System.Drawing.Point(542, 41);
-            this.metroLabel68.Name = "metroLabel68";
-            this.metroLabel68.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel68.TabIndex = 294;
-            this.metroLabel68.Text = "Contacto de Facturación:";
-            // 
-            // dos_codigo
-            // 
-            // 
-            // 
-            // 
-            this.dos_codigo.CustomButton.Image = null;
-            this.dos_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
-            this.dos_codigo.CustomButton.Name = "";
-            this.dos_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_codigo.CustomButton.TabIndex = 1;
-            this.dos_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_codigo.CustomButton.UseSelectable = true;
-            this.dos_codigo.CustomButton.Visible = false;
-            this.dos_codigo.Lines = new string[] {
-        " "};
-            this.dos_codigo.Location = new System.Drawing.Point(106, 178);
-            this.dos_codigo.MaxLength = 32767;
-            this.dos_codigo.Name = "dos_codigo";
-            this.dos_codigo.PasswordChar = '\0';
-            this.dos_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_codigo.SelectedText = "";
-            this.dos_codigo.SelectionLength = 0;
-            this.dos_codigo.SelectionStart = 0;
-            this.dos_codigo.ShortcutsEnabled = true;
-            this.dos_codigo.Size = new System.Drawing.Size(430, 23);
-            this.dos_codigo.TabIndex = 293;
-            this.dos_codigo.Text = " ";
-            this.dos_codigo.UseSelectable = true;
-            this.dos_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_direccion
-            // 
-            // 
-            // 
-            // 
-            this.dos_direccion.CustomButton.Image = null;
-            this.dos_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
-            this.dos_direccion.CustomButton.Name = "";
-            this.dos_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_direccion.CustomButton.TabIndex = 1;
-            this.dos_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_direccion.CustomButton.UseSelectable = true;
-            this.dos_direccion.CustomButton.Visible = false;
-            this.dos_direccion.Lines = new string[] {
-        " "};
-            this.dos_direccion.Location = new System.Drawing.Point(113, 143);
-            this.dos_direccion.MaxLength = 32767;
-            this.dos_direccion.Name = "dos_direccion";
-            this.dos_direccion.PasswordChar = '\0';
-            this.dos_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_direccion.SelectedText = "";
-            this.dos_direccion.SelectionLength = 0;
-            this.dos_direccion.SelectionStart = 0;
-            this.dos_direccion.ShortcutsEnabled = true;
-            this.dos_direccion.Size = new System.Drawing.Size(423, 23);
-            this.dos_direccion.TabIndex = 292;
-            this.dos_direccion.Text = " ";
-            this.dos_direccion.UseSelectable = true;
-            this.dos_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_rfc
-            // 
-            // 
-            // 
-            // 
-            this.dos_rfc.CustomButton.Image = null;
-            this.dos_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.dos_rfc.CustomButton.Name = "";
-            this.dos_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_rfc.CustomButton.TabIndex = 1;
-            this.dos_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_rfc.CustomButton.UseSelectable = true;
-            this.dos_rfc.CustomButton.Visible = false;
-            this.dos_rfc.Lines = new string[] {
-        " "};
-            this.dos_rfc.Location = new System.Drawing.Point(98, 109);
-            this.dos_rfc.MaxLength = 32767;
-            this.dos_rfc.Name = "dos_rfc";
-            this.dos_rfc.PasswordChar = '\0';
-            this.dos_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_rfc.SelectedText = "";
-            this.dos_rfc.SelectionLength = 0;
-            this.dos_rfc.SelectionStart = 0;
-            this.dos_rfc.ShortcutsEnabled = true;
-            this.dos_rfc.Size = new System.Drawing.Size(438, 23);
-            this.dos_rfc.TabIndex = 291;
-            this.dos_rfc.Text = " ";
-            this.dos_rfc.UseSelectable = true;
-            this.dos_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_razon
-            // 
-            // 
-            // 
-            // 
-            this.dos_razon.CustomButton.Image = null;
-            this.dos_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.dos_razon.CustomButton.Name = "";
-            this.dos_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_razon.CustomButton.TabIndex = 1;
-            this.dos_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_razon.CustomButton.UseSelectable = true;
-            this.dos_razon.CustomButton.Visible = false;
-            this.dos_razon.Lines = new string[] {
-        " "};
-            this.dos_razon.Location = new System.Drawing.Point(98, 75);
-            this.dos_razon.MaxLength = 32767;
-            this.dos_razon.Name = "dos_razon";
-            this.dos_razon.PasswordChar = '\0';
-            this.dos_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_razon.SelectedText = "";
-            this.dos_razon.SelectionLength = 0;
-            this.dos_razon.SelectionStart = 0;
-            this.dos_razon.ShortcutsEnabled = true;
-            this.dos_razon.Size = new System.Drawing.Size(438, 23);
-            this.dos_razon.TabIndex = 290;
-            this.dos_razon.Text = " ";
-            this.dos_razon.UseSelectable = true;
-            this.dos_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dos_hotel
-            // 
-            // 
-            // 
-            // 
-            this.dos_hotel.CustomButton.Image = null;
-            this.dos_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
-            this.dos_hotel.CustomButton.Name = "";
-            this.dos_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.dos_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dos_hotel.CustomButton.TabIndex = 1;
-            this.dos_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.dos_hotel.CustomButton.UseSelectable = true;
-            this.dos_hotel.CustomButton.Visible = false;
-            this.dos_hotel.Lines = new string[] {
-        " "};
-            this.dos_hotel.Location = new System.Drawing.Point(55, 41);
-            this.dos_hotel.MaxLength = 32767;
-            this.dos_hotel.Name = "dos_hotel";
-            this.dos_hotel.PasswordChar = '\0';
-            this.dos_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dos_hotel.SelectedText = "";
-            this.dos_hotel.SelectionLength = 0;
-            this.dos_hotel.SelectionStart = 0;
-            this.dos_hotel.ShortcutsEnabled = true;
-            this.dos_hotel.Size = new System.Drawing.Size(481, 23);
-            this.dos_hotel.TabIndex = 289;
-            this.dos_hotel.Text = " ";
-            this.dos_hotel.UseSelectable = true;
-            this.dos_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.dos_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel69
-            // 
-            this.metroLabel69.AutoSize = true;
-            this.metroLabel69.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel69.Name = "metroLabel69";
-            this.metroLabel69.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel69.TabIndex = 288;
-            this.metroLabel69.Text = "Código Postal:";
-            // 
-            // metroLabel70
-            // 
-            this.metroLabel70.AutoSize = true;
-            this.metroLabel70.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel70.Name = "metroLabel70";
-            this.metroLabel70.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel70.TabIndex = 287;
-            this.metroLabel70.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel71
-            // 
-            this.metroLabel71.AutoSize = true;
-            this.metroLabel71.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel71.Name = "metroLabel71";
-            this.metroLabel71.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel71.TabIndex = 286;
-            this.metroLabel71.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel72
-            // 
-            this.metroLabel72.AutoSize = true;
-            this.metroLabel72.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel72.Name = "metroLabel72";
-            this.metroLabel72.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel72.TabIndex = 285;
-            this.metroLabel72.Text = "Razón Social:";
-            // 
-            // metroLabel73
-            // 
-            this.metroLabel73.AutoSize = true;
-            this.metroLabel73.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel73.Name = "metroLabel73";
-            this.metroLabel73.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel73.TabIndex = 284;
-            this.metroLabel73.Text = "Hotel:";
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox17.Controls.Add(this.Additional_7);
-            this.groupBox17.Controls.Add(this.siete_telefono);
-            this.groupBox17.Controls.Add(this.siete_email);
-            this.groupBox17.Controls.Add(this.siete_contacto);
-            this.groupBox17.Controls.Add(this.metroLabel74);
-            this.groupBox17.Controls.Add(this.metroLabel75);
-            this.groupBox17.Controls.Add(this.metroLabel76);
-            this.groupBox17.Controls.Add(this.metroLabel77);
-            this.groupBox17.Controls.Add(this.siete_codigo);
-            this.groupBox17.Controls.Add(this.siete_direccion);
-            this.groupBox17.Controls.Add(this.siete_rfc);
-            this.groupBox17.Controls.Add(this.siete_razon);
-            this.groupBox17.Controls.Add(this.siete_hotel);
-            this.groupBox17.Controls.Add(this.metroLabel78);
-            this.groupBox17.Controls.Add(this.metroLabel79);
-            this.groupBox17.Controls.Add(this.metroLabel80);
-            this.groupBox17.Controls.Add(this.metroLabel81);
-            this.groupBox17.Controls.Add(this.metroLabel82);
-            this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox17.Location = new System.Drawing.Point(5, 1361);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(1176, 218);
-            this.groupBox17.TabIndex = 303;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Septimo";
-            // 
-            // Additional_7
-            // 
-            // 
-            // 
-            // 
-            this.Additional_7.CustomButton.Image = null;
-            this.Additional_7.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_7.CustomButton.Name = "";
-            this.Additional_7.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_7.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_7.CustomButton.TabIndex = 1;
-            this.Additional_7.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_7.CustomButton.UseSelectable = true;
-            this.Additional_7.CustomButton.Visible = false;
-            this.Additional_7.Lines = new string[0];
-            this.Additional_7.Location = new System.Drawing.Point(688, 143);
-            this.Additional_7.MaxLength = 32767;
-            this.Additional_7.Name = "Additional_7";
-            this.Additional_7.PasswordChar = '\0';
-            this.Additional_7.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_7.SelectedText = "";
-            this.Additional_7.SelectionLength = 0;
-            this.Additional_7.SelectionStart = 0;
-            this.Additional_7.ShortcutsEnabled = true;
-            this.Additional_7.Size = new System.Drawing.Size(473, 23);
-            this.Additional_7.TabIndex = 301;
-            this.Additional_7.UseSelectable = true;
-            this.Additional_7.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_7.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_telefono
-            // 
-            // 
-            // 
-            // 
-            this.siete_telefono.CustomButton.Image = null;
-            this.siete_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.siete_telefono.CustomButton.Name = "";
-            this.siete_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_telefono.CustomButton.TabIndex = 1;
-            this.siete_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_telefono.CustomButton.UseSelectable = true;
-            this.siete_telefono.CustomButton.Visible = false;
-            this.siete_telefono.Lines = new string[] {
-        " "};
-            this.siete_telefono.Location = new System.Drawing.Point(774, 109);
-            this.siete_telefono.MaxLength = 32767;
-            this.siete_telefono.Name = "siete_telefono";
-            this.siete_telefono.PasswordChar = '\0';
-            this.siete_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_telefono.SelectedText = "";
-            this.siete_telefono.SelectionLength = 0;
-            this.siete_telefono.SelectionStart = 0;
-            this.siete_telefono.ShortcutsEnabled = true;
-            this.siete_telefono.Size = new System.Drawing.Size(387, 23);
-            this.siete_telefono.TabIndex = 300;
-            this.siete_telefono.Text = " ";
-            this.siete_telefono.UseSelectable = true;
-            this.siete_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_email
-            // 
-            // 
-            // 
-            // 
-            this.siete_email.CustomButton.Image = null;
-            this.siete_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.siete_email.CustomButton.Name = "";
-            this.siete_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_email.CustomButton.TabIndex = 1;
-            this.siete_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_email.CustomButton.UseSelectable = true;
-            this.siete_email.CustomButton.Visible = false;
-            this.siete_email.Lines = new string[] {
-        " "};
-            this.siete_email.Location = new System.Drawing.Point(763, 75);
-            this.siete_email.MaxLength = 32767;
-            this.siete_email.Name = "siete_email";
-            this.siete_email.PasswordChar = '\0';
-            this.siete_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_email.SelectedText = "";
-            this.siete_email.SelectionLength = 0;
-            this.siete_email.SelectionStart = 0;
-            this.siete_email.ShortcutsEnabled = true;
-            this.siete_email.Size = new System.Drawing.Size(398, 23);
-            this.siete_email.TabIndex = 299;
-            this.siete_email.Text = " ";
-            this.siete_email.UseSelectable = true;
-            this.siete_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_contacto
-            // 
-            // 
-            // 
-            // 
-            this.siete_contacto.CustomButton.Image = null;
-            this.siete_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.siete_contacto.CustomButton.Name = "";
-            this.siete_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_contacto.CustomButton.TabIndex = 1;
-            this.siete_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_contacto.CustomButton.UseSelectable = true;
-            this.siete_contacto.CustomButton.Visible = false;
-            this.siete_contacto.Lines = new string[] {
-        " "};
-            this.siete_contacto.Location = new System.Drawing.Point(702, 41);
-            this.siete_contacto.MaxLength = 32767;
-            this.siete_contacto.Name = "siete_contacto";
-            this.siete_contacto.PasswordChar = '\0';
-            this.siete_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_contacto.SelectedText = "";
-            this.siete_contacto.SelectionLength = 0;
-            this.siete_contacto.SelectionStart = 0;
-            this.siete_contacto.ShortcutsEnabled = true;
-            this.siete_contacto.Size = new System.Drawing.Size(459, 23);
-            this.siete_contacto.TabIndex = 298;
-            this.siete_contacto.Text = " ";
-            this.siete_contacto.UseSelectable = true;
-            this.siete_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel74
-            // 
-            this.metroLabel74.AutoSize = true;
-            this.metroLabel74.Location = new System.Drawing.Point(542, 143);
-            this.metroLabel74.Name = "metroLabel74";
-            this.metroLabel74.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel74.TabIndex = 297;
-            this.metroLabel74.Text = "Información Adicional:";
-            // 
-            // metroLabel75
-            // 
-            this.metroLabel75.AutoSize = true;
-            this.metroLabel75.Location = new System.Drawing.Point(542, 109);
-            this.metroLabel75.Name = "metroLabel75";
-            this.metroLabel75.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel75.TabIndex = 296;
-            this.metroLabel75.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel76
-            // 
-            this.metroLabel76.AutoSize = true;
-            this.metroLabel76.Location = new System.Drawing.Point(542, 75);
-            this.metroLabel76.Name = "metroLabel76";
-            this.metroLabel76.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel76.TabIndex = 295;
-            this.metroLabel76.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel77
-            // 
-            this.metroLabel77.AutoSize = true;
-            this.metroLabel77.Location = new System.Drawing.Point(542, 41);
-            this.metroLabel77.Name = "metroLabel77";
-            this.metroLabel77.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel77.TabIndex = 294;
-            this.metroLabel77.Text = "Contacto de Facturación:";
-            // 
-            // siete_codigo
-            // 
-            // 
-            // 
-            // 
-            this.siete_codigo.CustomButton.Image = null;
-            this.siete_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
-            this.siete_codigo.CustomButton.Name = "";
-            this.siete_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_codigo.CustomButton.TabIndex = 1;
-            this.siete_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_codigo.CustomButton.UseSelectable = true;
-            this.siete_codigo.CustomButton.Visible = false;
-            this.siete_codigo.Lines = new string[] {
-        " "};
-            this.siete_codigo.Location = new System.Drawing.Point(106, 178);
-            this.siete_codigo.MaxLength = 32767;
-            this.siete_codigo.Name = "siete_codigo";
-            this.siete_codigo.PasswordChar = '\0';
-            this.siete_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_codigo.SelectedText = "";
-            this.siete_codigo.SelectionLength = 0;
-            this.siete_codigo.SelectionStart = 0;
-            this.siete_codigo.ShortcutsEnabled = true;
-            this.siete_codigo.Size = new System.Drawing.Size(430, 23);
-            this.siete_codigo.TabIndex = 293;
-            this.siete_codigo.Text = " ";
-            this.siete_codigo.UseSelectable = true;
-            this.siete_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_direccion
-            // 
-            // 
-            // 
-            // 
-            this.siete_direccion.CustomButton.Image = null;
-            this.siete_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
-            this.siete_direccion.CustomButton.Name = "";
-            this.siete_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_direccion.CustomButton.TabIndex = 1;
-            this.siete_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_direccion.CustomButton.UseSelectable = true;
-            this.siete_direccion.CustomButton.Visible = false;
-            this.siete_direccion.Lines = new string[] {
-        " "};
-            this.siete_direccion.Location = new System.Drawing.Point(113, 143);
-            this.siete_direccion.MaxLength = 32767;
-            this.siete_direccion.Name = "siete_direccion";
-            this.siete_direccion.PasswordChar = '\0';
-            this.siete_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_direccion.SelectedText = "";
-            this.siete_direccion.SelectionLength = 0;
-            this.siete_direccion.SelectionStart = 0;
-            this.siete_direccion.ShortcutsEnabled = true;
-            this.siete_direccion.Size = new System.Drawing.Size(423, 23);
-            this.siete_direccion.TabIndex = 292;
-            this.siete_direccion.Text = " ";
-            this.siete_direccion.UseSelectable = true;
-            this.siete_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_rfc
-            // 
-            // 
-            // 
-            // 
-            this.siete_rfc.CustomButton.Image = null;
-            this.siete_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.siete_rfc.CustomButton.Name = "";
-            this.siete_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_rfc.CustomButton.TabIndex = 1;
-            this.siete_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_rfc.CustomButton.UseSelectable = true;
-            this.siete_rfc.CustomButton.Visible = false;
-            this.siete_rfc.Lines = new string[] {
-        " "};
-            this.siete_rfc.Location = new System.Drawing.Point(98, 109);
-            this.siete_rfc.MaxLength = 32767;
-            this.siete_rfc.Name = "siete_rfc";
-            this.siete_rfc.PasswordChar = '\0';
-            this.siete_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_rfc.SelectedText = "";
-            this.siete_rfc.SelectionLength = 0;
-            this.siete_rfc.SelectionStart = 0;
-            this.siete_rfc.ShortcutsEnabled = true;
-            this.siete_rfc.Size = new System.Drawing.Size(438, 23);
-            this.siete_rfc.TabIndex = 291;
-            this.siete_rfc.Text = " ";
-            this.siete_rfc.UseSelectable = true;
-            this.siete_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_razon
-            // 
-            // 
-            // 
-            // 
-            this.siete_razon.CustomButton.Image = null;
-            this.siete_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
-            this.siete_razon.CustomButton.Name = "";
-            this.siete_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_razon.CustomButton.TabIndex = 1;
-            this.siete_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_razon.CustomButton.UseSelectable = true;
-            this.siete_razon.CustomButton.Visible = false;
-            this.siete_razon.Lines = new string[] {
-        " "};
-            this.siete_razon.Location = new System.Drawing.Point(98, 75);
-            this.siete_razon.MaxLength = 32767;
-            this.siete_razon.Name = "siete_razon";
-            this.siete_razon.PasswordChar = '\0';
-            this.siete_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_razon.SelectedText = "";
-            this.siete_razon.SelectionLength = 0;
-            this.siete_razon.SelectionStart = 0;
-            this.siete_razon.ShortcutsEnabled = true;
-            this.siete_razon.Size = new System.Drawing.Size(438, 23);
-            this.siete_razon.TabIndex = 290;
-            this.siete_razon.Text = " ";
-            this.siete_razon.UseSelectable = true;
-            this.siete_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // siete_hotel
-            // 
-            // 
-            // 
-            // 
-            this.siete_hotel.CustomButton.Image = null;
-            this.siete_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
-            this.siete_hotel.CustomButton.Name = "";
-            this.siete_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.siete_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.siete_hotel.CustomButton.TabIndex = 1;
-            this.siete_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.siete_hotel.CustomButton.UseSelectable = true;
-            this.siete_hotel.CustomButton.Visible = false;
-            this.siete_hotel.Lines = new string[] {
-        " "};
-            this.siete_hotel.Location = new System.Drawing.Point(55, 41);
-            this.siete_hotel.MaxLength = 32767;
-            this.siete_hotel.Name = "siete_hotel";
-            this.siete_hotel.PasswordChar = '\0';
-            this.siete_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.siete_hotel.SelectedText = "";
-            this.siete_hotel.SelectionLength = 0;
-            this.siete_hotel.SelectionStart = 0;
-            this.siete_hotel.ShortcutsEnabled = true;
-            this.siete_hotel.Size = new System.Drawing.Size(481, 23);
-            this.siete_hotel.TabIndex = 289;
-            this.siete_hotel.Text = " ";
-            this.siete_hotel.UseSelectable = true;
-            this.siete_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.siete_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel78
-            // 
-            this.metroLabel78.AutoSize = true;
-            this.metroLabel78.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel78.Name = "metroLabel78";
-            this.metroLabel78.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel78.TabIndex = 288;
-            this.metroLabel78.Text = "Código Postal:";
-            // 
-            // metroLabel79
-            // 
-            this.metroLabel79.AutoSize = true;
-            this.metroLabel79.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel79.Name = "metroLabel79";
-            this.metroLabel79.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel79.TabIndex = 287;
-            this.metroLabel79.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel80
-            // 
-            this.metroLabel80.AutoSize = true;
-            this.metroLabel80.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel80.Name = "metroLabel80";
-            this.metroLabel80.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel80.TabIndex = 286;
-            this.metroLabel80.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel81
-            // 
-            this.metroLabel81.AutoSize = true;
-            this.metroLabel81.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel81.Name = "metroLabel81";
-            this.metroLabel81.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel81.TabIndex = 285;
-            this.metroLabel81.Text = "Razón Social:";
-            // 
-            // metroLabel82
-            // 
-            this.metroLabel82.AutoSize = true;
-            this.metroLabel82.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel82.Name = "metroLabel82";
-            this.metroLabel82.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel82.TabIndex = 284;
-            this.metroLabel82.Text = "Hotel:";
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox19.Controls.Add(this.Additional_3);
-            this.groupBox19.Controls.Add(this.tres_telefono);
-            this.groupBox19.Controls.Add(this.tres_email);
-            this.groupBox19.Controls.Add(this.tres_contacto);
-            this.groupBox19.Controls.Add(this.metroLabel83);
-            this.groupBox19.Controls.Add(this.metroLabel84);
-            this.groupBox19.Controls.Add(this.metroLabel85);
-            this.groupBox19.Controls.Add(this.metroLabel86);
-            this.groupBox19.Controls.Add(this.tres_codigo);
-            this.groupBox19.Controls.Add(this.tres_direccion);
-            this.groupBox19.Controls.Add(this.tres_rfc);
-            this.groupBox19.Controls.Add(this.tres_Razon);
-            this.groupBox19.Controls.Add(this.tres_hotel);
-            this.groupBox19.Controls.Add(this.metroLabel87);
-            this.groupBox19.Controls.Add(this.metroLabel88);
-            this.groupBox19.Controls.Add(this.metroLabel89);
-            this.groupBox19.Controls.Add(this.metroLabel90);
-            this.groupBox19.Controls.Add(this.metroLabel91);
-            this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox19.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox19.Location = new System.Drawing.Point(6, 465);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(1175, 218);
-            this.groupBox19.TabIndex = 304;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Tercer";
-            // 
-            // Additional_3
-            // 
-            // 
-            // 
-            // 
-            this.Additional_3.CustomButton.Image = null;
-            this.Additional_3.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_3.CustomButton.Name = "";
-            this.Additional_3.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_3.CustomButton.TabIndex = 1;
-            this.Additional_3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_3.CustomButton.UseSelectable = true;
-            this.Additional_3.CustomButton.Visible = false;
-            this.Additional_3.Lines = new string[0];
-            this.Additional_3.Location = new System.Drawing.Point(687, 143);
-            this.Additional_3.MaxLength = 32767;
-            this.Additional_3.Name = "Additional_3";
-            this.Additional_3.PasswordChar = '\0';
-            this.Additional_3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_3.SelectedText = "";
-            this.Additional_3.SelectionLength = 0;
-            this.Additional_3.SelectionStart = 0;
-            this.Additional_3.ShortcutsEnabled = true;
-            this.Additional_3.Size = new System.Drawing.Size(473, 23);
-            this.Additional_3.TabIndex = 301;
-            this.Additional_3.UseSelectable = true;
-            this.Additional_3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_telefono
-            // 
-            // 
-            // 
-            // 
-            this.tres_telefono.CustomButton.Image = null;
-            this.tres_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.tres_telefono.CustomButton.Name = "";
-            this.tres_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_telefono.CustomButton.TabIndex = 1;
-            this.tres_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_telefono.CustomButton.UseSelectable = true;
-            this.tres_telefono.CustomButton.Visible = false;
-            this.tres_telefono.Lines = new string[] {
-        " "};
-            this.tres_telefono.Location = new System.Drawing.Point(773, 109);
-            this.tres_telefono.MaxLength = 32767;
-            this.tres_telefono.Name = "tres_telefono";
-            this.tres_telefono.PasswordChar = '\0';
-            this.tres_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_telefono.SelectedText = "";
-            this.tres_telefono.SelectionLength = 0;
-            this.tres_telefono.SelectionStart = 0;
-            this.tres_telefono.ShortcutsEnabled = true;
-            this.tres_telefono.Size = new System.Drawing.Size(387, 23);
-            this.tres_telefono.TabIndex = 300;
-            this.tres_telefono.Text = " ";
-            this.tres_telefono.UseSelectable = true;
-            this.tres_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_email
-            // 
-            // 
-            // 
-            // 
-            this.tres_email.CustomButton.Image = null;
-            this.tres_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.tres_email.CustomButton.Name = "";
-            this.tres_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_email.CustomButton.TabIndex = 1;
-            this.tres_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_email.CustomButton.UseSelectable = true;
-            this.tres_email.CustomButton.Visible = false;
-            this.tres_email.Lines = new string[] {
-        " "};
-            this.tres_email.Location = new System.Drawing.Point(762, 75);
-            this.tres_email.MaxLength = 32767;
-            this.tres_email.Name = "tres_email";
-            this.tres_email.PasswordChar = '\0';
-            this.tres_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_email.SelectedText = "";
-            this.tres_email.SelectionLength = 0;
-            this.tres_email.SelectionStart = 0;
-            this.tres_email.ShortcutsEnabled = true;
-            this.tres_email.Size = new System.Drawing.Size(398, 23);
-            this.tres_email.TabIndex = 299;
-            this.tres_email.Text = " ";
-            this.tres_email.UseSelectable = true;
-            this.tres_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_contacto
-            // 
-            // 
-            // 
-            // 
-            this.tres_contacto.CustomButton.Image = null;
-            this.tres_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.tres_contacto.CustomButton.Name = "";
-            this.tres_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_contacto.CustomButton.TabIndex = 1;
-            this.tres_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_contacto.CustomButton.UseSelectable = true;
-            this.tres_contacto.CustomButton.Visible = false;
-            this.tres_contacto.Lines = new string[] {
-        " "};
-            this.tres_contacto.Location = new System.Drawing.Point(701, 41);
-            this.tres_contacto.MaxLength = 32767;
-            this.tres_contacto.Name = "tres_contacto";
-            this.tres_contacto.PasswordChar = '\0';
-            this.tres_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_contacto.SelectedText = "";
-            this.tres_contacto.SelectionLength = 0;
-            this.tres_contacto.SelectionStart = 0;
-            this.tres_contacto.ShortcutsEnabled = true;
-            this.tres_contacto.Size = new System.Drawing.Size(459, 23);
-            this.tres_contacto.TabIndex = 298;
-            this.tres_contacto.Text = " ";
-            this.tres_contacto.UseSelectable = true;
-            this.tres_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel83
-            // 
-            this.metroLabel83.AutoSize = true;
-            this.metroLabel83.Location = new System.Drawing.Point(541, 143);
-            this.metroLabel83.Name = "metroLabel83";
-            this.metroLabel83.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel83.TabIndex = 297;
-            this.metroLabel83.Text = "Información Adicional:";
-            // 
-            // metroLabel84
-            // 
-            this.metroLabel84.AutoSize = true;
-            this.metroLabel84.Location = new System.Drawing.Point(541, 109);
-            this.metroLabel84.Name = "metroLabel84";
-            this.metroLabel84.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel84.TabIndex = 296;
-            this.metroLabel84.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel85
-            // 
-            this.metroLabel85.AutoSize = true;
-            this.metroLabel85.Location = new System.Drawing.Point(541, 75);
-            this.metroLabel85.Name = "metroLabel85";
-            this.metroLabel85.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel85.TabIndex = 295;
-            this.metroLabel85.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel86
-            // 
-            this.metroLabel86.AutoSize = true;
-            this.metroLabel86.Location = new System.Drawing.Point(541, 41);
-            this.metroLabel86.Name = "metroLabel86";
-            this.metroLabel86.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel86.TabIndex = 294;
-            this.metroLabel86.Text = "Contacto de Facturación:";
-            // 
-            // tres_codigo
-            // 
-            // 
-            // 
-            // 
-            this.tres_codigo.CustomButton.Image = null;
-            this.tres_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
-            this.tres_codigo.CustomButton.Name = "";
-            this.tres_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_codigo.CustomButton.TabIndex = 1;
-            this.tres_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_codigo.CustomButton.UseSelectable = true;
-            this.tres_codigo.CustomButton.Visible = false;
-            this.tres_codigo.Lines = new string[] {
-        " "};
-            this.tres_codigo.Location = new System.Drawing.Point(106, 178);
-            this.tres_codigo.MaxLength = 32767;
-            this.tres_codigo.Name = "tres_codigo";
-            this.tres_codigo.PasswordChar = '\0';
-            this.tres_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_codigo.SelectedText = "";
-            this.tres_codigo.SelectionLength = 0;
-            this.tres_codigo.SelectionStart = 0;
-            this.tres_codigo.ShortcutsEnabled = true;
-            this.tres_codigo.Size = new System.Drawing.Size(429, 23);
-            this.tres_codigo.TabIndex = 293;
-            this.tres_codigo.Text = " ";
-            this.tres_codigo.UseSelectable = true;
-            this.tres_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_direccion
-            // 
-            // 
-            // 
-            // 
-            this.tres_direccion.CustomButton.Image = null;
-            this.tres_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
-            this.tres_direccion.CustomButton.Name = "";
-            this.tres_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_direccion.CustomButton.TabIndex = 1;
-            this.tres_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_direccion.CustomButton.UseSelectable = true;
-            this.tres_direccion.CustomButton.Visible = false;
-            this.tres_direccion.Lines = new string[] {
-        " "};
-            this.tres_direccion.Location = new System.Drawing.Point(113, 143);
-            this.tres_direccion.MaxLength = 32767;
-            this.tres_direccion.Name = "tres_direccion";
-            this.tres_direccion.PasswordChar = '\0';
-            this.tres_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_direccion.SelectedText = "";
-            this.tres_direccion.SelectionLength = 0;
-            this.tres_direccion.SelectionStart = 0;
-            this.tres_direccion.ShortcutsEnabled = true;
-            this.tres_direccion.Size = new System.Drawing.Size(422, 23);
-            this.tres_direccion.TabIndex = 292;
-            this.tres_direccion.Text = " ";
-            this.tres_direccion.UseSelectable = true;
-            this.tres_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_rfc
-            // 
-            // 
-            // 
-            // 
-            this.tres_rfc.CustomButton.Image = null;
-            this.tres_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.tres_rfc.CustomButton.Name = "";
-            this.tres_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_rfc.CustomButton.TabIndex = 1;
-            this.tres_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_rfc.CustomButton.UseSelectable = true;
-            this.tres_rfc.CustomButton.Visible = false;
-            this.tres_rfc.Lines = new string[] {
-        " "};
-            this.tres_rfc.Location = new System.Drawing.Point(98, 109);
-            this.tres_rfc.MaxLength = 32767;
-            this.tres_rfc.Name = "tres_rfc";
-            this.tres_rfc.PasswordChar = '\0';
-            this.tres_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_rfc.SelectedText = "";
-            this.tres_rfc.SelectionLength = 0;
-            this.tres_rfc.SelectionStart = 0;
-            this.tres_rfc.ShortcutsEnabled = true;
-            this.tres_rfc.Size = new System.Drawing.Size(437, 23);
-            this.tres_rfc.TabIndex = 291;
-            this.tres_rfc.Text = " ";
-            this.tres_rfc.UseSelectable = true;
-            this.tres_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_Razon
-            // 
-            // 
-            // 
-            // 
-            this.tres_Razon.CustomButton.Image = null;
-            this.tres_Razon.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.tres_Razon.CustomButton.Name = "";
-            this.tres_Razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_Razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_Razon.CustomButton.TabIndex = 1;
-            this.tres_Razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_Razon.CustomButton.UseSelectable = true;
-            this.tres_Razon.CustomButton.Visible = false;
-            this.tres_Razon.Lines = new string[] {
-        " "};
-            this.tres_Razon.Location = new System.Drawing.Point(98, 75);
-            this.tres_Razon.MaxLength = 32767;
-            this.tres_Razon.Name = "tres_Razon";
-            this.tres_Razon.PasswordChar = '\0';
-            this.tres_Razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_Razon.SelectedText = "";
-            this.tres_Razon.SelectionLength = 0;
-            this.tres_Razon.SelectionStart = 0;
-            this.tres_Razon.ShortcutsEnabled = true;
-            this.tres_Razon.Size = new System.Drawing.Size(437, 23);
-            this.tres_Razon.TabIndex = 290;
-            this.tres_Razon.Text = " ";
-            this.tres_Razon.UseSelectable = true;
-            this.tres_Razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_Razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // tres_hotel
-            // 
-            // 
-            // 
-            // 
-            this.tres_hotel.CustomButton.Image = null;
-            this.tres_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
-            this.tres_hotel.CustomButton.Name = "";
-            this.tres_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.tres_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.tres_hotel.CustomButton.TabIndex = 1;
-            this.tres_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tres_hotel.CustomButton.UseSelectable = true;
-            this.tres_hotel.CustomButton.Visible = false;
-            this.tres_hotel.Lines = new string[] {
-        " "};
-            this.tres_hotel.Location = new System.Drawing.Point(55, 41);
-            this.tres_hotel.MaxLength = 32767;
-            this.tres_hotel.Name = "tres_hotel";
-            this.tres_hotel.PasswordChar = '\0';
-            this.tres_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tres_hotel.SelectedText = "";
-            this.tres_hotel.SelectionLength = 0;
-            this.tres_hotel.SelectionStart = 0;
-            this.tres_hotel.ShortcutsEnabled = true;
-            this.tres_hotel.Size = new System.Drawing.Size(480, 23);
-            this.tres_hotel.TabIndex = 289;
-            this.tres_hotel.Text = " ";
-            this.tres_hotel.UseSelectable = true;
-            this.tres_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.tres_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel87
-            // 
-            this.metroLabel87.AutoSize = true;
-            this.metroLabel87.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel87.Name = "metroLabel87";
-            this.metroLabel87.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel87.TabIndex = 288;
-            this.metroLabel87.Text = "Código Postal:";
-            // 
-            // metroLabel88
-            // 
-            this.metroLabel88.AutoSize = true;
-            this.metroLabel88.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel88.Name = "metroLabel88";
-            this.metroLabel88.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel88.TabIndex = 287;
-            this.metroLabel88.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel89
-            // 
-            this.metroLabel89.AutoSize = true;
-            this.metroLabel89.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel89.Name = "metroLabel89";
-            this.metroLabel89.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel89.TabIndex = 286;
-            this.metroLabel89.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel90
-            // 
-            this.metroLabel90.AutoSize = true;
-            this.metroLabel90.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel90.Name = "metroLabel90";
-            this.metroLabel90.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel90.TabIndex = 285;
-            this.metroLabel90.Text = "Razón Social:";
-            // 
-            // metroLabel91
-            // 
-            this.metroLabel91.AutoSize = true;
-            this.metroLabel91.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel91.Name = "metroLabel91";
-            this.metroLabel91.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel91.TabIndex = 284;
-            this.metroLabel91.Text = "Hotel:";
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox22.Controls.Add(this.Additional_4);
-            this.groupBox22.Controls.Add(this.cuatro_telefono);
-            this.groupBox22.Controls.Add(this.cuatro_email);
-            this.groupBox22.Controls.Add(this.cuatro_contacto);
-            this.groupBox22.Controls.Add(this.metroLabel92);
-            this.groupBox22.Controls.Add(this.metroLabel93);
-            this.groupBox22.Controls.Add(this.metroLabel94);
-            this.groupBox22.Controls.Add(this.metroLabel95);
-            this.groupBox22.Controls.Add(this.cuatro_codigo);
-            this.groupBox22.Controls.Add(this.cuatro_direccion);
-            this.groupBox22.Controls.Add(this.cuatro_rfc);
-            this.groupBox22.Controls.Add(this.cuatro_razon);
-            this.groupBox22.Controls.Add(this.cuatro_hotel);
-            this.groupBox22.Controls.Add(this.metroLabel96);
-            this.groupBox22.Controls.Add(this.metroLabel97);
-            this.groupBox22.Controls.Add(this.metroLabel98);
-            this.groupBox22.Controls.Add(this.metroLabel99);
-            this.groupBox22.Controls.Add(this.metroLabel100);
-            this.groupBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox22.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox22.Location = new System.Drawing.Point(6, 689);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(1175, 218);
-            this.groupBox22.TabIndex = 305;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Cuarto";
-            // 
-            // Additional_4
-            // 
-            // 
-            // 
-            // 
-            this.Additional_4.CustomButton.Image = null;
-            this.Additional_4.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_4.CustomButton.Name = "";
-            this.Additional_4.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_4.CustomButton.TabIndex = 1;
-            this.Additional_4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_4.CustomButton.UseSelectable = true;
-            this.Additional_4.CustomButton.Visible = false;
-            this.Additional_4.Lines = new string[0];
-            this.Additional_4.Location = new System.Drawing.Point(687, 143);
-            this.Additional_4.MaxLength = 32767;
-            this.Additional_4.Name = "Additional_4";
-            this.Additional_4.PasswordChar = '\0';
-            this.Additional_4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_4.SelectedText = "";
-            this.Additional_4.SelectionLength = 0;
-            this.Additional_4.SelectionStart = 0;
-            this.Additional_4.ShortcutsEnabled = true;
-            this.Additional_4.Size = new System.Drawing.Size(473, 23);
-            this.Additional_4.TabIndex = 301;
-            this.Additional_4.UseSelectable = true;
-            this.Additional_4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_4.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_telefono
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_telefono.CustomButton.Image = null;
-            this.cuatro_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.cuatro_telefono.CustomButton.Name = "";
-            this.cuatro_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_telefono.CustomButton.TabIndex = 1;
-            this.cuatro_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_telefono.CustomButton.UseSelectable = true;
-            this.cuatro_telefono.CustomButton.Visible = false;
-            this.cuatro_telefono.Lines = new string[] {
-        " "};
-            this.cuatro_telefono.Location = new System.Drawing.Point(773, 109);
-            this.cuatro_telefono.MaxLength = 32767;
-            this.cuatro_telefono.Name = "cuatro_telefono";
-            this.cuatro_telefono.PasswordChar = '\0';
-            this.cuatro_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_telefono.SelectedText = "";
-            this.cuatro_telefono.SelectionLength = 0;
-            this.cuatro_telefono.SelectionStart = 0;
-            this.cuatro_telefono.ShortcutsEnabled = true;
-            this.cuatro_telefono.Size = new System.Drawing.Size(387, 23);
-            this.cuatro_telefono.TabIndex = 300;
-            this.cuatro_telefono.Text = " ";
-            this.cuatro_telefono.UseSelectable = true;
-            this.cuatro_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_email
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_email.CustomButton.Image = null;
-            this.cuatro_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.cuatro_email.CustomButton.Name = "";
-            this.cuatro_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_email.CustomButton.TabIndex = 1;
-            this.cuatro_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_email.CustomButton.UseSelectable = true;
-            this.cuatro_email.CustomButton.Visible = false;
-            this.cuatro_email.Lines = new string[] {
-        " "};
-            this.cuatro_email.Location = new System.Drawing.Point(762, 75);
-            this.cuatro_email.MaxLength = 32767;
-            this.cuatro_email.Name = "cuatro_email";
-            this.cuatro_email.PasswordChar = '\0';
-            this.cuatro_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_email.SelectedText = "";
-            this.cuatro_email.SelectionLength = 0;
-            this.cuatro_email.SelectionStart = 0;
-            this.cuatro_email.ShortcutsEnabled = true;
-            this.cuatro_email.Size = new System.Drawing.Size(398, 23);
-            this.cuatro_email.TabIndex = 299;
-            this.cuatro_email.Text = " ";
-            this.cuatro_email.UseSelectable = true;
-            this.cuatro_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_contacto
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_contacto.CustomButton.Image = null;
-            this.cuatro_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.cuatro_contacto.CustomButton.Name = "";
-            this.cuatro_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_contacto.CustomButton.TabIndex = 1;
-            this.cuatro_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_contacto.CustomButton.UseSelectable = true;
-            this.cuatro_contacto.CustomButton.Visible = false;
-            this.cuatro_contacto.Lines = new string[] {
-        " "};
-            this.cuatro_contacto.Location = new System.Drawing.Point(701, 41);
-            this.cuatro_contacto.MaxLength = 32767;
-            this.cuatro_contacto.Name = "cuatro_contacto";
-            this.cuatro_contacto.PasswordChar = '\0';
-            this.cuatro_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_contacto.SelectedText = "";
-            this.cuatro_contacto.SelectionLength = 0;
-            this.cuatro_contacto.SelectionStart = 0;
-            this.cuatro_contacto.ShortcutsEnabled = true;
-            this.cuatro_contacto.Size = new System.Drawing.Size(459, 23);
-            this.cuatro_contacto.TabIndex = 298;
-            this.cuatro_contacto.Text = " ";
-            this.cuatro_contacto.UseSelectable = true;
-            this.cuatro_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel92
-            // 
-            this.metroLabel92.AutoSize = true;
-            this.metroLabel92.Location = new System.Drawing.Point(541, 143);
-            this.metroLabel92.Name = "metroLabel92";
-            this.metroLabel92.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel92.TabIndex = 297;
-            this.metroLabel92.Text = "Información Adicional:";
-            // 
-            // metroLabel93
-            // 
-            this.metroLabel93.AutoSize = true;
-            this.metroLabel93.Location = new System.Drawing.Point(541, 109);
-            this.metroLabel93.Name = "metroLabel93";
-            this.metroLabel93.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel93.TabIndex = 296;
-            this.metroLabel93.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel94
-            // 
-            this.metroLabel94.AutoSize = true;
-            this.metroLabel94.Location = new System.Drawing.Point(541, 75);
-            this.metroLabel94.Name = "metroLabel94";
-            this.metroLabel94.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel94.TabIndex = 295;
-            this.metroLabel94.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel95
-            // 
-            this.metroLabel95.AutoSize = true;
-            this.metroLabel95.Location = new System.Drawing.Point(541, 41);
-            this.metroLabel95.Name = "metroLabel95";
-            this.metroLabel95.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel95.TabIndex = 294;
-            this.metroLabel95.Text = "Contacto de Facturación:";
-            // 
-            // cuatro_codigo
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_codigo.CustomButton.Image = null;
-            this.cuatro_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
-            this.cuatro_codigo.CustomButton.Name = "";
-            this.cuatro_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_codigo.CustomButton.TabIndex = 1;
-            this.cuatro_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_codigo.CustomButton.UseSelectable = true;
-            this.cuatro_codigo.CustomButton.Visible = false;
-            this.cuatro_codigo.Lines = new string[] {
-        " "};
-            this.cuatro_codigo.Location = new System.Drawing.Point(106, 178);
-            this.cuatro_codigo.MaxLength = 32767;
-            this.cuatro_codigo.Name = "cuatro_codigo";
-            this.cuatro_codigo.PasswordChar = '\0';
-            this.cuatro_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_codigo.SelectedText = "";
-            this.cuatro_codigo.SelectionLength = 0;
-            this.cuatro_codigo.SelectionStart = 0;
-            this.cuatro_codigo.ShortcutsEnabled = true;
-            this.cuatro_codigo.Size = new System.Drawing.Size(429, 23);
-            this.cuatro_codigo.TabIndex = 293;
-            this.cuatro_codigo.Text = " ";
-            this.cuatro_codigo.UseSelectable = true;
-            this.cuatro_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_direccion
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_direccion.CustomButton.Image = null;
-            this.cuatro_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
-            this.cuatro_direccion.CustomButton.Name = "";
-            this.cuatro_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_direccion.CustomButton.TabIndex = 1;
-            this.cuatro_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_direccion.CustomButton.UseSelectable = true;
-            this.cuatro_direccion.CustomButton.Visible = false;
-            this.cuatro_direccion.Lines = new string[] {
-        " "};
-            this.cuatro_direccion.Location = new System.Drawing.Point(113, 143);
-            this.cuatro_direccion.MaxLength = 32767;
-            this.cuatro_direccion.Name = "cuatro_direccion";
-            this.cuatro_direccion.PasswordChar = '\0';
-            this.cuatro_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_direccion.SelectedText = "";
-            this.cuatro_direccion.SelectionLength = 0;
-            this.cuatro_direccion.SelectionStart = 0;
-            this.cuatro_direccion.ShortcutsEnabled = true;
-            this.cuatro_direccion.Size = new System.Drawing.Size(422, 23);
-            this.cuatro_direccion.TabIndex = 292;
-            this.cuatro_direccion.Text = " ";
-            this.cuatro_direccion.UseSelectable = true;
-            this.cuatro_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_rfc
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_rfc.CustomButton.Image = null;
-            this.cuatro_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.cuatro_rfc.CustomButton.Name = "";
-            this.cuatro_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_rfc.CustomButton.TabIndex = 1;
-            this.cuatro_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_rfc.CustomButton.UseSelectable = true;
-            this.cuatro_rfc.CustomButton.Visible = false;
-            this.cuatro_rfc.Lines = new string[] {
-        " "};
-            this.cuatro_rfc.Location = new System.Drawing.Point(98, 109);
-            this.cuatro_rfc.MaxLength = 32767;
-            this.cuatro_rfc.Name = "cuatro_rfc";
-            this.cuatro_rfc.PasswordChar = '\0';
-            this.cuatro_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_rfc.SelectedText = "";
-            this.cuatro_rfc.SelectionLength = 0;
-            this.cuatro_rfc.SelectionStart = 0;
-            this.cuatro_rfc.ShortcutsEnabled = true;
-            this.cuatro_rfc.Size = new System.Drawing.Size(437, 23);
-            this.cuatro_rfc.TabIndex = 291;
-            this.cuatro_rfc.Text = " ";
-            this.cuatro_rfc.UseSelectable = true;
-            this.cuatro_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_razon
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_razon.CustomButton.Image = null;
-            this.cuatro_razon.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.cuatro_razon.CustomButton.Name = "";
-            this.cuatro_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_razon.CustomButton.TabIndex = 1;
-            this.cuatro_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_razon.CustomButton.UseSelectable = true;
-            this.cuatro_razon.CustomButton.Visible = false;
-            this.cuatro_razon.Lines = new string[] {
-        " "};
-            this.cuatro_razon.Location = new System.Drawing.Point(98, 75);
-            this.cuatro_razon.MaxLength = 32767;
-            this.cuatro_razon.Name = "cuatro_razon";
-            this.cuatro_razon.PasswordChar = '\0';
-            this.cuatro_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_razon.SelectedText = "";
-            this.cuatro_razon.SelectionLength = 0;
-            this.cuatro_razon.SelectionStart = 0;
-            this.cuatro_razon.ShortcutsEnabled = true;
-            this.cuatro_razon.Size = new System.Drawing.Size(437, 23);
-            this.cuatro_razon.TabIndex = 290;
-            this.cuatro_razon.Text = " ";
-            this.cuatro_razon.UseSelectable = true;
-            this.cuatro_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cuatro_hotel
-            // 
-            // 
-            // 
-            // 
-            this.cuatro_hotel.CustomButton.Image = null;
-            this.cuatro_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
-            this.cuatro_hotel.CustomButton.Name = "";
-            this.cuatro_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cuatro_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cuatro_hotel.CustomButton.TabIndex = 1;
-            this.cuatro_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cuatro_hotel.CustomButton.UseSelectable = true;
-            this.cuatro_hotel.CustomButton.Visible = false;
-            this.cuatro_hotel.Lines = new string[] {
-        " "};
-            this.cuatro_hotel.Location = new System.Drawing.Point(55, 41);
-            this.cuatro_hotel.MaxLength = 32767;
-            this.cuatro_hotel.Name = "cuatro_hotel";
-            this.cuatro_hotel.PasswordChar = '\0';
-            this.cuatro_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cuatro_hotel.SelectedText = "";
-            this.cuatro_hotel.SelectionLength = 0;
-            this.cuatro_hotel.SelectionStart = 0;
-            this.cuatro_hotel.ShortcutsEnabled = true;
-            this.cuatro_hotel.Size = new System.Drawing.Size(480, 23);
-            this.cuatro_hotel.TabIndex = 289;
-            this.cuatro_hotel.Text = " ";
-            this.cuatro_hotel.UseSelectable = true;
-            this.cuatro_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cuatro_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel96
-            // 
-            this.metroLabel96.AutoSize = true;
-            this.metroLabel96.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel96.Name = "metroLabel96";
-            this.metroLabel96.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel96.TabIndex = 288;
-            this.metroLabel96.Text = "Código Postal:";
-            // 
-            // metroLabel97
-            // 
-            this.metroLabel97.AutoSize = true;
-            this.metroLabel97.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel97.Name = "metroLabel97";
-            this.metroLabel97.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel97.TabIndex = 287;
-            this.metroLabel97.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel98
-            // 
-            this.metroLabel98.AutoSize = true;
-            this.metroLabel98.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel98.Name = "metroLabel98";
-            this.metroLabel98.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel98.TabIndex = 286;
-            this.metroLabel98.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel99
-            // 
-            this.metroLabel99.AutoSize = true;
-            this.metroLabel99.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel99.Name = "metroLabel99";
-            this.metroLabel99.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel99.TabIndex = 285;
-            this.metroLabel99.Text = "Razón Social:";
-            // 
-            // metroLabel100
-            // 
-            this.metroLabel100.AutoSize = true;
-            this.metroLabel100.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel100.Name = "metroLabel100";
-            this.metroLabel100.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel100.TabIndex = 284;
-            this.metroLabel100.Text = "Hotel:";
-            // 
-            // groupBox23
-            // 
-            this.groupBox23.BackColor = System.Drawing.SystemColors.Window;
-            this.groupBox23.Controls.Add(this.Additional_5);
-            this.groupBox23.Controls.Add(this.cinco_telefono);
-            this.groupBox23.Controls.Add(this.cinco_email);
-            this.groupBox23.Controls.Add(this.cinco_contacto);
-            this.groupBox23.Controls.Add(this.metroLabel101);
-            this.groupBox23.Controls.Add(this.metroLabel102);
-            this.groupBox23.Controls.Add(this.metroLabel103);
-            this.groupBox23.Controls.Add(this.metroLabel104);
-            this.groupBox23.Controls.Add(this.cinco_codigo);
-            this.groupBox23.Controls.Add(this.cinco_direccion);
-            this.groupBox23.Controls.Add(this.cinco_rfc);
-            this.groupBox23.Controls.Add(this.cinco_razon);
-            this.groupBox23.Controls.Add(this.cinco_hotel);
-            this.groupBox23.Controls.Add(this.metroLabel105);
-            this.groupBox23.Controls.Add(this.metroLabel106);
-            this.groupBox23.Controls.Add(this.metroLabel107);
-            this.groupBox23.Controls.Add(this.metroLabel108);
-            this.groupBox23.Controls.Add(this.metroLabel109);
-            this.groupBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox23.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox23.Location = new System.Drawing.Point(6, 913);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(1175, 218);
-            this.groupBox23.TabIndex = 306;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Quinto";
-            // 
-            // Additional_5
-            // 
-            // 
-            // 
-            // 
-            this.Additional_5.CustomButton.Image = null;
-            this.Additional_5.CustomButton.Location = new System.Drawing.Point(451, 1);
-            this.Additional_5.CustomButton.Name = "";
-            this.Additional_5.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.Additional_5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.Additional_5.CustomButton.TabIndex = 1;
-            this.Additional_5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.Additional_5.CustomButton.UseSelectable = true;
-            this.Additional_5.CustomButton.Visible = false;
-            this.Additional_5.Lines = new string[0];
-            this.Additional_5.Location = new System.Drawing.Point(687, 143);
-            this.Additional_5.MaxLength = 32767;
-            this.Additional_5.Name = "Additional_5";
-            this.Additional_5.PasswordChar = '\0';
-            this.Additional_5.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Additional_5.SelectedText = "";
-            this.Additional_5.SelectionLength = 0;
-            this.Additional_5.SelectionStart = 0;
-            this.Additional_5.ShortcutsEnabled = true;
-            this.Additional_5.Size = new System.Drawing.Size(473, 23);
-            this.Additional_5.TabIndex = 301;
-            this.Additional_5.UseSelectable = true;
-            this.Additional_5.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Additional_5.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_telefono
-            // 
-            // 
-            // 
-            // 
-            this.cinco_telefono.CustomButton.Image = null;
-            this.cinco_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
-            this.cinco_telefono.CustomButton.Name = "";
-            this.cinco_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_telefono.CustomButton.TabIndex = 1;
-            this.cinco_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_telefono.CustomButton.UseSelectable = true;
-            this.cinco_telefono.CustomButton.Visible = false;
-            this.cinco_telefono.Lines = new string[] {
-        " "};
-            this.cinco_telefono.Location = new System.Drawing.Point(773, 109);
-            this.cinco_telefono.MaxLength = 32767;
-            this.cinco_telefono.Name = "cinco_telefono";
-            this.cinco_telefono.PasswordChar = '\0';
-            this.cinco_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_telefono.SelectedText = "";
-            this.cinco_telefono.SelectionLength = 0;
-            this.cinco_telefono.SelectionStart = 0;
-            this.cinco_telefono.ShortcutsEnabled = true;
-            this.cinco_telefono.Size = new System.Drawing.Size(387, 23);
-            this.cinco_telefono.TabIndex = 300;
-            this.cinco_telefono.Text = " ";
-            this.cinco_telefono.UseSelectable = true;
-            this.cinco_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_email
-            // 
-            // 
-            // 
-            // 
-            this.cinco_email.CustomButton.Image = null;
-            this.cinco_email.CustomButton.Location = new System.Drawing.Point(376, 1);
-            this.cinco_email.CustomButton.Name = "";
-            this.cinco_email.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_email.CustomButton.TabIndex = 1;
-            this.cinco_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_email.CustomButton.UseSelectable = true;
-            this.cinco_email.CustomButton.Visible = false;
-            this.cinco_email.Lines = new string[] {
-        " "};
-            this.cinco_email.Location = new System.Drawing.Point(762, 75);
-            this.cinco_email.MaxLength = 32767;
-            this.cinco_email.Name = "cinco_email";
-            this.cinco_email.PasswordChar = '\0';
-            this.cinco_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_email.SelectedText = "";
-            this.cinco_email.SelectionLength = 0;
-            this.cinco_email.SelectionStart = 0;
-            this.cinco_email.ShortcutsEnabled = true;
-            this.cinco_email.Size = new System.Drawing.Size(398, 23);
-            this.cinco_email.TabIndex = 299;
-            this.cinco_email.Text = " ";
-            this.cinco_email.UseSelectable = true;
-            this.cinco_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_contacto
-            // 
-            // 
-            // 
-            // 
-            this.cinco_contacto.CustomButton.Image = null;
-            this.cinco_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
-            this.cinco_contacto.CustomButton.Name = "";
-            this.cinco_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_contacto.CustomButton.TabIndex = 1;
-            this.cinco_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_contacto.CustomButton.UseSelectable = true;
-            this.cinco_contacto.CustomButton.Visible = false;
-            this.cinco_contacto.Lines = new string[] {
-        " "};
-            this.cinco_contacto.Location = new System.Drawing.Point(701, 41);
-            this.cinco_contacto.MaxLength = 32767;
-            this.cinco_contacto.Name = "cinco_contacto";
-            this.cinco_contacto.PasswordChar = '\0';
-            this.cinco_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_contacto.SelectedText = "";
-            this.cinco_contacto.SelectionLength = 0;
-            this.cinco_contacto.SelectionStart = 0;
-            this.cinco_contacto.ShortcutsEnabled = true;
-            this.cinco_contacto.Size = new System.Drawing.Size(459, 23);
-            this.cinco_contacto.TabIndex = 298;
-            this.cinco_contacto.Text = " ";
-            this.cinco_contacto.UseSelectable = true;
-            this.cinco_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel101
-            // 
-            this.metroLabel101.AutoSize = true;
-            this.metroLabel101.Location = new System.Drawing.Point(541, 143);
-            this.metroLabel101.Name = "metroLabel101";
-            this.metroLabel101.Size = new System.Drawing.Size(140, 19);
-            this.metroLabel101.TabIndex = 297;
-            this.metroLabel101.Text = "Información Adicional:";
-            // 
-            // metroLabel102
-            // 
-            this.metroLabel102.AutoSize = true;
-            this.metroLabel102.Location = new System.Drawing.Point(541, 109);
-            this.metroLabel102.Name = "metroLabel102";
-            this.metroLabel102.Size = new System.Drawing.Size(226, 19);
-            this.metroLabel102.TabIndex = 296;
-            this.metroLabel102.Text = "Teléfono de Contacto de Facturación:";
-            // 
-            // metroLabel103
-            // 
-            this.metroLabel103.AutoSize = true;
-            this.metroLabel103.Location = new System.Drawing.Point(541, 75);
-            this.metroLabel103.Name = "metroLabel103";
-            this.metroLabel103.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel103.TabIndex = 295;
-            this.metroLabel103.Text = "E-mail de Contacto de Facturación:";
-            // 
-            // metroLabel104
-            // 
-            this.metroLabel104.AutoSize = true;
-            this.metroLabel104.Location = new System.Drawing.Point(541, 41);
-            this.metroLabel104.Name = "metroLabel104";
-            this.metroLabel104.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel104.TabIndex = 294;
-            this.metroLabel104.Text = "Contacto de Facturación:";
-            // 
-            // cinco_codigo
-            // 
-            // 
-            // 
-            // 
-            this.cinco_codigo.CustomButton.Image = null;
-            this.cinco_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
-            this.cinco_codigo.CustomButton.Name = "";
-            this.cinco_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_codigo.CustomButton.TabIndex = 1;
-            this.cinco_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_codigo.CustomButton.UseSelectable = true;
-            this.cinco_codigo.CustomButton.Visible = false;
-            this.cinco_codigo.Lines = new string[] {
-        " "};
-            this.cinco_codigo.Location = new System.Drawing.Point(106, 178);
-            this.cinco_codigo.MaxLength = 32767;
-            this.cinco_codigo.Name = "cinco_codigo";
-            this.cinco_codigo.PasswordChar = '\0';
-            this.cinco_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_codigo.SelectedText = "";
-            this.cinco_codigo.SelectionLength = 0;
-            this.cinco_codigo.SelectionStart = 0;
-            this.cinco_codigo.ShortcutsEnabled = true;
-            this.cinco_codigo.Size = new System.Drawing.Size(429, 23);
-            this.cinco_codigo.TabIndex = 293;
-            this.cinco_codigo.Text = " ";
-            this.cinco_codigo.UseSelectable = true;
-            this.cinco_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_direccion
-            // 
-            // 
-            // 
-            // 
-            this.cinco_direccion.CustomButton.Image = null;
-            this.cinco_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
-            this.cinco_direccion.CustomButton.Name = "";
-            this.cinco_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_direccion.CustomButton.TabIndex = 1;
-            this.cinco_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_direccion.CustomButton.UseSelectable = true;
-            this.cinco_direccion.CustomButton.Visible = false;
-            this.cinco_direccion.Lines = new string[] {
-        " "};
-            this.cinco_direccion.Location = new System.Drawing.Point(113, 143);
-            this.cinco_direccion.MaxLength = 32767;
-            this.cinco_direccion.Name = "cinco_direccion";
-            this.cinco_direccion.PasswordChar = '\0';
-            this.cinco_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_direccion.SelectedText = "";
-            this.cinco_direccion.SelectionLength = 0;
-            this.cinco_direccion.SelectionStart = 0;
-            this.cinco_direccion.ShortcutsEnabled = true;
-            this.cinco_direccion.Size = new System.Drawing.Size(422, 23);
-            this.cinco_direccion.TabIndex = 292;
-            this.cinco_direccion.Text = " ";
-            this.cinco_direccion.UseSelectable = true;
-            this.cinco_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_rfc
-            // 
-            // 
-            // 
-            // 
-            this.cinco_rfc.CustomButton.Image = null;
-            this.cinco_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.cinco_rfc.CustomButton.Name = "";
-            this.cinco_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_rfc.CustomButton.TabIndex = 1;
-            this.cinco_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_rfc.CustomButton.UseSelectable = true;
-            this.cinco_rfc.CustomButton.Visible = false;
-            this.cinco_rfc.Lines = new string[] {
-        " "};
-            this.cinco_rfc.Location = new System.Drawing.Point(98, 109);
-            this.cinco_rfc.MaxLength = 32767;
-            this.cinco_rfc.Name = "cinco_rfc";
-            this.cinco_rfc.PasswordChar = '\0';
-            this.cinco_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_rfc.SelectedText = "";
-            this.cinco_rfc.SelectionLength = 0;
-            this.cinco_rfc.SelectionStart = 0;
-            this.cinco_rfc.ShortcutsEnabled = true;
-            this.cinco_rfc.Size = new System.Drawing.Size(437, 23);
-            this.cinco_rfc.TabIndex = 291;
-            this.cinco_rfc.Text = " ";
-            this.cinco_rfc.UseSelectable = true;
-            this.cinco_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_razon
-            // 
-            // 
-            // 
-            // 
-            this.cinco_razon.CustomButton.Image = null;
-            this.cinco_razon.CustomButton.Location = new System.Drawing.Point(415, 1);
-            this.cinco_razon.CustomButton.Name = "";
-            this.cinco_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_razon.CustomButton.TabIndex = 1;
-            this.cinco_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_razon.CustomButton.UseSelectable = true;
-            this.cinco_razon.CustomButton.Visible = false;
-            this.cinco_razon.Lines = new string[] {
-        " "};
-            this.cinco_razon.Location = new System.Drawing.Point(98, 75);
-            this.cinco_razon.MaxLength = 32767;
-            this.cinco_razon.Name = "cinco_razon";
-            this.cinco_razon.PasswordChar = '\0';
-            this.cinco_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_razon.SelectedText = "";
-            this.cinco_razon.SelectionLength = 0;
-            this.cinco_razon.SelectionStart = 0;
-            this.cinco_razon.ShortcutsEnabled = true;
-            this.cinco_razon.Size = new System.Drawing.Size(437, 23);
-            this.cinco_razon.TabIndex = 290;
-            this.cinco_razon.Text = " ";
-            this.cinco_razon.UseSelectable = true;
-            this.cinco_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // cinco_hotel
-            // 
-            // 
-            // 
-            // 
-            this.cinco_hotel.CustomButton.Image = null;
-            this.cinco_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
-            this.cinco_hotel.CustomButton.Name = "";
-            this.cinco_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cinco_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cinco_hotel.CustomButton.TabIndex = 1;
-            this.cinco_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cinco_hotel.CustomButton.UseSelectable = true;
-            this.cinco_hotel.CustomButton.Visible = false;
-            this.cinco_hotel.Lines = new string[] {
-        " "};
-            this.cinco_hotel.Location = new System.Drawing.Point(55, 41);
-            this.cinco_hotel.MaxLength = 32767;
-            this.cinco_hotel.Name = "cinco_hotel";
-            this.cinco_hotel.PasswordChar = '\0';
-            this.cinco_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cinco_hotel.SelectedText = "";
-            this.cinco_hotel.SelectionLength = 0;
-            this.cinco_hotel.SelectionStart = 0;
-            this.cinco_hotel.ShortcutsEnabled = true;
-            this.cinco_hotel.Size = new System.Drawing.Size(480, 23);
-            this.cinco_hotel.TabIndex = 289;
-            this.cinco_hotel.Text = " ";
-            this.cinco_hotel.UseSelectable = true;
-            this.cinco_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cinco_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel105
-            // 
-            this.metroLabel105.AutoSize = true;
-            this.metroLabel105.Location = new System.Drawing.Point(6, 178);
-            this.metroLabel105.Name = "metroLabel105";
-            this.metroLabel105.Size = new System.Drawing.Size(94, 19);
-            this.metroLabel105.TabIndex = 288;
-            this.metroLabel105.Text = "Código Postal:";
-            // 
-            // metroLabel106
-            // 
-            this.metroLabel106.AutoSize = true;
-            this.metroLabel106.Location = new System.Drawing.Point(6, 143);
-            this.metroLabel106.Name = "metroLabel106";
-            this.metroLabel106.Size = new System.Drawing.Size(101, 19);
-            this.metroLabel106.TabIndex = 287;
-            this.metroLabel106.Text = "Dirección Fiscal:";
-            // 
-            // metroLabel107
-            // 
-            this.metroLabel107.AutoSize = true;
-            this.metroLabel107.Location = new System.Drawing.Point(6, 109);
-            this.metroLabel107.Name = "metroLabel107";
-            this.metroLabel107.Size = new System.Drawing.Size(84, 19);
-            this.metroLabel107.TabIndex = 286;
-            this.metroLabel107.Text = "RFC - Tax ID:";
-            // 
-            // metroLabel108
-            // 
-            this.metroLabel108.AutoSize = true;
-            this.metroLabel108.Location = new System.Drawing.Point(6, 75);
-            this.metroLabel108.Name = "metroLabel108";
-            this.metroLabel108.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel108.TabIndex = 285;
-            this.metroLabel108.Text = "Razón Social:";
-            // 
-            // metroLabel109
-            // 
-            this.metroLabel109.AutoSize = true;
-            this.metroLabel109.Location = new System.Drawing.Point(6, 41);
-            this.metroLabel109.Name = "metroLabel109";
-            this.metroLabel109.Size = new System.Drawing.Size(43, 19);
-            this.metroLabel109.TabIndex = 284;
-            this.metroLabel109.Text = "Hotel:";
             // 
             // groupBox24
             // 
@@ -6896,6 +4494,2409 @@ namespace gestor_bdm
             this.metroLabel118.TabIndex = 284;
             this.metroLabel118.Text = "Hotel:";
             // 
+            // groupBox23
+            // 
+            this.groupBox23.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox23.Controls.Add(this.Additional_5);
+            this.groupBox23.Controls.Add(this.cinco_telefono);
+            this.groupBox23.Controls.Add(this.cinco_email);
+            this.groupBox23.Controls.Add(this.cinco_contacto);
+            this.groupBox23.Controls.Add(this.metroLabel101);
+            this.groupBox23.Controls.Add(this.metroLabel102);
+            this.groupBox23.Controls.Add(this.metroLabel103);
+            this.groupBox23.Controls.Add(this.metroLabel104);
+            this.groupBox23.Controls.Add(this.cinco_codigo);
+            this.groupBox23.Controls.Add(this.cinco_direccion);
+            this.groupBox23.Controls.Add(this.cinco_rfc);
+            this.groupBox23.Controls.Add(this.cinco_razon);
+            this.groupBox23.Controls.Add(this.cinco_hotel);
+            this.groupBox23.Controls.Add(this.metroLabel105);
+            this.groupBox23.Controls.Add(this.metroLabel106);
+            this.groupBox23.Controls.Add(this.metroLabel107);
+            this.groupBox23.Controls.Add(this.metroLabel108);
+            this.groupBox23.Controls.Add(this.metroLabel109);
+            this.groupBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox23.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox23.Location = new System.Drawing.Point(6, 913);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(1175, 218);
+            this.groupBox23.TabIndex = 306;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Quinto";
+            // 
+            // Additional_5
+            // 
+            // 
+            // 
+            // 
+            this.Additional_5.CustomButton.Image = null;
+            this.Additional_5.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_5.CustomButton.Name = "";
+            this.Additional_5.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_5.CustomButton.TabIndex = 1;
+            this.Additional_5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_5.CustomButton.UseSelectable = true;
+            this.Additional_5.CustomButton.Visible = false;
+            this.Additional_5.Lines = new string[0];
+            this.Additional_5.Location = new System.Drawing.Point(687, 143);
+            this.Additional_5.MaxLength = 32767;
+            this.Additional_5.Name = "Additional_5";
+            this.Additional_5.PasswordChar = '\0';
+            this.Additional_5.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_5.SelectedText = "";
+            this.Additional_5.SelectionLength = 0;
+            this.Additional_5.SelectionStart = 0;
+            this.Additional_5.ShortcutsEnabled = true;
+            this.Additional_5.Size = new System.Drawing.Size(473, 23);
+            this.Additional_5.TabIndex = 301;
+            this.Additional_5.UseSelectable = true;
+            this.Additional_5.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_5.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_telefono
+            // 
+            // 
+            // 
+            // 
+            this.cinco_telefono.CustomButton.Image = null;
+            this.cinco_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.cinco_telefono.CustomButton.Name = "";
+            this.cinco_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_telefono.CustomButton.TabIndex = 1;
+            this.cinco_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_telefono.CustomButton.UseSelectable = true;
+            this.cinco_telefono.CustomButton.Visible = false;
+            this.cinco_telefono.Lines = new string[] {
+        " "};
+            this.cinco_telefono.Location = new System.Drawing.Point(773, 109);
+            this.cinco_telefono.MaxLength = 32767;
+            this.cinco_telefono.Name = "cinco_telefono";
+            this.cinco_telefono.PasswordChar = '\0';
+            this.cinco_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_telefono.SelectedText = "";
+            this.cinco_telefono.SelectionLength = 0;
+            this.cinco_telefono.SelectionStart = 0;
+            this.cinco_telefono.ShortcutsEnabled = true;
+            this.cinco_telefono.Size = new System.Drawing.Size(387, 23);
+            this.cinco_telefono.TabIndex = 300;
+            this.cinco_telefono.Text = " ";
+            this.cinco_telefono.UseSelectable = true;
+            this.cinco_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_email
+            // 
+            // 
+            // 
+            // 
+            this.cinco_email.CustomButton.Image = null;
+            this.cinco_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.cinco_email.CustomButton.Name = "";
+            this.cinco_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_email.CustomButton.TabIndex = 1;
+            this.cinco_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_email.CustomButton.UseSelectable = true;
+            this.cinco_email.CustomButton.Visible = false;
+            this.cinco_email.Lines = new string[] {
+        " "};
+            this.cinco_email.Location = new System.Drawing.Point(762, 75);
+            this.cinco_email.MaxLength = 32767;
+            this.cinco_email.Name = "cinco_email";
+            this.cinco_email.PasswordChar = '\0';
+            this.cinco_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_email.SelectedText = "";
+            this.cinco_email.SelectionLength = 0;
+            this.cinco_email.SelectionStart = 0;
+            this.cinco_email.ShortcutsEnabled = true;
+            this.cinco_email.Size = new System.Drawing.Size(398, 23);
+            this.cinco_email.TabIndex = 299;
+            this.cinco_email.Text = " ";
+            this.cinco_email.UseSelectable = true;
+            this.cinco_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_contacto
+            // 
+            // 
+            // 
+            // 
+            this.cinco_contacto.CustomButton.Image = null;
+            this.cinco_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.cinco_contacto.CustomButton.Name = "";
+            this.cinco_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_contacto.CustomButton.TabIndex = 1;
+            this.cinco_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_contacto.CustomButton.UseSelectable = true;
+            this.cinco_contacto.CustomButton.Visible = false;
+            this.cinco_contacto.Lines = new string[] {
+        " "};
+            this.cinco_contacto.Location = new System.Drawing.Point(701, 41);
+            this.cinco_contacto.MaxLength = 32767;
+            this.cinco_contacto.Name = "cinco_contacto";
+            this.cinco_contacto.PasswordChar = '\0';
+            this.cinco_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_contacto.SelectedText = "";
+            this.cinco_contacto.SelectionLength = 0;
+            this.cinco_contacto.SelectionStart = 0;
+            this.cinco_contacto.ShortcutsEnabled = true;
+            this.cinco_contacto.Size = new System.Drawing.Size(459, 23);
+            this.cinco_contacto.TabIndex = 298;
+            this.cinco_contacto.Text = " ";
+            this.cinco_contacto.UseSelectable = true;
+            this.cinco_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel101
+            // 
+            this.metroLabel101.AutoSize = true;
+            this.metroLabel101.Location = new System.Drawing.Point(541, 143);
+            this.metroLabel101.Name = "metroLabel101";
+            this.metroLabel101.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel101.TabIndex = 297;
+            this.metroLabel101.Text = "Información Adicional:";
+            // 
+            // metroLabel102
+            // 
+            this.metroLabel102.AutoSize = true;
+            this.metroLabel102.Location = new System.Drawing.Point(541, 109);
+            this.metroLabel102.Name = "metroLabel102";
+            this.metroLabel102.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel102.TabIndex = 296;
+            this.metroLabel102.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel103
+            // 
+            this.metroLabel103.AutoSize = true;
+            this.metroLabel103.Location = new System.Drawing.Point(541, 75);
+            this.metroLabel103.Name = "metroLabel103";
+            this.metroLabel103.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel103.TabIndex = 295;
+            this.metroLabel103.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel104
+            // 
+            this.metroLabel104.AutoSize = true;
+            this.metroLabel104.Location = new System.Drawing.Point(541, 41);
+            this.metroLabel104.Name = "metroLabel104";
+            this.metroLabel104.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel104.TabIndex = 294;
+            this.metroLabel104.Text = "Contacto de Facturación:";
+            // 
+            // cinco_codigo
+            // 
+            // 
+            // 
+            // 
+            this.cinco_codigo.CustomButton.Image = null;
+            this.cinco_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
+            this.cinco_codigo.CustomButton.Name = "";
+            this.cinco_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_codigo.CustomButton.TabIndex = 1;
+            this.cinco_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_codigo.CustomButton.UseSelectable = true;
+            this.cinco_codigo.CustomButton.Visible = false;
+            this.cinco_codigo.Lines = new string[] {
+        " "};
+            this.cinco_codigo.Location = new System.Drawing.Point(106, 178);
+            this.cinco_codigo.MaxLength = 32767;
+            this.cinco_codigo.Name = "cinco_codigo";
+            this.cinco_codigo.PasswordChar = '\0';
+            this.cinco_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_codigo.SelectedText = "";
+            this.cinco_codigo.SelectionLength = 0;
+            this.cinco_codigo.SelectionStart = 0;
+            this.cinco_codigo.ShortcutsEnabled = true;
+            this.cinco_codigo.Size = new System.Drawing.Size(429, 23);
+            this.cinco_codigo.TabIndex = 293;
+            this.cinco_codigo.Text = " ";
+            this.cinco_codigo.UseSelectable = true;
+            this.cinco_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_direccion
+            // 
+            // 
+            // 
+            // 
+            this.cinco_direccion.CustomButton.Image = null;
+            this.cinco_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
+            this.cinco_direccion.CustomButton.Name = "";
+            this.cinco_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_direccion.CustomButton.TabIndex = 1;
+            this.cinco_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_direccion.CustomButton.UseSelectable = true;
+            this.cinco_direccion.CustomButton.Visible = false;
+            this.cinco_direccion.Lines = new string[] {
+        " "};
+            this.cinco_direccion.Location = new System.Drawing.Point(113, 143);
+            this.cinco_direccion.MaxLength = 32767;
+            this.cinco_direccion.Name = "cinco_direccion";
+            this.cinco_direccion.PasswordChar = '\0';
+            this.cinco_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_direccion.SelectedText = "";
+            this.cinco_direccion.SelectionLength = 0;
+            this.cinco_direccion.SelectionStart = 0;
+            this.cinco_direccion.ShortcutsEnabled = true;
+            this.cinco_direccion.Size = new System.Drawing.Size(422, 23);
+            this.cinco_direccion.TabIndex = 292;
+            this.cinco_direccion.Text = " ";
+            this.cinco_direccion.UseSelectable = true;
+            this.cinco_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_rfc
+            // 
+            // 
+            // 
+            // 
+            this.cinco_rfc.CustomButton.Image = null;
+            this.cinco_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.cinco_rfc.CustomButton.Name = "";
+            this.cinco_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_rfc.CustomButton.TabIndex = 1;
+            this.cinco_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_rfc.CustomButton.UseSelectable = true;
+            this.cinco_rfc.CustomButton.Visible = false;
+            this.cinco_rfc.Lines = new string[] {
+        " "};
+            this.cinco_rfc.Location = new System.Drawing.Point(98, 109);
+            this.cinco_rfc.MaxLength = 32767;
+            this.cinco_rfc.Name = "cinco_rfc";
+            this.cinco_rfc.PasswordChar = '\0';
+            this.cinco_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_rfc.SelectedText = "";
+            this.cinco_rfc.SelectionLength = 0;
+            this.cinco_rfc.SelectionStart = 0;
+            this.cinco_rfc.ShortcutsEnabled = true;
+            this.cinco_rfc.Size = new System.Drawing.Size(437, 23);
+            this.cinco_rfc.TabIndex = 291;
+            this.cinco_rfc.Text = " ";
+            this.cinco_rfc.UseSelectable = true;
+            this.cinco_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_razon
+            // 
+            // 
+            // 
+            // 
+            this.cinco_razon.CustomButton.Image = null;
+            this.cinco_razon.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.cinco_razon.CustomButton.Name = "";
+            this.cinco_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_razon.CustomButton.TabIndex = 1;
+            this.cinco_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_razon.CustomButton.UseSelectable = true;
+            this.cinco_razon.CustomButton.Visible = false;
+            this.cinco_razon.Lines = new string[] {
+        " "};
+            this.cinco_razon.Location = new System.Drawing.Point(98, 75);
+            this.cinco_razon.MaxLength = 32767;
+            this.cinco_razon.Name = "cinco_razon";
+            this.cinco_razon.PasswordChar = '\0';
+            this.cinco_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_razon.SelectedText = "";
+            this.cinco_razon.SelectionLength = 0;
+            this.cinco_razon.SelectionStart = 0;
+            this.cinco_razon.ShortcutsEnabled = true;
+            this.cinco_razon.Size = new System.Drawing.Size(437, 23);
+            this.cinco_razon.TabIndex = 290;
+            this.cinco_razon.Text = " ";
+            this.cinco_razon.UseSelectable = true;
+            this.cinco_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cinco_hotel
+            // 
+            // 
+            // 
+            // 
+            this.cinco_hotel.CustomButton.Image = null;
+            this.cinco_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
+            this.cinco_hotel.CustomButton.Name = "";
+            this.cinco_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cinco_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cinco_hotel.CustomButton.TabIndex = 1;
+            this.cinco_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cinco_hotel.CustomButton.UseSelectable = true;
+            this.cinco_hotel.CustomButton.Visible = false;
+            this.cinco_hotel.Lines = new string[] {
+        " "};
+            this.cinco_hotel.Location = new System.Drawing.Point(55, 41);
+            this.cinco_hotel.MaxLength = 32767;
+            this.cinco_hotel.Name = "cinco_hotel";
+            this.cinco_hotel.PasswordChar = '\0';
+            this.cinco_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cinco_hotel.SelectedText = "";
+            this.cinco_hotel.SelectionLength = 0;
+            this.cinco_hotel.SelectionStart = 0;
+            this.cinco_hotel.ShortcutsEnabled = true;
+            this.cinco_hotel.Size = new System.Drawing.Size(480, 23);
+            this.cinco_hotel.TabIndex = 289;
+            this.cinco_hotel.Text = " ";
+            this.cinco_hotel.UseSelectable = true;
+            this.cinco_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cinco_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel105
+            // 
+            this.metroLabel105.AutoSize = true;
+            this.metroLabel105.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel105.Name = "metroLabel105";
+            this.metroLabel105.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel105.TabIndex = 288;
+            this.metroLabel105.Text = "Código Postal:";
+            // 
+            // metroLabel106
+            // 
+            this.metroLabel106.AutoSize = true;
+            this.metroLabel106.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel106.Name = "metroLabel106";
+            this.metroLabel106.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel106.TabIndex = 287;
+            this.metroLabel106.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel107
+            // 
+            this.metroLabel107.AutoSize = true;
+            this.metroLabel107.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel107.Name = "metroLabel107";
+            this.metroLabel107.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel107.TabIndex = 286;
+            this.metroLabel107.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel108
+            // 
+            this.metroLabel108.AutoSize = true;
+            this.metroLabel108.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel108.Name = "metroLabel108";
+            this.metroLabel108.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel108.TabIndex = 285;
+            this.metroLabel108.Text = "Razón Social:";
+            // 
+            // metroLabel109
+            // 
+            this.metroLabel109.AutoSize = true;
+            this.metroLabel109.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel109.Name = "metroLabel109";
+            this.metroLabel109.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel109.TabIndex = 284;
+            this.metroLabel109.Text = "Hotel:";
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox22.Controls.Add(this.Additional_4);
+            this.groupBox22.Controls.Add(this.cuatro_telefono);
+            this.groupBox22.Controls.Add(this.cuatro_email);
+            this.groupBox22.Controls.Add(this.cuatro_contacto);
+            this.groupBox22.Controls.Add(this.metroLabel92);
+            this.groupBox22.Controls.Add(this.metroLabel93);
+            this.groupBox22.Controls.Add(this.metroLabel94);
+            this.groupBox22.Controls.Add(this.metroLabel95);
+            this.groupBox22.Controls.Add(this.cuatro_codigo);
+            this.groupBox22.Controls.Add(this.cuatro_direccion);
+            this.groupBox22.Controls.Add(this.cuatro_rfc);
+            this.groupBox22.Controls.Add(this.cuatro_razon);
+            this.groupBox22.Controls.Add(this.cuatro_hotel);
+            this.groupBox22.Controls.Add(this.metroLabel96);
+            this.groupBox22.Controls.Add(this.metroLabel97);
+            this.groupBox22.Controls.Add(this.metroLabel98);
+            this.groupBox22.Controls.Add(this.metroLabel99);
+            this.groupBox22.Controls.Add(this.metroLabel100);
+            this.groupBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox22.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox22.Location = new System.Drawing.Point(6, 689);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Size = new System.Drawing.Size(1175, 218);
+            this.groupBox22.TabIndex = 305;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "Cuarto";
+            // 
+            // Additional_4
+            // 
+            // 
+            // 
+            // 
+            this.Additional_4.CustomButton.Image = null;
+            this.Additional_4.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_4.CustomButton.Name = "";
+            this.Additional_4.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_4.CustomButton.TabIndex = 1;
+            this.Additional_4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_4.CustomButton.UseSelectable = true;
+            this.Additional_4.CustomButton.Visible = false;
+            this.Additional_4.Lines = new string[0];
+            this.Additional_4.Location = new System.Drawing.Point(687, 143);
+            this.Additional_4.MaxLength = 32767;
+            this.Additional_4.Name = "Additional_4";
+            this.Additional_4.PasswordChar = '\0';
+            this.Additional_4.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_4.SelectedText = "";
+            this.Additional_4.SelectionLength = 0;
+            this.Additional_4.SelectionStart = 0;
+            this.Additional_4.ShortcutsEnabled = true;
+            this.Additional_4.Size = new System.Drawing.Size(473, 23);
+            this.Additional_4.TabIndex = 301;
+            this.Additional_4.UseSelectable = true;
+            this.Additional_4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_4.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_telefono
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_telefono.CustomButton.Image = null;
+            this.cuatro_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.cuatro_telefono.CustomButton.Name = "";
+            this.cuatro_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_telefono.CustomButton.TabIndex = 1;
+            this.cuatro_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_telefono.CustomButton.UseSelectable = true;
+            this.cuatro_telefono.CustomButton.Visible = false;
+            this.cuatro_telefono.Lines = new string[] {
+        " "};
+            this.cuatro_telefono.Location = new System.Drawing.Point(773, 109);
+            this.cuatro_telefono.MaxLength = 32767;
+            this.cuatro_telefono.Name = "cuatro_telefono";
+            this.cuatro_telefono.PasswordChar = '\0';
+            this.cuatro_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_telefono.SelectedText = "";
+            this.cuatro_telefono.SelectionLength = 0;
+            this.cuatro_telefono.SelectionStart = 0;
+            this.cuatro_telefono.ShortcutsEnabled = true;
+            this.cuatro_telefono.Size = new System.Drawing.Size(387, 23);
+            this.cuatro_telefono.TabIndex = 300;
+            this.cuatro_telefono.Text = " ";
+            this.cuatro_telefono.UseSelectable = true;
+            this.cuatro_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_email
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_email.CustomButton.Image = null;
+            this.cuatro_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.cuatro_email.CustomButton.Name = "";
+            this.cuatro_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_email.CustomButton.TabIndex = 1;
+            this.cuatro_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_email.CustomButton.UseSelectable = true;
+            this.cuatro_email.CustomButton.Visible = false;
+            this.cuatro_email.Lines = new string[] {
+        " "};
+            this.cuatro_email.Location = new System.Drawing.Point(762, 75);
+            this.cuatro_email.MaxLength = 32767;
+            this.cuatro_email.Name = "cuatro_email";
+            this.cuatro_email.PasswordChar = '\0';
+            this.cuatro_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_email.SelectedText = "";
+            this.cuatro_email.SelectionLength = 0;
+            this.cuatro_email.SelectionStart = 0;
+            this.cuatro_email.ShortcutsEnabled = true;
+            this.cuatro_email.Size = new System.Drawing.Size(398, 23);
+            this.cuatro_email.TabIndex = 299;
+            this.cuatro_email.Text = " ";
+            this.cuatro_email.UseSelectable = true;
+            this.cuatro_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_contacto
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_contacto.CustomButton.Image = null;
+            this.cuatro_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.cuatro_contacto.CustomButton.Name = "";
+            this.cuatro_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_contacto.CustomButton.TabIndex = 1;
+            this.cuatro_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_contacto.CustomButton.UseSelectable = true;
+            this.cuatro_contacto.CustomButton.Visible = false;
+            this.cuatro_contacto.Lines = new string[] {
+        " "};
+            this.cuatro_contacto.Location = new System.Drawing.Point(701, 41);
+            this.cuatro_contacto.MaxLength = 32767;
+            this.cuatro_contacto.Name = "cuatro_contacto";
+            this.cuatro_contacto.PasswordChar = '\0';
+            this.cuatro_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_contacto.SelectedText = "";
+            this.cuatro_contacto.SelectionLength = 0;
+            this.cuatro_contacto.SelectionStart = 0;
+            this.cuatro_contacto.ShortcutsEnabled = true;
+            this.cuatro_contacto.Size = new System.Drawing.Size(459, 23);
+            this.cuatro_contacto.TabIndex = 298;
+            this.cuatro_contacto.Text = " ";
+            this.cuatro_contacto.UseSelectable = true;
+            this.cuatro_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel92
+            // 
+            this.metroLabel92.AutoSize = true;
+            this.metroLabel92.Location = new System.Drawing.Point(541, 143);
+            this.metroLabel92.Name = "metroLabel92";
+            this.metroLabel92.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel92.TabIndex = 297;
+            this.metroLabel92.Text = "Información Adicional:";
+            // 
+            // metroLabel93
+            // 
+            this.metroLabel93.AutoSize = true;
+            this.metroLabel93.Location = new System.Drawing.Point(541, 109);
+            this.metroLabel93.Name = "metroLabel93";
+            this.metroLabel93.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel93.TabIndex = 296;
+            this.metroLabel93.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel94
+            // 
+            this.metroLabel94.AutoSize = true;
+            this.metroLabel94.Location = new System.Drawing.Point(541, 75);
+            this.metroLabel94.Name = "metroLabel94";
+            this.metroLabel94.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel94.TabIndex = 295;
+            this.metroLabel94.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel95
+            // 
+            this.metroLabel95.AutoSize = true;
+            this.metroLabel95.Location = new System.Drawing.Point(541, 41);
+            this.metroLabel95.Name = "metroLabel95";
+            this.metroLabel95.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel95.TabIndex = 294;
+            this.metroLabel95.Text = "Contacto de Facturación:";
+            // 
+            // cuatro_codigo
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_codigo.CustomButton.Image = null;
+            this.cuatro_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
+            this.cuatro_codigo.CustomButton.Name = "";
+            this.cuatro_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_codigo.CustomButton.TabIndex = 1;
+            this.cuatro_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_codigo.CustomButton.UseSelectable = true;
+            this.cuatro_codigo.CustomButton.Visible = false;
+            this.cuatro_codigo.Lines = new string[] {
+        " "};
+            this.cuatro_codigo.Location = new System.Drawing.Point(106, 178);
+            this.cuatro_codigo.MaxLength = 32767;
+            this.cuatro_codigo.Name = "cuatro_codigo";
+            this.cuatro_codigo.PasswordChar = '\0';
+            this.cuatro_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_codigo.SelectedText = "";
+            this.cuatro_codigo.SelectionLength = 0;
+            this.cuatro_codigo.SelectionStart = 0;
+            this.cuatro_codigo.ShortcutsEnabled = true;
+            this.cuatro_codigo.Size = new System.Drawing.Size(429, 23);
+            this.cuatro_codigo.TabIndex = 293;
+            this.cuatro_codigo.Text = " ";
+            this.cuatro_codigo.UseSelectable = true;
+            this.cuatro_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_direccion
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_direccion.CustomButton.Image = null;
+            this.cuatro_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
+            this.cuatro_direccion.CustomButton.Name = "";
+            this.cuatro_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_direccion.CustomButton.TabIndex = 1;
+            this.cuatro_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_direccion.CustomButton.UseSelectable = true;
+            this.cuatro_direccion.CustomButton.Visible = false;
+            this.cuatro_direccion.Lines = new string[] {
+        " "};
+            this.cuatro_direccion.Location = new System.Drawing.Point(113, 143);
+            this.cuatro_direccion.MaxLength = 32767;
+            this.cuatro_direccion.Name = "cuatro_direccion";
+            this.cuatro_direccion.PasswordChar = '\0';
+            this.cuatro_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_direccion.SelectedText = "";
+            this.cuatro_direccion.SelectionLength = 0;
+            this.cuatro_direccion.SelectionStart = 0;
+            this.cuatro_direccion.ShortcutsEnabled = true;
+            this.cuatro_direccion.Size = new System.Drawing.Size(422, 23);
+            this.cuatro_direccion.TabIndex = 292;
+            this.cuatro_direccion.Text = " ";
+            this.cuatro_direccion.UseSelectable = true;
+            this.cuatro_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_rfc
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_rfc.CustomButton.Image = null;
+            this.cuatro_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.cuatro_rfc.CustomButton.Name = "";
+            this.cuatro_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_rfc.CustomButton.TabIndex = 1;
+            this.cuatro_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_rfc.CustomButton.UseSelectable = true;
+            this.cuatro_rfc.CustomButton.Visible = false;
+            this.cuatro_rfc.Lines = new string[] {
+        " "};
+            this.cuatro_rfc.Location = new System.Drawing.Point(98, 109);
+            this.cuatro_rfc.MaxLength = 32767;
+            this.cuatro_rfc.Name = "cuatro_rfc";
+            this.cuatro_rfc.PasswordChar = '\0';
+            this.cuatro_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_rfc.SelectedText = "";
+            this.cuatro_rfc.SelectionLength = 0;
+            this.cuatro_rfc.SelectionStart = 0;
+            this.cuatro_rfc.ShortcutsEnabled = true;
+            this.cuatro_rfc.Size = new System.Drawing.Size(437, 23);
+            this.cuatro_rfc.TabIndex = 291;
+            this.cuatro_rfc.Text = " ";
+            this.cuatro_rfc.UseSelectable = true;
+            this.cuatro_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_razon
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_razon.CustomButton.Image = null;
+            this.cuatro_razon.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.cuatro_razon.CustomButton.Name = "";
+            this.cuatro_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_razon.CustomButton.TabIndex = 1;
+            this.cuatro_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_razon.CustomButton.UseSelectable = true;
+            this.cuatro_razon.CustomButton.Visible = false;
+            this.cuatro_razon.Lines = new string[] {
+        " "};
+            this.cuatro_razon.Location = new System.Drawing.Point(98, 75);
+            this.cuatro_razon.MaxLength = 32767;
+            this.cuatro_razon.Name = "cuatro_razon";
+            this.cuatro_razon.PasswordChar = '\0';
+            this.cuatro_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_razon.SelectedText = "";
+            this.cuatro_razon.SelectionLength = 0;
+            this.cuatro_razon.SelectionStart = 0;
+            this.cuatro_razon.ShortcutsEnabled = true;
+            this.cuatro_razon.Size = new System.Drawing.Size(437, 23);
+            this.cuatro_razon.TabIndex = 290;
+            this.cuatro_razon.Text = " ";
+            this.cuatro_razon.UseSelectable = true;
+            this.cuatro_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cuatro_hotel
+            // 
+            // 
+            // 
+            // 
+            this.cuatro_hotel.CustomButton.Image = null;
+            this.cuatro_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
+            this.cuatro_hotel.CustomButton.Name = "";
+            this.cuatro_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cuatro_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cuatro_hotel.CustomButton.TabIndex = 1;
+            this.cuatro_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cuatro_hotel.CustomButton.UseSelectable = true;
+            this.cuatro_hotel.CustomButton.Visible = false;
+            this.cuatro_hotel.Lines = new string[] {
+        " "};
+            this.cuatro_hotel.Location = new System.Drawing.Point(55, 41);
+            this.cuatro_hotel.MaxLength = 32767;
+            this.cuatro_hotel.Name = "cuatro_hotel";
+            this.cuatro_hotel.PasswordChar = '\0';
+            this.cuatro_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cuatro_hotel.SelectedText = "";
+            this.cuatro_hotel.SelectionLength = 0;
+            this.cuatro_hotel.SelectionStart = 0;
+            this.cuatro_hotel.ShortcutsEnabled = true;
+            this.cuatro_hotel.Size = new System.Drawing.Size(480, 23);
+            this.cuatro_hotel.TabIndex = 289;
+            this.cuatro_hotel.Text = " ";
+            this.cuatro_hotel.UseSelectable = true;
+            this.cuatro_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cuatro_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel96
+            // 
+            this.metroLabel96.AutoSize = true;
+            this.metroLabel96.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel96.Name = "metroLabel96";
+            this.metroLabel96.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel96.TabIndex = 288;
+            this.metroLabel96.Text = "Código Postal:";
+            // 
+            // metroLabel97
+            // 
+            this.metroLabel97.AutoSize = true;
+            this.metroLabel97.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel97.Name = "metroLabel97";
+            this.metroLabel97.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel97.TabIndex = 287;
+            this.metroLabel97.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel98
+            // 
+            this.metroLabel98.AutoSize = true;
+            this.metroLabel98.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel98.Name = "metroLabel98";
+            this.metroLabel98.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel98.TabIndex = 286;
+            this.metroLabel98.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel99
+            // 
+            this.metroLabel99.AutoSize = true;
+            this.metroLabel99.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel99.Name = "metroLabel99";
+            this.metroLabel99.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel99.TabIndex = 285;
+            this.metroLabel99.Text = "Razón Social:";
+            // 
+            // metroLabel100
+            // 
+            this.metroLabel100.AutoSize = true;
+            this.metroLabel100.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel100.Name = "metroLabel100";
+            this.metroLabel100.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel100.TabIndex = 284;
+            this.metroLabel100.Text = "Hotel:";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox19.Controls.Add(this.Additional_3);
+            this.groupBox19.Controls.Add(this.tres_telefono);
+            this.groupBox19.Controls.Add(this.tres_email);
+            this.groupBox19.Controls.Add(this.tres_contacto);
+            this.groupBox19.Controls.Add(this.metroLabel83);
+            this.groupBox19.Controls.Add(this.metroLabel84);
+            this.groupBox19.Controls.Add(this.metroLabel85);
+            this.groupBox19.Controls.Add(this.metroLabel86);
+            this.groupBox19.Controls.Add(this.tres_codigo);
+            this.groupBox19.Controls.Add(this.tres_direccion);
+            this.groupBox19.Controls.Add(this.tres_rfc);
+            this.groupBox19.Controls.Add(this.tres_Razon);
+            this.groupBox19.Controls.Add(this.tres_hotel);
+            this.groupBox19.Controls.Add(this.metroLabel87);
+            this.groupBox19.Controls.Add(this.metroLabel88);
+            this.groupBox19.Controls.Add(this.metroLabel89);
+            this.groupBox19.Controls.Add(this.metroLabel90);
+            this.groupBox19.Controls.Add(this.metroLabel91);
+            this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox19.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox19.Location = new System.Drawing.Point(6, 465);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(1175, 218);
+            this.groupBox19.TabIndex = 304;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Tercero";
+            // 
+            // Additional_3
+            // 
+            // 
+            // 
+            // 
+            this.Additional_3.CustomButton.Image = null;
+            this.Additional_3.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_3.CustomButton.Name = "";
+            this.Additional_3.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_3.CustomButton.TabIndex = 1;
+            this.Additional_3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_3.CustomButton.UseSelectable = true;
+            this.Additional_3.CustomButton.Visible = false;
+            this.Additional_3.Lines = new string[0];
+            this.Additional_3.Location = new System.Drawing.Point(687, 143);
+            this.Additional_3.MaxLength = 32767;
+            this.Additional_3.Name = "Additional_3";
+            this.Additional_3.PasswordChar = '\0';
+            this.Additional_3.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_3.SelectedText = "";
+            this.Additional_3.SelectionLength = 0;
+            this.Additional_3.SelectionStart = 0;
+            this.Additional_3.ShortcutsEnabled = true;
+            this.Additional_3.Size = new System.Drawing.Size(473, 23);
+            this.Additional_3.TabIndex = 301;
+            this.Additional_3.UseSelectable = true;
+            this.Additional_3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_telefono
+            // 
+            // 
+            // 
+            // 
+            this.tres_telefono.CustomButton.Image = null;
+            this.tres_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.tres_telefono.CustomButton.Name = "";
+            this.tres_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_telefono.CustomButton.TabIndex = 1;
+            this.tres_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_telefono.CustomButton.UseSelectable = true;
+            this.tres_telefono.CustomButton.Visible = false;
+            this.tres_telefono.Lines = new string[] {
+        " "};
+            this.tres_telefono.Location = new System.Drawing.Point(773, 109);
+            this.tres_telefono.MaxLength = 32767;
+            this.tres_telefono.Name = "tres_telefono";
+            this.tres_telefono.PasswordChar = '\0';
+            this.tres_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_telefono.SelectedText = "";
+            this.tres_telefono.SelectionLength = 0;
+            this.tres_telefono.SelectionStart = 0;
+            this.tres_telefono.ShortcutsEnabled = true;
+            this.tres_telefono.Size = new System.Drawing.Size(387, 23);
+            this.tres_telefono.TabIndex = 300;
+            this.tres_telefono.Text = " ";
+            this.tres_telefono.UseSelectable = true;
+            this.tres_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_email
+            // 
+            // 
+            // 
+            // 
+            this.tres_email.CustomButton.Image = null;
+            this.tres_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.tres_email.CustomButton.Name = "";
+            this.tres_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_email.CustomButton.TabIndex = 1;
+            this.tres_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_email.CustomButton.UseSelectable = true;
+            this.tres_email.CustomButton.Visible = false;
+            this.tres_email.Lines = new string[] {
+        " "};
+            this.tres_email.Location = new System.Drawing.Point(762, 75);
+            this.tres_email.MaxLength = 32767;
+            this.tres_email.Name = "tres_email";
+            this.tres_email.PasswordChar = '\0';
+            this.tres_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_email.SelectedText = "";
+            this.tres_email.SelectionLength = 0;
+            this.tres_email.SelectionStart = 0;
+            this.tres_email.ShortcutsEnabled = true;
+            this.tres_email.Size = new System.Drawing.Size(398, 23);
+            this.tres_email.TabIndex = 299;
+            this.tres_email.Text = " ";
+            this.tres_email.UseSelectable = true;
+            this.tres_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_contacto
+            // 
+            // 
+            // 
+            // 
+            this.tres_contacto.CustomButton.Image = null;
+            this.tres_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.tres_contacto.CustomButton.Name = "";
+            this.tres_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_contacto.CustomButton.TabIndex = 1;
+            this.tres_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_contacto.CustomButton.UseSelectable = true;
+            this.tres_contacto.CustomButton.Visible = false;
+            this.tres_contacto.Lines = new string[] {
+        " "};
+            this.tres_contacto.Location = new System.Drawing.Point(701, 41);
+            this.tres_contacto.MaxLength = 32767;
+            this.tres_contacto.Name = "tres_contacto";
+            this.tres_contacto.PasswordChar = '\0';
+            this.tres_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_contacto.SelectedText = "";
+            this.tres_contacto.SelectionLength = 0;
+            this.tres_contacto.SelectionStart = 0;
+            this.tres_contacto.ShortcutsEnabled = true;
+            this.tres_contacto.Size = new System.Drawing.Size(459, 23);
+            this.tres_contacto.TabIndex = 298;
+            this.tres_contacto.Text = " ";
+            this.tres_contacto.UseSelectable = true;
+            this.tres_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel83
+            // 
+            this.metroLabel83.AutoSize = true;
+            this.metroLabel83.Location = new System.Drawing.Point(541, 143);
+            this.metroLabel83.Name = "metroLabel83";
+            this.metroLabel83.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel83.TabIndex = 297;
+            this.metroLabel83.Text = "Información Adicional:";
+            // 
+            // metroLabel84
+            // 
+            this.metroLabel84.AutoSize = true;
+            this.metroLabel84.Location = new System.Drawing.Point(541, 109);
+            this.metroLabel84.Name = "metroLabel84";
+            this.metroLabel84.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel84.TabIndex = 296;
+            this.metroLabel84.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel85
+            // 
+            this.metroLabel85.AutoSize = true;
+            this.metroLabel85.Location = new System.Drawing.Point(541, 75);
+            this.metroLabel85.Name = "metroLabel85";
+            this.metroLabel85.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel85.TabIndex = 295;
+            this.metroLabel85.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel86
+            // 
+            this.metroLabel86.AutoSize = true;
+            this.metroLabel86.Location = new System.Drawing.Point(541, 41);
+            this.metroLabel86.Name = "metroLabel86";
+            this.metroLabel86.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel86.TabIndex = 294;
+            this.metroLabel86.Text = "Contacto de Facturación:";
+            // 
+            // tres_codigo
+            // 
+            // 
+            // 
+            // 
+            this.tres_codigo.CustomButton.Image = null;
+            this.tres_codigo.CustomButton.Location = new System.Drawing.Point(407, 1);
+            this.tres_codigo.CustomButton.Name = "";
+            this.tres_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_codigo.CustomButton.TabIndex = 1;
+            this.tres_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_codigo.CustomButton.UseSelectable = true;
+            this.tres_codigo.CustomButton.Visible = false;
+            this.tres_codigo.Lines = new string[] {
+        " "};
+            this.tres_codigo.Location = new System.Drawing.Point(106, 178);
+            this.tres_codigo.MaxLength = 32767;
+            this.tres_codigo.Name = "tres_codigo";
+            this.tres_codigo.PasswordChar = '\0';
+            this.tres_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_codigo.SelectedText = "";
+            this.tres_codigo.SelectionLength = 0;
+            this.tres_codigo.SelectionStart = 0;
+            this.tres_codigo.ShortcutsEnabled = true;
+            this.tres_codigo.Size = new System.Drawing.Size(429, 23);
+            this.tres_codigo.TabIndex = 293;
+            this.tres_codigo.Text = " ";
+            this.tres_codigo.UseSelectable = true;
+            this.tres_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_direccion
+            // 
+            // 
+            // 
+            // 
+            this.tres_direccion.CustomButton.Image = null;
+            this.tres_direccion.CustomButton.Location = new System.Drawing.Point(400, 1);
+            this.tres_direccion.CustomButton.Name = "";
+            this.tres_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_direccion.CustomButton.TabIndex = 1;
+            this.tres_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_direccion.CustomButton.UseSelectable = true;
+            this.tres_direccion.CustomButton.Visible = false;
+            this.tres_direccion.Lines = new string[] {
+        " "};
+            this.tres_direccion.Location = new System.Drawing.Point(113, 143);
+            this.tres_direccion.MaxLength = 32767;
+            this.tres_direccion.Name = "tres_direccion";
+            this.tres_direccion.PasswordChar = '\0';
+            this.tres_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_direccion.SelectedText = "";
+            this.tres_direccion.SelectionLength = 0;
+            this.tres_direccion.SelectionStart = 0;
+            this.tres_direccion.ShortcutsEnabled = true;
+            this.tres_direccion.Size = new System.Drawing.Size(422, 23);
+            this.tres_direccion.TabIndex = 292;
+            this.tres_direccion.Text = " ";
+            this.tres_direccion.UseSelectable = true;
+            this.tres_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_rfc
+            // 
+            // 
+            // 
+            // 
+            this.tres_rfc.CustomButton.Image = null;
+            this.tres_rfc.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.tres_rfc.CustomButton.Name = "";
+            this.tres_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_rfc.CustomButton.TabIndex = 1;
+            this.tres_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_rfc.CustomButton.UseSelectable = true;
+            this.tres_rfc.CustomButton.Visible = false;
+            this.tres_rfc.Lines = new string[] {
+        " "};
+            this.tres_rfc.Location = new System.Drawing.Point(98, 109);
+            this.tres_rfc.MaxLength = 32767;
+            this.tres_rfc.Name = "tres_rfc";
+            this.tres_rfc.PasswordChar = '\0';
+            this.tres_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_rfc.SelectedText = "";
+            this.tres_rfc.SelectionLength = 0;
+            this.tres_rfc.SelectionStart = 0;
+            this.tres_rfc.ShortcutsEnabled = true;
+            this.tres_rfc.Size = new System.Drawing.Size(437, 23);
+            this.tres_rfc.TabIndex = 291;
+            this.tres_rfc.Text = " ";
+            this.tres_rfc.UseSelectable = true;
+            this.tres_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_Razon
+            // 
+            // 
+            // 
+            // 
+            this.tres_Razon.CustomButton.Image = null;
+            this.tres_Razon.CustomButton.Location = new System.Drawing.Point(415, 1);
+            this.tres_Razon.CustomButton.Name = "";
+            this.tres_Razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_Razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_Razon.CustomButton.TabIndex = 1;
+            this.tres_Razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_Razon.CustomButton.UseSelectable = true;
+            this.tres_Razon.CustomButton.Visible = false;
+            this.tres_Razon.Lines = new string[] {
+        " "};
+            this.tres_Razon.Location = new System.Drawing.Point(98, 75);
+            this.tres_Razon.MaxLength = 32767;
+            this.tres_Razon.Name = "tres_Razon";
+            this.tres_Razon.PasswordChar = '\0';
+            this.tres_Razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_Razon.SelectedText = "";
+            this.tres_Razon.SelectionLength = 0;
+            this.tres_Razon.SelectionStart = 0;
+            this.tres_Razon.ShortcutsEnabled = true;
+            this.tres_Razon.Size = new System.Drawing.Size(437, 23);
+            this.tres_Razon.TabIndex = 290;
+            this.tres_Razon.Text = " ";
+            this.tres_Razon.UseSelectable = true;
+            this.tres_Razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_Razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // tres_hotel
+            // 
+            // 
+            // 
+            // 
+            this.tres_hotel.CustomButton.Image = null;
+            this.tres_hotel.CustomButton.Location = new System.Drawing.Point(458, 1);
+            this.tres_hotel.CustomButton.Name = "";
+            this.tres_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.tres_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.tres_hotel.CustomButton.TabIndex = 1;
+            this.tres_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.tres_hotel.CustomButton.UseSelectable = true;
+            this.tres_hotel.CustomButton.Visible = false;
+            this.tres_hotel.Lines = new string[] {
+        " "};
+            this.tres_hotel.Location = new System.Drawing.Point(55, 41);
+            this.tres_hotel.MaxLength = 32767;
+            this.tres_hotel.Name = "tres_hotel";
+            this.tres_hotel.PasswordChar = '\0';
+            this.tres_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tres_hotel.SelectedText = "";
+            this.tres_hotel.SelectionLength = 0;
+            this.tres_hotel.SelectionStart = 0;
+            this.tres_hotel.ShortcutsEnabled = true;
+            this.tres_hotel.Size = new System.Drawing.Size(480, 23);
+            this.tres_hotel.TabIndex = 289;
+            this.tres_hotel.Text = " ";
+            this.tres_hotel.UseSelectable = true;
+            this.tres_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.tres_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel87
+            // 
+            this.metroLabel87.AutoSize = true;
+            this.metroLabel87.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel87.Name = "metroLabel87";
+            this.metroLabel87.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel87.TabIndex = 288;
+            this.metroLabel87.Text = "Código Postal:";
+            // 
+            // metroLabel88
+            // 
+            this.metroLabel88.AutoSize = true;
+            this.metroLabel88.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel88.Name = "metroLabel88";
+            this.metroLabel88.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel88.TabIndex = 287;
+            this.metroLabel88.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel89
+            // 
+            this.metroLabel89.AutoSize = true;
+            this.metroLabel89.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel89.Name = "metroLabel89";
+            this.metroLabel89.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel89.TabIndex = 286;
+            this.metroLabel89.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel90
+            // 
+            this.metroLabel90.AutoSize = true;
+            this.metroLabel90.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel90.Name = "metroLabel90";
+            this.metroLabel90.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel90.TabIndex = 285;
+            this.metroLabel90.Text = "Razón Social:";
+            // 
+            // metroLabel91
+            // 
+            this.metroLabel91.AutoSize = true;
+            this.metroLabel91.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel91.Name = "metroLabel91";
+            this.metroLabel91.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel91.TabIndex = 284;
+            this.metroLabel91.Text = "Hotel:";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox17.Controls.Add(this.Additional_7);
+            this.groupBox17.Controls.Add(this.siete_telefono);
+            this.groupBox17.Controls.Add(this.siete_email);
+            this.groupBox17.Controls.Add(this.siete_contacto);
+            this.groupBox17.Controls.Add(this.metroLabel74);
+            this.groupBox17.Controls.Add(this.metroLabel75);
+            this.groupBox17.Controls.Add(this.metroLabel76);
+            this.groupBox17.Controls.Add(this.metroLabel77);
+            this.groupBox17.Controls.Add(this.siete_codigo);
+            this.groupBox17.Controls.Add(this.siete_direccion);
+            this.groupBox17.Controls.Add(this.siete_rfc);
+            this.groupBox17.Controls.Add(this.siete_razon);
+            this.groupBox17.Controls.Add(this.siete_hotel);
+            this.groupBox17.Controls.Add(this.metroLabel78);
+            this.groupBox17.Controls.Add(this.metroLabel79);
+            this.groupBox17.Controls.Add(this.metroLabel80);
+            this.groupBox17.Controls.Add(this.metroLabel81);
+            this.groupBox17.Controls.Add(this.metroLabel82);
+            this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox17.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox17.Location = new System.Drawing.Point(5, 1361);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(1176, 218);
+            this.groupBox17.TabIndex = 303;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Septimo";
+            // 
+            // Additional_7
+            // 
+            // 
+            // 
+            // 
+            this.Additional_7.CustomButton.Image = null;
+            this.Additional_7.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_7.CustomButton.Name = "";
+            this.Additional_7.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_7.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_7.CustomButton.TabIndex = 1;
+            this.Additional_7.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_7.CustomButton.UseSelectable = true;
+            this.Additional_7.CustomButton.Visible = false;
+            this.Additional_7.Lines = new string[0];
+            this.Additional_7.Location = new System.Drawing.Point(688, 143);
+            this.Additional_7.MaxLength = 32767;
+            this.Additional_7.Name = "Additional_7";
+            this.Additional_7.PasswordChar = '\0';
+            this.Additional_7.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_7.SelectedText = "";
+            this.Additional_7.SelectionLength = 0;
+            this.Additional_7.SelectionStart = 0;
+            this.Additional_7.ShortcutsEnabled = true;
+            this.Additional_7.Size = new System.Drawing.Size(473, 23);
+            this.Additional_7.TabIndex = 301;
+            this.Additional_7.UseSelectable = true;
+            this.Additional_7.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_7.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_telefono
+            // 
+            // 
+            // 
+            // 
+            this.siete_telefono.CustomButton.Image = null;
+            this.siete_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.siete_telefono.CustomButton.Name = "";
+            this.siete_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_telefono.CustomButton.TabIndex = 1;
+            this.siete_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_telefono.CustomButton.UseSelectable = true;
+            this.siete_telefono.CustomButton.Visible = false;
+            this.siete_telefono.Lines = new string[] {
+        " "};
+            this.siete_telefono.Location = new System.Drawing.Point(774, 109);
+            this.siete_telefono.MaxLength = 32767;
+            this.siete_telefono.Name = "siete_telefono";
+            this.siete_telefono.PasswordChar = '\0';
+            this.siete_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_telefono.SelectedText = "";
+            this.siete_telefono.SelectionLength = 0;
+            this.siete_telefono.SelectionStart = 0;
+            this.siete_telefono.ShortcutsEnabled = true;
+            this.siete_telefono.Size = new System.Drawing.Size(387, 23);
+            this.siete_telefono.TabIndex = 300;
+            this.siete_telefono.Text = " ";
+            this.siete_telefono.UseSelectable = true;
+            this.siete_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_email
+            // 
+            // 
+            // 
+            // 
+            this.siete_email.CustomButton.Image = null;
+            this.siete_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.siete_email.CustomButton.Name = "";
+            this.siete_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_email.CustomButton.TabIndex = 1;
+            this.siete_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_email.CustomButton.UseSelectable = true;
+            this.siete_email.CustomButton.Visible = false;
+            this.siete_email.Lines = new string[] {
+        " "};
+            this.siete_email.Location = new System.Drawing.Point(763, 75);
+            this.siete_email.MaxLength = 32767;
+            this.siete_email.Name = "siete_email";
+            this.siete_email.PasswordChar = '\0';
+            this.siete_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_email.SelectedText = "";
+            this.siete_email.SelectionLength = 0;
+            this.siete_email.SelectionStart = 0;
+            this.siete_email.ShortcutsEnabled = true;
+            this.siete_email.Size = new System.Drawing.Size(398, 23);
+            this.siete_email.TabIndex = 299;
+            this.siete_email.Text = " ";
+            this.siete_email.UseSelectable = true;
+            this.siete_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_contacto
+            // 
+            // 
+            // 
+            // 
+            this.siete_contacto.CustomButton.Image = null;
+            this.siete_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.siete_contacto.CustomButton.Name = "";
+            this.siete_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_contacto.CustomButton.TabIndex = 1;
+            this.siete_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_contacto.CustomButton.UseSelectable = true;
+            this.siete_contacto.CustomButton.Visible = false;
+            this.siete_contacto.Lines = new string[] {
+        " "};
+            this.siete_contacto.Location = new System.Drawing.Point(702, 41);
+            this.siete_contacto.MaxLength = 32767;
+            this.siete_contacto.Name = "siete_contacto";
+            this.siete_contacto.PasswordChar = '\0';
+            this.siete_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_contacto.SelectedText = "";
+            this.siete_contacto.SelectionLength = 0;
+            this.siete_contacto.SelectionStart = 0;
+            this.siete_contacto.ShortcutsEnabled = true;
+            this.siete_contacto.Size = new System.Drawing.Size(459, 23);
+            this.siete_contacto.TabIndex = 298;
+            this.siete_contacto.Text = " ";
+            this.siete_contacto.UseSelectable = true;
+            this.siete_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel74
+            // 
+            this.metroLabel74.AutoSize = true;
+            this.metroLabel74.Location = new System.Drawing.Point(542, 143);
+            this.metroLabel74.Name = "metroLabel74";
+            this.metroLabel74.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel74.TabIndex = 297;
+            this.metroLabel74.Text = "Información Adicional:";
+            // 
+            // metroLabel75
+            // 
+            this.metroLabel75.AutoSize = true;
+            this.metroLabel75.Location = new System.Drawing.Point(542, 109);
+            this.metroLabel75.Name = "metroLabel75";
+            this.metroLabel75.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel75.TabIndex = 296;
+            this.metroLabel75.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel76
+            // 
+            this.metroLabel76.AutoSize = true;
+            this.metroLabel76.Location = new System.Drawing.Point(542, 75);
+            this.metroLabel76.Name = "metroLabel76";
+            this.metroLabel76.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel76.TabIndex = 295;
+            this.metroLabel76.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel77
+            // 
+            this.metroLabel77.AutoSize = true;
+            this.metroLabel77.Location = new System.Drawing.Point(542, 41);
+            this.metroLabel77.Name = "metroLabel77";
+            this.metroLabel77.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel77.TabIndex = 294;
+            this.metroLabel77.Text = "Contacto de Facturación:";
+            // 
+            // siete_codigo
+            // 
+            // 
+            // 
+            // 
+            this.siete_codigo.CustomButton.Image = null;
+            this.siete_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
+            this.siete_codigo.CustomButton.Name = "";
+            this.siete_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_codigo.CustomButton.TabIndex = 1;
+            this.siete_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_codigo.CustomButton.UseSelectable = true;
+            this.siete_codigo.CustomButton.Visible = false;
+            this.siete_codigo.Lines = new string[] {
+        " "};
+            this.siete_codigo.Location = new System.Drawing.Point(106, 178);
+            this.siete_codigo.MaxLength = 32767;
+            this.siete_codigo.Name = "siete_codigo";
+            this.siete_codigo.PasswordChar = '\0';
+            this.siete_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_codigo.SelectedText = "";
+            this.siete_codigo.SelectionLength = 0;
+            this.siete_codigo.SelectionStart = 0;
+            this.siete_codigo.ShortcutsEnabled = true;
+            this.siete_codigo.Size = new System.Drawing.Size(430, 23);
+            this.siete_codigo.TabIndex = 293;
+            this.siete_codigo.Text = " ";
+            this.siete_codigo.UseSelectable = true;
+            this.siete_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_direccion
+            // 
+            // 
+            // 
+            // 
+            this.siete_direccion.CustomButton.Image = null;
+            this.siete_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
+            this.siete_direccion.CustomButton.Name = "";
+            this.siete_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_direccion.CustomButton.TabIndex = 1;
+            this.siete_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_direccion.CustomButton.UseSelectable = true;
+            this.siete_direccion.CustomButton.Visible = false;
+            this.siete_direccion.Lines = new string[] {
+        " "};
+            this.siete_direccion.Location = new System.Drawing.Point(113, 143);
+            this.siete_direccion.MaxLength = 32767;
+            this.siete_direccion.Name = "siete_direccion";
+            this.siete_direccion.PasswordChar = '\0';
+            this.siete_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_direccion.SelectedText = "";
+            this.siete_direccion.SelectionLength = 0;
+            this.siete_direccion.SelectionStart = 0;
+            this.siete_direccion.ShortcutsEnabled = true;
+            this.siete_direccion.Size = new System.Drawing.Size(423, 23);
+            this.siete_direccion.TabIndex = 292;
+            this.siete_direccion.Text = " ";
+            this.siete_direccion.UseSelectable = true;
+            this.siete_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_rfc
+            // 
+            // 
+            // 
+            // 
+            this.siete_rfc.CustomButton.Image = null;
+            this.siete_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.siete_rfc.CustomButton.Name = "";
+            this.siete_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_rfc.CustomButton.TabIndex = 1;
+            this.siete_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_rfc.CustomButton.UseSelectable = true;
+            this.siete_rfc.CustomButton.Visible = false;
+            this.siete_rfc.Lines = new string[] {
+        " "};
+            this.siete_rfc.Location = new System.Drawing.Point(98, 109);
+            this.siete_rfc.MaxLength = 32767;
+            this.siete_rfc.Name = "siete_rfc";
+            this.siete_rfc.PasswordChar = '\0';
+            this.siete_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_rfc.SelectedText = "";
+            this.siete_rfc.SelectionLength = 0;
+            this.siete_rfc.SelectionStart = 0;
+            this.siete_rfc.ShortcutsEnabled = true;
+            this.siete_rfc.Size = new System.Drawing.Size(438, 23);
+            this.siete_rfc.TabIndex = 291;
+            this.siete_rfc.Text = " ";
+            this.siete_rfc.UseSelectable = true;
+            this.siete_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_razon
+            // 
+            // 
+            // 
+            // 
+            this.siete_razon.CustomButton.Image = null;
+            this.siete_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.siete_razon.CustomButton.Name = "";
+            this.siete_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_razon.CustomButton.TabIndex = 1;
+            this.siete_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_razon.CustomButton.UseSelectable = true;
+            this.siete_razon.CustomButton.Visible = false;
+            this.siete_razon.Lines = new string[] {
+        " "};
+            this.siete_razon.Location = new System.Drawing.Point(98, 75);
+            this.siete_razon.MaxLength = 32767;
+            this.siete_razon.Name = "siete_razon";
+            this.siete_razon.PasswordChar = '\0';
+            this.siete_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_razon.SelectedText = "";
+            this.siete_razon.SelectionLength = 0;
+            this.siete_razon.SelectionStart = 0;
+            this.siete_razon.ShortcutsEnabled = true;
+            this.siete_razon.Size = new System.Drawing.Size(438, 23);
+            this.siete_razon.TabIndex = 290;
+            this.siete_razon.Text = " ";
+            this.siete_razon.UseSelectable = true;
+            this.siete_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // siete_hotel
+            // 
+            // 
+            // 
+            // 
+            this.siete_hotel.CustomButton.Image = null;
+            this.siete_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
+            this.siete_hotel.CustomButton.Name = "";
+            this.siete_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.siete_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.siete_hotel.CustomButton.TabIndex = 1;
+            this.siete_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.siete_hotel.CustomButton.UseSelectable = true;
+            this.siete_hotel.CustomButton.Visible = false;
+            this.siete_hotel.Lines = new string[] {
+        " "};
+            this.siete_hotel.Location = new System.Drawing.Point(55, 41);
+            this.siete_hotel.MaxLength = 32767;
+            this.siete_hotel.Name = "siete_hotel";
+            this.siete_hotel.PasswordChar = '\0';
+            this.siete_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.siete_hotel.SelectedText = "";
+            this.siete_hotel.SelectionLength = 0;
+            this.siete_hotel.SelectionStart = 0;
+            this.siete_hotel.ShortcutsEnabled = true;
+            this.siete_hotel.Size = new System.Drawing.Size(481, 23);
+            this.siete_hotel.TabIndex = 289;
+            this.siete_hotel.Text = " ";
+            this.siete_hotel.UseSelectable = true;
+            this.siete_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.siete_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel78
+            // 
+            this.metroLabel78.AutoSize = true;
+            this.metroLabel78.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel78.Name = "metroLabel78";
+            this.metroLabel78.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel78.TabIndex = 288;
+            this.metroLabel78.Text = "Código Postal:";
+            // 
+            // metroLabel79
+            // 
+            this.metroLabel79.AutoSize = true;
+            this.metroLabel79.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel79.Name = "metroLabel79";
+            this.metroLabel79.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel79.TabIndex = 287;
+            this.metroLabel79.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel80
+            // 
+            this.metroLabel80.AutoSize = true;
+            this.metroLabel80.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel80.Name = "metroLabel80";
+            this.metroLabel80.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel80.TabIndex = 286;
+            this.metroLabel80.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel81
+            // 
+            this.metroLabel81.AutoSize = true;
+            this.metroLabel81.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel81.Name = "metroLabel81";
+            this.metroLabel81.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel81.TabIndex = 285;
+            this.metroLabel81.Text = "Razón Social:";
+            // 
+            // metroLabel82
+            // 
+            this.metroLabel82.AutoSize = true;
+            this.metroLabel82.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel82.Name = "metroLabel82";
+            this.metroLabel82.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel82.TabIndex = 284;
+            this.metroLabel82.Text = "Hotel:";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox16.Controls.Add(this.Additional_2);
+            this.groupBox16.Controls.Add(this.dos_telefono);
+            this.groupBox16.Controls.Add(this.dos_email);
+            this.groupBox16.Controls.Add(this.dos_contacto);
+            this.groupBox16.Controls.Add(this.metroLabel65);
+            this.groupBox16.Controls.Add(this.metroLabel66);
+            this.groupBox16.Controls.Add(this.metroLabel67);
+            this.groupBox16.Controls.Add(this.metroLabel68);
+            this.groupBox16.Controls.Add(this.dos_codigo);
+            this.groupBox16.Controls.Add(this.dos_direccion);
+            this.groupBox16.Controls.Add(this.dos_rfc);
+            this.groupBox16.Controls.Add(this.dos_razon);
+            this.groupBox16.Controls.Add(this.dos_hotel);
+            this.groupBox16.Controls.Add(this.metroLabel69);
+            this.groupBox16.Controls.Add(this.metroLabel70);
+            this.groupBox16.Controls.Add(this.metroLabel71);
+            this.groupBox16.Controls.Add(this.metroLabel72);
+            this.groupBox16.Controls.Add(this.metroLabel73);
+            this.groupBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox16.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox16.Location = new System.Drawing.Point(5, 241);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(1176, 218);
+            this.groupBox16.TabIndex = 302;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Segundo";
+            // 
+            // Additional_2
+            // 
+            // 
+            // 
+            // 
+            this.Additional_2.CustomButton.Image = null;
+            this.Additional_2.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_2.CustomButton.Name = "";
+            this.Additional_2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_2.CustomButton.TabIndex = 1;
+            this.Additional_2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_2.CustomButton.UseSelectable = true;
+            this.Additional_2.CustomButton.Visible = false;
+            this.Additional_2.Lines = new string[0];
+            this.Additional_2.Location = new System.Drawing.Point(688, 143);
+            this.Additional_2.MaxLength = 32767;
+            this.Additional_2.Name = "Additional_2";
+            this.Additional_2.PasswordChar = '\0';
+            this.Additional_2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_2.SelectedText = "";
+            this.Additional_2.SelectionLength = 0;
+            this.Additional_2.SelectionStart = 0;
+            this.Additional_2.ShortcutsEnabled = true;
+            this.Additional_2.Size = new System.Drawing.Size(473, 23);
+            this.Additional_2.TabIndex = 301;
+            this.Additional_2.UseSelectable = true;
+            this.Additional_2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_telefono
+            // 
+            // 
+            // 
+            // 
+            this.dos_telefono.CustomButton.Image = null;
+            this.dos_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.dos_telefono.CustomButton.Name = "";
+            this.dos_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_telefono.CustomButton.TabIndex = 1;
+            this.dos_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_telefono.CustomButton.UseSelectable = true;
+            this.dos_telefono.CustomButton.Visible = false;
+            this.dos_telefono.Lines = new string[] {
+        " "};
+            this.dos_telefono.Location = new System.Drawing.Point(774, 109);
+            this.dos_telefono.MaxLength = 32767;
+            this.dos_telefono.Name = "dos_telefono";
+            this.dos_telefono.PasswordChar = '\0';
+            this.dos_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_telefono.SelectedText = "";
+            this.dos_telefono.SelectionLength = 0;
+            this.dos_telefono.SelectionStart = 0;
+            this.dos_telefono.ShortcutsEnabled = true;
+            this.dos_telefono.Size = new System.Drawing.Size(387, 23);
+            this.dos_telefono.TabIndex = 300;
+            this.dos_telefono.Text = " ";
+            this.dos_telefono.UseSelectable = true;
+            this.dos_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_email
+            // 
+            // 
+            // 
+            // 
+            this.dos_email.CustomButton.Image = null;
+            this.dos_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.dos_email.CustomButton.Name = "";
+            this.dos_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_email.CustomButton.TabIndex = 1;
+            this.dos_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_email.CustomButton.UseSelectable = true;
+            this.dos_email.CustomButton.Visible = false;
+            this.dos_email.Lines = new string[] {
+        " "};
+            this.dos_email.Location = new System.Drawing.Point(763, 75);
+            this.dos_email.MaxLength = 32767;
+            this.dos_email.Name = "dos_email";
+            this.dos_email.PasswordChar = '\0';
+            this.dos_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_email.SelectedText = "";
+            this.dos_email.SelectionLength = 0;
+            this.dos_email.SelectionStart = 0;
+            this.dos_email.ShortcutsEnabled = true;
+            this.dos_email.Size = new System.Drawing.Size(398, 23);
+            this.dos_email.TabIndex = 299;
+            this.dos_email.Text = " ";
+            this.dos_email.UseSelectable = true;
+            this.dos_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_contacto
+            // 
+            // 
+            // 
+            // 
+            this.dos_contacto.CustomButton.Image = null;
+            this.dos_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.dos_contacto.CustomButton.Name = "";
+            this.dos_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_contacto.CustomButton.TabIndex = 1;
+            this.dos_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_contacto.CustomButton.UseSelectable = true;
+            this.dos_contacto.CustomButton.Visible = false;
+            this.dos_contacto.Lines = new string[] {
+        " "};
+            this.dos_contacto.Location = new System.Drawing.Point(702, 41);
+            this.dos_contacto.MaxLength = 32767;
+            this.dos_contacto.Name = "dos_contacto";
+            this.dos_contacto.PasswordChar = '\0';
+            this.dos_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_contacto.SelectedText = "";
+            this.dos_contacto.SelectionLength = 0;
+            this.dos_contacto.SelectionStart = 0;
+            this.dos_contacto.ShortcutsEnabled = true;
+            this.dos_contacto.Size = new System.Drawing.Size(459, 23);
+            this.dos_contacto.TabIndex = 298;
+            this.dos_contacto.Text = " ";
+            this.dos_contacto.UseSelectable = true;
+            this.dos_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel65
+            // 
+            this.metroLabel65.AutoSize = true;
+            this.metroLabel65.Location = new System.Drawing.Point(542, 143);
+            this.metroLabel65.Name = "metroLabel65";
+            this.metroLabel65.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel65.TabIndex = 297;
+            this.metroLabel65.Text = "Información Adicional:";
+            // 
+            // metroLabel66
+            // 
+            this.metroLabel66.AutoSize = true;
+            this.metroLabel66.Location = new System.Drawing.Point(542, 109);
+            this.metroLabel66.Name = "metroLabel66";
+            this.metroLabel66.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel66.TabIndex = 296;
+            this.metroLabel66.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel67
+            // 
+            this.metroLabel67.AutoSize = true;
+            this.metroLabel67.Location = new System.Drawing.Point(542, 75);
+            this.metroLabel67.Name = "metroLabel67";
+            this.metroLabel67.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel67.TabIndex = 295;
+            this.metroLabel67.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel68
+            // 
+            this.metroLabel68.AutoSize = true;
+            this.metroLabel68.Location = new System.Drawing.Point(542, 41);
+            this.metroLabel68.Name = "metroLabel68";
+            this.metroLabel68.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel68.TabIndex = 294;
+            this.metroLabel68.Text = "Contacto de Facturación:";
+            // 
+            // dos_codigo
+            // 
+            // 
+            // 
+            // 
+            this.dos_codigo.CustomButton.Image = null;
+            this.dos_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
+            this.dos_codigo.CustomButton.Name = "";
+            this.dos_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_codigo.CustomButton.TabIndex = 1;
+            this.dos_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_codigo.CustomButton.UseSelectable = true;
+            this.dos_codigo.CustomButton.Visible = false;
+            this.dos_codigo.Lines = new string[] {
+        " "};
+            this.dos_codigo.Location = new System.Drawing.Point(106, 178);
+            this.dos_codigo.MaxLength = 32767;
+            this.dos_codigo.Name = "dos_codigo";
+            this.dos_codigo.PasswordChar = '\0';
+            this.dos_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_codigo.SelectedText = "";
+            this.dos_codigo.SelectionLength = 0;
+            this.dos_codigo.SelectionStart = 0;
+            this.dos_codigo.ShortcutsEnabled = true;
+            this.dos_codigo.Size = new System.Drawing.Size(430, 23);
+            this.dos_codigo.TabIndex = 293;
+            this.dos_codigo.Text = " ";
+            this.dos_codigo.UseSelectable = true;
+            this.dos_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_direccion
+            // 
+            // 
+            // 
+            // 
+            this.dos_direccion.CustomButton.Image = null;
+            this.dos_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
+            this.dos_direccion.CustomButton.Name = "";
+            this.dos_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_direccion.CustomButton.TabIndex = 1;
+            this.dos_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_direccion.CustomButton.UseSelectable = true;
+            this.dos_direccion.CustomButton.Visible = false;
+            this.dos_direccion.Lines = new string[] {
+        " "};
+            this.dos_direccion.Location = new System.Drawing.Point(113, 143);
+            this.dos_direccion.MaxLength = 32767;
+            this.dos_direccion.Name = "dos_direccion";
+            this.dos_direccion.PasswordChar = '\0';
+            this.dos_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_direccion.SelectedText = "";
+            this.dos_direccion.SelectionLength = 0;
+            this.dos_direccion.SelectionStart = 0;
+            this.dos_direccion.ShortcutsEnabled = true;
+            this.dos_direccion.Size = new System.Drawing.Size(423, 23);
+            this.dos_direccion.TabIndex = 292;
+            this.dos_direccion.Text = " ";
+            this.dos_direccion.UseSelectable = true;
+            this.dos_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_rfc
+            // 
+            // 
+            // 
+            // 
+            this.dos_rfc.CustomButton.Image = null;
+            this.dos_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.dos_rfc.CustomButton.Name = "";
+            this.dos_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_rfc.CustomButton.TabIndex = 1;
+            this.dos_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_rfc.CustomButton.UseSelectable = true;
+            this.dos_rfc.CustomButton.Visible = false;
+            this.dos_rfc.Lines = new string[] {
+        " "};
+            this.dos_rfc.Location = new System.Drawing.Point(98, 109);
+            this.dos_rfc.MaxLength = 32767;
+            this.dos_rfc.Name = "dos_rfc";
+            this.dos_rfc.PasswordChar = '\0';
+            this.dos_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_rfc.SelectedText = "";
+            this.dos_rfc.SelectionLength = 0;
+            this.dos_rfc.SelectionStart = 0;
+            this.dos_rfc.ShortcutsEnabled = true;
+            this.dos_rfc.Size = new System.Drawing.Size(438, 23);
+            this.dos_rfc.TabIndex = 291;
+            this.dos_rfc.Text = " ";
+            this.dos_rfc.UseSelectable = true;
+            this.dos_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_razon
+            // 
+            // 
+            // 
+            // 
+            this.dos_razon.CustomButton.Image = null;
+            this.dos_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.dos_razon.CustomButton.Name = "";
+            this.dos_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_razon.CustomButton.TabIndex = 1;
+            this.dos_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_razon.CustomButton.UseSelectable = true;
+            this.dos_razon.CustomButton.Visible = false;
+            this.dos_razon.Lines = new string[] {
+        " "};
+            this.dos_razon.Location = new System.Drawing.Point(98, 75);
+            this.dos_razon.MaxLength = 32767;
+            this.dos_razon.Name = "dos_razon";
+            this.dos_razon.PasswordChar = '\0';
+            this.dos_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_razon.SelectedText = "";
+            this.dos_razon.SelectionLength = 0;
+            this.dos_razon.SelectionStart = 0;
+            this.dos_razon.ShortcutsEnabled = true;
+            this.dos_razon.Size = new System.Drawing.Size(438, 23);
+            this.dos_razon.TabIndex = 290;
+            this.dos_razon.Text = " ";
+            this.dos_razon.UseSelectable = true;
+            this.dos_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // dos_hotel
+            // 
+            // 
+            // 
+            // 
+            this.dos_hotel.CustomButton.Image = null;
+            this.dos_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
+            this.dos_hotel.CustomButton.Name = "";
+            this.dos_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.dos_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dos_hotel.CustomButton.TabIndex = 1;
+            this.dos_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.dos_hotel.CustomButton.UseSelectable = true;
+            this.dos_hotel.CustomButton.Visible = false;
+            this.dos_hotel.Lines = new string[] {
+        " "};
+            this.dos_hotel.Location = new System.Drawing.Point(55, 41);
+            this.dos_hotel.MaxLength = 32767;
+            this.dos_hotel.Name = "dos_hotel";
+            this.dos_hotel.PasswordChar = '\0';
+            this.dos_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dos_hotel.SelectedText = "";
+            this.dos_hotel.SelectionLength = 0;
+            this.dos_hotel.SelectionStart = 0;
+            this.dos_hotel.ShortcutsEnabled = true;
+            this.dos_hotel.Size = new System.Drawing.Size(481, 23);
+            this.dos_hotel.TabIndex = 289;
+            this.dos_hotel.Text = " ";
+            this.dos_hotel.UseSelectable = true;
+            this.dos_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.dos_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel69
+            // 
+            this.metroLabel69.AutoSize = true;
+            this.metroLabel69.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel69.Name = "metroLabel69";
+            this.metroLabel69.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel69.TabIndex = 288;
+            this.metroLabel69.Text = "Código Postal:";
+            // 
+            // metroLabel70
+            // 
+            this.metroLabel70.AutoSize = true;
+            this.metroLabel70.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel70.Name = "metroLabel70";
+            this.metroLabel70.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel70.TabIndex = 287;
+            this.metroLabel70.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel71
+            // 
+            this.metroLabel71.AutoSize = true;
+            this.metroLabel71.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel71.Name = "metroLabel71";
+            this.metroLabel71.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel71.TabIndex = 286;
+            this.metroLabel71.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel72
+            // 
+            this.metroLabel72.AutoSize = true;
+            this.metroLabel72.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel72.Name = "metroLabel72";
+            this.metroLabel72.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel72.TabIndex = 285;
+            this.metroLabel72.Text = "Razón Social:";
+            // 
+            // metroLabel73
+            // 
+            this.metroLabel73.AutoSize = true;
+            this.metroLabel73.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel73.Name = "metroLabel73";
+            this.metroLabel73.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel73.TabIndex = 284;
+            this.metroLabel73.Text = "Hotel:";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox11.Controls.Add(this.Additional_1);
+            this.groupBox11.Controls.Add(this.uno_telefono);
+            this.groupBox11.Controls.Add(this.uno_email);
+            this.groupBox11.Controls.Add(this.uno_contacto);
+            this.groupBox11.Controls.Add(this.metroLabel64);
+            this.groupBox11.Controls.Add(this.metroLabel63);
+            this.groupBox11.Controls.Add(this.metroLabel62);
+            this.groupBox11.Controls.Add(this.metroLabel61);
+            this.groupBox11.Controls.Add(this.uno_codigo);
+            this.groupBox11.Controls.Add(this.uno_direccion);
+            this.groupBox11.Controls.Add(this.uno_rfc);
+            this.groupBox11.Controls.Add(this.uno_razon);
+            this.groupBox11.Controls.Add(this.uno_hotel);
+            this.groupBox11.Controls.Add(this.metroLabel60);
+            this.groupBox11.Controls.Add(this.metroLabel59);
+            this.groupBox11.Controls.Add(this.metroLabel58);
+            this.groupBox11.Controls.Add(this.metroLabel57);
+            this.groupBox11.Controls.Add(this.metroLabel56);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox11.Location = new System.Drawing.Point(5, 17);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(1176, 218);
+            this.groupBox11.TabIndex = 31;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Primero";
+            // 
+            // Additional_1
+            // 
+            // 
+            // 
+            // 
+            this.Additional_1.CustomButton.Image = null;
+            this.Additional_1.CustomButton.Location = new System.Drawing.Point(451, 1);
+            this.Additional_1.CustomButton.Name = "";
+            this.Additional_1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Additional_1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Additional_1.CustomButton.TabIndex = 1;
+            this.Additional_1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Additional_1.CustomButton.UseSelectable = true;
+            this.Additional_1.CustomButton.Visible = false;
+            this.Additional_1.Lines = new string[0];
+            this.Additional_1.Location = new System.Drawing.Point(688, 143);
+            this.Additional_1.MaxLength = 32767;
+            this.Additional_1.Name = "Additional_1";
+            this.Additional_1.PasswordChar = '\0';
+            this.Additional_1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Additional_1.SelectedText = "";
+            this.Additional_1.SelectionLength = 0;
+            this.Additional_1.SelectionStart = 0;
+            this.Additional_1.ShortcutsEnabled = true;
+            this.Additional_1.Size = new System.Drawing.Size(473, 23);
+            this.Additional_1.TabIndex = 301;
+            this.Additional_1.UseSelectable = true;
+            this.Additional_1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Additional_1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_telefono
+            // 
+            // 
+            // 
+            // 
+            this.uno_telefono.CustomButton.Image = null;
+            this.uno_telefono.CustomButton.Location = new System.Drawing.Point(365, 1);
+            this.uno_telefono.CustomButton.Name = "";
+            this.uno_telefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_telefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_telefono.CustomButton.TabIndex = 1;
+            this.uno_telefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_telefono.CustomButton.UseSelectable = true;
+            this.uno_telefono.CustomButton.Visible = false;
+            this.uno_telefono.Lines = new string[] {
+        " "};
+            this.uno_telefono.Location = new System.Drawing.Point(774, 109);
+            this.uno_telefono.MaxLength = 32767;
+            this.uno_telefono.Name = "uno_telefono";
+            this.uno_telefono.PasswordChar = '\0';
+            this.uno_telefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_telefono.SelectedText = "";
+            this.uno_telefono.SelectionLength = 0;
+            this.uno_telefono.SelectionStart = 0;
+            this.uno_telefono.ShortcutsEnabled = true;
+            this.uno_telefono.Size = new System.Drawing.Size(387, 23);
+            this.uno_telefono.TabIndex = 300;
+            this.uno_telefono.Text = " ";
+            this.uno_telefono.UseSelectable = true;
+            this.uno_telefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_telefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_email
+            // 
+            // 
+            // 
+            // 
+            this.uno_email.CustomButton.Image = null;
+            this.uno_email.CustomButton.Location = new System.Drawing.Point(376, 1);
+            this.uno_email.CustomButton.Name = "";
+            this.uno_email.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_email.CustomButton.TabIndex = 1;
+            this.uno_email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_email.CustomButton.UseSelectable = true;
+            this.uno_email.CustomButton.Visible = false;
+            this.uno_email.Lines = new string[] {
+        " "};
+            this.uno_email.Location = new System.Drawing.Point(763, 75);
+            this.uno_email.MaxLength = 32767;
+            this.uno_email.Name = "uno_email";
+            this.uno_email.PasswordChar = '\0';
+            this.uno_email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_email.SelectedText = "";
+            this.uno_email.SelectionLength = 0;
+            this.uno_email.SelectionStart = 0;
+            this.uno_email.ShortcutsEnabled = true;
+            this.uno_email.Size = new System.Drawing.Size(398, 23);
+            this.uno_email.TabIndex = 299;
+            this.uno_email.Text = " ";
+            this.uno_email.UseSelectable = true;
+            this.uno_email.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_email.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_contacto
+            // 
+            // 
+            // 
+            // 
+            this.uno_contacto.CustomButton.Image = null;
+            this.uno_contacto.CustomButton.Location = new System.Drawing.Point(437, 1);
+            this.uno_contacto.CustomButton.Name = "";
+            this.uno_contacto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_contacto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_contacto.CustomButton.TabIndex = 1;
+            this.uno_contacto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_contacto.CustomButton.UseSelectable = true;
+            this.uno_contacto.CustomButton.Visible = false;
+            this.uno_contacto.Lines = new string[] {
+        " "};
+            this.uno_contacto.Location = new System.Drawing.Point(702, 41);
+            this.uno_contacto.MaxLength = 32767;
+            this.uno_contacto.Name = "uno_contacto";
+            this.uno_contacto.PasswordChar = '\0';
+            this.uno_contacto.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_contacto.SelectedText = "";
+            this.uno_contacto.SelectionLength = 0;
+            this.uno_contacto.SelectionStart = 0;
+            this.uno_contacto.ShortcutsEnabled = true;
+            this.uno_contacto.Size = new System.Drawing.Size(459, 23);
+            this.uno_contacto.TabIndex = 298;
+            this.uno_contacto.Text = " ";
+            this.uno_contacto.UseSelectable = true;
+            this.uno_contacto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_contacto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel64
+            // 
+            this.metroLabel64.AutoSize = true;
+            this.metroLabel64.Location = new System.Drawing.Point(542, 143);
+            this.metroLabel64.Name = "metroLabel64";
+            this.metroLabel64.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel64.TabIndex = 297;
+            this.metroLabel64.Text = "Información Adicional:";
+            // 
+            // metroLabel63
+            // 
+            this.metroLabel63.AutoSize = true;
+            this.metroLabel63.Location = new System.Drawing.Point(542, 109);
+            this.metroLabel63.Name = "metroLabel63";
+            this.metroLabel63.Size = new System.Drawing.Size(226, 19);
+            this.metroLabel63.TabIndex = 296;
+            this.metroLabel63.Text = "Teléfono de Contacto de Facturación:";
+            // 
+            // metroLabel62
+            // 
+            this.metroLabel62.AutoSize = true;
+            this.metroLabel62.Location = new System.Drawing.Point(542, 75);
+            this.metroLabel62.Name = "metroLabel62";
+            this.metroLabel62.Size = new System.Drawing.Size(215, 19);
+            this.metroLabel62.TabIndex = 295;
+            this.metroLabel62.Text = "E-mail de Contacto de Facturación:";
+            // 
+            // metroLabel61
+            // 
+            this.metroLabel61.AutoSize = true;
+            this.metroLabel61.Location = new System.Drawing.Point(542, 41);
+            this.metroLabel61.Name = "metroLabel61";
+            this.metroLabel61.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel61.TabIndex = 294;
+            this.metroLabel61.Text = "Contacto de Facturación:";
+            // 
+            // uno_codigo
+            // 
+            // 
+            // 
+            // 
+            this.uno_codigo.CustomButton.Image = null;
+            this.uno_codigo.CustomButton.Location = new System.Drawing.Point(408, 1);
+            this.uno_codigo.CustomButton.Name = "";
+            this.uno_codigo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_codigo.CustomButton.TabIndex = 1;
+            this.uno_codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_codigo.CustomButton.UseSelectable = true;
+            this.uno_codigo.CustomButton.Visible = false;
+            this.uno_codigo.Lines = new string[] {
+        " "};
+            this.uno_codigo.Location = new System.Drawing.Point(106, 178);
+            this.uno_codigo.MaxLength = 32767;
+            this.uno_codigo.Name = "uno_codigo";
+            this.uno_codigo.PasswordChar = '\0';
+            this.uno_codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_codigo.SelectedText = "";
+            this.uno_codigo.SelectionLength = 0;
+            this.uno_codigo.SelectionStart = 0;
+            this.uno_codigo.ShortcutsEnabled = true;
+            this.uno_codigo.Size = new System.Drawing.Size(430, 23);
+            this.uno_codigo.TabIndex = 293;
+            this.uno_codigo.Text = " ";
+            this.uno_codigo.UseSelectable = true;
+            this.uno_codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_direccion
+            // 
+            // 
+            // 
+            // 
+            this.uno_direccion.CustomButton.Image = null;
+            this.uno_direccion.CustomButton.Location = new System.Drawing.Point(401, 1);
+            this.uno_direccion.CustomButton.Name = "";
+            this.uno_direccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_direccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_direccion.CustomButton.TabIndex = 1;
+            this.uno_direccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_direccion.CustomButton.UseSelectable = true;
+            this.uno_direccion.CustomButton.Visible = false;
+            this.uno_direccion.Lines = new string[] {
+        " "};
+            this.uno_direccion.Location = new System.Drawing.Point(113, 143);
+            this.uno_direccion.MaxLength = 32767;
+            this.uno_direccion.Name = "uno_direccion";
+            this.uno_direccion.PasswordChar = '\0';
+            this.uno_direccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_direccion.SelectedText = "";
+            this.uno_direccion.SelectionLength = 0;
+            this.uno_direccion.SelectionStart = 0;
+            this.uno_direccion.ShortcutsEnabled = true;
+            this.uno_direccion.Size = new System.Drawing.Size(423, 23);
+            this.uno_direccion.TabIndex = 292;
+            this.uno_direccion.Text = " ";
+            this.uno_direccion.UseSelectable = true;
+            this.uno_direccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_direccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_rfc
+            // 
+            // 
+            // 
+            // 
+            this.uno_rfc.CustomButton.Image = null;
+            this.uno_rfc.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.uno_rfc.CustomButton.Name = "";
+            this.uno_rfc.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_rfc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_rfc.CustomButton.TabIndex = 1;
+            this.uno_rfc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_rfc.CustomButton.UseSelectable = true;
+            this.uno_rfc.CustomButton.Visible = false;
+            this.uno_rfc.Lines = new string[] {
+        " "};
+            this.uno_rfc.Location = new System.Drawing.Point(98, 109);
+            this.uno_rfc.MaxLength = 32767;
+            this.uno_rfc.Name = "uno_rfc";
+            this.uno_rfc.PasswordChar = '\0';
+            this.uno_rfc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_rfc.SelectedText = "";
+            this.uno_rfc.SelectionLength = 0;
+            this.uno_rfc.SelectionStart = 0;
+            this.uno_rfc.ShortcutsEnabled = true;
+            this.uno_rfc.Size = new System.Drawing.Size(438, 23);
+            this.uno_rfc.TabIndex = 291;
+            this.uno_rfc.Text = " ";
+            this.uno_rfc.UseSelectable = true;
+            this.uno_rfc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_rfc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_razon
+            // 
+            // 
+            // 
+            // 
+            this.uno_razon.CustomButton.Image = null;
+            this.uno_razon.CustomButton.Location = new System.Drawing.Point(416, 1);
+            this.uno_razon.CustomButton.Name = "";
+            this.uno_razon.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_razon.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_razon.CustomButton.TabIndex = 1;
+            this.uno_razon.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_razon.CustomButton.UseSelectable = true;
+            this.uno_razon.CustomButton.Visible = false;
+            this.uno_razon.Lines = new string[] {
+        " "};
+            this.uno_razon.Location = new System.Drawing.Point(98, 75);
+            this.uno_razon.MaxLength = 32767;
+            this.uno_razon.Name = "uno_razon";
+            this.uno_razon.PasswordChar = '\0';
+            this.uno_razon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_razon.SelectedText = "";
+            this.uno_razon.SelectionLength = 0;
+            this.uno_razon.SelectionStart = 0;
+            this.uno_razon.ShortcutsEnabled = true;
+            this.uno_razon.Size = new System.Drawing.Size(438, 23);
+            this.uno_razon.TabIndex = 290;
+            this.uno_razon.Text = " ";
+            this.uno_razon.UseSelectable = true;
+            this.uno_razon.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_razon.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // uno_hotel
+            // 
+            // 
+            // 
+            // 
+            this.uno_hotel.CustomButton.Image = null;
+            this.uno_hotel.CustomButton.Location = new System.Drawing.Point(459, 1);
+            this.uno_hotel.CustomButton.Name = "";
+            this.uno_hotel.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.uno_hotel.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.uno_hotel.CustomButton.TabIndex = 1;
+            this.uno_hotel.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.uno_hotel.CustomButton.UseSelectable = true;
+            this.uno_hotel.CustomButton.Visible = false;
+            this.uno_hotel.Lines = new string[] {
+        " "};
+            this.uno_hotel.Location = new System.Drawing.Point(55, 41);
+            this.uno_hotel.MaxLength = 32767;
+            this.uno_hotel.Name = "uno_hotel";
+            this.uno_hotel.PasswordChar = '\0';
+            this.uno_hotel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.uno_hotel.SelectedText = "";
+            this.uno_hotel.SelectionLength = 0;
+            this.uno_hotel.SelectionStart = 0;
+            this.uno_hotel.ShortcutsEnabled = true;
+            this.uno_hotel.Size = new System.Drawing.Size(481, 23);
+            this.uno_hotel.TabIndex = 289;
+            this.uno_hotel.Text = " ";
+            this.uno_hotel.UseSelectable = true;
+            this.uno_hotel.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.uno_hotel.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel60
+            // 
+            this.metroLabel60.AutoSize = true;
+            this.metroLabel60.Location = new System.Drawing.Point(6, 178);
+            this.metroLabel60.Name = "metroLabel60";
+            this.metroLabel60.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel60.TabIndex = 288;
+            this.metroLabel60.Text = "Código Postal:";
+            // 
+            // metroLabel59
+            // 
+            this.metroLabel59.AutoSize = true;
+            this.metroLabel59.Location = new System.Drawing.Point(6, 143);
+            this.metroLabel59.Name = "metroLabel59";
+            this.metroLabel59.Size = new System.Drawing.Size(101, 19);
+            this.metroLabel59.TabIndex = 287;
+            this.metroLabel59.Text = "Dirección Fiscal:";
+            // 
+            // metroLabel58
+            // 
+            this.metroLabel58.AutoSize = true;
+            this.metroLabel58.Location = new System.Drawing.Point(6, 109);
+            this.metroLabel58.Name = "metroLabel58";
+            this.metroLabel58.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel58.TabIndex = 286;
+            this.metroLabel58.Text = "RFC - Tax ID:";
+            // 
+            // metroLabel57
+            // 
+            this.metroLabel57.AutoSize = true;
+            this.metroLabel57.Location = new System.Drawing.Point(6, 75);
+            this.metroLabel57.Name = "metroLabel57";
+            this.metroLabel57.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel57.TabIndex = 285;
+            this.metroLabel57.Text = "Razón Social:";
+            // 
+            // metroLabel56
+            // 
+            this.metroLabel56.AutoSize = true;
+            this.metroLabel56.Location = new System.Drawing.Point(6, 41);
+            this.metroLabel56.Name = "metroLabel56";
+            this.metroLabel56.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel56.TabIndex = 284;
+            this.metroLabel56.Text = "Hotel:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1036, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(182, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textTotalIVA
+            // 
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textTotalIVA.DoubleValue = 0D;
+            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
+            this.textTotalIVA.Name = "textTotalIVA";
+            this.textTotalIVA.Size = new System.Drawing.Size(100, 22);
+            this.textTotalIVA.TabIndex = 481;
+            this.textTotalIVA.Text = "0.00";
+            // 
             // generador_OI
             // 
             this.ClientSize = new System.Drawing.Size(1247, 689);
@@ -6959,21 +6960,22 @@ namespace gestor_bdm
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox22.ResumeLayout(false);
-            this.groupBox22.PerformLayout();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
+            this.groupBox22.ResumeLayout(false);
+            this.groupBox22.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7896,8 +7898,6 @@ namespace gestor_bdm
                 table_c_C.WidthPercentage = 100;
 
                 PdfPCell cell_c_C = new PdfPCell(new Phrase(string.Format("CONDICIONES COMERCIALES"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                //cell_c_C.Rowspan = 2;
-                //cell_c_C.Colspan = 2;
                 cell_c_C.BackgroundColor = new BaseColor(6, 61, 150);
                 table_c_C.AddCell(cell_c_C);
 
@@ -7937,35 +7937,30 @@ namespace gestor_bdm
                 table_4.AddCell(cliente_4);
                 table_4.AddCell(media_4);
                 
-
-
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase(string.Format("FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                bottom_cliente_4.Colspan = 1;
-                bottom_cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
-                table_4.AddCell(bottom_cliente_4);
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 
-
+                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase(string.Format("FIRMA: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                bottom_cliente_4.Rowspan = 2;
+                bottom_cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+                table_4.AddCell(bottom_cliente_4);                
 
                 PdfPCell bottom_media_4 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                bottom_media_4.Rowspan = 2;
                 bottom_media_4.Colspan = 2;
                 table_4.AddCell(bottom_media_4);
-                
 
-
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase(string.Format("FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                bottom_cliente_5.Colspan = 1;
+                PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase(string.Format("FIRMA: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                bottom_cliente_5.Rowspan = 2;
                 bottom_cliente_5.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
-                table_4.AddCell(bottom_cliente_5);
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                
-
+                table_4.AddCell(bottom_cliente_5);              
 
                 PdfPCell bottom_media_5 = new PdfPCell(new Phrase(string.Format(" "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                bottom_media_5.Rowspan = 2;
                 bottom_media_5.Colspan = 2;
                 table_4.AddCell(bottom_media_5);
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
                 PdfPCell bottom_cliente_6 = new PdfPCell(new Phrase(string.Format("NOMBRE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_6.Colspan = 1;

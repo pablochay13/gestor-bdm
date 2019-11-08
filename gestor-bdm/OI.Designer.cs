@@ -1407,7 +1407,7 @@
             // 
             // textID
             // 
-            this.textID.Location = new System.Drawing.Point(534, 205);
+            this.textID.Location = new System.Drawing.Point(534, 209);
             this.textID.Name = "textID";
             this.textID.Size = new System.Drawing.Size(222, 21);
             this.textID.TabIndex = 188;
@@ -1455,7 +1455,7 @@
             this.comboOp.Items.AddRange(new object[] {
             "Prepago",
             "Crédito"});
-            this.comboOp.Location = new System.Drawing.Point(159, 205);
+            this.comboOp.Location = new System.Drawing.Point(159, 206);
             this.comboOp.Name = "comboOp";
             this.comboOp.Size = new System.Drawing.Size(224, 23);
             this.comboOp.TabIndex = 184;
@@ -1578,7 +1578,7 @@
             this.textMonto.Name = "textMonto";
             this.textMonto.Size = new System.Drawing.Size(264, 21);
             this.textMonto.TabIndex = 163;
-            this.textMonto.Text = "4000100017 - Ingresos por publicidad";
+            this.textMonto.Text = " ";
             // 
             // label7
             // 

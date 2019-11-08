@@ -181,7 +181,6 @@
         private MetroFramework.Controls.MetroComboBox comboMar;
         private MetroFramework.Controls.MetroComboBox comboFeb;
         private MetroFramework.Controls.MetroLabel metroLabel46;
-        private Syncfusion.WinForms.Input.SfNumericTextBox textTotalIVA;
         private MetroFramework.Controls.MetroLabel metroLabel47;
         private MetroFramework.Controls.MetroTextBox textBoxDic;
         private MetroFramework.Controls.MetroTextBox textBoxNov;
@@ -347,5 +346,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel72;
         private MetroFramework.Controls.MetroLabel metroLabel73;
         private MetroFramework.Controls.MetroTextBox seis_contacto;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox textTotalIVA;
     }
 }
