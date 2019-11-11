@@ -4751,7 +4751,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ordenes de inserción";
+            this.Text = " ";
             this.tabControl.ResumeLayout(false);
             this.tabDatos.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
