@@ -739,6 +739,46 @@ namespace gestor_bdm
             ventana.Show();
         }
 
+        private void OI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void explore_2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void explore_3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookEne_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookFeb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookMar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookAbr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookMay_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Sumas_Click(object sender, EventArgs e)
         {
             double montoPauta = 0;

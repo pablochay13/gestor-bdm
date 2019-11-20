@@ -613,6 +613,7 @@
             this.explore_3.TabIndex = 185;
             this.explore_3.Text = "Visualizar";
             this.explore_3.UseVisualStyleBackColor = true;
+            this.explore_3.Click += new System.EventHandler(this.explore_3_Click_1);
             // 
             // explore_2
             // 
@@ -623,6 +624,7 @@
             this.explore_2.TabIndex = 184;
             this.explore_2.Text = "Visualizar";
             this.explore_2.UseVisualStyleBackColor = true;
+            this.explore_2.Click += new System.EventHandler(this.explore_2_Click_1);
             // 
             // exploreTres
             // 
@@ -2752,6 +2754,7 @@
             this.lookMay.Size = new System.Drawing.Size(24, 24);
             this.lookMay.TabIndex = 205;
             this.lookMay.UseVisualStyleBackColor = true;
+            this.lookMay.Click += new System.EventHandler(this.lookMay_Click);
             // 
             // lookAbr
             // 
@@ -2763,6 +2766,7 @@
             this.lookAbr.Size = new System.Drawing.Size(24, 24);
             this.lookAbr.TabIndex = 204;
             this.lookAbr.UseVisualStyleBackColor = true;
+            this.lookAbr.Click += new System.EventHandler(this.lookAbr_Click);
             // 
             // lookMar
             // 
@@ -2774,6 +2778,7 @@
             this.lookMar.Size = new System.Drawing.Size(24, 24);
             this.lookMar.TabIndex = 203;
             this.lookMar.UseVisualStyleBackColor = true;
+            this.lookMar.Click += new System.EventHandler(this.lookMar_Click);
             // 
             // lookFeb
             // 
@@ -2785,6 +2790,7 @@
             this.lookFeb.Size = new System.Drawing.Size(24, 24);
             this.lookFeb.TabIndex = 202;
             this.lookFeb.UseVisualStyleBackColor = true;
+            this.lookFeb.Click += new System.EventHandler(this.lookFeb_Click);
             // 
             // lookEne
             // 
@@ -2796,6 +2802,7 @@
             this.lookEne.Size = new System.Drawing.Size(24, 24);
             this.lookEne.TabIndex = 201;
             this.lookEne.UseVisualStyleBackColor = true;
+            this.lookEne.Click += new System.EventHandler(this.lookEne_Click_1);
             // 
             // label49
             // 
@@ -4752,6 +4759,7 @@
             this.Name = "OI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.OI_Load);
             this.tabControl.ResumeLayout(false);
             this.tabDatos.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
