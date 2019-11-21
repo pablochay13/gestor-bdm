@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(orden_insercion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -143,6 +143,20 @@
             this.comboPais = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.porcentajeCobrado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
+            this.porcentajeFacturado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
+            this.porcentajeMonto = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
+            this.cantCobrado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel51 = new MetroFramework.Controls.MetroLabel();
+            this.cantFacturado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel50 = new MetroFramework.Controls.MetroLabel();
+            this.cantMonto = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
+            this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
+            this.sumas = new MetroFramework.Controls.MetroButton();
+            this.calculo = new MetroFramework.Controls.MetroButton();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.esquemaDic = new MetroFramework.Controls.MetroTextBox();
             this.esquemaNov = new MetroFramework.Controls.MetroTextBox();
@@ -309,142 +323,6 @@
             this.cEnero = new MetroFramework.Controls.MetroCheckBox();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.listaSaldos = new MetroFramework.Controls.MetroGrid();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_alta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.folio_media = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre_comercial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sigla_hotel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clave_hanna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.centro_beneficio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anticipo_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.porcentaje_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vigencia_fesde_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vigencia_hasta_mkk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.forma_calculo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_fijo_iva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.divisa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vigencia_monto_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vigencia_monto_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trans_bancaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.compensacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noches = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ambas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esquema_comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sypply = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ejecutivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.account = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.archivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.febrero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marzo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.abril = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mayo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.junio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.julio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.agosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.septiembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.octubre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noviembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diciembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fact_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cob_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcfeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcmarzo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcabr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcmay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcjun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcjul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcsep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcoct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcnov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fcdic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqfeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqmar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqabr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqmay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqjun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqjul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqsep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqoct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqnov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esqdic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fc_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_pautado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_facturado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monto_cobrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.por_pautado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.por_facturado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.por_cobrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.all = new MetroFramework.Controls.MetroButton();
             this.find = new MetroFramework.Controls.MetroButton();
@@ -475,20 +353,44 @@
             this.delete = new MetroFramework.Controls.MetroButton();
             this.edit = new MetroFramework.Controls.MetroButton();
             this.add = new MetroFramework.Controls.MetroButton();
-            this.sumas = new MetroFramework.Controls.MetroButton();
-            this.calculo = new MetroFramework.Controls.MetroButton();
-            this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
-            this.cantMonto = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.cantFacturado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.metroLabel50 = new MetroFramework.Controls.MetroLabel();
-            this.cantCobrado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.metroLabel51 = new MetroFramework.Controls.MetroLabel();
-            this.porcentajeCobrado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
-            this.porcentajeFacturado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
-            this.porcentajeMonto = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-            this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
+            this.textAnticipo = new System.Windows.Forms.TextBox();
+            this.totalMeses = new System.Windows.Forms.TextBox();
+            this.total = new System.Windows.Forms.TextBox();
+            this.ide = new System.Windows.Forms.TextBox();
+            this.dateHastaMonto = new System.Windows.Forms.DateTimePicker();
+            this.dateDesdeMonto = new System.Windows.Forms.DateTimePicker();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_alta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.folio_media = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razon_social = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre_comercial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sigla_hotel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clave_hanna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.centro_beneficio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anticipo_pauta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porcentaje_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vigencia_fesde_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vigencia_hasta_mkk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.forma_calculo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_fijo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_fijo_iva = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.divisa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vigencia_monto_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vigencia_monto_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trans_bancaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.compensacion1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noches1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ambas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sypply = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ejecutivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -499,6 +401,12 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeCobrado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeFacturado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeMonto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantCobrado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantFacturado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantMonto)).BeginInit();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cobradoDic)).BeginInit();
@@ -543,12 +451,6 @@
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).BeginInit();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cantMonto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cantFacturado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cantCobrado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeCobrado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeFacturado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeMonto)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -1155,6 +1057,7 @@
             this.checkNoches.TabIndex = 24;
             this.checkNoches.Text = "Noches";
             this.checkNoches.UseSelectable = true;
+            this.checkNoches.CheckedChanged += new System.EventHandler(this.checkNoches_CheckedChanged);
             // 
             // checkAmbos
             // 
@@ -1255,6 +1158,7 @@
             this.comboNacional.Size = new System.Drawing.Size(91, 29);
             this.comboNacional.TabIndex = 54;
             this.comboNacional.UseSelectable = true;
+            this.comboNacional.SelectedIndexChanged += new System.EventHandler(this.comboNacional_SelectedIndexChanged);
             // 
             // metroLabel33
             // 
@@ -1325,6 +1229,7 @@
             this.tMontoIVA.UseSelectable = true;
             this.tMontoIVA.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tMontoIVA.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tMontoIVA.TextChanged += new System.EventHandler(this.tMontoIVA_TextChanged);
             // 
             // metroLabel30
             // 
@@ -1434,6 +1339,7 @@
             this.dateDesdeMKF.Name = "dateDesdeMKF";
             this.dateDesdeMKF.Size = new System.Drawing.Size(101, 29);
             this.dateDesdeMKF.TabIndex = 8;
+            this.dateDesdeMKF.ValueChanged += new System.EventHandler(this.dateDesdeMKF_ValueChanged);
             // 
             // metroLabel24
             // 
@@ -1586,6 +1492,7 @@
             this.comboCuenta.Size = new System.Drawing.Size(246, 29);
             this.comboCuenta.TabIndex = 44;
             this.comboCuenta.UseSelectable = true;
+            this.comboCuenta.SelectedIndexChanged += new System.EventHandler(this.comboCuenta_SelectedIndexChanged);
             // 
             // metroLabel19
             // 
@@ -1645,6 +1552,7 @@
             this.cant2.UseSelectable = true;
             this.cant2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cant2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.cant2.TextChanged += new System.EventHandler(this.cant2_TextChanged);
             // 
             // metroLabel15
             // 
@@ -1979,6 +1887,7 @@
             this.comboHoteles.Size = new System.Drawing.Size(462, 29);
             this.comboHoteles.TabIndex = 21;
             this.comboHoteles.UseSelectable = true;
+            this.comboHoteles.SelectedIndexChanged += new System.EventHandler(this.comboHoteles_SelectedIndexChanged);
             // 
             // metroLabel10
             // 
@@ -2038,6 +1947,7 @@
             this.comboRazon.Size = new System.Drawing.Size(462, 29);
             this.comboRazon.TabIndex = 17;
             this.comboRazon.UseSelectable = true;
+            this.comboRazon.SelectedIndexChanged += new System.EventHandler(this.comboRazon_SelectedIndexChanged);
             // 
             // metroLabel9
             // 
@@ -2128,6 +2038,7 @@
             this.comboPauta.Size = new System.Drawing.Size(162, 29);
             this.comboPauta.TabIndex = 10;
             this.comboPauta.UseSelectable = true;
+            this.comboPauta.SelectedIndexChanged += new System.EventHandler(this.comboPauta_SelectedIndexChanged);
             // 
             // metroLabel5
             // 
@@ -2178,6 +2089,7 @@
             this.comboPais.Size = new System.Drawing.Size(162, 29);
             this.comboPais.TabIndex = 7;
             this.comboPais.UseSelectable = true;
+            this.comboPais.SelectedIndexChanged += new System.EventHandler(this.comboPais_SelectedIndexChanged);
             // 
             // metroLabel4
             // 
@@ -2223,6 +2135,140 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // porcentajeCobrado
+            // 
+            this.porcentajeCobrado.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.porcentajeCobrado.DoubleValue = 0D;
+            this.porcentajeCobrado.Location = new System.Drawing.Point(3, 380);
+            this.porcentajeCobrado.Name = "porcentajeCobrado";
+            this.porcentajeCobrado.Size = new System.Drawing.Size(165, 20);
+            this.porcentajeCobrado.TabIndex = 277;
+            this.porcentajeCobrado.Text = "0.00";
+            // 
+            // metroLabel52
+            // 
+            this.metroLabel52.AutoSize = true;
+            this.metroLabel52.Location = new System.Drawing.Point(3, 358);
+            this.metroLabel52.Name = "metroLabel52";
+            this.metroLabel52.Size = new System.Drawing.Size(130, 19);
+            this.metroLabel52.TabIndex = 276;
+            this.metroLabel52.Text = "Porcentaje Cobrado:";
+            // 
+            // porcentajeFacturado
+            // 
+            this.porcentajeFacturado.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.porcentajeFacturado.DoubleValue = 0D;
+            this.porcentajeFacturado.Location = new System.Drawing.Point(3, 327);
+            this.porcentajeFacturado.Name = "porcentajeFacturado";
+            this.porcentajeFacturado.Size = new System.Drawing.Size(165, 20);
+            this.porcentajeFacturado.TabIndex = 275;
+            this.porcentajeFacturado.Text = "0.00";
+            // 
+            // metroLabel53
+            // 
+            this.metroLabel53.AutoSize = true;
+            this.metroLabel53.Location = new System.Drawing.Point(3, 305);
+            this.metroLabel53.Name = "metroLabel53";
+            this.metroLabel53.Size = new System.Drawing.Size(135, 19);
+            this.metroLabel53.TabIndex = 274;
+            this.metroLabel53.Text = "Porcentaje Facturado:";
+            // 
+            // porcentajeMonto
+            // 
+            this.porcentajeMonto.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.porcentajeMonto.DoubleValue = 0D;
+            this.porcentajeMonto.Location = new System.Drawing.Point(3, 275);
+            this.porcentajeMonto.Name = "porcentajeMonto";
+            this.porcentajeMonto.Size = new System.Drawing.Size(165, 20);
+            this.porcentajeMonto.TabIndex = 273;
+            this.porcentajeMonto.Text = "0.00";
+            // 
+            // metroLabel54
+            // 
+            this.metroLabel54.AutoSize = true;
+            this.metroLabel54.Location = new System.Drawing.Point(3, 253);
+            this.metroLabel54.Name = "metroLabel54";
+            this.metroLabel54.Size = new System.Drawing.Size(125, 19);
+            this.metroLabel54.TabIndex = 272;
+            this.metroLabel54.Text = "Porcentaje Pautado:";
+            // 
+            // cantCobrado
+            // 
+            this.cantCobrado.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.cantCobrado.DoubleValue = 0D;
+            this.cantCobrado.Location = new System.Drawing.Point(3, 191);
+            this.cantCobrado.Name = "cantCobrado";
+            this.cantCobrado.Size = new System.Drawing.Size(165, 20);
+            this.cantCobrado.TabIndex = 271;
+            this.cantCobrado.Text = "0.00";
+            // 
+            // metroLabel51
+            // 
+            this.metroLabel51.AutoSize = true;
+            this.metroLabel51.Location = new System.Drawing.Point(3, 169);
+            this.metroLabel51.Name = "metroLabel51";
+            this.metroLabel51.Size = new System.Drawing.Size(108, 19);
+            this.metroLabel51.TabIndex = 270;
+            this.metroLabel51.Text = "Monto Cobrado:";
+            // 
+            // cantFacturado
+            // 
+            this.cantFacturado.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.cantFacturado.DoubleValue = 0D;
+            this.cantFacturado.Location = new System.Drawing.Point(3, 138);
+            this.cantFacturado.Name = "cantFacturado";
+            this.cantFacturado.Size = new System.Drawing.Size(165, 20);
+            this.cantFacturado.TabIndex = 269;
+            this.cantFacturado.Text = "0.00";
+            // 
+            // metroLabel50
+            // 
+            this.metroLabel50.AutoSize = true;
+            this.metroLabel50.Location = new System.Drawing.Point(3, 116);
+            this.metroLabel50.Name = "metroLabel50";
+            this.metroLabel50.Size = new System.Drawing.Size(113, 19);
+            this.metroLabel50.TabIndex = 268;
+            this.metroLabel50.Text = "Monto Facturado:";
+            // 
+            // cantMonto
+            // 
+            this.cantMonto.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.cantMonto.DoubleValue = 0D;
+            this.cantMonto.Location = new System.Drawing.Point(3, 86);
+            this.cantMonto.Name = "cantMonto";
+            this.cantMonto.Size = new System.Drawing.Size(165, 20);
+            this.cantMonto.TabIndex = 267;
+            this.cantMonto.Text = "0.00";
+            // 
+            // metroLabel49
+            // 
+            this.metroLabel49.AutoSize = true;
+            this.metroLabel49.Location = new System.Drawing.Point(3, 64);
+            this.metroLabel49.Name = "metroLabel49";
+            this.metroLabel49.Size = new System.Drawing.Size(103, 19);
+            this.metroLabel49.TabIndex = 266;
+            this.metroLabel49.Text = "Monto Pautado:";
+            // 
+            // sumas
+            // 
+            this.sumas.Location = new System.Drawing.Point(15, 468);
+            this.sumas.Name = "sumas";
+            this.sumas.Size = new System.Drawing.Size(75, 23);
+            this.sumas.TabIndex = 265;
+            this.sumas.Text = "Sumar";
+            this.sumas.UseSelectable = true;
+            this.sumas.Click += new System.EventHandler(this.sumas_Click);
+            // 
+            // calculo
+            // 
+            this.calculo.Location = new System.Drawing.Point(96, 468);
+            this.calculo.Name = "calculo";
+            this.calculo.Size = new System.Drawing.Size(75, 23);
+            this.calculo.TabIndex = 264;
+            this.calculo.Text = "Calcular";
+            this.calculo.UseSelectable = true;
+            this.calculo.Click += new System.EventHandler(this.calculo_Click);
             // 
             // groupBox12
             // 
@@ -2885,7 +2931,7 @@
             // 
             // cobradoDic
             // 
-            this.cobradoDic.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoDic.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoDic.DoubleValue = 0D;
             this.cobradoDic.Location = new System.Drawing.Point(12, 438);
             this.cobradoDic.Name = "cobradoDic";
@@ -2904,7 +2950,7 @@
             // 
             // cobradoNov
             // 
-            this.cobradoNov.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoNov.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoNov.DoubleValue = 0D;
             this.cobradoNov.Location = new System.Drawing.Point(12, 403);
             this.cobradoNov.Name = "cobradoNov";
@@ -2914,7 +2960,7 @@
             // 
             // cobradoEne
             // 
-            this.cobradoEne.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoEne.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoEne.DoubleValue = 0D;
             this.cobradoEne.Location = new System.Drawing.Point(12, 53);
             this.cobradoEne.Name = "cobradoEne";
@@ -2924,7 +2970,7 @@
             // 
             // cobradoOct
             // 
-            this.cobradoOct.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoOct.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoOct.DoubleValue = 0D;
             this.cobradoOct.Location = new System.Drawing.Point(12, 368);
             this.cobradoOct.Name = "cobradoOct";
@@ -2934,7 +2980,7 @@
             // 
             // cobradoFeb
             // 
-            this.cobradoFeb.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoFeb.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoFeb.DoubleValue = 0D;
             this.cobradoFeb.Location = new System.Drawing.Point(12, 88);
             this.cobradoFeb.Name = "cobradoFeb";
@@ -2944,7 +2990,7 @@
             // 
             // cobradoSep
             // 
-            this.cobradoSep.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoSep.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoSep.DoubleValue = 0D;
             this.cobradoSep.Location = new System.Drawing.Point(12, 333);
             this.cobradoSep.Name = "cobradoSep";
@@ -2954,7 +3000,7 @@
             // 
             // cobradoMar
             // 
-            this.cobradoMar.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoMar.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoMar.DoubleValue = 0D;
             this.cobradoMar.Location = new System.Drawing.Point(12, 123);
             this.cobradoMar.Name = "cobradoMar";
@@ -2964,7 +3010,7 @@
             // 
             // cobradoAgo
             // 
-            this.cobradoAgo.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoAgo.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoAgo.DoubleValue = 0D;
             this.cobradoAgo.Location = new System.Drawing.Point(12, 298);
             this.cobradoAgo.Name = "cobradoAgo";
@@ -2974,7 +3020,7 @@
             // 
             // cobradoAbr
             // 
-            this.cobradoAbr.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoAbr.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoAbr.DoubleValue = 0D;
             this.cobradoAbr.Location = new System.Drawing.Point(12, 158);
             this.cobradoAbr.Name = "cobradoAbr";
@@ -2984,7 +3030,7 @@
             // 
             // cobradoJul
             // 
-            this.cobradoJul.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoJul.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoJul.DoubleValue = 0D;
             this.cobradoJul.Location = new System.Drawing.Point(12, 263);
             this.cobradoJul.Name = "cobradoJul";
@@ -2994,7 +3040,7 @@
             // 
             // cobradoMay
             // 
-            this.cobradoMay.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoMay.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoMay.DoubleValue = 0D;
             this.cobradoMay.Location = new System.Drawing.Point(12, 193);
             this.cobradoMay.Name = "cobradoMay";
@@ -3004,7 +3050,7 @@
             // 
             // cobradoJun
             // 
-            this.cobradoJun.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.cobradoJun.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.cobradoJun.DoubleValue = 0D;
             this.cobradoJun.Location = new System.Drawing.Point(12, 228);
             this.cobradoJun.Name = "cobradoJun";
@@ -3828,7 +3874,7 @@
             // 
             // facturadoDic
             // 
-            this.facturadoDic.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoDic.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoDic.DoubleValue = 0D;
             this.facturadoDic.Location = new System.Drawing.Point(14, 438);
             this.facturadoDic.Name = "facturadoDic";
@@ -3846,7 +3892,7 @@
             // 
             // facturadoNov
             // 
-            this.facturadoNov.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoNov.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoNov.DoubleValue = 0D;
             this.facturadoNov.Location = new System.Drawing.Point(14, 403);
             this.facturadoNov.Name = "facturadoNov";
@@ -3864,7 +3910,7 @@
             // 
             // facturadoOct
             // 
-            this.facturadoOct.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoOct.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoOct.DoubleValue = 0D;
             this.facturadoOct.Location = new System.Drawing.Point(13, 368);
             this.facturadoOct.Name = "facturadoOct";
@@ -3882,7 +3928,7 @@
             // 
             // facturadoSep
             // 
-            this.facturadoSep.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoSep.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoSep.DoubleValue = 0D;
             this.facturadoSep.Location = new System.Drawing.Point(14, 333);
             this.facturadoSep.Name = "facturadoSep";
@@ -3900,7 +3946,7 @@
             // 
             // facturadoAgo
             // 
-            this.facturadoAgo.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoAgo.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoAgo.DoubleValue = 0D;
             this.facturadoAgo.Location = new System.Drawing.Point(14, 298);
             this.facturadoAgo.Name = "facturadoAgo";
@@ -3918,7 +3964,7 @@
             // 
             // facturadoJul
             // 
-            this.facturadoJul.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoJul.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoJul.DoubleValue = 0D;
             this.facturadoJul.Location = new System.Drawing.Point(14, 263);
             this.facturadoJul.Name = "facturadoJul";
@@ -3936,7 +3982,7 @@
             // 
             // facturadoJun
             // 
-            this.facturadoJun.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoJun.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoJun.DoubleValue = 0D;
             this.facturadoJun.Location = new System.Drawing.Point(14, 228);
             this.facturadoJun.Name = "facturadoJun";
@@ -3954,7 +4000,7 @@
             // 
             // facturadoMay
             // 
-            this.facturadoMay.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoMay.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoMay.DoubleValue = 0D;
             this.facturadoMay.Location = new System.Drawing.Point(14, 193);
             this.facturadoMay.Name = "facturadoMay";
@@ -3972,7 +4018,7 @@
             // 
             // facturadoAbr
             // 
-            this.facturadoAbr.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoAbr.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoAbr.DoubleValue = 0D;
             this.facturadoAbr.Location = new System.Drawing.Point(14, 158);
             this.facturadoAbr.Name = "facturadoAbr";
@@ -3990,7 +4036,7 @@
             // 
             // facturadoMar
             // 
-            this.facturadoMar.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoMar.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoMar.DoubleValue = 0D;
             this.facturadoMar.Location = new System.Drawing.Point(13, 123);
             this.facturadoMar.Name = "facturadoMar";
@@ -4008,7 +4054,7 @@
             // 
             // facturadoFeb
             // 
-            this.facturadoFeb.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoFeb.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoFeb.DoubleValue = 0D;
             this.facturadoFeb.Location = new System.Drawing.Point(14, 88);
             this.facturadoFeb.Name = "facturadoFeb";
@@ -4026,7 +4072,7 @@
             // 
             // facturadoEne
             // 
-            this.facturadoEne.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.facturadoEne.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.facturadoEne.DoubleValue = 0D;
             this.facturadoEne.Location = new System.Drawing.Point(14, 52);
             this.facturadoEne.Name = "facturadoEne";
@@ -4356,7 +4402,7 @@
             // 
             // montoDic
             // 
-            this.montoDic.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoDic.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoDic.DoubleValue = 0D;
             this.montoDic.Location = new System.Drawing.Point(14, 439);
             this.montoDic.Name = "montoDic";
@@ -4366,7 +4412,7 @@
             // 
             // montoNov
             // 
-            this.montoNov.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoNov.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoNov.DoubleValue = 0D;
             this.montoNov.Location = new System.Drawing.Point(14, 404);
             this.montoNov.Name = "montoNov";
@@ -4376,7 +4422,7 @@
             // 
             // montoOct
             // 
-            this.montoOct.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoOct.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoOct.DoubleValue = 0D;
             this.montoOct.Location = new System.Drawing.Point(14, 369);
             this.montoOct.Name = "montoOct";
@@ -4386,7 +4432,7 @@
             // 
             // montoSep
             // 
-            this.montoSep.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoSep.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoSep.DoubleValue = 0D;
             this.montoSep.Location = new System.Drawing.Point(14, 334);
             this.montoSep.Name = "montoSep";
@@ -4396,7 +4442,7 @@
             // 
             // montoAgo
             // 
-            this.montoAgo.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoAgo.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoAgo.DoubleValue = 0D;
             this.montoAgo.Location = new System.Drawing.Point(14, 298);
             this.montoAgo.Name = "montoAgo";
@@ -4406,7 +4452,7 @@
             // 
             // montoJul
             // 
-            this.montoJul.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoJul.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoJul.DoubleValue = 0D;
             this.montoJul.Location = new System.Drawing.Point(14, 263);
             this.montoJul.Name = "montoJul";
@@ -4416,7 +4462,7 @@
             // 
             // montoJun
             // 
-            this.montoJun.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoJun.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoJun.DoubleValue = 0D;
             this.montoJun.Location = new System.Drawing.Point(14, 229);
             this.montoJun.Name = "montoJun";
@@ -4426,7 +4472,7 @@
             // 
             // montoMayo
             // 
-            this.montoMayo.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoMayo.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoMayo.DoubleValue = 0D;
             this.montoMayo.Location = new System.Drawing.Point(14, 194);
             this.montoMayo.Name = "montoMayo";
@@ -4436,7 +4482,7 @@
             // 
             // montoAbr
             // 
-            this.montoAbr.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoAbr.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoAbr.DoubleValue = 0D;
             this.montoAbr.Location = new System.Drawing.Point(14, 159);
             this.montoAbr.Name = "montoAbr";
@@ -4446,7 +4492,7 @@
             // 
             // montoMar
             // 
-            this.montoMar.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoMar.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoMar.DoubleValue = 0D;
             this.montoMar.Location = new System.Drawing.Point(14, 123);
             this.montoMar.Name = "montoMar";
@@ -4456,7 +4502,7 @@
             // 
             // montoFeb
             // 
-            this.montoFeb.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoFeb.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoFeb.DoubleValue = 0D;
             this.montoFeb.Location = new System.Drawing.Point(14, 89);
             this.montoFeb.Name = "montoFeb";
@@ -4466,7 +4512,7 @@
             // 
             // montoEne
             // 
-            this.montoEne.BeforeTouchSize = new System.Drawing.Size(165, 20);
+            this.montoEne.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.montoEne.DoubleValue = 0D;
             this.montoEne.Location = new System.Drawing.Point(14, 52);
             this.montoEne.Name = "montoEne";
@@ -5013,858 +5059,42 @@
             this.listaSaldos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listaSaldos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.listaSaldos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.listaSaldos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.listaSaldos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.listaSaldos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaSaldos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.fecha_alta,
-            this.folio_media,
-            this.status,
-            this.pais,
-            this.tipo_pauta,
-            this.categoria,
-            this.contrato,
-            this.razon_social,
-            this.nombre_comercial,
-            this.sigla_hotel,
-            this.clave_hanna,
-            this.centro_beneficio,
-            this.monto_pauta,
-            this.anticipo_pauta,
-            this.porcentaje_mkf,
-            this.vigencia_fesde_mkf,
-            this.vigencia_hasta_mkk,
-            this.forma_calculo,
-            this.monto_fijo,
-            this.monto_fijo_iva,
-            this.divisa,
-            this.vigencia_monto_desde,
-            this.vigencia_monto_hasta,
-            this.trans_bancaria,
-            this.compensacion,
-            this.noches,
-            this.ambas,
-            this.esquema_comision,
-            this.observaciones,
-            this.sypply,
-            this.ejecutivo,
-            this.account,
-            this.archivo,
-            this.enero,
-            this.febrero,
-            this.marzo,
-            this.abril,
-            this.mayo,
-            this.junio,
-            this.julio,
-            this.agosto,
-            this.septiembre,
-            this.octubre,
-            this.noviembre,
-            this.diciembre,
-            this.anio_ene,
-            this.anio_feb,
-            this.anio_mar,
-            this.anio_abr,
-            this.anio_may,
-            this.anio_jun,
-            this.anio_jul,
-            this.anio_ago,
-            this.anio_sep,
-            this.anio_oct,
-            this.anio_nov,
-            this.anio_dic,
-            this.monto_ene,
-            this.monto_feb,
-            this.monto_mar,
-            this.monto_abr,
-            this.monto_may,
-            this.monto_jun,
-            this.monto_jul,
-            this.monto_ago,
-            this.monto_sep,
-            this.monto_oct,
-            this.monto_nov,
-            this.monto_dic,
-            this.fact_ene,
-            this.fact_feb,
-            this.fact_mar,
-            this.fact_abr,
-            this.fact_may,
-            this.fact_jun,
-            this.fact_jul,
-            this.fact_ago,
-            this.fact_sep,
-            this.fact_oct,
-            this.fact_nov,
-            this.fact_dic,
-            this.cob_ene,
-            this.cob_feb,
-            this.cob_mar,
-            this.cob_abr,
-            this.cob_may,
-            this.cob_jun,
-            this.cob_jul,
-            this.cob_ago,
-            this.cob_sep,
-            this.cob_oct,
-            this.cob_nov,
-            this.cob_dic,
-            this.fcene,
-            this.fcfeb,
-            this.fcmarzo,
-            this.fcabr,
-            this.fcmay,
-            this.fcjun,
-            this.fcjul,
-            this.fcago,
-            this.fcsep,
-            this.fcoct,
-            this.fcnov,
-            this.fcdic,
-            this.esqene,
-            this.esqfeb,
-            this.esqmar,
-            this.esqabr,
-            this.esqmay,
-            this.esqjun,
-            this.esqjul,
-            this.esqago,
-            this.esqsep,
-            this.esqoct,
-            this.esqnov,
-            this.esqdic,
-            this.fc_ene,
-            this.fc_feb,
-            this.fc_mar,
-            this.fc_abr,
-            this.fc_may,
-            this.fc_jun,
-            this.fc_jul,
-            this.fc_ago,
-            this.fc_sep,
-            this.fc_oct,
-            this.fc_nov,
-            this.fc_dic,
-            this.monto_pautado,
-            this.monto_facturado,
-            this.monto_cobrado,
-            this.por_pautado,
-            this.por_facturado,
-            this.por_cobrado});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.listaSaldos.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.listaSaldos.DefaultCellStyle = dataGridViewCellStyle2;
             this.listaSaldos.EnableHeadersVisualStyles = false;
             this.listaSaldos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.listaSaldos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.listaSaldos.Location = new System.Drawing.Point(325, 17);
             this.listaSaldos.Name = "listaSaldos";
             this.listaSaldos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.listaSaldos.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.listaSaldos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.listaSaldos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.listaSaldos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listaSaldos.Size = new System.Drawing.Size(889, 494);
             this.listaSaldos.TabIndex = 76;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            // 
-            // fecha_alta
-            // 
-            this.fecha_alta.HeaderText = "Fecha de alta";
-            this.fecha_alta.Name = "fecha_alta";
-            // 
-            // folio_media
-            // 
-            this.folio_media.HeaderText = "Folio Media";
-            this.folio_media.Name = "folio_media";
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            // 
-            // pais
-            // 
-            this.pais.HeaderText = "Pais";
-            this.pais.Name = "pais";
-            // 
-            // tipo_pauta
-            // 
-            this.tipo_pauta.HeaderText = "Tipo Pauta";
-            this.tipo_pauta.Name = "tipo_pauta";
-            // 
-            // categoria
-            // 
-            this.categoria.HeaderText = "Categoría";
-            this.categoria.Name = "categoria";
-            // 
-            // contrato
-            // 
-            this.contrato.HeaderText = "Contrato";
-            this.contrato.Name = "contrato";
-            // 
-            // razon_social
-            // 
-            this.razon_social.HeaderText = "Razón Social";
-            this.razon_social.Name = "razon_social";
-            // 
-            // nombre_comercial
-            // 
-            this.nombre_comercial.HeaderText = "Nombre Comercial";
-            this.nombre_comercial.Name = "nombre_comercial";
-            // 
-            // sigla_hotel
-            // 
-            this.sigla_hotel.HeaderText = "Sigla Hotel";
-            this.sigla_hotel.Name = "sigla_hotel";
-            // 
-            // clave_hanna
-            // 
-            this.clave_hanna.HeaderText = "Clave Hanna";
-            this.clave_hanna.Name = "clave_hanna";
-            // 
-            // centro_beneficio
-            // 
-            this.centro_beneficio.HeaderText = "Centro Beneficio";
-            this.centro_beneficio.Name = "centro_beneficio";
-            // 
-            // monto_pauta
-            // 
-            this.monto_pauta.HeaderText = "Monto Pauta";
-            this.monto_pauta.Name = "monto_pauta";
-            // 
-            // anticipo_pauta
-            // 
-            this.anticipo_pauta.HeaderText = "Anticipo Pauta";
-            this.anticipo_pauta.Name = "anticipo_pauta";
-            // 
-            // porcentaje_mkf
-            // 
-            this.porcentaje_mkf.HeaderText = "% MKF";
-            this.porcentaje_mkf.Name = "porcentaje_mkf";
-            // 
-            // vigencia_fesde_mkf
-            // 
-            this.vigencia_fesde_mkf.HeaderText = "Vigencia desde MKF";
-            this.vigencia_fesde_mkf.Name = "vigencia_fesde_mkf";
-            // 
-            // vigencia_hasta_mkk
-            // 
-            this.vigencia_hasta_mkk.HeaderText = "Vigencia hasta MKF";
-            this.vigencia_hasta_mkk.Name = "vigencia_hasta_mkk";
-            // 
-            // forma_calculo
-            // 
-            this.forma_calculo.HeaderText = "Forma de Calculo";
-            this.forma_calculo.Name = "forma_calculo";
-            // 
-            // monto_fijo
-            // 
-            this.monto_fijo.HeaderText = "Monto Fijo";
-            this.monto_fijo.Name = "monto_fijo";
-            // 
-            // monto_fijo_iva
-            // 
-            this.monto_fijo_iva.HeaderText = "Monto FIjo IVA";
-            this.monto_fijo_iva.Name = "monto_fijo_iva";
-            // 
-            // divisa
-            // 
-            this.divisa.HeaderText = "Divisa";
-            this.divisa.Name = "divisa";
-            // 
-            // vigencia_monto_desde
-            // 
-            this.vigencia_monto_desde.HeaderText = "Vigencia Monto Desde";
-            this.vigencia_monto_desde.Name = "vigencia_monto_desde";
-            // 
-            // vigencia_monto_hasta
-            // 
-            this.vigencia_monto_hasta.HeaderText = "Vigencia Monto Hasta";
-            this.vigencia_monto_hasta.Name = "vigencia_monto_hasta";
-            // 
-            // trans_bancaria
-            // 
-            this.trans_bancaria.HeaderText = "Transf Bancaria";
-            this.trans_bancaria.Name = "trans_bancaria";
-            // 
-            // compensacion
-            // 
-            this.compensacion.HeaderText = "Compensación";
-            this.compensacion.Name = "compensacion";
-            // 
-            // noches
-            // 
-            this.noches.HeaderText = "Noches";
-            this.noches.Name = "noches";
-            // 
-            // ambas
-            // 
-            this.ambas.HeaderText = "Ambas";
-            this.ambas.Name = "ambas";
-            // 
-            // esquema_comision
-            // 
-            this.esquema_comision.HeaderText = "Esquema Comisión";
-            this.esquema_comision.Name = "esquema_comision";
-            // 
-            // observaciones
-            // 
-            this.observaciones.HeaderText = "Observaciones";
-            this.observaciones.Name = "observaciones";
-            // 
-            // sypply
-            // 
-            this.sypply.HeaderText = "Supply Manager";
-            this.sypply.Name = "sypply";
-            // 
-            // ejecutivo
-            // 
-            this.ejecutivo.HeaderText = "Ejecutivo DAF";
-            this.ejecutivo.Name = "ejecutivo";
-            // 
-            // account
-            // 
-            this.account.HeaderText = "Account Manager";
-            this.account.Name = "account";
-            // 
-            // archivo
-            // 
-            this.archivo.HeaderText = "Archivo";
-            this.archivo.Name = "archivo";
-            // 
-            // enero
-            // 
-            this.enero.HeaderText = "Enero";
-            this.enero.Name = "enero";
-            // 
-            // febrero
-            // 
-            this.febrero.HeaderText = "Febrero";
-            this.febrero.Name = "febrero";
-            // 
-            // marzo
-            // 
-            this.marzo.HeaderText = "Marzo";
-            this.marzo.Name = "marzo";
-            // 
-            // abril
-            // 
-            this.abril.HeaderText = "Abril";
-            this.abril.Name = "abril";
-            // 
-            // mayo
-            // 
-            this.mayo.HeaderText = "Mayo";
-            this.mayo.Name = "mayo";
-            // 
-            // junio
-            // 
-            this.junio.HeaderText = "Junio";
-            this.junio.Name = "junio";
-            // 
-            // julio
-            // 
-            this.julio.HeaderText = "Julio";
-            this.julio.Name = "julio";
-            // 
-            // agosto
-            // 
-            this.agosto.HeaderText = "Agosto";
-            this.agosto.Name = "agosto";
-            // 
-            // septiembre
-            // 
-            this.septiembre.HeaderText = "Septiembre";
-            this.septiembre.Name = "septiembre";
-            // 
-            // octubre
-            // 
-            this.octubre.HeaderText = "Octubre";
-            this.octubre.Name = "octubre";
-            // 
-            // noviembre
-            // 
-            this.noviembre.HeaderText = "Noviembre";
-            this.noviembre.Name = "noviembre";
-            // 
-            // diciembre
-            // 
-            this.diciembre.HeaderText = "Diciembre";
-            this.diciembre.Name = "diciembre";
-            // 
-            // anio_ene
-            // 
-            this.anio_ene.HeaderText = "Año Enero";
-            this.anio_ene.Name = "anio_ene";
-            // 
-            // anio_feb
-            // 
-            this.anio_feb.HeaderText = "Año Febrero";
-            this.anio_feb.Name = "anio_feb";
-            // 
-            // anio_mar
-            // 
-            this.anio_mar.HeaderText = "Año Marzo";
-            this.anio_mar.Name = "anio_mar";
-            // 
-            // anio_abr
-            // 
-            this.anio_abr.HeaderText = "Año Abril";
-            this.anio_abr.Name = "anio_abr";
-            // 
-            // anio_may
-            // 
-            this.anio_may.HeaderText = "Año Mayo";
-            this.anio_may.Name = "anio_may";
-            // 
-            // anio_jun
-            // 
-            this.anio_jun.HeaderText = "Año Junio";
-            this.anio_jun.Name = "anio_jun";
-            // 
-            // anio_jul
-            // 
-            this.anio_jul.HeaderText = "Año Julio";
-            this.anio_jul.Name = "anio_jul";
-            // 
-            // anio_ago
-            // 
-            this.anio_ago.HeaderText = "Año Agosto";
-            this.anio_ago.Name = "anio_ago";
-            // 
-            // anio_sep
-            // 
-            this.anio_sep.HeaderText = "Año Septiembre";
-            this.anio_sep.Name = "anio_sep";
-            // 
-            // anio_oct
-            // 
-            this.anio_oct.HeaderText = "Año Octubre";
-            this.anio_oct.Name = "anio_oct";
-            // 
-            // anio_nov
-            // 
-            this.anio_nov.HeaderText = "Año Noviembre";
-            this.anio_nov.Name = "anio_nov";
-            // 
-            // anio_dic
-            // 
-            this.anio_dic.HeaderText = "Año Diciembre";
-            this.anio_dic.Name = "anio_dic";
-            // 
-            // monto_ene
-            // 
-            this.monto_ene.HeaderText = "Monto Enero";
-            this.monto_ene.Name = "monto_ene";
-            // 
-            // monto_feb
-            // 
-            this.monto_feb.HeaderText = "Monto Febrero";
-            this.monto_feb.Name = "monto_feb";
-            // 
-            // monto_mar
-            // 
-            this.monto_mar.HeaderText = "Monto Marzo";
-            this.monto_mar.Name = "monto_mar";
-            // 
-            // monto_abr
-            // 
-            this.monto_abr.HeaderText = "Monto Abril";
-            this.monto_abr.Name = "monto_abr";
-            // 
-            // monto_may
-            // 
-            this.monto_may.HeaderText = "Monto Mayo";
-            this.monto_may.Name = "monto_may";
-            // 
-            // monto_jun
-            // 
-            this.monto_jun.HeaderText = "Monto Junio";
-            this.monto_jun.Name = "monto_jun";
-            // 
-            // monto_jul
-            // 
-            this.monto_jul.HeaderText = "Monto Julio";
-            this.monto_jul.Name = "monto_jul";
-            // 
-            // monto_ago
-            // 
-            this.monto_ago.HeaderText = "Monto Agosto";
-            this.monto_ago.Name = "monto_ago";
-            // 
-            // monto_sep
-            // 
-            this.monto_sep.HeaderText = "Monto Septiembre";
-            this.monto_sep.Name = "monto_sep";
-            // 
-            // monto_oct
-            // 
-            this.monto_oct.HeaderText = "Monto Octubre";
-            this.monto_oct.Name = "monto_oct";
-            // 
-            // monto_nov
-            // 
-            this.monto_nov.HeaderText = "Monto Noviembre";
-            this.monto_nov.Name = "monto_nov";
-            // 
-            // monto_dic
-            // 
-            this.monto_dic.HeaderText = "Monto Diciembre";
-            this.monto_dic.Name = "monto_dic";
-            // 
-            // fact_ene
-            // 
-            this.fact_ene.HeaderText = "Facturado Enero";
-            this.fact_ene.Name = "fact_ene";
-            // 
-            // fact_feb
-            // 
-            this.fact_feb.HeaderText = "Facturado Febrero";
-            this.fact_feb.Name = "fact_feb";
-            // 
-            // fact_mar
-            // 
-            this.fact_mar.HeaderText = "Facturado Marzo";
-            this.fact_mar.Name = "fact_mar";
-            // 
-            // fact_abr
-            // 
-            this.fact_abr.HeaderText = "Facturado Abril";
-            this.fact_abr.Name = "fact_abr";
-            // 
-            // fact_may
-            // 
-            this.fact_may.HeaderText = "Facturado Mayo";
-            this.fact_may.Name = "fact_may";
-            // 
-            // fact_jun
-            // 
-            this.fact_jun.HeaderText = "Facturado Junio";
-            this.fact_jun.Name = "fact_jun";
-            // 
-            // fact_jul
-            // 
-            this.fact_jul.HeaderText = "Facturado Julio";
-            this.fact_jul.Name = "fact_jul";
-            // 
-            // fact_ago
-            // 
-            this.fact_ago.HeaderText = "Facturado Agosto";
-            this.fact_ago.Name = "fact_ago";
-            // 
-            // fact_sep
-            // 
-            this.fact_sep.HeaderText = "Facturado Septiembre";
-            this.fact_sep.Name = "fact_sep";
-            // 
-            // fact_oct
-            // 
-            this.fact_oct.HeaderText = "Facturado Octubre";
-            this.fact_oct.Name = "fact_oct";
-            // 
-            // fact_nov
-            // 
-            this.fact_nov.HeaderText = "Facturado Noviembre";
-            this.fact_nov.Name = "fact_nov";
-            // 
-            // fact_dic
-            // 
-            this.fact_dic.HeaderText = "Facturado Diciembre";
-            this.fact_dic.Name = "fact_dic";
-            // 
-            // cob_ene
-            // 
-            this.cob_ene.HeaderText = "Cobrado Enero";
-            this.cob_ene.Name = "cob_ene";
-            // 
-            // cob_feb
-            // 
-            this.cob_feb.HeaderText = "Cobrado Febrero";
-            this.cob_feb.Name = "cob_feb";
-            // 
-            // cob_mar
-            // 
-            this.cob_mar.HeaderText = "Cobrado Marzo";
-            this.cob_mar.Name = "cob_mar";
-            // 
-            // cob_abr
-            // 
-            this.cob_abr.HeaderText = "Cobrado Abril";
-            this.cob_abr.Name = "cob_abr";
-            // 
-            // cob_may
-            // 
-            this.cob_may.HeaderText = "Cobrado Mayo";
-            this.cob_may.Name = "cob_may";
-            // 
-            // cob_jun
-            // 
-            this.cob_jun.HeaderText = "Cobrado Junio";
-            this.cob_jun.Name = "cob_jun";
-            // 
-            // cob_jul
-            // 
-            this.cob_jul.HeaderText = "Cobrado Julio";
-            this.cob_jul.Name = "cob_jul";
-            // 
-            // cob_ago
-            // 
-            this.cob_ago.HeaderText = "Cobrado Agosto";
-            this.cob_ago.Name = "cob_ago";
-            // 
-            // cob_sep
-            // 
-            this.cob_sep.HeaderText = "Cobrado Septiembre";
-            this.cob_sep.Name = "cob_sep";
-            // 
-            // cob_oct
-            // 
-            this.cob_oct.HeaderText = "Cobrado Octubre";
-            this.cob_oct.Name = "cob_oct";
-            // 
-            // cob_nov
-            // 
-            this.cob_nov.HeaderText = "Cobrado Noviembre";
-            this.cob_nov.Name = "cob_nov";
-            // 
-            // cob_dic
-            // 
-            this.cob_dic.HeaderText = "Cobrado Dicembre";
-            this.cob_dic.Name = "cob_dic";
-            // 
-            // fcene
-            // 
-            this.fcene.HeaderText = "Fecha Cobro Enero";
-            this.fcene.Name = "fcene";
-            // 
-            // fcfeb
-            // 
-            this.fcfeb.HeaderText = "Fecha Cobro Febrero";
-            this.fcfeb.Name = "fcfeb";
-            // 
-            // fcmarzo
-            // 
-            this.fcmarzo.HeaderText = "Fecha Cobro Marzo";
-            this.fcmarzo.Name = "fcmarzo";
-            // 
-            // fcabr
-            // 
-            this.fcabr.HeaderText = "Fecha Cobro Abril";
-            this.fcabr.Name = "fcabr";
-            // 
-            // fcmay
-            // 
-            this.fcmay.HeaderText = "Fecha Cobro Mayo";
-            this.fcmay.Name = "fcmay";
-            // 
-            // fcjun
-            // 
-            this.fcjun.HeaderText = "Fecha Cobro Junio";
-            this.fcjun.Name = "fcjun";
-            // 
-            // fcjul
-            // 
-            this.fcjul.HeaderText = "Fecha Cobro Julio";
-            this.fcjul.Name = "fcjul";
-            // 
-            // fcago
-            // 
-            this.fcago.HeaderText = "Fecha Cobro Agosto";
-            this.fcago.Name = "fcago";
-            // 
-            // fcsep
-            // 
-            this.fcsep.HeaderText = "Fecha Cobro Septiembre";
-            this.fcsep.Name = "fcsep";
-            // 
-            // fcoct
-            // 
-            this.fcoct.HeaderText = "Fecha Cobro Octubre";
-            this.fcoct.Name = "fcoct";
-            // 
-            // fcnov
-            // 
-            this.fcnov.HeaderText = "Fecha Cobro Noviembre";
-            this.fcnov.Name = "fcnov";
-            // 
-            // fcdic
-            // 
-            this.fcdic.HeaderText = "Fecha Cobro Diciembre";
-            this.fcdic.Name = "fcdic";
-            // 
-            // esqene
-            // 
-            this.esqene.HeaderText = "Esquema Enero";
-            this.esqene.Name = "esqene";
-            // 
-            // esqfeb
-            // 
-            this.esqfeb.HeaderText = "Esquema Febrero";
-            this.esqfeb.Name = "esqfeb";
-            // 
-            // esqmar
-            // 
-            this.esqmar.HeaderText = "Esquema Marzo";
-            this.esqmar.Name = "esqmar";
-            // 
-            // esqabr
-            // 
-            this.esqabr.HeaderText = "Esquema Abril";
-            this.esqabr.Name = "esqabr";
-            // 
-            // esqmay
-            // 
-            this.esqmay.HeaderText = "Esquema Mayo";
-            this.esqmay.Name = "esqmay";
-            // 
-            // esqjun
-            // 
-            this.esqjun.HeaderText = "Esquema Junio";
-            this.esqjun.Name = "esqjun";
-            // 
-            // esqjul
-            // 
-            this.esqjul.HeaderText = "Esquema Julio";
-            this.esqjul.Name = "esqjul";
-            // 
-            // esqago
-            // 
-            this.esqago.HeaderText = "Esquema Agosto";
-            this.esqago.Name = "esqago";
-            // 
-            // esqsep
-            // 
-            this.esqsep.HeaderText = "Esquema Septiembre";
-            this.esqsep.Name = "esqsep";
-            // 
-            // esqoct
-            // 
-            this.esqoct.HeaderText = "Esquema Octubre";
-            this.esqoct.Name = "esqoct";
-            // 
-            // esqnov
-            // 
-            this.esqnov.HeaderText = "Esquema Noviembre";
-            this.esqnov.Name = "esqnov";
-            // 
-            // esqdic
-            // 
-            this.esqdic.HeaderText = "Esquema Diciembre";
-            this.esqdic.Name = "esqdic";
-            // 
-            // fc_ene
-            // 
-            this.fc_ene.HeaderText = "Fecha Comisión Enero";
-            this.fc_ene.Name = "fc_ene";
-            // 
-            // fc_feb
-            // 
-            this.fc_feb.HeaderText = "Fecha Comisión Febrero";
-            this.fc_feb.Name = "fc_feb";
-            // 
-            // fc_mar
-            // 
-            this.fc_mar.HeaderText = "Fecha Comisión Marzo";
-            this.fc_mar.Name = "fc_mar";
-            // 
-            // fc_abr
-            // 
-            this.fc_abr.HeaderText = "Fecha Comisión Abril";
-            this.fc_abr.Name = "fc_abr";
-            // 
-            // fc_may
-            // 
-            this.fc_may.HeaderText = "Fecha Comisión Mayo";
-            this.fc_may.Name = "fc_may";
-            // 
-            // fc_jun
-            // 
-            this.fc_jun.HeaderText = "Fecha Comisión Junio";
-            this.fc_jun.Name = "fc_jun";
-            // 
-            // fc_jul
-            // 
-            this.fc_jul.HeaderText = "Fecha Comisión Julio";
-            this.fc_jul.Name = "fc_jul";
-            // 
-            // fc_ago
-            // 
-            this.fc_ago.HeaderText = "Fecha Comisión Agosto";
-            this.fc_ago.Name = "fc_ago";
-            // 
-            // fc_sep
-            // 
-            this.fc_sep.HeaderText = "Fecha Comisión Septiembre";
-            this.fc_sep.Name = "fc_sep";
-            // 
-            // fc_oct
-            // 
-            this.fc_oct.HeaderText = "Fecha Comisión Octubre";
-            this.fc_oct.Name = "fc_oct";
-            // 
-            // fc_nov
-            // 
-            this.fc_nov.HeaderText = "Fecha Comisión Noviembre";
-            this.fc_nov.Name = "fc_nov";
-            // 
-            // fc_dic
-            // 
-            this.fc_dic.HeaderText = "Fecha Comisión Diciembre";
-            this.fc_dic.Name = "fc_dic";
-            // 
-            // monto_pautado
-            // 
-            this.monto_pautado.HeaderText = "Monto Pautado";
-            this.monto_pautado.Name = "monto_pautado";
-            // 
-            // monto_facturado
-            // 
-            this.monto_facturado.HeaderText = "Monto Facturado";
-            this.monto_facturado.Name = "monto_facturado";
-            // 
-            // monto_cobrado
-            // 
-            this.monto_cobrado.HeaderText = "Monto Cobrado";
-            this.monto_cobrado.Name = "monto_cobrado";
-            // 
-            // por_pautado
-            // 
-            this.por_pautado.HeaderText = "% Pautado";
-            this.por_pautado.Name = "por_pautado";
-            // 
-            // por_facturado
-            // 
-            this.por_facturado.HeaderText = "% Facturado";
-            this.por_facturado.Name = "por_facturado";
-            // 
-            // por_cobrado
-            // 
-            this.por_cobrado.HeaderText = "% Cobrado";
-            this.por_cobrado.Name = "por_cobrado";
+            this.listaSaldos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listaSaldos_MouseDoubleClick);
             // 
             // groupBox13
             // 
@@ -6239,6 +5469,7 @@
             this.tMedia.UseSelectable = true;
             this.tMedia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.tMedia.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.tMedia.DoubleClick += new System.EventHandler(this.tMedia_DoubleClick);
             // 
             // metroLabel3
             // 
@@ -6308,145 +5539,228 @@
             this.add.UseSelectable = true;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
-            // sumas
+            // textAnticipo
             // 
-            this.sumas.Location = new System.Drawing.Point(15, 468);
-            this.sumas.Name = "sumas";
-            this.sumas.Size = new System.Drawing.Size(75, 23);
-            this.sumas.TabIndex = 265;
-            this.sumas.Text = "Sumar";
-            this.sumas.UseSelectable = true;
-            this.sumas.Click += new System.EventHandler(this.sumas_Click);
+            this.textAnticipo.ForeColor = System.Drawing.Color.Black;
+            this.textAnticipo.Location = new System.Drawing.Point(662, 19);
+            this.textAnticipo.Name = "textAnticipo";
+            this.textAnticipo.Size = new System.Drawing.Size(10, 20);
+            this.textAnticipo.TabIndex = 211;
+            this.textAnticipo.Visible = false;
             // 
-            // calculo
+            // totalMeses
             // 
-            this.calculo.Location = new System.Drawing.Point(96, 468);
-            this.calculo.Name = "calculo";
-            this.calculo.Size = new System.Drawing.Size(75, 23);
-            this.calculo.TabIndex = 264;
-            this.calculo.Text = "Calcular";
-            this.calculo.UseSelectable = true;
-            this.calculo.Click += new System.EventHandler(this.calculo_Click);
+            this.totalMeses.Location = new System.Drawing.Point(639, 19);
+            this.totalMeses.Name = "totalMeses";
+            this.totalMeses.Size = new System.Drawing.Size(13, 20);
+            this.totalMeses.TabIndex = 209;
+            this.totalMeses.Visible = false;
             // 
-            // metroLabel49
+            // total
             // 
-            this.metroLabel49.AutoSize = true;
-            this.metroLabel49.Location = new System.Drawing.Point(6, 15);
-            this.metroLabel49.Name = "metroLabel49";
-            this.metroLabel49.Size = new System.Drawing.Size(103, 19);
-            this.metroLabel49.TabIndex = 266;
-            this.metroLabel49.Text = "Monto Pautado:";
+            this.total.Location = new System.Drawing.Point(599, 19);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(14, 20);
+            this.total.TabIndex = 208;
+            this.total.Visible = false;
             // 
-            // cantMonto
+            // ide
             // 
-            this.cantMonto.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.cantMonto.DoubleValue = 0D;
-            this.cantMonto.Location = new System.Drawing.Point(6, 37);
-            this.cantMonto.Name = "cantMonto";
-            this.cantMonto.Size = new System.Drawing.Size(165, 20);
-            this.cantMonto.TabIndex = 267;
-            this.cantMonto.Text = "0.00";
+            this.ide.Location = new System.Drawing.Point(619, 19);
+            this.ide.Name = "ide";
+            this.ide.Size = new System.Drawing.Size(14, 20);
+            this.ide.TabIndex = 210;
+            this.ide.Visible = false;
             // 
-            // cantFacturado
+            // dateHastaMonto
             // 
-            this.cantFacturado.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.cantFacturado.DoubleValue = 0D;
-            this.cantFacturado.Location = new System.Drawing.Point(6, 89);
-            this.cantFacturado.Name = "cantFacturado";
-            this.cantFacturado.Size = new System.Drawing.Size(165, 20);
-            this.cantFacturado.TabIndex = 269;
-            this.cantFacturado.Text = "0.00";
+            this.dateHastaMonto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateHastaMonto.Location = new System.Drawing.Point(541, 19);
+            this.dateHastaMonto.Name = "dateHastaMonto";
+            this.dateHastaMonto.Size = new System.Drawing.Size(25, 20);
+            this.dateHastaMonto.TabIndex = 213;
+            this.dateHastaMonto.Visible = false;
             // 
-            // metroLabel50
+            // dateDesdeMonto
             // 
-            this.metroLabel50.AutoSize = true;
-            this.metroLabel50.Location = new System.Drawing.Point(6, 67);
-            this.metroLabel50.Name = "metroLabel50";
-            this.metroLabel50.Size = new System.Drawing.Size(113, 19);
-            this.metroLabel50.TabIndex = 268;
-            this.metroLabel50.Text = "Monto Facturado:";
+            this.dateDesdeMonto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDesdeMonto.Location = new System.Drawing.Point(568, 19);
+            this.dateDesdeMonto.Name = "dateDesdeMonto";
+            this.dateDesdeMonto.Size = new System.Drawing.Size(25, 20);
+            this.dateDesdeMonto.TabIndex = 212;
+            this.dateDesdeMonto.Visible = false;
             // 
-            // cantCobrado
+            // id
             // 
-            this.cantCobrado.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.cantCobrado.DoubleValue = 0D;
-            this.cantCobrado.Location = new System.Drawing.Point(6, 142);
-            this.cantCobrado.Name = "cantCobrado";
-            this.cantCobrado.Size = new System.Drawing.Size(165, 20);
-            this.cantCobrado.TabIndex = 271;
-            this.cantCobrado.Text = "0.00";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
             // 
-            // metroLabel51
+            // fecha_alta
             // 
-            this.metroLabel51.AutoSize = true;
-            this.metroLabel51.Location = new System.Drawing.Point(6, 120);
-            this.metroLabel51.Name = "metroLabel51";
-            this.metroLabel51.Size = new System.Drawing.Size(108, 19);
-            this.metroLabel51.TabIndex = 270;
-            this.metroLabel51.Text = "Monto Cobrado:";
+            this.fecha_alta.HeaderText = "Fecha de alta";
+            this.fecha_alta.Name = "fecha_alta";
             // 
-            // porcentajeCobrado
+            // folio_media
             // 
-            this.porcentajeCobrado.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.porcentajeCobrado.DoubleValue = 0D;
-            this.porcentajeCobrado.Location = new System.Drawing.Point(6, 331);
-            this.porcentajeCobrado.Name = "porcentajeCobrado";
-            this.porcentajeCobrado.Size = new System.Drawing.Size(165, 20);
-            this.porcentajeCobrado.TabIndex = 277;
-            this.porcentajeCobrado.Text = "0.00";
+            this.folio_media.HeaderText = "Folio Media";
+            this.folio_media.Name = "folio_media";
             // 
-            // metroLabel52
+            // status
             // 
-            this.metroLabel52.AutoSize = true;
-            this.metroLabel52.Location = new System.Drawing.Point(6, 309);
-            this.metroLabel52.Name = "metroLabel52";
-            this.metroLabel52.Size = new System.Drawing.Size(130, 19);
-            this.metroLabel52.TabIndex = 276;
-            this.metroLabel52.Text = "Porcentaje Cobrado:";
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
             // 
-            // porcentajeFacturado
+            // pais
             // 
-            this.porcentajeFacturado.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.porcentajeFacturado.DoubleValue = 0D;
-            this.porcentajeFacturado.Location = new System.Drawing.Point(6, 278);
-            this.porcentajeFacturado.Name = "porcentajeFacturado";
-            this.porcentajeFacturado.Size = new System.Drawing.Size(165, 20);
-            this.porcentajeFacturado.TabIndex = 275;
-            this.porcentajeFacturado.Text = "0.00";
+            this.pais.HeaderText = "Pais";
+            this.pais.Name = "pais";
             // 
-            // metroLabel53
+            // tipo_pauta
             // 
-            this.metroLabel53.AutoSize = true;
-            this.metroLabel53.Location = new System.Drawing.Point(6, 256);
-            this.metroLabel53.Name = "metroLabel53";
-            this.metroLabel53.Size = new System.Drawing.Size(135, 19);
-            this.metroLabel53.TabIndex = 274;
-            this.metroLabel53.Text = "Porcentaje Facturado:";
+            this.tipo_pauta.HeaderText = "Tipo Pauta";
+            this.tipo_pauta.Name = "tipo_pauta";
             // 
-            // porcentajeMonto
+            // categoria
             // 
-            this.porcentajeMonto.BeforeTouchSize = new System.Drawing.Size(165, 20);
-            this.porcentajeMonto.DoubleValue = 0D;
-            this.porcentajeMonto.Location = new System.Drawing.Point(6, 226);
-            this.porcentajeMonto.Name = "porcentajeMonto";
-            this.porcentajeMonto.Size = new System.Drawing.Size(165, 20);
-            this.porcentajeMonto.TabIndex = 273;
-            this.porcentajeMonto.Text = "0.00";
+            this.categoria.HeaderText = "Categoría";
+            this.categoria.Name = "categoria";
             // 
-            // metroLabel54
+            // contrato
             // 
-            this.metroLabel54.AutoSize = true;
-            this.metroLabel54.Location = new System.Drawing.Point(6, 204);
-            this.metroLabel54.Name = "metroLabel54";
-            this.metroLabel54.Size = new System.Drawing.Size(125, 19);
-            this.metroLabel54.TabIndex = 272;
-            this.metroLabel54.Text = "Porcentaje Pautado:";
+            this.contrato.HeaderText = "Contrato";
+            this.contrato.Name = "contrato";
+            // 
+            // razon_social
+            // 
+            this.razon_social.HeaderText = "Razón Social";
+            this.razon_social.Name = "razon_social";
+            // 
+            // nombre_comercial
+            // 
+            this.nombre_comercial.HeaderText = "Nombre Comercial";
+            this.nombre_comercial.Name = "nombre_comercial";
+            // 
+            // sigla_hotel
+            // 
+            this.sigla_hotel.HeaderText = "Sigla Hotel";
+            this.sigla_hotel.Name = "sigla_hotel";
+            // 
+            // clave_hanna
+            // 
+            this.clave_hanna.HeaderText = "Clave Hanna";
+            this.clave_hanna.Name = "clave_hanna";
+            // 
+            // centro_beneficio
+            // 
+            this.centro_beneficio.HeaderText = "Centro Beneficio";
+            this.centro_beneficio.Name = "centro_beneficio";
+            // 
+            // monto_pauta
+            // 
+            this.monto_pauta.HeaderText = "Monto Pauta";
+            this.monto_pauta.Name = "monto_pauta";
+            // 
+            // anticipo_pauta
+            // 
+            this.anticipo_pauta.HeaderText = "Anticipo Pauta";
+            this.anticipo_pauta.Name = "anticipo_pauta";
+            // 
+            // porcentaje_mkf
+            // 
+            this.porcentaje_mkf.HeaderText = "% MKF";
+            this.porcentaje_mkf.Name = "porcentaje_mkf";
+            // 
+            // vigencia_fesde_mkf
+            // 
+            this.vigencia_fesde_mkf.HeaderText = "Vigencia desde MKF";
+            this.vigencia_fesde_mkf.Name = "vigencia_fesde_mkf";
+            // 
+            // vigencia_hasta_mkk
+            // 
+            this.vigencia_hasta_mkk.HeaderText = "Vigencia hasta MKF";
+            this.vigencia_hasta_mkk.Name = "vigencia_hasta_mkk";
+            // 
+            // forma_calculo1
+            // 
+            this.forma_calculo1.HeaderText = "Forma de Calculo";
+            this.forma_calculo1.Name = "forma_calculo1";
+            // 
+            // monto_fijo
+            // 
+            this.monto_fijo.HeaderText = "Monto Fijo";
+            this.monto_fijo.Name = "monto_fijo";
+            // 
+            // monto_fijo_iva
+            // 
+            this.monto_fijo_iva.HeaderText = "Monto FIjo IVA";
+            this.monto_fijo_iva.Name = "monto_fijo_iva";
+            // 
+            // divisa
+            // 
+            this.divisa.HeaderText = "Divisa";
+            this.divisa.Name = "divisa";
+            // 
+            // vigencia_monto_desde
+            // 
+            this.vigencia_monto_desde.HeaderText = "Vigencia Monto Desde";
+            this.vigencia_monto_desde.Name = "vigencia_monto_desde";
+            // 
+            // vigencia_monto_hasta
+            // 
+            this.vigencia_monto_hasta.HeaderText = "Vigencia Monto Hasta";
+            this.vigencia_monto_hasta.Name = "vigencia_monto_hasta";
+            // 
+            // trans_bancaria
+            // 
+            this.trans_bancaria.HeaderText = "Transf Bancaria";
+            this.trans_bancaria.Name = "trans_bancaria";
+            // 
+            // compensacion1
+            // 
+            this.compensacion1.HeaderText = "Compensación";
+            this.compensacion1.Name = "compensacion1";
+            // 
+            // noches1
+            // 
+            this.noches1.HeaderText = "Noches";
+            this.noches1.Name = "noches1";
+            // 
+            // ambas
+            // 
+            this.ambas.HeaderText = "Ambas";
+            this.ambas.Name = "ambas";
+            // 
+            // esquema_comision
+            // 
+            this.esquema_comision.HeaderText = "Esquema Comisión";
+            this.esquema_comision.Name = "esquema_comision";
+            // 
+            // observaciones
+            // 
+            this.observaciones.HeaderText = "Observaciones";
+            this.observaciones.Name = "observaciones";
+            // 
+            // sypply
+            // 
+            this.sypply.HeaderText = "Supply Manager";
+            this.sypply.Name = "sypply";
+            // 
+            // ejecutivo
+            // 
+            this.ejecutivo.HeaderText = "Ejecutivo DAF";
+            this.ejecutivo.Name = "ejecutivo";
             // 
             // orden_insercion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 679);
+            this.Controls.Add(this.textAnticipo);
+            this.Controls.Add(this.totalMeses);
+            this.Controls.Add(this.total);
+            this.Controls.Add(this.ide);
+            this.Controls.Add(this.dateHastaMonto);
+            this.Controls.Add(this.dateDesdeMonto);
             this.Controls.Add(this.add);
             this.Controls.Add(this.edit);
             this.Controls.Add(this.delete);
@@ -6484,6 +5798,12 @@
             this.groupBox1.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeCobrado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeFacturado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.porcentajeMonto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantCobrado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantFacturado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cantMonto)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -6534,12 +5854,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaSaldos)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cantMonto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cantFacturado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cantCobrado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeCobrado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeFacturado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.porcentajeMonto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6854,6 +6168,26 @@
         private MetroFramework.Controls.MetroButton all;
         private MetroFramework.Controls.MetroButton find;
         private MetroFramework.Controls.MetroButton exportExcel;
+        private MetroFramework.Controls.MetroButton sumas;
+        private MetroFramework.Controls.MetroButton calculo;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantMonto;
+        private MetroFramework.Controls.MetroLabel metroLabel49;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantFacturado;
+        private MetroFramework.Controls.MetroLabel metroLabel50;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantCobrado;
+        private MetroFramework.Controls.MetroLabel metroLabel51;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeCobrado;
+        private MetroFramework.Controls.MetroLabel metroLabel52;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeFacturado;
+        private MetroFramework.Controls.MetroLabel metroLabel53;
+        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeMonto;
+        private MetroFramework.Controls.MetroLabel metroLabel54;
+        private System.Windows.Forms.TextBox textAnticipo;
+        private System.Windows.Forms.TextBox totalMeses;
+        private System.Windows.Forms.TextBox total;
+        private System.Windows.Forms.TextBox ide;
+        private System.Windows.Forms.DateTimePicker dateHastaMonto;
+        private System.Windows.Forms.DateTimePicker dateDesdeMonto;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_alta;
         private System.Windows.Forms.DataGridViewTextBoxColumn folio_media;
@@ -6872,137 +6206,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_mkf;
         private System.Windows.Forms.DataGridViewTextBoxColumn vigencia_fesde_mkf;
         private System.Windows.Forms.DataGridViewTextBoxColumn vigencia_hasta_mkk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn forma_calculo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn forma_calculo1;
         private System.Windows.Forms.DataGridViewTextBoxColumn monto_fijo;
         private System.Windows.Forms.DataGridViewTextBoxColumn monto_fijo_iva;
         private System.Windows.Forms.DataGridViewTextBoxColumn divisa;
         private System.Windows.Forms.DataGridViewTextBoxColumn vigencia_monto_desde;
         private System.Windows.Forms.DataGridViewTextBoxColumn vigencia_monto_hasta;
         private System.Windows.Forms.DataGridViewTextBoxColumn trans_bancaria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn compensacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noches;
+        private System.Windows.Forms.DataGridViewTextBoxColumn compensacion1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noches1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ambas;
         private System.Windows.Forms.DataGridViewTextBoxColumn esquema_comision;
         private System.Windows.Forms.DataGridViewTextBoxColumn observaciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn sypply;
         private System.Windows.Forms.DataGridViewTextBoxColumn ejecutivo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn account;
-        private System.Windows.Forms.DataGridViewTextBoxColumn archivo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn febrero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn marzo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn abril;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mayo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn junio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn julio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn agosto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn septiembre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn octubre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noviembre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diciembre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_ene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_feb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_mar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_abr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_may;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_jun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_jul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_ago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_sep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_oct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_nov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anio_dic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_ene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_feb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_mar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_abr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_may;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_jun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_jul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_ago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_sep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_oct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_nov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_dic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_ene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_feb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_mar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_abr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_may;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_jun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_jul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_ago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_sep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_oct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_nov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fact_dic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_ene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_feb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_mar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_abr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_may;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_jun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_jul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_ago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_sep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_oct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_nov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cob_dic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcfeb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcmarzo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcabr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcmay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcjun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcjul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcsep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcoct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcnov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fcdic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqfeb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqmar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqabr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqmay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqjun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqjul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqsep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqoct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqnov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esqdic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_ene;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_feb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_mar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_abr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_may;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_jun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_jul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_ago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_sep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_oct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_nov;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fc_dic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_pautado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_facturado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monto_cobrado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn por_pautado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn por_facturado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn por_cobrado;
-        private MetroFramework.Controls.MetroButton sumas;
-        private MetroFramework.Controls.MetroButton calculo;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantMonto;
-        private MetroFramework.Controls.MetroLabel metroLabel49;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantFacturado;
-        private MetroFramework.Controls.MetroLabel metroLabel50;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox cantCobrado;
-        private MetroFramework.Controls.MetroLabel metroLabel51;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeCobrado;
-        private MetroFramework.Controls.MetroLabel metroLabel52;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeFacturado;
-        private MetroFramework.Controls.MetroLabel metroLabel53;
-        private Syncfusion.Windows.Forms.Tools.DoubleTextBox porcentajeMonto;
-        private MetroFramework.Controls.MetroLabel metroLabel54;
     }
 }
