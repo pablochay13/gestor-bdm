@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace gestor_bdm
 {
-    public partial class main : Form
+    public partial class main : MetroFramework.Forms.MetroForm
     {
         MySqlConnection con = new MySqlConnection(Variables.Sentencia);
 

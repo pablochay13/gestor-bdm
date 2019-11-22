@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace gestor_bdm
 {
-    public partial class accounts : Form
+    public partial class accounts : MetroFramework.Forms.MetroForm
     {
         MySqlConnection con = new MySqlConnection(Variables.Sentencia);
         public accounts()
@@ -200,6 +200,11 @@ namespace gestor_bdm
         private void close_MouseClick(object sender, MouseEventArgs e)
         {
             this.Close();
+        }
+
+        private void accounts_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

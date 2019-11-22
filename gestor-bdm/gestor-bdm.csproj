@@ -243,6 +243,12 @@
     <Compile Include="orden_insercion.Designer.cs">
       <DependentUpon>orden_insercion.cs</DependentUpon>
     </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -358,6 +364,9 @@
     <EmbeddedResource Include="orden_insercion.resx">
       <DependentUpon>orden_insercion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -405,6 +414,14 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="ico.ico" />
+    <None Include="Resources\001-xing-website-logo.png" />
+    <None Include="Resources\002-employee.png" />
+    <None Include="Resources\004-contract.png" />
+    <None Include="Resources\005-dashboard.png" />
+    <None Include="Resources\006-team.png" />
+    <None Include="Resources\007-settings-gears.png" />
+    <None Include="Resources\008-information.png" />
+    <None Include="Resources\003-online.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

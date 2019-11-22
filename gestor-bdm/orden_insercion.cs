@@ -30,6 +30,8 @@ namespace gestor_bdm
             InitializeComponent();
 
             listaSaldos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            metroTabControl1.SelectedIndex = 0;
             //llenado combos
             tipoPauta();
             statusContrato();

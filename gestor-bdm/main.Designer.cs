@@ -36,6 +36,8 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saldosEdiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dashComercialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,8 +52,6 @@
             this.contenidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMedia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,9 +66,9 @@
             this.usuariosToolStripMenuItem,
             this.herramientasToolStripMenuItem,
             this.ayudaToolStripMenuItem});
-            this.menuMedia.Location = new System.Drawing.Point(0, 0);
+            this.menuMedia.Location = new System.Drawing.Point(20, 60);
             this.menuMedia.Name = "menuMedia";
-            this.menuMedia.Size = new System.Drawing.Size(1275, 24);
+            this.menuMedia.Size = new System.Drawing.Size(1235, 24);
             this.menuMedia.TabIndex = 3;
             this.menuMedia.Text = "menuStrip1";
             // 
@@ -124,6 +124,20 @@
             this.saldosEdiaToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
             this.saldosEdiaToolStripMenuItem.Text = "Ordenes de Inserción";
             this.saldosEdiaToolStripMenuItem.Click += new System.EventHandler(this.saldosEdiaToolStripMenuItem_Click);
+            // 
+            // baseDeDatosToolStripMenuItem
+            // 
+            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.baseDeDatosToolStripMenuItem.Text = "Base de datos";
+            this.baseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.BaseDeDatosToolStripMenuItem_Click);
+            // 
+            // generadorToolStripMenuItem
+            // 
+            this.generadorToolStripMenuItem.Name = "generadorToolStripMenuItem";
+            this.generadorToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.generadorToolStripMenuItem.Text = "Generador";
+            this.generadorToolStripMenuItem.Click += new System.EventHandler(this.GeneradorToolStripMenuItem_Click);
             // 
             // dashComercialToolStripMenuItem
             // 
@@ -240,20 +254,6 @@
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
             // 
-            // baseDeDatosToolStripMenuItem
-            // 
-            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.baseDeDatosToolStripMenuItem.Text = "Base de datos";
-            this.baseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.BaseDeDatosToolStripMenuItem_Click);
-            // 
-            // generadorToolStripMenuItem
-            // 
-            this.generadorToolStripMenuItem.Name = "generadorToolStripMenuItem";
-            this.generadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.generadorToolStripMenuItem.Text = "Generador";
-            this.generadorToolStripMenuItem.Click += new System.EventHandler(this.GeneradorToolStripMenuItem_Click);
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,8 +262,12 @@
             this.Controls.Add(this.menuMedia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "main";
+            this.Resizable = false;
             this.Text = "BestDay Media";
+            this.TransparencyKey = System.Drawing.Color.Empty;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.main_Load);
             this.menuMedia.ResumeLayout(false);
