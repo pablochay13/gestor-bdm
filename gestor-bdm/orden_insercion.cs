@@ -642,6 +642,619 @@ namespace gestor_bdm
 
         }
 
+        private void listaSaldos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                int n = listaSaldos.SelectedRows[0].Index;
+                ide.Text = listaSaldos.Rows[n].Cells[0].Value.ToString();
+
+                string id_seguimiento = listaSaldos.Rows[n].Cells[0].Value.ToString();
+
+                dateIngreso.Text = listaSaldos.Rows[n].Cells[1].Value.ToString();
+                tMedia.Text = listaSaldos.Rows[n].Cells[2].Value.ToString();
+                textStatusOI.Text = listaSaldos.Rows[n].Cells[3].Value.ToString();
+                textPais.Text = listaSaldos.Rows[n].Cells[4].Value.ToString();
+                labelPauta.Text = listaSaldos.Rows[n].Cells[5].Value.ToString();
+                comboCategoria.Text = listaSaldos.Rows[n].Cells[6].Value.ToString();
+                comboContrato.Text = listaSaldos.Rows[n].Cells[7].Value.ToString();
+                comboRazon.Text = listaSaldos.Rows[n].Cells[8].Value.ToString();
+                textComercial.Text = listaSaldos.Rows[n].Cells[9].Value.ToString();
+
+                try
+                {
+                    con.Close();
+
+                    con.Open();
+                    string sql = "SELECT cuenta_1, impuestos_oi FROM ordenes_insercion WHERE id_ordenes ='" + id_seguimiento + "'";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string infoHotel = Convert.ToString(reader["cuenta_1"]);
+                        textMonto.Text = infoHotel;
+
+                        string impuestos = Convert.ToString(reader["impuestos_oi"]);
+                        comboNacional.Text = impuestos;
+                    }
+                }
+                catch
+                {
+
+                }
+
+                labelHotel.Text = listaSaldos.Rows[n].Cells[10].Value.ToString();
+
+                try
+                {
+                    con.Close();
+
+                    con.Open();
+                    string sql = "SELECT hotel FROM abrev_hoteles WHERE abreviatura_hotel ='" + labelHotel.Text + "'";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string infoHotel = Convert.ToString(reader["hotel"]);
+                        comboHoteles.Text = infoHotel;
+                    }
+                }
+                catch
+                {
+
+                }
+
+                tSiglas.Text = listaSaldos.Rows[n].Cells[11].Value.ToString();
+                tHann.Text = listaSaldos.Rows[n].Cells[12].Value.ToString();
+                nombreBeneficio.Text = listaSaldos.Rows[n].Cells[13].Value.ToString();
+                textAnticipo.Text = listaSaldos.Rows[n].Cells[15].Value.ToString();
+                comboPorcentajeMKF.Text = listaSaldos.Rows[n].Cells[16].Value.ToString();
+                dateDesdeMKF.Text = listaSaldos.Rows[n].Cells[17].Value.ToString();
+                dateHastaMKF.Text = listaSaldos.Rows[n].Cells[18].Value.ToString();
+
+                string formaPago = listaSaldos.Rows[n].Cells[19].Value.ToString();
+                if (formaPago == "Producción")
+                {
+                    checkProduccion.Checked = true;
+                }
+                else
+                {
+                    checkProduccion.Checked = false;
+                }
+
+                if (formaPago == "Pagos Emitidos")
+                {
+                    checkEmitidos.Checked = true;
+                }
+                else
+                {
+                    checkEmitidos.Checked = false;
+                }
+
+                tMonto.Text = listaSaldos.Rows[n].Cells[20].Value.ToString();
+                tMontoIVA.Text = listaSaldos.Rows[n].Cells[21].Value.ToString();
+                comboDivisa.Text = listaSaldos.Rows[n].Cells[22].Value.ToString();
+                dateDesdeMonto.Text = listaSaldos.Rows[n].Cells[23].Value.ToString();
+                dateHastaMonto.Text = listaSaldos.Rows[n].Cells[24].Value.ToString();
+
+                string tranferencia = listaSaldos.Rows[n].Cells[25].Value.ToString();
+                if (tranferencia == "Si")
+                {
+                    checkTransferencia.Checked = true;
+                }
+                else
+                {
+                    checkTransferencia.Checked = false;
+                }
+
+                string compensacion = listaSaldos.Rows[n].Cells[26].Value.ToString();
+                if (compensacion == "Si")
+                {
+                    checkBCompensacion.Checked = true;
+                }
+                else
+                {
+                    checkBCompensacion.Checked = false;
+                }
+
+                string noches = listaSaldos.Rows[n].Cells[27].Value.ToString();
+                if (noches == "Si")
+                {
+                    checkNoches.Checked = true;
+                }
+                else
+                {
+                    checkNoches.Checked = false;
+                }
+
+                string ambas = listaSaldos.Rows[n].Cells[28].Value.ToString();
+                if (ambas == "Si")
+                {
+                    checkAmbos.Checked = true;
+                }
+                else
+                {
+                    checkAmbos.Checked = false;
+                }
+
+                comboComisiones.Text = listaSaldos.Rows[n].Cells[29].Value.ToString();
+                textObservaciones.Text = listaSaldos.Rows[n].Cells[30].Value.ToString();
+                comboSupply.Text = listaSaldos.Rows[n].Cells[31].Value.ToString();
+                comboEjecutivoDAF.Text = listaSaldos.Rows[n].Cells[32].Value.ToString();
+                comboAccount.Text = listaSaldos.Rows[n].Cells[33].Value.ToString();
+                nombreUno.Text = listaSaldos.Rows[n].Cells[34].Value.ToString();
+                string enero = listaSaldos.Rows[n].Cells[35].Value.ToString();
+                if (enero == "SI")
+                {
+                    cEnero.Checked = true;
+                }
+                else
+                {
+                    cEnero.Checked = false;
+                }
+                string febrero = listaSaldos.Rows[n].Cells[36].Value.ToString();
+                if (febrero == "SI")
+                {
+                    cFebrero.Checked = true;
+                }
+                else
+                {
+                    cFebrero.Checked = false;
+                }
+                string marzo = listaSaldos.Rows[n].Cells[37].Value.ToString();
+                if (marzo == "SI")
+                {
+                    cMarzo.Checked = true;
+                }
+                else
+                {
+                    cMarzo.Checked = false;
+                }
+                string abril = listaSaldos.Rows[n].Cells[38].Value.ToString();
+                if (abril == "SI")
+                {
+                    cAbril.Checked = true;
+                }
+                else
+                {
+                    cAbril.Checked = false;
+                }
+                string mayo = listaSaldos.Rows[n].Cells[39].Value.ToString();
+                if (mayo == "SI")
+                {
+                    cMayo.Checked = true;
+                }
+                else
+                {
+                    cMayo.Checked = false;
+                }
+                string junio = listaSaldos.Rows[n].Cells[40].Value.ToString();
+                if (junio == "SI")
+                {
+                    cJunio.Checked = true;
+                }
+                else
+                {
+                    cJunio.Checked = false;
+                }
+                string julio = listaSaldos.Rows[n].Cells[41].Value.ToString();
+                if (julio == "SI")
+                {
+                    cJulio.Checked = true;
+                }
+                else
+                {
+                    cJulio.Checked = false;
+                }
+                string agosto = listaSaldos.Rows[n].Cells[42].Value.ToString();
+                if (agosto == "SI")
+                {
+                    cAgosto.Checked = true;
+                }
+                else
+                {
+                    cAgosto.Checked = false;
+                }
+                string septiembre = listaSaldos.Rows[n].Cells[43].Value.ToString();
+                if (septiembre == "SI")
+                {
+                    cSeptiembre.Checked = true;
+                }
+                else
+                {
+                    cSeptiembre.Checked = false;
+                }
+                string octubre = listaSaldos.Rows[n].Cells[44].Value.ToString();
+                if (octubre == "SI")
+                {
+                    cOctubre.Checked = true;
+                }
+                else
+                {
+                    cOctubre.Checked = false;
+                }
+                string noviembre = listaSaldos.Rows[n].Cells[45].Value.ToString();
+                if (noviembre == "SI")
+                {
+                    cNoviembre.Checked = true;
+                }
+                else
+                {
+                    cNoviembre.Checked = false;
+                }
+                string diciembre = listaSaldos.Rows[n].Cells[46].Value.ToString();
+                if (diciembre == "SI")
+                {
+                    cDiciembre.Checked = true;
+                }
+                else
+                {
+                    cDiciembre.Checked = false;
+                }
+
+                tEnero.Text = listaSaldos.Rows[n].Cells[47].Value.ToString();
+                tFebrero.Text = listaSaldos.Rows[n].Cells[48].Value.ToString();
+                tMarzo.Text = listaSaldos.Rows[n].Cells[49].Value.ToString();
+                tAbril.Text = listaSaldos.Rows[n].Cells[50].Value.ToString();
+                tMayo.Text = listaSaldos.Rows[n].Cells[51].Value.ToString();
+                tJunio.Text = listaSaldos.Rows[n].Cells[52].Value.ToString();
+                tJulio.Text = listaSaldos.Rows[n].Cells[53].Value.ToString();
+                tAgosto.Text = listaSaldos.Rows[n].Cells[54].Value.ToString();
+                tSeptiembre.Text = listaSaldos.Rows[n].Cells[55].Value.ToString();
+                tOctubre.Text = listaSaldos.Rows[n].Cells[56].Value.ToString();
+                tNoviembre.Text = listaSaldos.Rows[n].Cells[57].Value.ToString();
+                tDiciembre.Text = listaSaldos.Rows[n].Cells[58].Value.ToString();
+                montoEne.Text = listaSaldos.Rows[n].Cells[59].Value.ToString();
+                montoFeb.Text = listaSaldos.Rows[n].Cells[60].Value.ToString();
+                montoMar.Text = listaSaldos.Rows[n].Cells[61].Value.ToString();
+                montoAbr.Text = listaSaldos.Rows[n].Cells[62].Value.ToString();
+                montoMayo.Text = listaSaldos.Rows[n].Cells[63].Value.ToString();
+                montoJun.Text = listaSaldos.Rows[n].Cells[64].Value.ToString();
+                montoJul.Text = listaSaldos.Rows[n].Cells[65].Value.ToString();
+                montoAgo.Text = listaSaldos.Rows[n].Cells[66].Value.ToString();
+                montoSep.Text = listaSaldos.Rows[n].Cells[67].Value.ToString();
+                montoOct.Text = listaSaldos.Rows[n].Cells[68].Value.ToString();
+                montoNov.Text = listaSaldos.Rows[n].Cells[69].Value.ToString();
+                montoDic.Text = listaSaldos.Rows[n].Cells[70].Value.ToString();
+                facturadoEne.Text = listaSaldos.Rows[n].Cells[71].Value.ToString();
+                facturadoFeb.Text = listaSaldos.Rows[n].Cells[72].Value.ToString();
+                facturadoMar.Text = listaSaldos.Rows[n].Cells[73].Value.ToString();
+                facturadoAbr.Text = listaSaldos.Rows[n].Cells[74].Value.ToString();
+                facturadoMay.Text = listaSaldos.Rows[n].Cells[75].Value.ToString();
+                facturadoJun.Text = listaSaldos.Rows[n].Cells[76].Value.ToString();
+                facturadoJul.Text = listaSaldos.Rows[n].Cells[77].Value.ToString();
+                facturadoAgo.Text = listaSaldos.Rows[n].Cells[78].Value.ToString();
+                facturadoSep.Text = listaSaldos.Rows[n].Cells[79].Value.ToString();
+                facturadoOct.Text = listaSaldos.Rows[n].Cells[80].Value.ToString();
+                facturadoNov.Text = listaSaldos.Rows[n].Cells[81].Value.ToString();
+                facturadoDic.Text = listaSaldos.Rows[n].Cells[82].Value.ToString();
+                cobradoEne.Text = listaSaldos.Rows[n].Cells[83].Value.ToString();
+                cobradoFeb.Text = listaSaldos.Rows[n].Cells[84].Value.ToString();
+                cobradoMar.Text = listaSaldos.Rows[n].Cells[85].Value.ToString();
+                cobradoAbr.Text = listaSaldos.Rows[n].Cells[86].Value.ToString();
+                cobradoMay.Text = listaSaldos.Rows[n].Cells[87].Value.ToString();
+                cobradoJun.Text = listaSaldos.Rows[n].Cells[88].Value.ToString();
+                cobradoJul.Text = listaSaldos.Rows[n].Cells[89].Value.ToString();
+                cobradoAgo.Text = listaSaldos.Rows[n].Cells[90].Value.ToString();
+                cobradoSep.Text = listaSaldos.Rows[n].Cells[91].Value.ToString();
+                cobradoOct.Text = listaSaldos.Rows[n].Cells[92].Value.ToString();
+                cobradoNov.Text = listaSaldos.Rows[n].Cells[93].Value.ToString();
+                cobradoDic.Text = listaSaldos.Rows[n].Cells[94].Value.ToString();
+                dateEne.Text = listaSaldos.Rows[n].Cells[95].Value.ToString();
+                dateFeb.Text = listaSaldos.Rows[n].Cells[96].Value.ToString();
+                dateMar.Text = listaSaldos.Rows[n].Cells[97].Value.ToString();
+                dateAbr.Text = listaSaldos.Rows[n].Cells[98].Value.ToString();
+                dateMay.Text = listaSaldos.Rows[n].Cells[99].Value.ToString();
+                dateJun.Text = listaSaldos.Rows[n].Cells[100].Value.ToString();
+                dateJul.Text = listaSaldos.Rows[n].Cells[101].Value.ToString();
+                dateAgo.Text = listaSaldos.Rows[n].Cells[102].Value.ToString();
+                dateSep.Text = listaSaldos.Rows[n].Cells[103].Value.ToString();
+                dateOct.Text = listaSaldos.Rows[n].Cells[104].Value.ToString();
+                dateNov.Text = listaSaldos.Rows[n].Cells[105].Value.ToString();
+                dateDic.Text = listaSaldos.Rows[n].Cells[106].Value.ToString();
+                esquemaEne.Text = listaSaldos.Rows[n].Cells[107].Value.ToString();
+                esquemaFeb.Text = listaSaldos.Rows[n].Cells[108].Value.ToString();
+                esquemaMar.Text = listaSaldos.Rows[n].Cells[109].Value.ToString();
+                esquemaAbr.Text = listaSaldos.Rows[n].Cells[110].Value.ToString();
+                esquemaMay.Text = listaSaldos.Rows[n].Cells[111].Value.ToString();
+                esquemaJun.Text = listaSaldos.Rows[n].Cells[112].Value.ToString();
+                esquemaJul.Text = listaSaldos.Rows[n].Cells[113].Value.ToString();
+                esquemaAgo.Text = listaSaldos.Rows[n].Cells[114].Value.ToString();
+                esquemaSep.Text = listaSaldos.Rows[n].Cells[115].Value.ToString();
+                esquemaOct.Text = listaSaldos.Rows[n].Cells[116].Value.ToString();
+                esquemaNov.Text = listaSaldos.Rows[n].Cells[117].Value.ToString();
+                esquemaDic.Text = listaSaldos.Rows[n].Cells[118].Value.ToString();
+                esquemaDateEne.Text = listaSaldos.Rows[n].Cells[119].Value.ToString();
+                esquemaDateFeb.Text = listaSaldos.Rows[n].Cells[120].Value.ToString();
+                esquemaDateMar.Text = listaSaldos.Rows[n].Cells[121].Value.ToString();
+                esquemaDateAbr.Text = listaSaldos.Rows[n].Cells[122].Value.ToString();
+                esquemaDateMay.Text = listaSaldos.Rows[n].Cells[123].Value.ToString();
+                esquemaDateJun.Text = listaSaldos.Rows[n].Cells[124].Value.ToString();
+                esquemaDateJul.Text = listaSaldos.Rows[n].Cells[125].Value.ToString();
+                esquemaDateAgo.Text = listaSaldos.Rows[n].Cells[126].Value.ToString();
+                esquemaDateSep.Text = listaSaldos.Rows[n].Cells[127].Value.ToString();
+                esquemaDateOct.Text = listaSaldos.Rows[n].Cells[128].Value.ToString();
+                esquemaDateNov.Text = listaSaldos.Rows[n].Cells[129].Value.ToString();
+                esquemaDateDic.Text = listaSaldos.Rows[n].Cells[130].Value.ToString();
+                cantMonto.Text = listaSaldos.Rows[n].Cells[131].Value.ToString();
+                cantCobrado.Text = listaSaldos.Rows[n].Cells[132].Value.ToString();
+                cantFacturado.Text = listaSaldos.Rows[n].Cells[133].Value.ToString();
+                porcentajeMonto.Text = listaSaldos.Rows[n].Cells[134].Value.ToString();
+                porcentajeCobrado.Text = listaSaldos.Rows[n].Cells[135].Value.ToString();
+                porcentajeFacturado.Text = listaSaldos.Rows[n].Cells[136].Value.ToString();
+
+                try
+                {
+                    con.Close();
+
+                    con.Open();
+                    string sql = "SELECT campo1, campo2, campo3, archivo_dos, archivo_tres, cant_noches, importe_noches, enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre, q, porcentaje_q, tipo_op, id_maestro_op, numero_cuenta_op, cuenta_op, razon_op, doc_ene, doc_feb, doc_mar, doc_abr, doc_may, doc_jun, doc_jul, doc_ago, doc_sep, doc_oct, doc_nov, doc_dic ,archivo_ene , archivo_feb, archivo_mar, archivo_abr , archivo_may , archivo_jun , archivo_jul  , archivo_ago , archivo_sep , archivo_oct , `archivo_nov` , archivo_dic FROM ordenes_insercion WHERE id_ordenes ='" + ide.Text + "'";
+                    MySqlCommand cmd = new MySqlCommand(sql, con);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        t_campo1 = Convert.ToString(reader["campo1"]);
+                        t_campo2 = Convert.ToString(reader["campo2"]);
+                        t_campo3 = Convert.ToString(reader["campo3"]);
+                        //archivos
+                        string archivo_dos_q = Convert.ToString(reader["archivo_dos"]);
+                        nombreDos.Text = archivo_dos_q;
+                        string archivo_tres_q = Convert.ToString(reader["archivo_tres"]);
+                        nombreTres.Text = archivo_tres_q;
+
+                        //documentos facturas
+                        textDocEne.Text = Convert.ToString(reader["doc_ene"]);
+                        textDocFeb.Text = Convert.ToString(reader["doc_feb"]);
+                        textDocMar.Text = Convert.ToString(reader["doc_mar"]);
+                        textDocAbr.Text = Convert.ToString(reader["doc_abr"]);
+                        textDocMay.Text = Convert.ToString(reader["doc_may"]);
+                        textDocJun.Text = Convert.ToString(reader["doc_jun"]);
+                        textDocJul.Text = Convert.ToString(reader["doc_jul"]);
+                        textDocAgo.Text = Convert.ToString(reader["doc_ago"]);
+                        textDocSep.Text = Convert.ToString(reader["doc_sep"]);
+                        textDocOct.Text = Convert.ToString(reader["doc_oct"]);
+                        textDocNov.Text = Convert.ToString(reader["doc_nov"]);
+                        textDocDic.Text = Convert.ToString(reader["doc_dic"]);
+
+                        //archivos facturas
+                        NombreArcEne = Convert.ToString(reader["archivo_ene"]);
+                        archivoEne.Text = NombreArcEne;
+
+                        NombreArcFeb = Convert.ToString(reader["archivo_feb"]);
+                        archivoFeb.Text = NombreArcFeb;
+
+                        NombreArcMar = Convert.ToString(reader["archivo_mar"]);
+                        archivoMar.Text = NombreArcMar;
+
+                        NombreArcAbr = Convert.ToString(reader["archivo_abr"]);
+                        archivoAbr.Text = NombreArcAbr;
+
+                        NombreArcMay = Convert.ToString(reader["archivo_may"]);
+                        archivoMay.Text = NombreArcMay;
+
+                        NombreArcJun = Convert.ToString(reader["archivo_jun"]);
+                        archivoJun.Text = NombreArcJun;
+
+                        NombreArcJul = Convert.ToString(reader["archivo_jul"]);
+                        archivoJul.Text = NombreArcJul;
+
+                        NombreArcAgo = Convert.ToString(reader["archivo_ago"]);
+                        archivoAgo.Text = NombreArcAgo;
+
+                        NombreArcSep = Convert.ToString(reader["archivo_sep"]);
+                        archivoSep.Text = NombreArcSep;
+
+                        NombreArcOct = Convert.ToString(reader["archivo_oct"]);
+                        archivoOct.Text = NombreArcOct;
+
+                        NombreArcNov = Convert.ToString(reader["archivo_nov"]);
+                        archivoNov.Text = NombreArcNov;
+
+                        NombreArcDic = Convert.ToString(reader["archivo_dic"]);
+                        archivoDic.Text = NombreArcDic;
+
+                        //datos RO&AND
+                        string tipo_op_q = Convert.ToString(reader["tipo_op"]);
+                        comboOp.Text = tipo_op_q;
+                        string id_maestro_op_q = Convert.ToString(reader["id_maestro_op"]);
+                        textID.Text = id_maestro_op_q;
+                        string numero_cuenta_op_q = Convert.ToString(reader["numero_cuenta_op"]);
+                        comboCuenta.Text = numero_cuenta_op_q;
+                        string cuenta_op_q = Convert.ToString(reader["cuenta_op"]);
+                        comboCuentaOp.Text = cuenta_op_q;
+                        string razon_op_q = Convert.ToString(reader["razon_op"]);
+                        comboRazonOp.Text = razon_op_q;
+                        //meses
+                        senero = Convert.ToString(reader["enero"]);
+                        sfebrero = Convert.ToString(reader["febrero"]);
+                        smarzo = Convert.ToString(reader["marzo"]);
+                        sabril = Convert.ToString(reader["abril"]);
+                        smayo = Convert.ToString(reader["mayo"]);
+                        sjunio = Convert.ToString(reader["junio"]);
+                        sjulio = Convert.ToString(reader["julio"]);
+                        sagosto = Convert.ToString(reader["agosto"]);
+                        sseptiembre = Convert.ToString(reader["septiembre"]);
+                        soctubre = Convert.ToString(reader["octubre"]);
+                        snoviembre = Convert.ToString(reader["noviembre"]);
+                        sdiciembre = Convert.ToString(reader["diciembre"]);
+                        //Q
+                        string q_dato = Convert.ToString(reader["q"]);
+                        comboQ.Text = q_dato;
+
+                        string q_porcentaje_dato = Convert.ToString(reader["porcentaje_q"]);
+                        comboQPorcentaje.Text = q_porcentaje_dato;
+                        //noches
+                        string cant_noches_t = Convert.ToString(reader["cant_noches"]);
+                        cantNoches.Text = cant_noches_t;
+                        string importe_noches = Convert.ToString(reader["importe_noches"]);
+                        importeNoches.Text = importe_noches;
+                        //if (comboComisiones.Text == "MEDIA" && clave_pais == "MX" || comboComisiones.Text == "Marketing Found" && clave_pais == "MX")
+                        //{
+                        //    comboQ.Visible = true;
+                        //    label41.Visible = true;
+                        //    comboQPorcentaje.Visible = false;
+                        //    label42.Visible = false;
+                        //}
+                        //else
+                        //{
+                        //    comboQPorcentaje.Visible = true;
+                        //    label42.Visible = true;
+
+                        //    comboQ.Visible = false;
+                        //    label41.Visible = false;
+                        //}
+                        //MESES ACTIVOS
+                        if (senero == "SI")
+                        {
+                            cEnero.Checked = true;
+                        }
+
+                        else
+                        {
+                            cEnero.Checked = false;
+                        }
+
+
+                        if (sfebrero == "SI")
+                        {
+                            cFebrero.Checked = true;
+                        }
+
+                        else
+                        {
+                            cFebrero.Checked = false;
+                        }
+
+
+                        if (smarzo == "SI")
+                        {
+                            cMarzo.Checked = true;
+                        }
+
+                        else
+                        {
+                            cMarzo.Checked = false;
+                        }
+
+
+                        if (sabril == "SI")
+                        {
+                            cAbril.Checked = true;
+                        }
+
+                        else
+                        {
+                            cAbril.Checked = false;
+                        }
+
+
+                        if (smayo == "SI")
+                        {
+                            cMayo.Checked = true;
+                        }
+
+                        else
+                        {
+                            cMayo.Checked = false;
+                        }
+
+
+                        if (sjunio == "SI")
+                        {
+                            cJunio.Checked = true;
+                        }
+
+                        else
+                        {
+                            cJunio.Checked = false;
+                        }
+
+
+                        if (sjulio == "SI")
+                        {
+                            cJulio.Checked = true;
+                        }
+
+                        else
+                        {
+                            cJulio.Checked = false;
+                        }
+
+
+                        if (sagosto == "SI")
+                        {
+                            cAgosto.Checked = true;
+                        }
+
+                        else
+                        {
+                            cAgosto.Checked = false;
+                        }
+
+
+                        if (sseptiembre == "SI")
+                        {
+                            cSeptiembre.Checked = true;
+                        }
+
+                        else
+                        {
+                            cSeptiembre.Checked = false;
+                        }
+
+
+                        if (soctubre == "SI")
+                        {
+                            cOctubre.Checked = true;
+                        }
+
+                        else
+                        {
+                            cOctubre.Checked = false;
+                        }
+
+
+                        if (snoviembre == "SI")
+                        {
+                            cNoviembre.Checked = true;
+                        }
+
+                        else
+                        {
+                            cNoviembre.Checked = false;
+                        }
+
+
+                        if (sdiciembre == "SI")
+                        {
+                            cDiciembre.Checked = true;
+                        }
+
+                        else
+                        {
+                            cDiciembre.Checked = false;
+                        }
+
+                        //combo
+                        //nacional = Convert.ToString(reader["nacional"]);
+                        //comboNacional.Text = nacional;
+                    }
+
+                    con.Close();
+
+                    metroTabControl1.SelectedIndex = 0;
+                }
+                catch (Exception m)
+                {
+                    MessageBox.Show(m.Message);
+                }
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
         private void sumas_Click(object sender, EventArgs e)
         {
             double montoPauta = 0;
@@ -1400,10 +2013,10 @@ namespace gestor_bdm
                         comboRazonOp.Visible = true;
 
                         label8.Visible = false;
+                        label9.Visible = false;
+                        label7.Visible = false;
                         label18.Visible = false;
                         label7.Visible = false;
-                        label43.Visible = false;
-                        label9.Visible = false;
                         label17.Visible = false;
 
                         nombreBeneficio.Visible = false;
@@ -1504,10 +2117,10 @@ namespace gestor_bdm
                     textMonto2.Visible = true;
                     cant1.Visible = true;
                     cant2.Visible = true;
-                    label9.Visible = true;
+                    label7.Visible = true;
                     label17.Visible = true;
+                    label9.Visible = true;
                     label18.Visible = true;
-                    label43.Visible = true;
                 }
                 else
                 {
@@ -1515,10 +2128,10 @@ namespace gestor_bdm
                     textMonto2.Visible = false;
                     cant1.Visible = false;
                     cant2.Visible = false;
-                    label9.Visible = false;
+                    label7.Visible = false;
                     label17.Visible = false;
+                    label9.Visible = false;
                     label18.Visible = false;
-                    label43.Visible = false;
                     nombreBeneficio2.Visible = false;
                 }
 

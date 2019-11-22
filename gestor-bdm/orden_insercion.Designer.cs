@@ -60,20 +60,23 @@
             this.comboSupply = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.campo3 = new MetroFramework.Controls.MetroLabel();
+            this.campo2 = new MetroFramework.Controls.MetroLabel();
+            this.campo1 = new MetroFramework.Controls.MetroLabel();
             this.combo3 = new MetroFramework.Controls.MetroComboBox();
             this.combo2 = new MetroFramework.Controls.MetroComboBox();
             this.combo1 = new MetroFramework.Controls.MetroComboBox();
             this.comboQ = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel38 = new MetroFramework.Controls.MetroLabel();
+            this.label41 = new MetroFramework.Controls.MetroLabel();
             this.comboQPorcentaje = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel37 = new MetroFramework.Controls.MetroLabel();
             this.comboComisiones = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.importeNoches = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel35 = new MetroFramework.Controls.MetroLabel();
+            this.label45 = new MetroFramework.Controls.MetroLabel();
             this.cantNoches = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel34 = new MetroFramework.Controls.MetroLabel();
+            this.label44 = new MetroFramework.Controls.MetroLabel();
             this.checkNoches = new MetroFramework.Controls.MetroCheckBox();
             this.checkAmbos = new MetroFramework.Controls.MetroCheckBox();
             this.checkBCompensacion = new MetroFramework.Controls.MetroCheckBox();
@@ -81,7 +84,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tMonto = new MetroFramework.Controls.MetroTextBox();
             this.comboNacional = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel33 = new MetroFramework.Controls.MetroLabel();
+            this.label14 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel32 = new MetroFramework.Controls.MetroLabel();
             this.comboDivisa = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel31 = new MetroFramework.Controls.MetroLabel();
@@ -100,27 +103,27 @@
             this.metroLabel24 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboRazonOp = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
+            this.labelRazon = new MetroFramework.Controls.MetroLabel();
             this.textID = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
+            this.labelID = new MetroFramework.Controls.MetroLabel();
             this.comboCuentaOp = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
+            this.labelCuentaOp = new MetroFramework.Controls.MetroLabel();
             this.comboCuenta = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
+            this.labelCuenta = new MetroFramework.Controls.MetroLabel();
             this.comboOp = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
+            this.labelOp = new MetroFramework.Controls.MetroLabel();
             this.cant2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.label17 = new MetroFramework.Controls.MetroLabel();
             this.textMonto2 = new MetroFramework.Controls.MetroTextBox();
             this.nombreBeneficio2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
+            this.label43 = new MetroFramework.Controls.MetroLabel();
+            this.label18 = new MetroFramework.Controls.MetroLabel();
             this.cant1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
+            this.label9 = new MetroFramework.Controls.MetroLabel();
             this.textMonto = new MetroFramework.Controls.MetroTextBox();
             this.nombreBeneficio = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
+            this.label7 = new MetroFramework.Controls.MetroLabel();
+            this.label8 = new MetroFramework.Controls.MetroLabel();
             this.tHann = new MetroFramework.Controls.MetroTextBox();
             this.tSiglas = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
@@ -323,6 +326,143 @@
             this.cEnero = new MetroFramework.Controls.MetroCheckBox();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.listaSaldos = new MetroFramework.Controls.MetroGrid();
+            this.id_ordenes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_ingreso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status_OI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siglas_pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sigla_hanna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.centro_bneficio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vig_desde_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vig_hasta_mkf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.forma_calcul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vig_monto_desde = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vig_monto_hasta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transf_bancaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noche = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supply_manager = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ejecutivo_daf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.account_manager = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.archivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.febrero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marzo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.abril = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mayo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.junio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.julio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.septiembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.octubre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noviebre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diciembre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facturado_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cobrado_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_cobro_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esquema_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_ene = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_feb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_mar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_abr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_may = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_jun = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_jul = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_ago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_sep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_oct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_nov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_com_dic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_pautado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_facturado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto_cobrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porcentaje_pautado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porcentaje_facturado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.porcentaje_cobrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.all = new MetroFramework.Controls.MetroButton();
             this.find = new MetroFramework.Controls.MetroButton();
@@ -842,11 +982,14 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.White;
+            this.groupBox4.Controls.Add(this.campo3);
+            this.groupBox4.Controls.Add(this.campo2);
+            this.groupBox4.Controls.Add(this.campo1);
             this.groupBox4.Controls.Add(this.combo3);
             this.groupBox4.Controls.Add(this.combo2);
             this.groupBox4.Controls.Add(this.combo1);
             this.groupBox4.Controls.Add(this.comboQ);
-            this.groupBox4.Controls.Add(this.metroLabel38);
+            this.groupBox4.Controls.Add(this.label41);
             this.groupBox4.Controls.Add(this.comboQPorcentaje);
             this.groupBox4.Controls.Add(this.metroLabel37);
             this.groupBox4.Controls.Add(this.comboComisiones);
@@ -858,6 +1001,36 @@
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Comisiones";
+            // 
+            // campo3
+            // 
+            this.campo3.AutoSize = true;
+            this.campo3.Location = new System.Drawing.Point(594, 62);
+            this.campo3.Name = "campo3";
+            this.campo3.Size = new System.Drawing.Size(13, 19);
+            this.campo3.TabIndex = 62;
+            this.campo3.Text = " ";
+            this.campo3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // campo2
+            // 
+            this.campo2.AutoSize = true;
+            this.campo2.Location = new System.Drawing.Point(418, 62);
+            this.campo2.Name = "campo2";
+            this.campo2.Size = new System.Drawing.Size(13, 19);
+            this.campo2.TabIndex = 61;
+            this.campo2.Text = " ";
+            this.campo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // campo1
+            // 
+            this.campo1.AutoSize = true;
+            this.campo1.Location = new System.Drawing.Point(238, 62);
+            this.campo1.Name = "campo1";
+            this.campo1.Size = new System.Drawing.Size(13, 19);
+            this.campo1.TabIndex = 60;
+            this.campo1.Text = " ";
+            this.campo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // combo3
             // 
@@ -893,26 +1066,32 @@
             // 
             this.comboQ.FormattingEnabled = true;
             this.comboQ.ItemHeight = 23;
+            this.comboQ.Items.AddRange(new object[] {
+            "Q´s"});
             this.comboQ.Location = new System.Drawing.Point(8, 84);
             this.comboQ.Name = "comboQ";
             this.comboQ.Size = new System.Drawing.Size(91, 29);
             this.comboQ.TabIndex = 56;
             this.comboQ.UseSelectable = true;
             // 
-            // metroLabel38
+            // label41
             // 
-            this.metroLabel38.AutoSize = true;
-            this.metroLabel38.Location = new System.Drawing.Point(6, 62);
-            this.metroLabel38.Name = "metroLabel38";
-            this.metroLabel38.Size = new System.Drawing.Size(20, 19);
-            this.metroLabel38.TabIndex = 55;
-            this.metroLabel38.Text = "Q";
-            this.metroLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(6, 62);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(20, 19);
+            this.label41.TabIndex = 55;
+            this.label41.Text = "Q";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboQPorcentaje
             // 
             this.comboQPorcentaje.FormattingEnabled = true;
             this.comboQPorcentaje.ItemHeight = 23;
+            this.comboQPorcentaje.Items.AddRange(new object[] {
+            "1%",
+            "2%",
+            "3%"});
             this.comboQPorcentaje.Location = new System.Drawing.Point(117, 84);
             this.comboQPorcentaje.Name = "comboQPorcentaje";
             this.comboQPorcentaje.Size = new System.Drawing.Size(91, 29);
@@ -953,9 +1132,9 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.importeNoches);
-            this.groupBox3.Controls.Add(this.metroLabel35);
+            this.groupBox3.Controls.Add(this.label45);
             this.groupBox3.Controls.Add(this.cantNoches);
-            this.groupBox3.Controls.Add(this.metroLabel34);
+            this.groupBox3.Controls.Add(this.label44);
             this.groupBox3.Controls.Add(this.checkNoches);
             this.groupBox3.Controls.Add(this.checkAmbos);
             this.groupBox3.Controls.Add(this.checkBCompensacion);
@@ -998,15 +1177,15 @@
             this.importeNoches.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.importeNoches.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel35
+            // label45
             // 
-            this.metroLabel35.AutoSize = true;
-            this.metroLabel35.Location = new System.Drawing.Point(238, 88);
-            this.metroLabel35.Name = "metroLabel35";
-            this.metroLabel35.Size = new System.Drawing.Size(60, 19);
-            this.metroLabel35.TabIndex = 57;
-            this.metroLabel35.Text = "Importe:";
-            this.metroLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(238, 88);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(60, 19);
+            this.label45.TabIndex = 57;
+            this.label45.Text = "Importe:";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cantNoches
             // 
@@ -1038,15 +1217,15 @@
             this.cantNoches.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cantNoches.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel34
+            // label44
             // 
-            this.metroLabel34.AutoSize = true;
-            this.metroLabel34.Location = new System.Drawing.Point(87, 88);
-            this.metroLabel34.Name = "metroLabel34";
-            this.metroLabel34.Size = new System.Drawing.Size(65, 19);
-            this.metroLabel34.TabIndex = 55;
-            this.metroLabel34.Text = "Cantidad:";
-            this.metroLabel34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(87, 88);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(65, 19);
+            this.label44.TabIndex = 55;
+            this.label44.Text = "Cantidad:";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkNoches
             // 
@@ -1094,7 +1273,7 @@
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.tMonto);
             this.groupBox2.Controls.Add(this.comboNacional);
-            this.groupBox2.Controls.Add(this.metroLabel33);
+            this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.metroLabel32);
             this.groupBox2.Controls.Add(this.comboDivisa);
             this.groupBox2.Controls.Add(this.metroLabel31);
@@ -1153,6 +1332,9 @@
             // 
             this.comboNacional.FormattingEnabled = true;
             this.comboNacional.ItemHeight = 23;
+            this.comboNacional.Items.AddRange(new object[] {
+            "No",
+            "Si"});
             this.comboNacional.Location = new System.Drawing.Point(886, 64);
             this.comboNacional.Name = "comboNacional";
             this.comboNacional.Size = new System.Drawing.Size(91, 29);
@@ -1160,15 +1342,15 @@
             this.comboNacional.UseSelectable = true;
             this.comboNacional.SelectedIndexChanged += new System.EventHandler(this.comboNacional_SelectedIndexChanged);
             // 
-            // metroLabel33
+            // label14
             // 
-            this.metroLabel33.AutoSize = true;
-            this.metroLabel33.Location = new System.Drawing.Point(983, 64);
-            this.metroLabel33.Name = "metroLabel33";
-            this.metroLabel33.Size = new System.Drawing.Size(87, 19);
-            this.metroLabel33.TabIndex = 51;
-            this.metroLabel33.Text = "Monto Pauta:";
-            this.metroLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(983, 64);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 19);
+            this.label14.TabIndex = 51;
+            this.label14.Text = "Monto Pauta:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroLabel32
             // 
@@ -1184,6 +1366,12 @@
             // 
             this.comboDivisa.FormattingEnabled = true;
             this.comboDivisa.ItemHeight = 23;
+            this.comboDivisa.Items.AddRange(new object[] {
+            "MXN\t",
+            "ARS",
+            "USD",
+            "R$",
+            "CAD"});
             this.comboDivisa.Location = new System.Drawing.Point(651, 64);
             this.comboDivisa.Name = "comboDivisa";
             this.comboDivisa.Size = new System.Drawing.Size(91, 29);
@@ -1297,6 +1485,18 @@
             // 
             this.comboPorcentajeMKF.FormattingEnabled = true;
             this.comboPorcentajeMKF.ItemHeight = 23;
+            this.comboPorcentajeMKF.Items.AddRange(new object[] {
+            "1",
+            "1.5",
+            "2",
+            "2.5",
+            "3",
+            "3.5",
+            "4",
+            "4.5",
+            "5",
+            "5.5",
+            "6"});
             this.comboPorcentajeMKF.Location = new System.Drawing.Point(397, 29);
             this.comboPorcentajeMKF.Name = "comboPorcentajeMKF";
             this.comboPorcentajeMKF.Size = new System.Drawing.Size(162, 29);
@@ -1317,7 +1517,7 @@
             // 
             this.dateHastaMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateHastaMKF.Location = new System.Drawing.Point(112, 64);
-            this.dateHastaMKF.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateHastaMKF.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateHastaMKF.Name = "dateHastaMKF";
             this.dateHastaMKF.Size = new System.Drawing.Size(101, 29);
             this.dateHastaMKF.TabIndex = 10;
@@ -1335,7 +1535,7 @@
             // 
             this.dateDesdeMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDesdeMKF.Location = new System.Drawing.Point(112, 29);
-            this.dateDesdeMKF.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateDesdeMKF.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateDesdeMKF.Name = "dateDesdeMKF";
             this.dateDesdeMKF.Size = new System.Drawing.Size(101, 29);
             this.dateDesdeMKF.TabIndex = 8;
@@ -1354,27 +1554,27 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.comboRazonOp);
-            this.groupBox1.Controls.Add(this.metroLabel23);
+            this.groupBox1.Controls.Add(this.labelRazon);
             this.groupBox1.Controls.Add(this.textID);
-            this.groupBox1.Controls.Add(this.metroLabel22);
+            this.groupBox1.Controls.Add(this.labelID);
             this.groupBox1.Controls.Add(this.comboCuentaOp);
-            this.groupBox1.Controls.Add(this.metroLabel21);
+            this.groupBox1.Controls.Add(this.labelCuentaOp);
             this.groupBox1.Controls.Add(this.comboCuenta);
-            this.groupBox1.Controls.Add(this.metroLabel19);
+            this.groupBox1.Controls.Add(this.labelCuenta);
             this.groupBox1.Controls.Add(this.comboOp);
-            this.groupBox1.Controls.Add(this.metroLabel20);
+            this.groupBox1.Controls.Add(this.labelOp);
             this.groupBox1.Controls.Add(this.cant2);
-            this.groupBox1.Controls.Add(this.metroLabel15);
+            this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.textMonto2);
             this.groupBox1.Controls.Add(this.nombreBeneficio2);
-            this.groupBox1.Controls.Add(this.metroLabel17);
-            this.groupBox1.Controls.Add(this.metroLabel18);
+            this.groupBox1.Controls.Add(this.label43);
+            this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.cant1);
-            this.groupBox1.Controls.Add(this.metroLabel16);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textMonto);
             this.groupBox1.Controls.Add(this.nombreBeneficio);
-            this.groupBox1.Controls.Add(this.metroLabel13);
-            this.groupBox1.Controls.Add(this.metroLabel14);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.tHann);
             this.groupBox1.Controls.Add(this.tSiglas);
             this.groupBox1.Controls.Add(this.metroLabel11);
@@ -1409,20 +1609,25 @@
             // 
             this.comboRazonOp.FormattingEnabled = true;
             this.comboRazonOp.ItemHeight = 23;
+            this.comboRazonOp.Items.AddRange(new object[] {
+            "Jamiray Internacional SA",
+            "South Net Chile Ltda",
+            "South Net Turismo SA",
+            "South Net Turismo Colombia SAS"});
             this.comboRazonOp.Location = new System.Drawing.Point(827, 236);
             this.comboRazonOp.Name = "comboRazonOp";
             this.comboRazonOp.Size = new System.Drawing.Size(357, 29);
             this.comboRazonOp.TabIndex = 50;
             this.comboRazonOp.UseSelectable = true;
             // 
-            // metroLabel23
+            // labelRazon
             // 
-            this.metroLabel23.AutoSize = true;
-            this.metroLabel23.Location = new System.Drawing.Point(827, 201);
-            this.metroLabel23.Name = "metroLabel23";
-            this.metroLabel23.Size = new System.Drawing.Size(158, 19);
-            this.metroLabel23.TabIndex = 49;
-            this.metroLabel23.Text = "Razón Social que Factura:";
+            this.labelRazon.AutoSize = true;
+            this.labelRazon.Location = new System.Drawing.Point(827, 201);
+            this.labelRazon.Name = "labelRazon";
+            this.labelRazon.Size = new System.Drawing.Size(158, 19);
+            this.labelRazon.TabIndex = 49;
+            this.labelRazon.Text = "Razón Social que Factura:";
             // 
             // textID
             // 
@@ -1454,39 +1659,47 @@
             this.textID.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textID.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel22
+            // labelID
             // 
-            this.metroLabel22.AutoSize = true;
-            this.metroLabel22.Location = new System.Drawing.Point(388, 201);
-            this.metroLabel22.Name = "metroLabel22";
-            this.metroLabel22.Size = new System.Drawing.Size(127, 19);
-            this.metroLabel22.TabIndex = 47;
-            this.metroLabel22.Text = "ID Maestro Original:";
-            this.metroLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(388, 201);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(127, 19);
+            this.labelID.TabIndex = 47;
+            this.labelID.Text = "ID Maestro Original:";
+            this.labelID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboCuentaOp
             // 
             this.comboCuentaOp.FormattingEnabled = true;
             this.comboCuentaOp.ItemHeight = 23;
+            this.comboCuentaOp.Items.AddRange(new object[] {
+            "Ingresos por publicidad particulares B2C",
+            "Ingresos The Tour",
+            "Publicidad guía Horest (B2C)"});
             this.comboCuentaOp.Location = new System.Drawing.Point(521, 236);
             this.comboCuentaOp.Name = "comboCuentaOp";
             this.comboCuentaOp.Size = new System.Drawing.Size(281, 29);
             this.comboCuentaOp.TabIndex = 46;
             this.comboCuentaOp.UseSelectable = true;
             // 
-            // metroLabel21
+            // labelCuentaOp
             // 
-            this.metroLabel21.AutoSize = true;
-            this.metroLabel21.Location = new System.Drawing.Point(388, 236);
-            this.metroLabel21.Name = "metroLabel21";
-            this.metroLabel21.Size = new System.Drawing.Size(53, 19);
-            this.metroLabel21.TabIndex = 45;
-            this.metroLabel21.Text = "Cuenta:";
+            this.labelCuentaOp.AutoSize = true;
+            this.labelCuentaOp.Location = new System.Drawing.Point(388, 236);
+            this.labelCuentaOp.Name = "labelCuentaOp";
+            this.labelCuentaOp.Size = new System.Drawing.Size(53, 19);
+            this.labelCuentaOp.TabIndex = 45;
+            this.labelCuentaOp.Text = "Cuenta:";
             // 
             // comboCuenta
             // 
             this.comboCuenta.FormattingEnabled = true;
             this.comboCuenta.ItemHeight = 23;
+            this.comboCuenta.Items.AddRange(new object[] {
+            "4-2-92-02-000",
+            "4-2-92-04-000",
+            "4-2-92-01-000"});
             this.comboCuenta.Location = new System.Drawing.Point(135, 236);
             this.comboCuenta.Name = "comboCuenta";
             this.comboCuenta.Size = new System.Drawing.Size(246, 29);
@@ -1494,34 +1707,37 @@
             this.comboCuenta.UseSelectable = true;
             this.comboCuenta.SelectedIndexChanged += new System.EventHandler(this.comboCuenta_SelectedIndexChanged);
             // 
-            // metroLabel19
+            // labelCuenta
             // 
-            this.metroLabel19.AutoSize = true;
-            this.metroLabel19.Location = new System.Drawing.Point(6, 236);
-            this.metroLabel19.Name = "metroLabel19";
-            this.metroLabel19.Size = new System.Drawing.Size(125, 19);
-            this.metroLabel19.TabIndex = 43;
-            this.metroLabel19.Text = "Número de Cuenta:";
+            this.labelCuenta.AutoSize = true;
+            this.labelCuenta.Location = new System.Drawing.Point(6, 236);
+            this.labelCuenta.Name = "labelCuenta";
+            this.labelCuenta.Size = new System.Drawing.Size(125, 19);
+            this.labelCuenta.TabIndex = 43;
+            this.labelCuenta.Text = "Número de Cuenta:";
             // 
             // comboOp
             // 
             this.comboOp.FormattingEnabled = true;
             this.comboOp.ItemHeight = 23;
+            this.comboOp.Items.AddRange(new object[] {
+            "Prepago",
+            "Crédito"});
             this.comboOp.Location = new System.Drawing.Point(135, 201);
             this.comboOp.Name = "comboOp";
             this.comboOp.Size = new System.Drawing.Size(246, 29);
             this.comboOp.TabIndex = 42;
             this.comboOp.UseSelectable = true;
             // 
-            // metroLabel20
+            // labelOp
             // 
-            this.metroLabel20.AutoSize = true;
-            this.metroLabel20.Location = new System.Drawing.Point(6, 201);
-            this.metroLabel20.Name = "metroLabel20";
-            this.metroLabel20.Size = new System.Drawing.Size(123, 19);
-            this.metroLabel20.TabIndex = 41;
-            this.metroLabel20.Text = "Tipo de Operación:";
-            this.metroLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelOp.AutoSize = true;
+            this.labelOp.Location = new System.Drawing.Point(6, 201);
+            this.labelOp.Name = "labelOp";
+            this.labelOp.Size = new System.Drawing.Size(123, 19);
+            this.labelOp.TabIndex = 41;
+            this.labelOp.Text = "Tipo de Operación:";
+            this.labelOp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cant2
             // 
@@ -1554,15 +1770,15 @@
             this.cant2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.cant2.TextChanged += new System.EventHandler(this.cant2_TextChanged);
             // 
-            // metroLabel15
+            // label17
             // 
-            this.metroLabel15.AutoSize = true;
-            this.metroLabel15.Location = new System.Drawing.Point(740, 170);
-            this.metroLabel15.Name = "metroLabel15";
-            this.metroLabel15.Size = new System.Drawing.Size(62, 19);
-            this.metroLabel15.TabIndex = 39;
-            this.metroLabel15.Text = "Monto 2:";
-            this.metroLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(740, 170);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(62, 19);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Monto 2:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textMonto2
             // 
@@ -1626,25 +1842,25 @@
             this.nombreBeneficio2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.nombreBeneficio2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel17
+            // label43
             // 
-            this.metroLabel17.AutoSize = true;
-            this.metroLabel17.Location = new System.Drawing.Point(315, 170);
-            this.metroLabel17.Name = "metroLabel17";
-            this.metroLabel17.Size = new System.Drawing.Size(64, 19);
-            this.metroLabel17.TabIndex = 36;
-            this.metroLabel17.Text = "Cuenta 2:";
-            this.metroLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(315, 170);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(64, 19);
+            this.label43.TabIndex = 36;
+            this.label43.Text = "Cuenta 2:";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroLabel18
+            // label18
             // 
-            this.metroLabel18.AutoSize = true;
-            this.metroLabel18.Location = new System.Drawing.Point(6, 170);
-            this.metroLabel18.Name = "metroLabel18";
-            this.metroLabel18.Size = new System.Drawing.Size(139, 19);
-            this.metroLabel18.TabIndex = 35;
-            this.metroLabel18.Text = "Centro de Beneficio 2:";
-            this.metroLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 170);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(139, 19);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Centro de Beneficio 2:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cant1
             // 
@@ -1676,15 +1892,15 @@
             this.cant1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cant1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel16
+            // label9
             // 
-            this.metroLabel16.AutoSize = true;
-            this.metroLabel16.Location = new System.Drawing.Point(740, 141);
-            this.metroLabel16.Name = "metroLabel16";
-            this.metroLabel16.Size = new System.Drawing.Size(60, 19);
-            this.metroLabel16.TabIndex = 32;
-            this.metroLabel16.Text = "Monto 1:";
-            this.metroLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(740, 141);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(60, 19);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Monto 1:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textMonto
             // 
@@ -1748,25 +1964,25 @@
             this.nombreBeneficio.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.nombreBeneficio.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel13
+            // label7
             // 
-            this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(315, 141);
-            this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(66, 19);
-            this.metroLabel13.TabIndex = 29;
-            this.metroLabel13.Text = "Cuenta 1: ";
-            this.metroLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(315, 141);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 19);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Cuenta 1: ";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroLabel14
+            // label8
             // 
-            this.metroLabel14.AutoSize = true;
-            this.metroLabel14.Location = new System.Drawing.Point(6, 141);
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(137, 19);
-            this.metroLabel14.TabIndex = 28;
-            this.metroLabel14.Text = "Centro de Beneficio 1:";
-            this.metroLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 141);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 19);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Centro de Beneficio 1:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tHann
             // 
@@ -1983,6 +2199,9 @@
             // 
             this.comboCategoria.FormattingEnabled = true;
             this.comboCategoria.ItemHeight = 23;
+            this.comboCategoria.Items.AddRange(new object[] {
+            "CP",
+            "ID"});
             this.comboCategoria.Location = new System.Drawing.Point(768, 36);
             this.comboCategoria.Name = "comboCategoria";
             this.comboCategoria.Size = new System.Drawing.Size(162, 29);
@@ -2671,7 +2890,7 @@
             // 
             this.esquemaDateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateDic.Location = new System.Drawing.Point(125, 438);
-            this.esquemaDateDic.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateDic.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateDic.Name = "esquemaDateDic";
             this.esquemaDateDic.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateDic.TabIndex = 261;
@@ -2680,7 +2899,7 @@
             // 
             this.esquemaDateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateNov.Location = new System.Drawing.Point(125, 403);
-            this.esquemaDateNov.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateNov.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateNov.Name = "esquemaDateNov";
             this.esquemaDateNov.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateNov.TabIndex = 260;
@@ -2689,7 +2908,7 @@
             // 
             this.esquemaDateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateOct.Location = new System.Drawing.Point(125, 368);
-            this.esquemaDateOct.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateOct.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateOct.Name = "esquemaDateOct";
             this.esquemaDateOct.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateOct.TabIndex = 259;
@@ -2698,7 +2917,7 @@
             // 
             this.esquemaDateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateSep.Location = new System.Drawing.Point(125, 333);
-            this.esquemaDateSep.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateSep.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateSep.Name = "esquemaDateSep";
             this.esquemaDateSep.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateSep.TabIndex = 258;
@@ -2707,7 +2926,7 @@
             // 
             this.esquemaDateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateAgo.Location = new System.Drawing.Point(125, 298);
-            this.esquemaDateAgo.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateAgo.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateAgo.Name = "esquemaDateAgo";
             this.esquemaDateAgo.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateAgo.TabIndex = 257;
@@ -2716,7 +2935,7 @@
             // 
             this.esquemaDateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateJul.Location = new System.Drawing.Point(125, 263);
-            this.esquemaDateJul.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateJul.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateJul.Name = "esquemaDateJul";
             this.esquemaDateJul.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateJul.TabIndex = 256;
@@ -2725,7 +2944,7 @@
             // 
             this.esquemaDateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateJun.Location = new System.Drawing.Point(125, 228);
-            this.esquemaDateJun.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateJun.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateJun.Name = "esquemaDateJun";
             this.esquemaDateJun.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateJun.TabIndex = 255;
@@ -2734,7 +2953,7 @@
             // 
             this.esquemaDateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateMay.Location = new System.Drawing.Point(125, 193);
-            this.esquemaDateMay.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateMay.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateMay.Name = "esquemaDateMay";
             this.esquemaDateMay.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateMay.TabIndex = 254;
@@ -2743,7 +2962,7 @@
             // 
             this.esquemaDateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateAbr.Location = new System.Drawing.Point(125, 158);
-            this.esquemaDateAbr.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateAbr.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateAbr.Name = "esquemaDateAbr";
             this.esquemaDateAbr.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateAbr.TabIndex = 253;
@@ -2752,7 +2971,7 @@
             // 
             this.esquemaDateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateMar.Location = new System.Drawing.Point(125, 123);
-            this.esquemaDateMar.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateMar.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateMar.Name = "esquemaDateMar";
             this.esquemaDateMar.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateMar.TabIndex = 252;
@@ -2761,7 +2980,7 @@
             // 
             this.esquemaDateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateFeb.Location = new System.Drawing.Point(125, 88);
-            this.esquemaDateFeb.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateFeb.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateFeb.Name = "esquemaDateFeb";
             this.esquemaDateFeb.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateFeb.TabIndex = 251;
@@ -2770,7 +2989,7 @@
             // 
             this.esquemaDateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.esquemaDateEne.Location = new System.Drawing.Point(125, 53);
-            this.esquemaDateEne.MinimumSize = new System.Drawing.Size(0, 29);
+            this.esquemaDateEne.MinimumSize = new System.Drawing.Size(4, 29);
             this.esquemaDateEne.Name = "esquemaDateEne";
             this.esquemaDateEne.Size = new System.Drawing.Size(101, 29);
             this.esquemaDateEne.TabIndex = 11;
@@ -2825,7 +3044,7 @@
             // 
             this.dateDic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDic.Location = new System.Drawing.Point(125, 438);
-            this.dateDic.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateDic.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateDic.Name = "dateDic";
             this.dateDic.Size = new System.Drawing.Size(101, 29);
             this.dateDic.TabIndex = 261;
@@ -2834,7 +3053,7 @@
             // 
             this.dateNov.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNov.Location = new System.Drawing.Point(125, 403);
-            this.dateNov.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateNov.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateNov.Name = "dateNov";
             this.dateNov.Size = new System.Drawing.Size(101, 29);
             this.dateNov.TabIndex = 260;
@@ -2843,7 +3062,7 @@
             // 
             this.dateOct.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateOct.Location = new System.Drawing.Point(125, 368);
-            this.dateOct.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateOct.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateOct.Name = "dateOct";
             this.dateOct.Size = new System.Drawing.Size(101, 29);
             this.dateOct.TabIndex = 259;
@@ -2852,7 +3071,7 @@
             // 
             this.dateSep.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateSep.Location = new System.Drawing.Point(125, 333);
-            this.dateSep.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateSep.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateSep.Name = "dateSep";
             this.dateSep.Size = new System.Drawing.Size(101, 29);
             this.dateSep.TabIndex = 258;
@@ -2861,7 +3080,7 @@
             // 
             this.dateAgo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAgo.Location = new System.Drawing.Point(125, 298);
-            this.dateAgo.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateAgo.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateAgo.Name = "dateAgo";
             this.dateAgo.Size = new System.Drawing.Size(101, 29);
             this.dateAgo.TabIndex = 257;
@@ -2870,7 +3089,7 @@
             // 
             this.dateJul.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateJul.Location = new System.Drawing.Point(125, 263);
-            this.dateJul.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateJul.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateJul.Name = "dateJul";
             this.dateJul.Size = new System.Drawing.Size(101, 29);
             this.dateJul.TabIndex = 256;
@@ -2879,7 +3098,7 @@
             // 
             this.dateJun.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateJun.Location = new System.Drawing.Point(125, 228);
-            this.dateJun.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateJun.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateJun.Name = "dateJun";
             this.dateJun.Size = new System.Drawing.Size(101, 29);
             this.dateJun.TabIndex = 255;
@@ -2888,7 +3107,7 @@
             // 
             this.dateMay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateMay.Location = new System.Drawing.Point(125, 193);
-            this.dateMay.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateMay.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateMay.Name = "dateMay";
             this.dateMay.Size = new System.Drawing.Size(101, 29);
             this.dateMay.TabIndex = 254;
@@ -2897,7 +3116,7 @@
             // 
             this.dateAbr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAbr.Location = new System.Drawing.Point(125, 158);
-            this.dateAbr.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateAbr.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateAbr.Name = "dateAbr";
             this.dateAbr.Size = new System.Drawing.Size(101, 29);
             this.dateAbr.TabIndex = 253;
@@ -2906,7 +3125,7 @@
             // 
             this.dateMar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateMar.Location = new System.Drawing.Point(125, 123);
-            this.dateMar.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateMar.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateMar.Name = "dateMar";
             this.dateMar.Size = new System.Drawing.Size(101, 29);
             this.dateMar.TabIndex = 252;
@@ -2915,7 +3134,7 @@
             // 
             this.dateFeb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateFeb.Location = new System.Drawing.Point(125, 88);
-            this.dateFeb.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateFeb.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateFeb.Name = "dateFeb";
             this.dateFeb.Size = new System.Drawing.Size(101, 29);
             this.dateFeb.TabIndex = 251;
@@ -2924,7 +3143,7 @@
             // 
             this.dateEne.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateEne.Location = new System.Drawing.Point(125, 53);
-            this.dateEne.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateEne.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateEne.Name = "dateEne";
             this.dateEne.Size = new System.Drawing.Size(101, 29);
             this.dateEne.TabIndex = 11;
@@ -5060,19 +5279,156 @@
             this.listaSaldos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.listaSaldos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(201)))), ((int)(((byte)(206)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaSaldos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.listaSaldos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaSaldos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_ordenes,
+            this.fecha_ingreso,
+            this.dataGridViewTextBoxColumn1,
+            this.status_OI,
+            this.siglas_pais,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.sigla_hanna,
+            this.dataGridViewTextBoxColumn8,
+            this.centro_bneficio,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.vig_desde_mkf,
+            this.vig_hasta_mkf,
+            this.forma_calcul,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.vig_monto_desde,
+            this.vig_monto_hasta,
+            this.transf_bancaria,
+            this.comp,
+            this.noche,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.supply_manager,
+            this.ejecutivo_daf,
+            this.account_manager,
+            this.archivo,
+            this.enero,
+            this.febrero,
+            this.marzo,
+            this.abril,
+            this.mayo,
+            this.junio,
+            this.julio,
+            this.agosto,
+            this.septiembre,
+            this.octubre,
+            this.noviebre,
+            this.diciembre,
+            this.anio_ene,
+            this.anio_feb,
+            this.anio_mar,
+            this.anio_abr,
+            this.anio_may,
+            this.anio_jun,
+            this.anio_jul,
+            this.anio_ago,
+            this.anio_sep,
+            this.anio_oct,
+            this.anio_nov,
+            this.anio_dic,
+            this.monto_ene,
+            this.monto_feb,
+            this.monto_mar,
+            this.monto_abr,
+            this.monto_may,
+            this.monto_jun,
+            this.monto_jul,
+            this.monto_ago,
+            this.monto_sep,
+            this.monto_oct,
+            this.monto_nov,
+            this.monto_dic,
+            this.facturado_ene,
+            this.facturado_feb,
+            this.facturado_mar,
+            this.facturado_abr,
+            this.facturado_may,
+            this.facturado_jun,
+            this.facturado_jul,
+            this.facturado_ago,
+            this.facturado_sep,
+            this.facturado_oct,
+            this.facturado_nov,
+            this.facturado_dic,
+            this.cobrado_ene,
+            this.cobrado_feb,
+            this.cobrado_mar,
+            this.cobrado_abr,
+            this.cobrado_may,
+            this.cobrado_jun,
+            this.cobrado_jul,
+            this.cobrado_ago,
+            this.cobrado_sep,
+            this.cobrado_oct,
+            this.cobrado_nov,
+            this.cobrado_dic,
+            this.fecha_cobro_ene,
+            this.fecha_cobro_feb,
+            this.fecha_cobro_mar,
+            this.fecha_cobro_abr,
+            this.fecha_cobro_may,
+            this.fecha_cobro_jun,
+            this.fecha_cobro_jul,
+            this.fecha_cobro_ago,
+            this.fecha_cobro_sep,
+            this.fecha_cobro_oct,
+            this.fecha_cobro_nov,
+            this.fecha_cobro_dic,
+            this.esquema_ene,
+            this.esquema_feb,
+            this.esquema_mar,
+            this.esquema_abr,
+            this.esquema_may,
+            this.esquema_jun,
+            this.esquema_jul,
+            this.esquema_ago,
+            this.esquema_sep,
+            this.esquema_oct,
+            this.esquema_nov,
+            this.esquema_dic,
+            this.fecha_com_ene,
+            this.fecha_com_feb,
+            this.fecha_com_mar,
+            this.fecha_com_abr,
+            this.fecha_com_may,
+            this.fecha_com_jun,
+            this.fecha_com_jul,
+            this.fecha_com_ago,
+            this.fecha_com_sep,
+            this.fecha_com_oct,
+            this.fecha_com_nov,
+            this.fecha_com_dic,
+            this.monto_pautado,
+            this.monto_facturado,
+            this.monto_cobrado,
+            this.porcentaje_pautado,
+            this.porcentaje_facturado,
+            this.porcentaje_cobrado});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(201)))), ((int)(((byte)(206)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.listaSaldos.DefaultCellStyle = dataGridViewCellStyle2;
@@ -5083,18 +5439,703 @@
             this.listaSaldos.Name = "listaSaldos";
             this.listaSaldos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(173)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(201)))), ((int)(((byte)(206)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listaSaldos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.listaSaldos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.listaSaldos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.listaSaldos.Size = new System.Drawing.Size(889, 494);
+            this.listaSaldos.Size = new System.Drawing.Size(872, 494);
+            this.listaSaldos.Style = MetroFramework.MetroColorStyle.Teal;
             this.listaSaldos.TabIndex = 76;
-            this.listaSaldos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listaSaldos_MouseDoubleClick);
+            this.listaSaldos.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.listaSaldos_CellMouseDoubleClick);
+            // 
+            // id_ordenes
+            // 
+            this.id_ordenes.HeaderText = "ID";
+            this.id_ordenes.Name = "id_ordenes";
+            // 
+            // fecha_ingreso
+            // 
+            this.fecha_ingreso.HeaderText = "Fecha de alta";
+            this.fecha_ingreso.Name = "fecha_ingreso";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Folio Media";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // status_OI
+            // 
+            this.status_OI.HeaderText = "Status";
+            this.status_OI.Name = "status_OI";
+            // 
+            // siglas_pais
+            // 
+            this.siglas_pais.HeaderText = "Pais";
+            this.siglas_pais.Name = "siglas_pais";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tipo Pauta";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Categoria";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Contrato";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Razón Social";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Nombre Comercial";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Sigla Hotel";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // sigla_hanna
+            // 
+            this.sigla_hanna.HeaderText = "Sigla Hanna";
+            this.sigla_hanna.Name = "sigla_hanna";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Clave Hanna";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // centro_bneficio
+            // 
+            this.centro_bneficio.HeaderText = "Centro Beneficio";
+            this.centro_bneficio.Name = "centro_bneficio";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Monto pauta";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Antiipo Pauta";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "% MKF";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // vig_desde_mkf
+            // 
+            this.vig_desde_mkf.HeaderText = "Vigencia desde MKF";
+            this.vig_desde_mkf.Name = "vig_desde_mkf";
+            // 
+            // vig_hasta_mkf
+            // 
+            this.vig_hasta_mkf.HeaderText = "Vigencia hasta MKF";
+            this.vig_hasta_mkf.Name = "vig_hasta_mkf";
+            // 
+            // forma_calcul
+            // 
+            this.forma_calcul.HeaderText = "Forma Calculo";
+            this.forma_calcul.Name = "forma_calcul";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Monto fijo";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Monto fijo IVA";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Divisa";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // vig_monto_desde
+            // 
+            this.vig_monto_desde.HeaderText = "Vigencia monto desde";
+            this.vig_monto_desde.Name = "vig_monto_desde";
+            // 
+            // vig_monto_hasta
+            // 
+            this.vig_monto_hasta.HeaderText = "Vigencia monto hasta";
+            this.vig_monto_hasta.Name = "vig_monto_hasta";
+            // 
+            // transf_bancaria
+            // 
+            this.transf_bancaria.HeaderText = "Transf Bancaria";
+            this.transf_bancaria.Name = "transf_bancaria";
+            // 
+            // comp
+            // 
+            this.comp.HeaderText = "Compensación";
+            this.comp.Name = "comp";
+            // 
+            // noche
+            // 
+            this.noche.HeaderText = "Noches";
+            this.noche.Name = "noche";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "Ambas";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "Esquema Comisión";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "Observaciones";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // supply_manager
+            // 
+            this.supply_manager.HeaderText = "Supply Manager";
+            this.supply_manager.Name = "supply_manager";
+            // 
+            // ejecutivo_daf
+            // 
+            this.ejecutivo_daf.HeaderText = "Ejecutivo DAF";
+            this.ejecutivo_daf.Name = "ejecutivo_daf";
+            // 
+            // account_manager
+            // 
+            this.account_manager.HeaderText = "Account Manager";
+            this.account_manager.Name = "account_manager";
+            // 
+            // archivo
+            // 
+            this.archivo.HeaderText = "Archivo";
+            this.archivo.Name = "archivo";
+            // 
+            // enero
+            // 
+            this.enero.HeaderText = "Enero";
+            this.enero.Name = "enero";
+            // 
+            // febrero
+            // 
+            this.febrero.HeaderText = "Febrero";
+            this.febrero.Name = "febrero";
+            // 
+            // marzo
+            // 
+            this.marzo.HeaderText = "Marzo";
+            this.marzo.Name = "marzo";
+            // 
+            // abril
+            // 
+            this.abril.HeaderText = "Abril";
+            this.abril.Name = "abril";
+            // 
+            // mayo
+            // 
+            this.mayo.HeaderText = "Mayo";
+            this.mayo.Name = "mayo";
+            // 
+            // junio
+            // 
+            this.junio.HeaderText = "Junio";
+            this.junio.Name = "junio";
+            // 
+            // julio
+            // 
+            this.julio.HeaderText = "Julio";
+            this.julio.Name = "julio";
+            // 
+            // agosto
+            // 
+            this.agosto.HeaderText = "Agosto";
+            this.agosto.Name = "agosto";
+            // 
+            // septiembre
+            // 
+            this.septiembre.HeaderText = "Septiembre";
+            this.septiembre.Name = "septiembre";
+            // 
+            // octubre
+            // 
+            this.octubre.HeaderText = "Octubre";
+            this.octubre.Name = "octubre";
+            // 
+            // noviebre
+            // 
+            this.noviebre.HeaderText = "Noviembre";
+            this.noviebre.Name = "noviebre";
+            // 
+            // diciembre
+            // 
+            this.diciembre.HeaderText = "Diciembre";
+            this.diciembre.Name = "diciembre";
+            // 
+            // anio_ene
+            // 
+            this.anio_ene.HeaderText = "Año Enero";
+            this.anio_ene.Name = "anio_ene";
+            // 
+            // anio_feb
+            // 
+            this.anio_feb.HeaderText = "Año Febrero";
+            this.anio_feb.Name = "anio_feb";
+            // 
+            // anio_mar
+            // 
+            this.anio_mar.HeaderText = "Año Marzo";
+            this.anio_mar.Name = "anio_mar";
+            // 
+            // anio_abr
+            // 
+            this.anio_abr.HeaderText = "Año Abril";
+            this.anio_abr.Name = "anio_abr";
+            // 
+            // anio_may
+            // 
+            this.anio_may.HeaderText = "Año Mayo";
+            this.anio_may.Name = "anio_may";
+            // 
+            // anio_jun
+            // 
+            this.anio_jun.HeaderText = "Año Junio";
+            this.anio_jun.Name = "anio_jun";
+            // 
+            // anio_jul
+            // 
+            this.anio_jul.HeaderText = "Año Julio";
+            this.anio_jul.Name = "anio_jul";
+            // 
+            // anio_ago
+            // 
+            this.anio_ago.HeaderText = "Año Agosto";
+            this.anio_ago.Name = "anio_ago";
+            // 
+            // anio_sep
+            // 
+            this.anio_sep.HeaderText = "Año Septiembre";
+            this.anio_sep.Name = "anio_sep";
+            // 
+            // anio_oct
+            // 
+            this.anio_oct.HeaderText = "Año Octubre";
+            this.anio_oct.Name = "anio_oct";
+            // 
+            // anio_nov
+            // 
+            this.anio_nov.HeaderText = "Año Noviembre";
+            this.anio_nov.Name = "anio_nov";
+            // 
+            // anio_dic
+            // 
+            this.anio_dic.HeaderText = "Año Diciembre";
+            this.anio_dic.Name = "anio_dic";
+            // 
+            // monto_ene
+            // 
+            this.monto_ene.HeaderText = "Monto Enero";
+            this.monto_ene.Name = "monto_ene";
+            // 
+            // monto_feb
+            // 
+            this.monto_feb.HeaderText = "Monto Febrero";
+            this.monto_feb.Name = "monto_feb";
+            // 
+            // monto_mar
+            // 
+            this.monto_mar.HeaderText = "Monto Marzo";
+            this.monto_mar.Name = "monto_mar";
+            // 
+            // monto_abr
+            // 
+            this.monto_abr.HeaderText = "Monto Abril";
+            this.monto_abr.Name = "monto_abr";
+            // 
+            // monto_may
+            // 
+            this.monto_may.HeaderText = "Monto Mayo";
+            this.monto_may.Name = "monto_may";
+            // 
+            // monto_jun
+            // 
+            this.monto_jun.HeaderText = "Monto Junio";
+            this.monto_jun.Name = "monto_jun";
+            // 
+            // monto_jul
+            // 
+            this.monto_jul.HeaderText = "Monto Julio";
+            this.monto_jul.Name = "monto_jul";
+            // 
+            // monto_ago
+            // 
+            this.monto_ago.HeaderText = "Monto Agosto";
+            this.monto_ago.Name = "monto_ago";
+            // 
+            // monto_sep
+            // 
+            this.monto_sep.HeaderText = "Monto Septiembre";
+            this.monto_sep.Name = "monto_sep";
+            // 
+            // monto_oct
+            // 
+            this.monto_oct.HeaderText = "Monto Octubre";
+            this.monto_oct.Name = "monto_oct";
+            // 
+            // monto_nov
+            // 
+            this.monto_nov.HeaderText = "Monto Noviembre";
+            this.monto_nov.Name = "monto_nov";
+            // 
+            // monto_dic
+            // 
+            this.monto_dic.HeaderText = "Monto Diciembre";
+            this.monto_dic.Name = "monto_dic";
+            // 
+            // facturado_ene
+            // 
+            this.facturado_ene.HeaderText = "Facturado Enero";
+            this.facturado_ene.Name = "facturado_ene";
+            // 
+            // facturado_feb
+            // 
+            this.facturado_feb.HeaderText = "Facturado Febrero";
+            this.facturado_feb.Name = "facturado_feb";
+            // 
+            // facturado_mar
+            // 
+            this.facturado_mar.HeaderText = "Facturado Marzo";
+            this.facturado_mar.Name = "facturado_mar";
+            // 
+            // facturado_abr
+            // 
+            this.facturado_abr.HeaderText = "Facturado Abril";
+            this.facturado_abr.Name = "facturado_abr";
+            // 
+            // facturado_may
+            // 
+            this.facturado_may.HeaderText = "Facturado Mayo";
+            this.facturado_may.Name = "facturado_may";
+            // 
+            // facturado_jun
+            // 
+            this.facturado_jun.HeaderText = "Facturado Junio";
+            this.facturado_jun.Name = "facturado_jun";
+            // 
+            // facturado_jul
+            // 
+            this.facturado_jul.HeaderText = "Facturado Julio";
+            this.facturado_jul.Name = "facturado_jul";
+            // 
+            // facturado_ago
+            // 
+            this.facturado_ago.HeaderText = "Facturado Agosto";
+            this.facturado_ago.Name = "facturado_ago";
+            // 
+            // facturado_sep
+            // 
+            this.facturado_sep.HeaderText = "Facturado Septiembre";
+            this.facturado_sep.Name = "facturado_sep";
+            // 
+            // facturado_oct
+            // 
+            this.facturado_oct.HeaderText = "Facturado Octubre";
+            this.facturado_oct.Name = "facturado_oct";
+            // 
+            // facturado_nov
+            // 
+            this.facturado_nov.HeaderText = "Facturado Noviembre";
+            this.facturado_nov.Name = "facturado_nov";
+            // 
+            // facturado_dic
+            // 
+            this.facturado_dic.HeaderText = "Facturado Diciembre";
+            this.facturado_dic.Name = "facturado_dic";
+            // 
+            // cobrado_ene
+            // 
+            this.cobrado_ene.HeaderText = "Cobrado Enero";
+            this.cobrado_ene.Name = "cobrado_ene";
+            // 
+            // cobrado_feb
+            // 
+            this.cobrado_feb.HeaderText = "Cobrado Febrero";
+            this.cobrado_feb.Name = "cobrado_feb";
+            // 
+            // cobrado_mar
+            // 
+            this.cobrado_mar.HeaderText = "Cobrado Marzo";
+            this.cobrado_mar.Name = "cobrado_mar";
+            // 
+            // cobrado_abr
+            // 
+            this.cobrado_abr.HeaderText = "Cobrado Abril";
+            this.cobrado_abr.Name = "cobrado_abr";
+            // 
+            // cobrado_may
+            // 
+            this.cobrado_may.HeaderText = "Cobrado Mayo";
+            this.cobrado_may.Name = "cobrado_may";
+            // 
+            // cobrado_jun
+            // 
+            this.cobrado_jun.HeaderText = "Cobrado Junio";
+            this.cobrado_jun.Name = "cobrado_jun";
+            // 
+            // cobrado_jul
+            // 
+            this.cobrado_jul.HeaderText = "Cobrado Julio";
+            this.cobrado_jul.Name = "cobrado_jul";
+            // 
+            // cobrado_ago
+            // 
+            this.cobrado_ago.HeaderText = "Cobrado Agosto";
+            this.cobrado_ago.Name = "cobrado_ago";
+            // 
+            // cobrado_sep
+            // 
+            this.cobrado_sep.HeaderText = "Cobrado Septiembre";
+            this.cobrado_sep.Name = "cobrado_sep";
+            // 
+            // cobrado_oct
+            // 
+            this.cobrado_oct.HeaderText = "Cobrado Octubre";
+            this.cobrado_oct.Name = "cobrado_oct";
+            // 
+            // cobrado_nov
+            // 
+            this.cobrado_nov.HeaderText = "Cobrado Noviembre";
+            this.cobrado_nov.Name = "cobrado_nov";
+            // 
+            // cobrado_dic
+            // 
+            this.cobrado_dic.HeaderText = "Cobrado Diciembre";
+            this.cobrado_dic.Name = "cobrado_dic";
+            // 
+            // fecha_cobro_ene
+            // 
+            this.fecha_cobro_ene.HeaderText = "Fecha Cobro Enero";
+            this.fecha_cobro_ene.Name = "fecha_cobro_ene";
+            // 
+            // fecha_cobro_feb
+            // 
+            this.fecha_cobro_feb.HeaderText = "Fecha Cobro Febrero";
+            this.fecha_cobro_feb.Name = "fecha_cobro_feb";
+            // 
+            // fecha_cobro_mar
+            // 
+            this.fecha_cobro_mar.HeaderText = "Fecha Cobro Marzo";
+            this.fecha_cobro_mar.Name = "fecha_cobro_mar";
+            // 
+            // fecha_cobro_abr
+            // 
+            this.fecha_cobro_abr.HeaderText = "Fecha Cobro Abril";
+            this.fecha_cobro_abr.Name = "fecha_cobro_abr";
+            // 
+            // fecha_cobro_may
+            // 
+            this.fecha_cobro_may.HeaderText = "Fecha Cobro Mayo";
+            this.fecha_cobro_may.Name = "fecha_cobro_may";
+            // 
+            // fecha_cobro_jun
+            // 
+            this.fecha_cobro_jun.HeaderText = "Fecha Cobro Junio";
+            this.fecha_cobro_jun.Name = "fecha_cobro_jun";
+            // 
+            // fecha_cobro_jul
+            // 
+            this.fecha_cobro_jul.HeaderText = "Fecha Cobro Julio";
+            this.fecha_cobro_jul.Name = "fecha_cobro_jul";
+            // 
+            // fecha_cobro_ago
+            // 
+            this.fecha_cobro_ago.HeaderText = "Fecha Cobro Agosto";
+            this.fecha_cobro_ago.Name = "fecha_cobro_ago";
+            // 
+            // fecha_cobro_sep
+            // 
+            this.fecha_cobro_sep.HeaderText = "Fecha Cobro Septiembre";
+            this.fecha_cobro_sep.Name = "fecha_cobro_sep";
+            // 
+            // fecha_cobro_oct
+            // 
+            this.fecha_cobro_oct.HeaderText = "Fecha Cobro Octubre";
+            this.fecha_cobro_oct.Name = "fecha_cobro_oct";
+            // 
+            // fecha_cobro_nov
+            // 
+            this.fecha_cobro_nov.HeaderText = "Fecha Cobro Noviembre";
+            this.fecha_cobro_nov.Name = "fecha_cobro_nov";
+            // 
+            // fecha_cobro_dic
+            // 
+            this.fecha_cobro_dic.HeaderText = "Fecha Cobro Diciembre";
+            this.fecha_cobro_dic.Name = "fecha_cobro_dic";
+            // 
+            // esquema_ene
+            // 
+            this.esquema_ene.HeaderText = "Esquema Enero";
+            this.esquema_ene.Name = "esquema_ene";
+            // 
+            // esquema_feb
+            // 
+            this.esquema_feb.HeaderText = "Esquema Febrero";
+            this.esquema_feb.Name = "esquema_feb";
+            // 
+            // esquema_mar
+            // 
+            this.esquema_mar.HeaderText = "Esquema Marzo";
+            this.esquema_mar.Name = "esquema_mar";
+            // 
+            // esquema_abr
+            // 
+            this.esquema_abr.HeaderText = "Esquema Abril";
+            this.esquema_abr.Name = "esquema_abr";
+            // 
+            // esquema_may
+            // 
+            this.esquema_may.HeaderText = "Esquema Mayo";
+            this.esquema_may.Name = "esquema_may";
+            // 
+            // esquema_jun
+            // 
+            this.esquema_jun.HeaderText = "Esuqema Junio";
+            this.esquema_jun.Name = "esquema_jun";
+            // 
+            // esquema_jul
+            // 
+            this.esquema_jul.HeaderText = "Esquema Julio";
+            this.esquema_jul.Name = "esquema_jul";
+            // 
+            // esquema_ago
+            // 
+            this.esquema_ago.HeaderText = "Esquema Agosto";
+            this.esquema_ago.Name = "esquema_ago";
+            // 
+            // esquema_sep
+            // 
+            this.esquema_sep.HeaderText = "Esquema Septiembre";
+            this.esquema_sep.Name = "esquema_sep";
+            // 
+            // esquema_oct
+            // 
+            this.esquema_oct.HeaderText = "Esquema Octubre";
+            this.esquema_oct.Name = "esquema_oct";
+            // 
+            // esquema_nov
+            // 
+            this.esquema_nov.HeaderText = "Esquema Noviembre";
+            this.esquema_nov.Name = "esquema_nov";
+            // 
+            // esquema_dic
+            // 
+            this.esquema_dic.HeaderText = "Esquema Diciembre";
+            this.esquema_dic.Name = "esquema_dic";
+            // 
+            // fecha_com_ene
+            // 
+            this.fecha_com_ene.HeaderText = "Fecha Comisión Enero";
+            this.fecha_com_ene.Name = "fecha_com_ene";
+            // 
+            // fecha_com_feb
+            // 
+            this.fecha_com_feb.HeaderText = "Fecha Comisión Febrero";
+            this.fecha_com_feb.Name = "fecha_com_feb";
+            // 
+            // fecha_com_mar
+            // 
+            this.fecha_com_mar.HeaderText = "Fecha Comisión Marzo";
+            this.fecha_com_mar.Name = "fecha_com_mar";
+            // 
+            // fecha_com_abr
+            // 
+            this.fecha_com_abr.HeaderText = "Fecha Comisión Abril";
+            this.fecha_com_abr.Name = "fecha_com_abr";
+            // 
+            // fecha_com_may
+            // 
+            this.fecha_com_may.HeaderText = "Fecha Comisión Mayo";
+            this.fecha_com_may.Name = "fecha_com_may";
+            // 
+            // fecha_com_jun
+            // 
+            this.fecha_com_jun.HeaderText = "Fecha Comisión Junio";
+            this.fecha_com_jun.Name = "fecha_com_jun";
+            // 
+            // fecha_com_jul
+            // 
+            this.fecha_com_jul.HeaderText = "Fecha Comisión Julio";
+            this.fecha_com_jul.Name = "fecha_com_jul";
+            // 
+            // fecha_com_ago
+            // 
+            this.fecha_com_ago.HeaderText = "Fecha Comisión Agosto";
+            this.fecha_com_ago.Name = "fecha_com_ago";
+            // 
+            // fecha_com_sep
+            // 
+            this.fecha_com_sep.HeaderText = "Fecha Comisión Septiembre";
+            this.fecha_com_sep.Name = "fecha_com_sep";
+            // 
+            // fecha_com_oct
+            // 
+            this.fecha_com_oct.HeaderText = "Fecha Comisión Octubre";
+            this.fecha_com_oct.Name = "fecha_com_oct";
+            // 
+            // fecha_com_nov
+            // 
+            this.fecha_com_nov.HeaderText = "Fecha Comisión Noviembre";
+            this.fecha_com_nov.Name = "fecha_com_nov";
+            // 
+            // fecha_com_dic
+            // 
+            this.fecha_com_dic.HeaderText = "Fecha Comisión Diciembre";
+            this.fecha_com_dic.Name = "fecha_com_dic";
+            // 
+            // monto_pautado
+            // 
+            this.monto_pautado.HeaderText = "Monto pautado";
+            this.monto_pautado.Name = "monto_pautado";
+            // 
+            // monto_facturado
+            // 
+            this.monto_facturado.HeaderText = "Monto Facturado";
+            this.monto_facturado.Name = "monto_facturado";
+            // 
+            // monto_cobrado
+            // 
+            this.monto_cobrado.HeaderText = "Monto Cobrado";
+            this.monto_cobrado.Name = "monto_cobrado";
+            // 
+            // porcentaje_pautado
+            // 
+            this.porcentaje_pautado.HeaderText = "% Pautado";
+            this.porcentaje_pautado.Name = "porcentaje_pautado";
+            // 
+            // porcentaje_facturado
+            // 
+            this.porcentaje_facturado.HeaderText = "% Facturado";
+            this.porcentaje_facturado.Name = "porcentaje_facturado";
+            // 
+            // porcentaje_cobrado
+            // 
+            this.porcentaje_cobrado.HeaderText = "% Cobrado";
+            this.porcentaje_cobrado.Name = "porcentaje_cobrado";
             // 
             // groupBox13
             // 
@@ -5484,6 +6525,11 @@
             // 
             this.textStatusOI.FormattingEnabled = true;
             this.textStatusOI.ItemHeight = 23;
+            this.textStatusOI.Items.AddRange(new object[] {
+            "Activo",
+            "Pausado",
+            "Cancelado",
+            "Finalizado"});
             this.textStatusOI.Location = new System.Drawing.Point(1062, 62);
             this.textStatusOI.Name = "textStatusOI";
             this.textStatusOI.Size = new System.Drawing.Size(162, 29);
@@ -5892,27 +6938,27 @@
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroTextBox cant2;
-        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private MetroFramework.Controls.MetroLabel label17;
         private MetroFramework.Controls.MetroTextBox textMonto2;
         private MetroFramework.Controls.MetroTextBox nombreBeneficio2;
-        private MetroFramework.Controls.MetroLabel metroLabel17;
-        private MetroFramework.Controls.MetroLabel metroLabel18;
+        private MetroFramework.Controls.MetroLabel label43;
+        private MetroFramework.Controls.MetroLabel label18;
         private MetroFramework.Controls.MetroTextBox cant1;
-        private MetroFramework.Controls.MetroLabel metroLabel16;
+        private MetroFramework.Controls.MetroLabel label9;
         private MetroFramework.Controls.MetroTextBox textMonto;
         private MetroFramework.Controls.MetroTextBox nombreBeneficio;
-        private MetroFramework.Controls.MetroLabel metroLabel13;
-        private MetroFramework.Controls.MetroLabel metroLabel14;
+        private MetroFramework.Controls.MetroLabel label7;
+        private MetroFramework.Controls.MetroLabel label8;
         private MetroFramework.Controls.MetroTextBox textID;
-        private MetroFramework.Controls.MetroLabel metroLabel22;
+        private MetroFramework.Controls.MetroLabel labelID;
         private MetroFramework.Controls.MetroComboBox comboCuentaOp;
-        private MetroFramework.Controls.MetroLabel metroLabel21;
+        private MetroFramework.Controls.MetroLabel labelCuentaOp;
         private MetroFramework.Controls.MetroComboBox comboCuenta;
-        private MetroFramework.Controls.MetroLabel metroLabel19;
+        private MetroFramework.Controls.MetroLabel labelCuenta;
         private MetroFramework.Controls.MetroComboBox comboOp;
-        private MetroFramework.Controls.MetroLabel metroLabel20;
+        private MetroFramework.Controls.MetroLabel labelOp;
         private MetroFramework.Controls.MetroComboBox comboRazonOp;
-        private MetroFramework.Controls.MetroLabel metroLabel23;
+        private MetroFramework.Controls.MetroLabel labelRazon;
         private System.Windows.Forms.GroupBox groupBox2;
         private MetroFramework.Controls.MetroDateTime dateHastaMKF;
         private MetroFramework.Controls.MetroLabel metroLabel25;
@@ -5932,24 +6978,24 @@
         private MetroFramework.Controls.MetroComboBox comboDivisa;
         private MetroFramework.Controls.MetroLabel metroLabel31;
         private MetroFramework.Controls.MetroTextBox tMonto;
-        private MetroFramework.Controls.MetroLabel metroLabel33;
+        private MetroFramework.Controls.MetroLabel label14;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private MetroFramework.Controls.MetroTextBox cantNoches;
-        private MetroFramework.Controls.MetroLabel metroLabel34;
+        private MetroFramework.Controls.MetroLabel label44;
         private MetroFramework.Controls.MetroCheckBox checkNoches;
         private MetroFramework.Controls.MetroCheckBox checkAmbos;
         private MetroFramework.Controls.MetroCheckBox checkBCompensacion;
         private MetroFramework.Controls.MetroCheckBox checkTransferencia;
         private MetroFramework.Controls.MetroTextBox importeNoches;
-        private MetroFramework.Controls.MetroLabel metroLabel35;
+        private MetroFramework.Controls.MetroLabel label45;
         private MetroFramework.Controls.MetroComboBox comboComisiones;
         private MetroFramework.Controls.MetroLabel metroLabel36;
         private MetroFramework.Controls.MetroComboBox combo3;
         private MetroFramework.Controls.MetroComboBox combo2;
         private MetroFramework.Controls.MetroComboBox combo1;
         private MetroFramework.Controls.MetroComboBox comboQ;
-        private MetroFramework.Controls.MetroLabel metroLabel38;
+        private MetroFramework.Controls.MetroLabel label41;
         private MetroFramework.Controls.MetroComboBox comboQPorcentaje;
         private MetroFramework.Controls.MetroLabel metroLabel37;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -6148,7 +7194,6 @@
         private MetroFramework.Controls.MetroTextBox esquemaJul;
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private System.Windows.Forms.GroupBox groupBox13;
-        private MetroFramework.Controls.MetroGrid listaSaldos;
         private MetroFramework.Controls.MetroCheckBox cbFechas;
         private MetroFramework.Controls.MetroLabel metroLabel48;
         private MetroFramework.Controls.MetroDateTime fechaHasta;
@@ -6220,5 +7265,146 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn observaciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn sypply;
         private System.Windows.Forms.DataGridViewTextBoxColumn ejecutivo;
+        private MetroFramework.Controls.MetroLabel campo3;
+        private MetroFramework.Controls.MetroLabel campo2;
+        private MetroFramework.Controls.MetroLabel campo1;
+        private MetroFramework.Controls.MetroGrid listaSaldos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_ordenes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_ingreso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status_OI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn siglas_pais;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sigla_hanna;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn centro_bneficio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vig_desde_mkf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vig_hasta_mkf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn forma_calcul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vig_monto_desde;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vig_monto_hasta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn transf_bancaria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noche;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn supply_manager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ejecutivo_daf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn account_manager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn archivo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn febrero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn marzo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn abril;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mayo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn junio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn julio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn agosto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn septiembre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn octubre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noviebre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diciembre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anio_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn facturado_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cobrado_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_cobro_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esquema_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_ene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_feb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_mar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_abr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_may;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_jun;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_jul;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_ago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_sep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_oct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_nov;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_com_dic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_pautado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_facturado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto_cobrado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_pautado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_facturado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn porcentaje_cobrado;
     }
 }
