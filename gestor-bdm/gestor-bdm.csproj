@@ -165,11 +165,11 @@
     <Compile Include="daf.Designer.cs">
       <DependentUpon>daf.cs</DependentUpon>
     </Compile>
-    <Compile Include="dash_comercial.cs">
+    <Compile Include="dash_comercial_media.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dash_comercial.Designer.cs">
-      <DependentUpon>dash_comercial.cs</DependentUpon>
+    <Compile Include="dash_comercial_media.Designer.cs">
+      <DependentUpon>dash_comercial_media.cs</DependentUpon>
     </Compile>
     <Compile Include="generador.cs">
       <SubType>Form</SubType>
@@ -213,11 +213,11 @@
     <Compile Include="media-personal.Designer.cs">
       <DependentUpon>media-personal.cs</DependentUpon>
     </Compile>
-    <Compile Include="medios.cs">
+    <Compile Include="medios_media.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="medios.Designer.cs">
-      <DependentUpon>medios.cs</DependentUpon>
+    <Compile Include="medios_media.Designer.cs">
+      <DependentUpon>medios_media.cs</DependentUpon>
     </Compile>
     <Compile Include="OI.cs">
       <SubType>Form</SubType>
@@ -325,8 +325,8 @@
     <EmbeddedResource Include="daf.resx">
       <DependentUpon>daf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dash_comercial.resx">
-      <DependentUpon>dash_comercial.cs</DependentUpon>
+    <EmbeddedResource Include="dash_comercial_media.resx">
+      <DependentUpon>dash_comercial_media.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generador.resx">
       <DependentUpon>generador.cs</DependentUpon>
@@ -349,8 +349,8 @@
     <EmbeddedResource Include="media-personal.resx">
       <DependentUpon>media-personal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="medios.resx">
-      <DependentUpon>medios.cs</DependentUpon>
+    <EmbeddedResource Include="medios_media.resx">
+      <DependentUpon>medios_media.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OI.resx">
       <DependentUpon>OI.cs</DependentUpon>

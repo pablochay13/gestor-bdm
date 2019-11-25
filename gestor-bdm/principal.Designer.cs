@@ -82,6 +82,7 @@
             this.user_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.user_btn.UseSelectable = true;
             this.user_btn.UseTileImage = true;
+            this.user_btn.Click += new System.EventHandler(this.user_btn_Click);
             // 
             // comercial_btn
             // 
@@ -96,6 +97,7 @@
             this.comercial_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.comercial_btn.UseSelectable = true;
             this.comercial_btn.UseTileImage = true;
+            this.comercial_btn.Click += new System.EventHandler(this.comercial_btn_Click);
             // 
             // oi_btn
             // 
@@ -105,7 +107,7 @@
             this.oi_btn.Size = new System.Drawing.Size(200, 200);
             this.oi_btn.Style = MetroFramework.MetroColorStyle.Purple;
             this.oi_btn.TabIndex = 3;
-            this.oi_btn.Text = "Ordenes Inserción";
+            this.oi_btn.Text = "Ordenes de Inserción";
             this.oi_btn.TileImage = global::gestor_bdm.Properties.Resources._004_contract;
             this.oi_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.oi_btn.UseSelectable = true;
@@ -125,6 +127,7 @@
             this.medios_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.medios_btn.UseSelectable = true;
             this.medios_btn.UseTileImage = true;
+            this.medios_btn.Click += new System.EventHandler(this.medios_btn_Click);
             // 
             // clientes_btn
             // 
@@ -139,6 +142,7 @@
             this.clientes_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clientes_btn.UseSelectable = true;
             this.clientes_btn.UseTileImage = true;
+            this.clientes_btn.Click += new System.EventHandler(this.clientes_btn_Click);
             // 
             // landings_btn
             // 

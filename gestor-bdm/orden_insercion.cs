@@ -74,6 +74,7 @@ namespace gestor_bdm
 
             comboQ.Visible = false;
             label41.Visible = false;
+            label43.Visible = false;
 
             campo1.Visible = false;
             combo1.Visible = false;
@@ -1265,7 +1266,7 @@ namespace gestor_bdm
             {
                 montoPauta = Convert.ToDouble(tMontoIVA.Text);
             }
-            else
+            else if (comboNacional.SelectedIndex == 1)
             {
                 montoPauta = Convert.ToDouble(tMonto.Text);
             }
@@ -1745,17 +1746,13 @@ namespace gestor_bdm
                         montoDic.Text = "0";
                     }
 
-                    //montos
                     double suma_monto_oi = Convert.ToDouble(montoEne.Text) + Convert.ToDouble(montoFeb.Text) + Convert.ToDouble(montoMar.Text) + Convert.ToDouble(montoAbr.Text) + Convert.ToDouble(montoMayo.Text) + Convert.ToDouble(montoJun.Text) + Convert.ToDouble(montoJul.Text) + Convert.ToDouble(montoAgo.Text) + Convert.ToDouble(montoSep.Text) + Convert.ToDouble(montoOct.Text) + Convert.ToDouble(montoNov.Text) + Convert.ToDouble(montoDic.Text);
 
                     double porcentaje_suma_monto_oi = (suma_monto_oi / montoPauta) * 100;
 
-                    //String.Format("{0:C}", suma_monto_oi);
-
-                    cantMonto.Text = Convert.ToString(String.Format("{0:C}", suma_monto_oi));
+                    cantMonto.Text = Convert.ToString(suma_monto_oi);
 
                     porcentajeMonto.Text = Convert.ToString(Math.Round(porcentaje_suma_monto_oi, 2) + "%");
-                    //redondeado = Math.Round(totalPauta, 2);
                 }
             }
             catch (Exception m)

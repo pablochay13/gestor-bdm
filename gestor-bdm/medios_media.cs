@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace gestor_bdm
 {
-    public partial class medios : Form
+    public partial class medios_media : Form
     {
         MySqlConnection con = new MySqlConnection(Variables.Sentencia);
         //MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=bd-media");
 
-        public medios()
+        public medios_media()
         {
             InitializeComponent();
             listaMedios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;

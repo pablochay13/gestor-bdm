@@ -93,7 +93,7 @@ namespace gestor_bdm
 
         private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            medios ventana = new medios();
+            medios_media ventana = new medios_media();
             ventana.MdiParent = this;
             ventana.Show();
 
@@ -199,7 +199,7 @@ namespace gestor_bdm
 
         private void DashComercialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dash_comercial ventana = new dash_comercial();
+            dash_comercial_media ventana = new dash_comercial_media();
             ventana.MdiParent = this;
             ventana.Show();
         }

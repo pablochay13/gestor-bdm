@@ -1,6 +1,6 @@
 ﻿namespace gestor_bdm
 {
-    partial class medios
+    partial class medios_media
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(medios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(medios_media));
             this.tPais = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tUnitario = new System.Windows.Forms.TextBox();

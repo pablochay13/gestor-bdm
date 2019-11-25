@@ -11,11 +11,11 @@ using MySql.Data.MySqlClient;
 
 namespace gestor_bdm
 {
-    public partial class dash_comercial : Form
+    public partial class dash_comercial_media : Form
     {
         MySqlConnection con = new MySqlConnection(Variables.Sentencia);
         //MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=bd-media");
-        public dash_comercial()
+        public dash_comercial_media()
         {
             InitializeComponent();
 

@@ -27,5 +27,29 @@ namespace gestor_bdm
             orden_insercion ventana = new orden_insercion();
             ventana.Show();
         }
+
+        private void clientes_btn_Click(object sender, EventArgs e)
+        {
+            clientes ventana = new clientes();
+            ventana.Show();
+        }
+
+        private void medios_btn_Click(object sender, EventArgs e)
+        {
+            medios_media ventana = new medios_media();
+            ventana.Show();
+        }
+
+        private void comercial_btn_Click(object sender, EventArgs e)
+        {
+            dash_comercial_media ventana = new dash_comercial_media();
+            ventana.Show();
+        }
+
+        private void user_btn_Click(object sender, EventArgs e)
+        {
+            usuarios ventana = new usuarios();
+            ventana.Show();
+        }
     }
 }
