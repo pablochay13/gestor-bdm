@@ -24,7 +24,7 @@ namespace gestor_bdm
 
         private void oi_btn_Click(object sender, EventArgs e)
         {
-            orden_insercion ventana = new orden_insercion();
+            menu_oi ventana = new menu_oi();
             ventana.Show();
         }
 
@@ -49,6 +49,12 @@ namespace gestor_bdm
         private void user_btn_Click(object sender, EventArgs e)
         {
             usuarios ventana = new usuarios();
+            ventana.Show();
+        }
+
+        private void opciones_btn_Click(object sender, EventArgs e)
+        {
+            menu_opciones ventana = new menu_opciones();
             ventana.Show();
         }
     }

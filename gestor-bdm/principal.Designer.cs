@@ -61,13 +61,14 @@
             this.opciones_btn.Location = new System.Drawing.Point(435, 286);
             this.opciones_btn.Name = "opciones_btn";
             this.opciones_btn.Size = new System.Drawing.Size(200, 200);
-            this.opciones_btn.Style = MetroFramework.MetroColorStyle.Purple;
+            this.opciones_btn.Style = MetroFramework.MetroColorStyle.Blue;
             this.opciones_btn.TabIndex = 6;
-            this.opciones_btn.Text = "Opciones";
+            this.opciones_btn.Text = "Configuración";
             this.opciones_btn.TileImage = global::gestor_bdm.Properties.Resources._007_settings_gears;
             this.opciones_btn.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.opciones_btn.UseSelectable = true;
             this.opciones_btn.UseTileImage = true;
+            this.opciones_btn.Click += new System.EventHandler(this.opciones_btn_Click);
             // 
             // user_btn
             // 
@@ -90,7 +91,7 @@
             this.comercial_btn.Location = new System.Drawing.Point(23, 286);
             this.comercial_btn.Name = "comercial_btn";
             this.comercial_btn.Size = new System.Drawing.Size(200, 200);
-            this.comercial_btn.Style = MetroFramework.MetroColorStyle.Purple;
+            this.comercial_btn.Style = MetroFramework.MetroColorStyle.Blue;
             this.comercial_btn.TabIndex = 4;
             this.comercial_btn.Text = "Dash Comercial";
             this.comercial_btn.TileImage = global::gestor_bdm.Properties.Resources._005_dashboard;
@@ -105,7 +106,7 @@
             this.oi_btn.Location = new System.Drawing.Point(641, 80);
             this.oi_btn.Name = "oi_btn";
             this.oi_btn.Size = new System.Drawing.Size(200, 200);
-            this.oi_btn.Style = MetroFramework.MetroColorStyle.Purple;
+            this.oi_btn.Style = MetroFramework.MetroColorStyle.Blue;
             this.oi_btn.TabIndex = 3;
             this.oi_btn.Text = "Ordenes de Inserción";
             this.oi_btn.TileImage = global::gestor_bdm.Properties.Resources._004_contract;
@@ -135,7 +136,7 @@
             this.clientes_btn.Location = new System.Drawing.Point(229, 80);
             this.clientes_btn.Name = "clientes_btn";
             this.clientes_btn.Size = new System.Drawing.Size(200, 200);
-            this.clientes_btn.Style = MetroFramework.MetroColorStyle.Purple;
+            this.clientes_btn.Style = MetroFramework.MetroColorStyle.Blue;
             this.clientes_btn.TabIndex = 1;
             this.clientes_btn.Text = "Clientes";
             this.clientes_btn.TileImage = global::gestor_bdm.Properties.Resources._002_employee;

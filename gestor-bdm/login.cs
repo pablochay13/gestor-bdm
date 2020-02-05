@@ -33,7 +33,7 @@ namespace gestor_bdm
                 general.Privilegios = Convert.ToString(leer["privilegios"]);
                 this.Hide();
 
-                main ss = new main();
+                principal ss = new principal();
                 ss.Show();
 
                 con.Close();

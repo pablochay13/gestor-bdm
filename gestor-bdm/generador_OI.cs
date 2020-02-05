@@ -50,11 +50,6 @@ namespace gestor_bdm
 
         }
 
-        private void Generador_OI_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -81,6 +76,7 @@ namespace gestor_bdm
             this.textCondiciones = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.c_c_facturas = new MetroFramework.Controls.MetroCheckBox();
             this.c_t_bancaria = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel48 = new MetroFramework.Controls.MetroLabel();
@@ -386,7 +382,6 @@ namespace gestor_bdm
             this.metroLabel57 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -394,6 +389,7 @@ namespace gestor_bdm
             this.groupBox10.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocDic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocNov)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocOct)).BeginInit();
@@ -429,7 +425,6 @@ namespace gestor_bdm
             this.groupBox16.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager1
@@ -460,7 +455,7 @@ namespace gestor_bdm
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(14, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1220, 556);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroTabControl1.TabIndex = 1;
@@ -911,6 +906,17 @@ namespace gestor_bdm
             this.groupBox21.TabIndex = 336;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Marketing Fijo";
+            // 
+            // textTotalIVA
+            // 
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textTotalIVA.DoubleValue = 0D;
+            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
+            this.textTotalIVA.Name = "textTotalIVA";
+            this.textTotalIVA.Size = new System.Drawing.Size(100, 22);
+            this.textTotalIVA.TabIndex = 481;
+            this.textTotalIVA.Text = "0.00";
             // 
             // c_c_facturas
             // 
@@ -2124,7 +2130,7 @@ namespace gestor_bdm
             // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(303, 451);
@@ -2135,7 +2141,7 @@ namespace gestor_bdm
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(303, 416);
@@ -2146,7 +2152,7 @@ namespace gestor_bdm
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(303, 381);
@@ -2157,7 +2163,7 @@ namespace gestor_bdm
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(303, 346);
@@ -2168,7 +2174,7 @@ namespace gestor_bdm
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(303, 311);
@@ -2179,7 +2185,7 @@ namespace gestor_bdm
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(303, 276);
@@ -2190,7 +2196,7 @@ namespace gestor_bdm
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(303, 241);
@@ -2201,7 +2207,7 @@ namespace gestor_bdm
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(303, 206);
@@ -2212,7 +2218,7 @@ namespace gestor_bdm
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(303, 171);
@@ -2223,7 +2229,7 @@ namespace gestor_bdm
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(303, 136);
@@ -2234,7 +2240,7 @@ namespace gestor_bdm
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(303, 101);
@@ -2246,7 +2252,7 @@ namespace gestor_bdm
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
@@ -2381,7 +2387,7 @@ namespace gestor_bdm
             // porcentajeMF_box
             // 
             this.porcentajeMF_box.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(100, 22);
+            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.porcentajeMF_box.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.porcentajeMF_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.porcentajeMF_box.DoubleValue = 0D;
@@ -4086,9 +4092,9 @@ namespace gestor_bdm
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1212, 514);
+            this.metroTabPage2.Size = new System.Drawing.Size(1212, 517);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Anexo A";
             this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -6886,17 +6892,6 @@ namespace gestor_bdm
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // textTotalIVA
-            // 
-            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(100, 22);
-            this.textTotalIVA.DoubleValue = 0D;
-            this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
-            this.textTotalIVA.Name = "textTotalIVA";
-            this.textTotalIVA.Size = new System.Drawing.Size(100, 22);
-            this.textTotalIVA.TabIndex = 481;
-            this.textTotalIVA.Text = "0.00";
-            // 
             // generador_OI
             // 
             this.ClientSize = new System.Drawing.Size(1247, 689);
@@ -6911,6 +6906,7 @@ namespace gestor_bdm
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Text = "Generador de Ordenes de Inserción";
+            this.Load += new System.EventHandler(this.generador_OI_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
@@ -6922,6 +6918,7 @@ namespace gestor_bdm
             this.groupBox4.PerformLayout();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocDic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocNov)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textDocOct)).EndInit();
@@ -6975,7 +6972,6 @@ namespace gestor_bdm
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textTotalIVA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7461,7 +7457,7 @@ namespace gestor_bdm
                 {
                     checked_mf_oi = "X";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. MARKETING FUND: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
@@ -7485,7 +7481,7 @@ namespace gestor_bdm
                     hasta_mes_mf = " ";
                     hasta_dia_mf = " ";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. MARKETING FUND: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
@@ -7532,7 +7528,7 @@ namespace gestor_bdm
                 PdfPTable table = new PdfPTable(6);
                 table.WidthPercentage = 100;
 
-                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL (BEST MEDIA)"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell.Rowspan = 13;
                 cell.Colspan = 1;
                 cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
@@ -8021,7 +8017,7 @@ namespace gestor_bdm
                 iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0002.jpg");
                 imagen.BorderWidth = 0;
                 imagen.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
-                imagen.ScaleToFit(730f, 765.25f);
+                imagen.ScaleToFit(715f, 750.25f);
 
 
                 //tercera hoja
@@ -8979,6 +8975,11 @@ namespace gestor_bdm
             total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
 
             textTotalIVA.Text = Convert.ToString(total);
+        }
+
+        private void generador_OI_Load_1(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectedIndex = 0;
         }
     }
 }

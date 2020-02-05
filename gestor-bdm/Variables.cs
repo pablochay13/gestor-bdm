@@ -16,8 +16,9 @@ namespace gestor_bdm
         //    set { Variables.ruta_pdf = value; }
         //}
 
-        private static string sentencia = "server=172.20.3.45;port=3306; database=bd-media; Uid=root; pwd=Medi@@dm1n!!;";
+        //private static string sentencia = "server=172.20.3.250;port=3306; database=bd-media; Uid=root; pwd=Medi@@dm1n!!;";
         //private static string sentencia = "server=localhost; database=bd-media; Uid=root; pwd=;Allow Zero Datetime=False;Convert Zero Datetime=True";
+        private static string sentencia = "server=162.241.60.127;database=ccascaru_bdm;Uid=ccascaru_root;pwd=Chay1318;";
 
         private static string ruta_pdf = "";
 

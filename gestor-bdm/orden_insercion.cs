@@ -1258,6 +1258,74 @@ namespace gestor_bdm
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int cantMeses = 0;
+
+            if (cEnero.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cFebrero.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cMarzo.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cAbril.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cMayo.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cJunio.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cJulio.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cAgosto.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cSeptiembre.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cOctubre.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cNoviembre.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+            if (cDiciembre.Checked == true)
+            {
+                cantMeses = cantMeses + 1;
+            }
+
+
+            textBox1.Text = Convert.ToString(cantMeses);
+        }
+
         private void sumas_Click(object sender, EventArgs e)
         {
             double montoPauta = 0;

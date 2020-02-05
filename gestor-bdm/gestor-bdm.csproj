@@ -29,7 +29,7 @@
     <SuiteName>Best Travel Media</SuiteName>
     <MinimumRequiredVersion>1.0.0.38</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>77</ApplicationRevision>
+    <ApplicationRevision>80</ApplicationRevision>
     <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -219,6 +219,18 @@
     <Compile Include="medios_media.Designer.cs">
       <DependentUpon>medios_media.cs</DependentUpon>
     </Compile>
+    <Compile Include="menu_oi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_oi.Designer.cs">
+      <DependentUpon>menu_oi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_opciones.Designer.cs">
+      <DependentUpon>menu_opciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="OI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="medios_media.resx">
       <DependentUpon>medios_media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_oi.resx">
+      <DependentUpon>menu_oi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_opciones.resx">
+      <DependentUpon>menu_opciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OI.resx">
       <DependentUpon>OI.cs</DependentUpon>
