@@ -159,6 +159,12 @@
     <Compile Include="create_OI.Designer.cs">
       <DependentUpon>create_OI.cs</DependentUpon>
     </Compile>
+    <Compile Include="create_OI_en.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create_OI_en.Designer.cs">
+      <DependentUpon>create_OI_en.cs</DependentUpon>
+    </Compile>
     <Compile Include="daf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="create_OI.resx">
       <DependentUpon>create_OI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="create_OI_en.resx">
+      <DependentUpon>create_OI_en.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="daf.resx">
       <DependentUpon>daf.cs</DependentUpon>
