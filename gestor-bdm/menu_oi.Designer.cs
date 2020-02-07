@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu_oi));
             this.generar = new MetroFramework.Controls.MetroTile();
             this.consultar = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // generar
@@ -55,11 +56,23 @@
             this.consultar.UseSelectable = true;
             this.consultar.Click += new System.EventHandler(this.consultar_Click);
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(102, 145);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(154, 56);
+            this.metroTile1.TabIndex = 2;
+            this.metroTile1.Text = "Generar OI Ingles";
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
             // menu_oi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 160);
+            this.ClientSize = new System.Drawing.Size(358, 220);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.consultar);
             this.Controls.Add(this.generar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -77,5 +90,6 @@
 
         private MetroFramework.Controls.MetroTile generar;
         private MetroFramework.Controls.MetroTile consultar;
+        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }

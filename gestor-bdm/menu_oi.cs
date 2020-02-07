@@ -37,5 +37,13 @@ namespace gestor_bdm
 
             this.Close();
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            create_OI_en ventana = new create_OI_en();
+            ventana.Show();
+
+            this.Close();
+        }
     }
 }

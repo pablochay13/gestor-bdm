@@ -20,6 +20,8 @@ namespace gestor_bdm
         {
             InitializeComponent();
 
+            metroTabControl1.TabPages.Remove(metroTabPage2);
+
             facturadoEne.SelectedIndex = 12;
             facturadoFeb.SelectedIndex = 12;
             facturadoMar.SelectedIndex = 12;
@@ -61,7 +63,7 @@ namespace gestor_bdm
                 //caratula
                 PdfPTable caratula = new PdfPTable(1);
                 caratula.WidthPercentage = 100;
-                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("FOLIO DE REFERENCIA: " + OI_text.Text + "     " + "ORDEN DE INSERCIÓN" + "     " + "DATE: " + DateTime.Now), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("REFERENCE FOLIO: " + OI_text.Text + "     " + "INSERTION ORDER" + "     " + "DATE: " + DateTime.Now), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 //pdfDoc.Add(new Paragraph(string.Format("Vendedor: " + Label1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 13, iTextSharp.text.Font.BOLD)));
                 caratula_oi.BackgroundColor = new BaseColor(6, 61, 150);
                 caratula_oi.HorizontalAlignment = 1;
@@ -78,68 +80,68 @@ namespace gestor_bdm
 
                 if (mes_firma == "1")
                 {
-                    mes_firma = "Enero";
+                    mes_firma = "January";
                 }
 
                 else if (mes_firma == "2")
                 {
-                    mes_firma = "Febrero";
+                    mes_firma = "February";
                 }
 
                 else if (mes_firma == "3")
                 {
-                    mes_firma = "Marzo";
+                    mes_firma = "March";
                 }
 
                 else if (mes_firma == "4")
                 {
-                    mes_firma = "Abril";
+                    mes_firma = "April";
                 }
 
 
                 else if (mes_firma == "5")
                 {
-                    mes_firma = "Mayo";
+                    mes_firma = "May";
                 }
 
                 else if (mes_firma == "6")
                 {
-                    mes_firma = "Junio";
+                    mes_firma = "June";
                 }
 
                 else if (mes_firma == "7")
                 {
-                    mes_firma = "Julio";
+                    mes_firma = "July";
                 }
 
                 else if (mes_firma == "8")
                 {
-                    mes_firma = "Agosto";
+                    mes_firma = "August";
                 }
 
                 else if (mes_firma == "9")
                 {
-                    mes_firma = "Septiembre";
+                    mes_firma = "September";
                 }
 
                 else if (mes_firma == "10")
                 {
-                    mes_firma = "Octubre";
+                    mes_firma = "October";
                 }
 
                 else if (mes_firma == "11")
                 {
-                    mes_firma = "Noviembre";
+                    mes_firma = "November";
                 }
 
                 else if (mes_firma == "12")
                 {
-                    mes_firma = "Diciembre";
+                    mes_firma = "December";
                 }
 
                 PdfPTable fecha_firma = new PdfPTable(4);
                 fecha_firma.WidthPercentage = 100;
-                PdfPCell fecha_OI = new PdfPCell(new Phrase(string.Format("FECHA DE FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell fecha_OI = new PdfPCell(new Phrase(string.Format("signature Date: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 fecha_OI.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 fecha_firma.AddCell(fecha_OI);
 
@@ -164,134 +166,134 @@ namespace gestor_bdm
 
                 if (desde_mes == "1")
                 {
-                    desde_mes = "Enero";
+                    desde_mes = "January";
                 }
 
                 else if (desde_mes == "2")
                 {
-                    desde_mes = "Febrero";
+                    desde_mes = "February";
                 }
 
                 else if (desde_mes == "3")
                 {
-                    desde_mes = "Marzo";
+                    desde_mes = "March";
                 }
 
                 else if (desde_mes == "4")
                 {
-                    desde_mes = "Abril";
+                    desde_mes = "April";
                 }
 
                 else if (desde_mes == "5")
                 {
-                    desde_mes = "Mayo";
+                    desde_mes = "May";
                 }
 
                 else if (desde_mes == "6")
                 {
-                    desde_mes = "Junio";
+                    desde_mes = "June";
                 }
 
                 else if (desde_mes == "7")
                 {
-                    desde_mes = "Julio";
+                    desde_mes = "July";
                 }
 
                 else if (desde_mes == "8")
                 {
-                    desde_mes = "Agosto";
+                    desde_mes = "August";
                 }
 
                 else if (desde_mes == "9")
                 {
-                    desde_mes = "Septiembre";
+                    desde_mes = "September";
                 }
 
                 else if (desde_mes == "10")
                 {
-                    desde_mes = "Octubre";
+                    desde_mes = "October";
                 }
 
                 else if (desde_mes == "11")
                 {
-                    desde_mes = "Noviembre";
+                    desde_mes = "November";
                 }
 
                 else if (desde_mes == "12")
                 {
-                    desde_mes = "Diciembre";
+                    desde_mes = "December";
                 }
 
                 //Hasta
 
                 if (hasta_mes == "1")
                 {
-                    hasta_mes = "Enero";
+                    hasta_mes = "January";
                 }
 
                 else if (hasta_mes == "2")
                 {
-                    hasta_mes = "Febrero";
+                    hasta_mes = "February";
                 }
 
                 else if (hasta_mes == "3")
                 {
-                    hasta_mes = "Marzo";
+                    hasta_mes = "March";
                 }
 
                 else if (hasta_mes == "4")
                 {
-                    hasta_mes = "Abril";
+                    hasta_mes = "April";
                 }
 
                 else if (hasta_mes == "5")
                 {
-                    hasta_mes = "Mayo";
+                    hasta_mes = "May";
                 }
 
                 else if (hasta_mes == "6")
                 {
-                    hasta_mes = "Junio";
+                    hasta_mes = "June";
                 }
 
                 else if (hasta_mes == "7")
                 {
-                    hasta_mes = "Julio";
+                    hasta_mes = "July";
                 }
 
                 else if (hasta_mes == "8")
                 {
-                    hasta_mes = "Agosto";
+                    hasta_mes = "August";
                 }
 
                 else if (hasta_mes == "9")
                 {
-                    hasta_mes = "Septiembre";
+                    hasta_mes = "September";
                 }
 
                 else if (hasta_mes == "10")
                 {
-                    hasta_mes = "Octubre";
+                    hasta_mes = "October";
                 }
 
                 else if (hasta_mes == "11")
                 {
-                    hasta_mes = "Noviembre";
+                    hasta_mes = "November";
                 }
 
                 else if (hasta_mes == "12")
                 {
-                    hasta_mes = "Diciembre";
+                    hasta_mes = "December";
                 }
 
                 PdfPTable vigencia_pauta = new PdfPTable(4);
                 vigencia_pauta.WidthPercentage = 100;
-                PdfPCell vigencia_OI = new PdfPCell(new Phrase(string.Format("VIGENCIA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell vigencia_OI = new PdfPCell(new Phrase(string.Format("VALIDITY: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 vigencia_OI.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
 
                 vigencia_pauta.AddCell(vigencia_OI);
 
-                vigencia_OI = new PdfPCell(new Phrase(string.Format("Del Día: " + " " + desde_dia + "   " + "Mes: " + " " + desde_mes + "   " + "Año: " + " " + desde_anio + "   " + "Al Día: " + " " + hasta_dia + "   " + "Mes: " + " " + hasta_mes + "   " + "Año: " + " " + hasta_anio), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                vigencia_OI = new PdfPCell(new Phrase(string.Format("From Day: " + " " + desde_dia + "   " + "Month: " + " " + desde_mes + "   " + "Year: " + " " + desde_anio + "   " + "Up to day: " + " " + hasta_dia + "   " + "Mes: " + " " + hasta_mes + "   " + "Año: " + " " + hasta_anio), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 vigencia_OI.Colspan = 3;
                 vigencia_OI.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
@@ -300,12 +302,12 @@ namespace gestor_bdm
                 //clientes
                 PdfPTable table_1 = new PdfPTable(4);
                 table_1.WidthPercentage = 100;
-                PdfPCell cliente = new PdfPCell(new Phrase(string.Format("EL CLIENTE"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cliente = new PdfPCell(new Phrase(string.Format("THE CLIENT"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cliente.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 cliente.HorizontalAlignment = 1;
                 cliente.Colspan = 2;
 
-                PdfPCell media = new PdfPCell(new Phrase(string.Format("BEST TRAVEL MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell media = new PdfPCell(new Phrase(string.Format("MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 media.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 media.HorizontalAlignment = 1;
                 media.Colspan = 2;
@@ -313,11 +315,11 @@ namespace gestor_bdm
                 table_1.AddCell(cliente);
                 table_1.AddCell(media);
 
-                PdfPCell bottom_cliente_1 = new PdfPCell(new Phrase(string.Format("Nombre comercial: " + clienteComercial.Text + "\n" + "Razón social contratante: " + clienteRazon.Text + "\n" + "ID Fiscal: " + clienteID.Text + "\n" + "Direccion: " + "\n" + "Calle: " + clienteCalle.Text + "\n" + "Ciudad/País: " + clientePais.Text + "\n" + "Código postal: " + clientePostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_cliente_1 = new PdfPCell(new Phrase(string.Format("Tradename: " + clienteComercial.Text + "\n" + "Registered Corporate Name: " + clienteRazon.Text + "\n" + "Tax ID: " + clienteID.Text + "\n" + "Address: " + "\n" + "Street: " + clienteCalle.Text + "\n" + "City/Country: " + clientePais.Text + "\n" + "Zip Code: " + clientePostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_cliente_1.Colspan = 2;
                 table_1.AddCell(bottom_cliente_1);
 
-                PdfPCell bottom_media_1 = new PdfPCell(new Phrase(string.Format("Razón Social Contratante: " + mediaRazon.Text + "\n" + "ID Fiscal: " + mediaID.Text + "\n" + "Direccion: " + "\n" + "Calle: " + mediaCalle.Text + "\n" + "Ciudad/País: " + mediaPais.Text + "\n" + "Código postal: " + mediaPostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_1 = new PdfPCell(new Phrase(string.Format("Corporate name: " + mediaRazon.Text + "\n" + "Tax ID: " + mediaID.Text + "\n" + "Address: " + "\n" + "Street: " + mediaCalle.Text + "\n" + "City/Country: " + mediaPais.Text + "\n" + "Zip Code: " + mediaPostal.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_1.Colspan = 2;
                 table_1.AddCell(bottom_media_1);
 
@@ -325,12 +327,12 @@ namespace gestor_bdm
                 //clientes_2
                 PdfPTable table_2 = new PdfPTable(4);
                 table_2.WidthPercentage = 100;
-                PdfPCell cliente_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Pagar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cliente_2 = new PdfPCell(new Phrase(string.Format("Accounts Payable Contact"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cliente_2.BackgroundColor = new BaseColor(6, 61, 150);
                 cliente_2.HorizontalAlignment = 1;
                 cliente_2.Colspan = 2;
 
-                PdfPCell media_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Cobrar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell media_2 = new PdfPCell(new Phrase(string.Format("Accounts Receivable Contact"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 media_2.BackgroundColor = new BaseColor(6, 61, 150);
                 media_2.HorizontalAlignment = 1;
                 media_2.Colspan = 2;
@@ -338,11 +340,11 @@ namespace gestor_bdm
                 table_2.AddCell(cliente_2);
                 table_2.AddCell(media_2);
 
-                PdfPCell bottom_cliente_2 = new PdfPCell(new Phrase(string.Format("Nombre: " + cxpNombre.Text + "\n" + "Teléfono: " + cxpTelefono.Text + "\n" + "Correo: " + cxpCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_cliente_2 = new PdfPCell(new Phrase(string.Format("Name: " + cxpNombre.Text + "\n" + "Phone: " + cxpTelefono.Text + "\n" + "Mail: " + cxpCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_cliente_2.Colspan = 2;
                 table_2.AddCell(bottom_cliente_2);
 
-                PdfPCell bottom_media_2 = new PdfPCell(new Phrase(string.Format("Nombre: " + cxcNombre.Text + "\n" + "Teléfono: " + cxcTelefono.Text + "\n" + "Correo: " + cxcCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell bottom_media_2 = new PdfPCell(new Phrase(string.Format("Name: " + cxcNombre.Text + "\n" + "Phone: " + cxcTelefono.Text + "\n" + "Mail: " + cxcCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_2.Colspan = 2;
                 table_2.AddCell(bottom_media_2);
 
@@ -350,17 +352,15 @@ namespace gestor_bdm
                 //clientes_2
                 PdfPTable table_3 = new PdfPTable(4);
                 table_3.WidthPercentage = 100;
-                PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + NComercial.Text + "\n" + "Teléfono: " + TComercial.Text + " " + "Correo: " + CComercial.Text + "\n" + "\n" + "Contacto Pauta Medios: " + PNombre.Text + "\n" + "Teléfono: " + PTelefono.Text + " " + "Correo: " + PCorreo.Text + "\n" + "\n" + "Contacto Tour HotelDO: " + HNombre.Text + "\n" + "Teléfono: " + HTelefono.Text + " " + "Correo: " + HCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Business contact: " + NComercial.Text + "\n" + "Phone: " + TComercial.Text + " " + "Mail: " + CComercial.Text + "\n" + "\n" + "Media Guideline Contact: " + PNombre.Text + "\n" + "Phone: " + PTelefono.Text + " " + "Mail: " + PCorreo.Text + "\n" + "\n" + "HotelDO Tour Contact: " + HNombre.Text + "\n" + "Phone: " + HTelefono.Text + " " + "Mail: " + HCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cliente_3.Colspan = 2;
 
-                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + mediaCNombre.Text + "\n" + "Teléfono: " + mediaCTelefono.Text + " " + "Correo: " + mediaCCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + mediaPNombre.Text + "\n" + "Teléfono: " + mediaPTelefono.Text + " " + "Correo: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Business contact: " + mediaCNombre.Text + "\n" + "Phone: " + mediaCTelefono.Text + " " + "Mail: " + mediaCCorreo.Text + "\n" + "\n" + "Media Guideline Contact: " + mediaPNombre.Text + "\n" + "Phone: " + mediaPTelefono.Text + " " + "Mail: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 media_3.Colspan = 2;
 
                 table_3.AddCell(cliente_3);
 
                 table_3.AddCell(media_3);
-
-
 
 
                 //caratula
@@ -371,12 +371,12 @@ namespace gestor_bdm
                 cash_in_1.WidthPercentage = 100;
 
 
-                PdfPCell facturado_por = new PdfPCell(new Phrase(string.Format("FACTURAR POR "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell facturado_por = new PdfPCell(new Phrase(string.Format("BILL FOR "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 facturado_por.BackgroundColor = new BaseColor(6, 61, 150);
 
                 cash_in_1.AddCell(facturado_por);
 
-                PdfPCell facturado_por_2 = new PdfPCell(new Phrase(string.Format("Corporativo " + " " + "Hotel " + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell facturado_por_2 = new PdfPCell(new Phrase(string.Format("Corporate   " + " " + "Hotel " + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 facturado_por_2.Colspan = 3;
                 facturado_por_2.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
@@ -386,7 +386,7 @@ namespace gestor_bdm
                 PdfPTable cash_in = new PdfPTable(1);
                 cash_in.WidthPercentage = 100;
 
-                PdfPCell cash_in_oi = new PdfPCell(new Phrase(string.Format("ESQUEMA COMERCIAL Y FORMA DE PAGO: " + "             " + "Cash IN: " + checked_cash_in), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cash_in_oi = new PdfPCell(new Phrase(string.Format("COMMERCIAL SCHEME AND PAYMENT METHOD: " + "             " + "Cash In: " + checked_cash_in), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cash_in_oi.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 cash_in_oi.HorizontalAlignment = 0; //0=Izquierda, 1=Centro, 2 = Derecha
 
@@ -409,123 +409,123 @@ namespace gestor_bdm
                 //desde
                 if (desde_mes_mf == "1")
                 {
-                    desde_mes_mf = "Enero";
+                    desde_mes_mf = "January";
                 }
 
                 else if (desde_mes_mf == "2")
                 {
-                    desde_mes_mf = "Febrero";
+                    desde_mes_mf = "February";
                 }
 
                 else if (desde_mes_mf == "3")
                 {
-                    desde_mes_mf = "Marzo";
+                    desde_mes_mf = "March";
                 }
 
                 else if (desde_mes_mf == "4")
                 {
-                    desde_mes_mf = "Abril";
+                    desde_mes_mf = "April";
                 }
 
                 else if (desde_mes_mf == "5")
                 {
-                    desde_mes_mf = "Mayo";
+                    desde_mes_mf = "May";
                 }
 
                 else if (desde_mes_mf == "6")
                 {
-                    desde_mes_mf = "Junio";
+                    desde_mes_mf = "June";
                 }
 
                 else if (desde_mes_mf == "7")
                 {
-                    desde_mes_mf = "Julio";
+                    desde_mes_mf = "July";
                 }
 
                 else if (desde_mes_mf == "8")
                 {
-                    desde_mes_mf = "Agosto";
+                    desde_mes_mf = "August";
                 }
 
                 else if (desde_mes_mf == "9")
                 {
-                    desde_mes_mf = "Septiembre";
+                    desde_mes_mf = "September";
                 }
 
                 else if (desde_mes_mf == "10")
                 {
-                    desde_mes_mf = "Octubre";
+                    desde_mes_mf = "October";
                 }
 
                 else if (desde_mes_mf == "11")
                 {
-                    desde_mes_mf = "Noviembre";
+                    desde_mes_mf = "November";
                 }
 
                 else if (desde_mes_mf == "12")
                 {
-                    desde_mes_mf = "Diciembre";
+                    desde_mes_mf = "December";
                 }
 
                 //hasta
                 if (hasta_mes_mf == "1")
                 {
-                    hasta_mes_mf = "Enero";
+                    hasta_mes_mf = "January";
                 }
 
                 else if (hasta_mes_mf == "2")
                 {
-                    hasta_mes_mf = "Febrero";
+                    hasta_mes_mf = "February";
                 }
 
                 else if (hasta_mes_mf == "3")
                 {
-                    hasta_mes_mf = "Marzo";
+                    hasta_mes_mf = "March";
                 }
 
                 else if (hasta_mes_mf == "4")
                 {
-                    hasta_mes_mf = "Abril";
+                    hasta_mes_mf = "April";
                 }
 
                 else if (hasta_mes_mf == "5")
                 {
-                    hasta_mes_mf = "Mayo";
+                    hasta_mes_mf = "May";
                 }
 
                 else if (hasta_mes_mf == "6")
                 {
-                    hasta_mes_mf = "Junio";
+                    hasta_mes_mf = "June";
                 }
 
                 else if (hasta_mes_mf == "7")
                 {
-                    hasta_mes_mf = "Julio";
+                    hasta_mes_mf = "July";
                 }
 
                 else if (hasta_mes_mf == "8")
                 {
-                    hasta_mes_mf = "Agosto";
+                    hasta_mes_mf = "August";
                 }
 
                 else if (hasta_mes_mf == "9")
                 {
-                    hasta_mes_mf = "Septiembre";
+                    hasta_mes_mf = "September";
                 }
 
                 else if (hasta_mes_mf == "10")
                 {
-                    hasta_mes_mf = "Octubre";
+                    hasta_mes_mf = "October";
                 }
 
                 else if (hasta_mes_mf == "11")
                 {
-                    hasta_mes_mf = "Noviembre";
+                    hasta_mes_mf = "November";
                 }
 
                 else if (hasta_mes_mf == "12")
                 {
-                    hasta_mes_mf = "Diciembre";
+                    hasta_mes_mf = "December";
                 }
 
                 PdfPTable vigencia_pauta_mf = new PdfPTable(4);
@@ -535,12 +535,12 @@ namespace gestor_bdm
                 {
                     checked_mf_oi = "X";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. ADVERTISING FUND: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
 
-                    PdfPCell vigencia_OI_mf_2 = new PdfPCell(new Phrase(string.Format("   " + porcentajeMF_box.Text + "%" + " " + "De Fecha: " + " " + desde_dia_mf + " " + "Mes: " + " " + desde_mes_mf + " " + "Año: " + " " + desde_anio_mf + " " + "Hasta Fecha: " + " " + hasta_dia_mf + " " + "Mes: " + " " + hasta_mes_mf + " " + "Año: " + " " + hasta_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    PdfPCell vigencia_OI_mf_2 = new PdfPCell(new Phrase(string.Format("   " + porcentajeMF_box.Text + "%" + " " + "From Date: " + " " + desde_dia_mf + " " + "Month: " + " " + desde_mes_mf + " " + "Year: " + " " + desde_anio_mf + " " + "Until Date: " + " " + hasta_dia_mf + " " + "Month: " + " " + hasta_mes_mf + " " + "Year: " + " " + hasta_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     vigencia_OI_mf_2.Colspan = 3;
                     vigencia_OI_mf_2.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
@@ -559,12 +559,12 @@ namespace gestor_bdm
                     hasta_mes_mf = " ";
                     hasta_dia_mf = " ";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. ADVERTISING FUND: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
 
-                    PdfPCell vigencia_OI_mf_2 = new PdfPCell(new Phrase(string.Format("   " + porcentajeMF_box.Text + "%" + " " + "De Fecha: " + " " + desde_dia_mf + " " + "Mes: " + " " + desde_mes_mf + " " + "Año: " + " " + desde_anio_mf + " " + "Hasta Fecha: " + " " + hasta_dia_mf + " " + "Mes: " + " " + hasta_mes_mf + " " + "Año: " + " " + hasta_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    PdfPCell vigencia_OI_mf_2 = new PdfPCell(new Phrase(string.Format("   " + porcentajeMF_box.Text + "%" + " " + "From Date: " + " " + desde_dia_mf + " " + "Month: " + " " + desde_mes_mf + " " + "Year: " + " " + desde_anio_mf + " " + "Until Date: " + " " + hasta_dia_mf + " " + "Month: " + " " + hasta_mes_mf + " " + "Year: " + " " + hasta_anio_mf), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     vigencia_OI_mf_2.Colspan = 3;
                     vigencia_OI_mf_2.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
@@ -594,7 +594,7 @@ namespace gestor_bdm
 
                 forma_calculo.AddCell(cell_fc_1);
 
-                PdfPCell cell_fc_2 = new PdfPCell(new Phrase(string.Format("Producción: " + produccion_io_c + "     " + "Pagos Emitidos " + pago_emitido_io), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell cell_fc_2 = new PdfPCell(new Phrase(string.Format("Production: " + produccion_io_c + "     " + "Issued Payments " + pago_emitido_io), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cell_fc_2.Colspan = 3;
 
                 forma_calculo.AddCell(cell_fc_2);
@@ -606,27 +606,27 @@ namespace gestor_bdm
                 PdfPTable table = new PdfPTable(6);
                 table.WidthPercentage = 100;
 
-                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL (BEST MEDIA)"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VIA MONTHLY BILLING (BEST MEDIA)"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell.Rowspan = 13;
                 cell.Colspan = 1;
                 cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell);
 
-                PdfPCell cell_fm_1 = new PdfPCell(new Phrase(string.Format("Mes"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_fm_1 = new PdfPCell(new Phrase(string.Format("Month"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_1);
 
-                PdfPCell cell_fm_2 = new PdfPCell(new Phrase(string.Format("Importe"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_fm_2 = new PdfPCell(new Phrase(string.Format("Amount"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_2);
 
 
-                PdfPCell cell_fm_5 = new PdfPCell(new Phrase(string.Format("Divisa"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_fm_5 = new PdfPCell(new Phrase(string.Format("Badge"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_5);
 
 
-                PdfPCell cell_fm_4 = new PdfPCell(new Phrase(string.Format("Información"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_fm_4 = new PdfPCell(new Phrase(string.Format("Information"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_4.Colspan = 3;
                 cell_fm_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table.AddCell(cell_fm_4);
@@ -911,7 +911,7 @@ namespace gestor_bdm
                 table.AddCell(cell);
 
 
-                PdfPCell cell_fm_3 = new PdfPCell(new Phrase(string.Format("Total con IVA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_fm_3 = new PdfPCell(new Phrase(string.Format("Total with VAT: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_fm_3.Colspan = 2;
                 cell_fm_3.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(cell_fm_3);
@@ -939,7 +939,7 @@ namespace gestor_bdm
 
 
                 //forma de pago
-                PdfPCell forma_pago_table = new PdfPCell(new Phrase(string.Format("FORMA DE PAGO"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell forma_pago_table = new PdfPCell(new Phrase(string.Format("PAYMENT METHOD"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 forma_pago_table.Colspan = 2;
                 forma_pago_table.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table.AddCell(forma_pago_table);
@@ -958,11 +958,11 @@ namespace gestor_bdm
                     trans_banca_c = "X";
                 }
 
-                forma_pago_table = new PdfPCell(new Phrase(string.Format("Transferencia Bancaria: " + trans_banca_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                forma_pago_table = new PdfPCell(new Phrase(string.Format("Bank Transfer: " + trans_banca_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 forma_pago_table.Colspan = 2;
                 table.AddCell(forma_pago_table);
 
-                forma_pago_table = new PdfPCell(new Phrase(string.Format("Compensación y Facturas: " + compen_fact_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                forma_pago_table = new PdfPCell(new Phrase(string.Format("Compensation and Bills: " + compen_fact_c), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 forma_pago_table.Colspan = 3;
                 table.AddCell(forma_pago_table);
 
@@ -971,7 +971,7 @@ namespace gestor_bdm
                 PdfPTable table_c_C = new PdfPTable(3);
                 table_c_C.WidthPercentage = 100;
 
-                PdfPCell cell_c_C = new PdfPCell(new Phrase(string.Format("CONDICIONES COMERCIALES"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cell_c_C = new PdfPCell(new Phrase(string.Format("BUSINESS TERMS"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_c_C.BackgroundColor = new BaseColor(6, 61, 150);
                 table_c_C.AddCell(cell_c_C);
 
@@ -988,7 +988,7 @@ namespace gestor_bdm
                 //datos generales
                 PdfPTable datos_C_c = new PdfPTable(1);
                 datos_C_c.WidthPercentage = 100;
-                PdfPCell datos_IO_CC = new PdfPCell(new Phrase(string.Format("- El CLIENTE conoce, se sujeta y obliga al cumplimiento de los Términos y Condiciones Best Travel Media establecidos en el Reverso de la presente Orden de Inserción y la Pauta de Medios. " + "\n" + "- El CLIENTE manifiesta bajo protesta de decir verdad que cuenta con la capacidad y facultades necesarias para obligar a su representada al cumplimiento de las obligaciones establecidas en los presentes Términos y  ondiciones Best Travel Media. " + "\n" + " - La Razón Social Contratante señalada en la carátula bajo protesta de decir verdad, manifiesta que actúa en nombre y representación de las propiedades señaladas en el Anexo A de la presente Orden de Inserción."), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                PdfPCell datos_IO_CC = new PdfPCell(new Phrase(string.Format("- -	The CLIENT knows, is subject to and is bound to comply with the Best Travel Media Terms and Conditions established in the Reverse of this Insertion Order and the Media Guidelines. " + "\n" + "- -	The CLIENT declares under protest to tell the truth that has the capacity and powers necessary to compel its represented to comply with the obligations set out in these Best Travel Media Terms and Conditions. " + "\n" + " - -	The Contracting Corporate Name appearing on the title page under protest of telling the truth, states that it acts in the name and representation of the properties indicated in Annex A of the present Insertion Order."), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 datos_IO_CC.HorizontalAlignment = 0;
 
                 datos_C_c.AddCell(datos_IO_CC);
@@ -998,12 +998,12 @@ namespace gestor_bdm
                 PdfPTable table_4 = new PdfPTable(6);
                 table_4.WidthPercentage = 100;
 
-                PdfPCell cliente_4 = new PdfPCell(new Phrase(string.Format("EL CLIENTE"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell cliente_4 = new PdfPCell(new Phrase(string.Format("THE CLIENT:"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 cliente_4.Colspan = 3;
                 cliente_4.HorizontalAlignment = 1;
 
-                PdfPCell media_4 = new PdfPCell(new Phrase(string.Format("BEST TRAVEL MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell media_4 = new PdfPCell(new Phrase(string.Format("MEDIA"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 media_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 media_4.Colspan = 3;
                 media_4.HorizontalAlignment = 1;
@@ -1013,7 +1013,7 @@ namespace gestor_bdm
 
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase(string.Format("FIRMA: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_4 = new PdfPCell(new Phrase(string.Format("SIGNATURE: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_4.Rowspan = 2;
                 bottom_cliente_4.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_4);
@@ -1023,7 +1023,7 @@ namespace gestor_bdm
                 bottom_media_4.Colspan = 2;
                 table_4.AddCell(bottom_media_4);
 
-                PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase(string.Format("FIRMA: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_5 = new PdfPCell(new Phrase(string.Format("SIGNATURE: " + "\n" + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_5.Rowspan = 2;
                 bottom_cliente_5.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_5);
@@ -1036,7 +1036,7 @@ namespace gestor_bdm
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-                PdfPCell bottom_cliente_6 = new PdfPCell(new Phrase(string.Format("NOMBRE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_6 = new PdfPCell(new Phrase(string.Format("NAME: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_6.Colspan = 1;
                 bottom_cliente_6.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_6);
@@ -1045,7 +1045,7 @@ namespace gestor_bdm
                 bottom_media_6.Colspan = 2;
                 table_4.AddCell(bottom_media_6);
 
-                PdfPCell bottom_cliente_7 = new PdfPCell(new Phrase(string.Format("NOMBRE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_7 = new PdfPCell(new Phrase(string.Format("NAME: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_7.Colspan = 1;
                 bottom_cliente_7.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_7);
@@ -1054,7 +1054,7 @@ namespace gestor_bdm
                 bottom_media_7.Colspan = 2;
                 table_4.AddCell(bottom_media_7);
 
-                PdfPCell bottom_cliente_8 = new PdfPCell(new Phrase(string.Format("CARGO: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_8 = new PdfPCell(new Phrase(string.Format("TITLE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_8.Colspan = 1;
                 bottom_cliente_8.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_8);
@@ -1063,7 +1063,7 @@ namespace gestor_bdm
                 bottom_media_8.Colspan = 2;
                 table_4.AddCell(bottom_media_8);
 
-                PdfPCell bottom_cliente_9 = new PdfPCell(new Phrase(string.Format("CARGO: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_9 = new PdfPCell(new Phrase(string.Format("TITLE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_9.Colspan = 1;
                 bottom_cliente_9.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_9);
@@ -1072,7 +1072,7 @@ namespace gestor_bdm
                 bottom_media_9.Colspan = 2;
                 table_4.AddCell(bottom_media_9);
 
-                PdfPCell bottom_cliente_10 = new PdfPCell(new Phrase(string.Format("Fecha firma: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_10 = new PdfPCell(new Phrase(string.Format("SIGNATURE DATE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_10.Colspan = 1;
                 bottom_cliente_10.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_10);
@@ -1081,7 +1081,7 @@ namespace gestor_bdm
                 bottom_media_10.Colspan = 2;
                 table_4.AddCell(bottom_media_10);
 
-                PdfPCell bottom_cliente_11 = new PdfPCell(new Phrase(string.Format("Fecha firma: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell bottom_cliente_11 = new PdfPCell(new Phrase(string.Format("SIGNATURE DATE: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 bottom_cliente_11.Colspan = 1;
                 bottom_cliente_11.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_11);
@@ -1092,7 +1092,7 @@ namespace gestor_bdm
 
 
                 //segunda pagina y agregando una imagen
-                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0002.jpg");
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0002-en.jpg");
                 imagen.BorderWidth = 0;
                 imagen.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
                 imagen.ScaleToFit(715f, 750.25f);
@@ -2005,31 +2005,31 @@ namespace gestor_bdm
 
                     pdfDoc.Add(imagen);
 
-                    pdfDoc.Add(imagen_h);
+                    //pdfDoc.Add(imagen_h);
 
-                    pdfDoc.Add(table_final);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_1);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_1);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_2);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_2);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_3);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_3);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_4);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_4);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_5);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_5);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(table_final_6);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(table_final_6);
+                    //pdfDoc.Add(new Paragraph(" "));
 
-                    pdfDoc.Add(imagen_f_1);
-                    pdfDoc.Add(new Paragraph(" "));
+                    //pdfDoc.Add(imagen_f_1);
+                    //pdfDoc.Add(new Paragraph(" "));
 
 
                     pdfDoc.Close();

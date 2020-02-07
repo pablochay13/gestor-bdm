@@ -481,7 +481,7 @@
             this.textFechaMedia.CustomButton.Visible = false;
             this.textFechaMedia.Lines = new string[] {
         " "};
-            this.textFechaMedia.Location = new System.Drawing.Point(101, 103);
+            this.textFechaMedia.Location = new System.Drawing.Point(115, 103);
             this.textFechaMedia.MaxLength = 32767;
             this.textFechaMedia.Name = "textFechaMedia";
             this.textFechaMedia.PasswordChar = '\0';
@@ -490,7 +490,7 @@
             this.textFechaMedia.SelectionLength = 0;
             this.textFechaMedia.SelectionStart = 0;
             this.textFechaMedia.ShortcutsEnabled = true;
-            this.textFechaMedia.Size = new System.Drawing.Size(454, 23);
+            this.textFechaMedia.Size = new System.Drawing.Size(440, 23);
             this.textFechaMedia.TabIndex = 282;
             this.textFechaMedia.Text = " ";
             this.textFechaMedia.UseSelectable = true;
@@ -567,27 +567,27 @@
             this.metroLabel53.AutoSize = true;
             this.metroLabel53.Location = new System.Drawing.Point(11, 103);
             this.metroLabel53.Name = "metroLabel53";
-            this.metroLabel53.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel53.Size = new System.Drawing.Size(98, 19);
             this.metroLabel53.TabIndex = 279;
-            this.metroLabel53.Text = "Fecha Firma:";
+            this.metroLabel53.Text = "Signature Date:";
             // 
             // metroLabel54
             // 
             this.metroLabel54.AutoSize = true;
             this.metroLabel54.Location = new System.Drawing.Point(11, 74);
             this.metroLabel54.Name = "metroLabel54";
-            this.metroLabel54.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel54.Size = new System.Drawing.Size(36, 19);
             this.metroLabel54.TabIndex = 278;
-            this.metroLabel54.Text = "Cargo:";
+            this.metroLabel54.Text = "Title:";
             // 
             // metroLabel55
             // 
             this.metroLabel55.AutoSize = true;
             this.metroLabel55.Location = new System.Drawing.Point(11, 45);
             this.metroLabel55.Name = "metroLabel55";
-            this.metroLabel55.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel55.Size = new System.Drawing.Size(48, 19);
             this.metroLabel55.TabIndex = 277;
-            this.metroLabel55.Text = "Nombre:";
+            this.metroLabel55.Text = "Name:";
             // 
             // groupBox10
             // 
@@ -605,7 +605,7 @@
             this.groupBox10.Size = new System.Drawing.Size(576, 146);
             this.groupBox10.TabIndex = 282;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "El Cliente";
+            this.groupBox10.Text = "The client";
             // 
             // textFechaCliente
             // 
@@ -623,7 +623,7 @@
             this.textFechaCliente.CustomButton.Visible = false;
             this.textFechaCliente.Lines = new string[] {
         " "};
-            this.textFechaCliente.Location = new System.Drawing.Point(100, 99);
+            this.textFechaCliente.Location = new System.Drawing.Point(107, 99);
             this.textFechaCliente.MaxLength = 32767;
             this.textFechaCliente.Name = "textFechaCliente";
             this.textFechaCliente.PasswordChar = '\0';
@@ -632,7 +632,7 @@
             this.textFechaCliente.SelectionLength = 0;
             this.textFechaCliente.SelectionStart = 0;
             this.textFechaCliente.ShortcutsEnabled = true;
-            this.textFechaCliente.Size = new System.Drawing.Size(462, 23);
+            this.textFechaCliente.Size = new System.Drawing.Size(455, 23);
             this.textFechaCliente.TabIndex = 279;
             this.textFechaCliente.Text = " ";
             this.textFechaCliente.UseSelectable = true;
@@ -708,27 +708,27 @@
             this.metroLabel52.AutoSize = true;
             this.metroLabel52.Location = new System.Drawing.Point(10, 104);
             this.metroLabel52.Name = "metroLabel52";
-            this.metroLabel52.Size = new System.Drawing.Size(84, 19);
+            this.metroLabel52.Size = new System.Drawing.Size(98, 19);
             this.metroLabel52.TabIndex = 276;
-            this.metroLabel52.Text = "Fecha Firma:";
+            this.metroLabel52.Text = "Signature Date:";
             // 
             // metroLabel51
             // 
             this.metroLabel51.AutoSize = true;
             this.metroLabel51.Location = new System.Drawing.Point(10, 73);
             this.metroLabel51.Name = "metroLabel51";
-            this.metroLabel51.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel51.Size = new System.Drawing.Size(36, 19);
             this.metroLabel51.TabIndex = 275;
-            this.metroLabel51.Text = "Cargo:";
+            this.metroLabel51.Text = "Title:";
             // 
             // metroLabel50
             // 
             this.metroLabel50.AutoSize = true;
             this.metroLabel50.Location = new System.Drawing.Point(10, 40);
             this.metroLabel50.Name = "metroLabel50";
-            this.metroLabel50.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel50.Size = new System.Drawing.Size(48, 19);
             this.metroLabel50.TabIndex = 274;
-            this.metroLabel50.Text = "Nombre:";
+            this.metroLabel50.Text = "Name:";
             // 
             // groupBox4
             // 
@@ -744,7 +744,7 @@
             this.groupBox4.Size = new System.Drawing.Size(1185, 903);
             this.groupBox4.TabIndex = 281;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Esquema Comercial y Forma de Pago";
+            this.groupBox4.Text = "Commercial Scheme and Payment Method";
             // 
             // textCondiciones
             // 
@@ -784,9 +784,9 @@
             this.metroLabel49.AutoSize = true;
             this.metroLabel49.Location = new System.Drawing.Point(10, 760);
             this.metroLabel49.Name = "metroLabel49";
-            this.metroLabel49.Size = new System.Drawing.Size(87, 19);
+            this.metroLabel49.Size = new System.Drawing.Size(76, 19);
             this.metroLabel49.TabIndex = 337;
-            this.metroLabel49.Text = "Comentarios:";
+            this.metroLabel49.Text = "Comments:";
             // 
             // groupBox21
             // 
@@ -866,7 +866,7 @@
             this.groupBox21.Size = new System.Drawing.Size(1163, 580);
             this.groupBox21.TabIndex = 336;
             this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Marketing Fijo";
+            this.groupBox21.Text = "Permanent Marketing";
             // 
             // textTotalIVA
             // 
@@ -884,9 +884,9 @@
             this.c_c_facturas.AutoSize = true;
             this.c_c_facturas.Location = new System.Drawing.Point(610, 531);
             this.c_c_facturas.Name = "c_c_facturas";
-            this.c_c_facturas.Size = new System.Drawing.Size(166, 15);
+            this.c_c_facturas.Size = new System.Drawing.Size(148, 15);
             this.c_c_facturas.TabIndex = 480;
-            this.c_c_facturas.Text = "Compensación en Facturas";
+            this.c_c_facturas.Text = "Compensation and bills";
             this.c_c_facturas.UseSelectable = true;
             // 
             // c_t_bancaria
@@ -894,9 +894,9 @@
             this.c_t_bancaria.AutoSize = true;
             this.c_t_bancaria.Location = new System.Drawing.Point(449, 531);
             this.c_t_bancaria.Name = "c_t_bancaria";
-            this.c_t_bancaria.Size = new System.Drawing.Size(140, 15);
+            this.c_t_bancaria.Size = new System.Drawing.Size(99, 15);
             this.c_t_bancaria.TabIndex = 479;
-            this.c_t_bancaria.Text = "Transferencia Bancaria";
+            this.c_t_bancaria.Text = "Bank payment";
             this.c_t_bancaria.UseSelectable = true;
             // 
             // metroLabel48
@@ -904,9 +904,9 @@
             this.metroLabel48.AutoSize = true;
             this.metroLabel48.Location = new System.Drawing.Point(339, 527);
             this.metroLabel48.Name = "metroLabel48";
-            this.metroLabel48.Size = new System.Drawing.Size(104, 19);
+            this.metroLabel48.Size = new System.Drawing.Size(112, 19);
             this.metroLabel48.TabIndex = 478;
-            this.metroLabel48.Text = "Forma de Pago:";
+            this.metroLabel48.Text = "Payment method:";
             // 
             // Sumar
             // 
@@ -915,7 +915,7 @@
             this.Sumar.Size = new System.Drawing.Size(99, 23);
             this.Sumar.Style = MetroFramework.MetroColorStyle.Orange;
             this.Sumar.TabIndex = 477;
-            this.Sumar.Text = "Sumar";
+            this.Sumar.Text = "Add";
             this.Sumar.UseSelectable = true;
             this.Sumar.Click += new System.EventHandler(this.Sumar_Click_1);
             // 
@@ -924,9 +924,9 @@
             this.metroLabel47.AutoSize = true;
             this.metroLabel47.Location = new System.Drawing.Point(18, 527);
             this.metroLabel47.Name = "metroLabel47";
-            this.metroLabel47.Size = new System.Drawing.Size(87, 19);
+            this.metroLabel47.Size = new System.Drawing.Size(91, 19);
             this.metroLabel47.TabIndex = 475;
-            this.metroLabel47.Text = "Total con IVA:";
+            this.metroLabel47.Text = "Total with VAT:";
             // 
             // textBoxDic
             // 
@@ -1317,9 +1317,9 @@
             this.metroLabel46.AutoSize = true;
             this.metroLabel46.Location = new System.Drawing.Point(627, 37);
             this.metroLabel46.Name = "metroLabel46";
-            this.metroLabel46.Size = new System.Drawing.Size(140, 19);
+            this.metroLabel46.Size = new System.Drawing.Size(136, 19);
             this.metroLabel46.TabIndex = 462;
-            this.metroLabel46.Text = "Información Adicional:";
+            this.metroLabel46.Text = "Aditional information:";
             // 
             // comboBoxDic
             // 
@@ -1480,9 +1480,9 @@
             this.metroLabel45.AutoSize = true;
             this.metroLabel45.Location = new System.Drawing.Point(472, 37);
             this.metroLabel45.Name = "metroLabel45";
-            this.metroLabel45.Size = new System.Drawing.Size(45, 19);
+            this.metroLabel45.Size = new System.Drawing.Size(50, 19);
             this.metroLabel45.TabIndex = 450;
-            this.metroLabel45.Text = "Divisa:";
+            this.metroLabel45.Text = "Badge:";
             // 
             // comboEne
             // 
@@ -1503,18 +1503,18 @@
             this.metroLabel44.AutoSize = true;
             this.metroLabel44.Location = new System.Drawing.Point(303, 36);
             this.metroLabel44.Name = "metroLabel44";
-            this.metroLabel44.Size = new System.Drawing.Size(108, 19);
+            this.metroLabel44.Size = new System.Drawing.Size(91, 19);
             this.metroLabel44.TabIndex = 448;
-            this.metroLabel44.Text = "Importe con IVA:";
+            this.metroLabel44.Text = "Total with VAT:";
             // 
             // metroLabel43
             // 
             this.metroLabel43.AutoSize = true;
             this.metroLabel43.Location = new System.Drawing.Point(158, 37);
             this.metroLabel43.Name = "metroLabel43";
-            this.metroLabel43.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel43.Size = new System.Drawing.Size(34, 19);
             this.metroLabel43.TabIndex = 447;
-            this.metroLabel43.Text = "Año:";
+            this.metroLabel43.Text = "Year";
             // 
             // anioDic
             // 
@@ -1797,27 +1797,27 @@
             this.metroLabel42.AutoSize = true;
             this.metroLabel42.Location = new System.Drawing.Point(14, 36);
             this.metroLabel42.Name = "metroLabel42";
-            this.metroLabel42.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel42.Size = new System.Drawing.Size(47, 19);
             this.metroLabel42.TabIndex = 434;
-            this.metroLabel42.Text = "Mes:";
+            this.metroLabel42.Text = "Month";
             // 
             // facturadoDic
             // 
             this.facturadoDic.FormattingEnabled = true;
             this.facturadoDic.ItemHeight = 23;
             this.facturadoDic.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoDic.Location = new System.Drawing.Point(14, 444);
             this.facturadoDic.Name = "facturadoDic";
@@ -1830,18 +1830,18 @@
             this.facturadoNov.FormattingEnabled = true;
             this.facturadoNov.ItemHeight = 23;
             this.facturadoNov.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoNov.Location = new System.Drawing.Point(15, 409);
             this.facturadoNov.Name = "facturadoNov";
@@ -1854,18 +1854,18 @@
             this.facturadoOct.FormattingEnabled = true;
             this.facturadoOct.ItemHeight = 23;
             this.facturadoOct.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoOct.Location = new System.Drawing.Point(14, 374);
             this.facturadoOct.Name = "facturadoOct";
@@ -1878,18 +1878,18 @@
             this.facturadoSep.FormattingEnabled = true;
             this.facturadoSep.ItemHeight = 23;
             this.facturadoSep.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoSep.Location = new System.Drawing.Point(14, 339);
             this.facturadoSep.Name = "facturadoSep";
@@ -1902,18 +1902,18 @@
             this.facturadoAgo.FormattingEnabled = true;
             this.facturadoAgo.ItemHeight = 23;
             this.facturadoAgo.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoAgo.Location = new System.Drawing.Point(15, 304);
             this.facturadoAgo.Name = "facturadoAgo";
@@ -1926,18 +1926,18 @@
             this.facturadoJul.FormattingEnabled = true;
             this.facturadoJul.ItemHeight = 23;
             this.facturadoJul.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoJul.Location = new System.Drawing.Point(15, 269);
             this.facturadoJul.Name = "facturadoJul";
@@ -1950,18 +1950,18 @@
             this.facturadoJun.FormattingEnabled = true;
             this.facturadoJun.ItemHeight = 23;
             this.facturadoJun.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoJun.Location = new System.Drawing.Point(15, 234);
             this.facturadoJun.Name = "facturadoJun";
@@ -1974,18 +1974,18 @@
             this.facturadoMay.FormattingEnabled = true;
             this.facturadoMay.ItemHeight = 23;
             this.facturadoMay.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoMay.Location = new System.Drawing.Point(15, 199);
             this.facturadoMay.Name = "facturadoMay";
@@ -1998,18 +1998,18 @@
             this.facturadoAbr.FormattingEnabled = true;
             this.facturadoAbr.ItemHeight = 23;
             this.facturadoAbr.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoAbr.Location = new System.Drawing.Point(15, 164);
             this.facturadoAbr.Name = "facturadoAbr";
@@ -2022,18 +2022,18 @@
             this.facturadoMar.FormattingEnabled = true;
             this.facturadoMar.ItemHeight = 23;
             this.facturadoMar.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoMar.Location = new System.Drawing.Point(15, 129);
             this.facturadoMar.Name = "facturadoMar";
@@ -2046,18 +2046,18 @@
             this.facturadoFeb.FormattingEnabled = true;
             this.facturadoFeb.ItemHeight = 23;
             this.facturadoFeb.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoFeb.Location = new System.Drawing.Point(14, 94);
             this.facturadoFeb.Name = "facturadoFeb";
@@ -2070,18 +2070,18 @@
             this.facturadoEne.FormattingEnabled = true;
             this.facturadoEne.ItemHeight = 23;
             this.facturadoEne.Items.AddRange(new object[] {
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio ",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre",
+            "Junuary",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Auguts",
+            "September",
+            "October",
+            "November",
+            "December",
             " "});
             this.facturadoEne.Location = new System.Drawing.Point(14, 59);
             this.facturadoEne.Name = "facturadoEne";
@@ -2256,9 +2256,9 @@
             this.checkFacturas.AutoSize = true;
             this.checkFacturas.Location = new System.Drawing.Point(961, 75);
             this.checkFacturas.Name = "checkFacturas";
-            this.checkFacturas.Size = new System.Drawing.Size(166, 15);
+            this.checkFacturas.Size = new System.Drawing.Size(148, 15);
             this.checkFacturas.TabIndex = 369;
-            this.checkFacturas.Text = "Compensación en Facturas";
+            this.checkFacturas.Text = "Compensation and bills";
             this.checkFacturas.UseSelectable = true;
             // 
             // checkPagos
@@ -2266,9 +2266,9 @@
             this.checkPagos.AutoSize = true;
             this.checkPagos.Location = new System.Drawing.Point(700, 75);
             this.checkPagos.Name = "checkPagos";
-            this.checkPagos.Size = new System.Drawing.Size(108, 15);
+            this.checkPagos.Size = new System.Drawing.Size(111, 15);
             this.checkPagos.TabIndex = 366;
-            this.checkPagos.Text = "Pagos Emitodos";
+            this.checkPagos.Text = "Issued payments";
             this.checkPagos.UseSelectable = true;
             // 
             // checkBancaria
@@ -2276,9 +2276,9 @@
             this.checkBancaria.AutoSize = true;
             this.checkBancaria.Location = new System.Drawing.Point(961, 44);
             this.checkBancaria.Name = "checkBancaria";
-            this.checkBancaria.Size = new System.Drawing.Size(140, 15);
+            this.checkBancaria.Size = new System.Drawing.Size(92, 15);
             this.checkBancaria.TabIndex = 368;
-            this.checkBancaria.Text = "Transferencia Bancaria";
+            this.checkBancaria.Text = "Bank transfer";
             this.checkBancaria.UseSelectable = true;
             // 
             // checkProduccion
@@ -2286,9 +2286,9 @@
             this.checkProduccion.AutoSize = true;
             this.checkProduccion.Location = new System.Drawing.Point(700, 42);
             this.checkProduccion.Name = "checkProduccion";
-            this.checkProduccion.Size = new System.Drawing.Size(84, 15);
+            this.checkProduccion.Size = new System.Drawing.Size(82, 15);
             this.checkProduccion.TabIndex = 365;
-            this.checkProduccion.Text = "Producción";
+            this.checkProduccion.Text = "Production";
             this.checkProduccion.UseSelectable = true;
             // 
             // metroLabel38
@@ -2296,24 +2296,24 @@
             this.metroLabel38.AutoSize = true;
             this.metroLabel38.Location = new System.Drawing.Point(843, 40);
             this.metroLabel38.Name = "metroLabel38";
-            this.metroLabel38.Size = new System.Drawing.Size(104, 19);
+            this.metroLabel38.Size = new System.Drawing.Size(112, 19);
             this.metroLabel38.TabIndex = 367;
-            this.metroLabel38.Text = "Forma de Pago:";
+            this.metroLabel38.Text = "Payment method:";
             // 
             // metroLabel25
             // 
             this.metroLabel25.AutoSize = true;
             this.metroLabel25.Location = new System.Drawing.Point(582, 38);
             this.metroLabel25.Name = "metroLabel25";
-            this.metroLabel25.Size = new System.Drawing.Size(117, 19);
+            this.metroLabel25.Size = new System.Drawing.Size(109, 19);
             this.metroLabel25.TabIndex = 364;
-            this.metroLabel25.Text = "Forma de Cálculo:";
+            this.metroLabel25.Text = "Calculation form:";
             // 
             // dateTimeMF_hasta
             // 
             this.dateTimeMF_hasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeMF_hasta.Location = new System.Drawing.Point(449, 32);
-            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateTimeMF_hasta.Name = "dateTimeMF_hasta";
             this.dateTimeMF_hasta.Size = new System.Drawing.Size(95, 29);
             this.dateTimeMF_hasta.TabIndex = 363;
@@ -2323,15 +2323,15 @@
             this.metroLabel24.AutoSize = true;
             this.metroLabel24.Location = new System.Drawing.Point(361, 38);
             this.metroLabel24.Name = "metroLabel24";
-            this.metroLabel24.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel24.Size = new System.Drawing.Size(70, 19);
             this.metroLabel24.TabIndex = 362;
-            this.metroLabel24.Text = "Hasta Fecha:";
+            this.metroLabel24.Text = "Up to day:";
             // 
             // dateTimeMF_desde
             // 
             this.dateTimeMF_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeMF_desde.Location = new System.Drawing.Point(253, 32);
-            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateTimeMF_desde.Name = "dateTimeMF_desde";
             this.dateTimeMF_desde.Size = new System.Drawing.Size(95, 29);
             this.dateTimeMF_desde.TabIndex = 361;
@@ -2341,9 +2341,9 @@
             this.metroLabel23.AutoSize = true;
             this.metroLabel23.Location = new System.Drawing.Point(181, 38);
             this.metroLabel23.Name = "metroLabel23";
-            this.metroLabel23.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel23.Size = new System.Drawing.Size(69, 19);
             this.metroLabel23.TabIndex = 52;
-            this.metroLabel23.Text = "De Fecha:";
+            this.metroLabel23.Text = "From day:";
             // 
             // porcentajeMF_box
             // 
@@ -2415,7 +2415,7 @@
             this.groupBox5.Size = new System.Drawing.Size(558, 145);
             this.groupBox5.TabIndex = 278;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Contacto Pauta Medios";
+            this.groupBox5.Text = "Media Guideline Contact";
             // 
             // mediaPEmail
             // 
@@ -2454,9 +2454,9 @@
             this.metroLabel26.AutoSize = true;
             this.metroLabel26.Location = new System.Drawing.Point(15, 106);
             this.metroLabel26.Name = "metroLabel26";
-            this.metroLabel26.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel26.Size = new System.Drawing.Size(37, 19);
             this.metroLabel26.TabIndex = 50;
-            this.metroLabel26.Text = "Correo:";
+            this.metroLabel26.Text = "Mail:";
             // 
             // mediaPTelefono
             // 
@@ -2495,9 +2495,9 @@
             this.metroLabel27.AutoSize = true;
             this.metroLabel27.Location = new System.Drawing.Point(15, 73);
             this.metroLabel27.Name = "metroLabel27";
-            this.metroLabel27.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel27.Size = new System.Drawing.Size(49, 19);
             this.metroLabel27.TabIndex = 48;
-            this.metroLabel27.Text = "Teléfono:";
+            this.metroLabel27.Text = "Phone:";
             // 
             // mediaPNombre
             // 
@@ -2536,9 +2536,9 @@
             this.metroLabel28.AutoSize = true;
             this.metroLabel28.Location = new System.Drawing.Point(15, 39);
             this.metroLabel28.Name = "metroLabel28";
-            this.metroLabel28.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel28.Size = new System.Drawing.Size(48, 19);
             this.metroLabel28.TabIndex = 46;
-            this.metroLabel28.Text = "Nombre:";
+            this.metroLabel28.Text = "Name:";
             // 
             // groupBox6
             // 
@@ -2554,7 +2554,7 @@
             this.groupBox6.Size = new System.Drawing.Size(558, 140);
             this.groupBox6.TabIndex = 277;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Contacto Comercial";
+            this.groupBox6.Text = "Business contact";
             // 
             // mediaCCorreo
             // 
@@ -2593,9 +2593,9 @@
             this.metroLabel29.AutoSize = true;
             this.metroLabel29.Location = new System.Drawing.Point(15, 103);
             this.metroLabel29.Name = "metroLabel29";
-            this.metroLabel29.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel29.Size = new System.Drawing.Size(37, 19);
             this.metroLabel29.TabIndex = 44;
-            this.metroLabel29.Text = "Correo:";
+            this.metroLabel29.Text = "Mail:";
             // 
             // mediaCTelefono
             // 
@@ -2634,9 +2634,9 @@
             this.metroLabel30.AutoSize = true;
             this.metroLabel30.Location = new System.Drawing.Point(15, 70);
             this.metroLabel30.Name = "metroLabel30";
-            this.metroLabel30.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel30.Size = new System.Drawing.Size(49, 19);
             this.metroLabel30.TabIndex = 42;
-            this.metroLabel30.Text = "Teléfono:";
+            this.metroLabel30.Text = "Phone:";
             // 
             // mediaCNombre
             // 
@@ -2675,9 +2675,9 @@
             this.metroLabel31.AutoSize = true;
             this.metroLabel31.Location = new System.Drawing.Point(15, 36);
             this.metroLabel31.Name = "metroLabel31";
-            this.metroLabel31.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel31.Size = new System.Drawing.Size(48, 19);
             this.metroLabel31.TabIndex = 40;
-            this.metroLabel31.Text = "Nombre:";
+            this.metroLabel31.Text = "Name:";
             // 
             // groupBox7
             // 
@@ -2697,7 +2697,7 @@
             this.groupBox7.Size = new System.Drawing.Size(558, 284);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Datos Generales";
+            this.groupBox7.Text = "General data";
             // 
             // mediaPostal
             // 
@@ -2736,9 +2736,9 @@
             this.metroLabel32.AutoSize = true;
             this.metroLabel32.Location = new System.Drawing.Point(15, 206);
             this.metroLabel32.Name = "metroLabel32";
-            this.metroLabel32.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel32.Size = new System.Drawing.Size(67, 19);
             this.metroLabel32.TabIndex = 37;
-            this.metroLabel32.Text = "Código Postal:";
+            this.metroLabel32.Text = "Zip Code:";
             // 
             // mediaPais
             // 
@@ -2807,29 +2807,30 @@
             // metroLabel33
             // 
             this.metroLabel33.AutoSize = true;
+            this.metroLabel33.ForeColor = System.Drawing.SystemColors.Desktop;
             this.metroLabel33.Location = new System.Drawing.Point(15, 170);
             this.metroLabel33.Name = "metroLabel33";
-            this.metroLabel33.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel33.Size = new System.Drawing.Size(83, 19);
             this.metroLabel33.TabIndex = 34;
-            this.metroLabel33.Text = "Ciudad/país:";
+            this.metroLabel33.Text = "City/country:";
             // 
             // metroLabel34
             // 
             this.metroLabel34.AutoSize = true;
             this.metroLabel34.Location = new System.Drawing.Point(15, 138);
             this.metroLabel34.Name = "metroLabel34";
-            this.metroLabel34.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel34.Size = new System.Drawing.Size(46, 19);
             this.metroLabel34.TabIndex = 33;
-            this.metroLabel34.Text = "Calle:";
+            this.metroLabel34.Text = "Street:";
             // 
             // metroLabel35
             // 
             this.metroLabel35.AutoSize = true;
             this.metroLabel35.Location = new System.Drawing.Point(15, 106);
             this.metroLabel35.Name = "metroLabel35";
-            this.metroLabel35.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel35.Size = new System.Drawing.Size(59, 19);
             this.metroLabel35.TabIndex = 32;
-            this.metroLabel35.Text = "Dirección:";
+            this.metroLabel35.Text = "Address:";
             // 
             // mediaID
             // 
@@ -2868,9 +2869,9 @@
             this.metroLabel36.AutoSize = true;
             this.metroLabel36.Location = new System.Drawing.Point(15, 69);
             this.metroLabel36.Name = "metroLabel36";
-            this.metroLabel36.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel36.Size = new System.Drawing.Size(46, 19);
             this.metroLabel36.TabIndex = 30;
-            this.metroLabel36.Text = "ID Fiscal:";
+            this.metroLabel36.Text = "Tax ID:";
             // 
             // mediaRazon
             // 
@@ -2909,9 +2910,9 @@
             this.metroLabel37.AutoSize = true;
             this.metroLabel37.Location = new System.Drawing.Point(15, 38);
             this.metroLabel37.Name = "metroLabel37";
-            this.metroLabel37.Size = new System.Drawing.Size(159, 19);
+            this.metroLabel37.Size = new System.Drawing.Size(110, 19);
             this.metroLabel37.TabIndex = 28;
-            this.metroLabel37.Text = "Razón Social Contratante:";
+            this.metroLabel37.Text = "Corporate name:";
             // 
             // groupBox8
             // 
@@ -2927,7 +2928,7 @@
             this.groupBox8.Size = new System.Drawing.Size(558, 144);
             this.groupBox8.TabIndex = 276;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Contacto Cuentas por Cobrar";
+            this.groupBox8.Text = "Accounts Receivable Contact:";
             // 
             // cxcCorreo
             // 
@@ -2966,9 +2967,9 @@
             this.metroLabel39.AutoSize = true;
             this.metroLabel39.Location = new System.Drawing.Point(15, 105);
             this.metroLabel39.Name = "metroLabel39";
-            this.metroLabel39.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel39.Size = new System.Drawing.Size(37, 19);
             this.metroLabel39.TabIndex = 38;
-            this.metroLabel39.Text = "Correo:";
+            this.metroLabel39.Text = "Mail:";
             // 
             // cxcTelefono
             // 
@@ -3007,9 +3008,9 @@
             this.metroLabel40.AutoSize = true;
             this.metroLabel40.Location = new System.Drawing.Point(15, 72);
             this.metroLabel40.Name = "metroLabel40";
-            this.metroLabel40.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel40.Size = new System.Drawing.Size(49, 19);
             this.metroLabel40.TabIndex = 36;
-            this.metroLabel40.Text = "Teléfono:";
+            this.metroLabel40.Text = "Phone:";
             // 
             // cxcNombre
             // 
@@ -3048,9 +3049,9 @@
             this.metroLabel41.AutoSize = true;
             this.metroLabel41.Location = new System.Drawing.Point(15, 38);
             this.metroLabel41.Name = "metroLabel41";
-            this.metroLabel41.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel41.Size = new System.Drawing.Size(48, 19);
             this.metroLabel41.TabIndex = 34;
-            this.metroLabel41.Text = "Nombre:";
+            this.metroLabel41.Text = "Name:";
             // 
             // groupBox2
             // 
@@ -3067,7 +3068,7 @@
             this.groupBox2.Size = new System.Drawing.Size(576, 931);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cliente";
+            this.groupBox2.Text = "Client";
             // 
             // groupBox15
             // 
@@ -3083,7 +3084,7 @@
             this.groupBox15.Size = new System.Drawing.Size(558, 143);
             this.groupBox15.TabIndex = 279;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Contacto Tour HotelDO";
+            this.groupBox15.Text = "HotelDO Tour Contact";
             // 
             // HCorreo
             // 
@@ -3122,9 +3123,9 @@
             this.metroLabel20.AutoSize = true;
             this.metroLabel20.Location = new System.Drawing.Point(15, 104);
             this.metroLabel20.Name = "metroLabel20";
-            this.metroLabel20.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel20.Size = new System.Drawing.Size(37, 19);
             this.metroLabel20.TabIndex = 50;
-            this.metroLabel20.Text = "Correo:";
+            this.metroLabel20.Text = "Mail:";
             // 
             // HTelefono
             // 
@@ -3163,9 +3164,9 @@
             this.metroLabel21.AutoSize = true;
             this.metroLabel21.Location = new System.Drawing.Point(15, 71);
             this.metroLabel21.Name = "metroLabel21";
-            this.metroLabel21.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel21.Size = new System.Drawing.Size(49, 19);
             this.metroLabel21.TabIndex = 48;
-            this.metroLabel21.Text = "Teléfono:";
+            this.metroLabel21.Text = "Phone:";
             // 
             // HNombre
             // 
@@ -3204,9 +3205,9 @@
             this.metroLabel22.AutoSize = true;
             this.metroLabel22.Location = new System.Drawing.Point(15, 37);
             this.metroLabel22.Name = "metroLabel22";
-            this.metroLabel22.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel22.Size = new System.Drawing.Size(48, 19);
             this.metroLabel22.TabIndex = 46;
-            this.metroLabel22.Text = "Nombre:";
+            this.metroLabel22.Text = "Name:";
             // 
             // groupBox14
             // 
@@ -3222,7 +3223,7 @@
             this.groupBox14.Size = new System.Drawing.Size(558, 145);
             this.groupBox14.TabIndex = 278;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Contacto Pauta Medios";
+            this.groupBox14.Text = "Media Guideline Contact";
             // 
             // PCorreo
             // 
@@ -3261,9 +3262,9 @@
             this.metroLabel17.AutoSize = true;
             this.metroLabel17.Location = new System.Drawing.Point(15, 106);
             this.metroLabel17.Name = "metroLabel17";
-            this.metroLabel17.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel17.Size = new System.Drawing.Size(37, 19);
             this.metroLabel17.TabIndex = 50;
-            this.metroLabel17.Text = "Correo:";
+            this.metroLabel17.Text = "Mail:";
             // 
             // PTelefono
             // 
@@ -3302,9 +3303,9 @@
             this.metroLabel18.AutoSize = true;
             this.metroLabel18.Location = new System.Drawing.Point(15, 73);
             this.metroLabel18.Name = "metroLabel18";
-            this.metroLabel18.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel18.Size = new System.Drawing.Size(49, 19);
             this.metroLabel18.TabIndex = 48;
-            this.metroLabel18.Text = "Teléfono:";
+            this.metroLabel18.Text = "Phone:";
             // 
             // PNombre
             // 
@@ -3343,9 +3344,9 @@
             this.metroLabel19.AutoSize = true;
             this.metroLabel19.Location = new System.Drawing.Point(15, 39);
             this.metroLabel19.Name = "metroLabel19";
-            this.metroLabel19.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel19.Size = new System.Drawing.Size(48, 19);
             this.metroLabel19.TabIndex = 46;
-            this.metroLabel19.Text = "Nombre:";
+            this.metroLabel19.Text = "Name:";
             // 
             // groupBox13
             // 
@@ -3361,7 +3362,7 @@
             this.groupBox13.Size = new System.Drawing.Size(558, 140);
             this.groupBox13.TabIndex = 277;
             this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Contacto Comercial";
+            this.groupBox13.Text = "Business contact";
             // 
             // CComercial
             // 
@@ -3400,9 +3401,9 @@
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.Location = new System.Drawing.Point(15, 103);
             this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel14.Size = new System.Drawing.Size(37, 19);
             this.metroLabel14.TabIndex = 44;
-            this.metroLabel14.Text = "Correo:";
+            this.metroLabel14.Text = "Mail:";
             // 
             // TComercial
             // 
@@ -3441,9 +3442,9 @@
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.Location = new System.Drawing.Point(15, 70);
             this.metroLabel15.Name = "metroLabel15";
-            this.metroLabel15.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel15.Size = new System.Drawing.Size(49, 19);
             this.metroLabel15.TabIndex = 42;
-            this.metroLabel15.Text = "Teléfono:";
+            this.metroLabel15.Text = "Phone:";
             // 
             // NComercial
             // 
@@ -3482,9 +3483,9 @@
             this.metroLabel16.AutoSize = true;
             this.metroLabel16.Location = new System.Drawing.Point(15, 36);
             this.metroLabel16.Name = "metroLabel16";
-            this.metroLabel16.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel16.Size = new System.Drawing.Size(48, 19);
             this.metroLabel16.TabIndex = 40;
-            this.metroLabel16.Text = "Nombre:";
+            this.metroLabel16.Text = "Name:";
             // 
             // groupBox12
             // 
@@ -3506,7 +3507,7 @@
             this.groupBox12.Size = new System.Drawing.Size(558, 284);
             this.groupBox12.TabIndex = 0;
             this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Datos Generales";
+            this.groupBox12.Text = "General data";
             // 
             // clientePostal
             // 
@@ -3545,9 +3546,9 @@
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.Location = new System.Drawing.Point(15, 237);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(94, 19);
+            this.metroLabel10.Size = new System.Drawing.Size(64, 19);
             this.metroLabel10.TabIndex = 37;
-            this.metroLabel10.Text = "Código Postal:";
+            this.metroLabel10.Text = "Zip code:";
             // 
             // clientePais
             // 
@@ -3618,27 +3619,27 @@
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.Location = new System.Drawing.Point(15, 201);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel9.Size = new System.Drawing.Size(86, 19);
             this.metroLabel9.TabIndex = 34;
-            this.metroLabel9.Text = "Ciudad/país:";
+            this.metroLabel9.Text = "City/Country:";
             // 
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.Location = new System.Drawing.Point(15, 169);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel8.Size = new System.Drawing.Size(46, 19);
             this.metroLabel8.TabIndex = 33;
-            this.metroLabel8.Text = "Calle:";
+            this.metroLabel8.Text = "Street:";
             // 
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.Location = new System.Drawing.Point(15, 137);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(59, 19);
             this.metroLabel7.TabIndex = 32;
-            this.metroLabel7.Text = "Dirección:";
+            this.metroLabel7.Text = "Address:";
             // 
             // clienteID
             // 
@@ -3677,9 +3678,9 @@
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.Location = new System.Drawing.Point(15, 100);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(46, 19);
             this.metroLabel6.TabIndex = 30;
-            this.metroLabel6.Text = "ID Fiscal:";
+            this.metroLabel6.Text = "Tax ID:";
             // 
             // clienteRazon
             // 
@@ -3697,7 +3698,7 @@
             this.clienteRazon.CustomButton.Visible = false;
             this.clienteRazon.Lines = new string[] {
         " "};
-            this.clienteRazon.Location = new System.Drawing.Point(180, 69);
+            this.clienteRazon.Location = new System.Drawing.Point(200, 69);
             this.clienteRazon.MaxLength = 32767;
             this.clienteRazon.Name = "clienteRazon";
             this.clienteRazon.PasswordChar = '\0';
@@ -3706,7 +3707,7 @@
             this.clienteRazon.SelectionLength = 0;
             this.clienteRazon.SelectionStart = 0;
             this.clienteRazon.ShortcutsEnabled = true;
-            this.clienteRazon.Size = new System.Drawing.Size(369, 23);
+            this.clienteRazon.Size = new System.Drawing.Size(349, 23);
             this.clienteRazon.TabIndex = 29;
             this.clienteRazon.Text = " ";
             this.clienteRazon.UseSelectable = true;
@@ -3718,9 +3719,9 @@
             this.lanbel9999.AutoSize = true;
             this.lanbel9999.Location = new System.Drawing.Point(15, 69);
             this.lanbel9999.Name = "lanbel9999";
-            this.lanbel9999.Size = new System.Drawing.Size(159, 19);
+            this.lanbel9999.Size = new System.Drawing.Size(179, 19);
             this.lanbel9999.TabIndex = 28;
-            this.lanbel9999.Text = "Razón Social Contratante:";
+            this.lanbel9999.Text = "Registered Corporate Name:";
             // 
             // clienteComercial
             // 
@@ -3759,9 +3760,9 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.Location = new System.Drawing.Point(15, 38);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(126, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(77, 19);
             this.metroLabel5.TabIndex = 26;
-            this.metroLabel5.Text = "Nombre Comercial:";
+            this.metroLabel5.Text = "Tradename:";
             // 
             // groupBox18
             // 
@@ -3777,7 +3778,7 @@
             this.groupBox18.Size = new System.Drawing.Size(558, 144);
             this.groupBox18.TabIndex = 276;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Contacto Cuentas por Pagar";
+            this.groupBox18.Text = "Accounts Payable Contact: ";
             // 
             // cxpCorreo
             // 
@@ -3816,9 +3817,9 @@
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.Location = new System.Drawing.Point(15, 105);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel13.Size = new System.Drawing.Size(37, 19);
             this.metroLabel13.TabIndex = 38;
-            this.metroLabel13.Text = "Correo:";
+            this.metroLabel13.Text = "Mail:";
             // 
             // cxpTelefono
             // 
@@ -3857,9 +3858,9 @@
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.Location = new System.Drawing.Point(15, 72);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel12.Size = new System.Drawing.Size(49, 19);
             this.metroLabel12.TabIndex = 36;
-            this.metroLabel12.Text = "Teléfono:";
+            this.metroLabel12.Text = "Phone:";
             // 
             // cxpNombre
             // 
@@ -3898,9 +3899,9 @@
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.Location = new System.Drawing.Point(15, 38);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel11.Size = new System.Drawing.Size(48, 19);
             this.metroLabel11.TabIndex = 34;
-            this.metroLabel11.Text = "Nombre:";
+            this.metroLabel11.Text = "Name:";
             // 
             // groupBox1
             // 
@@ -3921,7 +3922,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1187, 89);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Caratula";
+            this.groupBox1.Text = "Cover";
             // 
             // vigenciaHasta_text
             // 
@@ -3941,11 +3942,11 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(940, 42);
+            this.metroLabel4.Location = new System.Drawing.Point(917, 42);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(19, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(46, 19);
             this.metroLabel4.TabIndex = 22;
-            this.metroLabel4.Text = "al";
+            this.metroLabel4.Text = "to the:";
             // 
             // vigenciaDesde_text
             // 
@@ -3954,7 +3955,7 @@
             this.vigenciaDesde_text.CalendarTitleBackColor = System.Drawing.Color.Black;
             this.vigenciaDesde_text.CalendarTitleForeColor = System.Drawing.Color.Black;
             this.vigenciaDesde_text.CalendarTrailingForeColor = System.Drawing.SystemColors.Desktop;
-            this.vigenciaDesde_text.Location = new System.Drawing.Point(716, 38);
+            this.vigenciaDesde_text.Location = new System.Drawing.Point(696, 38);
             this.vigenciaDesde_text.MinimumSize = new System.Drawing.Size(0, 29);
             this.vigenciaDesde_text.Name = "vigenciaDesde_text";
             this.vigenciaDesde_text.Size = new System.Drawing.Size(218, 29);
@@ -3967,9 +3968,9 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(575, 42);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(135, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(115, 19);
             this.metroLabel3.TabIndex = 20;
-            this.metroLabel3.Text = "Periodo de campaña:";
+            this.metroLabel3.Text = "Campaign Period:";
             // 
             // fechaFirma_text
             // 
@@ -3991,9 +3992,9 @@
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(286, 42);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(39, 19);
             this.metroLabel2.TabIndex = 18;
-            this.metroLabel2.Text = "Fecha:";
+            this.metroLabel2.Text = "Date:";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel1
@@ -4001,9 +4002,9 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Location = new System.Drawing.Point(6, 42);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(174, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(150, 19);
             this.metroLabel1.TabIndex = 17;
-            this.metroLabel1.Text = "Orden de inserción número:";
+            this.metroLabel1.Text = "Insertion order number:";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // OI_text

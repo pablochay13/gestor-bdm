@@ -217,5 +217,12 @@ namespace gestor_bdm
             ventana.MdiParent = this;
             ventana.Show();
         }
+
+        private void generadorEnInglesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            generador_OI ventana = new generador_OI();
+            ventana.MdiParent = this;
+            ventana.Show();
+        }
     }
 }

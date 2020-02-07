@@ -52,6 +52,7 @@
             this.contenidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.acercadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generadorEnInglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMedia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,7 +119,8 @@
             // 
             this.saldosEdiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.baseDeDatosToolStripMenuItem,
-            this.generadorToolStripMenuItem});
+            this.generadorToolStripMenuItem,
+            this.generadorEnInglesToolStripMenuItem});
             this.saldosEdiaToolStripMenuItem.Image = global::gestor_bdm.Properties.Resources.money_bag;
             this.saldosEdiaToolStripMenuItem.Name = "saldosEdiaToolStripMenuItem";
             this.saldosEdiaToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
@@ -128,14 +130,14 @@
             // baseDeDatosToolStripMenuItem
             // 
             this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.baseDeDatosToolStripMenuItem.Text = "Base de datos";
             this.baseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.BaseDeDatosToolStripMenuItem_Click);
             // 
             // generadorToolStripMenuItem
             // 
             this.generadorToolStripMenuItem.Name = "generadorToolStripMenuItem";
-            this.generadorToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.generadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.generadorToolStripMenuItem.Text = "Generador";
             this.generadorToolStripMenuItem.Click += new System.EventHandler(this.GeneradorToolStripMenuItem_Click);
             // 
@@ -254,6 +256,13 @@
             this.acercadeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.acercadeToolStripMenuItem.Text = "&Acerca de...";
             // 
+            // generadorEnInglesToolStripMenuItem
+            // 
+            this.generadorEnInglesToolStripMenuItem.Name = "generadorEnInglesToolStripMenuItem";
+            this.generadorEnInglesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.generadorEnInglesToolStripMenuItem.Text = "Generador en Ingles";
+            this.generadorEnInglesToolStripMenuItem.Click += new System.EventHandler(this.generadorEnInglesToolStripMenuItem_Click);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,5 +311,6 @@
         private System.Windows.Forms.ToolStripMenuItem dashComercialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem baseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generadorEnInglesToolStripMenuItem;
     }
 }
