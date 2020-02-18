@@ -153,12 +153,6 @@
       <DependentUpon>contratos.cs</DependentUpon>
     </Compile>
     <Compile Include="Correos.cs" />
-    <Compile Include="create_OI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="create_OI.Designer.cs">
-      <DependentUpon>create_OI.cs</DependentUpon>
-    </Compile>
     <Compile Include="create_OI_en.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +183,12 @@
     <Compile Include="generador_OI.Designer.cs">
       <DependentUpon>generador_OI.cs</DependentUpon>
     </Compile>
+    <Compile Include="generador_oi_modificatoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador_oi_modificatoria.Designer.cs">
+      <DependentUpon>generador_oi_modificatoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="hotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,12 +207,6 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="main.Designer.cs">
-      <DependentUpon>main.cs</DependentUpon>
-    </Compile>
     <Compile Include="media-personal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +218,12 @@
     </Compile>
     <Compile Include="medios_media.Designer.cs">
       <DependentUpon>medios_media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_media_oi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_media_oi.Designer.cs">
+      <DependentUpon>menu_media_oi.cs</DependentUpon>
     </Compile>
     <Compile Include="menu_oi.cs">
       <SubType>Form</SubType>
@@ -337,9 +337,6 @@
     <EmbeddedResource Include="contratos.resx">
       <DependentUpon>contratos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="create_OI.resx">
-      <DependentUpon>create_OI.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="create_OI_en.resx">
       <DependentUpon>create_OI_en.cs</DependentUpon>
     </EmbeddedResource>
@@ -355,6 +352,9 @@
     <EmbeddedResource Include="generador_OI.resx">
       <DependentUpon>generador_OI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="generador_oi_modificatoria.resx">
+      <DependentUpon>generador_oi_modificatoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hotel.resx">
       <DependentUpon>hotel.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,14 +364,14 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main.resx">
-      <DependentUpon>main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="media-personal.resx">
       <DependentUpon>media-personal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="medios_media.resx">
       <DependentUpon>medios_media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_media_oi.resx">
+      <DependentUpon>menu_media_oi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu_oi.resx">
       <DependentUpon>menu_oi.cs</DependentUpon>

@@ -347,5 +347,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel73;
         private MetroFramework.Controls.MetroTextBox seis_contacto;
         private Syncfusion.Windows.Forms.Tools.DoubleTextBox textTotalIVA;
+        private MetroFramework.Controls.MetroTile preliminar_button;
     }
 }

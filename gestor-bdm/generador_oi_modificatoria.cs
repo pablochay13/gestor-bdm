@@ -1,4 +1,6 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,58 +10,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using MySql.Data.MySqlClient;
 
 namespace gestor_bdm
 {
-    public partial class create_OI : Form
+    public partial class generador_oi_modificatoria : MetroFramework.Forms.MetroForm
     {
-        public create_OI()
+        public generador_oi_modificatoria()
         {
             InitializeComponent();
-
-            facturadoEne.SelectedIndex = 12;
-            facturadoFeb.SelectedIndex = 12;
-            facturadoMar.SelectedIndex = 12;
-            facturadoAbr.SelectedIndex = 12;
-            facturadoMay.SelectedIndex = 12;
-            facturadoJun.SelectedIndex = 12;
-            facturadoJul.SelectedIndex = 12;
-            facturadoAgo.SelectedIndex = 12;
-            facturadoSep.SelectedIndex = 12;
-            facturadoOct.SelectedIndex = 12;
-            facturadoNov.SelectedIndex = 12;
-            facturadoDic.SelectedIndex = 12;
-
-            comboEne.SelectedIndex = 2;
-            comboFeb.SelectedIndex = 2;
-            comboMar.SelectedIndex = 2;
-            comboAbr.SelectedIndex = 2;
-            comboMay.SelectedIndex = 2;
-            comboJun.SelectedIndex = 2;
-            comboJul.SelectedIndex = 2;
-            comboAgo.SelectedIndex = 2;
-            comboSep.SelectedIndex = 2;
-            comboOct.SelectedIndex = 2;
-            comboNov.SelectedIndex = 2;
-            comboBoxDic.SelectedIndex = 2;
-
-            System.IO.Directory.CreateDirectory("C:\\PDF-OI\\");
         }
 
-        private void Export_Click(object sender, EventArgs e)
+        private void generador_oi_modificatoria_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generar_OI_Click(object sender, EventArgs e)
         {
             try
             {
+                DateTime fecha_hoy = DateTime.Now;
+
+                string fecha_oi = fecha_hoy.ToShortDateString();
+
                 //caratula
                 PdfPTable caratula = new PdfPTable(1);
                 caratula.WidthPercentage = 100;
-                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("FOLIO DE REFERENCIA: " + OI_text.Text + "     " + "ORDEN DE INSERCIÓN" + "     " + "FECHA: " + DateTime.Now), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                PdfPCell caratula_oi = new PdfPCell(new Phrase(string.Format("FOLIO DE REFERENCIA: " + OI_text.Text + "     " + "ORDEN DE INSERCIÓN MODIFICATORIA" + "     " + "FECHA: " + fecha_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 //pdfDoc.Add(new Paragraph(string.Format("Vendedor: " + Label1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 13, iTextSharp.text.Font.BOLD)));
-                caratula_oi.BackgroundColor = new BaseColor(6, 61, 150); 
-                caratula_oi.HorizontalAlignment = 1; 
+                caratula_oi.BackgroundColor = new BaseColor(6, 61, 150);
+                caratula_oi.HorizontalAlignment = 1;
 
                 caratula.AddCell(caratula_oi);
 
@@ -71,7 +51,7 @@ namespace gestor_bdm
                 dia_firma = fechaFirma_text.Value.Day.ToString();
 
 
-                if(mes_firma == "1")
+                if (mes_firma == "1")
                 {
                     mes_firma = "Enero";
                 }
@@ -131,17 +111,17 @@ namespace gestor_bdm
                     mes_firma = "Diciembre";
                 }
 
-                PdfPTable fecha_firma = new PdfPTable(4);
-                fecha_firma.WidthPercentage = 100;
-                PdfPCell fecha_OI = new PdfPCell(new Phrase(string.Format("FECHA DE FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                fecha_OI.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
-                fecha_firma.AddCell(fecha_OI);
+                //PdfPTable fecha_firma = new PdfPTable(4);
+                //fecha_firma.WidthPercentage = 100;
+                //PdfPCell fecha_OI = new PdfPCell(new Phrase(string.Format("FECHA DE FIRMA: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                //fecha_OI.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+                //fecha_firma.AddCell(fecha_OI);
 
-                fecha_OI = new PdfPCell(new Phrase(string.Format("Día: " + dia_firma + "     " + "Mes: " + " " + mes_firma + "     " + "Año: " + " " + anio_firma), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
-                fecha_OI.Colspan = 3;
-                fecha_OI.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
+                //fecha_OI = new PdfPCell(new Phrase(string.Format("Día: " + dia_firma + "     " + "Mes: " + " " + mes_firma + "     " + "Año: " + " " + anio_firma), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                //fecha_OI.Colspan = 3;
+                //fecha_OI.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
-                fecha_firma.AddCell(fecha_OI);
+                //fecha_firma.AddCell(fecha_OI);
 
                 //vigencia pauta
                 string desde_dia, desde_mes, desde_anio, hasta_dia, hasta_mes, hasta_anio = "";
@@ -291,6 +271,36 @@ namespace gestor_bdm
 
                 vigencia_pauta.AddCell(vigencia_OI);
 
+                //descripcion del cambio
+                PdfPTable desc_oi = new PdfPTable(4);
+                desc_oi.WidthPercentage = 100;
+                PdfPCell desc_oi_cell = new PdfPCell(new Phrase(string.Format("DESCRIPCIÓN DEL CAMBIO: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                desc_oi_cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+
+                desc_oi.AddCell(desc_oi_cell);
+
+                desc_oi_cell = new PdfPCell(new Phrase(string.Format(oi_modificar_desc.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                desc_oi_cell.Colspan = 3;
+                desc_oi_cell.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
+
+                desc_oi.AddCell(desc_oi_cell);
+
+
+                //solicitado a OI
+                PdfPTable solicitado_oi = new PdfPTable(4);
+                solicitado_oi.WidthPercentage = 100;
+                PdfPCell solicitado_oi_cell = new PdfPCell(new Phrase(string.Format("SOLICITADO A LA ORDEN DE INSERCIÓN: "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 7, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                solicitado_oi_cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
+
+                solicitado_oi.AddCell(solicitado_oi_cell);
+
+                solicitado_oi_cell = new PdfPCell(new Phrase(string.Format(folio_oi_modificar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                solicitado_oi_cell.Colspan = 3;
+                solicitado_oi_cell.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
+
+                solicitado_oi.AddCell(solicitado_oi_cell);
+
+
                 //clientes
                 PdfPTable table_1 = new PdfPTable(4);
                 table_1.WidthPercentage = 100;
@@ -320,13 +330,13 @@ namespace gestor_bdm
                 PdfPTable table_2 = new PdfPTable(4);
                 table_2.WidthPercentage = 100;
                 PdfPCell cliente_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Pagar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cliente_2.BackgroundColor = new BaseColor(6, 61, 150); 
-                cliente_2.HorizontalAlignment = 1; 
+                cliente_2.BackgroundColor = new BaseColor(6, 61, 150);
+                cliente_2.HorizontalAlignment = 1;
                 cliente_2.Colspan = 2;
 
                 PdfPCell media_2 = new PdfPCell(new Phrase(string.Format("Contacto de Cuentas por Cobrar"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                media_2.BackgroundColor = new BaseColor(6, 61, 150); 
-                media_2.HorizontalAlignment = 1; 
+                media_2.BackgroundColor = new BaseColor(6, 61, 150);
+                media_2.HorizontalAlignment = 1;
                 media_2.Colspan = 2;
 
                 table_2.AddCell(cliente_2);
@@ -385,7 +395,7 @@ namespace gestor_bdm
                 cash_in_oi.HorizontalAlignment = 0; //0=Izquierda, 1=Centro, 2 = Derecha
 
                 cash_in.AddCell(cash_in_oi);
-                 
+
 
                 //Marketing Found
                 string desde_dia_mf, desde_mes_mf, desde_anio_mf, hasta_dia_mf, hasta_mes_mf, hasta_anio_mf, porcentaje_mf = "";
@@ -630,7 +640,7 @@ namespace gestor_bdm
                 table.AddCell(cell);
 
 
-                if(textDocEne.Text == "0.00")
+                if (textDocEne.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -655,7 +665,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoFeb.Text + " " + anioFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocFeb.Text=="0.00")
+                if (textDocFeb.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -678,7 +688,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoMar.Text + " " + anioMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocMar.Text=="0.00")
+                if (textDocMar.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -701,7 +711,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoAbr.Text + " " + anioAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocAbr.Text=="0.00")
+                if (textDocAbr.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -793,7 +803,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoAgo.Text + " " + anioAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocAgo.Text=="0.00")
+                if (textDocAgo.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -816,7 +826,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoSep.Text + " " + anioSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocSep.Text=="0.00")
+                if (textDocSep.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -839,7 +849,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoOct.Text + " " + anioOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocOct.Text=="0.00")
+                if (textDocOct.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -862,7 +872,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoNov.Text + " " + anioNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocNov.Text=="0.00")
+                if (textDocNov.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -886,7 +896,7 @@ namespace gestor_bdm
                 cell = new PdfPCell(new Phrase(string.Format(facturadoDic.Text + " " + anioDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
-                if(textDocDic.Text=="0.00")
+                if (textDocDic.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     table.AddCell(cell);
@@ -915,7 +925,7 @@ namespace gestor_bdm
                 total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
 
 
-                if(textTotalIVA.Text=="0.00")
+                if (textTotalIVA.Text == "0.00")
                 {
                     cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     cell.Colspan = 5;
@@ -947,7 +957,7 @@ namespace gestor_bdm
                     compen_fact_c = "X";
                 }
 
-                if(c_t_bancaria.Checked == true)
+                if (c_t_bancaria.Checked == true)
                 {
                     trans_banca_c = "X";
                 }
@@ -1029,7 +1039,7 @@ namespace gestor_bdm
                 bottom_cliente_6.Colspan = 1;
                 bottom_cliente_6.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
                 table_4.AddCell(bottom_cliente_6);
-                 
+
                 PdfPCell bottom_media_6 = new PdfPCell(new Phrase(string.Format(textNombre_c.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 bottom_media_6.Colspan = 2;
                 table_4.AddCell(bottom_media_6);
@@ -1959,9 +1969,11 @@ namespace gestor_bdm
 
                     pdfDoc.Add(caratula);
 
-                    pdfDoc.Add(fecha_firma);
-
                     pdfDoc.Add(vigencia_pauta);
+
+                    pdfDoc.Add(desc_oi);
+
+                    pdfDoc.Add(solicitado_oi);
 
                     //pdfDoc.Add(new Paragraph(" "));
 
@@ -2035,146 +2047,13 @@ namespace gestor_bdm
             }
         }
 
-        private void Sumar_Click_1(object sender, EventArgs e)
-        {
-            double cant_ene, cant_feb, cant_mar, cant_abr, cant_may, cant_jun, cant_jul, cant_ago, cant_sep, cant_oct, cant_nov, cant_dic = 0;
-
-            if (string.IsNullOrEmpty(textDocEne.Text))
-            {
-                cant_ene = 0;
-            }
-            else
-            {
-                cant_ene = Convert.ToDouble(textDocEne.Text);
-                MessageBox.Show(Convert.ToString(cant_ene));
-            }
-
-
-            if (string.IsNullOrEmpty(textDocFeb.Text))
-            {
-                cant_feb = 0;
-            }
-            else
-            {
-                cant_feb = Convert.ToDouble(textDocFeb.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocMar.Text))
-            {
-                cant_mar = 0;
-            }
-            else
-            {
-                cant_mar = Convert.ToDouble(textDocMar.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocAbr.Text))
-            {
-                cant_abr = 0;
-            }
-            else
-            {
-                cant_abr = Convert.ToDouble(textDocAbr.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocMay.Text))
-            {
-                cant_may = 0;
-            }
-            else
-            {
-                cant_may = Convert.ToDouble(textDocMay.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocJun.Text))
-            {
-                cant_jun = 0;
-            }
-            else
-            {
-                cant_jun = Convert.ToDouble(textDocJun.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocJul.Text))
-            {
-                cant_jul = 0;
-            }
-            else
-            {
-                cant_jul = Convert.ToDouble(textDocJul.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocAgo.Text))
-            {
-                cant_ago = 0;
-            }
-            else
-            {
-                cant_ago = Convert.ToDouble(textDocAgo.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocSep.Text))
-            {
-                cant_sep = 0;
-            }
-            else
-            {
-                cant_sep = Convert.ToDouble(textDocSep.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocOct.Text))
-            {
-                cant_oct = 0;
-            }
-            else
-            {
-                cant_oct = Convert.ToDouble(textDocOct.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocNov.Text))
-            {
-                cant_nov = 0;
-            }
-            else
-            {
-                cant_nov = Convert.ToDouble(textDocNov.Text);
-            }
-
-
-            if (string.IsNullOrEmpty(textDocDic.Text))
-            {
-                cant_dic = 0;
-            }
-            else
-            {
-                cant_dic = Convert.ToDouble(textDocDic.Text);
-            }
-
-
-            double total = 0;
-
-            total = cant_ene + cant_feb + cant_mar + cant_abr + cant_may + cant_jun + cant_jul + cant_ago + cant_sep + cant_oct + cant_nov + cant_dic;
-
-            textTotalIVA.Text = Convert.ToString(total);
-        }
-
-        private void Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Sumar_Click(object sender, EventArgs e)
         {
+            double total = 0;
 
+            total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
+
+            textTotalIVA.Text = Convert.ToString(total);
         }
     }
 }
