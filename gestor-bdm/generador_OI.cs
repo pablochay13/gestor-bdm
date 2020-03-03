@@ -7296,9 +7296,6 @@ namespace gestor_bdm
 
                 table_3.AddCell(media_3);
 
-
-
-
                 //caratula
                 string checked_cash_in = "";
 
@@ -8885,7 +8882,7 @@ namespace gestor_bdm
                 string formato = ".pdf";
 
                 string nombre_archivo = folderPath + "OI-" + fecha + "-" + OI_text.Text + formato;
-
+                  
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);
