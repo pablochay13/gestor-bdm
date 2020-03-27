@@ -16,9 +16,14 @@ namespace gestor_bdm
 {
     public partial class generador_OI : MetroFramework.Forms.MetroForm
     {
+        MySqlConnection con = new MySqlConnection(Variables.Sentencia);
+
         public generador_OI()
         {
             InitializeComponent();
+
+            supply();
+            account();
 
             facturadoEne.SelectedIndex = 12;
             facturadoFeb.SelectedIndex = 12;
@@ -45,6 +50,9 @@ namespace gestor_bdm
             comboOct.SelectedIndex = 2;
             comboNov.SelectedIndex = 2;
             comboBoxDic.SelectedIndex = 2;
+
+            comboSupply.SelectedIndex = 0;
+            comboAccounts.SelectedIndex = 0;
 
             System.IO.Directory.CreateDirectory("C:\\PDF-OI\\");
 
@@ -167,14 +175,12 @@ namespace gestor_bdm
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
             this.mediaPTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
-            this.mediaPNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.mediaCCorreo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.mediaCTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
-            this.mediaCNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel31 = new MetroFramework.Controls.MetroLabel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.mediaPostal = new MetroFramework.Controls.MetroTextBox();
@@ -215,7 +221,6 @@ namespace gestor_bdm
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.TComercial = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
-            this.NComercial = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.clientePostal = new MetroFramework.Controls.MetroTextBox();
@@ -383,6 +388,9 @@ namespace gestor_bdm
             this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.preliminar_button = new MetroFramework.Controls.MetroTile();
+            this.comboSupply = new MetroFramework.Controls.MetroComboBox();
+            this.NComercial = new MetroFramework.Controls.MetroTextBox();
+            this.comboAccounts = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -911,7 +919,7 @@ namespace gestor_bdm
             // 
             // textTotalIVA
             // 
-            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textTotalIVA.DoubleValue = 0D;
             this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
@@ -2132,7 +2140,7 @@ namespace gestor_bdm
             // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(303, 451);
@@ -2143,7 +2151,7 @@ namespace gestor_bdm
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(303, 416);
@@ -2154,7 +2162,7 @@ namespace gestor_bdm
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(303, 381);
@@ -2165,7 +2173,7 @@ namespace gestor_bdm
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(303, 346);
@@ -2176,7 +2184,7 @@ namespace gestor_bdm
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(303, 311);
@@ -2187,7 +2195,7 @@ namespace gestor_bdm
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(303, 276);
@@ -2198,7 +2206,7 @@ namespace gestor_bdm
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(303, 241);
@@ -2209,7 +2217,7 @@ namespace gestor_bdm
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(303, 206);
@@ -2220,7 +2228,7 @@ namespace gestor_bdm
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(303, 171);
@@ -2231,7 +2239,7 @@ namespace gestor_bdm
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(303, 136);
@@ -2242,7 +2250,7 @@ namespace gestor_bdm
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(303, 101);
@@ -2254,7 +2262,7 @@ namespace gestor_bdm
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
@@ -2389,7 +2397,7 @@ namespace gestor_bdm
             // porcentajeMF_box
             // 
             this.porcentajeMF_box.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(66, 22);
+            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(107, 24);
             this.porcentajeMF_box.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.porcentajeMF_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.porcentajeMF_box.DoubleValue = 0D;
@@ -2444,11 +2452,11 @@ namespace gestor_bdm
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.comboAccounts);
             this.groupBox5.Controls.Add(this.mediaPEmail);
             this.groupBox5.Controls.Add(this.metroLabel26);
             this.groupBox5.Controls.Add(this.mediaPTelefono);
             this.groupBox5.Controls.Add(this.metroLabel27);
-            this.groupBox5.Controls.Add(this.mediaPNombre);
             this.groupBox5.Controls.Add(this.metroLabel28);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(6, 621);
@@ -2514,7 +2522,7 @@ namespace gestor_bdm
             this.mediaPTelefono.CustomButton.UseSelectable = true;
             this.mediaPTelefono.CustomButton.Visible = false;
             this.mediaPTelefono.Lines = new string[] {
-        " "};
+        "998 8811300"};
             this.mediaPTelefono.Location = new System.Drawing.Point(83, 73);
             this.mediaPTelefono.MaxLength = 32767;
             this.mediaPTelefono.Name = "mediaPTelefono";
@@ -2526,7 +2534,7 @@ namespace gestor_bdm
             this.mediaPTelefono.ShortcutsEnabled = true;
             this.mediaPTelefono.Size = new System.Drawing.Size(466, 23);
             this.mediaPTelefono.TabIndex = 49;
-            this.mediaPTelefono.Text = " ";
+            this.mediaPTelefono.Text = "998 8811300";
             this.mediaPTelefono.UseSelectable = true;
             this.mediaPTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mediaPTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -2540,38 +2548,6 @@ namespace gestor_bdm
             this.metroLabel27.TabIndex = 48;
             this.metroLabel27.Text = "Teléfono:";
             // 
-            // mediaPNombre
-            // 
-            // 
-            // 
-            // 
-            this.mediaPNombre.CustomButton.Image = null;
-            this.mediaPNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaPNombre.CustomButton.Name = "";
-            this.mediaPNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaPNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaPNombre.CustomButton.TabIndex = 1;
-            this.mediaPNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaPNombre.CustomButton.UseSelectable = true;
-            this.mediaPNombre.CustomButton.Visible = false;
-            this.mediaPNombre.Lines = new string[] {
-        " "};
-            this.mediaPNombre.Location = new System.Drawing.Point(83, 39);
-            this.mediaPNombre.MaxLength = 32767;
-            this.mediaPNombre.Name = "mediaPNombre";
-            this.mediaPNombre.PasswordChar = '\0';
-            this.mediaPNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaPNombre.SelectedText = "";
-            this.mediaPNombre.SelectionLength = 0;
-            this.mediaPNombre.SelectionStart = 0;
-            this.mediaPNombre.ShortcutsEnabled = true;
-            this.mediaPNombre.Size = new System.Drawing.Size(466, 23);
-            this.mediaPNombre.TabIndex = 47;
-            this.mediaPNombre.Text = " ";
-            this.mediaPNombre.UseSelectable = true;
-            this.mediaPNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaPNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // metroLabel28
             // 
             this.metroLabel28.AutoSize = true;
@@ -2583,11 +2559,11 @@ namespace gestor_bdm
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.comboSupply);
             this.groupBox6.Controls.Add(this.mediaCCorreo);
             this.groupBox6.Controls.Add(this.metroLabel29);
             this.groupBox6.Controls.Add(this.mediaCTelefono);
             this.groupBox6.Controls.Add(this.metroLabel30);
-            this.groupBox6.Controls.Add(this.mediaCNombre);
             this.groupBox6.Controls.Add(this.metroLabel31);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(6, 475);
@@ -2653,7 +2629,7 @@ namespace gestor_bdm
             this.mediaCTelefono.CustomButton.UseSelectable = true;
             this.mediaCTelefono.CustomButton.Visible = false;
             this.mediaCTelefono.Lines = new string[] {
-        " "};
+        "998 8811300 Ext. "};
             this.mediaCTelefono.Location = new System.Drawing.Point(83, 70);
             this.mediaCTelefono.MaxLength = 32767;
             this.mediaCTelefono.Name = "mediaCTelefono";
@@ -2665,7 +2641,7 @@ namespace gestor_bdm
             this.mediaCTelefono.ShortcutsEnabled = true;
             this.mediaCTelefono.Size = new System.Drawing.Size(466, 23);
             this.mediaCTelefono.TabIndex = 43;
-            this.mediaCTelefono.Text = " ";
+            this.mediaCTelefono.Text = "998 8811300 Ext. ";
             this.mediaCTelefono.UseSelectable = true;
             this.mediaCTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mediaCTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -2678,38 +2654,6 @@ namespace gestor_bdm
             this.metroLabel30.Size = new System.Drawing.Size(61, 19);
             this.metroLabel30.TabIndex = 42;
             this.metroLabel30.Text = "Teléfono:";
-            // 
-            // mediaCNombre
-            // 
-            // 
-            // 
-            // 
-            this.mediaCNombre.CustomButton.Image = null;
-            this.mediaCNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaCNombre.CustomButton.Name = "";
-            this.mediaCNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaCNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaCNombre.CustomButton.TabIndex = 1;
-            this.mediaCNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaCNombre.CustomButton.UseSelectable = true;
-            this.mediaCNombre.CustomButton.Visible = false;
-            this.mediaCNombre.Lines = new string[] {
-        " "};
-            this.mediaCNombre.Location = new System.Drawing.Point(83, 36);
-            this.mediaCNombre.MaxLength = 32767;
-            this.mediaCNombre.Name = "mediaCNombre";
-            this.mediaCNombre.PasswordChar = '\0';
-            this.mediaCNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaCNombre.SelectedText = "";
-            this.mediaCNombre.SelectionLength = 0;
-            this.mediaCNombre.SelectionStart = 0;
-            this.mediaCNombre.ShortcutsEnabled = true;
-            this.mediaCNombre.Size = new System.Drawing.Size(466, 23);
-            this.mediaCNombre.TabIndex = 41;
-            this.mediaCNombre.Text = " ";
-            this.mediaCNombre.UseSelectable = true;
-            this.mediaCNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaCNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel31
             // 
@@ -2985,7 +2929,7 @@ namespace gestor_bdm
             this.cxcCorreo.CustomButton.UseSelectable = true;
             this.cxcCorreo.CustomButton.Visible = false;
             this.cxcCorreo.Lines = new string[] {
-        " "};
+        "ladominguez@bestday.com"};
             this.cxcCorreo.Location = new System.Drawing.Point(83, 105);
             this.cxcCorreo.MaxLength = 32767;
             this.cxcCorreo.Name = "cxcCorreo";
@@ -2997,7 +2941,7 @@ namespace gestor_bdm
             this.cxcCorreo.ShortcutsEnabled = true;
             this.cxcCorreo.Size = new System.Drawing.Size(466, 23);
             this.cxcCorreo.TabIndex = 39;
-            this.cxcCorreo.Text = " ";
+            this.cxcCorreo.Text = "ladominguez@bestday.com";
             this.cxcCorreo.UseSelectable = true;
             this.cxcCorreo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cxcCorreo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -3026,7 +2970,7 @@ namespace gestor_bdm
             this.cxcTelefono.CustomButton.UseSelectable = true;
             this.cxcTelefono.CustomButton.Visible = false;
             this.cxcTelefono.Lines = new string[] {
-        " "};
+        " 998 881 1300 Ext. 1255"};
             this.cxcTelefono.Location = new System.Drawing.Point(83, 72);
             this.cxcTelefono.MaxLength = 32767;
             this.cxcTelefono.Name = "cxcTelefono";
@@ -3038,7 +2982,7 @@ namespace gestor_bdm
             this.cxcTelefono.ShortcutsEnabled = true;
             this.cxcTelefono.Size = new System.Drawing.Size(466, 23);
             this.cxcTelefono.TabIndex = 37;
-            this.cxcTelefono.Text = " ";
+            this.cxcTelefono.Text = " 998 881 1300 Ext. 1255";
             this.cxcTelefono.UseSelectable = true;
             this.cxcTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cxcTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -3067,7 +3011,7 @@ namespace gestor_bdm
             this.cxcNombre.CustomButton.UseSelectable = true;
             this.cxcNombre.CustomButton.Visible = false;
             this.cxcNombre.Lines = new string[] {
-        " "};
+        " Landy Dominguez"};
             this.cxcNombre.Location = new System.Drawing.Point(83, 38);
             this.cxcNombre.MaxLength = 32767;
             this.cxcNombre.Name = "cxcNombre";
@@ -3079,7 +3023,7 @@ namespace gestor_bdm
             this.cxcNombre.ShortcutsEnabled = true;
             this.cxcNombre.Size = new System.Drawing.Size(466, 23);
             this.cxcNombre.TabIndex = 35;
-            this.cxcNombre.Text = " ";
+            this.cxcNombre.Text = " Landy Dominguez";
             this.cxcNombre.UseSelectable = true;
             this.cxcNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cxcNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -3390,11 +3334,11 @@ namespace gestor_bdm
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.NComercial);
             this.groupBox13.Controls.Add(this.CComercial);
             this.groupBox13.Controls.Add(this.metroLabel14);
             this.groupBox13.Controls.Add(this.TComercial);
             this.groupBox13.Controls.Add(this.metroLabel15);
-            this.groupBox13.Controls.Add(this.NComercial);
             this.groupBox13.Controls.Add(this.metroLabel16);
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(6, 475);
@@ -3485,38 +3429,6 @@ namespace gestor_bdm
             this.metroLabel15.Size = new System.Drawing.Size(61, 19);
             this.metroLabel15.TabIndex = 42;
             this.metroLabel15.Text = "Teléfono:";
-            // 
-            // NComercial
-            // 
-            // 
-            // 
-            // 
-            this.NComercial.CustomButton.Image = null;
-            this.NComercial.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.NComercial.CustomButton.Name = "";
-            this.NComercial.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.NComercial.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.NComercial.CustomButton.TabIndex = 1;
-            this.NComercial.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.NComercial.CustomButton.UseSelectable = true;
-            this.NComercial.CustomButton.Visible = false;
-            this.NComercial.Lines = new string[] {
-        " "};
-            this.NComercial.Location = new System.Drawing.Point(83, 36);
-            this.NComercial.MaxLength = 32767;
-            this.NComercial.Name = "NComercial";
-            this.NComercial.PasswordChar = '\0';
-            this.NComercial.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.NComercial.SelectedText = "";
-            this.NComercial.SelectionLength = 0;
-            this.NComercial.SelectionStart = 0;
-            this.NComercial.ShortcutsEnabled = true;
-            this.NComercial.Size = new System.Drawing.Size(466, 23);
-            this.NComercial.TabIndex = 41;
-            this.NComercial.Text = " ";
-            this.NComercial.UseSelectable = true;
-            this.NComercial.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.NComercial.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel16
             // 
@@ -6906,6 +6818,60 @@ namespace gestor_bdm
             this.preliminar_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.preliminar_button.UseSelectable = true;
             // 
+            // comboSupply
+            // 
+            this.comboSupply.FormattingEnabled = true;
+            this.comboSupply.ItemHeight = 23;
+            this.comboSupply.Location = new System.Drawing.Point(83, 36);
+            this.comboSupply.Name = "comboSupply";
+            this.comboSupply.Size = new System.Drawing.Size(466, 29);
+            this.comboSupply.TabIndex = 46;
+            this.comboSupply.UseSelectable = true;
+            this.comboSupply.SelectedIndexChanged += new System.EventHandler(this.comboSupply_SelectedIndexChanged);
+            // 
+            // NComercial
+            // 
+            // 
+            // 
+            // 
+            this.NComercial.CustomButton.Image = null;
+            this.NComercial.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.NComercial.CustomButton.Name = "";
+            this.NComercial.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.NComercial.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.NComercial.CustomButton.TabIndex = 1;
+            this.NComercial.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.NComercial.CustomButton.UseSelectable = true;
+            this.NComercial.CustomButton.Visible = false;
+            this.NComercial.Lines = new string[] {
+        " "};
+            this.NComercial.Location = new System.Drawing.Point(83, 36);
+            this.NComercial.MaxLength = 32767;
+            this.NComercial.Name = "NComercial";
+            this.NComercial.PasswordChar = '\0';
+            this.NComercial.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.NComercial.SelectedText = "";
+            this.NComercial.SelectionLength = 0;
+            this.NComercial.SelectionStart = 0;
+            this.NComercial.ShortcutsEnabled = true;
+            this.NComercial.Size = new System.Drawing.Size(466, 23);
+            this.NComercial.TabIndex = 46;
+            this.NComercial.Text = " ";
+            this.NComercial.UseSelectable = true;
+            this.NComercial.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.NComercial.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // comboAccounts
+            // 
+            this.comboAccounts.FormattingEnabled = true;
+            this.comboAccounts.ItemHeight = 23;
+            this.comboAccounts.Location = new System.Drawing.Point(83, 38);
+            this.comboAccounts.Name = "comboAccounts";
+            this.comboAccounts.Size = new System.Drawing.Size(466, 29);
+            this.comboAccounts.TabIndex = 47;
+            this.comboAccounts.UseSelectable = true;
+            this.comboAccounts.SelectedIndexChanged += new System.EventHandler(this.comboAccounts_SelectedIndexChanged);
+            // 
             // generador_OI
             // 
             this.ClientSize = new System.Drawing.Size(1247, 689);
@@ -7289,7 +7255,7 @@ namespace gestor_bdm
                 PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + NComercial.Text + "\n" + "Teléfono: " + TComercial.Text + " " + "Correo: " + CComercial.Text + "\n" + "\n" + "Contacto Pauta Medios: " + PNombre.Text + "\n" + "Teléfono: " + PTelefono.Text + " " + "Correo: " + PCorreo.Text + "\n" + "\n" + "Contacto Tour HotelDO: " + HNombre.Text + "\n" + "Teléfono: " + HTelefono.Text + " " + "Correo: " + HCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cliente_3.Colspan = 2;
 
-                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + mediaCNombre.Text + "\n" + "Teléfono: " + mediaCTelefono.Text + " " + "Correo: " + mediaCCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + mediaPNombre.Text + "\n" + "Teléfono: " + mediaPTelefono.Text + " " + "Correo: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + comboSupply.Text + "\n" + "Teléfono: " + mediaCTelefono.Text + " " + "Correo: " + mediaCCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + comboAccounts.Text + "\n" + "Teléfono: " + mediaPTelefono.Text + " " + "Correo: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 media_3.Colspan = 2;
 
                 table_3.AddCell(cliente_3);
@@ -8996,6 +8962,110 @@ namespace gestor_bdm
         private void metroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void supply()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from supply_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboSupply.ValueMember = "id";
+                comboSupply.DisplayMember = "nombre";
+                comboSupply.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboSupply_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM supply_manager WHERE nombre = '" + comboSupply.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaCCorreo.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        public void account()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from account_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboAccounts.ValueMember = "id";
+                comboAccounts.DisplayMember = "nombre";
+                comboAccounts.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboAccounts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM account_manager WHERE nombre = '" + comboAccounts.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaPEmail.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
         }
     }
 }

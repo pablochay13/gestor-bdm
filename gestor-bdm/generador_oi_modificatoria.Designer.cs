@@ -33,6 +33,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.oi_modificar_desc = new MetroFramework.Controls.MetroTextBox();
+            this.folio_oi_modificar = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel120 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel119 = new MetroFramework.Controls.MetroLabel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textFechaMedia = new MetroFramework.Controls.MetroTextBox();
             this.textCargo_m = new MetroFramework.Controls.MetroTextBox();
@@ -140,16 +145,12 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.mediaPEmail = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
-            this.mediaPTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
-            this.mediaPNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.mediaCCorreo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
-            this.mediaCTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel30 = new MetroFramework.Controls.MetroLabel();
-            this.mediaCNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel31 = new MetroFramework.Controls.MetroLabel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.mediaPostal = new MetroFramework.Controls.MetroTextBox();
@@ -164,11 +165,8 @@
             this.mediaRazon = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel37 = new MetroFramework.Controls.MetroLabel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.cxcCorreo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel39 = new MetroFramework.Controls.MetroLabel();
-            this.cxcTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel40 = new MetroFramework.Controls.MetroLabel();
-            this.cxcNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel41 = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -357,14 +355,17 @@
             this.metroLabel57 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
             this.generar_OI = new MetroFramework.Controls.MetroTile();
-            this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.metroLabel119 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel120 = new MetroFramework.Controls.MetroLabel();
-            this.folio_oi_modificar = new MetroFramework.Controls.MetroTextBox();
-            this.oi_modificar_desc = new MetroFramework.Controls.MetroTextBox();
+            this.cxcCorreo = new MetroFramework.Controls.MetroTextBox();
+            this.cxcTelefono = new MetroFramework.Controls.MetroTextBox();
+            this.cxcNombre = new MetroFramework.Controls.MetroTextBox();
+            this.comboSupply = new MetroFramework.Controls.MetroComboBox();
+            this.mediaCTelefono = new MetroFramework.Controls.MetroTextBox();
+            this.comboAccounts = new MetroFramework.Controls.MetroComboBox();
+            this.mediaPTelefono = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.groupBox25.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -404,7 +405,6 @@
             this.groupBox17.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox25.SuspendLayout();
             this.SuspendLayout();
             // 
             // preliminar_button
@@ -465,6 +465,102 @@
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.BackColor = System.Drawing.Color.White;
+            this.groupBox25.Controls.Add(this.oi_modificar_desc);
+            this.groupBox25.Controls.Add(this.folio_oi_modificar);
+            this.groupBox25.Controls.Add(this.metroLabel120);
+            this.groupBox25.Controls.Add(this.metroLabel119);
+            this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox25.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.groupBox25.Location = new System.Drawing.Point(3, 113);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox25.Size = new System.Drawing.Size(1187, 158);
+            this.groupBox25.TabIndex = 24;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Detalles del Cambio";
+            // 
+            // oi_modificar_desc
+            // 
+            // 
+            // 
+            // 
+            this.oi_modificar_desc.CustomButton.Image = null;
+            this.oi_modificar_desc.CustomButton.Location = new System.Drawing.Point(958, 1);
+            this.oi_modificar_desc.CustomButton.Name = "";
+            this.oi_modificar_desc.CustomButton.Size = new System.Drawing.Size(55, 55);
+            this.oi_modificar_desc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.oi_modificar_desc.CustomButton.TabIndex = 1;
+            this.oi_modificar_desc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.oi_modificar_desc.CustomButton.UseSelectable = true;
+            this.oi_modificar_desc.CustomButton.Visible = false;
+            this.oi_modificar_desc.Lines = new string[0];
+            this.oi_modificar_desc.Location = new System.Drawing.Point(161, 46);
+            this.oi_modificar_desc.MaxLength = 32767;
+            this.oi_modificar_desc.Multiline = true;
+            this.oi_modificar_desc.Name = "oi_modificar_desc";
+            this.oi_modificar_desc.PasswordChar = '\0';
+            this.oi_modificar_desc.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.oi_modificar_desc.SelectedText = "";
+            this.oi_modificar_desc.SelectionLength = 0;
+            this.oi_modificar_desc.SelectionStart = 0;
+            this.oi_modificar_desc.ShortcutsEnabled = true;
+            this.oi_modificar_desc.Size = new System.Drawing.Size(1014, 57);
+            this.oi_modificar_desc.TabIndex = 3;
+            this.oi_modificar_desc.UseSelectable = true;
+            this.oi_modificar_desc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.oi_modificar_desc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // folio_oi_modificar
+            // 
+            // 
+            // 
+            // 
+            this.folio_oi_modificar.CustomButton.Image = null;
+            this.folio_oi_modificar.CustomButton.Location = new System.Drawing.Point(335, 1);
+            this.folio_oi_modificar.CustomButton.Name = "";
+            this.folio_oi_modificar.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.folio_oi_modificar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.folio_oi_modificar.CustomButton.TabIndex = 1;
+            this.folio_oi_modificar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.folio_oi_modificar.CustomButton.UseSelectable = true;
+            this.folio_oi_modificar.CustomButton.Visible = false;
+            this.folio_oi_modificar.Lines = new string[0];
+            this.folio_oi_modificar.Location = new System.Drawing.Point(219, 113);
+            this.folio_oi_modificar.MaxLength = 32767;
+            this.folio_oi_modificar.Name = "folio_oi_modificar";
+            this.folio_oi_modificar.PasswordChar = '\0';
+            this.folio_oi_modificar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.folio_oi_modificar.SelectedText = "";
+            this.folio_oi_modificar.SelectionLength = 0;
+            this.folio_oi_modificar.SelectionStart = 0;
+            this.folio_oi_modificar.ShortcutsEnabled = true;
+            this.folio_oi_modificar.Size = new System.Drawing.Size(357, 23);
+            this.folio_oi_modificar.TabIndex = 2;
+            this.folio_oi_modificar.UseSelectable = true;
+            this.folio_oi_modificar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.folio_oi_modificar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel120
+            // 
+            this.metroLabel120.AutoSize = true;
+            this.metroLabel120.Location = new System.Drawing.Point(6, 113);
+            this.metroLabel120.Name = "metroLabel120";
+            this.metroLabel120.Size = new System.Drawing.Size(207, 19);
+            this.metroLabel120.TabIndex = 1;
+            this.metroLabel120.Text = "Solicitado a la orden de inserción:";
+            // 
+            // metroLabel119
+            // 
+            this.metroLabel119.AutoSize = true;
+            this.metroLabel119.Location = new System.Drawing.Point(6, 46);
+            this.metroLabel119.Name = "metroLabel119";
+            this.metroLabel119.Size = new System.Drawing.Size(149, 19);
+            this.metroLabel119.TabIndex = 0;
+            this.metroLabel119.Text = "Descripción del cambio:";
             // 
             // groupBox9
             // 
@@ -2332,7 +2428,7 @@
             // 
             this.dateTimeMF_hasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeMF_hasta.Location = new System.Drawing.Point(449, 32);
-            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateTimeMF_hasta.Name = "dateTimeMF_hasta";
             this.dateTimeMF_hasta.Size = new System.Drawing.Size(95, 29);
             this.dateTimeMF_hasta.TabIndex = 363;
@@ -2350,7 +2446,7 @@
             // 
             this.dateTimeMF_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeMF_desde.Location = new System.Drawing.Point(253, 32);
-            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateTimeMF_desde.Name = "dateTimeMF_desde";
             this.dateTimeMF_desde.Size = new System.Drawing.Size(95, 29);
             this.dateTimeMF_desde.TabIndex = 361;
@@ -2422,11 +2518,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.comboAccounts);
+            this.groupBox5.Controls.Add(this.mediaPTelefono);
             this.groupBox5.Controls.Add(this.mediaPEmail);
             this.groupBox5.Controls.Add(this.metroLabel26);
-            this.groupBox5.Controls.Add(this.mediaPTelefono);
             this.groupBox5.Controls.Add(this.metroLabel27);
-            this.groupBox5.Controls.Add(this.mediaPNombre);
             this.groupBox5.Controls.Add(this.metroLabel28);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(6, 621);
@@ -2477,38 +2573,6 @@
             this.metroLabel26.TabIndex = 50;
             this.metroLabel26.Text = "Correo:";
             // 
-            // mediaPTelefono
-            // 
-            // 
-            // 
-            // 
-            this.mediaPTelefono.CustomButton.Image = null;
-            this.mediaPTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaPTelefono.CustomButton.Name = "";
-            this.mediaPTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaPTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaPTelefono.CustomButton.TabIndex = 1;
-            this.mediaPTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaPTelefono.CustomButton.UseSelectable = true;
-            this.mediaPTelefono.CustomButton.Visible = false;
-            this.mediaPTelefono.Lines = new string[] {
-        " "};
-            this.mediaPTelefono.Location = new System.Drawing.Point(83, 73);
-            this.mediaPTelefono.MaxLength = 32767;
-            this.mediaPTelefono.Name = "mediaPTelefono";
-            this.mediaPTelefono.PasswordChar = '\0';
-            this.mediaPTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaPTelefono.SelectedText = "";
-            this.mediaPTelefono.SelectionLength = 0;
-            this.mediaPTelefono.SelectionStart = 0;
-            this.mediaPTelefono.ShortcutsEnabled = true;
-            this.mediaPTelefono.Size = new System.Drawing.Size(466, 23);
-            this.mediaPTelefono.TabIndex = 49;
-            this.mediaPTelefono.Text = " ";
-            this.mediaPTelefono.UseSelectable = true;
-            this.mediaPTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaPTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // metroLabel27
             // 
             this.metroLabel27.AutoSize = true;
@@ -2517,38 +2581,6 @@
             this.metroLabel27.Size = new System.Drawing.Size(61, 19);
             this.metroLabel27.TabIndex = 48;
             this.metroLabel27.Text = "Teléfono:";
-            // 
-            // mediaPNombre
-            // 
-            // 
-            // 
-            // 
-            this.mediaPNombre.CustomButton.Image = null;
-            this.mediaPNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaPNombre.CustomButton.Name = "";
-            this.mediaPNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaPNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaPNombre.CustomButton.TabIndex = 1;
-            this.mediaPNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaPNombre.CustomButton.UseSelectable = true;
-            this.mediaPNombre.CustomButton.Visible = false;
-            this.mediaPNombre.Lines = new string[] {
-        " "};
-            this.mediaPNombre.Location = new System.Drawing.Point(83, 39);
-            this.mediaPNombre.MaxLength = 32767;
-            this.mediaPNombre.Name = "mediaPNombre";
-            this.mediaPNombre.PasswordChar = '\0';
-            this.mediaPNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaPNombre.SelectedText = "";
-            this.mediaPNombre.SelectionLength = 0;
-            this.mediaPNombre.SelectionStart = 0;
-            this.mediaPNombre.ShortcutsEnabled = true;
-            this.mediaPNombre.Size = new System.Drawing.Size(466, 23);
-            this.mediaPNombre.TabIndex = 47;
-            this.mediaPNombre.Text = " ";
-            this.mediaPNombre.UseSelectable = true;
-            this.mediaPNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaPNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel28
             // 
@@ -2561,11 +2593,11 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.comboSupply);
+            this.groupBox6.Controls.Add(this.mediaCTelefono);
             this.groupBox6.Controls.Add(this.mediaCCorreo);
             this.groupBox6.Controls.Add(this.metroLabel29);
-            this.groupBox6.Controls.Add(this.mediaCTelefono);
             this.groupBox6.Controls.Add(this.metroLabel30);
-            this.groupBox6.Controls.Add(this.mediaCNombre);
             this.groupBox6.Controls.Add(this.metroLabel31);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(6, 475);
@@ -2616,38 +2648,6 @@
             this.metroLabel29.TabIndex = 44;
             this.metroLabel29.Text = "Correo:";
             // 
-            // mediaCTelefono
-            // 
-            // 
-            // 
-            // 
-            this.mediaCTelefono.CustomButton.Image = null;
-            this.mediaCTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaCTelefono.CustomButton.Name = "";
-            this.mediaCTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaCTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaCTelefono.CustomButton.TabIndex = 1;
-            this.mediaCTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaCTelefono.CustomButton.UseSelectable = true;
-            this.mediaCTelefono.CustomButton.Visible = false;
-            this.mediaCTelefono.Lines = new string[] {
-        " "};
-            this.mediaCTelefono.Location = new System.Drawing.Point(83, 70);
-            this.mediaCTelefono.MaxLength = 32767;
-            this.mediaCTelefono.Name = "mediaCTelefono";
-            this.mediaCTelefono.PasswordChar = '\0';
-            this.mediaCTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaCTelefono.SelectedText = "";
-            this.mediaCTelefono.SelectionLength = 0;
-            this.mediaCTelefono.SelectionStart = 0;
-            this.mediaCTelefono.ShortcutsEnabled = true;
-            this.mediaCTelefono.Size = new System.Drawing.Size(466, 23);
-            this.mediaCTelefono.TabIndex = 43;
-            this.mediaCTelefono.Text = " ";
-            this.mediaCTelefono.UseSelectable = true;
-            this.mediaCTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaCTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // metroLabel30
             // 
             this.metroLabel30.AutoSize = true;
@@ -2656,38 +2656,6 @@
             this.metroLabel30.Size = new System.Drawing.Size(61, 19);
             this.metroLabel30.TabIndex = 42;
             this.metroLabel30.Text = "Teléfono:";
-            // 
-            // mediaCNombre
-            // 
-            // 
-            // 
-            // 
-            this.mediaCNombre.CustomButton.Image = null;
-            this.mediaCNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.mediaCNombre.CustomButton.Name = "";
-            this.mediaCNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.mediaCNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.mediaCNombre.CustomButton.TabIndex = 1;
-            this.mediaCNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mediaCNombre.CustomButton.UseSelectable = true;
-            this.mediaCNombre.CustomButton.Visible = false;
-            this.mediaCNombre.Lines = new string[] {
-        " "};
-            this.mediaCNombre.Location = new System.Drawing.Point(83, 36);
-            this.mediaCNombre.MaxLength = 32767;
-            this.mediaCNombre.Name = "mediaCNombre";
-            this.mediaCNombre.PasswordChar = '\0';
-            this.mediaCNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.mediaCNombre.SelectedText = "";
-            this.mediaCNombre.SelectionLength = 0;
-            this.mediaCNombre.SelectionStart = 0;
-            this.mediaCNombre.ShortcutsEnabled = true;
-            this.mediaCNombre.Size = new System.Drawing.Size(466, 23);
-            this.mediaCNombre.TabIndex = 41;
-            this.mediaCNombre.Text = " ";
-            this.mediaCNombre.UseSelectable = true;
-            this.mediaCNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.mediaCNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel31
             // 
@@ -2935,10 +2903,10 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.cxcCorreo);
-            this.groupBox8.Controls.Add(this.metroLabel39);
             this.groupBox8.Controls.Add(this.cxcTelefono);
-            this.groupBox8.Controls.Add(this.metroLabel40);
             this.groupBox8.Controls.Add(this.cxcNombre);
+            this.groupBox8.Controls.Add(this.metroLabel39);
+            this.groupBox8.Controls.Add(this.metroLabel40);
             this.groupBox8.Controls.Add(this.metroLabel41);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(6, 325);
@@ -2947,38 +2915,6 @@
             this.groupBox8.TabIndex = 276;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Contacto Cuentas por Cobrar";
-            // 
-            // cxcCorreo
-            // 
-            // 
-            // 
-            // 
-            this.cxcCorreo.CustomButton.Image = null;
-            this.cxcCorreo.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.cxcCorreo.CustomButton.Name = "";
-            this.cxcCorreo.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cxcCorreo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cxcCorreo.CustomButton.TabIndex = 1;
-            this.cxcCorreo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cxcCorreo.CustomButton.UseSelectable = true;
-            this.cxcCorreo.CustomButton.Visible = false;
-            this.cxcCorreo.Lines = new string[] {
-        " "};
-            this.cxcCorreo.Location = new System.Drawing.Point(83, 105);
-            this.cxcCorreo.MaxLength = 32767;
-            this.cxcCorreo.Name = "cxcCorreo";
-            this.cxcCorreo.PasswordChar = '\0';
-            this.cxcCorreo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cxcCorreo.SelectedText = "";
-            this.cxcCorreo.SelectionLength = 0;
-            this.cxcCorreo.SelectionStart = 0;
-            this.cxcCorreo.ShortcutsEnabled = true;
-            this.cxcCorreo.Size = new System.Drawing.Size(466, 23);
-            this.cxcCorreo.TabIndex = 39;
-            this.cxcCorreo.Text = " ";
-            this.cxcCorreo.UseSelectable = true;
-            this.cxcCorreo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cxcCorreo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel39
             // 
@@ -2989,38 +2925,6 @@
             this.metroLabel39.TabIndex = 38;
             this.metroLabel39.Text = "Correo:";
             // 
-            // cxcTelefono
-            // 
-            // 
-            // 
-            // 
-            this.cxcTelefono.CustomButton.Image = null;
-            this.cxcTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.cxcTelefono.CustomButton.Name = "";
-            this.cxcTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cxcTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cxcTelefono.CustomButton.TabIndex = 1;
-            this.cxcTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cxcTelefono.CustomButton.UseSelectable = true;
-            this.cxcTelefono.CustomButton.Visible = false;
-            this.cxcTelefono.Lines = new string[] {
-        " "};
-            this.cxcTelefono.Location = new System.Drawing.Point(83, 72);
-            this.cxcTelefono.MaxLength = 32767;
-            this.cxcTelefono.Name = "cxcTelefono";
-            this.cxcTelefono.PasswordChar = '\0';
-            this.cxcTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cxcTelefono.SelectedText = "";
-            this.cxcTelefono.SelectionLength = 0;
-            this.cxcTelefono.SelectionStart = 0;
-            this.cxcTelefono.ShortcutsEnabled = true;
-            this.cxcTelefono.Size = new System.Drawing.Size(466, 23);
-            this.cxcTelefono.TabIndex = 37;
-            this.cxcTelefono.Text = " ";
-            this.cxcTelefono.UseSelectable = true;
-            this.cxcTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cxcTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // metroLabel40
             // 
             this.metroLabel40.AutoSize = true;
@@ -3029,38 +2933,6 @@
             this.metroLabel40.Size = new System.Drawing.Size(61, 19);
             this.metroLabel40.TabIndex = 36;
             this.metroLabel40.Text = "Teléfono:";
-            // 
-            // cxcNombre
-            // 
-            // 
-            // 
-            // 
-            this.cxcNombre.CustomButton.Image = null;
-            this.cxcNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.cxcNombre.CustomButton.Name = "";
-            this.cxcNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.cxcNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cxcNombre.CustomButton.TabIndex = 1;
-            this.cxcNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.cxcNombre.CustomButton.UseSelectable = true;
-            this.cxcNombre.CustomButton.Visible = false;
-            this.cxcNombre.Lines = new string[] {
-        " "};
-            this.cxcNombre.Location = new System.Drawing.Point(83, 38);
-            this.cxcNombre.MaxLength = 32767;
-            this.cxcNombre.Name = "cxcNombre";
-            this.cxcNombre.PasswordChar = '\0';
-            this.cxcNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cxcNombre.SelectedText = "";
-            this.cxcNombre.SelectionLength = 0;
-            this.cxcNombre.SelectionStart = 0;
-            this.cxcNombre.ShortcutsEnabled = true;
-            this.cxcNombre.Size = new System.Drawing.Size(466, 23);
-            this.cxcNombre.TabIndex = 35;
-            this.cxcNombre.Text = " ";
-            this.cxcNombre.UseSelectable = true;
-            this.cxcNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cxcNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroLabel41
             // 
@@ -4072,9 +3944,9 @@
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1212, 517);
+            this.metroTabPage2.Size = new System.Drawing.Size(1212, 514);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Anexo A";
             this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -6879,101 +6751,187 @@
             this.generar_OI.UseSelectable = true;
             this.generar_OI.Click += new System.EventHandler(this.generar_OI_Click);
             // 
-            // groupBox25
-            // 
-            this.groupBox25.BackColor = System.Drawing.Color.White;
-            this.groupBox25.Controls.Add(this.oi_modificar_desc);
-            this.groupBox25.Controls.Add(this.folio_oi_modificar);
-            this.groupBox25.Controls.Add(this.metroLabel120);
-            this.groupBox25.Controls.Add(this.metroLabel119);
-            this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox25.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.groupBox25.Location = new System.Drawing.Point(3, 113);
-            this.groupBox25.Name = "groupBox25";
-            this.groupBox25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox25.Size = new System.Drawing.Size(1187, 158);
-            this.groupBox25.TabIndex = 24;
-            this.groupBox25.TabStop = false;
-            this.groupBox25.Text = "Detalles del Cambio";
-            // 
-            // metroLabel119
-            // 
-            this.metroLabel119.AutoSize = true;
-            this.metroLabel119.Location = new System.Drawing.Point(6, 46);
-            this.metroLabel119.Name = "metroLabel119";
-            this.metroLabel119.Size = new System.Drawing.Size(149, 19);
-            this.metroLabel119.TabIndex = 0;
-            this.metroLabel119.Text = "Descripción del cambio:";
-            // 
-            // metroLabel120
-            // 
-            this.metroLabel120.AutoSize = true;
-            this.metroLabel120.Location = new System.Drawing.Point(6, 113);
-            this.metroLabel120.Name = "metroLabel120";
-            this.metroLabel120.Size = new System.Drawing.Size(207, 19);
-            this.metroLabel120.TabIndex = 1;
-            this.metroLabel120.Text = "Solicitado a la orden de inserción:";
-            // 
-            // folio_oi_modificar
+            // cxcCorreo
             // 
             // 
             // 
             // 
-            this.folio_oi_modificar.CustomButton.Image = null;
-            this.folio_oi_modificar.CustomButton.Location = new System.Drawing.Point(335, 1);
-            this.folio_oi_modificar.CustomButton.Name = "";
-            this.folio_oi_modificar.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.folio_oi_modificar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.folio_oi_modificar.CustomButton.TabIndex = 1;
-            this.folio_oi_modificar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.folio_oi_modificar.CustomButton.UseSelectable = true;
-            this.folio_oi_modificar.CustomButton.Visible = false;
-            this.folio_oi_modificar.Lines = new string[0];
-            this.folio_oi_modificar.Location = new System.Drawing.Point(219, 113);
-            this.folio_oi_modificar.MaxLength = 32767;
-            this.folio_oi_modificar.Name = "folio_oi_modificar";
-            this.folio_oi_modificar.PasswordChar = '\0';
-            this.folio_oi_modificar.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.folio_oi_modificar.SelectedText = "";
-            this.folio_oi_modificar.SelectionLength = 0;
-            this.folio_oi_modificar.SelectionStart = 0;
-            this.folio_oi_modificar.ShortcutsEnabled = true;
-            this.folio_oi_modificar.Size = new System.Drawing.Size(357, 23);
-            this.folio_oi_modificar.TabIndex = 2;
-            this.folio_oi_modificar.UseSelectable = true;
-            this.folio_oi_modificar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.folio_oi_modificar.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.cxcCorreo.CustomButton.Image = null;
+            this.cxcCorreo.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.cxcCorreo.CustomButton.Name = "";
+            this.cxcCorreo.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cxcCorreo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cxcCorreo.CustomButton.TabIndex = 1;
+            this.cxcCorreo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cxcCorreo.CustomButton.UseSelectable = true;
+            this.cxcCorreo.CustomButton.Visible = false;
+            this.cxcCorreo.Lines = new string[] {
+        "ladominguez@bestday.com"};
+            this.cxcCorreo.Location = new System.Drawing.Point(83, 105);
+            this.cxcCorreo.MaxLength = 32767;
+            this.cxcCorreo.Name = "cxcCorreo";
+            this.cxcCorreo.PasswordChar = '\0';
+            this.cxcCorreo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cxcCorreo.SelectedText = "";
+            this.cxcCorreo.SelectionLength = 0;
+            this.cxcCorreo.SelectionStart = 0;
+            this.cxcCorreo.ShortcutsEnabled = true;
+            this.cxcCorreo.Size = new System.Drawing.Size(466, 23);
+            this.cxcCorreo.TabIndex = 42;
+            this.cxcCorreo.Text = "ladominguez@bestday.com";
+            this.cxcCorreo.UseSelectable = true;
+            this.cxcCorreo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cxcCorreo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // oi_modificar_desc
+            // cxcTelefono
             // 
             // 
             // 
             // 
-            this.oi_modificar_desc.CustomButton.Image = null;
-            this.oi_modificar_desc.CustomButton.Location = new System.Drawing.Point(958, 1);
-            this.oi_modificar_desc.CustomButton.Name = "";
-            this.oi_modificar_desc.CustomButton.Size = new System.Drawing.Size(55, 55);
-            this.oi_modificar_desc.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.oi_modificar_desc.CustomButton.TabIndex = 1;
-            this.oi_modificar_desc.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.oi_modificar_desc.CustomButton.UseSelectable = true;
-            this.oi_modificar_desc.CustomButton.Visible = false;
-            this.oi_modificar_desc.Lines = new string[0];
-            this.oi_modificar_desc.Location = new System.Drawing.Point(161, 46);
-            this.oi_modificar_desc.MaxLength = 32767;
-            this.oi_modificar_desc.Multiline = true;
-            this.oi_modificar_desc.Name = "oi_modificar_desc";
-            this.oi_modificar_desc.PasswordChar = '\0';
-            this.oi_modificar_desc.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.oi_modificar_desc.SelectedText = "";
-            this.oi_modificar_desc.SelectionLength = 0;
-            this.oi_modificar_desc.SelectionStart = 0;
-            this.oi_modificar_desc.ShortcutsEnabled = true;
-            this.oi_modificar_desc.Size = new System.Drawing.Size(1014, 57);
-            this.oi_modificar_desc.TabIndex = 3;
-            this.oi_modificar_desc.UseSelectable = true;
-            this.oi_modificar_desc.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.oi_modificar_desc.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.cxcTelefono.CustomButton.Image = null;
+            this.cxcTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.cxcTelefono.CustomButton.Name = "";
+            this.cxcTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cxcTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cxcTelefono.CustomButton.TabIndex = 1;
+            this.cxcTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cxcTelefono.CustomButton.UseSelectable = true;
+            this.cxcTelefono.CustomButton.Visible = false;
+            this.cxcTelefono.Lines = new string[] {
+        " 998 881 1300 Ext. 1255"};
+            this.cxcTelefono.Location = new System.Drawing.Point(83, 72);
+            this.cxcTelefono.MaxLength = 32767;
+            this.cxcTelefono.Name = "cxcTelefono";
+            this.cxcTelefono.PasswordChar = '\0';
+            this.cxcTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cxcTelefono.SelectedText = "";
+            this.cxcTelefono.SelectionLength = 0;
+            this.cxcTelefono.SelectionStart = 0;
+            this.cxcTelefono.ShortcutsEnabled = true;
+            this.cxcTelefono.Size = new System.Drawing.Size(466, 23);
+            this.cxcTelefono.TabIndex = 41;
+            this.cxcTelefono.Text = " 998 881 1300 Ext. 1255";
+            this.cxcTelefono.UseSelectable = true;
+            this.cxcTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cxcTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cxcNombre
+            // 
+            // 
+            // 
+            // 
+            this.cxcNombre.CustomButton.Image = null;
+            this.cxcNombre.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.cxcNombre.CustomButton.Name = "";
+            this.cxcNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.cxcNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cxcNombre.CustomButton.TabIndex = 1;
+            this.cxcNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cxcNombre.CustomButton.UseSelectable = true;
+            this.cxcNombre.CustomButton.Visible = false;
+            this.cxcNombre.Lines = new string[] {
+        " Landy Dominguez"};
+            this.cxcNombre.Location = new System.Drawing.Point(83, 38);
+            this.cxcNombre.MaxLength = 32767;
+            this.cxcNombre.Name = "cxcNombre";
+            this.cxcNombre.PasswordChar = '\0';
+            this.cxcNombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cxcNombre.SelectedText = "";
+            this.cxcNombre.SelectionLength = 0;
+            this.cxcNombre.SelectionStart = 0;
+            this.cxcNombre.ShortcutsEnabled = true;
+            this.cxcNombre.Size = new System.Drawing.Size(466, 23);
+            this.cxcNombre.TabIndex = 40;
+            this.cxcNombre.Text = " Landy Dominguez";
+            this.cxcNombre.UseSelectable = true;
+            this.cxcNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cxcNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // comboSupply
+            // 
+            this.comboSupply.FormattingEnabled = true;
+            this.comboSupply.ItemHeight = 23;
+            this.comboSupply.Location = new System.Drawing.Point(83, 36);
+            this.comboSupply.Name = "comboSupply";
+            this.comboSupply.Size = new System.Drawing.Size(466, 29);
+            this.comboSupply.TabIndex = 48;
+            this.comboSupply.UseSelectable = true;
+            this.comboSupply.SelectedIndexChanged += new System.EventHandler(this.comboSupply_SelectedIndexChanged);
+            // 
+            // mediaCTelefono
+            // 
+            // 
+            // 
+            // 
+            this.mediaCTelefono.CustomButton.Image = null;
+            this.mediaCTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.mediaCTelefono.CustomButton.Name = "";
+            this.mediaCTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.mediaCTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.mediaCTelefono.CustomButton.TabIndex = 1;
+            this.mediaCTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.mediaCTelefono.CustomButton.UseSelectable = true;
+            this.mediaCTelefono.CustomButton.Visible = false;
+            this.mediaCTelefono.Lines = new string[] {
+        "998 8811300 Ext. "};
+            this.mediaCTelefono.Location = new System.Drawing.Point(83, 70);
+            this.mediaCTelefono.MaxLength = 32767;
+            this.mediaCTelefono.Name = "mediaCTelefono";
+            this.mediaCTelefono.PasswordChar = '\0';
+            this.mediaCTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.mediaCTelefono.SelectedText = "";
+            this.mediaCTelefono.SelectionLength = 0;
+            this.mediaCTelefono.SelectionStart = 0;
+            this.mediaCTelefono.ShortcutsEnabled = true;
+            this.mediaCTelefono.Size = new System.Drawing.Size(466, 23);
+            this.mediaCTelefono.TabIndex = 47;
+            this.mediaCTelefono.Text = "998 8811300 Ext. ";
+            this.mediaCTelefono.UseSelectable = true;
+            this.mediaCTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.mediaCTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // comboAccounts
+            // 
+            this.comboAccounts.FormattingEnabled = true;
+            this.comboAccounts.ItemHeight = 23;
+            this.comboAccounts.Location = new System.Drawing.Point(83, 39);
+            this.comboAccounts.Name = "comboAccounts";
+            this.comboAccounts.Size = new System.Drawing.Size(466, 29);
+            this.comboAccounts.TabIndex = 52;
+            this.comboAccounts.UseSelectable = true;
+            this.comboAccounts.SelectedIndexChanged += new System.EventHandler(this.comboAccounts_SelectedIndexChanged);
+            // 
+            // mediaPTelefono
+            // 
+            // 
+            // 
+            // 
+            this.mediaPTelefono.CustomButton.Image = null;
+            this.mediaPTelefono.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.mediaPTelefono.CustomButton.Name = "";
+            this.mediaPTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.mediaPTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.mediaPTelefono.CustomButton.TabIndex = 1;
+            this.mediaPTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.mediaPTelefono.CustomButton.UseSelectable = true;
+            this.mediaPTelefono.CustomButton.Visible = false;
+            this.mediaPTelefono.Lines = new string[] {
+        "998 8811300"};
+            this.mediaPTelefono.Location = new System.Drawing.Point(83, 74);
+            this.mediaPTelefono.MaxLength = 32767;
+            this.mediaPTelefono.Name = "mediaPTelefono";
+            this.mediaPTelefono.PasswordChar = '\0';
+            this.mediaPTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.mediaPTelefono.SelectedText = "";
+            this.mediaPTelefono.SelectionLength = 0;
+            this.mediaPTelefono.SelectionStart = 0;
+            this.mediaPTelefono.ShortcutsEnabled = true;
+            this.mediaPTelefono.Size = new System.Drawing.Size(466, 23);
+            this.mediaPTelefono.TabIndex = 53;
+            this.mediaPTelefono.Text = "998 8811300";
+            this.mediaPTelefono.UseSelectable = true;
+            this.mediaPTelefono.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.mediaPTelefono.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // generador_oi_modificatoria
             // 
@@ -6993,6 +6951,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
@@ -7054,8 +7014,6 @@
             this.groupBox16.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.groupBox25.ResumeLayout(false);
-            this.groupBox25.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -7173,16 +7131,12 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private MetroFramework.Controls.MetroTextBox mediaPEmail;
         private MetroFramework.Controls.MetroLabel metroLabel26;
-        private MetroFramework.Controls.MetroTextBox mediaPTelefono;
         private MetroFramework.Controls.MetroLabel metroLabel27;
-        private MetroFramework.Controls.MetroTextBox mediaPNombre;
         private MetroFramework.Controls.MetroLabel metroLabel28;
         private System.Windows.Forms.GroupBox groupBox6;
         private MetroFramework.Controls.MetroTextBox mediaCCorreo;
         private MetroFramework.Controls.MetroLabel metroLabel29;
-        private MetroFramework.Controls.MetroTextBox mediaCTelefono;
         private MetroFramework.Controls.MetroLabel metroLabel30;
-        private MetroFramework.Controls.MetroTextBox mediaCNombre;
         private MetroFramework.Controls.MetroLabel metroLabel31;
         private System.Windows.Forms.GroupBox groupBox7;
         private MetroFramework.Controls.MetroTextBox mediaPostal;
@@ -7197,11 +7151,8 @@
         private MetroFramework.Controls.MetroTextBox mediaRazon;
         private MetroFramework.Controls.MetroLabel metroLabel37;
         private System.Windows.Forms.GroupBox groupBox8;
-        private MetroFramework.Controls.MetroTextBox cxcCorreo;
         private MetroFramework.Controls.MetroLabel metroLabel39;
-        private MetroFramework.Controls.MetroTextBox cxcTelefono;
         private MetroFramework.Controls.MetroLabel metroLabel40;
-        private MetroFramework.Controls.MetroTextBox cxcNombre;
         private MetroFramework.Controls.MetroLabel metroLabel41;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox15;
@@ -7395,5 +7346,12 @@
         private MetroFramework.Controls.MetroTextBox folio_oi_modificar;
         private MetroFramework.Controls.MetroLabel metroLabel120;
         private MetroFramework.Controls.MetroLabel metroLabel119;
+        private MetroFramework.Controls.MetroTextBox cxcCorreo;
+        private MetroFramework.Controls.MetroTextBox cxcTelefono;
+        private MetroFramework.Controls.MetroTextBox cxcNombre;
+        private MetroFramework.Controls.MetroComboBox comboSupply;
+        private MetroFramework.Controls.MetroTextBox mediaCTelefono;
+        private MetroFramework.Controls.MetroComboBox comboAccounts;
+        private MetroFramework.Controls.MetroTextBox mediaPTelefono;
     }
 }

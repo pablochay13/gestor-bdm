@@ -16,11 +16,16 @@ namespace gestor_bdm
 {
     public partial class create_OI_en : MetroFramework.Forms.MetroForm
     {
+        MySqlConnection con = new MySqlConnection(Variables.Sentencia);
+
         public create_OI_en()
         {
             InitializeComponent();
 
             metroTabControl1.TabPages.Remove(metroTabPage2);
+
+            supply();
+            account();
 
             facturadoEne.SelectedIndex = 12;
             facturadoFeb.SelectedIndex = 12;
@@ -47,6 +52,9 @@ namespace gestor_bdm
             comboOct.SelectedIndex = 2;
             comboNov.SelectedIndex = 2;
             comboBoxDic.SelectedIndex = 2;
+
+            comboSupply.SelectedIndex = 0;
+            comboAccounts.SelectedIndex = 0;
 
             System.IO.Directory.CreateDirectory("C:\\PDF-OI\\");
         }
@@ -97,7 +105,6 @@ namespace gestor_bdm
                 {
                     mes_firma = "April";
                 }
-
 
                 else if (mes_firma == "5")
                 {
@@ -355,7 +362,7 @@ namespace gestor_bdm
                 PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Business contact: " + NComercial.Text + "\n" + "Phone: " + TComercial.Text + " " + "Mail: " + CComercial.Text + "\n" + "\n" + "Media Guideline Contact: " + PNombre.Text + "\n" + "Phone: " + PTelefono.Text + " " + "Mail: " + PCorreo.Text + "\n" + "\n" + "HotelDO Tour Contact: " + HNombre.Text + "\n" + "Phone: " + HTelefono.Text + " " + "Mail: " + HCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cliente_3.Colspan = 2;
 
-                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Business contact: " + mediaCNombre.Text + "\n" + "Phone: " + mediaCTelefono.Text + " " + "Mail: " + mediaCCorreo.Text + "\n" + "\n" + "Media Guideline Contact: " + mediaPNombre.Text + "\n" + "Phone: " + mediaPTelefono.Text + " " + "Mail: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Business contact: " + comboSupply.Text + "\n" + "Phone: " + mediaCTelefono.Text + " " + "Mail: " + mediaCCorreo.Text + "\n" + "\n" + "Media Guideline Contact: " + comboAccounts.Text + "\n" + "Phone: " + mediaPTelefono.Text + " " + "Mail: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 media_3.Colspan = 2;
 
                 table_3.AddCell(cliente_3);
@@ -2053,6 +2060,115 @@ namespace gestor_bdm
             total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
 
             textTotalIVA.Text = Convert.ToString(total);
+        }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboSupply_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM supply_manager WHERE nombre = '" + comboSupply.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaCCorreo.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+
+        }
+        public void supply()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from supply_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboSupply.ValueMember = "id";
+                comboSupply.DisplayMember = "nombre";
+                comboSupply.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void comboAccounts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM account_manager WHERE nombre = '" + comboAccounts.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaPEmail.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        public void account()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from account_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboAccounts.ValueMember = "id";
+                comboAccounts.DisplayMember = "nombre";
+                comboAccounts.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

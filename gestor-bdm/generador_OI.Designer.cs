@@ -62,7 +62,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroTextBox TComercial;
         private MetroFramework.Controls.MetroLabel metroLabel15;
-        private MetroFramework.Controls.MetroTextBox NComercial;
         private MetroFramework.Controls.MetroLabel metroLabel16;
         private MetroFramework.Controls.MetroTextBox PCorreo;
         private MetroFramework.Controls.MetroLabel metroLabel17;
@@ -82,14 +81,12 @@
         private MetroFramework.Controls.MetroLabel metroLabel26;
         private MetroFramework.Controls.MetroTextBox mediaPTelefono;
         private MetroFramework.Controls.MetroLabel metroLabel27;
-        private MetroFramework.Controls.MetroTextBox mediaPNombre;
         private MetroFramework.Controls.MetroLabel metroLabel28;
         private System.Windows.Forms.GroupBox groupBox6;
         private MetroFramework.Controls.MetroTextBox mediaCCorreo;
         private MetroFramework.Controls.MetroLabel metroLabel29;
         private MetroFramework.Controls.MetroTextBox mediaCTelefono;
         private MetroFramework.Controls.MetroLabel metroLabel30;
-        private MetroFramework.Controls.MetroTextBox mediaCNombre;
         private MetroFramework.Controls.MetroLabel metroLabel31;
         private System.Windows.Forms.GroupBox groupBox7;
         private MetroFramework.Controls.MetroTextBox mediaPostal;
@@ -348,5 +345,8 @@
         private MetroFramework.Controls.MetroTextBox seis_contacto;
         private Syncfusion.Windows.Forms.Tools.DoubleTextBox textTotalIVA;
         private MetroFramework.Controls.MetroTile preliminar_button;
+        private MetroFramework.Controls.MetroComboBox comboSupply;
+        private MetroFramework.Controls.MetroTextBox NComercial;
+        private MetroFramework.Controls.MetroComboBox comboAccounts;
     }
 }

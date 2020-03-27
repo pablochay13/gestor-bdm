@@ -1,5 +1,6 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +16,43 @@ namespace gestor_bdm
 {
     public partial class generador_oi_modificatoria : MetroFramework.Forms.MetroForm
     {
+        MySqlConnection con = new MySqlConnection(Variables.Sentencia);
+
         public generador_oi_modificatoria()
         {
             InitializeComponent();
+
+            supply();
+            account();
+
+            facturadoEne.SelectedIndex = 12;
+            facturadoFeb.SelectedIndex = 12;
+            facturadoMar.SelectedIndex = 12;
+            facturadoAbr.SelectedIndex = 12;
+            facturadoMay.SelectedIndex = 12;
+            facturadoJun.SelectedIndex = 12;
+            facturadoJul.SelectedIndex = 12;
+            facturadoAgo.SelectedIndex = 12;
+            facturadoSep.SelectedIndex = 12;
+            facturadoOct.SelectedIndex = 12;
+            facturadoNov.SelectedIndex = 12;
+            facturadoDic.SelectedIndex = 12;
+
+            comboEne.SelectedIndex = 2;
+            comboFeb.SelectedIndex = 2;
+            comboMar.SelectedIndex = 2;
+            comboAbr.SelectedIndex = 2;
+            comboMay.SelectedIndex = 2;
+            comboJun.SelectedIndex = 2;
+            comboJul.SelectedIndex = 2;
+            comboAgo.SelectedIndex = 2;
+            comboSep.SelectedIndex = 2;
+            comboOct.SelectedIndex = 2;
+            comboNov.SelectedIndex = 2;
+            comboBoxDic.SelectedIndex = 2;
+
+            comboSupply.SelectedIndex = 0;
+            comboAccounts.SelectedIndex = 0;
         }
 
         private void generador_oi_modificatoria_Load(object sender, EventArgs e)
@@ -357,7 +392,7 @@ namespace gestor_bdm
                 PdfPCell cliente_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + NComercial.Text + "\n" + "Teléfono: " + TComercial.Text + " " + "Correo: " + CComercial.Text + "\n" + "\n" + "Contacto Pauta Medios: " + PNombre.Text + "\n" + "Teléfono: " + PTelefono.Text + " " + "Correo: " + PCorreo.Text + "\n" + "\n" + "Contacto Tour HotelDO: " + HNombre.Text + "\n" + "Teléfono: " + HTelefono.Text + " " + "Correo: " + HCorreo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 cliente_3.Colspan = 2;
 
-                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + mediaCNombre.Text + "\n" + "Teléfono: " + mediaCTelefono.Text + " " + "Correo: " + mediaCCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + mediaPNombre.Text + "\n" + "Teléfono: " + mediaPTelefono.Text + " " + "Correo: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                PdfPCell media_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial: " + comboSupply.Text + "\n" + "Teléfono: " + mediaCTelefono.Text + " " + "Correo: " + mediaCCorreo.Text + "\n" + "\n" + "Contacto Pauta Medios: " + comboAccounts.Text + "\n" + "Teléfono: " + mediaPTelefono.Text + " " + "Correo: " + mediaPEmail.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 media_3.Colspan = 2;
 
                 table_3.AddCell(cliente_3);
@@ -994,7 +1029,7 @@ namespace gestor_bdm
                 //datos generales
                 PdfPTable datos_C_c = new PdfPTable(1);
                 datos_C_c.WidthPercentage = 100;
-                PdfPCell datos_IO_CC = new PdfPCell(new Phrase(string.Format("- El CLIENTE conoce, se sujeta y obliga al cumplimiento de los Términos y Condiciones Best Travel Media establecidos en el Reverso de la presente Orden de Inserción y la Pauta de Medios. " + "\n" + "- El CLIENTE manifiesta bajo protesta de decir verdad que cuenta con la capacidad y facultades necesarias para obligar a su representada al cumplimiento de las obligaciones establecidas en los presentes Términos y  ondiciones Best Travel Media. " + "\n" + " - La Razón Social Contratante señalada en la carátula bajo protesta de decir verdad, manifiesta que actúa en nombre y representación de las propiedades señaladas en el Anexo A de la presente Orden de Inserción."), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                PdfPCell datos_IO_CC = new PdfPCell(new Phrase(string.Format("- El CLIENTE conoce, se sujeta y obliga al cumplimiento de los Términos y Condiciones Best Travel Media establecidos en el Reverso de la presente Orden de Inserción y la Pauta de Medios. " + "\n" + "- El CLIENTE manifiesta bajo protesta de decir verdad que cuenta con la capacidad y facultades necesarias para obligar a su representada al cumplimiento de las obligan  ciones establecidas en los presentes Términos y  ondiciones Best Travel Media. " + "\n" + " - La Razón Social Contratante señalada en la carátula bajo protesta de decir verdad, manifiesta que actúa en nombre y representación de las propiedades señaladas en el Anexo A de la presente Orden de Inserción."), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 datos_IO_CC.HorizontalAlignment = 0;
 
                 datos_C_c.AddCell(datos_IO_CC);
@@ -1321,7 +1356,6 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-
                 cell_final_1 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
@@ -1342,7 +1376,6 @@ namespace gestor_bdm
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
-
 
 
                 //3
@@ -2054,6 +2087,110 @@ namespace gestor_bdm
             total = Convert.ToDouble(textDocEne.Text) + Convert.ToDouble(textDocFeb.Text) + Convert.ToDouble(textDocMar.Text) + Convert.ToDouble(textDocAbr.Text) + Convert.ToDouble(textDocMay.Text) + Convert.ToDouble(textDocJun.Text) + +Convert.ToDouble(textDocJul.Text) + Convert.ToDouble(textDocAgo.Text) + Convert.ToDouble(textDocSep.Text) + Convert.ToDouble(textDocOct.Text) + Convert.ToDouble(textDocNov.Text) + Convert.ToDouble(textDocDic.Text);
 
             textTotalIVA.Text = Convert.ToString(total);
+        }
+
+        private void comboSupply_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM supply_manager WHERE nombre = '" + comboSupply.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaCCorreo.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        private void comboAccounts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int valor = Convert.ToInt32(comboSupply.SelectedIndex);
+                int idCombo = valor + 1;
+                //MessageBox.Show(Convert.ToString(idCombo));
+                con.Close();
+                con.Open();
+                string sql = "SELECT * FROM account_manager WHERE nombre = '" + comboAccounts.Text + "'";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string t_correo = Convert.ToString(reader["correo"]);
+
+                    mediaPEmail.Text = t_correo;
+                }
+                con.Close();
+            }
+            catch (Exception m)
+            {
+                MessageBox.Show(m.Message);
+            }
+        }
+
+        public void supply()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from supply_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboSupply.ValueMember = "id";
+                comboSupply.DisplayMember = "nombre";
+                comboSupply.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void account()
+        {
+            try
+            {
+                con.Close();
+
+                string selectQuery = "select id, nombre from account_manager";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, con);
+
+                MySqlDataAdapter mysqldt = new MySqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                mysqldt.Fill(dt);
+
+                comboAccounts.ValueMember = "id";
+                comboAccounts.DisplayMember = "nombre";
+                comboAccounts.DataSource = dt;
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

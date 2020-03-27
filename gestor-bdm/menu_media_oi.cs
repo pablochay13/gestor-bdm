@@ -26,7 +26,6 @@ namespace gestor_bdm
         {
             generador_OI ventana = new generador_OI();
             ventana.Show();
-
             //this.Close();
         }
 
@@ -34,7 +33,6 @@ namespace gestor_bdm
         {
             create_OI_en ventana = new create_OI_en();
             ventana.Show();
-
             //this.Close();
         }
 
