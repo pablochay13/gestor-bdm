@@ -348,5 +348,10 @@
         private MetroFramework.Controls.MetroComboBox comboSupply;
         private MetroFramework.Controls.MetroTextBox NComercial;
         private MetroFramework.Controls.MetroComboBox comboAccounts;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel119;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private MetroFramework.Controls.MetroRadioButton hotelbox;
+        private MetroFramework.Controls.MetroRadioButton corbox;
     }
 }

@@ -66,6 +66,9 @@ namespace gestor_bdm
             this.generar_OI = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.hotelbox = new MetroFramework.Controls.MetroRadioButton();
+            this.corbox = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textFechaMedia = new MetroFramework.Controls.MetroTextBox();
             this.textCargo_m = new MetroFramework.Controls.MetroTextBox();
@@ -84,6 +87,8 @@ namespace gestor_bdm
             this.textCondiciones = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.metroLabel119 = new MetroFramework.Controls.MetroLabel();
+            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.textTotalIVA = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.c_c_facturas = new MetroFramework.Controls.MetroCheckBox();
             this.c_t_bancaria = new MetroFramework.Controls.MetroCheckBox();
@@ -171,12 +176,14 @@ namespace gestor_bdm
             this.label37 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboAccounts = new MetroFramework.Controls.MetroComboBox();
             this.mediaPEmail = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
             this.mediaPTelefono = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel27 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.comboSupply = new MetroFramework.Controls.MetroComboBox();
             this.mediaCCorreo = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel29 = new MetroFramework.Controls.MetroLabel();
             this.mediaCTelefono = new MetroFramework.Controls.MetroTextBox();
@@ -217,6 +224,7 @@ namespace gestor_bdm
             this.PNombre = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.NComercial = new MetroFramework.Controls.MetroTextBox();
             this.CComercial = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.TComercial = new MetroFramework.Controls.MetroTextBox();
@@ -388,12 +396,10 @@ namespace gestor_bdm
             this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.preliminar_button = new MetroFramework.Controls.MetroTile();
-            this.comboSupply = new MetroFramework.Controls.MetroComboBox();
-            this.NComercial = new MetroFramework.Controls.MetroTextBox();
-            this.comboAccounts = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.groupBox25.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -475,6 +481,7 @@ namespace gestor_bdm
             // metroTabPage1
             // 
             this.metroTabPage1.AutoScroll = true;
+            this.metroTabPage1.Controls.Add(this.groupBox25);
             this.metroTabPage1.Controls.Add(this.groupBox9);
             this.metroTabPage1.Controls.Add(this.groupBox10);
             this.metroTabPage1.Controls.Add(this.groupBox4);
@@ -495,6 +502,39 @@ namespace gestor_bdm
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.BackColor = System.Drawing.Color.White;
+            this.groupBox25.Controls.Add(this.hotelbox);
+            this.groupBox25.Controls.Add(this.corbox);
+            this.groupBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox25.Location = new System.Drawing.Point(614, 906);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(576, 138);
+            this.groupBox25.TabIndex = 279;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Facturar por";
+            // 
+            // hotelbox
+            // 
+            this.hotelbox.AutoSize = true;
+            this.hotelbox.Location = new System.Drawing.Point(21, 91);
+            this.hotelbox.Name = "hotelbox";
+            this.hotelbox.Size = new System.Drawing.Size(52, 15);
+            this.hotelbox.TabIndex = 3;
+            this.hotelbox.Text = "Hotel";
+            this.hotelbox.UseSelectable = true;
+            // 
+            // corbox
+            // 
+            this.corbox.AutoSize = true;
+            this.corbox.Location = new System.Drawing.Point(17, 50);
+            this.corbox.Name = "corbox";
+            this.corbox.Size = new System.Drawing.Size(86, 15);
+            this.corbox.TabIndex = 2;
+            this.corbox.Text = "Corporativo";
+            this.corbox.UseSelectable = true;
             // 
             // groupBox9
             // 
@@ -561,7 +601,7 @@ namespace gestor_bdm
             this.textCargo_m.CustomButton.UseSelectable = true;
             this.textCargo_m.CustomButton.Visible = false;
             this.textCargo_m.Lines = new string[] {
-        " "};
+        " Supply Manager"};
             this.textCargo_m.Location = new System.Drawing.Point(79, 74);
             this.textCargo_m.MaxLength = 32767;
             this.textCargo_m.Name = "textCargo_m";
@@ -573,7 +613,7 @@ namespace gestor_bdm
             this.textCargo_m.ShortcutsEnabled = true;
             this.textCargo_m.Size = new System.Drawing.Size(476, 23);
             this.textCargo_m.TabIndex = 281;
-            this.textCargo_m.Text = " ";
+            this.textCargo_m.Text = " Supply Manager";
             this.textCargo_m.UseSelectable = true;
             this.textCargo_m.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.textCargo_m.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -839,6 +879,8 @@ namespace gestor_bdm
             // 
             // groupBox21
             // 
+            this.groupBox21.Controls.Add(this.metroLabel119);
+            this.groupBox21.Controls.Add(this.metroCheckBox1);
             this.groupBox21.Controls.Add(this.textTotalIVA);
             this.groupBox21.Controls.Add(this.c_c_facturas);
             this.groupBox21.Controls.Add(this.c_t_bancaria);
@@ -915,11 +957,30 @@ namespace gestor_bdm
             this.groupBox21.Size = new System.Drawing.Size(1163, 580);
             this.groupBox21.TabIndex = 336;
             this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Marketing Fijo";
+            this.groupBox21.Text = "Vía de Facturación Mensual";
+            // 
+            // metroLabel119
+            // 
+            this.metroLabel119.AutoSize = true;
+            this.metroLabel119.Location = new System.Drawing.Point(217, 530);
+            this.metroLabel119.Name = "metroLabel119";
+            this.metroLabel119.Size = new System.Drawing.Size(13, 19);
+            this.metroLabel119.TabIndex = 482;
+            this.metroLabel119.Text = " ";
+            // 
+            // metroCheckBox1
+            // 
+            this.metroCheckBox1.AutoSize = true;
+            this.metroCheckBox1.Location = new System.Drawing.Point(244, 2);
+            this.metroCheckBox1.Name = "metroCheckBox1";
+            this.metroCheckBox1.Size = new System.Drawing.Size(26, 15);
+            this.metroCheckBox1.TabIndex = 370;
+            this.metroCheckBox1.Text = " ";
+            this.metroCheckBox1.UseSelectable = true;
             // 
             // textTotalIVA
             // 
-            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textTotalIVA.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textTotalIVA.DoubleValue = 0D;
             this.textTotalIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTotalIVA.Location = new System.Drawing.Point(111, 527);
@@ -1383,6 +1444,7 @@ namespace gestor_bdm
             this.comboBoxDic.Size = new System.Drawing.Size(121, 29);
             this.comboBoxDic.TabIndex = 461;
             this.comboBoxDic.UseSelectable = true;
+            this.comboBoxDic.SelectedIndexChanged += new System.EventHandler(this.comboBoxDic_SelectedIndexChanged);
             // 
             // comboNov
             // 
@@ -1397,6 +1459,7 @@ namespace gestor_bdm
             this.comboNov.Size = new System.Drawing.Size(121, 29);
             this.comboNov.TabIndex = 460;
             this.comboNov.UseSelectable = true;
+            this.comboNov.SelectedIndexChanged += new System.EventHandler(this.comboNov_SelectedIndexChanged);
             // 
             // comboOct
             // 
@@ -1411,6 +1474,7 @@ namespace gestor_bdm
             this.comboOct.Size = new System.Drawing.Size(121, 29);
             this.comboOct.TabIndex = 459;
             this.comboOct.UseSelectable = true;
+            this.comboOct.SelectedIndexChanged += new System.EventHandler(this.comboOct_SelectedIndexChanged);
             // 
             // comboSep
             // 
@@ -1425,6 +1489,7 @@ namespace gestor_bdm
             this.comboSep.Size = new System.Drawing.Size(121, 29);
             this.comboSep.TabIndex = 458;
             this.comboSep.UseSelectable = true;
+            this.comboSep.SelectedIndexChanged += new System.EventHandler(this.comboSep_SelectedIndexChanged);
             // 
             // comboAgo
             // 
@@ -1439,6 +1504,7 @@ namespace gestor_bdm
             this.comboAgo.Size = new System.Drawing.Size(121, 29);
             this.comboAgo.TabIndex = 457;
             this.comboAgo.UseSelectable = true;
+            this.comboAgo.SelectedIndexChanged += new System.EventHandler(this.comboAgo_SelectedIndexChanged);
             // 
             // comboJul
             // 
@@ -1453,6 +1519,7 @@ namespace gestor_bdm
             this.comboJul.Size = new System.Drawing.Size(121, 29);
             this.comboJul.TabIndex = 456;
             this.comboJul.UseSelectable = true;
+            this.comboJul.SelectedIndexChanged += new System.EventHandler(this.comboJul_SelectedIndexChanged);
             // 
             // comboJun
             // 
@@ -1467,6 +1534,7 @@ namespace gestor_bdm
             this.comboJun.Size = new System.Drawing.Size(121, 29);
             this.comboJun.TabIndex = 455;
             this.comboJun.UseSelectable = true;
+            this.comboJun.SelectedIndexChanged += new System.EventHandler(this.comboJun_SelectedIndexChanged);
             // 
             // comboMay
             // 
@@ -1481,6 +1549,7 @@ namespace gestor_bdm
             this.comboMay.Size = new System.Drawing.Size(121, 29);
             this.comboMay.TabIndex = 454;
             this.comboMay.UseSelectable = true;
+            this.comboMay.SelectedIndexChanged += new System.EventHandler(this.comboMay_SelectedIndexChanged);
             // 
             // comboAbr
             // 
@@ -1495,6 +1564,7 @@ namespace gestor_bdm
             this.comboAbr.Size = new System.Drawing.Size(121, 29);
             this.comboAbr.TabIndex = 453;
             this.comboAbr.UseSelectable = true;
+            this.comboAbr.SelectedIndexChanged += new System.EventHandler(this.comboAbr_SelectedIndexChanged);
             // 
             // comboMar
             // 
@@ -1509,6 +1579,7 @@ namespace gestor_bdm
             this.comboMar.Size = new System.Drawing.Size(121, 29);
             this.comboMar.TabIndex = 452;
             this.comboMar.UseSelectable = true;
+            this.comboMar.SelectedIndexChanged += new System.EventHandler(this.comboMar_SelectedIndexChanged);
             // 
             // comboFeb
             // 
@@ -1523,6 +1594,7 @@ namespace gestor_bdm
             this.comboFeb.Size = new System.Drawing.Size(121, 29);
             this.comboFeb.TabIndex = 451;
             this.comboFeb.UseSelectable = true;
+            this.comboFeb.SelectedIndexChanged += new System.EventHandler(this.comboFeb_SelectedIndexChanged);
             // 
             // metroLabel45
             // 
@@ -1546,6 +1618,7 @@ namespace gestor_bdm
             this.comboEne.Size = new System.Drawing.Size(121, 29);
             this.comboEne.TabIndex = 449;
             this.comboEne.UseSelectable = true;
+            this.comboEne.SelectedIndexChanged += new System.EventHandler(this.comboEne_SelectedIndexChanged);
             // 
             // metroLabel44
             // 
@@ -2140,7 +2213,7 @@ namespace gestor_bdm
             // 
             // textDocDic
             // 
-            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocDic.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocDic.DoubleValue = 0D;
             this.textDocDic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocDic.Location = new System.Drawing.Point(303, 451);
@@ -2151,7 +2224,7 @@ namespace gestor_bdm
             // 
             // textDocNov
             // 
-            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocNov.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocNov.DoubleValue = 0D;
             this.textDocNov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocNov.Location = new System.Drawing.Point(303, 416);
@@ -2162,7 +2235,7 @@ namespace gestor_bdm
             // 
             // textDocOct
             // 
-            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocOct.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocOct.DoubleValue = 0D;
             this.textDocOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocOct.Location = new System.Drawing.Point(303, 381);
@@ -2173,7 +2246,7 @@ namespace gestor_bdm
             // 
             // textDocSep
             // 
-            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocSep.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocSep.DoubleValue = 0D;
             this.textDocSep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocSep.Location = new System.Drawing.Point(303, 346);
@@ -2184,7 +2257,7 @@ namespace gestor_bdm
             // 
             // textDocAgo
             // 
-            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocAgo.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAgo.DoubleValue = 0D;
             this.textDocAgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAgo.Location = new System.Drawing.Point(303, 311);
@@ -2195,7 +2268,7 @@ namespace gestor_bdm
             // 
             // textDocJul
             // 
-            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocJul.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJul.DoubleValue = 0D;
             this.textDocJul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJul.Location = new System.Drawing.Point(303, 276);
@@ -2206,7 +2279,7 @@ namespace gestor_bdm
             // 
             // textDocJun
             // 
-            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocJun.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocJun.DoubleValue = 0D;
             this.textDocJun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocJun.Location = new System.Drawing.Point(303, 241);
@@ -2217,7 +2290,7 @@ namespace gestor_bdm
             // 
             // textDocMay
             // 
-            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocMay.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMay.DoubleValue = 0D;
             this.textDocMay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMay.Location = new System.Drawing.Point(303, 206);
@@ -2228,7 +2301,7 @@ namespace gestor_bdm
             // 
             // textDocAbr
             // 
-            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocAbr.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocAbr.DoubleValue = 0D;
             this.textDocAbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocAbr.Location = new System.Drawing.Point(303, 171);
@@ -2239,7 +2312,7 @@ namespace gestor_bdm
             // 
             // textDocMar
             // 
-            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocMar.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocMar.DoubleValue = 0D;
             this.textDocMar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocMar.Location = new System.Drawing.Point(303, 136);
@@ -2250,7 +2323,7 @@ namespace gestor_bdm
             // 
             // textDocFeb
             // 
-            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocFeb.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocFeb.DoubleValue = 0D;
             this.textDocFeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDocFeb.Location = new System.Drawing.Point(303, 101);
@@ -2262,7 +2335,7 @@ namespace gestor_bdm
             // textDocEne
             // 
             this.textDocEne.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.textDocEne.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.textDocEne.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.textDocEne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDocEne.DoubleValue = 0D;
@@ -2298,7 +2371,7 @@ namespace gestor_bdm
             this.groupBox20.Size = new System.Drawing.Size(1163, 105);
             this.groupBox20.TabIndex = 335;
             this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Marketing Fund";
+            this.groupBox20.Text = "Fondo de Publicidad";
             // 
             // checkFacturas
             // 
@@ -2397,7 +2470,7 @@ namespace gestor_bdm
             // porcentajeMF_box
             // 
             this.porcentajeMF_box.BackGroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(107, 24);
+            this.porcentajeMF_box.BeforeTouchSize = new System.Drawing.Size(66, 22);
             this.porcentajeMF_box.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.porcentajeMF_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.porcentajeMF_box.DoubleValue = 0D;
@@ -2416,7 +2489,7 @@ namespace gestor_bdm
             // checkBoxMF
             // 
             this.checkBoxMF.AutoSize = true;
-            this.checkBoxMF.Location = new System.Drawing.Point(142, 3);
+            this.checkBoxMF.Location = new System.Drawing.Point(185, 2);
             this.checkBoxMF.Name = "checkBoxMF";
             this.checkBoxMF.Size = new System.Drawing.Size(26, 15);
             this.checkBoxMF.TabIndex = 359;
@@ -2445,7 +2518,7 @@ namespace gestor_bdm
             this.groupBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox3.Location = new System.Drawing.Point(614, 113);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(576, 931);
+            this.groupBox3.Size = new System.Drawing.Size(576, 787);
             this.groupBox3.TabIndex = 280;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Best Travel Media";
@@ -2465,6 +2538,17 @@ namespace gestor_bdm
             this.groupBox5.TabIndex = 278;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Contacto Pauta Medios";
+            // 
+            // comboAccounts
+            // 
+            this.comboAccounts.FormattingEnabled = true;
+            this.comboAccounts.ItemHeight = 23;
+            this.comboAccounts.Location = new System.Drawing.Point(83, 38);
+            this.comboAccounts.Name = "comboAccounts";
+            this.comboAccounts.Size = new System.Drawing.Size(466, 29);
+            this.comboAccounts.TabIndex = 47;
+            this.comboAccounts.UseSelectable = true;
+            this.comboAccounts.SelectedIndexChanged += new System.EventHandler(this.comboAccounts_SelectedIndexChanged);
             // 
             // mediaPEmail
             // 
@@ -2572,6 +2656,17 @@ namespace gestor_bdm
             this.groupBox6.TabIndex = 277;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Contacto Comercial";
+            // 
+            // comboSupply
+            // 
+            this.comboSupply.FormattingEnabled = true;
+            this.comboSupply.ItemHeight = 23;
+            this.comboSupply.Location = new System.Drawing.Point(83, 36);
+            this.comboSupply.Name = "comboSupply";
+            this.comboSupply.Size = new System.Drawing.Size(466, 29);
+            this.comboSupply.TabIndex = 46;
+            this.comboSupply.UseSelectable = true;
+            this.comboSupply.SelectedIndexChanged += new System.EventHandler(this.comboSupply_SelectedIndexChanged);
             // 
             // mediaCCorreo
             // 
@@ -3347,6 +3442,38 @@ namespace gestor_bdm
             this.groupBox13.TabIndex = 277;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Contacto Comercial";
+            // 
+            // NComercial
+            // 
+            // 
+            // 
+            // 
+            this.NComercial.CustomButton.Image = null;
+            this.NComercial.CustomButton.Location = new System.Drawing.Point(444, 1);
+            this.NComercial.CustomButton.Name = "";
+            this.NComercial.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.NComercial.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.NComercial.CustomButton.TabIndex = 1;
+            this.NComercial.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.NComercial.CustomButton.UseSelectable = true;
+            this.NComercial.CustomButton.Visible = false;
+            this.NComercial.Lines = new string[] {
+        " "};
+            this.NComercial.Location = new System.Drawing.Point(83, 36);
+            this.NComercial.MaxLength = 32767;
+            this.NComercial.Name = "NComercial";
+            this.NComercial.PasswordChar = '\0';
+            this.NComercial.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.NComercial.SelectedText = "";
+            this.NComercial.SelectionLength = 0;
+            this.NComercial.SelectionStart = 0;
+            this.NComercial.ShortcutsEnabled = true;
+            this.NComercial.Size = new System.Drawing.Size(466, 23);
+            this.NComercial.TabIndex = 46;
+            this.NComercial.Text = " ";
+            this.NComercial.UseSelectable = true;
+            this.NComercial.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.NComercial.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // CComercial
             // 
@@ -6818,60 +6945,6 @@ namespace gestor_bdm
             this.preliminar_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.preliminar_button.UseSelectable = true;
             // 
-            // comboSupply
-            // 
-            this.comboSupply.FormattingEnabled = true;
-            this.comboSupply.ItemHeight = 23;
-            this.comboSupply.Location = new System.Drawing.Point(83, 36);
-            this.comboSupply.Name = "comboSupply";
-            this.comboSupply.Size = new System.Drawing.Size(466, 29);
-            this.comboSupply.TabIndex = 46;
-            this.comboSupply.UseSelectable = true;
-            this.comboSupply.SelectedIndexChanged += new System.EventHandler(this.comboSupply_SelectedIndexChanged);
-            // 
-            // NComercial
-            // 
-            // 
-            // 
-            // 
-            this.NComercial.CustomButton.Image = null;
-            this.NComercial.CustomButton.Location = new System.Drawing.Point(444, 1);
-            this.NComercial.CustomButton.Name = "";
-            this.NComercial.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.NComercial.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.NComercial.CustomButton.TabIndex = 1;
-            this.NComercial.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.NComercial.CustomButton.UseSelectable = true;
-            this.NComercial.CustomButton.Visible = false;
-            this.NComercial.Lines = new string[] {
-        " "};
-            this.NComercial.Location = new System.Drawing.Point(83, 36);
-            this.NComercial.MaxLength = 32767;
-            this.NComercial.Name = "NComercial";
-            this.NComercial.PasswordChar = '\0';
-            this.NComercial.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.NComercial.SelectedText = "";
-            this.NComercial.SelectionLength = 0;
-            this.NComercial.SelectionStart = 0;
-            this.NComercial.ShortcutsEnabled = true;
-            this.NComercial.Size = new System.Drawing.Size(466, 23);
-            this.NComercial.TabIndex = 46;
-            this.NComercial.Text = " ";
-            this.NComercial.UseSelectable = true;
-            this.NComercial.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.NComercial.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // comboAccounts
-            // 
-            this.comboAccounts.FormattingEnabled = true;
-            this.comboAccounts.ItemHeight = 23;
-            this.comboAccounts.Location = new System.Drawing.Point(83, 38);
-            this.comboAccounts.Name = "comboAccounts";
-            this.comboAccounts.Size = new System.Drawing.Size(466, 29);
-            this.comboAccounts.TabIndex = 47;
-            this.comboAccounts.UseSelectable = true;
-            this.comboAccounts.SelectedIndexChanged += new System.EventHandler(this.comboAccounts_SelectedIndexChanged);
-            // 
             // generador_OI
             // 
             this.ClientSize = new System.Drawing.Size(1247, 689);
@@ -6891,6 +6964,8 @@ namespace gestor_bdm
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
@@ -7275,7 +7350,20 @@ namespace gestor_bdm
 
                 cash_in_1.AddCell(facturado_por);
 
-                PdfPCell facturado_por_2 = new PdfPCell(new Phrase(string.Format("Corporativo " + " " + "Hotel " + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                string facturadopor = "";
+
+
+                if (corbox.Checked==true)
+                {
+                    facturadopor = "Corporativo";
+                }
+
+                if(hotelbox.Checked==true)
+                {
+                    facturadopor = "Hotel";
+                }
+
+                PdfPCell facturado_por_2 = new PdfPCell(new Phrase(string.Format(" " + facturadopor + " "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 facturado_por_2.Colspan = 3;
                 facturado_por_2.BackgroundColor = ExtendedColor.WHITE; //cambiar color cabecera
 
@@ -7434,7 +7522,7 @@ namespace gestor_bdm
                 {
                     checked_mf_oi = "X";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. MARKETING FUND: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + " " + checked_mf_oi), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
@@ -7446,7 +7534,7 @@ namespace gestor_bdm
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf_2);
                 }
 
-                else if (checkBoxMF.Checked == false)
+                else if (metroCheckBox1.Checked == true)
                 {
                     checked_mf_oi = " ";
 
@@ -7458,7 +7546,7 @@ namespace gestor_bdm
                     hasta_mes_mf = " ";
                     hasta_dia_mf = " ";
 
-                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. MARKETING FUND: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    PdfPCell vigencia_OI_mf = new PdfPCell(new Phrase(string.Format("1. FONDO DE PUBLICIDAD: " + "  "), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     vigencia_OI_mf.BackgroundColor = new BaseColor(6, 61, 150);
 
                     vigencia_pauta_mf.AddCell(vigencia_OI_mf);
@@ -7543,7 +7631,7 @@ namespace gestor_bdm
 
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$"  + textDocEne.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7567,7 +7655,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocFeb.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7590,7 +7678,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocMar.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7613,7 +7701,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocAbr.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7636,7 +7724,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocMay.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7659,7 +7747,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocJun.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7682,7 +7770,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7705,7 +7793,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocAgo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7728,7 +7816,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocSep.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7751,7 +7839,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocOct.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7774,7 +7862,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocNov.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7798,7 +7886,7 @@ namespace gestor_bdm
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format("$" + textDocDic.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     table.AddCell(cell);
                 }
 
@@ -7822,13 +7910,13 @@ namespace gestor_bdm
 
                 if (textTotalIVA.Text == "0.00")
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(textTotalIVA.Text)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                     cell.Colspan = 5;
                     table.AddCell(cell);
                 }
                 else
                 {
-                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString(total)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
+                    cell = new PdfPCell(new Phrase(string.Format(Convert.ToString("$" + textTotalIVA.Text)), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                     cell.Colspan = 5;
                     table.AddCell(cell);
                 }
@@ -9007,6 +9095,8 @@ namespace gestor_bdm
                     string t_correo = Convert.ToString(reader["correo"]);
 
                     mediaCCorreo.Text = t_correo;
+
+                    textNombre_m.Text = comboSupply.Text;
                 }
                 con.Close();
             }
@@ -9066,6 +9156,66 @@ namespace gestor_bdm
             {
                 MessageBox.Show(m.Message);
             }
+        }
+
+        private void comboEne_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboEne.Text;
+        }
+
+        private void comboFeb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboFeb.Text;
+        }
+
+        private void comboMar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboMar.Text;
+        }
+
+        private void comboAbr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboAbr.Text;
+        }
+
+        private void comboMay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboMay.Text;
+        }
+
+        private void comboJun_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboJun.Text;
+        }
+
+        private void comboJul_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboJul.Text;
+        }
+
+        private void comboAgo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboAgo.Text;
+        }
+
+        private void comboSep_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboSep.Text;
+        }
+
+        private void comboOct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboOct.Text;
+        }
+
+        private void comboNov_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboNov.Text;
+        }
+
+        private void comboBoxDic_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            metroLabel119.Text = comboBoxDic.Text;
         }
     }
 }
