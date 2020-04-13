@@ -167,10 +167,6 @@ namespace gestor_bdm
             this.checkProduccion = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel38 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel25 = new MetroFramework.Controls.MetroLabel();
-            this.dateTimeMF_hasta = new MetroFramework.Controls.MetroDateTime();
-            this.metroLabel24 = new MetroFramework.Controls.MetroLabel();
-            this.dateTimeMF_desde = new MetroFramework.Controls.MetroDateTime();
-            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
             this.porcentajeMF_box = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.checkBoxMF = new MetroFramework.Controls.MetroCheckBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -396,6 +392,10 @@ namespace gestor_bdm
             this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.preliminar_button = new MetroFramework.Controls.MetroTile();
+            this.dateTimeMF_hasta = new MetroFramework.Controls.MetroDateTime();
+            this.metroLabel24 = new MetroFramework.Controls.MetroLabel();
+            this.dateTimeMF_desde = new MetroFramework.Controls.MetroDateTime();
+            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -2353,16 +2353,16 @@ namespace gestor_bdm
             // 
             // groupBox20
             // 
+            this.groupBox20.Controls.Add(this.dateTimeMF_hasta);
+            this.groupBox20.Controls.Add(this.metroLabel24);
+            this.groupBox20.Controls.Add(this.dateTimeMF_desde);
+            this.groupBox20.Controls.Add(this.metroLabel23);
             this.groupBox20.Controls.Add(this.checkFacturas);
             this.groupBox20.Controls.Add(this.checkPagos);
             this.groupBox20.Controls.Add(this.checkBancaria);
             this.groupBox20.Controls.Add(this.checkProduccion);
             this.groupBox20.Controls.Add(this.metroLabel38);
             this.groupBox20.Controls.Add(this.metroLabel25);
-            this.groupBox20.Controls.Add(this.dateTimeMF_hasta);
-            this.groupBox20.Controls.Add(this.metroLabel24);
-            this.groupBox20.Controls.Add(this.dateTimeMF_desde);
-            this.groupBox20.Controls.Add(this.metroLabel23);
             this.groupBox20.Controls.Add(this.porcentajeMF_box);
             this.groupBox20.Controls.Add(this.checkBoxMF);
             this.groupBox20.Controls.Add(this.label37);
@@ -2430,42 +2430,6 @@ namespace gestor_bdm
             this.metroLabel25.Size = new System.Drawing.Size(117, 19);
             this.metroLabel25.TabIndex = 364;
             this.metroLabel25.Text = "Forma de Cálculo:";
-            // 
-            // dateTimeMF_hasta
-            // 
-            this.dateTimeMF_hasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeMF_hasta.Location = new System.Drawing.Point(449, 32);
-            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dateTimeMF_hasta.Name = "dateTimeMF_hasta";
-            this.dateTimeMF_hasta.Size = new System.Drawing.Size(95, 29);
-            this.dateTimeMF_hasta.TabIndex = 363;
-            // 
-            // metroLabel24
-            // 
-            this.metroLabel24.AutoSize = true;
-            this.metroLabel24.Location = new System.Drawing.Point(361, 38);
-            this.metroLabel24.Name = "metroLabel24";
-            this.metroLabel24.Size = new System.Drawing.Size(82, 19);
-            this.metroLabel24.TabIndex = 362;
-            this.metroLabel24.Text = "Hasta Fecha:";
-            // 
-            // dateTimeMF_desde
-            // 
-            this.dateTimeMF_desde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeMF_desde.Location = new System.Drawing.Point(253, 32);
-            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dateTimeMF_desde.Name = "dateTimeMF_desde";
-            this.dateTimeMF_desde.Size = new System.Drawing.Size(95, 29);
-            this.dateTimeMF_desde.TabIndex = 361;
-            // 
-            // metroLabel23
-            // 
-            this.metroLabel23.AutoSize = true;
-            this.metroLabel23.Location = new System.Drawing.Point(181, 38);
-            this.metroLabel23.Name = "metroLabel23";
-            this.metroLabel23.Size = new System.Drawing.Size(66, 19);
-            this.metroLabel23.TabIndex = 52;
-            this.metroLabel23.Text = "De Fecha:";
             // 
             // porcentajeMF_box
             // 
@@ -6946,6 +6910,40 @@ namespace gestor_bdm
             this.preliminar_button.UseSelectable = true;
             this.preliminar_button.Click += new System.EventHandler(this.preliminar_button_Click);
             // 
+            // dateTimeMF_hasta
+            // 
+            this.dateTimeMF_hasta.Location = new System.Drawing.Point(262, 68);
+            this.dateTimeMF_hasta.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_hasta.Name = "dateTimeMF_hasta";
+            this.dateTimeMF_hasta.Size = new System.Drawing.Size(290, 29);
+            this.dateTimeMF_hasta.TabIndex = 373;
+            // 
+            // metroLabel24
+            // 
+            this.metroLabel24.AutoSize = true;
+            this.metroLabel24.Location = new System.Drawing.Point(169, 72);
+            this.metroLabel24.Name = "metroLabel24";
+            this.metroLabel24.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel24.TabIndex = 372;
+            this.metroLabel24.Text = "Hasta Fecha:";
+            // 
+            // dateTimeMF_desde
+            // 
+            this.dateTimeMF_desde.Location = new System.Drawing.Point(262, 33);
+            this.dateTimeMF_desde.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateTimeMF_desde.Name = "dateTimeMF_desde";
+            this.dateTimeMF_desde.Size = new System.Drawing.Size(290, 29);
+            this.dateTimeMF_desde.TabIndex = 371;
+            // 
+            // metroLabel23
+            // 
+            this.metroLabel23.AutoSize = true;
+            this.metroLabel23.Location = new System.Drawing.Point(169, 39);
+            this.metroLabel23.Name = "metroLabel23";
+            this.metroLabel23.Size = new System.Drawing.Size(66, 19);
+            this.metroLabel23.TabIndex = 370;
+            this.metroLabel23.Text = "De Fecha:";
+            // 
             // generador_OI
             // 
             this.ClientSize = new System.Drawing.Size(1247, 689);
@@ -9075,7 +9073,7 @@ namespace gestor_bdm
                     con.Close();
                     con.Open();
 
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO oi_pdf (`numero_oi`,`fecha`,`periodo_ini`,`periodo_fin`,`cliente_nombre_comercial`,`cliente_razon_social`,`cliente_tax`,`cliente_calle`,`cliente_ciudad`,`cliente_cp`,`bd_razon`,`bd_tax`,`bd_calle`,`bd_ciudad`,`bd_cp`,`cliente_cxp_nombre`,`cliente_cxp_telefono`,`cliente_cxp_mail`,`bd_cxc_nombre`,`bd_cxc_telefono`,`bd_cxc_mail`,`cliente_comercial_nombre`,`cliente_comercial_telefono`,`cliente_comercial_mail`,`bd_comercial_nombre`,`bd_comercial_telefono`,`bd_comercial_correo`,`comercial_pauta_nombre`,`comercial_pauta_telefono`,`comercial_pauta_correo`,`bd_pauta_nombre`,`bd_pauta_telefono`,`bd_pauta_mail`,`cliente_hdo_nombre`,`cliente_hdo_telefono`,`cliente_hdo_mail`,`facturar_por`,`fondo_publicidad`,`porcentaje_publicidad`,`publicidad_ini`,`publicidad_fin`,`publicidad_forma_calculo`,`publicidad_forma_pago`,`facturacion_mensual`,`mes_uno`,`anio_uno`,`importe_uno`,`divisa_uno`,`comen_uno`,`mes_dos`,`anio_dos`,`importe_dos`,`divisa_dos`,`comen_dos`,`mes_tres`,`anio_tres`,`importe_tres`,`divisa_tres`,`comen_tres`,`mes_cuatro`,`anio_cuatro`,`importe_cuatro`,`divisa_cuatro`,`comen_cuatro`,`mes_cinco`,`anio_cinco`,`importe_cinco`,`divisa_cinco`,`comen_cinco`,`mes_seis`,`anio_seis`,`importe_seis`,`divisa_seis`,`comen_seis`,`mes_siete`,`anio_siete`,`importe_siente`,`divisa_siete`,`comen_siete`,`mes_ocho`,`anio_ocho`,`importe_ocho`,`divisa_ocho`,`comen_ocho`,`mes_nueve`,`anio_nueve`,`importe_nueve`,`divisa_nueve`,`comen_nueve`,`mes_diez`,`anio_diez`,`importe_diez`,`divisa_diez`,`comen_diez`,`mes_once`,`anio_once`,`importe_once`,`divisa_once`,`comen_once`,`mes_doce`,`anio_doce`,`importe_doce`,`divisa_doce`,`comen_doce`,`total_iva`,`forma_pago_fact`,`comentatios_fact`,`cliente_fact_nombre`,`cliente_fact_cargo`,`cliente_fact_fecha`,`bd_fact_nombre`,`bd_fact_cargo`,`bd_fact_fecha`) VALUES ('" + OI_text.Text + "','" + fechaFirma_text.Value.ToString("yyyy-MM-dd") + "','" + vigenciaDesde_text.Value.ToString("yyyy-MM-dd") + "','" + vigenciaHasta_text.Value.ToString("yyyy-MM-dd") + "','" + clienteComercial.Text + "','" + clienteRazon.Text + "','" + clienteID.Text + "','" + clienteCalle.Text + "','" + clientePais.Text + "','" + clientePostal.Text + "','" + mediaRazon.Text + "','" + mediaID.Text + "','" + mediaCalle.Text + "','" + mediaPais.Text + "','" + mediaPostal.Text + "','" + cxpNombre.Text + "','" + cxpTelefono.Text + "','" + cxpCorreo.Text + "','" + cxcNombre.Text + "','" + cxcTelefono.Text + "','" + cxcCorreo.Text + "','" + NComercial.Text + "','" + TComercial.Text + "','" + CComercial.Text + "','" + comboSupply.Text + "','" + mediaCTelefono.Text + "','" + mediaCCorreo.Text + "','" + PNombre.Text + "','" + PTelefono.Text + "','" + PCorreo.Text + "','" + comboAccounts.Text + "','" + mediaPTelefono.Text + "','" + mediaPEmail.Text + "','" + HNombre.Text + "','" + HCorreo.Text + "','" + HTelefono.Text + "','" + fact_por + "','" + fondo_publicidad + "','" + porcentajeMF_box.Text + "','" + dateTimeMF_desde.Value.ToString("yyyy-MM-dd") + "','" + dateTimeMF_hasta.Value.ToString("yyyy-MM-dd") + "','" + forma_calc + "','" + forma_pag + "','" + facturacion_mensual_text + "','" + facturadoEne.Text + "','" + anioEne.Text + "','" + textDocEne.Text + "','" + comboEne.Text + "','" + textBoxEne.Text + "','" + facturadoFeb.Text + "','" + anioFeb.Text + "','" + textDocFeb.Text + "','" + comboFeb.Text + "','" + textDocFeb.Text + "','" + facturadoMar.Text + "','" + anioMar.Text + "','" + textBoxMar.Text + "','" + comboMar.Text + "','" + textDocMar.Text + "','" + facturadoAbr.Text + "','" + anioAbr.Text + "','" + textDocAbr.Text + "','" + comboAbr.Text + "','" + textDocAbr.Text + "','" + facturadoMay.Text + "','" + anioMay.Text + "','" + textDocMay.Text + "','" + comboMay.Text + "','" + textDocMay.Text + "','" + facturadoJun.Text + "','" + anioJun.Text + "','" + textDocJun.Text + "','" + comboJun.Text + "','" + textDocJun.Text + "','" + facturadoJul.Text + "','" + anioJul.Text + "','" + textDocJul.Text + "','" + comboJul.Text + "','" + textDocJul.Text + "','" + facturadoAgo.Text + "','" + anioAgo.Text + "','" + textDocAgo.Text + "','" + comboAgo.Text + "','" + textDocAgo.Text + "','" + facturadoSep.Text + "','" + anioSep.Text + "','" + textDocSep.Text + "','" + comboSep.Text + "','" + textDocSep.Text + "','" + facturadoOct.Text + "','" + anioOct.Text + "','" + textDocOct.Text + "','" + comboOct.Text + "','" + textDocOct.Text + "','" + facturadoNov.Text + "','" + anioNov.Text + "','" + textDocNov.Text + "','" + comboNov.Text + "','" + textBoxNov.Text + "','" + facturadoDic.Text + "','" + anioDic.Text + "','" + textDocDic.Text + "','" + comboBoxDic.Text + "','" + textBoxDic.Text + "','" + textTotalIVA.Text + "','" + forma_calc2 + "','" + textCondiciones.Text + "','" + textNombre_c.Text + "','" + textCargo_c.Text + "','" + textFechaCliente.Text + "','" + textNombre_m.Text + "','" + textCargo_m.Text + "','" + textFechaMedia.Text + "' )", con);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO oi_pdf (`numero_oi`,`fecha`,`periodo_ini`,`periodo_fin`,`cliente_nombre_comercial`,`cliente_razon_social`,`cliente_tax`,`cliente_calle`,`cliente_ciudad`,`cliente_cp`,`bd_razon`,`bd_tax`,`bd_calle`,`bd_ciudad`,`bd_cp`,`cliente_cxp_nombre`,`cliente_cxp_telefono`,`cliente_cxp_mail`,`bd_cxc_nombre`,`bd_cxc_telefono`,`bd_cxc_mail`,`cliente_comercial_nombre`,`cliente_comercial_telefono`,`cliente_comercial_mail`,`bd_comercial_nombre`,`bd_comercial_telefono`,`bd_comercial_correo`,`comercial_pauta_nombre`,`comercial_pauta_telefono`,`comercial_pauta_correo`,`bd_pauta_nombre`,`bd_pauta_telefono`,`bd_pauta_mail`,`cliente_hdo_nombre`,`cliente_hdo_telefono`,`cliente_hdo_mail`,`facturar_por`,`fondo_publicidad`,`porcentaje_publicidad`,`publicidad_ini`,`publicidad_fin`,`publicidad_forma_calculo`,`publicidad_forma_pago`,`facturacion_mensual`,`mes_uno`,`anio_uno`,`importe_uno`,`divisa_uno`,`comen_uno`,`mes_dos`,`anio_dos`,`importe_dos`,`divisa_dos`,`comen_dos`,`mes_tres`,`anio_tres`,`importe_tres`,`divisa_tres`,`comen_tres`,`mes_cuatro`,`anio_cuatro`,`importe_cuatro`,`divisa_cuatro`,`comen_cuatro`,`mes_cinco`,`anio_cinco`,`importe_cinco`,`divisa_cinco`,`comen_cinco`,`mes_seis`,`anio_seis`,`importe_seis`,`divisa_seis`,`comen_seis`,`mes_siete`,`anio_siete`,`importe_siente`,`divisa_siete`,`comen_siete`,`mes_ocho`,`anio_ocho`,`importe_ocho`,`divisa_ocho`,`comen_ocho`,`mes_nueve`,`anio_nueve`,`importe_nueve`,`divisa_nueve`,`comen_nueve`,`mes_diez`,`anio_diez`,`importe_diez`,`divisa_diez`,`comen_diez`,`mes_once`,`anio_once`,`importe_once`,`divisa_once`,`comen_once`,`mes_doce`,`anio_doce`,`importe_doce`,`divisa_doce`,`comen_doce`,`total_iva`,`forma_pago_fact`,`comentatios_fact`,`cliente_fact_nombre`,`cliente_fact_cargo`,`cliente_fact_fecha`,`bd_fact_nombre`,`bd_fact_cargo`,`bd_fact_fecha`) VALUES ('" + OI_text.Text + "','" + fechaFirma_text.Value.ToString("yyyy-MM-dd") + "','" + vigenciaDesde_text.Value.ToString("yyyy-MM-dd") + "','" + vigenciaHasta_text.Value.ToString("yyyy-MM-dd") + "','" + clienteComercial.Text + "','" + clienteRazon.Text + "','" + clienteID.Text + "','" + clienteCalle.Text + "','" + clientePais.Text + "','" + clientePostal.Text + "','" + mediaRazon.Text + "','" + mediaID.Text + "','" + mediaCalle.Text + "','" + mediaPais.Text + "','" + mediaPostal.Text + "','" + cxpNombre.Text + "','" + cxpTelefono.Text + "','" + cxpCorreo.Text + "','" + cxcNombre.Text + "','" + cxcTelefono.Text + "','" + cxcCorreo.Text + "','" + NComercial.Text + "','" + TComercial.Text + "','" + CComercial.Text + "','" + comboSupply.Text + "','" + mediaCTelefono.Text + "','" + mediaCCorreo.Text + "','" + PNombre.Text + "','" + PTelefono.Text + "','" + PCorreo.Text + "','" + comboAccounts.Text + "','" + mediaPTelefono.Text + "','" + mediaPEmail.Text + "','" + HNombre.Text + "','" + HCorreo.Text + "','" + HTelefono.Text + "','" + fact_por + "','" + fondo_publicidad + "','" + porcentajeMF_box.Text + "','" + dateTimeMF_desde.Value.ToString("yyyy-MM-dd") + "','" + dateTimeMF_hasta.Value.ToString("yyyy-MM-dd") + "','" + forma_calc + "','" + forma_pag + "','" + facturacion_mensual_text + "','" + facturadoEne.Text + "','" + anioEne.Text + "','" + textDocEne.Text + "','" + comboEne.Text + "','" + textBoxEne.Text + "','" + facturadoFeb.Text + "','" + anioFeb.Text + "','" + textDocFeb.Text + "','" + comboFeb.Text + "','" + textBoxFeb.Text + "','" + facturadoMar.Text + "','" + anioMar.Text + "','" + textDocMar.Text + "','" + comboMar.Text + "','" + textBoxMar.Text + "','" + facturadoAbr.Text + "','" + anioAbr.Text + "','" + textDocAbr.Text + "','" + comboAbr.Text + "','" + textBoxAbr.Text + "','" + facturadoMay.Text + "','" + anioMay.Text + "','" + textDocMay.Text + "','" + comboMay.Text + "','" + textBoxMay.Text + "','" + facturadoJun.Text + "','" + anioJun.Text + "','" + textDocJun.Text + "','" + comboJun.Text + "','" + textBoxJun.Text + "','" + facturadoJul.Text + "','" + anioJul.Text + "','" + textDocJul.Text + "','" + comboJul.Text + "','" + textBoxJul.Text + "','" + facturadoAgo.Text + "','" + anioAgo.Text + "','" + textDocAgo.Text + "','" + comboAgo.Text + "','" + textBoxAgo.Text + "','" + facturadoSep.Text + "','" + anioSep.Text + "','" + textDocSep.Text + "','" + comboSep.Text + "','" + textBoxSep.Text + "','" + facturadoOct.Text + "','" + anioOct.Text + "','" + textDocOct.Text + "','" + comboOct.Text + "','" + textBoxOct.Text + "','" + facturadoNov.Text + "','" + anioNov.Text + "','" + textDocNov.Text + "','" + comboNov.Text + "','" + textBoxNov.Text + "','" + facturadoDic.Text + "','" + anioDic.Text + "','" + textDocDic.Text + "','" + comboBoxDic.Text + "','" + textBoxDic.Text + "','" + textTotalIVA.Text + "','" + forma_calc2 + "','" + textCondiciones.Text + "','" + textNombre_c.Text + "','" + textCargo_c.Text + "','" + textFechaCliente.Text + "','" + textNombre_m.Text + "','" + textCargo_m.Text + "','" + textFechaMedia.Text + "' )", con);
 
                     cmd.ExecuteNonQuery();
 
@@ -11328,5 +11326,5 @@ namespace gestor_bdm
             }
         }
     }
-    }
 }
+

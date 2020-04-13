@@ -131,10 +131,6 @@
         private MetroFramework.Controls.MetroCheckBox checkProduccion;
         private MetroFramework.Controls.MetroLabel metroLabel38;
         private MetroFramework.Controls.MetroLabel metroLabel25;
-        private MetroFramework.Controls.MetroDateTime dateTimeMF_hasta;
-        private MetroFramework.Controls.MetroLabel metroLabel24;
-        private MetroFramework.Controls.MetroDateTime dateTimeMF_desde;
-        private MetroFramework.Controls.MetroLabel metroLabel23;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
         private MetroFramework.Controls.MetroComboBox facturadoNov;
@@ -353,5 +349,9 @@
         private System.Windows.Forms.GroupBox groupBox25;
         private MetroFramework.Controls.MetroRadioButton hotelbox;
         private MetroFramework.Controls.MetroRadioButton corbox;
+        private MetroFramework.Controls.MetroDateTime dateTimeMF_hasta;
+        private MetroFramework.Controls.MetroLabel metroLabel24;
+        private MetroFramework.Controls.MetroDateTime dateTimeMF_desde;
+        private MetroFramework.Controls.MetroLabel metroLabel23;
     }
 }

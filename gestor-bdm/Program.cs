@@ -19,7 +19,7 @@ namespace gestor_bdm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            Application.Run(new generador_OI());
+            Application.Run(new generador_oi_modificatoria());
 
             //try
             //{
