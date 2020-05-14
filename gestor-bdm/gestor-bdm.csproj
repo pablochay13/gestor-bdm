@@ -31,12 +31,12 @@
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -179,11 +179,17 @@
     <Compile Include="generador.Designer.cs">
       <DependentUpon>generador.cs</DependentUpon>
     </Compile>
-    <Compile Include="generador_OI.cs">
+    <Compile Include="validar_oi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="generador_OI.Designer.cs">
-      <DependentUpon>generador_OI.cs</DependentUpon>
+    <Compile Include="validar_oi.Designer.cs">
+      <DependentUpon>validar_oi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generador_oi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador_oi.Designer.cs">
+      <DependentUpon>generador_oi.cs</DependentUpon>
     </Compile>
     <Compile Include="generador_oi_modificatoria.cs">
       <SubType>Form</SubType>
@@ -351,8 +357,11 @@
     <EmbeddedResource Include="generador.resx">
       <DependentUpon>generador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="generador_OI.resx">
-      <DependentUpon>generador_OI.cs</DependentUpon>
+    <EmbeddedResource Include="validar_oi.resx">
+      <DependentUpon>validar_oi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador_oi.resx">
+      <DependentUpon>generador_oi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generador_oi_modificatoria.resx">
       <DependentUpon>generador_oi_modificatoria.cs</DependentUpon>

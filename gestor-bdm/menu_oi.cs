@@ -24,7 +24,7 @@ namespace gestor_bdm
 
         private void generar_Click(object sender, EventArgs e)
         {
-            generador_OI ventana = new generador_OI();
+            validar_oi ventana = new validar_oi();
             ventana.Show();
 
             this.Close();
@@ -41,6 +41,14 @@ namespace gestor_bdm
         private void metroTile1_Click(object sender, EventArgs e)
         {
             create_OI_en ventana = new create_OI_en();
+            ventana.Show();
+
+            this.Close();
+        }
+
+        private void metroTile1_Click_1(object sender, EventArgs e)
+        {
+            generador_oi ventana = new generador_oi();
             ventana.Show();
 
             this.Close();

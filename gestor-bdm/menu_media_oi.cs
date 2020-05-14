@@ -24,7 +24,7 @@ namespace gestor_bdm
 
         private void oi_esp_Click(object sender, EventArgs e)
         {
-            generador_OI ventana = new generador_OI();
+            generador_oi ventana = new generador_oi();
             ventana.Show();
             //this.Close();
         }

@@ -33,8 +33,16 @@ namespace gestor_bdm
                 general.Privilegios = Convert.ToString(leer["privilegios"]);
                 this.Hide();
 
-                principal ss = new principal();
-                ss.Show();
+                if(general.Privilegios == "admin")
+                {
+                    principal ss = new principal();
+                    ss.Show();
+                }
+                else if (general.Privilegios == "supply")
+                {
+                    menu_media_oi ss = new menu_media_oi();
+                    ss.Show();
+                }    
 
                 con.Close();
             }

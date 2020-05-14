@@ -37,18 +37,18 @@
             // generar
             // 
             this.generar.ActiveControl = null;
-            this.generar.Location = new System.Drawing.Point(23, 83);
+            this.generar.Location = new System.Drawing.Point(187, 78);
             this.generar.Name = "generar";
             this.generar.Size = new System.Drawing.Size(154, 56);
             this.generar.TabIndex = 0;
-            this.generar.Text = "Generar OI";
+            this.generar.Text = "Validar OI";
             this.generar.UseSelectable = true;
             this.generar.Click += new System.EventHandler(this.generar_Click);
             // 
             // consultar
             // 
             this.consultar.ActiveControl = null;
-            this.consultar.Location = new System.Drawing.Point(183, 83);
+            this.consultar.Location = new System.Drawing.Point(17, 78);
             this.consultar.Name = "consultar";
             this.consultar.Size = new System.Drawing.Size(154, 56);
             this.consultar.TabIndex = 1;
@@ -59,19 +59,19 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(102, 145);
+            this.metroTile1.Location = new System.Drawing.Point(102, 149);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(154, 56);
             this.metroTile1.TabIndex = 2;
-            this.metroTile1.Text = "Generar OI Ingles";
+            this.metroTile1.Text = "Generar OI";
             this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click_1);
             // 
             // menu_oi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 220);
+            this.ClientSize = new System.Drawing.Size(358, 230);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.consultar);
             this.Controls.Add(this.generar);

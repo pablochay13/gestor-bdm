@@ -780,7 +780,7 @@ namespace gestor_bdm
 
 
                 //JUL
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 if (textDocJul.Text == "0.00")
@@ -1106,7 +1106,7 @@ namespace gestor_bdm
 
 
                 //tercera hoja
-                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0002.jpg");
                 imagen_h_1.BorderWidth = 0;
                 imagen_h_1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h_1.ScaleToFit(100f, 135.25f);
@@ -1934,7 +1934,7 @@ namespace gestor_bdm
 
 
                 //imagen footer
-                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f_1.BorderWidth = 0;
                 imagen_f_1.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f_1.ScaleToFit(265f, 320.25f);
@@ -1942,14 +1942,14 @@ namespace gestor_bdm
 
 
                 //imagen header
-                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0002.jpg");
                 imagen_h.BorderWidth = 0;
                 imagen_h.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h.ScaleToFit(120f, 155.25f);
 
 
                 //imagen footer
-                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f.BorderWidth = 0;
                 imagen_f.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f.ScaleToFit(280f, 335.25f);

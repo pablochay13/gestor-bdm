@@ -146,6 +146,8 @@
             this.comboPais = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.porcentajeCobrado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
             this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
             this.porcentajeFacturado = new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
@@ -531,8 +533,6 @@
             this.observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sypply = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ejecutivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -1519,7 +1519,7 @@
             // 
             this.dateHastaMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateHastaMKF.Location = new System.Drawing.Point(112, 64);
-            this.dateHastaMKF.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateHastaMKF.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateHastaMKF.Name = "dateHastaMKF";
             this.dateHastaMKF.Size = new System.Drawing.Size(101, 29);
             this.dateHastaMKF.TabIndex = 10;
@@ -1537,7 +1537,7 @@
             // 
             this.dateDesdeMKF.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDesdeMKF.Location = new System.Drawing.Point(112, 29);
-            this.dateDesdeMKF.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dateDesdeMKF.MinimumSize = new System.Drawing.Size(4, 29);
             this.dateDesdeMKF.Name = "dateDesdeMKF";
             this.dateDesdeMKF.Size = new System.Drawing.Size(101, 29);
             this.dateDesdeMKF.TabIndex = 8;
@@ -2361,6 +2361,25 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(84, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 279;
+            this.textBox1.WordWrap = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 278;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // porcentajeCobrado
             // 
@@ -6803,23 +6822,6 @@
             // 
             this.ejecutivo.HeaderText = "Ejecutivo DAF";
             this.ejecutivo.Name = "ejecutivo";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 278;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(84, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 279;
             // 
             // orden_insercion
             // 

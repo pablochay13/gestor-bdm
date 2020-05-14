@@ -645,7 +645,14 @@ namespace gestor_bdm
                 PdfPTable table = new PdfPTable(6);
                 table.WidthPercentage = 100;
 
-                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                string checkfacturamensual = " ";
+
+                if (metroCheckBox1.Checked == true)
+                {
+                    checkfacturamensual = "X";
+                }
+
+                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL" + " " + checkfacturamensual), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell.Rowspan = 13;
                 cell.Colspan = 1;
                 cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
@@ -812,7 +819,7 @@ namespace gestor_bdm
 
 
                 //JUL
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 if (textDocJul.Text == "0.00")
@@ -1126,14 +1133,14 @@ namespace gestor_bdm
 
 
                 //segunda pagina y agregando una imagen
-                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0002.jpg");
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0002.jpg");
                 imagen.BorderWidth = 0;
                 imagen.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
                 imagen.ScaleToFit(730f, 765.25f);
 
 
                 //tercera hoja
-                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0001.png");
                 imagen_h_1.BorderWidth = 0;
                 imagen_h_1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h_1.ScaleToFit(100f, 135.25f);
@@ -1153,7 +1160,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
@@ -1175,12 +1182,12 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -1197,12 +1204,12 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -1218,13 +1225,12 @@ namespace gestor_bdm
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
 
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(Additional_1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -1237,31 +1243,8 @@ namespace gestor_bdm
 
                 cell_final = new PdfPCell(new Phrase(string.Format(uno_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
+                cell_final.Colspan = 5;
                 table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format(Additional_1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
-                table_final.AddCell(cell_final);
-
 
 
                 //2
@@ -1280,7 +1263,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
@@ -1301,11 +1284,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -1322,12 +1306,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -1344,13 +1328,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(Additional_2.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -1363,18 +1346,7 @@ namespace gestor_bdm
 
                 cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
-                cell_final_1.Colspan = 2;
-                table_final_1.AddCell(cell_final_1);
-
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_1.AddCell(cell_final_1);
-
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(Additional_2.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_1.Rowspan = 1;
-                cell_final_1.Colspan = 2;
+                cell_final_1.Colspan = 5;
                 table_final_1.AddCell(cell_final_1);
 
 
@@ -1394,7 +1366,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
@@ -1416,12 +1388,12 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -1438,15 +1410,16 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
+
 
 
                 cell_final_2 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
@@ -1460,12 +1433,12 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(Additional_3.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -1478,18 +1451,7 @@ namespace gestor_bdm
 
                 cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
-                cell_final_2.Colspan = 2;
-                table_final_2.AddCell(cell_final_2);
-
-
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_2.AddCell(cell_final_2);
-
-
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(Additional_3.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_2.Rowspan = 1;
-                cell_final_2.Colspan = 2;
+                cell_final_2.Colspan = 5;
                 table_final_2.AddCell(cell_final_2);
 
 
@@ -1509,7 +1471,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto De Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
@@ -1531,12 +1493,12 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto De Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("E-mail de contacto" + "\n" + "de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -1553,12 +1515,12 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("E-mail de contacto" + "\n" + "de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -1575,27 +1537,6 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_3.Rowspan = 1;
-                cell_final_3.Colspan = 2;
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_3.Rowspan = 1;
-                cell_final_3.Colspan = 2;
-                table_final_3.AddCell(cell_final_3);
-
 
                 cell_final_3 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
@@ -1605,6 +1546,18 @@ namespace gestor_bdm
                 cell_final_3 = new PdfPCell(new Phrase(string.Format(Additional_4.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
+                table_final_3.AddCell(cell_final_3);
+
+
+
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
+                table_final_3.AddCell(cell_final_3);
+
+
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3.Rowspan = 1;
+                cell_final_3.Colspan = 5;
                 table_final_3.AddCell(cell_final_3);
 
 
@@ -1624,7 +1577,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
@@ -1646,12 +1599,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -1668,12 +1621,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -1691,12 +1644,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(Additional_5.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -1709,20 +1662,8 @@ namespace gestor_bdm
 
                 cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
-                cell_final_4.Colspan = 2;
+                cell_final_4.Colspan = 5;
                 table_final_4.AddCell(cell_final_4);
-
-
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_4.AddCell(cell_final_4);
-
-
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(Additional_5.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_4.Rowspan = 1;
-                cell_final_4.Colspan = 2;
-                table_final_4.AddCell(cell_final_4);
-
 
 
                 //5
@@ -1741,7 +1682,7 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
@@ -1763,12 +1704,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -1785,12 +1726,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -1808,12 +1749,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(Additional_6.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -1826,20 +1767,8 @@ namespace gestor_bdm
 
                 cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
-                cell_final_5.Colspan = 2;
+                cell_final_5.Colspan = 5;
                 table_final_5.AddCell(cell_final_5);
-
-
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_5.AddCell(cell_final_5);
-
-
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(Additional_6.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_5.Rowspan = 1;
-                cell_final_5.Colspan = 2;
-                table_final_5.AddCell(cell_final_5);
-
 
 
                 //6
@@ -1858,7 +1787,7 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
@@ -1880,12 +1809,12 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_6.Rowspan = 1;
                 cell_final_6.Colspan = 2;
                 table_final_6.AddCell(cell_final_6);
@@ -1902,29 +1831,6 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_6.AddCell(cell_final_6);
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_6.Rowspan = 1;
-                cell_final_6.Colspan = 2;
-                table_final_6.AddCell(cell_final_6);
-
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_6.AddCell(cell_final_6);
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_6.Rowspan = 1;
-                cell_final_6.Colspan = 2;
-                table_final_6.AddCell(cell_final_6);
-
-
                 cell_final_6 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
@@ -1936,12 +1842,12 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_6.Rowspan = 1;
                 cell_final_6.Colspan = 2;
                 table_final_6.AddCell(cell_final_6);
@@ -1958,8 +1864,20 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
+                table_final_6.AddCell(cell_final_6);
+
+
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6.Rowspan = 1;
+                cell_final_6.Colspan = 5;
+                table_final_6.AddCell(cell_final_6);
+
+
+
                 //imagen footer
-                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f_1.BorderWidth = 0;
                 imagen_f_1.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f_1.ScaleToFit(265f, 320.25f);
@@ -1967,14 +1885,14 @@ namespace gestor_bdm
 
 
                 //imagen header
-                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0001.png");
                 imagen_h.BorderWidth = 0;
                 imagen_h.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h.ScaleToFit(120f, 155.25f);
 
 
                 //imagen footer
-                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f.BorderWidth = 0;
                 imagen_f.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f.ScaleToFit(280f, 335.25f);
@@ -3107,7 +3025,14 @@ namespace gestor_bdm
                 PdfPTable table = new PdfPTable(6);
                 table.WidthPercentage = 100;
 
-                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                string checkfacturamensual = " ";
+
+                if (metroCheckBox1.Checked == true)
+                {
+                    facturacion_mensual = "X";
+                }
+
+                PdfPCell cell = new PdfPCell(new Phrase(string.Format("\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "2. VÍA FACTURACIÓN MENSUAL" + " " + facturacion_mensual), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell.Rowspan = 13;
                 cell.Colspan = 1;
                 cell.BackgroundColor = new BaseColor(6, 61, 150); //cambiar color cabecera
@@ -3274,7 +3199,7 @@ namespace gestor_bdm
 
 
                 //JUL
-                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell = new PdfPCell(new Phrase(string.Format(facturadoJul.Text + " " + anioJul.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD)));
                 table.AddCell(cell);
 
                 if (textDocJul.Text == "0.00")
@@ -3588,14 +3513,14 @@ namespace gestor_bdm
 
 
                 //segunda pagina y agregando una imagen
-                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0002.jpg");
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0002.jpg");
                 imagen.BorderWidth = 0;
                 imagen.Alignment = iTextSharp.text.Image.ALIGN_CENTER;
                 imagen.ScaleToFit(730f, 765.25f);
 
 
                 //tercera hoja
-                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0001.png");
                 imagen_h_1.BorderWidth = 0;
                 imagen_h_1.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h_1.ScaleToFit(100f, 135.25f);
@@ -3615,7 +3540,7 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
@@ -3637,12 +3562,12 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -3659,12 +3584,12 @@ namespace gestor_bdm
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(uno_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -3680,13 +3605,12 @@ namespace gestor_bdm
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
 
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final.AddCell(cell_final);
 
 
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final = new PdfPCell(new Phrase(string.Format(Additional_1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
                 cell_final.Colspan = 2;
                 table_final.AddCell(cell_final);
@@ -3699,31 +3623,8 @@ namespace gestor_bdm
 
                 cell_final = new PdfPCell(new Phrase(string.Format(uno_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
+                cell_final.Colspan = 5;
                 table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format(uno_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final.AddCell(cell_final);
-
-
-                cell_final = new PdfPCell(new Phrase(string.Format(Additional_1.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final.Rowspan = 1;
-                cell_final.Colspan = 2;
-                table_final.AddCell(cell_final);
-
 
 
                 //2
@@ -3742,7 +3643,7 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
@@ -3763,11 +3664,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -3784,12 +3686,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -3806,13 +3708,12 @@ namespace gestor_bdm
                 table_final_1.AddCell(cell_final_1);
 
 
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_1.AddCell(cell_final_1);
 
 
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_1 = new PdfPCell(new Phrase(string.Format(Additional_2.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
                 cell_final_1.Colspan = 2;
                 table_final_1.AddCell(cell_final_1);
@@ -3825,18 +3726,7 @@ namespace gestor_bdm
 
                 cell_final_1 = new PdfPCell(new Phrase(string.Format(dos_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_1.Rowspan = 1;
-                cell_final_1.Colspan = 2;
-                table_final_1.AddCell(cell_final_1);
-
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format("Información Adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_1.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_1.AddCell(cell_final_1);
-
-
-                cell_final_1 = new PdfPCell(new Phrase(string.Format(Additional_2.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_1.Rowspan = 1;
-                cell_final_1.Colspan = 2;
+                cell_final_1.Colspan = 5;
                 table_final_1.AddCell(cell_final_1);
 
 
@@ -3856,7 +3746,7 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
@@ -3878,12 +3768,12 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -3900,15 +3790,16 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
+
 
 
                 cell_final_2 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
@@ -3922,12 +3813,12 @@ namespace gestor_bdm
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_2.AddCell(cell_final_2);
 
 
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_2 = new PdfPCell(new Phrase(string.Format(Additional_3.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
                 cell_final_2.Colspan = 2;
                 table_final_2.AddCell(cell_final_2);
@@ -3940,18 +3831,7 @@ namespace gestor_bdm
 
                 cell_final_2 = new PdfPCell(new Phrase(string.Format(tres_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_2.Rowspan = 1;
-                cell_final_2.Colspan = 2;
-                table_final_2.AddCell(cell_final_2);
-
-
-                cell_final_2 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_2.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_2.AddCell(cell_final_2);
-
-
-                cell_final_2 = new PdfPCell(new Phrase(string.Format(Additional_3.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_2.Rowspan = 1;
-                cell_final_2.Colspan = 2;
+                cell_final_2.Colspan = 5;
                 table_final_2.AddCell(cell_final_2);
 
 
@@ -3971,7 +3851,7 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto De Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
@@ -3993,12 +3873,12 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Contacto De Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("E-mail de contacto" + "\n" + "de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -4015,12 +3895,12 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("E-mail de contacto" + "\n" + "de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
                 table_final_3.AddCell(cell_final_3);
@@ -4037,27 +3917,6 @@ namespace gestor_bdm
                 table_final_3.AddCell(cell_final_3);
 
 
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_3.Rowspan = 1;
-                cell_final_3.Colspan = 2;
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_3.AddCell(cell_final_3);
-
-
-                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_3.Rowspan = 1;
-                cell_final_3.Colspan = 2;
-                table_final_3.AddCell(cell_final_3);
-
 
                 cell_final_3 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
@@ -4067,6 +3926,18 @@ namespace gestor_bdm
                 cell_final_3 = new PdfPCell(new Phrase(string.Format(Additional_4.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_3.Rowspan = 1;
                 cell_final_3.Colspan = 2;
+                table_final_3.AddCell(cell_final_3);
+
+
+
+                cell_final_3 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_3.BackgroundColor = new BaseColor(6, 61, 150);
+                table_final_3.AddCell(cell_final_3);
+
+
+                cell_final_3 = new PdfPCell(new Phrase(string.Format(cuatro_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_3.Rowspan = 1;
+                cell_final_3.Colspan = 5;
                 table_final_3.AddCell(cell_final_3);
 
 
@@ -4086,7 +3957,7 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
@@ -4108,12 +3979,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -4130,12 +4001,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -4153,12 +4024,12 @@ namespace gestor_bdm
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_4.AddCell(cell_final_4);
 
 
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_4 = new PdfPCell(new Phrase(string.Format(Additional_5.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
                 cell_final_4.Colspan = 2;
                 table_final_4.AddCell(cell_final_4);
@@ -4171,20 +4042,8 @@ namespace gestor_bdm
 
                 cell_final_4 = new PdfPCell(new Phrase(string.Format(cinco_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_4.Rowspan = 1;
-                cell_final_4.Colspan = 2;
+                cell_final_4.Colspan = 5;
                 table_final_4.AddCell(cell_final_4);
-
-
-                cell_final_4 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_4.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_4.AddCell(cell_final_4);
-
-
-                cell_final_4 = new PdfPCell(new Phrase(string.Format(Additional_5.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_4.Rowspan = 1;
-                cell_final_4.Colspan = 2;
-                table_final_4.AddCell(cell_final_4);
-
 
 
                 //5
@@ -4203,7 +4062,7 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
@@ -4225,12 +4084,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -4247,12 +4106,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -4270,12 +4129,12 @@ namespace gestor_bdm
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_5.AddCell(cell_final_5);
 
 
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_telefono.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_5 = new PdfPCell(new Phrase(string.Format(Additional_6.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
                 cell_final_5.Colspan = 2;
                 table_final_5.AddCell(cell_final_5);
@@ -4288,20 +4147,8 @@ namespace gestor_bdm
 
                 cell_final_5 = new PdfPCell(new Phrase(string.Format(seis_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_5.Rowspan = 1;
-                cell_final_5.Colspan = 2;
+                cell_final_5.Colspan = 5;
                 table_final_5.AddCell(cell_final_5);
-
-
-                cell_final_5 = new PdfPCell(new Phrase(string.Format("Información adicional"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_5.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_5.AddCell(cell_final_5);
-
-
-                cell_final_5 = new PdfPCell(new Phrase(string.Format(Additional_6.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_5.Rowspan = 1;
-                cell_final_5.Colspan = 2;
-                table_final_5.AddCell(cell_final_5);
-
 
 
                 //6
@@ -4320,7 +4167,7 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto Comercial"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
@@ -4342,12 +4189,12 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_contacto.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_6.Rowspan = 1;
                 cell_final_6.Colspan = 2;
                 table_final_6.AddCell(cell_final_6);
@@ -4364,29 +4211,6 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("E-mail de contacto " + "\n" + " de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_6.AddCell(cell_final_6);
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_email.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_6.Rowspan = 1;
-                cell_final_6.Colspan = 2;
-                table_final_6.AddCell(cell_final_6);
-
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
-                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
-                table_final_6.AddCell(cell_final_6);
-
-
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
-                cell_final_6.Rowspan = 1;
-                cell_final_6.Colspan = 2;
-                table_final_6.AddCell(cell_final_6);
-
-
                 cell_final_6 = new PdfPCell(new Phrase(string.Format("Teléfono de contacto de Facturación"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
@@ -4398,12 +4222,12 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Dirección Fiscal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
                 cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
                 table_final_6.AddCell(cell_final_6);
 
 
-                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_direccion.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
                 cell_final_6.Rowspan = 1;
                 cell_final_6.Colspan = 2;
                 table_final_6.AddCell(cell_final_6);
@@ -4420,8 +4244,19 @@ namespace gestor_bdm
                 table_final_6.AddCell(cell_final_6);
 
 
+                cell_final_6 = new PdfPCell(new Phrase(string.Format("Código Postal"), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD, BaseColor.WHITE)));
+                cell_final_6.BackgroundColor = new BaseColor(6, 61, 150);
+                table_final_6.AddCell(cell_final_6);
+
+
+                cell_final_6 = new PdfPCell(new Phrase(string.Format(siete_codigo.Text), new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.BOLD)));
+                cell_final_6.Rowspan = 1;
+                cell_final_6.Colspan = 5;
+                table_final_6.AddCell(cell_final_6);
+
+
                 //imagen footer
-                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f_1 = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f_1.BorderWidth = 0;
                 imagen_f_1.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f_1.ScaleToFit(265f, 320.25f);
@@ -4429,14 +4264,14 @@ namespace gestor_bdm
 
 
                 //imagen header
-                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0001.png");
+                iTextSharp.text.Image imagen_h = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0001.png");
                 imagen_h.BorderWidth = 0;
                 imagen_h.Alignment = iTextSharp.text.Image.ALIGN_LEFT;
                 imagen_h.ScaleToFit(120f, 155.25f);
 
 
                 //imagen footer
-                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://bestravelmedia.com/img/log/0003.png");
+                iTextSharp.text.Image imagen_f = iTextSharp.text.Image.GetInstance("http://ccascarudocun.com/images/log/0003.png");
                 imagen_f.BorderWidth = 0;
                 imagen_f.Alignment = iTextSharp.text.Image.ALIGN_RIGHT;
                 imagen_f.ScaleToFit(280f, 335.25f);

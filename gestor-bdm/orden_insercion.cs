@@ -16,6 +16,7 @@ namespace gestor_bdm
     public partial class orden_insercion : MetroFramework.Forms.MetroForm
     {
         MySqlConnection con = new MySqlConnection(Variables.Sentencia);
+
         string forma_calculo, transfer_bancaria, compensacion, noches, ambos, t_campo1, t_campo2, t_campo3 = "";
         string senero, sfebrero, smarzo, sabril, smayo, sjunio, sjulio, sagosto, sseptiembre, soctubre, snoviembre, sdiciembre = "";
         string clv_media, RutaImgHM, NombreImgHM, clave_pais, t_pais = "";
@@ -3597,6 +3598,18 @@ namespace gestor_bdm
             facturadoOct.Text = "";
             facturadoNov.Text = "";
             facturadoDic.Text = "";
+            textDocEne.Text = "";
+            textDocFeb.Text = "";
+            textDocMar.Text = "";
+            textDocAbr.Text = "";
+            textDocMay.Text = "";
+            textDocJun.Text = "";
+            textDocJul.Text = "";
+            textDocAgo.Text = "";
+            textDocSep.Text = "";
+            textDocOct.Text = "";
+            textDocNov.Text = "";
+            textDocDic.Text = "";
             cobradoEne.Text = "";
             cobradoFeb.Text = "";
             cobradoMar.Text = "";
